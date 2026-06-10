@@ -1,7 +1,7 @@
 ---
-title: "{{ "{{ replace .Name "-" " " | title }}" }}"
-slug: "{{ "{{ .Name }}" }}"
-category: "{{ "{{ .Dir | path.Base }}" }}"
+title: "{{ replace .Name "-" " " | title }}"
+slug: "{{ .Name }}"
+category: "{{ .Dir | path.Base }}"
 tags: []
 models: ["ChatGPT", "Claude"]
 difficulty: "初级"
