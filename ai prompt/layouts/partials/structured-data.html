@@ -1,0 +1,93 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ .Site.BaseURL }}prompts/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}
+
+{{ if and (eq .Section "prompts") (eq .Kind "section") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "{{ .Title }} — AI提示词列表",
+  "description": "中文AI提示词列表，分类浏览和搜索高质量提示词。",
+  "numberOfItems": {{ len .Pages }},
+  "itemListElement": [
+    {{ range $index, $page := .Pages | first 20 }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $index 1 }},
+      "url": "{{ $page.Permalink }}",
+      "name": "{{ $page.Title }}"
+    }{{ if ne $index (sub (len (first 20 $.Pages)) 1) }},{{ end }}
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{ if and (eq .Section "prompts") (eq .Kind "page") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ .Title }}",
+  "description": "{{ with .Params.seo.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
+  "step": [{
+    "@type": "HowToStep",
+    "position": 1,
+    "name": "复制提示词",
+    "text": "复制上方提示词内容到剪贴板。"
+  },{
+    "@type": "HowToStep",
+    "position": 2,
+    "name": "粘贴到AI工具",
+    "text": "打开ChatGPT、Claude或其他AI对话工具，粘贴提示词。"
+  },{
+    "@type": "HowToStep",
+    "position": 3,
+    "name": "补充具体信息",
+    "text": "根据提示词中的[占位符]填入你的具体需求。"
+  },{
+    "@type": "HowToStep",
+    "position": 4,
+    "name": "优化和迭代",
+    "text": "根据AI回复结果，继续对话优化输出。"
+  }]
+}
+</script>
+{{ end }}
+
+{{ if and (eq .Section "tools") (eq .Kind "page") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ .Title }}",
+  "applicationCategory": "AIApplication",
+  "operatingSystem": "Web",
+  "description": "{{ with .Params.seo.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}",
+  "url": "{{ .Permalink }}",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  }
+}
+</script>
+{{ end }}

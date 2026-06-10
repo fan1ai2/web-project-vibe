@@ -1,0 +1,96 @@
+{{ define "main" }}
+{{ if eq .Section "prompts" }}
+<article class="section prompt-detail" itemscope itemtype="https://schema.org/HowTo">
+  <div class="container container-narrow">
+    <nav class="breadcrumb" aria-label="面包屑导航">
+      <a href="{{ "/" | relURL }}">首页</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="{{ "/prompts/" | relURL }}">提示词库</a>
+      <span class="breadcrumb-sep">/</span>
+      {{ with .Params.category }}
+      {{ $cat := index (where $.Site.Data.categories "slug" .) 0 }}
+      <a href="{{ printf "/prompts/%s/" . | relURL }}">{{ if $cat }}{{ $cat.name }}{{ else }}{{ . }}{{ end }}</a>
+      <span class="breadcrumb-sep">/</span>
+      {{ end }}
+      <span class="breadcrumb-current">{{ .Title }}</span>
+    </nav>
+
+    <header class="prompt-header">
+      <h1 class="prompt-title" itemprop="name">{{ .Title }}</h1>
+      <div class="prompt-meta">
+        {{ with .Params.category }}
+        {{ $cat := index (where $.Site.Data.categories "slug" .) 0 }}
+        <span class="prompt-category-badge">{{ if $cat }}{{ $cat.name }}{{ else }}{{ . }}{{ end }}</span>
+        {{ end }}
+        {{ with .Params.difficulty }}<span class="prompt-difficulty">{{ . }}</span>{{ end }}
+      </div>
+    </header>
+
+    <div class="prompt-content-card">
+      <div class="prompt-content-header">
+        <span class="prompt-content-label">提示词内容</span>
+        <button class="copy-btn copy-btn-large" data-copy="{{ .RawContent }}" aria-label="一键复制">
+          <svg class="copy-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span>复制提示词</span>
+        </button>
+      </div>
+      <div class="prompt-content-body" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+        <meta itemprop="position" content="1">
+        <pre itemprop="text">{{ .RawContent }}</pre>
+      </div>
+    </div>
+
+    <div class="prompt-info-row">
+      {{ with .Params.tags }}
+      <div class="prompt-tags">
+        <span class="info-label">标签：</span>
+        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+      {{ with .Params.models }}
+      <div class="prompt-models">
+        <span class="info-label">适用模型：</span>
+        {{ range . }}<span class="model-badge">{{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="prompt-howto" itemprop="description">
+      <h2>使用方法</h2>
+      <ol>
+        <li>复制上方提示词内容</li>
+        <li>打开 ChatGPT、Claude 或其他 AI 对话工具</li>
+        <li>粘贴提示词，按需补充具体信息（如[ ]中的占位内容）</li>
+        <li>获取 AI 回复后，可根据结果继续对话优化</li>
+      </ol>
+    </div>
+
+    {{ $related := where (where .Site.RegularPages "Section" "prompts") "Params.category" .Params.category | first 4 }}
+    {{ if gt (len $related) 1 }}
+    <section class="related-prompts">
+      <h2>相关提示词</h2>
+      <div class="prompts-grid">
+        {{ range $related }}
+        {{ if ne .Permalink $.Permalink }}
+        {{ partial "prompt-card.html" . }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </div>
+</article>
+{{ else }}
+<article class="section">
+  <div class="container container-narrow">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+    </header>
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}
+{{ end }}

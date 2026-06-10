@@ -1,0 +1,67 @@
+{{ define "main" }}
+{{ if eq .Section "prompts" }}
+<section class="section prompts-page">
+  <div class="container">
+    <div class="prompts-layout">
+      <aside class="prompts-sidebar">
+        <h3 class="sidebar-title">分类筛选</h3>
+        <ul class="category-filter">
+          <li><a href="{{ "/prompts/" | relURL }}" class="filter-link{{ if eq .RelPermalink "/prompts/" }} active{{ end }}">全部</a></li>
+          {{ range .Site.Data.categories }}
+          <li><a href="{{ printf "/prompts/%s/" .slug | relURL }}" class="filter-link{{ if eq $.RelPermalink (printf "/prompts/%s/" .slug | relURL) }} active{{ end }}">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </aside>
+      <div class="prompts-content">
+        <div class="prompts-toolbar">
+          <h1 class="prompts-page-title">
+            {{ if eq .RelPermalink "/prompts/" }}
+            全部提示词
+            {{ else }}
+            {{ .Title }}
+            {{ end }}
+          </h1>
+          <div class="prompts-search">
+            <input type="text" id="prompts-search" class="search-input" placeholder="在当前分类中搜索..." autocomplete="off">
+          </div>
+        </div>
+        {{ $pages := .Pages }}
+        {{ if eq .RelPermalink "/prompts/" }}
+        {{ $pages = .RegularPages }}
+        {{ end }}
+        <div class="prompts-grid" id="prompts-grid">
+          {{ range $pages }}
+          {{ partial "prompt-card.html" . }}
+          {{ end }}
+        </div>
+        {{ if gt (len $pages) 12 }}
+        <nav class="pagination" aria-label="分页">
+          {{ template "_internal/pagination.html" . }}
+        </nav>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="section">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <div class="generic-list">
+      {{ range .Pages }}
+      <a href="{{ .Permalink }}" class="generic-card">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary | plainify | truncate 120 }}</p>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ define "scripts" }}
+{{ if eq .Section "prompts" }}
+<script src="{{ "js/search.js" | relURL }}" defer></script>
+{{ end }}
+{{ end }}

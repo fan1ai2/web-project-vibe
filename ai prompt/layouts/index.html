@@ -1,0 +1,74 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">高质量中文<span class="text-accent">AI提示词</span>库</h1>
+    <p class="hero-subtitle">精选 100+ 条实用中文提示词，覆盖 8 大场景。<br>一键复制，即拿即用，支持 ChatGPT、Claude、DeepSeek 等主流模型。</p>
+    <div class="hero-search">
+      <input type="text" id="hero-search-input" class="search-input" placeholder="搜索提示词... 例如：写周报、代码审查、小红书文案" autocomplete="off">
+      <button id="hero-search-btn" class="search-btn" aria-label="搜索">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <div class="hero-tags">
+      {{ range first 6 (shuffle (slice "ChatGPT提示词" "Claude提示词" "DeepSeek提示词" "Midjourney提示词" "写作提示词" "编程提示词" "营销提示词" "小红书文案" "GPTs指令" "提示词工程")) }}
+      <a href="{{ "/prompts/" | relURL }}" class="hero-tag">{{ . }}</a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section categories-section">
+  <div class="container">
+    <h2 class="section-title">浏览分类</h2>
+    <p class="section-desc">8 大场景分类，找到你需要的提示词</p>
+    <div class="categories-grid">
+      {{ range .Site.Data.categories }}
+      <a href="{{ printf "/prompts/%s/" .slug | relURL }}" class="category-card">
+        <span class="category-icon">{{ partial "icon" .icon }}</span>
+        <h3 class="category-name">{{ .name }}</h3>
+        <p class="category-desc">{{ .description }}</p>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section featured-section">
+  <div class="container">
+    <h2 class="section-title">精选提示词</h2>
+    <p class="section-desc">最常用、最好用的高质量中文提示词</p>
+    <div class="prompts-grid">
+      {{ range first 6 (where .Site.RegularPages "Params.featured" true) }}
+      {{ partial "prompt-card.html" . }}
+      {{ end }}
+    </div>
+    <div class="section-cta">
+      <a href="{{ "/prompts/" | relURL }}" class="btn-primary">查看全部提示词</a>
+    </div>
+  </div>
+</section>
+
+<section class="section tools-section">
+  <div class="container">
+    <h2 class="section-title">在线AI工具箱</h2>
+    <p class="section-desc">7 款实用工具，每个都有完整的前端体验</p>
+    <div class="tools-grid">
+      {{ range .Site.Data.tools }}
+      <a href="{{ printf "/tools/%s/" .slug | relURL }}" class="tool-card">
+        <span class="tool-icon">{{ partial "icon" .icon }}</span>
+        <h3 class="tool-name">{{ .name }}</h3>
+        <p class="tool-desc">{{ .description }}</p>
+      </a>
+      {{ end }}
+    </div>
+    <div class="section-cta">
+      <a href="{{ "/tools/" | relURL }}" class="btn-secondary">探索全部工具</a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="{{ "js/search.js" | relURL }}" defer></script>
+{{ end }}
