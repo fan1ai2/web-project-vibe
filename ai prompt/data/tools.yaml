@@ -1,0 +1,83 @@
+- slug: prompt-generator
+  name: AI提示词生成器
+  icon: sparkles
+  description: 输入你的需求，AI自动生成高质量提示词，激发创作灵感。
+  features:
+    - 根据场景描述自动生成结构化提示词
+    - 支持多种输出语言和风格
+    - 内置提示词模板库
+  seo:
+    title: "AI提示词生成器"
+    description: "免费在线AI提示词生成器，输入需求自动生成高质量提示词，支持多种语言和风格。"
+
+- slug: text-humanizer
+  name: AI文本人性化
+  icon: user
+  description: 将AI生成的文本转化为自然流畅的人类书写风格，调整语气和情感。
+  features:
+    - 检测并消除AI写作痕迹
+    - 调整语气（正式/亲切/幽默/专业）
+    - 增强文本流畅度和可读性
+  seo:
+    title: "AI文本人性化"
+    description: "将AI文本转化为自然人类书写风格的在线工具，支持多种语气调整和文本优化。"
+
+- slug: image-to-text
+  name: 图片转文字OCR
+  icon: image
+  description: 从图片中提取文字内容，支持中文、英文等多语言识别。
+  features:
+    - 高精度OCR文字识别
+    - 支持中文、英文等50+语言
+    - 保留原文排版格式
+  seo:
+    title: "图片转文字OCR"
+    description: "免费在线图片文字识别工具，高精度OCR提取图片中的文字，支持多语言。"
+
+- slug: image-to-prompt
+  name: 图片转提示词
+  icon: camera
+  description: 上传图片，AI分析图像内容并生成对应的详细描述提示词。
+  features:
+    - 智能识别图像主体、风格、构图
+    - 生成Midjourney/DALL·E兼容提示词
+    - 支持反向工程已有AI作品
+  seo:
+    title: "图片转提示词"
+    description: "上传图片自动生成AI绘图提示词，支持Midjourney、DALL·E等主流模型。"
+
+- slug: ai-detector
+  name: AI内容检测
+  icon: shield
+  description: 检测文本是否由AI生成，评估内容的真实性和原创度。
+  features:
+    - 多模型AI内容识别（ChatGPT/Claude/Gemini）
+    - 逐句标注AI概率
+    - 生成详细检测报告
+  seo:
+    title: "AI内容检测"
+    description: "免费AI内容检测工具，识别ChatGPT、Claude等AI生成的文本，评估原创度。"
+
+- slug: prompt-checker
+  name: 提示词优化检查
+  icon: check
+  description: 检查你的提示词质量，给出优化建议，让提示词更精准有效。
+  features:
+    - 提示词完整度评分
+    - 缺失要素提醒
+    - 结构化改写建议
+  seo:
+    title: "提示词优化检查"
+    description: "检查并优化你的AI提示词，提升提示词精准度和有效性。"
+
+- slug: video-prompt
+  name: 视频提示词生成
+  icon: video
+  description: 辅助视频创作，生成分镜脚本、场景描述和视频风格提示词。
+  features:
+    - 生成分镜脚本提示词
+    - 场景氛围描述生成
+    - 适配Runway、Pika等视频模型
+  seo:
+    title: "视频提示词生成"
+    description: "AI视频创作提示词生成工具，支持分镜脚本、场景描述，适配主流视频生成模型。"

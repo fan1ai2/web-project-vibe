@@ -1,0 +1,63 @@
+- slug: writing
+  name: 写作创作
+  icon: pen
+  description: 文章、故事、诗歌、剧本等创意写作提示词
+  seo:
+    title: "写作创作提示词"
+    description: "高质量中文写作提示词，涵盖文案、故事、诗歌、剧本等多种创作场景。"
+
+- slug: programming
+  name: 编程开发
+  icon: code
+  description: 代码生成、调试、重构、架构设计等编程提示词
+  seo:
+    title: "编程开发提示词"
+    description: "精选编程提示词，覆盖代码生成、调试、重构、架构设计，适用多种编程语言。"
+
+- slug: design
+  name: 设计创意
+  icon: palette
+  description: UI设计、品牌视觉、配色方案、排版等设计提示词
+  seo:
+    title: "设计创意提示词"
+    description: "AI设计提示词合集，涵盖UI/UX、品牌设计、配色、排版等创意场景。"
+
+- slug: marketing
+  name: 营销文案
+  icon: megaphone
+  description: 广告文案、社交媒体、邮件营销、品牌故事等营销提示词
+  seo:
+    title: "营销文案提示词"
+    description: "高效营销文案提示词，覆盖社交媒体、广告、邮件、品牌故事等各种营销渠道。"
+
+- slug: productivity
+  name: 效率工具
+  icon: zap
+  description: 会议纪要、邮件撰写、数据分析、项目管理等办公效率提示词
+  seo:
+    title: "效率工具提示词"
+    description: "提升办公效率的AI提示词，涵盖会议纪要、邮件、数据分析、项目管理等场景。"
+
+- slug: education
+  name: 学习教育
+  icon: book
+  description: 课程设计、学习计划、知识总结、论文辅导等教育提示词
+  seo:
+    title: "学习教育提示词"
+    description: "教育学习场景AI提示词，涵盖课程设计、学习规划、论文写作、知识总结等。"
+
+- slug: lifestyle
+  name: 生活助手
+  icon: heart
+  description: 旅行规划、美食推荐、健康管理、个人理财等生活提示词
+  seo:
+    title: "生活助手提示词"
+    description: "实用生活AI提示词，涵盖旅行、美食、健康、理财、家居等日常场景。"
+
+- slug: roleplay
+  name: 角色扮演
+  icon: mask
+  description: 面试模拟、谈判练习、心理咨询、语言陪练等角色提示词
+  seo:
+    title: "角色扮演提示词"
+    description: "角色扮演AI提示词，适用于面试模拟、谈判练习、语言陪练、心理咨询等场景。"
