@@ -1,0 +1,9 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ .Site.Home.RelPermalink }}" class="header-brand">{{ .Site.Title }}</a>
+    <nav class="header-nav">
+      <a href="{{ .Site.Home.RelPermalink }}" class="{{ if .IsHome }}active{{ end }}">首页</a>
+      <a href="/generator/" class="{{ if eq .RelPermalink "/generator/" }}active{{ end }}">创作台</a>
+    </nav>
+  </div>
+</header>

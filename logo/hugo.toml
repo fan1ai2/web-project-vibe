@@ -1,0 +1,33 @@
+baseURL = "https://logogen.example.com/"
+languageCode = "zh-CN"
+title = "LogoForge — AI 商标生成器"
+enableRobotsTXT = true
+enableEmoji = false
+
+[taxonomies]
+  industry = "industries"
+  style = "styles"
+  colorScheme = "colorschemes"
+  fontStyle = "fontstyles"
+  layoutType = "layouttypes"
+
+[params]
+  description = "AI 驱动的商标 Logo 自动生成工具。选择行业、风格、配色、字体、构图，一键生成专属品牌标识。"
+  ogImage = "/images/og-default.jpg"
+
+[outputs]
+  home = ["HTML", "RSS", "Sitemap"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

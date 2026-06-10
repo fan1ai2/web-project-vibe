@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>AI 驱动的品牌 Logo 设计</h1>
+    <p>选择一个行业、一种风格、一套配色，让 AI 为你生成独一无二的品牌标识。所有设计均可免费下载使用。</p>
+    <div class="hero-actions">
+      <a href="/generator/" class="btn btn-primary btn-lg">开始创作</a>
+      <a href="#showcase" class="btn btn-secondary btn-lg">浏览案例</a>
+    </div>
+  </div>
+</section>
+
+<!-- Showcase -->
+<section class="section" id="showcase">
+  <div class="container">
+    <div class="section-header">
+      <h2>精选案例</h2>
+      <p>来自 51 个中国品牌的 Logo 设计拆解</p>
+    </div>
+    <div class="showcase-grid">
+      {{ $cases := index .Site.Data.cases "brand-logos" | first 8 }}
+      {{ range $i, $c := $cases }}
+      <a href="{{ printf "/cases/%s/" $c.slug }}" class="showcase-card">
+        <span class="showcase-card-number">{{ printf "%02d" (add $i 1) }}</span>
+        <span class="showcase-card-placeholder" style="color:{{ index $c.colors 0 }};opacity:0.4">{{ slicestr $c.brand 0 1 }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>三步生成你的 Logo</h2>
+      <p>从灵感到成品，只需几分钟</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>设定参数</h3>
+        <p>选择行业、视觉风格、配色方案、字体气质和构图类型，定义你的品牌基调。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>AI 生成</h3>
+        <p>基于你的设定自动生成品牌 Logo，可随时调整参数重新生成。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>下载使用</h3>
+        <p>导出 SVG 矢量文件，可直接用于网站、名片、社交媒体等场景。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container-narrow">
+    <h2>创建你的第一个 Logo</h2>
+    <p>从 51 个品牌案例中获取灵感，用 AI 为你的品牌生成独一无二的标识。</p>
+    <a href="/generator/" class="btn btn-primary btn-lg">进入创作台</a>
+  </div>
+</section>
+
+{{ end }}

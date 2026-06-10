@@ -1,0 +1,849 @@
+# 知名中国品牌 Logo 反向拆解 — 案例墙种子数据
+# 每个案例包含：品牌信息 + 五维度拆解 + AI 生成提示词
+
+- brand: "华为"
+  slug: "huawei"
+  description: "全球领先的 ICT 基础设施和智能终端提供商，logo 以红色放射状花瓣构成，象征事业蒸蒸日上"
+  industry: "科技/通信"
+  style: "极简几何"
+  colors: ["#CF0A2C", "#E60012"]
+  colorScheme: "单色渐变"
+  fontStyle: "无衬线几何"
+  layoutType: "图标型"
+  prompt: >
+    A minimalist geometric logo for a global technology brand called "HUAWEI".
+    Eight radiating petals forming a blooming flower shape, bright red gradient (#CF0A2C to #E60012),
+    clean sans-serif geometric wordmark below in deep red, pure white background,
+    vector logo style, flat design, no gradients on the icon, sharp clean edges,
+    professional brand identity, 1:1 square composition, high quality corporate logo.
+
+- brand: "小米"
+  slug: "xiaomi"
+  description: "智能手机与 IoT 生态领军品牌，MI 字母标 + 橙色方块，极简亲和"
+  industry: "科技/消费电子"
+  style: "极简现代"
+  colors: ["#FF6900", "#FF8247"]
+  colorScheme: "单色强调"
+  fontStyle: "无衬线圆角"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A minimalist modern logo for a consumer electronics brand called "XIAOMI".
+    Bold rounded sans-serif "MI" letterform enclosed in a rounded orange square (#FF6900),
+    with full brand name "xiaomi" in lowercase sans-serif below in dark gray,
+    white background, flat vector design, friendly and approachable feel,
+    corporate identity logo, centered composition, clean and simple.
+
+- brand: "李宁"
+  slug: "lining"
+  description: "中国体育用品标杆品牌，以体操王子命名，logo 为红色飞扬旗帜造型"
+  industry: "运动/体育用品"
+  style: "动感流线"
+  colors: ["#EE1C25", "#CC0000"]
+  colorScheme: "单色强调"
+  fontStyle: "无衬线动感"
+  layoutType: "图标型"
+  prompt: >
+    A dynamic flowing logo for a Chinese sportswear brand called "LI-NING".
+    A sweeping curved red flag shape (#EE1C25) that resembles both a gymnast's ribbon and the letter L,
+    modern athletic sans-serif wordmark in dark charcoal, white background,
+    vector logo design, sense of motion and energy, sports brand identity,
+    clean lines, 1:1 composition, professional sportswear logo quality.
+
+- brand: "农夫山泉"
+  slug: "nongfu-spring"
+  description: "中国瓶装水巨头，logo 以山水倒影图案传递天然水源概念"
+  industry: "食品饮料"
+  style: "自然写意"
+  colors: ["#2E8B57", "#006400", "#F5F5DC"]
+  colorScheme: "自然色系"
+  fontStyle: "中文书法"
+  layoutType: "文字+图标组合型"
+  prompt: >
+    A natural and poetic logo for a mineral water brand called "农夫山泉 Nongfu Spring".
+    Green mountains (#2E8B57) reflected in clear water forming a symmetrical landscape,
+    Chinese calligraphy-style brand name in deep green, cream background (#F5F5DC),
+    the mountain-water reflection creates a subtle infinity symbol, organic flowing lines,
+    premium natural water brand identity, centered vertical composition, serene and pure.
+
+- brand: "瑞幸咖啡"
+  slug: "luckin-coffee"
+  description: "中国新零售咖啡第一品牌，蓝色鹿头侧影，现代商务感"
+  industry: "餐饮/咖啡"
+  style: "现代轻奢"
+  colors: ["#003DA5", "#0052CC", "#FFFFFF"]
+  colorScheme: "蓝白双色"
+  fontStyle: "无衬线现代"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A modern premium logo for a coffee brand called "luckin coffee".
+    Elegant minimalist deer head silhouette in profile facing right, deep royal blue (#003DA5),
+    clean modern sans-serif lowercase brand name in matching blue, pure white background,
+    the deer has subtle geometric angular cuts giving it a contemporary edge,
+    corporate identity logo, vector design, 1:1 square composition, sophisticated and refined.
+
+- brand: "霸王茶姬"
+  slug: "chagee"
+  description: "新中式国风茶饮品牌，以戏曲花旦脸谱为核心视觉，融合东方美学"
+  industry: "茶饮"
+  style: "新中式古典"
+  colors: ["#C9A963", "#1A1A1A", "#8B0000"]
+  colorScheme: "金黑红"
+  fontStyle: "中文楷体"
+  layoutType: "徽章型"
+  prompt: >
+    A Chinese classical aesthetic logo for a premium tea brand called "霸王茶姬 CHAGEE".
+    Stylized Peking opera female face mask (花旦) in gold (#C9A963) against a dark background (#1A1A1A),
+    intricate traditional makeup patterns simplified into clean vector lines,
+    Chinese calligraphy brand name in gold, deep crimson accent (#8B0000),
+    emblem-style circular badge composition with decorative border,
+    luxury oriental tea brand identity, vector art, centered 1:1 composition.
+
+- brand: "蔚来"
+  slug: "nio"
+  description: "中国高端智能电动汽车品牌，logo 为天空与道路交汇的极简符号"
+  industry: "汽车/出行"
+  style: "未来极简"
+  colors: ["#00B4D8", "#0077B6", "#03045E"]
+  colorScheme: "科技蓝渐变"
+  fontStyle: "无衬线几何"
+  layoutType: "图标型"
+  prompt: >
+    A futuristic minimalist logo for an electric vehicle brand called "NIO".
+    An abstract symbol where the sky meets the road — an upper arc (sky) and a lower line (earth)
+    forming a subtle "N" shape, cyan to deep blue gradient (#00B4D8 to #03045E),
+    clean geometric sans-serif wordmark, dark background, vector design,
+    premium automotive brand identity, visionary and forward-looking,
+    centered 1:1 composition, high-end logo quality.
+
+- brand: "三顿半"
+  slug: "saturnbird"
+  description: "精品速溶咖啡新消费品牌，数字编号系统 + 极简工业风，设计师圈层标志"
+  industry: "咖啡/消费品"
+  style: "工业极简"
+  colors: ["#2D2D2D", "#F5F5F0", "#D4A574"]
+  colorScheme: "黑白灰+暖灰"
+  fontStyle: "无衬线极简"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    An industrial minimalist logo for a specialty coffee brand called "Saturnbird 三顿半".
+    A small geometric bird silhouette inside a circle, dark charcoal (#2D2D2D),
+    accompanied by a prominent number (1-6 indicating roast level) in clean sans-serif,
+    off-white background (#F5F5F0), warm brown accent (#D4A574),
+    the typography is restrained with wide letter-spacing, designer aesthetic,
+    vector logo design, centered composition, coffee brand identity with art gallery sensibility.
+
+- brand: "观夏"
+  slug: "to-summer"
+  description: "中国高端香薰品牌，东方植物美学，文人气质，留白与克制"
+  industry: "香氛/美妆"
+  style: "东方极简"
+  colors: ["#8B8682", "#D4C9B8", "#F7F3ED"]
+  colorScheme: "大地暖灰"
+  fontStyle: "中文宋体"
+  layoutType: "文字型"
+  prompt: >
+    An Eastern minimalist logo for a luxury fragrance brand called "To Summer 观夏".
+    Elegant Chinese serif (宋体) characters with generous letter-spacing on a warm cream background (#F7F3ED),
+    warm stone gray text (#8B8682), the characters are framed by abundant white space,
+    a subtle warm beige accent line (#D4C9B8) beneath the characters, zen-inspired restraint,
+    premium fragrance brand identity, no icon — pure typography logo, vector design,
+    centered composition, museum-grade brand aesthetic, quiet luxury.
+
+- brand: "大疆"
+  slug: "dji"
+  description: "全球无人机霸主，logo 以 DJI 字母 + 金色圆环，稳健专业科技感"
+  industry: "科技/无人机"
+  style: "科技稳健"
+  colors: ["#1A1A1A", "#D4AF37", "#FFFFFF"]
+  colorScheme: "黑白金"
+  fontStyle: "无衬线粗体"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A professional technology logo for a drone and camera brand called "DJI 大疆创新".
+    Bold sans-serif letters "DJI" in dark charcoal (#1A1A1A) enclosed within a thin golden ring (#D4AF37),
+    the ring symbolizes precision and the horizon, the typography is solid and trustworthy,
+    white background, vector logo design, premium tech brand identity,
+    centered 1:1 composition, engineering precision aesthetic, clean and authoritative.
+
+- brand: "喜茶"
+  slug: "heytea"
+  description: "新茶饮开创者，logo 为喝茶小人侧脸，极简黑白，潮流感"
+  industry: "茶饮"
+  style: "潮酷极简"
+  colors: ["#000000", "#FFFFFF"]
+  colorScheme: "极致黑白"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标型"
+  prompt: >
+    A trendy minimalist logo for a tea brand called "HEYTEA 喜茶".
+    A simple black silhouette of a person drinking tea in profile, formed by clean curved lines,
+    pure black (#000000) on white background, the figure has a rounded friendly feel,
+    modern bold rounded sans-serif brand name, zero color — pure monochrome,
+    street-style brand identity, vector logo design, centered 1:1 composition,
+    cool and contemporary like a fashion label, high contrast black and white.
+
+- brand: "泡泡玛特"
+  slug: "pop-mart"
+  description: "中国潮玩第一品牌，盲盒文化代表，logo 明亮黄黑配色，活泼大胆"
+  industry: "潮玩/娱乐"
+  style: "玩趣波普"
+  colors: ["#FFD700", "#000000", "#FFFFFF"]
+  colorScheme: "黄黑撞色"
+  fontStyle: "无衬线粗体"
+  layoutType: "文字型"
+  prompt: >
+    A bold playful logo for a designer toy and pop culture brand called "POP MART 泡泡玛特".
+    Thick black sans-serif letters (#000000) with a bright yellow rectangular background block (#FFD700),
+    the typography is chunky and friendly, the yellow block creates strong visual impact,
+    Chinese characters in matching bold weight, white accents,
+    pop art inspired brand identity, vector logo design, centered composition,
+    toy brand energy, eye-catching and youthful, like a modern comic book title.
+
+- brand: "安踏"
+  slug: "anta"
+  description: "中国最大体育用品集团，logo 为红色 A 字箭头，象征突破与向上"
+  industry: "运动/体育用品"
+  style: "动感几何"
+  colors: ["#E60012", "#1A1A1A"]
+  colorScheme: "红黑撞色"
+  fontStyle: "无衬线动感"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A dynamic athletic logo for a sportswear brand called "ANTA 安踏".
+    A sharp upward-pointing red arrow (#E60012) forming the letter "A", conveying speed and ascension,
+    bold athletic sans-serif brand name in dark charcoal (#1A1A1A), white background,
+    the arrow shape is angular and aggressive like a chevron, sports performance brand identity,
+    vector logo design, centered 1:1 composition, powerful and energetic,
+    professional sportswear logo quality, Olympic-level brand aesthetic.
+
+- brand: "字节跳动"
+  slug: "bytedance"
+  description: "抖音/TikTok 母公司，logo 以音符符号 + 跳动的色块组成，年轻创造力"
+  industry: "互联网/科技"
+  style: "活泼现代"
+  colors: ["#325AB4", "#78E0DC", "#FF5C8A", "#FFB800"]
+  colorScheme: "多色跳跃"
+  fontStyle: "无衬线现代"
+  layoutType: "图标型"
+  prompt: >
+    A vibrant modern logo for an internet technology company called "ByteDance 字节跳动".
+    A stylized musical note composed of four jumping color blocks — blue (#325AB4), cyan (#78E0DC),
+    pink (#FF5C8A), and yellow (#FFB800) — the blocks overlap playfully to form the note shape,
+    clean sans-serif brand name in dark blue, white background, vector design,
+    creative tech brand identity, youthful and energetic, centered composition,
+    the multi-color blocks suggest diversity and rhythm, flat design with subtle depth.
+
+- brand: "花西子"
+  slug: "florasis"
+  description: "国风彩妆头部品牌，以东方花卉与园林窗棂为灵感，精致典雅"
+  industry: "美妆/彩妆"
+  style: "东方雅致"
+  colors: ["#C4375E", "#F2C4C9", "#2D2D2D"]
+  colorScheme: "胭脂粉黛"
+  fontStyle: "中文楷体"
+  layoutType: "徽章型"
+  prompt: >
+    An elegant oriental beauty logo for a Chinese cosmetics brand called "Florasis 花西子".
+    A delicate blooming flower framed within a traditional Chinese garden window lattice (花窗),
+    peony pink (#C4375E) with soft blush accents (#F2C4C9), dark charcoal outlines (#2D2D2D),
+    intricate petal details rendered as clean vector lines, Chinese calligraphy brand name,
+    circular emblem composition with floral border, cream background,
+    luxury beauty brand identity, poetic and refined, vector art, centered 1:1 composition,
+    like an imperial-era cosmetic seal reimagined for modern luxury.
+- brand: "腾讯"
+  slug: "tencent"
+  description: "中国最大互联网综合服务商，以企鹅为吉祥物，蓝色科技生态体系"
+  industry: "互联网/科技"
+  style: "亲和科技"
+  colors: ["#0066CC", "#00A8E8", "#FFFFFF"]
+  colorScheme: "科技蓝渐变"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A friendly technology logo for an internet conglomerate called "Tencent 腾讯".
+    A stylized penguin silhouette formed by clean geometric shapes, gradient blue (#0066CC to #00A8E8),
+    rounded modern sans-serif brand name in deep blue, white background,
+    the penguin is simplified to its essence — circle body, flipper arms, cheerful posture,
+    vector logo design, approachable and trustworthy, centered composition,
+    corporate tech brand identity, 1:1 square format.
+
+- brand: "阿里巴巴"
+  slug: "alibaba"
+  description: "全球最大电商平台之一，logo 为橙色笑脸 a 字，传递开放与温暖"
+  industry: "电商/科技"
+  style: "温暖现代"
+  colors: ["#FF6A00", "#FF8C00", "#FFFFFF"]
+  colorScheme: "橙色暖调"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A warm modern logo for a global e-commerce brand called "Alibaba 阿里巴巴".
+    A lowercase orange "a" (#FF6A00) with a subtle smile incorporated into the counter (the enclosed space of the letter),
+    rounded friendly sans-serif brand name in dark gray, white background,
+    the letterform is thick and approachable, conveying openness and warmth,
+    vector design, corporate identity, centered composition, 1:1 format.
+
+- brand: "京东"
+  slug: "jd"
+  description: "中国自营电商龙头，银色金属狗 Joy 代表忠诚与速度"
+  industry: "电商/零售"
+  style: "金属科技"
+  colors: ["#E2231A", "#C0C0C0", "#FFFFFF"]
+  colorScheme: "红银双色"
+  fontStyle: "无衬线现代"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A sleek technology logo for an e-commerce brand called "JD 京东".
+    A metallic silver dog mascot silhouette with a subtle red collar (#E2231A), streamlined and aerodynamic,
+    modern sans-serif brand name in dark charcoal, white background,
+    the dog shape is simplified into flowing curves suggesting speed and loyalty,
+    vector logo design, professional retail brand identity, centered 1:1 composition.
+
+- brand: "美团"
+  slug: "meituan"
+  description: "中国生活服务超级 APP，黄色袋鼠 icon，速度与生活服务"
+  industry: "本地生活/科技"
+  style: "活力卡通"
+  colors: ["#FFD100", "#FFC107", "#2D2D2D"]
+  colorScheme: "明黄+深灰"
+  fontStyle: "无衬线粗体"
+  layoutType: "图标型"
+  prompt: >
+    A energetic logo for a lifestyle services super-app called "Meituan 美团".
+    A stylized leaping kangaroo in bright yellow (#FFD100), geometric simplified form,
+    the kangaroo is mid-jump conveying speed and vitality, dark charcoal wordmark (#2D2D2D),
+    white background, vector design, bold and youthful,
+    centered 1:1 composition, super-app brand identity, instantly recognizable silhouette.
+
+- brand: "拼多多"
+  slug: "pinduoduo"
+  description: "中国社交电商开创者，爱心 logo 传递实惠与分享"
+  industry: "电商/社交"
+  style: "亲和可爱"
+  colors: ["#E53E30", "#FF6B6B", "#FFFFFF"]
+  colorScheme: "爱心红"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A friendly social e-commerce logo for a platform called "拼多多 Pinduoduo".
+    A heart shape (#E53E30) composed of overlapping rounded elements suggesting community and sharing,
+    rounded sans-serif brand name in matching red, white background,
+    the heart has a slight 3D stacked effect from overlapping pieces, warm and inviting,
+    vector logo design, approachable consumer brand identity, centered 1:1 composition.
+
+- brand: "小红书"
+  slug: "red"
+  description: "中国生活方式社区，红色书页标识，种草文化代表"
+  industry: "社交媒体/生活方式"
+  style: "极简文雅"
+  colors: ["#FE2C55", "#FF5C7A", "#FFFFFF"]
+  colorScheme: "小红书红"
+  fontStyle: "无衬线现代"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A minimalist lifestyle community logo for a platform called "RED 小红书".
+    An open book formed by two clean rectangular pages in gradient coral red (#FE2C55 to #FF5C7A),
+    the right page has a subtle fold creating a 3D effect, clean sans-serif brand name in dark gray,
+    white background, vector design, youthful and cultured,
+    centered 1:1 composition, social media brand identity, literary and modern.
+
+- brand: "哔哩哔哩"
+  slug: "bilibili"
+  description: "中国年轻世代视频社区，蓝白电视机 icon + 小电视形象"
+  industry: "视频/娱乐"
+  style: "二次元萌系"
+  colors: ["#00A1D6", "#73C9E5", "#FB7299"]
+  colorScheme: "蓝粉萌系"
+  fontStyle: "无衬线圆角"
+  layoutType: "图标型"
+  prompt: >
+    A playful anime-inspired logo for a video platform called "bilibili 哔哩哔哩".
+    A cute blue television set icon (#00A1D6) with cartoon eyes and a pink blush (#FB7299),
+    rounded corners throughout, the TV antenna forms a subtle lightning bolt,
+    rounded sans-serif brand name in matching blue, white background,
+    vector design with manga aesthetic, centered 1:1 composition, youth culture brand identity.
+
+- brand: "知乎"
+  slug: "zhihu"
+  description: "中国最大知识问答社区，蓝色「知」字标识，理性求真"
+  industry: "互联网/知识"
+  style: "极简知性"
+  colors: ["#0066FF", "#1E88E5", "#FFFFFF"]
+  colorScheme: "知乎蓝"
+  fontStyle: "宋体现代"
+  layoutType: "文字型"
+  prompt: >
+    A intellectual minimalist logo for a knowledge-sharing platform called "知乎 Zhihu".
+    The Chinese character "知" (knowledge) in a custom modern serif design, deep blue (#0066FF),
+    the character is simplified and geometric — the left radical resembles a speech bubble,
+    clean sans-serif Latin "ZHIHU" below, white background,
+    vector logo design, academic yet contemporary, centered composition,
+    knowledge brand identity, the blue conveys trust and depth, 1:1 format.
+
+- brand: "百度"
+  slug: "baidu"
+  description: "中国最大搜索引擎，熊掌标识，红蓝配色，技术驱动"
+  industry: "互联网/搜索"
+  style: "亲和科技"
+  colors: ["#2932E1", "#DE1F3E", "#FFFFFF"]
+  colorScheme: "蓝红双色"
+  fontStyle: "无衬线现代"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A recognizable technology logo for a search engine called "Baidu 百度".
+    A stylized bear paw print formed by four circular pads — three blue (#2932E1) at top,
+    one red (#DE1F3E) at bottom center, clean modern sans-serif brand name in deep blue,
+    white background, vector design, the paw print is friendly and memorable,
+    centered 1:1 composition, internet brand identity, simple and iconic.
+
+- brand: "茅台"
+  slug: "moutai"
+  description: "中国国酒，酱香白酒之王，飞天仙女 + 红白金经典配色"
+  industry: "白酒/奢侈品"
+  style: "经典奢华"
+  colors: ["#CC0000", "#D4AF37", "#FFFFFF"]
+  colorScheme: "红白金"
+  fontStyle: "中文楷体"
+  layoutType: "徽章型"
+  prompt: >
+    A prestigious luxury logo for China's national liquor brand called "MOUTAI 茅台".
+    A circular red emblem (#CC0000) with a flowing ribbon design incorporating a stylized flying goddess (飞天),
+    gold foil accents (#D4AF37) on the emblem border and ribbon,
+    elegant Chinese calligraphy brand name in deep red, cream background,
+    heraldic badge composition with classic proportions, vector design,
+    heritage luxury brand identity, centered 1:1 composition, timeless and regal.
+
+- brand: "元气森林"
+  slug: "genki-forest"
+  description: "新消费饮料黑马，日系设计语言，元气森林字体 + 绿色健康感"
+  industry: "饮料/消费品"
+  style: "日系清新"
+  colors: ["#4CAF50", "#81C784", "#1A1A1A"]
+  colorScheme: "森系绿"
+  fontStyle: "无衬线日系"
+  layoutType: "文字型"
+  prompt: >
+    A fresh Japanese-inspired logo for a healthy beverage brand called "Genki Forest 元气森林".
+    Bold rounded sans-serif brand name with a Japanese design sensibility, forest green (#4CAF50),
+    the characters "元" (energy) and "気" (spirit) have generous spacing, a subtle leaf accent on one character,
+    light spring green background accent (#81C784), dark charcoal secondary text,
+    vector design, clean and youthful, centered composition,
+    lifestyle beverage brand identity, minimal and vibrant, like a Japanese vending machine label.
+
+- brand: "蜜雪冰城"
+  slug: "mixue"
+  description: "中国最大茶饮连锁，雪王 IP 形象，红白配色，亲民性价比"
+  industry: "茶饮/快餐"
+  style: "亲民卡通"
+  colors: ["#E60012", "#FFFFFF", "#FFD700"]
+  colorScheme: "红白金"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A cheerful mascot logo for a popular beverage chain called "MIXUE 蜜雪冰城".
+    A cute cartoon snowman king wearing a golden crown (#FFD700), holding a red staff (#E60012),
+    rounded friendly shapes, the snowman has rosy cheeks and a warm smile,
+    bold rounded sans-serif brand name in red, white background,
+    vector design, mass-market approachable brand identity,
+    centered composition, joyful and memorable, like a modern fast-food mascot.
+
+- brand: "海底捞"
+  slug: "haidilao"
+  description: "中国火锅餐饮巨头，红色 Hi 字标识，极致服务体验"
+  industry: "餐饮/火锅"
+  style: "温暖友好"
+  colors: ["#D32F2F", "#FF5252", "#FFFFFF"]
+  colorScheme: "火锅红"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标型"
+  prompt: >
+    A warm friendly logo for a hot pot restaurant brand called "Haidilao 海底捞".
+    A bold red "Hi" greeting (#D32F2F) enclosed in a rounded speech bubble,
+    the letters are thick and rounded conveying hospitality, white background,
+    the speech bubble has a subtle shadow for depth,
+    vector design, restaurant brand identity, welcoming and casual,
+    centered 1:1 composition, the "Hi" doubles as a universal greeting.
+
+- brand: "青岛啤酒"
+  slug: "tsingtao"
+  description: "中国最知名啤酒品牌，回澜阁地标 + 绿色瓶身，百年经典"
+  industry: "酒类/啤酒"
+  style: "经典怀旧"
+  colors: ["#006633", "#1B8C44", "#D4AF37"]
+  colorScheme: "经典绿金"
+  fontStyle: "中文宋体"
+  layoutType: "徽章型"
+  prompt: >
+    A classic heritage logo for a century-old beer brand called "Tsingtao 青岛啤酒".
+    A circular green emblem (#006633) featuring the iconic Zhanqiao Pier pavilion (回澜阁) silhouette,
+    golden wheat and barley accents (#D4AF37) framing the scene, traditional Chinese serif brand name,
+    the composition is a formal heraldic badge with decorative ring border,
+    cream background, vector design with vintage poster aesthetic,
+    heritage beverage brand identity, centered 1:1 composition, timeless quality.
+
+- brand: "伊利"
+  slug: "yili"
+  description: "中国乳业领军品牌，蓝天绿草渐变，传递自然健康"
+  industry: "乳业/食品"
+  style: "自然健康"
+  colors: ["#0066CC", "#00B050", "#FFFFFF"]
+  colorScheme: "蓝天绿草"
+  fontStyle: "无衬线圆润"
+  layoutType: "文字型"
+  prompt: >
+    A natural healthy logo for a dairy brand called "Yili 伊利".
+    Bold rounded sans-serif brand name with a blue-to-green gradient (#0066CC to #00B050)
+    suggesting blue sky transitioning to green grassland, the characters have smooth curves,
+    a subtle leaf shape integrated into one stroke, white background,
+    vector design, fresh and trustworthy, centered composition,
+    food brand identity, conveying purity and nature, 1:1 format.
+
+- brand: "蒙牛"
+  slug: "mengniu"
+  description: "中国乳业双巨头之一，绿色牧场弧线，白色蒙牛字体"
+  industry: "乳业/食品"
+  style: "自然圆润"
+  colors: ["#00A651", "#66CC66", "#FFFFFF"]
+  colorScheme: "草原绿"
+  fontStyle: "无衬线圆润"
+  layoutType: "文字+图标组合型"
+  prompt: >
+    A natural pastoral logo for a dairy brand called "Mengniu 蒙牛".
+    A sweeping green arc (#00A651) evoking Mongolian grasslands with a grazing cow silhouette,
+    rounded sans-serif brand name in white on a green rectangular badge,
+    the arc curves like a grassland horizon, conveying vastness and purity,
+    vector design, pastoral brand identity, centered composition,
+    dairy food brand, simple and wholesome, 1:1 format.
+
+- brand: "比亚迪"
+  slug: "byd"
+  description: "中国新能源汽车全球销冠，BYD 椭圆形标识，科技蓝色"
+  industry: "汽车/新能源"
+  style: "科技工业"
+  colors: ["#003D79", "#005BAC", "#E60012"]
+  colorScheme: "科技蓝+中国红"
+  fontStyle: "无衬线几何"
+  layoutType: "文字型"
+  prompt: >
+    A technology-driven automotive logo for an EV brand called "BYD 比亚迪".
+    Bold geometric sans-serif letters "BYD" enclosed in a horizontal oval, deep navy blue (#003D79),
+    a subtle red accent line (#E60012) beneath suggesting Chinese heritage,
+    the oval has a metallic gradient finish, clean sharp typography,
+    white background, vector design, automotive brand identity,
+    centered composition, modern and industrial, 1:1 format.
+
+- brand: "理想汽车"
+  slug: "li-auto"
+  description: "中国高端新能源 SUV 品牌，中英文「理想」字体标，科技理性"
+  industry: "汽车/新能源"
+  style: "科技极简"
+  colors: ["#1A1A1A", "#0066CC", "#FFFFFF"]
+  colorScheme: "黑白蓝"
+  fontStyle: "无衬线现代"
+  layoutType: "文字型"
+  prompt: >
+    A clean minimalist automotive logo for an EV brand called "Li Auto 理想".
+    Chinese characters "理想" (ideal/dream) in a custom modern sans-serif with wide letter-spacing,
+    dark charcoal (#1A1A1A) primary with a small blue geometric accent (#0066CC),
+    the Latin "Li" is rendered in a matching weight, white background,
+    vector design, premium tech brand identity, centered composition,
+    no icon — pure wordmark logo, restrained and intellectual, 1:1 format.
+
+- brand: "小鹏汽车"
+  slug: "xpeng"
+  description: "中国智能电动车品牌，X 形翅膀标识，探索未来出行"
+  industry: "汽车/新能源"
+  style: "未来科技"
+  colors: ["#000000", "#00D2FF", "#FFFFFF"]
+  colorScheme: "黑+电光蓝"
+  fontStyle: "无衬线几何"
+  layoutType: "图标型"
+  prompt: >
+    A futuristic automotive logo for a smart EV brand called "XPENG 小鹏汽车".
+    A stylized letter "X" that transforms into a pair of wings or a soaring bird,
+    electric cyan accent (#00D2FF) on the tips against solid black (#000000),
+    the geometry is sharp and aerodynamic, conveying speed and intelligence,
+    bold sans-serif brand name, white background,
+    vector design, automotive tech brand identity, centered 1:1 composition.
+
+- brand: "吉利汽车"
+  slug: "geely"
+  description: "中国自主品牌汽车巨头，盾形蓝色 logo，稳健国际化"
+  industry: "汽车/制造"
+  style: "经典盾徽"
+  colors: ["#003D7A", "#0066B3", "#D4AF37"]
+  colorScheme: "蓝金盾徽"
+  fontStyle: "无衬线粗体"
+  layoutType: "徽章型"
+  prompt: >
+    A shield-emblem automotive logo for a car manufacturer called "Geely 吉利".
+    A hexagonal blue shield (#003D7A) with six segments forming a grid pattern,
+    golden trim (#D4AF37) outlining the shield edges, the grid references global expansion,
+    bold sans-serif brand name in dark blue, white background,
+    vector design with subtle metallic gradients, corporate automotive identity,
+    centered 1:1 composition, confident and international, heraldic quality.
+
+- brand: "顺丰速运"
+  slug: "sf-express"
+  description: "中国快递物流标杆，红黑配色 + 对勾符号，速度与信任"
+  industry: "物流/快递"
+  style: "高效工业"
+  colors: ["#E60012", "#1A1A1A", "#FFFFFF"]
+  colorScheme: "红黑工业"
+  fontStyle: "无衬线粗体"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A fast industrial logo for an express delivery brand called "SF Express 顺丰速运".
+    A bold red checkmark (#E60012) integrated with the letter "S" forming a dynamic forward-leaning shape,
+    the checkmark conveys reliability and completion, heavy sans-serif brand name in black (#1A1A1A),
+    white background, vector design, logistics brand identity,
+    centered composition, conveying speed and precision, 1:1 format.
+
+- brand: "菜鸟"
+  slug: "cainiao"
+  description: "阿里巴巴旗下智慧物流平台，橙色飞鸟标识，数字化物流"
+  industry: "物流/科技"
+  style: "极简科技"
+  colors: ["#FF6600", "#FF8800", "#FFFFFF"]
+  colorScheme: "菜鸟橙"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A smart technology logo for a logistics platform called "Cainiao 菜鸟".
+    A minimalist orange bird silhouette (#FF6600) formed by two sweeping curves — one for the body, one for the wing,
+    the bird is in mid-flight suggesting speed and network connectivity, rounded sans-serif brand name in warm gray,
+    white background, vector design with subtle gradient on the bird wing,
+    digital logistics brand identity, centered 1:1 composition, simple and clever.
+
+- brand: "格力"
+  slug: "gree"
+  description: "中国空调行业霸主，蓝色圆形标识，核心科技"
+  industry: "家电/制造"
+  style: "工业可靠"
+  colors: ["#003D7A", "#005BAC", "#FFFFFF"]
+  colorScheme: "格力蓝"
+  fontStyle: "无衬线粗体"
+  layoutType: "文字型"
+  prompt: >
+    A solid industrial logo for an appliance brand called "GREE 格力".
+    Bold sans-serif brand name in deep navy blue (#003D7A), the letters are heavy and confident,
+    a subtle circular ring element suggesting precision engineering and the globe,
+    clean geometric typography with sharp terminals, white background,
+    vector design, manufacturing brand identity, centered composition,
+    conveying durability and technological core competence, 1:1 format.
+
+- brand: "海尔"
+  slug: "haier"
+  description: "中国家电全球化品牌，蓝色中英文字标 + 兄弟形象"
+  industry: "家电/消费电子"
+  style: "亲和科技"
+  colors: ["#0066CC", "#00A0E9", "#FFFFFF"]
+  colorScheme: "海尔蓝"
+  fontStyle: "无衬线圆润"
+  layoutType: "文字型"
+  prompt: >
+    A friendly technology logo for a global appliance brand called "Haier 海尔".
+    Rounded sans-serif brand name in gradient blue (#0066CC to #00A0E9),
+    the characters have soft curves conveying approachability,
+    a subtle pair of abstract human figures (the Haier Brothers) integrated into the wordmark,
+    white background, vector design, consumer electronics brand identity,
+    centered composition, warm and reliable, 1:1 format.
+
+- brand: "美的"
+  slug: "midea"
+  description: "中国家电龙头，蓝色圆环标识，美好生活理念"
+  industry: "家电/智能家居"
+  style: "圆润科技"
+  colors: ["#0066CC", "#0099FF", "#FFFFFF"]
+  colorScheme: "美的蓝"
+  fontStyle: "无衬线圆润"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    A harmonious smart home logo for an appliance brand called "Midea 美的".
+    A blue circular ring (#0066CC) symbolizing completeness and the globe, within it a subtle abstract
+    "M" shape formed by flowing curves, gradient from deep to bright blue (#0066CC to #0099FF),
+    rounded sans-serif brand name in matching blue, white background,
+    vector design, home appliance brand identity, centered 1:1 composition,
+    conveying smart living and global reach, balanced and modern.
+
+- brand: "方太"
+  slug: "fotile"
+  description: "中国高端厨电品牌，金色「方」字标识，东方生活美学"
+  industry: "厨电/家居"
+  style: "东方雅致"
+  colors: ["#C9A963", "#B8860B", "#1A1A1A"]
+  colorScheme: "厨电金"
+  fontStyle: "中文宋体"
+  layoutType: "文字+图标组合型"
+  prompt: >
+    An elegant oriental kitchen appliance logo for a premium brand called "FOTILE 方太".
+    The Chinese character "方" (square/integrity) in a custom serif design, warm gold (#C9A963),
+    the character is enclosed in a subtle rounded square frame, dark charcoal secondary text (#1A1A1A),
+    the gold has a subtle metallic sheen, cream background,
+    vector design, premium home brand identity, centered composition,
+    refined Eastern aesthetics meeting modern kitchen technology, 1:1 format.
+
+- brand: "波司登"
+  slug: "bosideng"
+  description: "中国羽绒服全球领先品牌，雪山标识，温暖与科技"
+  industry: "服装/户外"
+  style: "户外机能"
+  colors: ["#0066CC", "#FFFFFF", "#E60012"]
+  colorScheme: "冰雪蓝白红"
+  fontStyle: "无衬线粗体"
+  layoutType: "图标+文字组合型"
+  prompt: >
+    An outdoor performance logo for a down jacket brand called "Bosideng 波司登".
+    A stylized snow-capped mountain peak in ice blue (#0066CC) with a red sun/accent (#E60012) rising behind it,
+    the mountain is formed by three sharp geometric triangles, bold sans-serif brand name in deep blue,
+    white background, vector design conveying warmth and extreme cold protection,
+    outdoor apparel brand identity, centered 1:1 composition, rugged yet premium.
+
+- brand: "海澜之家"
+  slug: "hla"
+  description: "中国男装国民品牌，蓝色 HLA 字标，一年逛两次"
+  industry: "服装/男装"
+  style: "商务现代"
+  colors: ["#003D7A", "#1A5BA0", "#FFFFFF"]
+  colorScheme: "商务蓝"
+  fontStyle: "无衬线几何"
+  layoutType: "文字型"
+  prompt: >
+    A business modern logo for a menswear brand called "HLA 海澜之家".
+    Bold geometric sans-serif letters "HLA" in deep navy blue (#003D7A),
+    the letterforms have precise proportions with generous spacing, conveying confidence,
+    Chinese brand name in matching weight below, white background,
+    vector design, men's fashion retail brand identity, centered composition,
+    clean and masculine, 1:1 format, like a premium department store wordmark.
+
+- brand: "鄂尔多斯"
+  slug: "erdos"
+  description: "中国羊绒奢侈品牌，温暖大地色系，蒙古草原风情"
+  industry: "服装/奢侈品"
+  style: "草原自然"
+  colors: ["#8B7355", "#D2B48C", "#F5F0E6"]
+  colorScheme: "羊绒暖棕"
+  fontStyle: "中文楷体"
+  layoutType: "文字型"
+  prompt: >
+    A warm luxury logo for a cashmere brand called "ERDOS 鄂尔多斯".
+    Elegant Chinese calligraphy-style brand name in warm camel brown (#8B7355),
+    the characters flow with natural grace suggesting fine wool fibers,
+    a subtle abstract ram's horn curve integrated into one stroke, cream background (#F5F0E6),
+    vector design, heritage luxury fashion identity, centered composition,
+    conveying softness and Mongolian grassland heritage, 1:1 format.
+
+- brand: "完美日记"
+  slug: "perfect-diary"
+  description: "中国新锐彩妆品牌，极简黑白标识，探索美的无限可能"
+  industry: "美妆/彩妆"
+  style: "时尚极简"
+  colors: ["#000000", "#FFFFFF", "#FF69B4"]
+  colorScheme: "黑白粉"
+  fontStyle: "无衬线极简"
+  layoutType: "文字+图标组合型"
+  prompt: >
+    A chic minimalist logo for a cosmetics brand called "Perfect Diary 完美日记".
+    The letters "PD" intertwined in a sleek monogram, pure black (#000000) with a single pink heart accent (#FF69B4),
+    the monogram is elegant and fashion-forward, clean sans-serif brand name below,
+    white background, vector design, beauty brand identity,
+    centered composition, like a French fashion house logo, 1:1 format.
+
+- brand: "薇诺娜"
+  slug: "winona"
+  description: "中国功效护肤第一品牌，医学蓝绿色标，皮肤学级护肤"
+  industry: "护肤/医疗"
+  style: "医学极简"
+  colors: ["#008080", "#20B2AA", "#FFFFFF"]
+  colorScheme: "医学蓝绿"
+  fontStyle: "无衬线洁净"
+  layoutType: "文字型"
+  prompt: >
+    A clinical minimalist logo for a dermatological skincare brand called "Winona 薇诺娜".
+    Clean sans-serif brand name in medical teal (#008080), the letterforms are precise and sterile,
+    a subtle cross/plus symbol referencing dermatology integrated into the "W",
+    white background, vector design, medical-grade skincare identity,
+    centered composition, conveying clinical efficacy and skin safety, 1:1 format.
+
+- brand: "米哈游"
+  slug: "mihoyo"
+  description: "中国游戏新势力，《原神》开发商，日系二次元风格"
+  industry: "游戏/娱乐"
+  style: "日系幻想"
+  colors: ["#1E3A8A", "#60A5FA", "#F59E0B"]
+  colorScheme: "星空蓝金"
+  fontStyle: "无衬线幻想"
+  layoutType: "文字型"
+  prompt: >
+    A fantasy-inspired logo for a game studio called "miHoYo 米哈游".
+    Custom stylized lettering with a Japanese anime aesthetic, deep cosmic blue (#1E3A8A)
+    with a golden star accent (#F59E0B) floating above the "i", the typography has subtle serif flair,
+    the characters suggest magic and adventure, white background,
+    vector design, gaming brand identity, centered composition,
+    like a fantasy RPG title screen logo, 1:1 format.
+
+- brand: "蔚来已来"
+  slug: "nio-life"
+  description: "蔚来子品牌生活美学，高端出行生活方式延伸品"
+  industry: "生活方式/出行"
+  style: "高端生活"
+  colors: ["#00B4D8", "#1A1A1A", "#F5F5F0"]
+  colorScheme: "极地蓝灰"
+  fontStyle: "无衬线几何"
+  layoutType: "文字型"
+  prompt: >
+    A premium lifestyle logo for a mobility-inspired brand called "NIO Life".
+    Clean geometric sans-serif lettering in deep charcoal (#1A1A1A) with a cyan accent line (#00B4D8),
+    the word "Life" has extra letter-spacing evoking luxury fashion labels, warm off-white background (#F5F5F0),
+    vector design, premium lifestyle brand identity, centered composition,
+    restrained and sophisticated, like a Scandinavian design house, 1:1 format.
+
+- brand: "泡泡骚"
+  slug: "pop-saw"
+  description: "新潮手机支架潮玩品牌，波普撞色，Z 世代个性表达"
+  industry: "潮玩/数码配件"
+  style: "波普撞色"
+  colors: ["#FF1493", "#FFD700", "#00CED1", "#1A1A1A"]
+  colorScheme: "荧光撞色"
+  fontStyle: "无衬线粗体"
+  layoutType: "文字型"
+  prompt: >
+    A bold pop-culture logo for a trendy phone accessory brand called "POP SAW 泡泡骚".
+    Chunky black outlined letters with vibrant fill colors — hot pink (#FF1493), gold (#FFD700), and cyan (#00CED1),
+    the typography has a 3D drop shadow effect, comic book style energy,
+    the characters are playful and slightly irregular, white background,
+    vector design with graffiti/pop art influence, Gen-Z brand identity,
+    centered composition, loud and unapologetic, 1:1 format.
+
+- brand: "古茗"
+  slug: "guming"
+  description: "中国新茶饮十强品牌，古典茶杯标识，江南茶饮文化"
+  industry: "茶饮"
+  style: "江南雅致"
+  colors: ["#5D4037", "#8D6E63", "#FFF8E1"]
+  colorScheme: "茶韵暖棕"
+  fontStyle: "中文楷体"
+  layoutType: "徽章型"
+  prompt: >
+    An elegant tea house logo for a beverage brand called "Guming 古茗".
+    A traditional Chinese teacup silhouette in warm brown (#5D4037), steam rising in delicate swirls,
+    framed within a circular badge with subtle bamboo leaf accents, cream background (#FFF8E1),
+    calligraphic brand name in matching brown, vector design with classical proportions,
+    tea culture brand identity, centered 1:1 composition, poetic and timeless.
+
+- brand: "晨光文具"
+  slug: "m-g"
+  description: "中国文具第一品牌，彩色 M&G 标识，创意书写工具"
+  industry: "文具/教育"
+  style: "创意活泼"
+  colors: ["#FF6B35", "#00A8E8", "#7B2D8E", "#FFD100"]
+  colorScheme: "彩虹四色"
+  fontStyle: "无衬线活泼"
+  layoutType: "文字型"
+  prompt: >
+    A creative colorful logo for a stationery brand called "M&G 晨光文具".
+    Playful rounded sans-serif letters "M&G" where each letter has a different vibrant color —
+    orange (#FF6B35), blue (#00A8E8), purple (#7B2D8E), yellow (#FFD100),
+    the ampersand is a hand-drawn style curve, white background,
+    vector design, education and creativity brand identity, centered composition,
+    youthful and energetic, like a creative workshop sign, 1:1 format.

@@ -1,0 +1,48 @@
+{{ define "main" }}
+<section class="taxonomy-page">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="{{ .Site.Home.RelPermalink }}">首页</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
+
+    <div class="taxonomy-header">
+      <h1>{{ .Title }} Logo 设计灵感</h1>
+      <p class="text-body">{{ len .Pages }} 个案例</p>
+    </div>
+
+    <div class="case-grid">
+      {{ range .Pages }}
+        {{ partial "case-card.html" (dict "brand" .Params.brand "slug" .Params.slug "RelPermalink" .RelPermalink "style" .Params.style "industry" .Params.industry "colors" .Params.colors "layoutType" .Params.layoutType) }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "head_extra" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ .Title }} Logo 设计灵感",
+  "description": "浏览 {{ .Title }} 风格的品牌 Logo 设计案例，获取 AI 生成提示词。",
+  "url": "{{ .Permalink }}",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {{ range $i, $p := .Pages }}
+      {{ if $i }},{{ end }}
+      {
+        "@type": "CreativeWork",
+        "position": {{ add $i 1 }},
+        "name": "{{ $p.Params.brand }} Logo 设计",
+        "url": "{{ $p.Permalink }}"
+      }
+      {{ end }}
+    ]
+  }
+}
+</script>
+{{ end }}
