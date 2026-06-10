@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  {{ partial "head.html" . }}
+  {{ partial "structured-data.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main id="main-content">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="{{ "js/copy.js" | relURL }}" defer></script>
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

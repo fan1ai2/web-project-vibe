@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{ $title := .Title }}
+{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+{{ if isset .Params "seo" }}{{ if isset .Params.seo "title" }}{{ $title = printf "%s — %s" .Params.seo.title .Site.Title }}{{ end }}{{ end }}
+{{ if eq .Kind "taxonomy" }}{{ $title = printf "%s — %s" .Title .Site.Title }}{{ end }}
+
+<title>{{ $title }}</title>
+
+{{ $desc := .Site.Params.description }}
+{{ if .Params.seo.description }}{{ $desc = .Params.seo.description }}{{ end }}
+{{ if .Summary }}{{ $desc = .Summary | plainify | truncate 160 }}{{ end }}
+<meta name="description" content="{{ $desc }}">
+
+{{ $keywords := delimit .Site.Data.site.keywords ", " }}
+{{ if .Params.tags }}<meta name="keywords" content="{{ delimit .Params.tags ", " }}">{{ else }}<meta name="keywords" content="{{ $keywords }}">{{ end }}
+
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="zh-CN" href="{{ .Permalink }}">
+
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ with .Site.Params.ogImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<meta property="og:locale" content="zh_CN">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+{{ with .OutputFormats.Get "rss" }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">{{ end }}
+<link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">
