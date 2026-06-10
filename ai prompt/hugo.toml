@@ -1,0 +1,24 @@
+baseURL = "https://aiprompt.cc/"
+languageCode = "zh-CN"
+title = "AI Prompt — 高质量中文AI提示词库"
+enableRobotsTXT = true
+enableEmoji = false
+hasCJKLanguage = true
+summaryLength = 80
+
+[params]
+  description = "精选中文AI提示词库，涵盖写作、编程、设计、营销等8大分类。支持一键复制，适用ChatGPT、Claude、DeepSeek等主流模型。"
+  ogImage = "/icons/og-image.svg"
+  siteAuthor = "AI Prompt"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
