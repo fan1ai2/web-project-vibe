@@ -1,0 +1,149 @@
+{{ define "title" }}{{ .Params.title }}{{ end }}
+{{ define "description" }}{{ .Params.description }}{{ end }}
+{{ define "main" }}
+<main class="auth-page">
+  <div class="auth-container">
+    <div class="auth-tabs">
+      <button class="auth-tab active" onclick="switchAuthTab('login')" id="login-tab">登录</button>
+      <button class="auth-tab" onclick="switchAuthTab('register')" id="register-tab">注册</button>
+    </div>
+    <div class="auth-form-wrapper">
+      <form class="auth-form active" id="login-form" onsubmit="handleLogin(event)">
+        <h2>欢迎回来</h2>
+        <p class="auth-subtitle">登录你的账号，继续规划旅行</p>
+        <label class="auth-label" for="login-email">邮箱</label>
+        <input type="email" id="login-email" class="auth-input" placeholder="请输入邮箱地址" required>
+        <label class="auth-label" for="login-password">密码</label>
+        <input type="password" id="login-password" class="auth-input" placeholder="请输入密码" required>
+        <div class="auth-captcha" id="login-captcha-section">
+          <label class="auth-label" for="login-captcha">验证码</label>
+          <div class="auth-captcha-row">
+            <input type="text" id="login-captcha" class="auth-input auth-captcha-input" placeholder="请输入验证码" maxlength="6" autocomplete="off">
+            <img id="login-captcha-img" class="auth-captcha-img" src="" alt="验证码" title="点击刷新">
+          </div>
+        </div>
+        <div class="auth-options">
+          <label class="auth-checkbox"><input type="checkbox"> 记住我</label>
+          <a href="#" class="auth-link">忘记密码？</a>
+        </div>
+        <button type="submit" class="btn-primary auth-submit">登录</button>
+        <p class="auth-switch">还没有账号？<a href="#" onclick="switchAuthTab('register')">立即注册</a></p>
+      </form>
+      <form class="auth-form" id="register-form" onsubmit="handleRegister(event)">
+        <h2>创建账号</h2>
+        <p class="auth-subtitle">注册即可收藏攻略、同步旅行计划</p>
+        <label class="auth-label" for="reg-name">用户名</label>
+        <input type="text" id="reg-name" class="auth-input" placeholder="请输入用户名" required>
+        <label class="auth-label" for="reg-email">邮箱</label>
+        <input type="email" id="reg-email" class="auth-input" placeholder="请输入邮箱地址" required>
+        <label class="auth-label" for="reg-password">密码</label>
+        <input type="password" id="reg-password" class="auth-input" placeholder="至少8位，包含字母和数字" required minlength="8">
+        <label class="auth-label" for="reg-confirm">确认密码</label>
+        <input type="password" id="reg-confirm" class="auth-input" placeholder="再次输入密码" required>
+        <div class="auth-captcha" id="register-captcha-section">
+          <label class="auth-label" for="reg-captcha">验证码</label>
+          <div class="auth-captcha-row">
+            <input type="text" id="reg-captcha" class="auth-input auth-captcha-input" placeholder="请输入验证码" maxlength="6" autocomplete="off">
+            <img id="reg-captcha-img" class="auth-captcha-img" src="" alt="验证码" title="点击刷新">
+          </div>
+        </div>
+        <button type="submit" class="btn-primary auth-submit">注册</button>
+        <p class="auth-switch">已有账号？<a href="#" onclick="switchAuthTab('login')">立即登录</a></p>
+      </form>
+    </div>
+  </div>
+</main>
+<script src="../js/api.js"></script>
+<script>
+var loginCaptchaId = '';
+var regCaptchaId = '';
+
+function switchAuthTab(tab) {
+  document.querySelectorAll('.auth-tab').forEach(function(t) { t.classList.remove('active'); });
+  document.querySelectorAll('.auth-form').forEach(function(f) { f.classList.remove('active'); });
+  document.getElementById(tab + '-tab').classList.add('active');
+  document.getElementById(tab + '-form').classList.add('active');
+  if (tab === 'login') refreshCaptcha('login');
+  else refreshCaptcha('register');
+}
+
+function refreshCaptcha(form) {
+  API.captcha().then(function(data) {
+    var id = data.data.captcha_id;
+    var img = data.data.captcha_image;
+    if (form === 'login') {
+      loginCaptchaId = id;
+      document.getElementById('login-captcha-img').src = img;
+    } else {
+      regCaptchaId = id;
+      document.getElementById('reg-captcha-img').src = img;
+    }
+  }).catch(function() {
+    showToast('验证码加载失败', 'error');
+  });
+}
+
+document.getElementById('login-captcha-img').addEventListener('click', function() { refreshCaptcha('login'); });
+document.getElementById('reg-captcha-img').addEventListener('click', function() { refreshCaptcha('register'); });
+
+function handleLogin(e) {
+  e.preventDefault();
+  var email = document.getElementById('login-email').value.trim();
+  var pwd = document.getElementById('login-password').value;
+  var captcha = document.getElementById('login-captcha').value.trim();
+  if (!email || !pwd) return showToast('请填写邮箱和密码', 'error');
+
+  var btn = document.querySelector('#login-form .auth-submit');
+  btn.disabled = true; btn.textContent = '登录中...';
+
+  API.login(email, pwd, captcha ? loginCaptchaId : '', captcha).then(function(data) {
+    showToast('登录成功', 'success');
+    localStorage.setItem('user', JSON.stringify(data.data.member || data.data));
+    setTimeout(function() { window.location.href = '/'; }, 800);
+  }).catch(function(err) {
+    showToast(err.message || '登录失败', 'error');
+    refreshCaptcha('login');
+    document.getElementById('login-captcha').value = '';
+  }).finally(function() {
+    btn.disabled = false; btn.textContent = '登录';
+  });
+}
+
+function handleRegister(e) {
+  e.preventDefault();
+  var email = document.getElementById('reg-email').value.trim();
+  var name = document.getElementById('reg-name').value.trim();
+  var pwd = document.getElementById('reg-password').value;
+  var confirm = document.getElementById('reg-confirm').value;
+  var captcha = document.getElementById('reg-captcha').value.trim();
+  if (!email || !name || !pwd) return showToast('请填写所有字段', 'error');
+  if (pwd !== confirm) return showToast('两次密码不一致', 'error');
+  if (pwd.length < 8) return showToast('密码至少8位', 'error');
+
+  var btn = document.querySelector('#register-form .auth-submit');
+  btn.disabled = true; btn.textContent = '注册中...';
+
+  API.register(email, pwd, captcha ? regCaptchaId : '', captcha).then(function(data) {
+    showToast('注册成功，请登录', 'success');
+    switchAuthTab('login');
+  }).catch(function(err) {
+    showToast(err.message || '注册失败', 'error');
+    refreshCaptcha('register');
+    document.getElementById('reg-captcha').value = '';
+  }).finally(function() {
+    btn.disabled = false; btn.textContent = '注册';
+  });
+}
+
+function showToast(msg, type) {
+  var t = document.createElement('div');
+  t.className = 'toast' + (type === 'error' ? ' toast--error' : '');
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(function(){ t.remove(); }, 2500);
+}
+
+// 初始加载验证码
+refreshCaptcha('login');
+</script>
+{{ end }}

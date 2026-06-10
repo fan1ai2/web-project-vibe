@@ -1,0 +1,19 @@
+<div class="city-section" id="transport">
+  <h2><span class="section-num">04</span>交通出行</h2>
+  <div class="transport-block">
+    <div class="transport-item">
+      <h4>机场交通</h4>
+      <p>{{ .Params.transport.airport | safeHTML }}</p>
+    </div>
+    <div class="transport-item">
+      <h4>市内地铁</h4>
+      <p>{{ .Params.transport.metro | safeHTML }}</p>
+    </div>
+    {{ if .Params.transport.tips }}
+    <div class="transport-item">
+      <h4>出行贴士</h4>
+      <p>{{ .Params.transport.tips | safeHTML }}</p>
+    </div>
+    {{ end }}
+  </div>
+</div>

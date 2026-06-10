@@ -1,0 +1,91 @@
+<script>
+const PROVINCE_NAMES = {
+  huabei:'华北', huadong:'华东', huanan:'华南', xinan:'西南',
+  xibei:'西北', huazhong:'华中', dongbei:'东北', gangaotai:'港澳台'
+};
+const cities = [
+  {name:'北京',province:'huabei',unlocked:true,slug:'beijing'},
+  {name:'天津',province:'huabei'},{name:'石家庄',province:'huabei'},{name:'太原',province:'huabei'},
+  {name:'呼和浩特',province:'huabei'},{name:'秦皇岛',province:'huabei'},{name:'大同',province:'huabei'},
+  {name:'承德',province:'huabei'},{name:'唐山',province:'huabei'},{name:'保定',province:'huabei'},
+  {name:'鄂尔多斯',province:'huabei'},{name:'邯郸',province:'huabei'},
+  {name:'上海',province:'huadong',unlocked:true,slug:'shanghai'},
+  {name:'杭州',province:'huadong',unlocked:true,slug:'hangzhou'},
+  {name:'南京',province:'huadong'},{name:'苏州',province:'huadong'},{name:'宁波',province:'huadong'},
+  {name:'厦门',province:'huadong'},{name:'青岛',province:'huadong'},{name:'济南',province:'huadong'},
+  {name:'合肥',province:'huadong'},{name:'无锡',province:'huadong'},{name:'温州',province:'huadong'},
+  {name:'福州',province:'huadong'},{name:'泉州',province:'huadong'},{name:'南昌',province:'huadong'},
+  {name:'徐州',province:'huadong'},
+  {name:'广州',province:'huanan',unlocked:true,slug:'guangzhou'},
+  {name:'深圳',province:'huanan'},{name:'珠海',province:'huanan'},{name:'佛山',province:'huanan'},
+  {name:'东莞',province:'huanan'},{name:'海口',province:'huanan'},{name:'三亚',province:'huanan'},
+  {name:'桂林',province:'huanan'},{name:'南宁',province:'huanan'},{name:'北海',province:'huanan'},
+  {name:'惠州',province:'huanan'},
+  {name:'成都',province:'xinan',unlocked:true,slug:'chengdu'},
+  {name:'重庆',province:'xinan'},{name:'昆明',province:'xinan'},{name:'贵阳',province:'xinan'},
+  {name:'拉萨',province:'xinan'},{name:'大理',province:'xinan'},{name:'丽江',province:'xinan'},
+  {name:'西双版纳',province:'xinan'},{name:'遵义',province:'xinan'},
+  {name:'西安',province:'xibei',unlocked:true,slug:'xian'},
+  {name:'兰州',province:'xibei'},{name:'西宁',province:'xibei'},{name:'银川',province:'xibei'},
+  {name:'乌鲁木齐',province:'xibei'},{name:'敦煌',province:'xibei'},{name:'喀什',province:'xibei'},
+  {name:'延安',province:'xibei'},
+  {name:'武汉',province:'huazhong'},{name:'长沙',province:'huazhong'},{name:'郑州',province:'huazhong'},
+  {name:'洛阳',province:'huazhong'},{name:'开封',province:'huazhong'},{name:'张家界',province:'huazhong'},
+  {name:'岳阳',province:'huazhong'},{name:'襄阳',province:'huazhong'},
+  {name:'哈尔滨',province:'dongbei'},{name:'长春',province:'dongbei'},{name:'沈阳',province:'dongbei'},
+  {name:'大连',province:'dongbei'},{name:'吉林市',province:'dongbei'},{name:'延边',province:'dongbei'},
+  {name:'丹东',province:'dongbei'},{name:'齐齐哈尔',province:'dongbei'},
+  {name:'香港',province:'gangaotai'},{name:'澳门',province:'gangaotai'},{name:'台北',province:'gangaotai'},
+  {name:'高雄',province:'gangaotai'},{name:'台中',province:'gangaotai'},{name:'花莲',province:'gangaotai'},
+  {name:'垦丁',province:'gangaotai'}
+];
+
+let activeProvince = null;
+
+function getFilteredCities() {
+  var filtered = cities;
+  if (activeProvince) { filtered = filtered.filter(function(c) { return c.province === activeProvince; }); }
+  var q = (document.getElementById('city-search').value || '').trim().toLowerCase();
+  if (q) {
+    filtered = filtered.filter(function(c) {
+      return c.name.indexOf(q) !== -1 || c.province.indexOf(q) !== -1 || (PROVINCE_NAMES[c.province] || '').indexOf(q) !== -1;
+    });
+  }
+  return filtered;
+}
+
+function showDropdown() {
+  var dd = document.getElementById('search-dropdown');
+  var results = getFilteredCities();
+  if (results.length === 0) {
+    dd.innerHTML = '<div class="search-dropdown-empty">没有匹配的城市，换个关键词试试</div>';
+  } else {
+    dd.innerHTML = results.map(function(c) {
+      var href = c.unlocked ? '/cities/' + c.slug + '/' : '/coming-soon/';
+      return '<div class="search-dropdown-item" onclick="location.href=\'' + href + '\'" role="link" tabindex="0" aria-label="' + c.name + '">'
+        + '<span class="sdi-name">' + c.name + '</span>'
+        + '<span class="sdi-province">' + (PROVINCE_NAMES[c.province] || '') + '</span></div>';
+    }).join('');
+  }
+  dd.classList.add('active');
+}
+
+function filterDropdown() { showDropdown(); }
+function hideDropdown() { document.getElementById('search-dropdown').classList.remove('active'); }
+
+function switchProvince(province) {
+  activeProvince = (activeProvince === province) ? null : province;
+  document.getElementById('city-search').value = '';
+  document.querySelectorAll('.province-chip').forEach(function(chip) {
+    chip.classList.toggle('active', chip.dataset.province === activeProvince);
+  });
+  showDropdown();
+}
+
+document.addEventListener('click', function(e) {
+  if (!document.getElementById('search-wrapper').contains(e.target)) { hideDropdown(); }
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') { hideDropdown(); }
+});
+</script>

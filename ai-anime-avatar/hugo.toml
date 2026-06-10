@@ -1,0 +1,32 @@
+baseURL = "/"
+languageCode = "zh-CN"
+defaultContentLanguage = "zh"
+title = "漫改"
+disableKinds = ["taxonomy", "term"]
+
+[build]
+  writeStats = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[minify]
+  disableXML = false
+  minifyOutput = true
+
+[languages]
+  [languages.zh]
+    languageCode = "zh-CN"
+    languageName = "中文"
+    weight = 1
+    contentDir = "content/zh"
+  [languages.en]
+    languageCode = "en-US"
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+  [languages.ja]
+    languageCode = "ja-JP"
+    languageName = "日本語"
+    weight = 3
+    contentDir = "content/ja"

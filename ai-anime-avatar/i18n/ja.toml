@@ -1,0 +1,236 @@
+[siteTitle]
+other = "漫改"
+
+[siteTagline]
+other = "あなただけのアニメアバターをワンクリックで"
+
+[navHome]
+other = "ホーム"
+
+[navFeatures]
+other = "スタイル"
+
+[navHowItWorks]
+other = "使い方"
+
+[navPricing]
+other = "料金"
+
+[navFAQ]
+other = "よくある質問"
+
+[heroTitle]
+other = "あなたの写真を<br><span>アニメ風</span>に変換"
+
+[heroSubtitle]
+other = "写真をアップロードするだけで、AIが5秒で6種類のアニメアバターを生成。日本風、韓国風、アメコミ、ピクセルアートなど。"
+
+[heroCTA]
+other = "無料で始める"
+
+[heroBefore]
+other = "元写真"
+
+[heroAfter]
+other = "生成後"
+
+[showcaseTitle]
+other = "6種類のアニメスタイル"
+
+[showcaseSubtitle]
+other = "各スタイルは最適な結果のために調整されています"
+
+[styleJP]
+other = "日本風"
+
+[styleKR]
+other = "韓国風"
+
+[styleUS]
+other = "アメコミ"
+
+[styleQ]
+other = "ちびキャラ"
+
+[stylePixel]
+other = "ピクセル"
+
+[styleCyber]
+other = "サイバーパンク"
+
+[howTitle]
+other = "たった3ステップ"
+
+[howSubtitle]
+other = "わずか1分で完了"
+
+[howStep1Title]
+other = "写真をアップロード"
+
+[howStep1Desc]
+other = "鮮明な正面写真を選んでください。JPG/PNG/WebP対応"
+
+[howStep2Title]
+other = "スタイルを選択"
+
+[howStep2Desc]
+other = "6種類からお好みのスタイルを選ぶだけ"
+
+[howStep3Title]
+other = "アバターをダウンロード"
+
+[howStep3Desc]
+other = "数秒で高画質アバターをダウンロード、友達と共有"
+
+[uploadTitle]
+other = "写真をアップロードして開始"
+
+[uploadSubtitle]
+other = "ドラッグ＆ドロップまたはクリック。 JPG/PNG/WebP、最大10MB"
+
+[uploadDropzone]
+other = "ここに画像をドロップ"
+
+[uploadOr]
+other = "または"
+
+[uploadBrowse]
+other = "ファイルを選択"
+
+[uploadGenerating]
+other = "AIが生成中..."
+
+[uploadFreeLeft]
+other = "本日の残り無料回数"
+
+[resultsTitle]
+other = "あなたのアニメアバター"
+
+[resultsWatermark]
+other = "低解像プレビュー"
+
+[resultsDownload]
+other = "高画質をDL"
+
+[resultsShare]
+other = "共有"
+
+[pricingTitle]
+other = "あなたに合ったプラン"
+
+[pricingSubtitle]
+other = "透明な価格、隠れた費用なし"
+
+[pricingFree]
+other = "毎日3回無料、クレジットカード不要"
+
+[comparisonTitle]
+other = "選ばれる理由"
+
+[comparisonSubtitle]
+other = "他のAIアバターツールと比較"
+
+[testimonialsTitle]
+other = "ユーザーの声"
+
+[testimonialsSubtitle]
+other = "実際のユーザーからの評価"
+
+[faqTitle]
+other = "よくある質問"
+
+[faqSubtitle]
+other = "知りたいことがすべてここに"
+
+[footerDesc]
+other = "AIアニメアバター — AI技術であなたの写真を美しいアニメ風アバターに変換します。"
+
+[footerProduct]
+other = "製品"
+
+[footerCompany]
+other = "会社概要"
+
+[footerLegal]
+other = "法的情報"
+
+[footerCopyright]
+other = "AI アニメアバター。全著作権所有。"
+
+[paymentTitle]
+other = "お支払い確認"
+
+[paymentEmail]
+other = "メールアドレス"
+
+[paymentMethod]
+other = "お支払い方法"
+
+[paymentAlipay]
+other = "アリペイ"
+
+[paymentWechat]
+other = "WeChatペイ"
+
+[paymentConfirm]
+other = "支払いを確認"
+
+[shareTitle]
+other = "友達に共有"
+
+[shareWeibo]
+other = "Twitterで共有"
+
+[shareCopy]
+other = "リンクをコピー"
+
+[shareCopied]
+other = "コピーしました！"
+
+[shareFreeCount]
+other = "共有で+1無料回数"
+
+[toastLimitReached]
+other = "本日の無料回数を使い切りました。共有で追加回数を獲得！"
+
+[toastUploadSuccess]
+other = "写真をアップロードしました。生成中..."
+
+[toastGenerateDone]
+other = "アバター生成完了！"
+
+[authTitle]
+other = "ログイン / 登録"
+
+[authLogin]
+other = "ログイン"
+
+[authRegister]
+other = "登録"
+
+[authEmail]
+other = "メールアドレス"
+
+[authPassword]
+other = "パスワード"
+
+[authConfirm]
+other = "パスワード確認"
+
+[authForgot]
+other = "パスワードをお忘れ？"
+
+[authOr]
+other = "または"
+
+[authGoogle]
+other = "Googleでログイン"
+
+[authGithub]
+other = "GitHubでログイン"
+
+[authClose]
+other = "閉じる"
+
+[langSwitch]
+other = "言語"

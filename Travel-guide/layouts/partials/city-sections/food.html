@@ -1,0 +1,14 @@
+<div class="city-section" id="food">
+  <h2><span class="section-num">03</span>美食推荐</h2>
+  <div class="food-list">
+    {{ range .Params.food }}
+    <div class="food-item">
+      <div class="food-content">
+        <h3>{{ .name }}<span class="food-price">&mdash; 人均{{ .price }}</span></h3>
+        <p>{{ .description }}</p>
+        <div class="food-restaurant">{{ .restaurant }}</div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

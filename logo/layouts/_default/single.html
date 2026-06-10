@@ -1,0 +1,99 @@
+{{ define "main" }}
+{{ $data := .Params }}
+<article class="case-detail">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="面包屑导航">
+      <a href="{{ .Site.Home.RelPermalink }}">首页</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{{ .Params.brand }}</span>
+    </nav>
+
+    <div class="case-detail-layout">
+      <div class="case-detail-preview">
+        <div class="case-preview-canvas">
+          <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+            <rect width="600" height="500" fill="#1E1E1E" />
+            <text x="300" y="250" text-anchor="middle" dominant-baseline="middle"
+                  font-family="'Playfair Display', 'Noto Serif SC', Georgia, serif" font-size="72" font-weight="700"
+                  fill="{{ index .Params.colors 0 }}">{{ slicestr .Params.brand 0 2 }}</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="case-detail-info">
+        <h1 class="case-detail-brand">{{ .Params.brand }}</h1>
+        <p class="text-body">{{ .Content }}</p>
+
+        <div class="case-detail-params">
+          <div class="param-item">
+            <span class="param-label">行业</span>
+            <a href="/industries/{{ .Params.industry | urlize }}/" class="tag">{{ .Params.industry }}</a>
+          </div>
+          <div class="param-item">
+            <span class="param-label">风格</span>
+            <a href="/styles/{{ .Params.style | urlize }}/" class="tag">{{ .Params.style }}</a>
+          </div>
+          <div class="param-item">
+            <span class="param-label">配色</span>
+            <span class="tag">{{ .Params.colorScheme }}</span>
+            <span class="color-swatches">
+              {{ range .Params.colors }}
+              <span class="color-dot" style="background: {{ . }}" aria-label="颜色 {{ . }}"></span>
+              {{ end }}
+            </span>
+          </div>
+          <div class="param-item">
+            <span class="param-label">字体</span>
+            <span class="tag">{{ .Params.fontStyle }}</span>
+          </div>
+          <div class="param-item">
+            <span class="param-label">构图</span>
+            <span class="tag">{{ .Params.layoutType }}</span>
+          </div>
+        </div>
+
+        <div class="case-detail-prompt">
+          <h3>AI 生成提示词</h3>
+          <div class="prompt-block">
+            <button class="btn btn-ghost btn-sm copy-btn" data-copy="{{ .Params.prompt }}" aria-label="复制提示词">📋 复制</button>
+            <pre><code>{{ .Params.prompt }}</code></pre>
+          </div>
+        </div>
+
+        <a href="/generator/?brand={{ .Params.brand }}&industry={{ .Params.industry | urlize }}&style={{ .Params.style | urlize }}&color={{ .Params.colorScheme | urlize }}&font={{ .Params.fontStyle | urlize }}&layout={{ .Params.layoutType | urlize }}" class="btn btn-primary">套用参数去生成器</a>
+      </div>
+    </div>
+
+    <section class="related-cases">
+      <h2>相关案例</h2>
+      <div class="case-grid">
+        {{ $current := . }}
+        {{ $allCases := index .Site.Data.cases "brand-logos" }}
+        {{ $relatedStyle := where $allCases "style" .Params.style | first 4 }}
+        {{ range $relatedStyle }}
+          {{ if ne .slug $current.Params.slug }}
+            {{ partial "case-card.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+  </div>
+</article>
+{{ end }}
+
+{{ define "head_extra" }}
+{{ partial "json-ld-case.html" . }}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.copy-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      navigator.clipboard.writeText(this.dataset.copy).then(function() {
+        var original = this.textContent;
+        this.textContent = '已复制';
+        setTimeout(function() { this.textContent = original; }, 2000);
+      });
+    });
+  });
+});
+</script>
+{{ end }}

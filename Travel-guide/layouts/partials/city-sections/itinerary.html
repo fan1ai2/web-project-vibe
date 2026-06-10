@@ -1,0 +1,20 @@
+<div class="city-section" id="itinerary">
+  <h2><span class="section-num">05</span>行程推荐</h2>
+  {{ range .Params.itineraries }}
+  <div class="itinerary-block">
+    <h3 class="itinerary-block-title">{{ .name }}</h3>
+    <div class="itinerary-days">
+      {{ range $idx, $d := .days }}
+      <div class="itinerary-day">
+        <div class="itinerary-day-head">
+          <span class="itinerary-day-label">第{{ add $idx 1 }}天</span>
+          <h4>{{ .day }}</h4>
+        </div>
+        <p>{{ .items }}</p>
+      </div>
+      {{ end }}
+    </div>
+    {{ if .note }}<p class="itinerary-note">{{ .note }}</p>{{ end }}
+  </div>
+  {{ end }}
+</div>

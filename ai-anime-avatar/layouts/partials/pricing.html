@@ -1,0 +1,33 @@
+<section class="pricing section" id="pricing">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "pricingTitle" }}</h2>
+      <p class="section__subtitle">{{ i18n "pricingSubtitle" }}</p>
+    </div>
+
+    {{ $pricingData := index .Site.Data.pricing .Language.Lang }}
+    {{ if $pricingData }}
+    <div class="pricing__grid">
+      {{ range $pricingData }}
+      <article class="pricing-card{{ if .highlight }} pricing-card--featured{{ end }}">
+        {{ if .highlight }}<div class="pricing-card__badge">Popular</div>{{ end }}
+        <h3 class="pricing-card__name">{{ .name }}</h3>
+        <div class="pricing-card__price">
+          {{ if .unit }}<span>{{ .unit }}</span>{{ end }}
+          <span>{{ .price }}</span>
+        </div>
+        {{ if .period }}<div class="pricing-card__period">{{ .period }}</div>{{ end }}
+        <ul class="pricing-card__features">
+          {{ range .features }}
+          <li class="pricing-card__feature">{{ . }}</li>
+          {{ end }}
+        </ul>
+        <button class="pricing-card__cta" data-open-payment>{{ .cta }}</button>
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <p class="pricing__footer-note">{{ i18n "pricingFree" }}</p>
+  </div>
+</section>

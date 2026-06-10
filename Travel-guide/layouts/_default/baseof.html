@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+{{ partial "head.html" . }}
+{{ block "jsonld" . }}{{ end }}
+</head>
+<body{{ if and .Params.cityColor .File }} data-city="{{ .File.ContentBaseName }}"{{ end }}{{ if .Params.layoutStyle }} class="layout-{{ .Params.layoutStyle }}"{{ end }}>
+{{ partial "nav.html" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . }}
+<script src="/js/api.js" defer></script>
+<script src="/js/user-nav.js" defer></script>
+<script src="/js/subscribe.js" defer></script>
+</body>
+</html>

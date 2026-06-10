@@ -1,0 +1,31 @@
+baseURL = "http://10.100.1.124:8888/"
+languageCode = "zh-CN"
+title = "城市旅游攻略"
+# theme = "" (using project layouts directly)
+disableKinds = ["taxonomy", "term"]
+
+[minify]
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+
+[params]
+  description = "2026年最新城市旅游攻略平台，覆盖国内六大热门城市的自由行指南"
+  keywords = "城市旅游,旅游攻略,自由行,北京旅游攻略,上海旅游攻略"
+  author = "城市旅游攻略"
+
+[outputFormats]
+  [outputFormats.comingsoon]
+    mediaType = "text/html"
+    path = "/"
+    baseName = "coming-soon"
+    isHTML = true
+
+[mediaTypes]
+  [mediaTypes."text/html"]
+    suffixes = ["html"]

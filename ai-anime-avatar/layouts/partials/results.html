@@ -1,0 +1,38 @@
+<section class="results section" id="results">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "resultsTitle" }}</h2>
+    </div>
+
+    <div class="results__grid" id="results-list">
+      {{ $styles := slice
+        (dict "key" "styleJP")
+        (dict "key" "styleKR")
+        (dict "key" "styleUS")
+        (dict "key" "styleQ")
+        (dict "key" "stylePixel")
+        (dict "key" "styleCyber")
+      }}
+
+      {{ range $styles }}
+      <div class="results__card" data-style="{{ .key }}">
+        <div class="results__card-image-wrap">
+          <img class="results__card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23F5EDE3' width='300' height='300'/%3E%3C/svg%3E" alt="{{ i18n .key }}漫改头像" data-style="{{ .key }}">
+          <div class="results__card-watermark">{{ i18n "resultsWatermark" }}</div>
+        </div>
+        <div class="results__card-body">
+          <span class="results__card-label">{{ i18n .key }}漫改头像</span>
+          <button
+            class="results__card-btn"
+            data-style="{{ .key }}"
+            data-open-payment
+            aria-label="{{ i18n "resultsDownload" }} - {{ i18n .key }}"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v9M4 8l4 4 4-4M3 13h10"/></svg> {{ i18n "resultsDownload" }}
+          </button>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

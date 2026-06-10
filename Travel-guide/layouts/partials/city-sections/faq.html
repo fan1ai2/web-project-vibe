@@ -1,0 +1,13 @@
+<div class="city-section" id="faq">
+  <h2><span class="section-num">06</span>常见问题</h2>
+  <div class="faq-list">
+    {{ range $i, $f := .Params.faq }}
+    <div class="faq-item">
+      <div class="faq-q" onclick="var p=this.parentElement;var o=p.classList.toggle('open');this.setAttribute('aria-expanded',o)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" role="button" tabindex="0" aria-expanded="false">
+        <span>{{ $f.q }}</span>
+      </div>
+      <div class="faq-a"><p>{{ $f.a }}</p></div>
+    </div>
+    {{ end }}
+  </div>
+</div>

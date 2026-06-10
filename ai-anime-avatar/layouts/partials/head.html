@@ -1,0 +1,86 @@
+{{ $lang := .Language.Lang }}
+{{ $params := index .Site.Params $lang }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ $params.siteName }} — {{ i18n "siteTagline" }}</title>
+<meta name="description" content="{{ $params.description }}">
+<meta name="keywords" content="{{ $params.keywords }}">
+<meta name="author" content="{{ $params.siteName }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $params.siteName }} — {{ i18n "siteTagline" }}">
+<meta property="og:description" content="{{ $params.description }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.png">
+<meta property="og:locale" content="{{ $params.locale }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ $params.siteName }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $params.siteName }} — {{ i18n "siteTagline" }}">
+<meta name="twitter:description" content="{{ $params.description }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-image.png">
+
+<!-- Canonical & Hreflang -->
+<link rel="canonical" href="{{ .Permalink }}">
+{{ if eq $lang "zh" }}
+<link rel="alternate" hreflang="zh-CN" href="{{ .Site.BaseURL }}">
+<link rel="alternate" hreflang="en-US" href="{{ .Site.BaseURL }}en/">
+<link rel="alternate" hreflang="ja-JP" href="{{ .Site.BaseURL }}ja/">
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+{{ else if eq $lang "en" }}
+<link rel="alternate" hreflang="zh-CN" href="{{ .Site.BaseURL }}">
+<link rel="alternate" hreflang="en-US" href="{{ .Site.BaseURL }}en/">
+<link rel="alternate" hreflang="ja-JP" href="{{ .Site.BaseURL }}ja/">
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+{{ else if eq $lang "ja" }}
+<link rel="alternate" hreflang="zh-CN" href="{{ .Site.BaseURL }}">
+<link rel="alternate" hreflang="en-US" href="{{ .Site.BaseURL }}en/">
+<link rel="alternate" hreflang="ja-JP" href="{{ .Site.BaseURL }}ja/">
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+{{ end }}
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "{{ $params.siteName }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ $params.description }}",
+  "applicationCategory": "Multimedia",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="{{ .Site.BaseURL }}favicon.svg">
+<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png">
+
+<!-- Google Analytics (production only) -->
+{{ if hugo.IsProduction }}
+{{ with .Site.Config.Services.GoogleAnalytics.ID }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{ end }}
+{{ end }}
+	<!-- Fonts: Noto Serif SC (display) + Noto Sans SC (body) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700;800&display=swap">
+
+
+<!-- CSS Bundle -->
+{{ $allCSS := resources.Match "css/**.css" | resources.Concat "css/bundle.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $allCSS.RelPermalink }}">

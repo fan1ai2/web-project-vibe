@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="{{ .Site.Home.RelPermalink }}" class="brand">
+      <span class="brand-mark">L</span>
+      <span class="brand-text">LogoForge</span>
+    </a>
+    <nav class="header-nav" aria-label="主导航">
+      <a href="{{ .Site.Home.RelPermalink }}" class="nav-link {{ if .IsHome }}active{{ end }}">灵感墙</a>
+      <a href="{{ relref . "generator/_index.md" }}" class="nav-link">生成器</a>
+    </nav>
+  </div>
+</header>

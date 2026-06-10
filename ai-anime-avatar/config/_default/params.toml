@@ -1,0 +1,17 @@
+[zh]
+  siteName = "漫改"
+  description = "漫改 — AI驱动的一键漫画风格转换工具。上传照片，生成6种风格的漫改头像。日系、韩系、美漫、像素风随心选。"
+  keywords = "漫改,漫画头像,AI头像生成,动漫头像制作,二次元头像,AI绘画"
+  locale = "zh_CN"
+
+[en]
+  siteName = "AI Anime Avatar"
+  description = "Man Gai — AI-powered comic style avatar generator. Upload a photo and get 6 manga-style avatars instantly."
+  keywords = "manga avatar,anime avatar generator,AI comic avatar,man gai,AI art,anime style"
+  locale = "en_US"
+
+[ja]
+  siteName = "AI アニメアバター"
+  description = "AIアニメアバタージェネレーター — 写真をアップロードして、複数スタイルのアニメアバターを生成。"
+  keywords = "AIアニメアバター,アニメアイコン,アバター生成,AIイラスト,アニメ風"
+  locale = "ja_JP"

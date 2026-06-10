@@ -1,0 +1,37 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div class="footer__watercolor-line" aria-hidden="true"></div>
+
+    <div class="footer__top">
+      <div>
+        <a href="{{ .Site.Home.Permalink }}" style="font-family:var(--font-serif);font-size:1.1rem;font-weight:var(--font-weight-bold);color:var(--color-dark-text);">
+          {{ i18n "siteTitle" }}
+        </a>
+        <p class="footer__brand-desc">{{ i18n "footerDesc" }}</p>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">{{ i18n "footerProduct" }}</h3>
+        <a href="#showcase" class="footer__col-link">{{ i18n "navFeatures" }}</a>
+        <a href="#how-it-works" class="footer__col-link">{{ i18n "navHowItWorks" }}</a>
+        <a href="#upload" class="footer__col-link">{{ i18n "heroCTA" }}</a>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">{{ i18n "footerCompany" }}</h3>
+        <a href="#" class="footer__col-link">{{ i18n "navHome" }}</a>
+        <a href="#faq" class="footer__col-link">{{ i18n "navFAQ" }}</a>
+      </div>
+
+      <div>
+        <h3 class="footer__col-title">{{ i18n "footerLegal" }}</h3>
+        <a href="#" class="footer__col-link">Privacy Policy</a>
+        <a href="#" class="footer__col-link">Terms of Service</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; {{ now.Format "2006" }} {{ i18n "footerCopyright" }}</p>
+    </div>
+  </div>
+</footer>

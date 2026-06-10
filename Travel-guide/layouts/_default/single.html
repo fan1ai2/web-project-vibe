@@ -1,0 +1,141 @@
+{{ define "title" }}{{ .Params.title }}{{ end }}
+{{ define "description" }}{{ .Params.description }}{{ end }}
+{{ define "keywords" }}{{ .Params.keywords }}{{ end }}
+{{ define "ogtitle" }}{{ .Params.title }}{{ end }}
+{{ define "ogdescription" }}{{ .Params.description }}{{ end }}
+{{ define "twtitle" }}{{ .Params.title }}{{ end }}
+{{ define "twdescription" }}{{ .Params.description }}{{ end }}
+{{ define "ogimage" }}{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else }}{{ print "/images/cities/" .File.ContentBaseName ".jpg" | absURL }}{{ end }}{{ end }}
+{{ define "twimage" }}{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else }}{{ print "/images/cities/" .File.ContentBaseName ".jpg" | absURL }}{{ end }}{{ end }}
+{{ define "jsonld" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Params.title | jsonify | safeJS }},
+  "description": {{ .Params.description | jsonify | safeJS }},
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-08",
+  "author": { "@type": "Organization", "name": "闲游", "url": "https://travel-guide.example.com/" },
+  "publisher": { "@type": "Organization", "name": "闲游", "url": "https://travel-guide.example.com/" },
+  "image": "{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else }}{{ print "/images/cities/" .File.ContentBaseName ".jpg" | absURL }}{{ end }}",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://travel-guide.example.com/" },
+    { "@type": "ListItem", "position": 2, "name": {{ .Params.title | jsonify | safeJS }}, "item": "{{ .Permalink }}" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $f := .Params.faq }}{{ if $i }},{{ end }}
+    { "@type": "Question", "name": {{ $f.q | jsonify | safeJS }}, "acceptedAnswer": { "@type": "Answer", "text": {{ $f.a | jsonify | safeJS }} } }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+<nav aria-label="页面内导航" class="city-nav-wrapper">
+  <div class="city-nav-inner">
+    <ul class="city-nav">
+      <li><a href="#overview" data-sub="了解城市的前世今生">城市概览</a></li>
+      <li><a href="#attractions" data-sub="必打卡景点与门票">必去景点</a></li>
+      <li><a href="#food" data-sub="老字号与必吃清单">美食推荐</a></li>
+      <li><a href="#transport" data-sub="机场地铁出行指南">交通出行</a></li>
+      <li><a href="#itinerary" data-sub="3日精华 &amp; 5日深度">行程推荐</a></li>
+      <li><a href="#faq" data-sub="自由行常见疑问解答">常见问题</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="breadcrumb" aria-label="面包屑导航">
+  <a href="/">首页</a><span>&rsaquo;</span>{{ .Params.cityName }}旅游攻略
+</nav>
+
+<header class="city-hero">
+  <div class="city-hero-bg" style="background-image:url('/images/cities/{{ .File.ContentBaseName }}.jpg');"></div>
+  <div class="city-hero-content">
+    <h1>{{ .Params.title }}</h1>
+    <p class="city-hero-desc">{{ .Params.description }}</p>
+    <span class="update-badge">2026年6月更新</span>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="overview" aria-labelledby="overview-heading">
+    <div class="city-layout">
+      <div class="city-main">
+        {{ partial "city-sections/overview.html" . }}
+
+        {{ range .Params.customSections }}
+          {{ if eq .order 2 }}
+            {{ partial .partial $ }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "city-sections/attractions.html" . }}
+
+        {{ range .Params.customSections }}
+          {{ if eq .order 3 }}
+            {{ partial .partial $ }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "city-sections/food.html" . }}
+
+        {{ range .Params.customSections }}
+          {{ if eq .order 4 }}
+            {{ partial .partial $ }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "city-sections/transport.html" . }}
+
+        {{ range .Params.customSections }}
+          {{ if eq .order 5 }}
+            {{ partial .partial $ }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "city-sections/itinerary.html" . }}
+
+        {{ range .Params.customSections }}
+          {{ if eq .order 6 }}
+            {{ partial .partial $ }}
+          {{ end }}
+        {{ end }}
+
+        {{ partial "city-sections/faq.html" . }}
+      </div>
+
+      <aside class="city-sidebar">
+        <div class="sidebar-card">
+          <h4>其他热门城市</h4>
+          <ul class="sidebar-city-list">
+            {{ range .Params.sidebarCities }}
+            <li><a href="{{ .link }}">{{ .name }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="cta-band city-cta">
+    <h2>准备好探索{{ .Params.cityName }}了吗？</h2>
+    <p>收藏这份攻略，出发前再看一遍行程规划，确保不错过任何精彩。</p>
+    <a href="#itinerary" class="btn-primary">查看行程推荐</a>
+  </section>
+</main>
+{{ end }}

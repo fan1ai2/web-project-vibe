@@ -1,0 +1,57 @@
+<section class="upload section" id="upload">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "uploadTitle" }}</h2>
+      <p class="section__subtitle">{{ i18n "uploadSubtitle" }}</p>
+    </div>
+
+    <div
+      class="upload__area"
+      id="upload-area"
+      role="button"
+      tabindex="0"
+      aria-label="{{ i18n "uploadTitle" }}"
+    >
+      <svg class="upload__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+        <polyline points="17 8 12 3 7 8"/>
+        <line x1="12" y1="3" x2="12" y2="15"/>
+      </svg>
+      <p class="upload__text">{{ i18n "uploadDropzone" }}</p>
+      <p class="upload__or">{{ i18n "uploadOr" }}</p>
+      <button type="button" class="upload__browse-btn" id="browse-btn">
+        {{ i18n "uploadBrowse" }}
+      </button>
+      <p class="upload__hint">JPG / PNG / WebP, max 10MB</p>
+      <input
+        type="file"
+        id="file-input"
+        class="upload__input"
+        accept="image/jpeg,image/png,image/webp"
+        aria-hidden="true"
+        style="display:none"
+      >
+    </div>
+
+    <p class="upload__free-count">
+      {{ i18n "uploadFreeLeft" }}: <strong id="free-count">3</strong>
+    </p>
+
+    <div class="upload__preview" id="upload-preview">
+      <img id="preview-img" class="upload__preview-img" src="" alt="Preview">
+      <button type="button" class="upload__preview-remove" id="preview-remove" aria-label="Remove image">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="upload__progress" id="upload-progress">
+      <div class="upload__progress-bar">
+        <div class="upload__progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+
+    <div class="upload__generating" id="upload-generating">
+      {{ i18n "uploadGenerating" }}
+    </div>
+  </div>
+</section>

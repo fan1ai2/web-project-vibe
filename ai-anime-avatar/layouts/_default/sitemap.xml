@@ -1,0 +1,2 @@
+{{ range .Data.Pages }}{{ .RelPermalink }}
+{{ end }}

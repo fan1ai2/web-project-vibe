@@ -1,0 +1,30 @@
+<section class="testimonials section" id="testimonials">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "testimonialsTitle" }}</h2>
+      <p class="section__subtitle">{{ i18n "testimonialsSubtitle" }}</p>
+    </div>
+
+    {{ $testimonials := index .Site.Data.testimonials .Language.Lang }}
+    {{ if $testimonials }}
+    <div class="testimonials__grid">
+      {{ range $testimonials }}
+      <div class="testimonial-card">
+        <div class="testimonial-card__avatar">
+          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <circle cx="22" cy="22" r="21" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
+            <circle cx="22" cy="17" r="7" fill="var(--color-primary-light)" opacity="0.6"/>
+            <ellipse cx="22" cy="34" rx="14" ry="9" fill="var(--color-primary-light)" opacity="0.4"/>
+          </svg>
+        </div>
+        <p class="testimonial-card__quote">{{ .text }}</p>
+        <div class="testimonial-card__author">
+          <span class="testimonial-card__name">{{ .name }}</span>
+          <span class="testimonial-card__role">{{ .role }}</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>

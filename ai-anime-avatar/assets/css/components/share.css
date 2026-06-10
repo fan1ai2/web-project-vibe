@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Share - Minimal share buttons
+   ========================================================================== */
+
+.share {
+  background: var(--color-bg-alt);
+  text-align: center;
+}
+
+.share__buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.share__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+  min-height: 44px;
+}
+
+.share__btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+.share__btn:active {
+  transform: scale(0.98);
+}
+
+.share__btn.copied {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}

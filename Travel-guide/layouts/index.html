@@ -1,0 +1,143 @@
+{{ define "title" }}闲游 | 热门城市自由行指南{{ end }}
+{{ define "description" }}闲游 - 2026年最新城市旅游攻略，覆盖北京、上海、广州、成都、西安、杭州六大热门城市。提供自由行路线规划、景点推荐、美食攻略、交通住宿指南。{{ end }}
+{{ define "keywords" }}闲游,城市旅游,旅游攻略,自由行,北京旅游攻略,上海旅游攻略,国内旅游推荐{{ end }}
+{{ define "ogtitle" }}闲游 | 热门城市自由行指南{{ end }}
+{{ define "ogdescription" }}闲游 - 2026年最新城市旅游攻略，覆盖北京、上海、广州、成都、西安、杭州六大热门城市。{{ end }}
+{{ define "twtitle" }}闲游 | 自由行指南{{ end }}
+{{ define "twdescription" }}闲游 - 2026年最新城市旅游攻略，覆盖六大热门城市，自由行路线、景点、美食一网打尽。{{ end }}
+{{ define "ogimage" }}{{ "/images/og-default.jpg" | absURL }}{{ end }}
+{{ define "twimage" }}{{ "/images/og-default.jpg" | absURL }}{{ end }}
+{{ define "jsonld" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "闲游",
+  "url": "https://travel-guide.example.com/",
+  "description": "闲游 - 2026年最新城市自由行指南，覆盖国内六大热门城市。",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://travel-guide.example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"2026年国内旅游去哪个城市比较好？","acceptedAnswer":{"@type":"Answer","text":"推荐程度因人而异。喜欢历史文化去北京、西安；喜欢都市风情和购物选上海；喜欢美食和慢生活去成都；喜欢江南水乡和自然风光去杭州；喜欢海岛文艺氛围去厦门。2026年各城市的基础设施都很完善，自由行体验都很好。"}},
+    {"@type":"Question","name":"自由行和跟团游哪个更划算？","acceptedAnswer":{"@type":"Answer","text":"城市旅游自由行通常更划算。以3天北京游为例，自由行人均约1800元（经济酒店+公共交通+自选餐饮），同等标准跟团约2500元。自由行不仅费用更可控，而且不用进购物店、不用等人、可以按自己的节奏玩。"}},
+    {"@type":"Question","name":"旅游攻略应该提前多久准备？","acceptedAnswer":{"@type":"Answer","text":"提前2-4周制定旅游攻略是最佳窗口。行程天数、目的地选择、交通住宿预订是攻略的三大核心。旺季（春节、五一、国庆、暑假）建议提前1-2个月预订往返交通和住宿，淡季可以临期再定，价格反而更便宜。"}},
+    {"@type":"Question","name":"第一次做自由行攻略从哪里开始？","acceptedAnswer":{"@type":"Answer","text":"按以下顺序：第一步确定目的地和天数；第二步预订往返交通（高铁/机票）；第三步预订住宿（建议先订可免费取消的）；第四步规划每日行程路线（每天2-3个主景点，留有弹性时间）；第五步做美食清单（标记想吃的餐厅和必点菜）。"}},
+    {"@type":"Question","name":"城市旅游一个人安全吗？","acceptedAnswer":{"@type":"Answer","text":"国内城市旅游一个人出行非常安全。选择正规酒店或连锁青旅、晚间不去偏僻区域、不轻易相信路边拉客、贵重物品随身带。建议下载离线地图、开通手机定位分享给家人。大部分国内城市公共交通发达、夜间照明良好，凌晨还有人吃夜宵。"}}
+  ]
+}
+</script>
+{{ end }}
+{{ define "main" }}
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-edition">2026 Edition</div>
+    <h1>探索中国<br><strong>热门必游之城</strong></h1>
+    <p class="hero-subtitle">深度人文指南 &times; 轻松行程规划<br>让你的自由行有深度、不踩坑</p>
+    <div class="hero-cities">
+      {{ range .Site.Data.cities }}
+      <a href="{{ .link }}" class="hero-city-dot">{{ .name }}</a>
+      {{ end }}
+    </div>
+  </div>
+</header>
+<main>
+  <section class="section" id="cities" aria-labelledby="cities-heading">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 id="cities-heading">热门城市旅行指南</h2>
+        <p>精选六大热门旅游城市，每份攻略都经过实地验证，信息更新至2026年</p>
+      </div>
+      <div class="city-grid">
+        {{ range .Site.Data.cities }}
+        <article class="city-card" onclick="location.href='{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ .link }}'">
+          <div class="city-card-accent city-card-accent--{{ replace (replace .link "/cities/" "") "/" "" }}"></div>
+          <div class="city-card-img" style="background-image:url('{{ .image }}');">
+            <div class="city-card-name-overlay">{{ .name }}</div>
+          </div>
+          <div class="city-card-body">
+            <h3><a href="{{ .link }}">{{ .name }}旅游攻略</a></h3>
+            <div class="city-card-tags">{{ range .tags }}<span>{{ . }}</span>{{ end }}</div>
+            <p>{{ .summary }}</p>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="all-cities" aria-labelledby="all-cities-heading">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 id="all-cities-heading">探索更多城市</h2>
+        <p>覆盖全国 8 大区域，搜索城市或省份，发现你的下一个旅行目的地</p>
+      </div>
+      <div class="search-wrapper" id="search-wrapper">
+        <input type="text" class="search-input" id="city-search" placeholder="搜索城市或省份，如：北京、丽江、华南…" oninput="filterDropdown()" onfocus="showDropdown()" aria-label="搜索城市" autocomplete="off">
+        <span class="search-icon" aria-hidden="true">&#x1F50D;</span>
+        <div class="search-dropdown" id="search-dropdown"></div>
+      </div>
+      <div class="province-chips" id="province-chips">
+        <button class="province-chip active" data-province="" onclick="switchProvince('')">全部</button>
+        <button class="province-chip" data-province="huabei" onclick="switchProvince('huabei')">华北</button>
+        <button class="province-chip" data-province="huadong" onclick="switchProvince('huadong')">华东</button>
+        <button class="province-chip" data-province="huanan" onclick="switchProvince('huanan')">华南</button>
+        <button class="province-chip" data-province="xinan" onclick="switchProvince('xinan')">西南</button>
+        <button class="province-chip" data-province="xibei" onclick="switchProvince('xibei')">西北</button>
+        <button class="province-chip" data-province="huazhong" onclick="switchProvince('huazhong')">华中</button>
+        <button class="province-chip" data-province="dongbei" onclick="switchProvince('dongbei')">东北</button>
+        <button class="province-chip" data-province="gangaotai" onclick="switchProvince('gangaotai')">港澳台</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tips" aria-labelledby="tips-heading">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 id="tips-heading">自由行实用贴士</h2>
+        <p>多年自由行经验总结，帮你少走弯路、少花冤枉钱</p>
+      </div>
+      <div class="tips-grid">
+        {{ range .Params.tips }}
+        <div class="tip-card">
+          <span class="tip-icon" aria-hidden="true">{{ .icon }}</span>
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about" aria-labelledby="about-heading">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2 id="about-heading">关于闲游</h2>
+        <p>我们是谁，以及为什么做这个网站</p>
+      </div>
+      <div class="about-content">
+        {{ range .Params.about }}
+        <p>{{ . | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>选一个城市，开始规划你的旅程</h2>
+    <p>六座城市，六种风情。点击任意城市卡片，获取完整的自由行攻略。</p>
+    <a href="#cities" class="btn-primary">查看所有城市攻略</a>
+  </section>
+</main>
+
+{{ partial "search-js.html" . }}
+{{ end }}

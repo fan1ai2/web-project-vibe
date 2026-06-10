@@ -1,0 +1,13 @@
+[build]
+  command = "hugo --minify --destination public"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.145.0"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

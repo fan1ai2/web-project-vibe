@@ -1,0 +1,233 @@
+[siteTitle]
+other = "漫改"
+
+[siteTagline]
+other = "AI驱动的一键漫画风格转换"
+
+[navHome]
+other = "首页"
+
+[navFeatures]
+other = "风格展示"
+
+[navHowItWorks]
+other = "使用方法"
+
+[navFAQ]
+other = "常见问题"
+
+[heroTitle]
+other = "让你的照片变身<br><span>漫画风格</span>头像"
+
+[heroSubtitle]
+other = "上传一张照片，AI 在 5 秒内生成 6 种不同风格的漫改头像。日系、韩系、美漫、像素风——随心选择。"
+
+[heroCTA]
+other = "免费开始"
+
+[heroBefore]
+other = "原图"
+
+[heroAfter]
+other = "生成后"
+
+[showcaseTitle]
+other = "6 种动漫画风"
+
+[showcaseSubtitle]
+other = "每一种风格都经过精心调校，确保最佳效果"
+
+[styleJP]
+other = "日系清新"
+
+[styleKR]
+other = "韩系美型"
+
+[styleUS]
+other = "美漫硬朗"
+
+[styleQ]
+other = "Q版可爱"
+
+[stylePixel]
+other = "像素复古"
+
+[styleCyber]
+other = "赛博朋克"
+
+[howTitle]
+other = "三步搞定"
+
+[howSubtitle]
+other = "简单到只需一分钟"
+
+[howStep1Title]
+other = "上传照片"
+
+[howStep1Desc]
+other = "选择一张清晰的正面照片，支持 JPG/PNG/WebP 格式"
+
+[howStep2Title]
+other = "选择风格"
+
+[howStep2Desc]
+other = "从 6 种动漫风格中选择你喜欢的，AI 自动生成"
+
+[howStep3Title]
+other = "下载头像"
+
+[howStep3Desc]
+other = "几秒钟后即可预览，满意后 ¥0.99 下载高清漫改头像"
+
+[uploadTitle]
+other = "上传照片开始生成"
+
+[uploadSubtitle]
+other = "拖拽或点击上传，支持 JPG/PNG/WebP，最大 10MB"
+
+[uploadDropzone]
+other = "拖拽图片到此处"
+
+[uploadOr]
+other = "或"
+
+[uploadBrowse]
+other = "选择文件"
+
+[uploadGenerating]
+other = "AI 正在生成..."
+
+[uploadFreeLeft]
+other = "今日剩余免费次数"
+
+[resultsTitle]
+other = "你的漫改头像"
+
+[resultsWatermark]
+other = "低清预览"
+
+[resultsDownload]
+other = "¥0.99 下载高清"
+
+[resultsShare]
+other = "分享"
+
+[pricingTitle]
+other = "选择适合你的方案"
+
+[pricingSubtitle]
+other = "透明定价，无隐藏费用"
+
+[pricingFree]
+other = "每日 3 次免费试用，无需信用卡"
+
+[comparisonTitle]
+other = "为什么选择我们"
+
+[comparisonSubtitle]
+other = "与其他 AI 头像工具对比"
+
+[testimonialsTitle]
+other = "用户心声"
+
+[testimonialsSubtitle]
+other = "来自真实用户的评价"
+
+[faqTitle]
+other = "常见问题"
+
+[faqSubtitle]
+other = "你想知道的都在这里"
+
+[footerDesc]
+other = "漫改 — 用 AI 技术将你的照片一键转化为精美漫画风格头像。"
+
+[footerProduct]
+other = "产品"
+
+[footerCompany]
+other = "关于"
+
+[footerLegal]
+other = "法律"
+
+[footerCopyright]
+other = "漫改。保留所有权利。"
+
+[paymentTitle]
+other = "支付确认"
+
+[paymentEmail]
+other = "邮箱地址"
+
+[paymentMethod]
+other = "支付方式"
+
+[paymentAlipay]
+other = "支付宝"
+
+[paymentWechat]
+other = "微信支付"
+
+[paymentConfirm]
+other = "确认支付"
+
+[shareTitle]
+other = "分享给朋友"
+
+[shareWeibo]
+other = "分享到微博"
+
+[shareCopy]
+other = "复制链接"
+
+[shareCopied]
+other = "已复制！"
+
+[shareFreeCount]
+other = "分享获得 +1 免费次数"
+
+[toastLimitReached]
+other = "今日免费次数已用完，分享可获取额外次数"
+
+[toastUploadSuccess]
+other = "照片上传成功，正在生成..."
+
+[toastGenerateDone]
+other = "头像生成完成！"
+
+[authTitle]
+other = "登录 / 注册"
+
+[authLogin]
+other = "登录"
+
+[authRegister]
+other = "注册"
+
+[authEmail]
+other = "邮箱"
+
+[authPassword]
+other = "密码"
+
+[authConfirm]
+other = "确认密码"
+
+[authForgot]
+other = "忘记密码？"
+
+[authOr]
+other = "或"
+
+[authGoogle]
+other = "Google 登录"
+
+[authGithub]
+other = "GitHub 登录"
+
+[authClose]
+other = "关闭"
+
+[langSwitch]
+other = "语言"

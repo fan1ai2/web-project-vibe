@@ -1,0 +1,23 @@
+<div class="city-section" id="attractions">
+  <h2><span class="section-num">02</span>必去景点推荐</h2>
+  <div class="attraction-list">
+    {{ range $idx, $a := .Params.attractions }}
+    <article class="attraction-item">
+      <div class="attraction-body">
+        <div class="attraction-header">
+          <span class="attraction-index">{{ printf "%02d" (add $idx 1) }}</span>
+          <h3>{{ .name }}</h3>
+        </div>
+        <p>{{ .description }}</p>
+        <div class="attraction-info">
+          <span>{{ .price }}</span>
+          <span class="ai-sep">&middot;</span>
+          <span>{{ .transport }}</span>
+          <span class="ai-sep">&middot;</span>
+          <span>{{ .time }}</span>
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</div>

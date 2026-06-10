@@ -1,0 +1,36 @@
+<section class="showcase section" id="showcase">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "showcaseTitle" }}</h2>
+      <p class="section__subtitle">{{ i18n "showcaseSubtitle" }}</p>
+    </div>
+
+    {{ $styles := slice
+      (dict "key" "styleJP" "file" "style-jp")
+      (dict "key" "styleKR" "file" "style-kr")
+      (dict "key" "styleUS" "file" "style-us")
+      (dict "key" "styleQ" "file" "style-q")
+      (dict "key" "stylePixel" "file" "style-pixel")
+      (dict "key" "styleCyber" "file" "style-cyber")
+    }}
+
+    <div class="showcase__grid">
+      {{ range $styles }}
+      <article class="style-card">
+        <div class="style-card__image">
+          <img
+            src="{{ printf "images/showcase/%s.png" .file | relURL }}"
+            alt="{{ i18n .key }}"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="400"
+          >
+        </div>
+        <div class="style-card__label">{{ i18n .key }}</div>
+        <div class="style-card__accent" aria-hidden="true"></div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

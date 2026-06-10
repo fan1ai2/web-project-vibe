@@ -1,0 +1,64 @@
+<header class="header" role="banner" id="header">
+  <div class="header__inner">
+    <a href="{{ .Site.Home.Permalink }}" class="header__logo" aria-label="{{ i18n "siteTitle" }} — {{ i18n "navHome" }}">
+      <svg class="header__logo-icon" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="24" height="24" rx="6" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M8 14h5l2-5 2 10 2-5h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>{{ i18n "siteTitle" }}</span>
+    </a>
+
+    <nav class="header__nav" role="navigation" aria-label="Main navigation">
+      <a href="{{ .Site.Home.Permalink }}" class="header__nav-link">{{ i18n "navHome" }}</a>
+      <a href="#showcase" class="header__nav-link">{{ i18n "navFeatures" }}</a>
+      <a href="#how-it-works" class="header__nav-link">{{ i18n "navHowItWorks" }}</a>
+      <a href="#faq" class="header__nav-link">{{ i18n "navFAQ" }}</a>
+    </nav>
+
+    <div class="lang-slider">
+      {{ $currentLang := .Language.Lang }}
+      <div class="lang-slider__track">
+        <div class="lang-slider__indicator{{ if eq $currentLang "zh" }} lang-slider__indicator--zh{{ else if eq $currentLang "en" }} lang-slider__indicator--en{{ else }} lang-slider__indicator--ja{{ end }}"></div>
+        <a href="{{ .Site.BaseURL }}" class="lang-slider__opt{{ if eq $currentLang "zh" }} lang-slider__opt--active{{ end }}">中</a>
+        <a href="{{ .Site.BaseURL }}en/" class="lang-slider__opt{{ if eq $currentLang "en" }} lang-slider__opt--active{{ end }}">EN</a>
+        <a href="{{ .Site.BaseURL }}ja/" class="lang-slider__opt{{ if eq $currentLang "ja" }} lang-slider__opt--active{{ end }}">日</a>
+      </div>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="5"/>
+        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    </button>
+
+    <button id="auth-btn" class="header__auth-btn" aria-label="{{ i18n "authTitle" }}">{{ i18n "authLogin" }}</button>
+
+    <button id="menu-btn" class="header__menu-btn" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M3 12h18M3 6h18M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav id="mobile-nav" class="header__mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="{{ .Site.Home.Permalink }}" class="header__mobile-link">{{ i18n "navHome" }}</a>
+    <a href="#showcase" class="header__mobile-link">{{ i18n "navFeatures" }}</a>
+    <a href="#how-it-works" class="header__mobile-link">{{ i18n "navHowItWorks" }}</a>
+    <a href="#faq" class="header__mobile-link">{{ i18n "navFAQ" }}</a>
+
+    <div class="header__mobile-lang">
+      {{ $currentLang := .Language.Lang }}
+      <div class="lang-slider lang-slider--mobile">
+        <div class="lang-slider__track">
+          <div class="lang-slider__indicator{{ if eq $currentLang "zh" }} lang-slider__indicator--zh{{ else if eq $currentLang "en" }} lang-slider__indicator--en{{ else }} lang-slider__indicator--ja{{ end }}"></div>
+          <a href="{{ .Site.BaseURL }}" class="lang-slider__opt{{ if eq $currentLang "zh" }} lang-slider__opt--active{{ end }}">中</a>
+          <a href="{{ .Site.BaseURL }}en/" class="lang-slider__opt{{ if eq $currentLang "en" }} lang-slider__opt--active{{ end }}">EN</a>
+          <a href="{{ .Site.BaseURL }}ja/" class="lang-slider__opt{{ if eq $currentLang "ja" }} lang-slider__opt--active{{ end }}">日</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="header__mobile-auth" id="mobile-auth-btn">{{ i18n "authLogin" }} / {{ i18n "authRegister" }}</a>
+  </nav>
+</header>

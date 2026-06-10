@@ -1,0 +1,32 @@
+{
+  "zh": [
+    {"q": "AI 动漫头像是什么？", "a": "AI 动漫头像是一款基于人工智能技术的在线工具，可以将您的真实照片转换为多种风格的动漫头像。只需上传一张照片，AI 就能在几秒钟内生成高质量的动漫风格头像。"},
+    {"q": "支持哪些动漫风格？", "a": "目前支持 6 种主流动漫风格：日系清新、韩系美型、美漫硬朗、Q版可爱、像素复古、赛博朋克。我们持续更新更多风格。"},
+    {"q": "生成的头像可以商用吗？", "a": "免费版生成的头像仅供个人使用。专业版（¥99/月）包含商业使用授权，可用于社交媒体、商业宣传等场景。"},
+    {"q": "上传的照片安全吗？", "a": "您的隐私是我们的首要考虑。上传的照片仅用于生成头像，处理完成后立即从服务器删除。我们不会存储或分享您的照片。"},
+    {"q": "支持哪些图片格式？", "a": "支持 JPG、PNG、WebP 格式，文件大小不超过 10MB。建议使用正面清晰的人脸照片以获得最佳效果。"},
+    {"q": "不满意可以退款吗？", "a": "按次付费支持生成后 24 小时内不满意退款。专业版支持 7 天无理由退款。详情请查看退款政策。"},
+    {"q": "处理需要多长时间？", "a": "通常 3-10 秒内完成生成。高峰期可能需要稍长等待，按次付费和专业版用户享有优先处理。"},
+    {"q": "可以在手机上使用吗？", "a": "完全支持！我们的网站采用响应式设计，在手机、平板和电脑上都能获得最佳体验。"}
+  ],
+  "en": [
+    {"q": "What is AI Anime Avatar?", "a": "AI Anime Avatar is an AI-powered online tool that transforms your real photos into multiple anime-style avatars. Upload a photo and get stunning anime avatars in seconds."},
+    {"q": "What anime styles are supported?", "a": "We currently support 6 styles: Japanese, Korean beauty, American comic, Chibi cute, Pixel retro, and Cyberpunk. More styles are being added regularly."},
+    {"q": "Can I use generated avatars commercially?", "a": "Free tier avatars are for personal use only. The Pro plan ($14.99/mo) includes commercial usage rights for social media, marketing, and more."},
+    {"q": "Are my uploaded photos secure?", "a": "Your privacy is our priority. Uploaded photos are used only for avatar generation and deleted immediately after processing. We never store or share your photos."},
+    {"q": "What image formats are supported?", "a": "We support JPG, PNG, and WebP formats, with a maximum file size of 10MB. Clear, front-facing photos work best."},
+    {"q": "Can I get a refund?", "a": "Pay-per-use purchases are eligible for refund within 24 hours if unsatisfied. Pro subscriptions include a 7-day money-back guarantee."},
+    {"q": "How long does processing take?", "a": "Typically 3-10 seconds. Peak times may be slightly slower. Pay-per-use and Pro users get priority processing."},
+    {"q": "Does it work on mobile?", "a": "Absolutely! Our responsive design ensures the best experience on phones, tablets, and desktops."}
+  ],
+  "ja": [
+    {"q": "AIアニメアバターとは？", "a": "AIアニメアバターは、あなたの写真を複数のアニメスタイルのアバターに変換するAI搭載オンラインツールです。写真をアップロードするだけで、数秒で高品質なアニメアバターを生成します。"},
+    {"q": "どのようなアニメスタイルに対応していますか？", "a": "現在6種類のスタイルに対応：日本風、韓国風、アメリカンコミック、チビかわいい、ピクセルレトロ、サイバーパンク。新スタイルも随時追加中です。"},
+    {"q": "生成したアバターは商用利用できますか？", "a": "無料版は個人利用のみです。プロ版（¥1,500/月）には商用利用ライセンスが含まれ、SNSやマーケティングなどにご利用いただけます。"},
+    {"q": "アップロードした写真は安全ですか？", "a": "プライバシーを最優先しています。写真はアバター生成のみに使用され、処理後すぐにサーバーから削除されます。写真を保存・共有することはありません。"},
+    {"q": "対応している画像形式は？", "a": "JPG、PNG、WebP形式に対応、ファイルサイズは10MBまで。正面を向いた鮮明な顔写真をお勧めします。"},
+    {"q": "返金は可能ですか？", "a": "都度払いは生成後24時間以内の返金が可能です。プロ版は7日間の返金保証があります。"},
+    {"q": "処理時間はどのくらいですか？", "a": "通常3〜10秒で完了します。ピーク時はやや遅くなる場合があります。都度払い・プロ版ユーザーは優先処理されます。"},
+    {"q": "スマートフォンでも使えますか？", "a": "もちろんです！レスポンシブデザインにより、スマートフォン、タブレット、PCで最適な体験を提供します。"}
+  ]
+}

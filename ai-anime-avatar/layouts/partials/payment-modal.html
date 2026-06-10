@@ -1,0 +1,43 @@
+<div class="payment-modal" id="payment-modal" role="dialog" aria-modal="true" aria-labelledby="payment-modal-title">
+  <div class="payment-modal__overlay" id="payment-modal-overlay"></div>
+  <div class="payment-modal__card">
+    <button
+      class="payment-modal__close"
+      id="payment-modal-close"
+      aria-label="Close payment modal"
+    ><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg></button>
+
+    <h2 id="payment-modal-title" class="payment-modal__title">{{ i18n "paymentTitle" }}</h2>
+
+    <form class="payment-modal__form" onsubmit="event.preventDefault()">
+      <div>
+        <label class="payment-modal__label" for="payment-email">{{ i18n "paymentEmail" }}</label>
+        <input
+          type="email"
+          id="payment-email"
+          class="payment-modal__input"
+          placeholder="email@example.com"
+          required
+        >
+      </div>
+
+      <fieldset style="border: none; padding: 0;">
+        <legend class="payment-modal__label">{{ i18n "paymentMethod" }}</legend>
+        <div class="payment-modal__radio-group">
+          <label class="payment-modal__radio">
+            <input type="radio" name="payment-method" value="alipay" checked>
+            <span>{{ i18n "paymentAlipay" }}</span>
+          </label>
+          <label class="payment-modal__radio">
+            <input type="radio" name="payment-method" value="wechat">
+            <span>{{ i18n "paymentWechat" }}</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="payment-modal__submit">
+        {{ i18n "paymentConfirm" }}
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,236 @@
+[siteTitle]
+other = "Man Gai"
+
+[siteTagline]
+other = "Create Your Unique Anime Avatar Instantly"
+
+[navHome]
+other = "Home"
+
+[navFeatures]
+other = "Styles"
+
+[navHowItWorks]
+other = "How It Works"
+
+[navPricing]
+other = "Pricing"
+
+[navFAQ]
+other = "FAQ"
+
+[heroTitle]
+other = "Transform Your Photo Into<br><span>Anime Style</span> Avatar"
+
+[heroSubtitle]
+other = "Upload a photo and get 6 anime-style avatars in 5 seconds. Japanese, Korean, American comic, pixel art — take your pick."
+
+[heroCTA]
+other = "Start Free"
+
+[heroBefore]
+other = "Original"
+
+[heroAfter]
+other = "Generated"
+
+[showcaseTitle]
+other = "6 Anime Styles"
+
+[showcaseSubtitle]
+other = "Each style is carefully tuned for the best results"
+
+[styleJP]
+other = "Japanese"
+
+[styleKR]
+other = "Korean"
+
+[styleUS]
+other = "Comic"
+
+[styleQ]
+other = "Chibi"
+
+[stylePixel]
+other = "Pixel Art"
+
+[styleCyber]
+other = "Cyberpunk"
+
+[howTitle]
+other = "3 Easy Steps"
+
+[howSubtitle]
+other = "Takes just a minute"
+
+[howStep1Title]
+other = "Upload Photo"
+
+[howStep1Desc]
+other = "Pick a clear front-facing photo in JPG/PNG/WebP format"
+
+[howStep2Title]
+other = "Choose Style"
+
+[howStep2Desc]
+other = "Select from 6 anime styles, AI handles the rest"
+
+[howStep3Title]
+other = "Download Avatar"
+
+[howStep3Desc]
+other = "Get your high-res anime avatar in seconds, share with friends"
+
+[uploadTitle]
+other = "Upload to Get Started"
+
+[uploadSubtitle]
+other = "Drag & drop or click to upload. JPG/PNG/WebP, max 10MB"
+
+[uploadDropzone]
+other = "Drop your image here"
+
+[uploadOr]
+other = "or"
+
+[uploadBrowse]
+other = "Browse Files"
+
+[uploadGenerating]
+other = "AI is generating..."
+
+[uploadFreeLeft]
+other = "Free generations left today"
+
+[resultsTitle]
+other = "Your Anime Avatars"
+
+[resultsWatermark]
+other = "Low-res Preview"
+
+[resultsDownload]
+other = "Download HD"
+
+[resultsShare]
+other = "Share"
+
+[pricingTitle]
+other = "Choose Your Plan"
+
+[pricingSubtitle]
+other = "Transparent pricing, no hidden fees"
+
+[pricingFree]
+other = "3 free per day, no credit card required"
+
+[comparisonTitle]
+other = "Why Choose Us"
+
+[comparisonSubtitle]
+other = "Compare with other AI avatar tools"
+
+[testimonialsTitle]
+other = "What Users Say"
+
+[testimonialsSubtitle]
+other = "Reviews from real users"
+
+[faqTitle]
+other = "Frequently Asked Questions"
+
+[faqSubtitle]
+other = "Everything you need to know"
+
+[footerDesc]
+other = "AI Anime Avatar — Transform your photos into stunning anime-style avatars with AI."
+
+[footerProduct]
+other = "Product"
+
+[footerCompany]
+other = "About"
+
+[footerLegal]
+other = "Legal"
+
+[footerCopyright]
+other = "AI Anime Avatar. All rights reserved."
+
+[paymentTitle]
+other = "Payment Confirmation"
+
+[paymentEmail]
+other = "Email Address"
+
+[paymentMethod]
+other = "Payment Method"
+
+[paymentAlipay]
+other = "Alipay"
+
+[paymentWechat]
+other = "WeChat Pay"
+
+[paymentConfirm]
+other = "Confirm Payment"
+
+[shareTitle]
+other = "Share with Friends"
+
+[shareWeibo]
+other = "Share to Twitter"
+
+[shareCopy]
+other = "Copy Link"
+
+[shareCopied]
+other = "Copied!"
+
+[shareFreeCount]
+other = "Share for +1 free generation"
+
+[toastLimitReached]
+other = "Daily free limit reached. Share to earn extra!"
+
+[toastUploadSuccess]
+other = "Photo uploaded. Generating..."
+
+[toastGenerateDone]
+other = "Avatars ready!"
+
+[authTitle]
+other = "Login / Register"
+
+[authLogin]
+other = "Login"
+
+[authRegister]
+other = "Register"
+
+[authEmail]
+other = "Email"
+
+[authPassword]
+other = "Password"
+
+[authConfirm]
+other = "Confirm Password"
+
+[authForgot]
+other = "Forgot password?"
+
+[authOr]
+other = "or"
+
+[authGoogle]
+other = "Sign in with Google"
+
+[authGithub]
+other = "Sign in with GitHub"
+
+[authClose]
+other = "Close"
+
+[langSwitch]
+other = "Language"

@@ -1,0 +1,27 @@
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "faqTitle" }}</h2>
+      <p class="section__subtitle">{{ i18n "faqSubtitle" }}</p>
+    </div>
+
+    {{ $faq := index .Site.Data.faq .Language.Lang }}
+    {{ if $faq }}
+    <div class="faq__list">
+      {{ range $faq }}
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          <span>{{ .q }}</span>
+          <svg class="faq__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </button>
+        <div class="faq__answer">
+          <div class="faq__answer-inner">{{ .a }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,17 @@
+{
+  "zh": [
+    {"name": "免费试用", "price": "0", "unit": "", "period": "", "features": ["每日 3 次免费生成", "6 种动漫风格", "基础分辨率下载", "含水印"], "cta": "开始试用", "highlight": false},
+    {"name": "按次付费", "price": "9.9", "unit": "¥", "period": "/次", "features": ["无限风格选择", "高清无水印下载", "优先处理队列", "24 小时技术支持"], "cta": "立即购买", "highlight": true},
+    {"name": "专业版", "price": "99", "unit": "¥", "period": "/月", "features": ["无限次数生成", "全部风格 + 独家风格", "4K 超清下载", "API 接口接入", "商业使用授权"], "cta": "订阅专业版", "highlight": false}
+  ],
+  "en": [
+    {"name": "Free Trial", "price": "0", "unit": "", "period": "", "features": ["3 free generations daily", "6 anime styles", "Basic resolution download", "Watermarked"], "cta": "Start Free", "highlight": false},
+    {"name": "Pay Per Use", "price": "1.99", "unit": "$", "period": "/use", "features": ["All styles available", "HD watermark-free download", "Priority processing", "24/7 support"], "cta": "Buy Now", "highlight": true},
+    {"name": "Pro", "price": "14.99", "unit": "$", "period": "/mo", "features": ["Unlimited generations", "All + exclusive styles", "4K ultra HD download", "API access", "Commercial license"], "cta": "Subscribe Pro", "highlight": false}
+  ],
+  "ja": [
+    {"name": "無料トライアル", "price": "0", "unit": "", "period": "", "features": ["毎日3回無料生成", "6種類のアニメスタイル", "基本解像度ダウンロード", "透かしあり"], "cta": "無料で始める", "highlight": false},
+    {"name": "都度払い", "price": "200", "unit": "¥", "period": "/回", "features": ["全スタイル利用可能", "高画質・透かしなし", "優先処理", "24時間サポート"], "cta": "今すぐ購入", "highlight": true},
+    {"name": "プロ版", "price": "1,500", "unit": "¥", "period": "/月", "features": ["無制限生成", "全スタイル+限定スタイル", "4K超高画質ダウンロード", "API連携", "商用利用ライセンス"], "cta": "プロ版を購読", "highlight": false}
+  ]
+}

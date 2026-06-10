@@ -1,0 +1,17 @@
+{
+  "zh": [
+    {"name": "小樱花", "avatar": "👩", "role": "自由插画师", "text": "太惊喜了！生成的动漫头像质量超高，比我之前用过的任何工具都好。日系风格尤其出色，完全看不出是 AI 生成的。", "rating": 5},
+    {"name": "动漫迷小王", "avatar": "👦", "role": "大学生", "text": "每天免费 3 次完全够用了，像素风格超可爱，已经推荐给全班同学了。等着出更多风格！", "rating": 5},
+    {"name": "设计师Lisa", "avatar": "👩‍💼", "role": "UI 设计师", "text": "作为设计师，我对输出质量要求很高。AI 动漫头像的 4K 分辨率完全满足了我的需求，商业授权也很方便。", "rating": 4}
+  ],
+  "en": [
+    {"name": "Sakura", "avatar": "👩", "role": "Freelance Illustrator", "text": "Absolutely amazing! The anime avatars are incredibly high quality, better than any tool I've tried. The Japanese style is especially impressive.", "rating": 5},
+    {"name": "Mike", "avatar": "👦", "role": "College Student", "text": "3 free daily generations are plenty! The pixel art style is adorable. Already shared with my entire class. Can't wait for more styles!", "rating": 5},
+    {"name": "Lisa", "avatar": "👩‍💼", "role": "UI Designer", "text": "As a designer, I have high standards for output quality. The 4K resolution meets all my needs, and the commercial license is very convenient.", "rating": 4}
+  ],
+  "ja": [
+    {"name": "さくら", "avatar": "👩", "role": "フリーイラストレーター", "text": "本当に素晴らしい！アニメアバターの品質が非常に高く、今まで使ったどのツールよりも優れています。日本風スタイルは特に印象的です。", "rating": 5},
+    {"name": "タケシ", "avatar": "👦", "role": "大学生", "text": "毎日3回の無料生成で十分です！ピクセルアートスタイルがとてもかわいい。クラス全員にシェアしました。もっとスタイルが増えるのが楽しみ！", "rating": 5},
+    {"name": "リサ", "avatar": "👩‍💼", "role": "UIデザイナー", "text": "デザイナーとして出力品質には厳しい目を持っていますが、4K解像度はすべてのニーズを満たし、商用ライセンスもとても便利です。", "rating": 4}
+  ]
+}

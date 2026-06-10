@@ -1,0 +1,88 @@
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__bg-wash"></div>
+  </div>
+
+  <div class="hero__petals" aria-hidden="true">
+    <div class="hero__petal"></div>
+    <div class="hero__petal"></div>
+    <div class="hero__petal"></div>
+    <div class="hero__petal"></div>
+    <div class="hero__petal"></div>
+    <div class="hero__petal"></div>
+    <div class="hero__petal"></div>
+    <div class="hero__petal"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__badge">
+      <span class="hero__badge-dot" aria-hidden="true"></span>
+      {{ i18n "siteTagline" }}
+    </div>
+
+    <h1 class="hero__title">
+      {{ i18n "heroTitle" | safeHTML }}
+    </h1>
+
+    <p class="hero__subtitle">
+      {{ i18n "heroSubtitle" }}
+    </p>
+
+    <div class="hero__cta-group">
+      <a href="#upload" class="hero__cta-primary">{{ i18n "heroCTA" }}</a>
+      <a href="#showcase" class="hero__cta-secondary">{{ i18n "navFeatures" }}</a>
+    </div>
+
+    <div class="hero__social-proof">
+      <div class="hero__stat">
+        <div class="hero__stat-value">100K<span class="gradient-text">+</span></div>
+        <div class="hero__stat-label">Happy Users</div>
+      </div>
+      <div class="hero__stat">
+        <div class="hero__stat-value">1M<span class="gradient-text">+</span></div>
+        <div class="hero__stat-label">Avatars Generated</div>
+      </div>
+      <div class="hero__stat">
+        <div class="hero__stat-value"><span class="gradient-text">4.9</span></div>
+        <div class="hero__stat-label">User Rating</div>
+        <div class="hero__stars" aria-label="4.9 out of 5 stars">
+          <svg class="hero__star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+          <svg class="hero__star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+          <svg class="hero__star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+          <svg class="hero__star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+          <svg class="hero__star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+          <span class="hero__rating-text">4.9</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__comparison">
+      <div class="comparison-slider">
+        <div class="comparison-card">
+          <img
+            src="{{ "images/hero/original.jpg" | relURL }}"
+            alt="{{ i18n "heroBefore" }}"
+            class="hero__comparison-img"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="600"
+          >
+          <span class="hero__comparison-label">{{ i18n "heroBefore" }}</span>
+        </div>
+        <div class="comparison-card">
+          <img
+            src="{{ "images/hero/generated.png" | relURL }}"
+            alt="{{ i18n "heroAfter" }}"
+            class="hero__comparison-img"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="600"
+          >
+          <span class="hero__comparison-label">{{ i18n "heroAfter" }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
