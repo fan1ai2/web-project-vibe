@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>经典盾徽 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/styles/%E7%BB%8F%E5%85%B8%E7%9B%BE%E5%BE%BD/</link><description>Recent content in 经典盾徽 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/styles/%E7%BB%8F%E5%85%B8%E7%9B%BE%E5%BE%BD/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/geely/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/geely/</guid><description>&lt;p>中国自主品牌汽车巨头，盾形蓝色 logo，稳健国际化&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>经典盾徽 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/styles/%E7%BB%8F%E5%85%B8%E7%9B%BE%E5%BE%BD/</link>
+    <description>Recent content in 经典盾徽 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/styles/%E7%BB%8F%E5%85%B8%E7%9B%BE%E5%BE%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/geely/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/geely/</guid>
+      <description>&lt;p&gt;中国自主品牌汽车巨头，盾形蓝色 logo，稳健国际化&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

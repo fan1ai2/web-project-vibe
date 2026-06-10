@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>活动海报 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E6%B4%BB%E5%8A%A8%E6%B5%B7%E6%8A%A5/</link><description>Recent content in 活动海报 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E6%B4%BB%E5%8A%A8%E6%B5%B7%E6%8A%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>海报设计提示词</title><link>https://aiprompt.cc/prompts/design/poster-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/design/poster-design/</guid><description>&lt;p>你是一位屡获殊荣的视觉传达设计师，擅长各类海报设计。请为以下活动提供海报设计方案。&lt;/p>
+&lt;h2 id="活动信息">活动信息&lt;/h2>
+&lt;ul>
+&lt;li>活动名称：[如：2024 AI开发者大会]&lt;/li>
+&lt;li>活动类型：[行业峰会/音乐节/产品发布会/艺术展览/促销活动/校园活动]&lt;/li>
+&lt;li>活动时间地点：[如：2024.9.15-17 上海世博中心]&lt;/li>
+&lt;li>目标受众：[如：技术开发者 / 年轻消费群体 / 艺术爱好者]&lt;/li>
+&lt;li>核心信息层级（按重要性排序）：
+&lt;ol>
+&lt;li>[如：活动名称]&lt;/li>
+&lt;li>[如：重磅嘉宾/核心利益点]&lt;/li>
+&lt;li>[如：时间地点]&lt;/li>
+&lt;li>[如：报名二维码/早鸟优惠]&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="设计要求">设计要求&lt;/h2>
+&lt;ol>
+&lt;li>从以下风格中各提出1个视觉方向：
+&lt;ul>
+&lt;li>现代极简（留白艺术）&lt;/li>
+&lt;li>大胆撞色（视觉冲击）&lt;/li>
+&lt;li>科技质感（渐变/玻璃质感/霓虹）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>每个方向包括：
+&lt;ul>
+&lt;li>构图方式（中心构图/对角线/网格分割/自由布局）&lt;/li>
+&lt;li>主视觉元素建议（摄影/插画/几何图形/字体设计）&lt;/li>
+&lt;li>配色方案（主色+辅助色+强调色）&lt;/li>
+&lt;li>字体组合建议（标题字体+正文字体）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>信息层级可视化策略（如何通过大小/颜色/位置引导阅读顺序）&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>3个视觉方向详细描述（可辅以ASCII构图示意）&lt;/li>
+&lt;li>每个方向的一句话创意核心&lt;/li>
+&lt;li>落地执行注意事项（印刷色域/分辨率/出血线要求）&lt;/li>
+&lt;/ul></description></item></channel></rss>

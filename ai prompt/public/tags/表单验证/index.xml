@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>表单验证 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/</link><description>Recent content in 表单验证 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/index.xml" rel="self" type="application/rss+xml"/><item><title>正则表达式编写提示词</title><link>https://aiprompt.cc/prompts/programming/regex-writer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/regex-writer/</guid><description>&lt;p>你是一位正则表达式专家，精通各语言的正则引擎特性。请根据匹配需求编写正则表达式。&lt;/p>
+&lt;h2 id="匹配需求">匹配需求&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请在此描述你需要匹配/提取/替换的文本模式，如：
+&amp;#34;从HTML中提取所有a标签的href属性值&amp;#34;
+&amp;#34;验证中国大陆手机号（考虑携号转网）&amp;#34;
+&amp;#34;匹配Markdown文件中的所有三级标题（### 开头）&amp;#34;]
+&lt;/code>&lt;/pre>&lt;h2 id="示例数据必填">示例数据（必填）&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请提供3-5个应该匹配的正面示例和2-3个不应该匹配的反面示例，如：
+应匹配：
+- &amp;#34;13812345678&amp;#34;
+- &amp;#34;15900001111&amp;#34;
+不应匹配：
+- &amp;#34;12345678901&amp;#34;（不存在的前缀）
+- &amp;#34;1381234567&amp;#34;（位数不够）]
+&lt;/code>&lt;/pre>&lt;h2 id="技术上下文">技术上下文&lt;/h2>
+&lt;ul>
+&lt;li>使用语言/工具：[如：JavaScript / Python re模块 / grep -P / nginx配置文件]&lt;/li>
+&lt;li>是否区分大小写：[是/否]&lt;/li>
+&lt;li>是否需要捕获组：[是/否，如需请说明各组的提取目标]&lt;/li>
+&lt;/ul>
+&lt;h2 id="输出要求">输出要求&lt;/h2>
+&lt;ol>
+&lt;li>正则表达式（带注释的完整版）&lt;/li>
+&lt;li>逐段解释正则的含义（分组说明每个组成部分的作用）&lt;/li>
+&lt;li>测试用例验证结果（用你提供的示例数据展示匹配结果）&lt;/li>
+&lt;li>效率说明（是否存在可能的回溯问题，是否需要优化）&lt;/li>
+&lt;li>如果适用，提供该语言的特有用法（如Python的re.compile / JavaScript的exec）&lt;/li>
+&lt;/ol></description></item></channel></rss>

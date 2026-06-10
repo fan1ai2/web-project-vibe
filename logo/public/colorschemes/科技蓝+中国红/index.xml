@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>科技蓝+中国红 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/colorschemes/%E7%A7%91%E6%8A%80%E8%93%9D+%E4%B8%AD%E5%9B%BD%E7%BA%A2/</link><description>Recent content in 科技蓝+中国红 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/colorschemes/%E7%A7%91%E6%8A%80%E8%93%9D+%E4%B8%AD%E5%9B%BD%E7%BA%A2/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/byd/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/byd/</guid><description>&lt;p>中国新能源汽车全球销冠，BYD 椭圆形标识，科技蓝色&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科技蓝&#43;中国红 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/colorschemes/%E7%A7%91%E6%8A%80%E8%93%9D&#43;%E4%B8%AD%E5%9B%BD%E7%BA%A2/</link>
+    <description>Recent content in 科技蓝&#43;中国红 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/colorschemes/%E7%A7%91%E6%8A%80%E8%93%9D+%E4%B8%AD%E5%9B%BD%E7%BA%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/byd/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/byd/</guid>
+      <description>&lt;p&gt;中国新能源汽车全球销冠，BYD 椭圆形标识，科技蓝色&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

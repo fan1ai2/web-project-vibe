@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>护肤/医疗 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/industries/%E6%8A%A4%E8%82%A4/%E5%8C%BB%E7%96%97/</link><description>Recent content in 护肤/医疗 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/industries/%E6%8A%A4%E8%82%A4/%E5%8C%BB%E7%96%97/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/winona/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/winona/</guid><description>&lt;p>中国功效护肤第一品牌，医学蓝绿色标，皮肤学级护肤&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>护肤/医疗 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/industries/%E6%8A%A4%E8%82%A4/%E5%8C%BB%E7%96%97/</link>
+    <description>Recent content in 护肤/医疗 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/industries/%E6%8A%A4%E8%82%A4/%E5%8C%BB%E7%96%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/winona/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/winona/</guid>
+      <description>&lt;p&gt;中国功效护肤第一品牌，医学蓝绿色标，皮肤学级护肤&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

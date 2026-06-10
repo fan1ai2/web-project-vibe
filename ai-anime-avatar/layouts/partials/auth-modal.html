@@ -17,6 +17,13 @@
         <label class="auth-modal__label" for="auth-login-password">{{ i18n "authPassword" }}</label>
         <input class="auth-modal__input" type="password" id="auth-login-password" placeholder="••••••••" required autocomplete="current-password">
       </div>
+      <div class="auth-modal__captcha">
+        <label class="auth-modal__label">{{ i18n "authCaptcha" }}</label>
+        <div class="auth-modal__captcha-row">
+          <input class="auth-modal__input auth-modal__captcha-input" type="text" id="auth-login-captcha" placeholder="{{ i18n "authCaptchaPlaceholder" }}" maxlength="6" autocomplete="off">
+          <img class="auth-modal__captcha-img" id="auth-login-captcha-img" src="" alt="Captcha" title="Click to refresh">
+        </div>
+      </div>
       <a href="#" class="auth-modal__forgot">{{ i18n "authForgot" }}</a>
       <button type="submit" class="auth-modal__submit">{{ i18n "authLogin" }}</button>
     </form>
@@ -33,6 +40,13 @@
       <div class="auth-modal__field">
         <label class="auth-modal__label" for="auth-register-confirm">{{ i18n "authConfirm" }}</label>
         <input class="auth-modal__input" type="password" id="auth-register-confirm" placeholder="••••••••" required autocomplete="new-password">
+      </div>
+      <div class="auth-modal__captcha">
+        <label class="auth-modal__label">{{ i18n "authCaptcha" }}</label>
+        <div class="auth-modal__captcha-row">
+          <input class="auth-modal__input auth-modal__captcha-input" type="text" id="auth-register-captcha" placeholder="{{ i18n "authCaptchaPlaceholder" }}" maxlength="6" autocomplete="off">
+          <img class="auth-modal__captcha-img" id="auth-register-captcha-img" src="" alt="Captcha" title="Click to refresh">
+        </div>
       </div>
       <button type="submit" class="auth-modal__submit">{{ i18n "authRegister" }}</button>
     </form>

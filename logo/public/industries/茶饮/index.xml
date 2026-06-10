@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>茶饮 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/industries/%E8%8C%B6%E9%A5%AE/</link><description>Recent content in 茶饮 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/industries/%E8%8C%B6%E9%A5%AE/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/chagee/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/chagee/</guid><description>&lt;p>新中式国风茶饮品牌，以戏曲花旦脸谱为核心视觉，融合东方美学&lt;/p></description></item><item><title/><link>https://logogen.example.com/cases/heytea/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/heytea/</guid><description>&lt;p>新茶饮开创者，logo 为喝茶小人侧脸，极简黑白，潮流感&lt;/p></description></item><item><title/><link>https://logogen.example.com/cases/mixue/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/mixue/</guid><description>&lt;p>中国最大茶饮连锁，雪王 IP 形象，红白配色，亲民性价比&lt;/p></description></item><item><title/><link>https://logogen.example.com/cases/guming/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/guming/</guid><description>&lt;p>中国新茶饮十强品牌，古典茶杯标识，江南茶饮文化&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>茶饮 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/industries/%E8%8C%B6%E9%A5%AE/</link>
+    <description>Recent content in 茶饮 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/industries/%E8%8C%B6%E9%A5%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/chagee/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/chagee/</guid>
+      <description>&lt;p&gt;新中式国风茶饮品牌，以戏曲花旦脸谱为核心视觉，融合东方美学&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/heytea/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/heytea/</guid>
+      <description>&lt;p&gt;新茶饮开创者，logo 为喝茶小人侧脸，极简黑白，潮流感&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/mixue/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/mixue/</guid>
+      <description>&lt;p&gt;中国最大茶饮连锁，雪王 IP 形象，红白配色，亲民性价比&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/guming/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/guming/</guid>
+      <description>&lt;p&gt;中国新茶饮十强品牌，古典茶杯标识，江南茶饮文化&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

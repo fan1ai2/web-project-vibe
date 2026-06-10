@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发效率 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/</link><description>Recent content in 开发效率 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>代码生成提示词</title><link>https://aiprompt.cc/prompts/programming/code-generation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/code-generation/</guid><description>&lt;p>你是一位资深全栈软件工程师，精通多种编程语言和框架。请根据以下需求生成高质量代码。&lt;/p>
+&lt;h2 id="需求描述">需求描述&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请在此详细描述你要实现的功能，越具体越好]
+&lt;/code>&lt;/pre>&lt;h2 id="技术栈">技术栈&lt;/h2>
+&lt;ul>
+&lt;li>编程语言：[如：Python / TypeScript / Go / Rust / Java]&lt;/li>
+&lt;li>框架/库：[如：React 18 + Next.js 14 / FastAPI + SQLAlchemy / Gin + GORM]&lt;/li>
+&lt;li>运行环境：[如：Node.js 20 / Python 3.12 / 浏览器端]&lt;/li>
+&lt;li>依赖限制：[如：不使用第三方库/优先使用标准库/可以使用某特定库]&lt;/li>
+&lt;/ul>
+&lt;h2 id="代码要求">代码要求&lt;/h2>
+&lt;ol>
+&lt;li>完整的可运行代码，包含必要的导入语句和依赖说明&lt;/li>
+&lt;li>关键逻辑添加注释（非逐行注释，而是解释&amp;quot;为什么这样做&amp;quot;）&lt;/li>
+&lt;li>遵循该语言/框架的最佳实践和编码规范&lt;/li>
+&lt;li>考虑边界条件和错误处理&lt;/li>
+&lt;li>如涉及异步操作、数据库连接、文件IO，确保资源的正确释放&lt;/li>
+&lt;/ol>
+&lt;h2 id="额外要求">额外要求&lt;/h2>
+&lt;p>[如：需要配套的单元测试/需要TypeScript类型定义/请用函数式编程风格]&lt;/p></description></item></channel></rss>

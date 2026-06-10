@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>红白金 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/colorschemes/%E7%BA%A2%E7%99%BD%E9%87%91/</link><description>Recent content in 红白金 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/colorschemes/%E7%BA%A2%E7%99%BD%E9%87%91/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/moutai/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/moutai/</guid><description>&lt;p>中国国酒，酱香白酒之王，飞天仙女 + 红白金经典配色&lt;/p></description></item><item><title/><link>https://logogen.example.com/cases/mixue/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/mixue/</guid><description>&lt;p>中国最大茶饮连锁，雪王 IP 形象，红白配色，亲民性价比&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>红白金 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/colorschemes/%E7%BA%A2%E7%99%BD%E9%87%91/</link>
+    <description>Recent content in 红白金 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/colorschemes/%E7%BA%A2%E7%99%BD%E9%87%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/moutai/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/moutai/</guid>
+      <description>&lt;p&gt;中国国酒，酱香白酒之王，飞天仙女 + 红白金经典配色&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/mixue/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/mixue/</guid>
+      <description>&lt;p&gt;中国最大茶饮连锁，雪王 IP 形象，红白配色，亲民性价比&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

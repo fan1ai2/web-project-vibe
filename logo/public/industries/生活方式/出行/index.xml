@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>生活方式/出行 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/industries/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/%E5%87%BA%E8%A1%8C/</link><description>Recent content in 生活方式/出行 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/industries/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/%E5%87%BA%E8%A1%8C/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/nio-life/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/nio-life/</guid><description>&lt;p>蔚来子品牌生活美学，高端出行生活方式延伸品&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生活方式/出行 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/industries/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/%E5%87%BA%E8%A1%8C/</link>
+    <description>Recent content in 生活方式/出行 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/industries/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/%E5%87%BA%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/nio-life/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/nio-life/</guid>
+      <description>&lt;p&gt;蔚来子品牌生活美学，高端出行生活方式延伸品&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

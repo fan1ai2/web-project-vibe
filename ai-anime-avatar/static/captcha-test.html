@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Captcha Viewer</title>
+<style>
+body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; }
+.captcha-img { border: 2px solid #ccc; border-radius: 4px; }
+input { padding: 8px; font-size: 16px; width: 150px; margin-right: 8px; }
+button { padding: 8px 16px; font-size: 16px; cursor: pointer; }
+.result { margin-top: 12px; padding: 8px; border-radius: 4px; }
+.success { background: #efe; color: #060; }
+.error { background: #fee; color: #c00; }
+</style>
+</head>
+<body>
+<h2>Captcha Test</h2>
+<p>Captcha ID: <code>137d0f11313d5249</code></p>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAAAoCAIAAACQOFjdAAAC+UlEQVR4nOyazWsTTxjHv7+f/QPqpRf/gRxEqFisb6h9wXo0iqdiqQVfS9e2VhKUxLaWFBVjYtQYiCFBaBCNRyOpb6ilYlARD/0HvHhRPOUoYSGM+zIzOzuZJtv9nCb7PHlm+W72O/tMtqNWq8GjlJfvAhgaOK9muv88LKVi/qeHU/OF1HxB1cm0NxvoVxmezAOIxUeaVH8DSSnMVDgL4FZsjJ7mSymNDno42LOFWaL06Qclerx3m6MTerz6jTNz6+a9zJzvv95Top3dXY3x7y8/mdXo+Yxlx4cfX0pp+FJKw8IrSX+k+6AlyevjACYupcwhHh8kvdWcT/oj3QfF8t3AWHYavC4/AHBw6DQz01LEBpGHVQBzJ3dwn2HbwCslj4g8eFJEHd8rpdFOUio2ytyKllvR+PN5b3C5rMYuAugN31yX2TkZ3Z1wlO9KyneF+hqy74Rj+2txEcVwJaWAiB7GYjuDp+8mUdOD83TcdlCMUmIb3k7LTovjSykNX0ojyaVicqko8MW6V+bydSv5s+mrNjyuH3Xahtvlk0Y5eefqrp4gvY5dA+7yifL5m7cADh/Yb86U6JX1FXx0RJ9Y3Nd5YOrYPCxFlI5/g0vDl1Ia3peyEkpXQmm7KOl3nd1dFz4v0qsZ8skQu9vJV8ojg0PMNAFmX14GEO1faEbxBoOLZ/iTb28PCU/E/lXa6VhKpktJ26vNQ7R/gaKjdn/STXH1iPfgwQkHV5vOhyuzAPZci5IHE2fjsuqrgf1KgZu/wqU04Cq3KQ32Z4nd46f3lx1leFzKRElLlBg74ZFsJpLNuJ9rfXbRlaEF2Tvhc2OnpMwl+PrVo5kXAIZvHJJyEk3i45OnAHYeOypcYfnZPQADR87xJPtvsknD416pEplSTsWKUzGRnT5lZKa1zLSD/2PtqM7EqzPGx17jDf5qbQ1AXyCgj/sCAcMRfUwO9JAlZLQxJsvqkB8N1cjZW5x/pKToYpbYEDWHzGO7+oZM80Wif71F+BsAAP//F3s6Pwks1GUAAAAASUVORK5CYII=" alt="Captcha" class="captcha-img" id="captcha-img">
+<p>Click image to refresh</p>
+<div style="margin-top:16px">
+  <input type="text" id="captcha-code" placeholder="Enter captcha code" maxlength="6">
+  <button id="verify-btn">Verify</button>
+</div>
+<div id="result"></div>
+
+<script>
+var captchaId = '137d0f11313d5249';
+
+document.getElementById('captcha-img').addEventListener('click', function() {
+  fetch('http://localhost:33101/api/captcha/generate', { method: 'POST', headers: {'Content-Type': 'application/json'} })
+    .then(r => r.json())
+    .then(data => {
+      captchaId = data.data.captcha_id;
+      this.src = data.data.captcha_image;
+      document.querySelector('code').textContent = captchaId;
+      document.getElementById('result').innerHTML = '';
+    });
+});
+
+document.getElementById('verify-btn').addEventListener('click', function() {
+  var code = document.getElementById('captcha-code').value.trim();
+  if (!code) return;
+  fetch('http://localhost:33101/api/auth/register', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({username: 'test@test.com', password: 'test123456', captcha_id: captchaId, captcha_code: code})
+  })
+  .then(r => r.json())
+  .then(data => {
+    var div = document.getElementById('result');
+    if (data.code === 200) {
+      div.innerHTML = '<div class="result success">SUCCESS: ' + JSON.stringify(data) + '</div>';
+    } else {
+      div.innerHTML = '<div class="result error">ERROR: ' + data.msg + '</div>';
+    }
+  });
+});
+</script>
+</body>
+</html>

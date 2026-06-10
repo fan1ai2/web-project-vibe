@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>脚本 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E8%84%9A%E6%9C%AC/</link><description>Recent content in 脚本 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>短视频脚本提示词</title><link>https://aiprompt.cc/prompts/marketing/short-video-script/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/marketing/short-video-script/</guid><description>&lt;p>你是一位资深短视频编导，深谙各平台内容算法和用户留存规律。请为我撰写一份短视频脚本。&lt;/p>
+&lt;h2 id="视频信息">视频信息&lt;/h2>
+&lt;ul>
+&lt;li>发布平台：[抖音/视频号/小红书/B站/快手]&lt;/li>
+&lt;li>视频目标：[涨粉/带货转化/品牌曝光/课程引流]&lt;/li>
+&lt;li>视频类型：[口播干货/剧情段子/产品测评/教程教学/Vlog/图文快闪]&lt;/li>
+&lt;li>目标受众：[如：想转行IT的职场人/新手宝妈/大学生]&lt;/li>
+&lt;li>视频时长：[15-30秒/30-60秒/1-3分钟]&lt;/li>
+&lt;/ul>
+&lt;h2 id="内容核心">内容核心&lt;/h2>
+&lt;ul>
+&lt;li>视频主题（一句话）：[如：3个让你工资翻倍的编程习惯]&lt;/li>
+&lt;li>核心信息点：[列出2-3个必须传达的关键信息]&lt;/li>
+&lt;li>产品/服务（如有植入）：[如：XX编程课程，主打项目实战+1v1答疑]&lt;/li>
+&lt;/ul>
+&lt;h2 id="脚本要求">脚本要求&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>黄金3秒开场&lt;/strong>（前3秒决定用户是否滑走）：钩子设计 - 反常识/强冲突/悬念提问/视觉冲击&lt;/li>
+&lt;li>&lt;strong>正文节奏&lt;/strong>：每5-8秒一个信息点或情绪变化，避免信息密度均匀导致倦怠&lt;/li>
+&lt;li>&lt;strong>镜头设计&lt;/strong>：景别切换（全景/中景/特写）、画面动作、字幕强调词&lt;/li>
+&lt;li>&lt;strong>口播稿&lt;/strong>：口语化、短句、有情绪起伏标记&lt;/li>
+&lt;li>&lt;strong>结尾引导&lt;/strong>：关注/点赞/评论/点击链接的话术设计&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[分镜号] 时长 | 画面描述 | 口播文案 | 字幕/花字 | 音效/BGM
+
+例：
+1 | 0-3s | 特写，人物直视镜头 | &amp;#34;你写的代码，为什么总是被同事说烂？&amp;#34; | 大字：代码为什么烂？ | 悬疑音效
+2 | 3-8s | ... | ... | ... | ...
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>完整分镜脚本&lt;/li>
+&lt;li>拍摄建议（场景/灯光/道具/着装）&lt;/li>
+&lt;li>发布优化建议（标题/封面/话题标签/发布时间）&lt;/li>
+&lt;/ul></description></item></channel></rss>

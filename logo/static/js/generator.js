@@ -19,7 +19,9 @@
   var brandInput = $('#brandName');
   var charCount = $('#charCount');
   var generateBtn = $('#generateBtn');
+  var generateBtnOverflow = $('#generateBtnOverflow');
   var previewCanvas = $('#previewCanvas');
+  var canvasWrapper = document.querySelector('.preview-canvas-wrapper');
   var previewEmpty = $('#previewEmpty');
   var previewTemplate = $('#previewTemplate');
   var previewLoading = $('#previewLoading');
@@ -67,6 +69,16 @@
     });
 
     if (generateBtn) generateBtn.addEventListener('click', generate);
+    if (generateBtnOverflow) generateBtnOverflow.addEventListener('click', generate);
+
+    // Stagger entrance for filter panel
+    requestAnimationFrame(function() {
+      document.querySelectorAll('.filter-group').forEach(function(g, i) {
+        g.classList.add('stagger-in');
+        g.style.animationDelay = (i * 80) + 'ms';
+        requestAnimationFrame(function() { g.classList.add('visible'); });
+      });
+    });
 
     document.addEventListener('click', function(e) {
       var btn = e.target.closest('.copy-btn');
@@ -118,10 +130,11 @@
   }
 
   function updateGenerateButton() {
-    if (!generateBtn) return;
     var canGenerate = state.brandName.length > 0 &&
       state.industry && state.style && state.layoutType && state.fontStyle;
-    generateBtn.disabled = !canGenerate || state.isGenerating;
+    var disabled = !canGenerate || state.isGenerating;
+    if (generateBtn) generateBtn.disabled = disabled;
+    if (generateBtnOverflow) generateBtnOverflow.disabled = disabled;
   }
 
   function updatePreview() {
@@ -196,6 +209,12 @@
     updateGenerateButton();
     showPreviewState('loading');
     if (previewPrompt) previewPrompt.style.display = 'none';
+
+    // Shake canvas on generate
+    if (previewCanvas) {
+      previewCanvas.classList.add('shaking');
+      setTimeout(function() { previewCanvas.classList.remove('shaking'); }, 500);
+    }
 
     var prompt = buildPrompt();
 

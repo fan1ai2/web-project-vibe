@@ -1,10 +1,13 @@
 {{ define "main" }}
 
-<!-- Hero -->
+<!-- Hero — Destructive Typography -->
 <section class="hero">
-  <div class="container">
-    <h1>AI 驱动的品牌 Logo 设计</h1>
-    <p>选择一个行业、一种风格、一套配色，让 AI 为你生成独一无二的品牌标识。所有设计均可免费下载使用。</p>
+  <div class="hero-content">
+    <span class="hero-label">LogoForge &mdash; 2026</span>
+    <span class="hero-line-1">品牌标识生成器</span>
+    <span class="hero-line-2">LogoForge</span>
+    <span class="hero-line-3">人工智能驱动的<br>视觉设计引擎</span>
+    <p class="hero-desc">选择行业、风格、配色，让 AI 为你生成独一无二的品牌标识 —— 每一个 Logo 都从 51 个中国品牌案例中汲取灵感。</p>
     <div class="hero-actions">
       <a href="/generator/" class="btn btn-primary btn-lg">开始创作</a>
       <a href="#showcase" class="btn btn-secondary btn-lg">浏览案例</a>
@@ -12,27 +15,39 @@
   </div>
 </section>
 
-<!-- Showcase -->
+<!-- Showcase — Uneven Grid -->
 <section class="section" id="showcase">
   <div class="container">
     <div class="section-header">
       <h2>精选案例</h2>
-      <p>来自 51 个中国品牌的 Logo 设计拆解</p>
+      <p>精选品牌 Logo 设计拆解</p>
     </div>
     <div class="showcase-grid">
       {{ $cases := index .Site.Data.cases "brand-logos" | first 8 }}
       {{ range $i, $c := $cases }}
       <a href="{{ printf "/cases/%s/" $c.slug }}" class="showcase-card">
         <span class="showcase-card-number">{{ printf "%02d" (add $i 1) }}</span>
-        <span class="showcase-card-placeholder" style="color:{{ index $c.colors 0 }};opacity:0.4">{{ slicestr $c.brand 0 1 }}</span>
+        <span class="showcase-card-placeholder" style="color:{{ index $c.colors 0 }}">{{ slicestr $c.brand 0 1 }}</span>
+        <span class="showcase-card-meta">
+          <span class="showcase-card-brand">{{ $c.brand }}</span>
+          <span class="showcase-card-style">{{ $c.style }}</span>
+          <span class="showcase-card-colors">
+            {{ range $c.colors }}
+            <span class="showcase-card-dot" style="background:{{ . }}"></span>
+            {{ end }}
+          </span>
+        </span>
       </a>
       {{ end }}
     </div>
   </div>
 </section>
 
-<!-- How It Works -->
-<section class="section">
+<!-- How It Works — Z-layout Steps -->
+<section class="section steps-section">
+  <span class="steps-watermark steps-watermark-1">01</span>
+  <span class="steps-watermark steps-watermark-2">02</span>
+  <span class="steps-watermark steps-watermark-3">03</span>
   <div class="container">
     <div class="section-header">
       <h2>三步生成你的 Logo</h2>
@@ -40,31 +55,54 @@
     </div>
     <div class="steps">
       <div class="step">
-        <div class="step-num">1</div>
-        <h3>设定参数</h3>
-        <p>选择行业、视觉风格、配色方案、字体气质和构图类型，定义你的品牌基调。</p>
+        <div class="step-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg>
+        </div>
+        <div class="step-body">
+          <h3>设定参数</h3>
+          <p>选择行业、视觉风格、配色方案、字体气质和构图类型，定义你的品牌基调。</p>
+        </div>
       </div>
       <div class="step">
-        <div class="step-num">2</div>
-        <h3>AI 生成</h3>
-        <p>基于你的设定自动生成品牌 Logo，可随时调整参数重新生成。</p>
+        <div class="step-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6.4-4.8-6.4 4.8 2.4-7.2-6-4.8h7.6z"/></svg>
+        </div>
+        <div class="step-body">
+          <h3>AI 生成</h3>
+          <p>基于你的设定自动生成品牌 Logo，可随时调整参数重新生成。</p>
+        </div>
       </div>
       <div class="step">
-        <div class="step-num">3</div>
-        <h3>下载使用</h3>
-        <p>导出 SVG 矢量文件，可直接用于网站、名片、社交媒体等场景。</p>
+        <div class="step-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+        </div>
+        <div class="step-body">
+          <h3>下载使用</h3>
+          <p>导出 SVG 矢量文件，可直接用于网站、名片、社交媒体等场景。</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA — Slanted Color Block -->
 <section class="cta-section">
   <div class="container-narrow">
-    <h2>创建你的第一个 Logo</h2>
-    <p>从 51 个品牌案例中获取灵感，用 AI 为你的品牌生成独一无二的标识。</p>
-    <a href="/generator/" class="btn btn-primary btn-lg">进入创作台</a>
+    <div class="cta-block">
+      <div class="cta-slash"></div>
+      <div class="cta-text">
+        <h2>创建你的第一个 Logo</h2>
+        <p>用 AI 为你的品牌生成独一无二的标识。</p>
+      </div>
+      <div class="cta-action">
+        <a href="/generator/" class="btn btn-primary btn-lg">进入创作台</a>
+      </div>
+    </div>
   </div>
 </section>
 
+{{ end }}
+
+{{ define "head_extra" }}
+<script src="/js/home.js" defer></script>
 {{ end }}

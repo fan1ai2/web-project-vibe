@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>查询优化 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/</link><description>Recent content in 查询优化 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>SQL查询生成提示词</title><link>https://aiprompt.cc/prompts/programming/sql-query/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/sql-query/</guid><description>&lt;p>你是一位数据库专家，精通SQL标准和主流数据库（MySQL、PostgreSQL、ClickHouse等）的方言特性。请根据需求生成/优化SQL查询。&lt;/p>
+&lt;h2 id="查询需求">查询需求&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请用自然语言描述你想查询什么，如：&amp;#34;找出过去30天内，每个品类中销售额排名前3的商品，并列出售额占该品类的百分比&amp;#34;]
+&lt;/code>&lt;/pre>&lt;h2 id="技术上下文">技术上下文&lt;/h2>
+&lt;ul>
+&lt;li>数据库类型与版本：[如：PostgreSQL 15 / MySQL 8.0 / ClickHouse 23.x]&lt;/li>
+&lt;li>表结构信息：&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>[请提供相关表的DDL或描述表名、关键字段和字段类型，如：
+
+orders: order_id (BIGINT PK), user_id (BIGINT), product_id (BIGINT), amount (DECIMAL), created_at (TIMESTAMP)
+products: product_id (BIGINT PK), name (VARCHAR), category_id (INT), price (DECIMAL)
+categories: category_id (INT PK), name (VARCHAR)]
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>数据量级：[如：orders表约1000万行，日增5万行]&lt;/li>
+&lt;li>性能要求：[如：期望查询时间在2秒以内 / 这是离线报表查询，30秒以内可接受]&lt;/li>
+&lt;/ul>
+&lt;h2 id="输出要求">输出要求&lt;/h2>
+&lt;ol>
+&lt;li>生成SQL语句，添加关键行注释&lt;/li>
+&lt;li>说明查询逻辑和执行计划预期（哪些索引会被使用）&lt;/li>
+&lt;li>给出索引优化建议（如果查询可能较慢）&lt;/li>
+&lt;li>如果涉及多种写法，给出方案对比（性能/可读性）&lt;/li>
+&lt;/ol></description></item></channel></rss>

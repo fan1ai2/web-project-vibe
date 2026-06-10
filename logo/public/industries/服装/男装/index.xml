@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>服装/男装 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/industries/%E6%9C%8D%E8%A3%85/%E7%94%B7%E8%A3%85/</link><description>Recent content in 服装/男装 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/industries/%E6%9C%8D%E8%A3%85/%E7%94%B7%E8%A3%85/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/hla/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/hla/</guid><description>&lt;p>中国男装国民品牌，蓝色 HLA 字标，一年逛两次&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>服装/男装 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/industries/%E6%9C%8D%E8%A3%85/%E7%94%B7%E8%A3%85/</link>
+    <description>Recent content in 服装/男装 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/industries/%E6%9C%8D%E8%A3%85/%E7%94%B7%E8%A3%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/hla/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/hla/</guid>
+      <description>&lt;p&gt;中国男装国民品牌，蓝色 HLA 字标，一年逛两次&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

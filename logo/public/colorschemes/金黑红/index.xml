@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>金黑红 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/colorschemes/%E9%87%91%E9%BB%91%E7%BA%A2/</link><description>Recent content in 金黑红 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/colorschemes/%E9%87%91%E9%BB%91%E7%BA%A2/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/chagee/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/chagee/</guid><description>&lt;p>新中式国风茶饮品牌，以戏曲花旦脸谱为核心视觉，融合东方美学&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>金黑红 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/colorschemes/%E9%87%91%E9%BB%91%E7%BA%A2/</link>
+    <description>Recent content in 金黑红 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/colorschemes/%E9%87%91%E9%BB%91%E7%BA%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/chagee/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/chagee/</guid>
+      <description>&lt;p&gt;新中式国风茶饮品牌，以戏曲花旦脸谱为核心视觉，融合东方美学&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

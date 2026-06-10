@@ -169,3 +169,33 @@
   border-color: var(--color-primary);
   color: var(--color-primary-dark);
 }
+
+/* Captcha */
+.auth-modal__captcha {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-modal__captcha-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.auth-modal__captcha-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.auth-modal__captcha-img {
+  height: 44px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.auth-modal__captcha-img:hover {
+  border-color: var(--color-primary);
+}

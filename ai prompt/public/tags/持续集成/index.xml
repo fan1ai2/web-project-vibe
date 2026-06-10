@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>持续集成 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link><description>Recent content in 持续集成 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/index.xml" rel="self" type="application/rss+xml"/><item><title>CI/CD配置生成提示词</title><link>https://aiprompt.cc/prompts/programming/cicd-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/cicd-config/</guid><description>&lt;p>你是一位DevOps工程师，精通CI/CD流水线设计与实现。请根据项目需求生成CI/CD配置。&lt;/p>
+&lt;h2 id="项目信息">项目信息&lt;/h2>
+&lt;ul>
+&lt;li>项目类型：[如：React前端SPA / Go微服务 / Python Django API / Node.js全栈]&lt;/li>
+&lt;li>代码仓库：[GitHub / GitLab]&lt;/li>
+&lt;li>技术栈详情：[如：使用pnpm管理依赖、Vite构建、Vitest测试]&lt;/li>
+&lt;li>部署目标：[如：阿里云ACK (Kubernetes) / Vercel / AWS ECS / 自建服务器Docker]&lt;/li>
+&lt;/ul>
+&lt;h2 id="流水线需求">流水线需求&lt;/h2>
+&lt;ul>
+&lt;li>触发条件：[Push到main自动部署 / PR时运行测试 / 手动触发生产发布]&lt;/li>
+&lt;li>需要执行的步骤：
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> 代码检查（Lint）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 类型检查（Type Check）&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 单元测试&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 集成测试&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 构建产物&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 安全扫描&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> 部署到[环境名]&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="配置要求">配置要求&lt;/h2>
+&lt;ol>
+&lt;li>使用GitHub Actions（仓库为GitHub）或GitLab CI（仓库为GitLab）&lt;/li>
+&lt;li>合理拆分Job，利用并行执行缩短流水线时间&lt;/li>
+&lt;li>配置缓存策略（node_modules、Go modules、Docker layer等）&lt;/li>
+&lt;li>敏感信息通过Secrets管理，不在配置文件中硬编码&lt;/li>
+&lt;li>添加构建失败时的通知策略&lt;/li>
+&lt;li>生产部署需要手动审批门禁&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>完整CI/CD配置文件（标注文件名，如.gitlab-ci.yml）&lt;/li>
+&lt;li>工作流说明（各阶段的作用和触发条件）&lt;/li>
+&lt;li>需要配置的Secrets/Variables清单&lt;/li>
+&lt;/ul></description></item></channel></rss>

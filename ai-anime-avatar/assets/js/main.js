@@ -358,6 +358,7 @@
     if (modal) {
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
+      refreshAuthCaptcha();
     }
     if (mobileNav && mobileNav.classList.contains('active')) {
       mobileNav.classList.remove('active');
@@ -386,6 +387,25 @@
     }
   });
 
+  var authCaptchaId = '';
+
+  function refreshAuthCaptcha() {
+    if (typeof API === 'undefined') return;
+    API.captcha().then(function(data) {
+      authCaptchaId = data.data.captcha_id;
+      var img = data.data.captcha_image;
+      var loginImg = document.getElementById('auth-login-captcha-img');
+      var regImg = document.getElementById('auth-register-captcha-img');
+      if (loginImg) loginImg.src = img;
+      if (regImg) regImg.src = img;
+    }).catch(function() {});
+  }
+
+  var loginCaptchaImg = document.getElementById('auth-login-captcha-img');
+  var regCaptchaImg = document.getElementById('auth-register-captcha-img');
+  if (loginCaptchaImg) loginCaptchaImg.addEventListener('click', refreshAuthCaptcha);
+  if (regCaptchaImg) regCaptchaImg.addEventListener('click', refreshAuthCaptcha);
+
   if (tabLogin && tabRegister && formLogin && formRegister) {
     tabLogin.addEventListener('click', function() {
       tabLogin.classList.add('auth-modal__tab--active');
@@ -394,6 +414,7 @@
       formRegister.classList.remove('auth-modal__form--active');
       tabLogin.setAttribute('aria-selected', 'true');
       tabRegister.setAttribute('aria-selected', 'false');
+      refreshAuthCaptcha();
     });
 
     tabRegister.addEventListener('click', function() {
@@ -403,6 +424,7 @@
       formLogin.classList.remove('auth-modal__form--active');
       tabRegister.setAttribute('aria-selected', 'true');
       tabLogin.setAttribute('aria-selected', 'false');
+      refreshAuthCaptcha();
     });
   }
 
@@ -412,16 +434,20 @@
       e.preventDefault();
       var email = document.getElementById('auth-login-email').value.trim();
       var pwd = document.getElementById('auth-login-password').value;
+      var captchaInput = document.getElementById('auth-login-captcha');
+      var captchaCode = captchaInput ? captchaInput.value.trim() : '';
       var btn = formLogin.querySelector('button');
       if (!email || !pwd) { showAuthToast('Please fill in all fields', 'error'); return; }
 
       btn.disabled = true; btn.textContent = 'Logging in...';
-      API.login(email, pwd).then(function(data) {
+      API.login(email, pwd, captchaCode ? authCaptchaId : '', captchaCode).then(function(data) {
         localStorage.setItem('user', JSON.stringify(data.data.member || data.data));
         showAuthToast('Login successful!', 'success');
         setTimeout(function() { closeModal(); }, 800);
       }).catch(function(err) {
         showAuthToast(err.message || 'Login failed', 'error');
+        refreshAuthCaptcha();
+        if (captchaInput) captchaInput.value = '';
       }).finally(function() {
         btn.disabled = false; btn.textContent = 'Login';
       });
@@ -434,17 +460,21 @@
       var email = document.getElementById('auth-register-email').value.trim();
       var pwd = document.getElementById('auth-register-password').value;
       var confirm = document.getElementById('auth-register-confirm').value;
+      var captchaInput = document.getElementById('auth-register-captcha');
+      var captchaCode = captchaInput ? captchaInput.value.trim() : '';
       var btn = formRegister.querySelector('button');
       if (!email || !pwd) { showAuthToast('Please fill in all fields', 'error'); return; }
       if (pwd !== confirm) { showAuthToast('Passwords do not match', 'error'); return; }
       if (pwd.length < 8) { showAuthToast('Password must be at least 8 characters', 'error'); return; }
 
       btn.disabled = true; btn.textContent = 'Registering...';
-      API.register(email, pwd).then(function(data) {
+      API.register(email, pwd, captchaCode ? authCaptchaId : '', captchaCode).then(function(data) {
         showAuthToast('Registration successful! Please log in.', 'success');
         tabLogin.click();
       }).catch(function(err) {
         showAuthToast(err.message || 'Registration failed', 'error');
+        refreshAuthCaptcha();
+        if (captchaInput) captchaInput.value = '';
       }).finally(function() {
         btn.disabled = false; btn.textContent = 'Register';
       });

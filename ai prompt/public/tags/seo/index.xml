@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SEO on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/seo/</link><description>Recent content in SEO on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/seo/index.xml" rel="self" type="application/rss+xml"/><item><title>SEO优化文章提示词</title><link>https://aiprompt.cc/prompts/marketing/seo-article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/marketing/seo-article/</guid><description>&lt;p>你是一位SEO内容策略师，擅长撰写既能取悦搜索引擎又能吸引用户的高质量文章。请根据以下要求撰写一篇SEO优化文章。&lt;/p>
+&lt;h2 id="文章目标">文章目标&lt;/h2>
+&lt;ul>
+&lt;li>目标关键词（Primary KW）：[如：远程办公工具推荐]&lt;/li>
+&lt;li>次要关键词（Secondary KW）：[如：团队协作软件、在线会议工具、远程工作效率]&lt;/li>
+&lt;li>长尾关键词（Long-tail KW）：[如：适合小团队的免费远程办公工具/2024远程办公软件排名]&lt;/li>
+&lt;li>搜索意图：[信息型（了解/学习）/商业型（对比/选择）/交易型（购买）]&lt;/li>
+&lt;li>目标字数：[如：2000-3000字]&lt;/li>
+&lt;/ul>
+&lt;h2 id="内容要求">内容要求&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>标题策略&lt;/strong>：Title Tag包含主关键词，60字符以内；H1标题包含主关键词且吸引点击&lt;/li>
+&lt;li>&lt;strong>内容结构&lt;/strong>：
+&lt;ul>
+&lt;li>引言：前100字包含主关键词，点出用户痛点，给出阅读承诺&lt;/li>
+&lt;li>主体：使用H2/H3层级，每个H2覆盖一个次关键词&lt;/li>
+&lt;li>FAQ段落：回答People Also Ask中的3-5个常见问题&lt;/li>
+&lt;li>结论：总结要点 + CTA引导&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>关键词布局规范&lt;/strong>：
+&lt;ul>
+&lt;li>主关键词密度控制在1-2%&lt;/li>
+&lt;li>前200字、最后一个H2、图片ALT标签中必须出现主关键词&lt;/li>
+&lt;li>合理使用LSI关键词（Latent Semantic Indexing）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>EEAT信号&lt;/strong>：引用数据来源、注明作者专业背景、标注更新日期&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>SEO元数据（Title Tag / Meta Description / URL Slug建议）&lt;/li>
+&lt;li>完整文章正文（含H2/H3/段落/列表）&lt;/li>
+&lt;li>内部链接建议（应该链向站内的哪些页面）&lt;/li>
+&lt;li>外部引用来源建议&lt;/li>
+&lt;/ul></description></item></channel></rss>

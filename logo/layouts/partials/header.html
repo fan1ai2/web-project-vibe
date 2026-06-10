@@ -5,5 +5,10 @@
       <a href="{{ .Site.Home.RelPermalink }}" class="{{ if .IsHome }}active{{ end }}">首页</a>
       <a href="/generator/" class="{{ if eq .RelPermalink "/generator/" }}active{{ end }}">创作台</a>
     </nav>
+    <div class="header-auth">
+      <span class="auth-user" id="authUser" style="display:none"></span>
+      <button class="btn btn-ghost btn-sm" id="authLoginBtn">登录</button>
+      <button class="btn btn-ghost btn-sm" id="authLogoutBtn" style="display:none">退出</button>
+    </div>
   </div>
 </header>

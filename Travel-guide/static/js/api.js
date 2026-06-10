@@ -3,7 +3,7 @@
   'use strict';
 
   // 后端地址（部署时改为实际 IP:33101）
-  var API_BASE = window.API_BASE || 'http://localhost:33101';
+  var API_BASE = window.API_BASE || 'http://10.100.1.235:33101';
 
   function req(method, path, body) {
     var opts = {

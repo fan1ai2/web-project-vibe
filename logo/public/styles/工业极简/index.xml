@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工业极简 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/styles/%E5%B7%A5%E4%B8%9A%E6%9E%81%E7%AE%80/</link><description>Recent content in 工业极简 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/styles/%E5%B7%A5%E4%B8%9A%E6%9E%81%E7%AE%80/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/saturnbird/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/saturnbird/</guid><description>&lt;p>精品速溶咖啡新消费品牌，数字编号系统 + 极简工业风，设计师圈层标志&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工业极简 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/styles/%E5%B7%A5%E4%B8%9A%E6%9E%81%E7%AE%80/</link>
+    <description>Recent content in 工业极简 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/styles/%E5%B7%A5%E4%B8%9A%E6%9E%81%E7%AE%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/saturnbird/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/saturnbird/</guid>
+      <description>&lt;p&gt;精品速溶咖啡新消费品牌，数字编号系统 + 极简工业风，设计师圈层标志&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

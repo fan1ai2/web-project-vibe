@@ -11,9 +11,14 @@ summaryLength = 80
   ogImage = "/icons/og-image.svg"
   siteAuthor = "AI Prompt"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-  section = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
 
 [privacy]
   [privacy.googleAnalytics]

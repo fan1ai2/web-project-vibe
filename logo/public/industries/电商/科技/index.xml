@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>电商/科技 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/industries/%E7%94%B5%E5%95%86/%E7%A7%91%E6%8A%80/</link><description>Recent content in 电商/科技 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/industries/%E7%94%B5%E5%95%86/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/alibaba/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/alibaba/</guid><description>&lt;p>全球最大电商平台之一，logo 为橙色笑脸 a 字，传递开放与温暖&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>电商/科技 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/industries/%E7%94%B5%E5%95%86/%E7%A7%91%E6%8A%80/</link>
+    <description>Recent content in 电商/科技 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/industries/%E7%94%B5%E5%95%86/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/alibaba/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/alibaba/</guid>
+      <description>&lt;p&gt;全球最大电商平台之一，logo 为橙色笑脸 a 字，传递开放与温暖&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

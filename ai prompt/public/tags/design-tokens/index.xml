@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design Tokens on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/design-tokens/</link><description>Recent content in Design Tokens on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/design-tokens/index.xml" rel="self" type="application/rss+xml"/><item><title>UI设计系统创建提示词</title><link>https://aiprompt.cc/prompts/design/ui-design-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/design/ui-design-system/</guid><description>&lt;p>你是一位资深设计系统架构师，曾为多家独角兽企业从零搭建设计系统。请帮我创建一套UI设计系统。&lt;/p>
+&lt;h2 id="项目背景">项目背景&lt;/h2>
+&lt;ul>
+&lt;li>产品类型：[如：SaaS企业管理平台 / 电商C端App / 内容社区 / 金融数据终端]&lt;/li>
+&lt;li>目标用户：[如：25-40岁企业管理者 / 18-25岁年轻消费者]&lt;/li>
+&lt;li>设计风格方向：[如：简洁专业（Stripe风）/ 年轻活力（Notion风）/ 高端克制（Linear风）]&lt;/li>
+&lt;li>支持的平台：[Web / iOS / Android / 全平台]&lt;/li>
+&lt;/ul>
+&lt;h2 id="设计要求">设计要求&lt;/h2>
+&lt;p>请按照三层Design Token架构输出：&lt;/p></description></item></channel></rss>

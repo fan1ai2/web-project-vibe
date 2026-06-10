@@ -1,28 +1,33 @@
 <div class="preview-inner">
-  <div class="preview-canvas" id="previewCanvas">
-    <div class="preview-empty-state" id="previewEmpty">
-      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-        <rect x="4" y="4" width="56" height="56" rx="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
-        <path d="M22 40V28l6 8 4-5 4 7 6-10v12H22z" fill="currentColor" opacity="0.3"/>
-        <circle cx="28" cy="26" r="2.5" fill="currentColor" opacity="0.35"/>
-      </svg>
-      <p>选择左侧关键词开始</p>
-    </div>
-    <div class="preview-template" id="previewTemplate" style="display:none">
-      <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" id="previewSvg"></svg>
-    </div>
-    <div class="preview-loading" id="previewLoading" style="display:none">
-      <div class="loading-bar"></div>
-      <p>AI 正在生成中...</p>
-    </div>
-    <div class="preview-result" id="previewResult" style="display:none">
-      <img src="" alt="生成的 Logo" id="resultImage" class="result-image">
-      <div class="result-actions">
-        <button class="btn btn-ghost btn-sm" id="downloadBtn">下载 SVG</button>
-        <button class="btn btn-ghost btn-sm" id="shareBtn">分享</button>
-        <button class="btn btn-ghost btn-sm" id="regenerateBtn">重新生成</button>
+  <div class="preview-canvas-wrapper">
+    <div class="preview-canvas" id="previewCanvas">
+      <div class="preview-empty-state" id="previewEmpty">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <rect x="4" y="4" width="56" height="56" rx="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
+          <path d="M22 40V28l6 8 4-5 4 7 6-10v12H22z" fill="currentColor" opacity="0.3"/>
+          <circle cx="28" cy="26" r="2.5" fill="currentColor" opacity="0.35"/>
+        </svg>
+        <p>选择左侧关键词开始</p>
+      </div>
+      <div class="preview-template" id="previewTemplate" style="display:none">
+        <svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" id="previewSvg"></svg>
+      </div>
+      <div class="preview-loading" id="previewLoading" style="display:none">
+        <div class="loader-collide">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p>AI 正在生成中...</p>
+      </div>
+      <div class="preview-result" id="previewResult" style="display:none">
+        <img src="" alt="生成的 Logo" id="resultImage" class="result-image">
+        <div class="result-actions">
+          <button class="btn btn-ghost btn-sm" id="downloadBtn">下载 SVG</button>
+          <button class="btn btn-ghost btn-sm" id="shareBtn">分享</button>
+          <button class="btn btn-ghost btn-sm" id="regenerateBtn">重新生成</button>
+        </div>
       </div>
     </div>
+    <button class="btn-generate-overflow" id="generateBtnOverflow" disabled>生成</button>
   </div>
   <div class="preview-prompt-display" id="previewPrompt" style="display:none">
     <h4>生成 Prompt</h4>

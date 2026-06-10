@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>火锅红 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/colorschemes/%E7%81%AB%E9%94%85%E7%BA%A2/</link><description>Recent content in 火锅红 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/colorschemes/%E7%81%AB%E9%94%85%E7%BA%A2/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/haidilao/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/haidilao/</guid><description>&lt;p>中国火锅餐饮巨头，红色 Hi 字标识，极致服务体验&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>火锅红 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/colorschemes/%E7%81%AB%E9%94%85%E7%BA%A2/</link>
+    <description>Recent content in 火锅红 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/colorschemes/%E7%81%AB%E9%94%85%E7%BA%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/haidilao/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/haidilao/</guid>
+      <description>&lt;p&gt;中国火锅餐饮巨头，红色 Hi 字标识，极致服务体验&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

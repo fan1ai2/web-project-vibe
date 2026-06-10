@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>中文宋体 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/fontstyles/%E4%B8%AD%E6%96%87%E5%AE%8B%E4%BD%93/</link><description>Recent content in 中文宋体 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/fontstyles/%E4%B8%AD%E6%96%87%E5%AE%8B%E4%BD%93/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/to-summer/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/to-summer/</guid><description>&lt;p>中国高端香薰品牌，东方植物美学，文人气质，留白与克制&lt;/p></description></item><item><title/><link>https://logogen.example.com/cases/tsingtao/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/tsingtao/</guid><description>&lt;p>中国最知名啤酒品牌，回澜阁地标 + 绿色瓶身，百年经典&lt;/p></description></item><item><title/><link>https://logogen.example.com/cases/fotile/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/fotile/</guid><description>&lt;p>中国高端厨电品牌，金色「方」字标识，东方生活美学&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>中文宋体 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/fontstyles/%E4%B8%AD%E6%96%87%E5%AE%8B%E4%BD%93/</link>
+    <description>Recent content in 中文宋体 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/fontstyles/%E4%B8%AD%E6%96%87%E5%AE%8B%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/to-summer/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/to-summer/</guid>
+      <description>&lt;p&gt;中国高端香薰品牌，东方植物美学，文人气质，留白与克制&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/tsingtao/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/tsingtao/</guid>
+      <description>&lt;p&gt;中国最知名啤酒品牌，回澜阁地标 + 绿色瓶身，百年经典&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/fotile/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/fotile/</guid>
+      <description>&lt;p&gt;中国高端厨电品牌，金色「方」字标识，东方生活美学&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

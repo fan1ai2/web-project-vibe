@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>大地暖灰 on LogoForge — AI 商标生成器</title><link>https://logogen.example.com/colorschemes/%E5%A4%A7%E5%9C%B0%E6%9A%96%E7%81%B0/</link><description>Recent content in 大地暖灰 on LogoForge — AI 商标生成器</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate><atom:link href="https://logogen.example.com/colorschemes/%E5%A4%A7%E5%9C%B0%E6%9A%96%E7%81%B0/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://logogen.example.com/cases/to-summer/</link><pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate><guid>https://logogen.example.com/cases/to-summer/</guid><description>&lt;p>中国高端香薰品牌，东方植物美学，文人气质，留白与克制&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>大地暖灰 on LogoForge — AI 商标生成器</title>
+    <link>http://localhost:1313/colorschemes/%E5%A4%A7%E5%9C%B0%E6%9A%96%E7%81%B0/</link>
+    <description>Recent content in 大地暖灰 on LogoForge — AI 商标生成器</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 10 Jun 2026 01:33:31 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/colorschemes/%E5%A4%A7%E5%9C%B0%E6%9A%96%E7%81%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cases/to-summer/</link>
+      <pubDate>Wed, 10 Jun 2026 01:33:31 +0000</pubDate>
+      <guid>http://localhost:1313/cases/to-summer/</guid>
+      <description>&lt;p&gt;中国高端香薰品牌，东方植物美学，文人气质，留白与克制&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
