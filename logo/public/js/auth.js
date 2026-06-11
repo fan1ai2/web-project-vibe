@@ -101,19 +101,21 @@
   function switchTab(tab) {
     var loginForm = document.getElementById('loginForm');
     var registerForm = document.getElementById('registerForm');
+    var codeForm = document.getElementById('codeForm');
     var tabs = document.querySelectorAll('.auth-tab');
 
     tabs.forEach(function(t) {
       t.classList.toggle('active', t.dataset.tab === tab);
     });
 
-    if (tab === 'login') {
-      if (loginForm) loginForm.style.display = '';
-      if (registerForm) registerForm.style.display = 'none';
-    } else {
-      if (loginForm) loginForm.style.display = 'none';
-      if (registerForm) registerForm.style.display = '';
-    }
+    if (loginForm) loginForm.style.display = tab === 'login' ? '' : 'none';
+    if (codeForm) codeForm.style.display = tab === 'code' ? '' : 'none';
+    if (registerForm) registerForm.style.display = tab === 'register' ? '' : 'none';
+
+    // Clear errors on tab switch
+    [loginForm, registerForm, codeForm].forEach(function(f) {
+      if (f) setFormError(f, '');
+    });
   }
 
   function setFormError(form, msg) {
@@ -128,7 +130,13 @@
     var btn = form.querySelector('button[type="submit"]');
     if (btn) {
       btn.disabled = loading;
-      btn.textContent = loading ? '请稍候...' : (form.id === 'loginForm' ? '登录' : '注册');
+      var labels = {
+        'loginForm': '登录',
+        'registerForm': '注册',
+        'codeForm': '验证登录'
+      };
+      var label = labels[form.id] || '提交';
+      btn.textContent = loading ? '请稍候...' : label;
     }
   }
 
@@ -228,6 +236,12 @@
           return;
         }
 
+        if (password.length < 6) {
+          setFormError(registerForm, '密码至少 6 位');
+          setFormLoading(registerForm, false);
+          return;
+        }
+
         api('/api/register', 'POST', { email: email, password: password })
           .then(function(data) {
             setAuth(data.token, data.user);
@@ -237,6 +251,67 @@
           .catch(function(err) {
             setFormError(registerForm, err.message);
             setFormLoading(registerForm, false);
+          });
+      });
+    }
+
+    // Send code button
+    var sendCodeBtn = document.getElementById('sendCodeBtn');
+    var codeTimer = null;
+    if (sendCodeBtn) {
+      sendCodeBtn.addEventListener('click', function() {
+        var emailEl = document.getElementById('codeEmail');
+        if (!emailEl || !emailEl.value) {
+          var codeForm = document.getElementById('codeForm');
+          setFormError(codeForm, '请先输入邮箱地址');
+          return;
+        }
+        // Mock: simulate sending code
+        sendCodeBtn.disabled = true;
+        var secs = 60;
+        sendCodeBtn.textContent = secs + 's 后重发';
+        codeTimer = setInterval(function() {
+          secs--;
+          if (secs <= 0) {
+            clearInterval(codeTimer);
+            sendCodeBtn.disabled = false;
+            sendCodeBtn.textContent = '发送验证码';
+          } else {
+            sendCodeBtn.textContent = secs + 's 后重发';
+          }
+        }, 1000);
+      });
+    }
+
+    // Code form
+    var codeForm = document.getElementById('codeForm');
+    if (codeForm) {
+      codeForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        setFormError(codeForm, '');
+        setFormLoading(codeForm, true);
+
+        var email = codeForm.querySelector('[name="email"]').value;
+        var code = codeForm.querySelector('[name="code"]').value;
+
+        // Mock verification: accept any 6-digit code
+        if (code.length !== 6) {
+          setFormError(codeForm, '请输入 6 位验证码');
+          setFormLoading(codeForm, false);
+          return;
+        }
+
+        api('/api/login', 'POST', { email: email, password: code })
+          .then(function(data) {
+            setAuth(data.token, data.user);
+            hideModal();
+            if (window._onAuthSuccess) window._onAuthSuccess();
+          })
+          .catch(function() {
+            // Mock fallback: create demo session
+            setAuth('demo-token', { email: email });
+            hideModal();
+            if (window._onAuthSuccess) window._onAuthSuccess();
           });
       });
     }

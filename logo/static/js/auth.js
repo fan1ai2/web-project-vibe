@@ -107,13 +107,13 @@
       t.classList.toggle('active', t.dataset.tab === tab);
     });
 
-    if (tab === 'login') {
-      if (loginForm) loginForm.style.display = '';
-      if (registerForm) registerForm.style.display = 'none';
-    } else {
-      if (loginForm) loginForm.style.display = 'none';
-      if (registerForm) registerForm.style.display = '';
-    }
+    if (loginForm) loginForm.style.display = tab === 'login' ? '' : 'none';
+    if (registerForm) registerForm.style.display = tab === 'register' ? '' : 'none';
+
+    // Clear errors on tab switch
+    [loginForm, registerForm].forEach(function(f) {
+      if (f) setFormError(f, '');
+    });
   }
 
   function setFormError(form, msg) {
@@ -128,7 +128,12 @@
     var btn = form.querySelector('button[type="submit"]');
     if (btn) {
       btn.disabled = loading;
-      btn.textContent = loading ? '请稍候...' : (form.id === 'loginForm' ? '登录' : '注册');
+      var labels = {
+        'loginForm': '登录',
+        'registerForm': '注册'
+      };
+      var label = labels[form.id] || '提交';
+      btn.textContent = loading ? '请稍候...' : label;
     }
   }
 
@@ -219,8 +224,15 @@
         setFormLoading(registerForm, true);
 
         var email = registerForm.querySelector('[name="email"]').value;
+        var code = registerForm.querySelector('[name="code"]').value;
         var password = registerForm.querySelector('[name="password"]').value;
         var confirm = registerForm.querySelector('[name="confirm"]').value;
+
+        if (code.length !== 6) {
+          setFormError(registerForm, '请输入 6 位邮箱验证码');
+          setFormLoading(registerForm, false);
+          return;
+        }
 
         if (password !== confirm) {
           setFormError(registerForm, '两次密码输入不一致');
@@ -228,7 +240,13 @@
           return;
         }
 
-        api('/api/register', 'POST', { email: email, password: password })
+        if (password.length < 6) {
+          setFormError(registerForm, '密码至少 6 位');
+          setFormLoading(registerForm, false);
+          return;
+        }
+
+        api('/api/register', 'POST', { email: email, password: password, code: code })
           .then(function(data) {
             setAuth(data.token, data.user);
             hideModal();
@@ -238,6 +256,34 @@
             setFormError(registerForm, err.message);
             setFormLoading(registerForm, false);
           });
+      });
+    }
+
+    // Send verification code button (for registration)
+    var sendCodeBtn = document.getElementById('sendCodeBtn');
+    var codeTimer = null;
+    if (sendCodeBtn) {
+      sendCodeBtn.addEventListener('click', function() {
+        var emailEl = document.getElementById('registerEmail');
+        if (!emailEl || !emailEl.value) {
+          setFormError(registerForm, '请先输入邮箱地址');
+          return;
+        }
+        // Mock: simulate sending code
+        sendCodeBtn.disabled = true;
+        var secs = 60;
+        sendCodeBtn.textContent = secs + 's 后重发';
+        if (codeTimer) clearInterval(codeTimer);
+        codeTimer = setInterval(function() {
+          secs--;
+          if (secs <= 0) {
+            clearInterval(codeTimer);
+            sendCodeBtn.disabled = false;
+            sendCodeBtn.textContent = '发送验证码';
+          } else {
+            sendCodeBtn.textContent = secs + 's 后重发';
+          }
+        }, 1000);
       });
     }
   }

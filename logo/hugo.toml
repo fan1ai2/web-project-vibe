@@ -1,15 +1,8 @@
 baseURL = "https://logogen.example.com/"
 languageCode = "zh-CN"
-title = "LogoForge — AI 商标生成器"
+title = "LogoForge"
 enableRobotsTXT = true
 enableEmoji = false
-
-[taxonomies]
-  industry = "industries"
-  style = "styles"
-  colorScheme = "colorschemes"
-  fontStyle = "fontstyles"
-  layoutType = "layouttypes"
 
 [params]
   description = "AI 驱动的商标 Logo 自动生成工具。选择行业、风格、配色、字体、构图，一键生成专属品牌标识。"

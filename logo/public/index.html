@@ -4,12 +4,12 @@
 	<meta name="generator" content="Hugo 0.145.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LogoForge — AI 商标生成器</title>
+<title>LogoForge</title>
 <meta name="description" content="探索顶尖品牌的 Logo 设计灵感，选择风格关键词，用 AI 生成你的专属商标。">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="http://localhost:1313/">
 
-<meta property="og:title" content="LogoForge — AI 商标生成器">
+<meta property="og:title" content="LogoForge">
 <meta property="og:description" content="探索顶尖品牌的 Logo 设计灵感，选择风格关键词，用 AI 生成你的专属商标。">
 <meta property="og:url" content="http://localhost:1313/">
 
@@ -27,10 +27,18 @@
 <body>
   <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="header-brand">LogoForge — AI 商标生成器</a>
+    <a href="/" class="header-brand">
+      <svg class="header-logo" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="1.8" transform="rotate(12 14 14)"/>
+        <circle cx="14" cy="14" r="5" fill="currentColor" opacity="0.85"/>
+        <circle cx="14" cy="14" r="2.2" fill="var(--c-bg)"/>
+      </svg>
+      <span class="header-brand-text">LogoForge</span>
+    </a>
     <nav class="header-nav">
       <a href="/" class="active">首页</a>
       <a href="/generator/" class="">创作台</a>
+      <a href="/cases/" class="">案例库</a>
     </nav>
     <div class="header-auth">
       <span class="auth-user" id="authUser" style="display:none"></span>
@@ -272,7 +280,39 @@
   </main>
   <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 LogoForge — AI 商标生成器</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="footer-logo" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="1.8" transform="rotate(12 14 14)"/>
+          <circle cx="14" cy="14" r="5" fill="currentColor" opacity="0.85"/>
+          <circle cx="14" cy="14" r="2.2" fill="var(--c-bg)"/>
+        </svg>
+        <span>LogoForge</span>
+        <p class="footer-tagline">AI 驱动的品牌 Logo 生成工具。<br>从灵感到成品，几分钟完成。</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>产品</h4>
+        <a href="/generator/">创作台</a>
+        <a href="/cases/">案例库</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>法律</h4>
+        <a href="/privacy/">隐私政策</a>
+        <a href="/terms/">使用条款</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>支持</h4>
+        <a href="mailto:hello@logoforge.app">联系我们</a>
+        <button class="lang-switch" id="langSwitch" aria-label="切换语言">EN / 中文</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 LogoForge</p>
+    </div>
   </div>
 </footer>
 

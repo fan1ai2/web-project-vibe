@@ -1,6 +1,13 @@
 <header class="site-header">
   <div class="header-inner">
-    <a href="{{ .Site.Home.RelPermalink }}" class="header-brand">{{ .Site.Title }}</a>
+    <a href="{{ .Site.Home.RelPermalink }}" class="header-brand">
+      <svg class="header-logo" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="1.8" transform="rotate(12 14 14)"/>
+        <circle cx="14" cy="14" r="5" fill="currentColor" opacity="0.85"/>
+        <circle cx="14" cy="14" r="2.2" fill="var(--c-bg)"/>
+      </svg>
+      <span class="header-brand-text">LogoForge</span>
+    </a>
     <nav class="header-nav">
       <a href="{{ .Site.Home.RelPermalink }}" class="{{ if .IsHome }}active{{ end }}">首页</a>
       <a href="/generator/" class="{{ if eq .RelPermalink "/generator/" }}active{{ end }}">创作台</a>

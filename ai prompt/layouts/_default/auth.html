@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article>
+  {{ .Content }}
+</article>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="{{ "js/auth.js" | relURL }}" defer></script>
+{{ end }}

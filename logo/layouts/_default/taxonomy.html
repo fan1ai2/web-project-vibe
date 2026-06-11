@@ -1,37 +1,16 @@
 {{ define "main" }}
-<section class="taxonomy-page">
-  <div class="container">
-    <nav class="breadcrumb">
-      <a href="{{ .Site.Home.RelPermalink }}">首页</a>
-      <span aria-hidden="true">/</span>
-      <span aria-current="page">{{ .Title }}</span>
-    </nav>
-
-    <div class="taxonomy-header">
-      <h1>{{ .Title }} Logo 设计灵感</h1>
-      <p class="text-body">{{ len .Pages }} 个分类</p>
+<section class="page">
+  <div class="container-narrow">
+    <h1>{{ .Title }}</h1>
+    <div class="page-content">
+      {{ .Content }}
     </div>
-
-    <div class="taxonomy-terms">
-      {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="taxonomy-term-card">
-        <span class="taxonomy-term-name">{{ .Title }}</span>
-        <span class="taxonomy-term-count">{{ len .Pages }} 个案例</span>
-      </a>
-      {{ end }}
-    </div>
+    {{ range .Pages }}
+    <article class="page-item">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ len .Pages }} 篇内容</p>
+    </article>
+    {{ end }}
   </div>
 </section>
-{{ end }}
-
-{{ define "head_extra" }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "{{ .Title }} Logo 设计灵感",
-  "description": "浏览 {{ .Title }} 分类下的品牌 Logo 设计风格，获取 AI 生成提示词。",
-  "url": "{{ .Permalink }}"
-}
-</script>
 {{ end }}
