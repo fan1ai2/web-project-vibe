@@ -269,17 +269,22 @@ body::after{
 .page-404 h1{font-family:"Noto Serif SC",serif;font-size:5rem;color:var(--accent);margin-bottom:8px}
 .page-404 p{color:var(--text-secondary);font-size:1.1rem;margin-bottom:32px}
 
-/* ===== Animations ===== */
-@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+/* ===== Animations — 克制、纸墨感 ===== */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.6}}
-.animate-in{animation:fadeInUp 0.5s ease-out both}
-.prompt-card:nth-child(1){animation-delay:0.05s}
-.prompt-card:nth-child(2){animation-delay:0.1s}
-.prompt-card:nth-child(3){animation-delay:0.15s}
-.prompt-card:nth-child(4){animation-delay:0.2s}
-.prompt-card:nth-child(5){animation-delay:0.25s}
-.prompt-card:nth-child(6){animation-delay:0.3s}
+.animate-in{opacity:0;transform:translateY(12px);transition:opacity 0.7s ease,transform 0.7s ease}
+.animate-in.visible{opacity:1;transform:translateY(0)}
+
+/* 通用墨迹晕开 — 链接 hover 颜色过渡 */
+a{transition:color var(--transition-slow)}
+
+/* 分页 */
+.pagination{display:flex;justify-content:center;gap:8px;margin-top:40px}
+.pagination .page-item a,.pagination .page-item span{padding:8px 14px;border-radius:var(--radius-sm);font-size:0.9rem;color:var(--text-secondary);transition:all var(--transition-base)}
+.pagination .page-item.active span{color:var(--accent);font-weight:600}
+.pagination .page-item a:hover{color:var(--accent-ink);background:var(--accent-light)}
 
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
+  .animate-in{opacity:1;transform:none;transition:none}
 }
