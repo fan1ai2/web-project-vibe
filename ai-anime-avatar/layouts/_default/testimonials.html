@@ -1,0 +1,137 @@
+{{ define "main" }}
+{{ $testimonials := index .Site.Data.testimonials .Language.Lang }}
+
+<!-- Hero Banner -->
+<section class="testimonials-hero">
+  <div class="testimonials-hero__bg" aria-hidden="true">
+    <div class="testimonials-hero__wash"></div>
+  </div>
+  <div class="testimonials-hero__inner container">
+    <h1 class="testimonials-hero__title">{{ i18n "testimonialsHeroTitle" }}</h1>
+    <div class="testimonials-hero__rating">
+      <div class="testimonials-hero__stars" aria-label="4.9 out of 5 stars">
+        {{ range seq 5 }}
+        <svg class="testimonials-hero__star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+        {{ end }}
+      </div>
+      <span>{{ i18n "testimonialsHeroRating" }}</span>
+    </div>
+  </div>
+</section>
+
+<!-- Section 1: Featured Reviews (horizontal scroll) -->
+{{ if $testimonials }}
+<section class="testimonials-featured section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "testimonialsFeaturedTitle" }}</h2>
+    </div>
+    <div class="testimonials-featured__track" id="featured-track">
+      {{ range first 4 $testimonials }}
+      <div class="testimonials-featured__card">
+        <div class="testimonials-featured__avatar">
+          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <circle cx="22" cy="22" r="21" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
+            <circle cx="22" cy="17" r="7" fill="var(--color-primary-light)" opacity="0.6"/>
+            <ellipse cx="22" cy="34" rx="14" ry="9" fill="var(--color-primary-light)" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="testimonials-featured__stars">
+          {{ range seq .rating }}
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+          {{ end }}
+        </div>
+        <p class="testimonials-featured__quote">"{{ .text }}"</p>
+        <div class="testimonials-featured__author">
+          <span class="testimonials-featured__name">{{ .name }}</span>
+          <span class="testimonials-featured__role">{{ .role }}</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Section 2: All Reviews Grid -->
+{{ if $testimonials }}
+<section class="testimonials-all section">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "testimonialsAllTitle" }}</h2>
+    </div>
+
+    <div class="testimonials-all__filters">
+      <div class="testimonials-all__filter-group">
+        <button class="testimonials-all__filter-btn testimonials-all__filter-btn--active" data-filter="all">{{ i18n "testimonialsFilterAll" }}</button>
+        <button class="testimonials-all__filter-btn" data-filter="styleJP">{{ i18n "styleJP" }}</button>
+        <button class="testimonials-all__filter-btn" data-filter="styleKR">{{ i18n "styleKR" }}</button>
+        <button class="testimonials-all__filter-btn" data-filter="styleUS">{{ i18n "styleUS" }}</button>
+        <button class="testimonials-all__filter-btn" data-filter="styleQ">{{ i18n "styleQ" }}</button>
+        <button class="testimonials-all__filter-btn" data-filter="stylePixel">{{ i18n "stylePixel" }}</button>
+        <button class="testimonials-all__filter-btn" data-filter="styleCyber">{{ i18n "styleCyber" }}</button>
+      </div>
+    </div>
+
+    <div class="testimonials-all__grid">
+      {{ range $testimonials }}
+      <div class="testimonials-all__card" data-style="{{ .style | default "all" }}">
+        <div class="testimonials-all__card-header">
+          <div class="testimonials-all__avatar">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="22" r="21" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
+              <circle cx="22" cy="17" r="7" fill="var(--color-primary-light)" opacity="0.6"/>
+              <ellipse cx="22" cy="34" rx="14" ry="9" fill="var(--color-primary-light)" opacity="0.4"/>
+            </svg>
+          </div>
+          <div>
+            <span class="testimonials-all__name">{{ .name }}</span>
+            {{ if .style }}
+            <span class="testimonials-all__style-tag">{{ i18n .style }}</span>
+            {{ end }}
+          </div>
+        </div>
+        <div class="testimonials-all__stars">
+          {{ range seq .rating }}
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+          {{ end }}
+        </div>
+        <p class="testimonials-all__text">"{{ .text }}"</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Section 3: Stats Bar -->
+<section class="testimonials-stats section">
+  <div class="container">
+    <div class="testimonials-stats__grid">
+      <div class="testimonials-stats__item">
+        <div class="testimonials-stats__value">10,000<span class="gradient-text">+</span></div>
+        <div class="testimonials-stats__label">{{ i18n "testimonialsStatsGenerated" }}</div>
+      </div>
+      <div class="testimonials-stats__item">
+        <div class="testimonials-stats__value">98.5<span class="gradient-text">%</span></div>
+        <div class="testimonials-stats__label">{{ i18n "testimonialsStatsSatisfaction" }}</div>
+      </div>
+      <div class="testimonials-stats__item">
+        <div class="testimonials-stats__value">&lt; <span class="gradient-text">30</span>s</div>
+        <div class="testimonials-stats__label">{{ i18n "testimonialsStatsSpeed" }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="testimonials-cta section">
+  <div class="container">
+    <div class="testimonials-cta__inner">
+      <h2 class="testimonials-cta__title">{{ i18n "testimonialsCTATitle" }}</h2>
+      <a href="{{ "create" | relLangURL }}" class="testimonials-cta__btn">{{ i18n "testimonialsCTABtn" }}</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}
