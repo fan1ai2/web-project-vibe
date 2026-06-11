@@ -1,19 +1,173 @@
-<!doctype html><html lang=zh-CN><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>视频提示词生成</title>
-<meta name=description content="为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=9090&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+<title>视频提示词生成</title>
+
+
+
+
+<meta name="description" content="为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。
 试用演示 生成视频提示词 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-"><meta name=keywords content="AI提示词,ChatGPT提示词,Claude提示词,中文Prompt,提示词库"><link rel=canonical href=https://aiprompt.cc/tools/video-prompt/><link rel=alternate hreflang=zh-CN href=https://aiprompt.cc/tools/video-prompt/><meta property="og:title" content="视频提示词生成"><meta property="og:description" content="为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。
+">
+
+
+<meta name="keywords" content="AI提示词, ChatGPT提示词, Claude提示词, 中文Prompt, 提示词库">
+
+<link rel="canonical" href="http://localhost:9090/tools/video-prompt/">
+<link rel="alternate" hreflang="zh-CN" href="http://localhost:9090/tools/video-prompt/">
+
+<meta property="og:title" content="视频提示词生成">
+<meta property="og:description" content="为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。
 试用演示 生成视频提示词 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-"><meta property="og:type" content="article"><meta property="og:url" content="https://aiprompt.cc/tools/video-prompt/"><meta property="og:site_name" content="AI Prompt — 高质量中文AI提示词库"><meta property="og:image" content="https://aiprompt.cc/icons/og-image.svg"><meta property="og:locale" content="zh_CN"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="视频提示词生成"><meta name=twitter:description content="为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:9090/tools/video-prompt/">
+<meta property="og:site_name" content="AI Prompt — 高质量中文AI提示词库">
+<meta property="og:image" content="http://localhost:9090/icons/og-image.svg">
+<meta property="og:locale" content="zh_CN">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="视频提示词生成">
+<meta name="twitter:description" content="为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。
 试用演示 生成视频提示词 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><link rel=sitemap type=application/xml href=https://aiprompt.cc/sitemap.xml><script type=application/ld+json>{"@context":"https://schema.org","@type":"SoftwareApplication","name":"视频提示词生成","applicationCategory":"AIApplication","operatingSystem":"Web","description":"为AI视频工具生成分镜脚本和场景提示词，支持Runway\/Pika\/Kling格式。","url":"https:\/\/aiprompt.cc\/tools\/video-prompt\/","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script></head><body><header class=site-header role=banner><div class=header-inner><a href=/ class=logo aria-label="AI Prompt — 高质量中文AI提示词库 首页"><svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#d4963f"/><text x="16" y="22" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="system-ui">AI</text></svg>
-<span class=logo-text>AI Prompt</span></a><nav class=site-nav aria-label=主导航><a href=/ class=nav-link>首页</a>
-<a href=/prompts/ class=nav-link>提示词库</a>
-<a href=/tools/ class=nav-link>工具箱</a>
-<a href=/about/ class=nav-link>关于</a></nav><button class=mobile-menu-btn aria-label=菜单 aria-expanded=false>
-<span></span><span></span><span></span></button></div></header><main id=main-content><article class=section><div class="container container-narrow"><header class=page-header><h1>视频提示词生成</h1></header><div class=page-content><p>为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。</p><div class=tool-mock><div class=tool-mock-header>试用演示</div><div class=tool-mock-body><textarea class=tool-mock-input placeholder=描述你想要的视频场景，例如：一个关于城市清晨的30秒短片...></textarea>
-<button class=tool-mock-btn data-mock-btn=video-prompt>
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-生成视频提示词</button><div id=mock-output-video-prompt class=tool-mock-output></div></div></div><p class=mock-notice>⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。</p><h2 id=功能特色>功能特色</h2><ul><li>自动生成分镜脚本：场景描述、时长、运镜、氛围</li><li>适配多种AI视频平台：Runway Gen-3 / Pika 2.0 / 可灵 Kling</li><li>包含场景氛围、光线、色彩、节奏等细节描述</li><li>支持快速蒙太奇和转场效果提示</li></ul><h2 id=使用场景>使用场景</h2><ul><li>策划AI短视频和宣传片</li><li>为短片项目编写分镜脚本</li><li>学习和参考AI视频提示词的结构</li></ul></div></div></article></main><footer class=site-footer role=contentinfo><div class=footer-inner><div class=footer-brand><span class=footer-logo>AI Prompt</span><p class=footer-tagline>高质量中文AI提示词库</p></div><nav class=footer-nav aria-label=底部导航><a href=/>首页</a>
-<a href=/prompts/>提示词库</a>
-<a href=/tools/>工具箱</a>
-<a href=/about/>关于</a></nav><div class=footer-bottom><p>&copy; 2026 AI Prompt. All rights reserved.</p></div></div></footer><script src=/js/copy.js defer></script></body></html>
+">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="sitemap" type="application/xml" href="http://localhost:9090/sitemap.xml">
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "视频提示词生成",
+  "applicationCategory": "AIApplication",
+  "operatingSystem": "Web",
+  "description": "为AI视频工具生成分镜脚本和场景提示词，支持Runway\/Pika\/Kling格式。",
+  "url": "http:\/\/localhost:9090\/tools\/video-prompt\/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  }
+}
+</script>
+
+
+</head>
+<body>
+  <header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="AI Prompt — 高质量中文AI提示词库 首页">
+      <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#D4963F"/>
+        <text x="16" y="22" text-anchor="middle" fill="white" font-size="18" font-weight="700" font-family="system-ui">AI</text>
+      </svg>
+      <span class="logo-text">AI Prompt</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      
+      <a href="/" class="nav-link">首页</a>
+      
+      <a href="/prompts/" class="nav-link">提示词库</a>
+      
+      <a href="/tools/" class="nav-link">工具箱</a>
+      
+      <a href="/about/" class="nav-link">关于</a>
+      
+    </nav>
+    <button class="mobile-menu-btn" aria-label="菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+  <main id="main-content">
+    
+
+<article class="section">
+  <div class="container container-narrow">
+    <header class="page-header">
+      <h1>视频提示词生成</h1>
+      <p class="page-desc">生成视频分镜脚本和场景描述提示词，适配主流视频模型。</p>
+    </header>
+    <div class="page-content">
+      <p>为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。</p>
+<div class="tool-mock">
+  <div class="tool-mock-header">试用演示</div>
+  <div class="tool-mock-body">
+    <textarea class="tool-mock-input" placeholder="描述你想要的视频场景，例如：一个关于城市清晨的30秒短片..."></textarea>
+    <button class="tool-mock-btn" data-mock-btn="video-prompt">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      生成视频提示词
+    </button>
+    <div id="mock-output-video-prompt" class="tool-mock-output"></div>
+  </div>
+</div>
+<p class="mock-notice">⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>自动生成分镜脚本：场景描述、时长、运镜、氛围</li>
+<li>适配多种AI视频平台：Runway Gen-3 / Pika 2.0 / 可灵 Kling</li>
+<li>包含场景氛围、光线、色彩、节奏等细节描述</li>
+<li>支持快速蒙太奇和转场效果提示</li>
+</ul>
+<h2 id="使用场景">使用场景</h2>
+<ul>
+<li>策划AI短视频和宣传片</li>
+<li>为短片项目编写分镜脚本</li>
+<li>学习和参考AI视频提示词的结构</li>
+</ul>
+
+    </div>
+  </div>
+</article>
+
+
+  </main>
+  <footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">AI Prompt</span>
+      <p class="footer-tagline">高质量中文AI提示词库</p>
+    </div>
+    <nav class="footer-nav" aria-label="底部导航">
+      
+      <a href="/">首页</a>
+      
+      <a href="/prompts/">提示词库</a>
+      
+      <a href="/tools/">工具箱</a>
+      
+      <a href="/about/">关于</a>
+      
+    </nav>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AI Prompt. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="/js/copy.js" defer></script>
+  
+</body>
+</html>

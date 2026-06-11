@@ -1,35 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数据收集 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86/</link><description>Recent content in 数据收集 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86/index.xml" rel="self" type="application/rss+xml"/><item><title>用户调研问卷设计提示词</title><link>https://aiprompt.cc/prompts/marketing/user-research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/marketing/user-research/</guid><description>&lt;p>你是一位用户研究专家，擅长设计科学有效的调研问卷和访谈大纲。请帮我设计一份用户调研方案。&lt;/p>
-&lt;h2 id="调研背景">调研背景&lt;/h2>
-&lt;ul>
-&lt;li>调研目的：[如：了解用户为什么放弃购物车不付款 / 评估新功能的接受度 / 品牌健康度调研]&lt;/li>
-&lt;li>目标用户：[如：近3个月注册但未付费的用户 / 高频使用但NPS评分低于6的用户]&lt;/li>
-&lt;li>投放渠道：[微信模板消息/短信+问卷链接/App内弹窗/邮件]&lt;/li>
-&lt;li>预计样本量：[如：500份/2000份]&lt;/li>
-&lt;li>可用激励：[如：填写送10元优惠券/参与抽奖/无激励]&lt;/li>
-&lt;/ul>
-&lt;h2 id="问卷设计要求">问卷设计要求&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>题目数量&lt;/strong>：控制在[X题以内]，预计完成时间[X分钟以内]&lt;/li>
-&lt;li>&lt;strong>题型组合&lt;/strong>：
-&lt;ul>
-&lt;li>筛选题：确认受访者是否符合目标画像&lt;/li>
-&lt;li>选择题为主（单选/多选/Likert量表）&lt;/li>
-&lt;li>开放题不超过2题（放在最后）&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>逻辑跳转&lt;/strong>：标注需要在什么条件下跳转到哪道题&lt;/li>
-&lt;li>&lt;strong>防偏设计&lt;/strong>：
-&lt;ul>
-&lt;li>选项顺序均衡&lt;/li>
-&lt;li>避免引导性问题&lt;/li>
-&lt;li>包含1道反向题检测作答认真度&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出">输出&lt;/h2>
-&lt;ul>
-&lt;li>问卷完整题目列表（题号/题型/题目文本/选项/逻辑说明）&lt;/li>
-&lt;li>调研邀请文案（用于触达用户的文案，300字以内）&lt;/li>
-&lt;li>数据分析建议（交叉分析维度、关键指标计算方式）&lt;/li>
-&lt;li>避免的调研陷阱提醒&lt;/li>
-&lt;/ul></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据收集 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86/</link>
+    <description>Recent content in 数据收集 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用户调研问卷设计提示词</title>
+      <link>http://localhost:9090/prompts/marketing/user-research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/marketing/user-research/</guid>
+      <description>&lt;p&gt;你是一位用户研究专家，擅长设计科学有效的调研问卷和访谈大纲。请帮我设计一份用户调研方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;调研背景&#34;&gt;调研背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;调研目的：[如：了解用户为什么放弃购物车不付款 / 评估新功能的接受度 / 品牌健康度调研]&lt;/li&gt;&#xA;&lt;li&gt;目标用户：[如：近3个月注册但未付费的用户 / 高频使用但NPS评分低于6的用户]&lt;/li&gt;&#xA;&lt;li&gt;投放渠道：[微信模板消息/短信+问卷链接/App内弹窗/邮件]&lt;/li&gt;&#xA;&lt;li&gt;预计样本量：[如：500份/2000份]&lt;/li&gt;&#xA;&lt;li&gt;可用激励：[如：填写送10元优惠券/参与抽奖/无激励]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;问卷设计要求&#34;&gt;问卷设计要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;题目数量&lt;/strong&gt;：控制在[X题以内]，预计完成时间[X分钟以内]&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;题型组合&lt;/strong&gt;：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;筛选题：确认受访者是否符合目标画像&lt;/li&gt;&#xA;&lt;li&gt;选择题为主（单选/多选/Likert量表）&lt;/li&gt;&#xA;&lt;li&gt;开放题不超过2题（放在最后）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;逻辑跳转&lt;/strong&gt;：标注需要在什么条件下跳转到哪道题&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;防偏设计&lt;/strong&gt;：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;选项顺序均衡&lt;/li&gt;&#xA;&lt;li&gt;避免引导性问题&lt;/li&gt;&#xA;&lt;li&gt;包含1道反向题检测作答认真度&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;问卷完整题目列表（题号/题型/题目文本/选项/逻辑说明）&lt;/li&gt;&#xA;&lt;li&gt;调研邀请文案（用于触达用户的文案，300字以内）&lt;/li&gt;&#xA;&lt;li&gt;数据分析建议（交叉分析维度、关键指标计算方式）&lt;/li&gt;&#xA;&lt;li&gt;避免的调研陷阱提醒&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

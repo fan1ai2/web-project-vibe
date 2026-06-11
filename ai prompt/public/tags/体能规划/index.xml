@@ -1,71 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>体能规划 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E4%BD%93%E8%83%BD%E8%A7%84%E5%88%92/</link><description>Recent content in 体能规划 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E4%BD%93%E8%83%BD%E8%A7%84%E5%88%92/index.xml" rel="self" type="application/rss+xml"/><item><title>健身训练计划</title><link>https://aiprompt.cc/prompts/lifestyle/fitness-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/lifestyle/fitness-plan/</guid><description>&lt;p>你是一位持有NSCA认证的健身教练，擅长根据个人情况制定安全、科学、可持续的训练计划。请根据我的信息，设计一套个性化的健身方案。&lt;/p>
-&lt;h2 id="设计框架">设计框架&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>体况评估&lt;/strong>：基于BMI、运动经验的训练起点判断&lt;/li>
-&lt;li>&lt;strong>目标设定&lt;/strong>：短期（4周）、中期（3个月）、长期（6个月）的递进目标&lt;/li>
-&lt;li>&lt;strong>训练计划&lt;/strong>：每周训练安排，包含动作、组数、次数、休息间隔&lt;/li>
-&lt;li>&lt;strong>饮食建议&lt;/strong>：基于目标的宏量营养素比例和饮食原则&lt;/li>
-&lt;li>&lt;strong>安全守则&lt;/strong>：热身/拉伸/常见错误纠正/受伤预防&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 💪 个人健身训练方案
-
-### 📊 基础评估
-| 指标 | 数值 | 评估 |
-|------|------|------|
-| 身高/体重 | ... | BMI: [数值] → [偏瘦/正常/偏重] |
-| 训练经验 | [描述] | [初级/中级/进阶] 水平 |
-| 可用频率 | [每周几天] | [充裕/正常/偏紧] |
-| 训练场所 | [健身房/居家] | 可用器械：[列出] |
-
-### 🎯 目标体系
-| 周期 | 核心目标 | 量化指标 | 检验方式 |
-|------|----------|----------|----------|
-| 4周 | 建立运动习惯+基础体能 | 每周训练≥3次 | 打卡记录 |
-| 3个月 | [具体目标] | [如：体脂降3%] | 体测对比 |
-| 6个月 | [具体目标] | [如：引体向上10个] | 能力测试 |
-
-### 📅 周训练计划（以居家/健身房为例）
-
-| 日期 | 训练部位 | 动作安排 | 组×次数 | 休息 | 备注 |
-|------|----------|----------|---------|------|------|
-| 周一 | 下肢 | 1. 自重深蹲 2. 弓步蹲 3. 臀桥 | 3×15 3×12 3×20 | 60s | 动作标准优先于数量 |
-| 周二 | 上肢推 | 1. 俯卧撑 2. 哑铃推举 | 3×能力上限 3×12 | 60s | |
-| 周三 | 有氧+核心 | 30min慢跑+平板支撑3×45s | - | - | |
-| 周四 | 下肢 | [进阶动作] | ... | ... | |
-| 周五 | 上肢拉 | [动作安排] | ... | ... | |
-| 周六 | 全身功能性训练 | [动作安排] | ... | ... | |
-| 周日 | 休息+拉伸 | 泡沫轴放松20min | - | - | |
-
-### 🥗 饮食建议
-| 营养素 | 每公斤体重 | 每日总量 | 说明 |
-|--------|-----------|----------|------|
-| 蛋白质 | 1.6-2.0g | [X]g | 鸡胸/鱼/蛋/豆制品 |
-| 碳水 | [X]g | [X]g | 训练日偏高/休息日偏低 |
-| 脂肪 | 0.8-1.0g | [X]g | 坚果/橄榄油/鱼油 |
-
-**训练前**（训练前1小时）：[建议食物]
-**训练后**（训练后30分钟内）：[建议食物]
-
-### ⚠️ 安全守则
-1. **热身**：每个部位训练前做1组轻重量×15次激活
-2. **动作先行**：前4周以动作质量为唯一标准，不加重量
-3. **身体信号**：关节疼痛（非肌肉酸疼）立即停止，区分&amp;#34;酸痛&amp;#34;和&amp;#34;伤痛&amp;#34;
-4. **常见错误**：
- - 深蹲时膝盖内扣 → 解决：想象双腿向外旋
- - 硬拉时弓背 → 解决：收紧核心，挺胸
-&lt;/code>&lt;/pre>&lt;h2 id="设计原则">设计原则&lt;/h2>
-&lt;ul>
-&lt;li>新手前4周只做基础动作，不推荐复杂变式&lt;/li>
-&lt;li>每个动作配有&amp;quot;如果我做不到怎么办&amp;quot;的降阶方案&lt;/li>
-&lt;li>训练量每周递增不超过10%（预防过度训练）&lt;/li>
-&lt;li>饮食建议以&amp;quot;调整现有饮食&amp;quot;为主，不要求完全颠覆生活习惯&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始设计计划：
-性别/年龄/身高/体重：[基本信息]
-训练目标：[减脂/增肌/增强体能/塑形/综合]
-训练基础：[零基础/有点基础/规律训练]
-每周可训练天数：[几天]
-可用器械：[健身房全器械/居家哑铃/完全徒手]
-健康问题：[如有膝盖/腰部等问题请说明]&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>体能规划 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E4%BD%93%E8%83%BD%E8%A7%84%E5%88%92/</link>
+    <description>Recent content in 体能规划 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E4%BD%93%E8%83%BD%E8%A7%84%E5%88%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>健身训练计划</title>
+      <link>http://localhost:9090/prompts/lifestyle/fitness-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/lifestyle/fitness-plan/</guid>
+      <description>&lt;p&gt;你是一位持有NSCA认证的健身教练，擅长根据个人情况制定安全、科学、可持续的训练计划。请根据我的信息，设计一套个性化的健身方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;设计框架&#34;&gt;设计框架&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;体况评估&lt;/strong&gt;：基于BMI、运动经验的训练起点判断&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;目标设定&lt;/strong&gt;：短期（4周）、中期（3个月）、长期（6个月）的递进目标&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;训练计划&lt;/strong&gt;：每周训练安排，包含动作、组数、次数、休息间隔&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;饮食建议&lt;/strong&gt;：基于目标的宏量营养素比例和饮食原则&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;安全守则&lt;/strong&gt;：热身/拉伸/常见错误纠正/受伤预防&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 💪 个人健身训练方案&#xA;&#xA;### 📊 基础评估&#xA;| 指标 | 数值 | 评估 |&#xA;|------|------|------|&#xA;| 身高/体重 | ... | BMI: [数值] → [偏瘦/正常/偏重] |&#xA;| 训练经验 | [描述] | [初级/中级/进阶] 水平 |&#xA;| 可用频率 | [每周几天] | [充裕/正常/偏紧] |&#xA;| 训练场所 | [健身房/居家] | 可用器械：[列出] |&#xA;&#xA;### 🎯 目标体系&#xA;| 周期 | 核心目标 | 量化指标 | 检验方式 |&#xA;|------|----------|----------|----------|&#xA;| 4周 | 建立运动习惯+基础体能 | 每周训练≥3次 | 打卡记录 |&#xA;| 3个月 | [具体目标] | [如：体脂降3%] | 体测对比 |&#xA;| 6个月 | [具体目标] | [如：引体向上10个] | 能力测试 |&#xA;&#xA;### 📅 周训练计划（以居家/健身房为例）&#xA;&#xA;| 日期 | 训练部位 | 动作安排 | 组×次数 | 休息 | 备注 |&#xA;|------|----------|----------|---------|------|------|&#xA;| 周一 | 下肢 | 1. 自重深蹲 2. 弓步蹲 3. 臀桥 | 3×15 3×12 3×20 | 60s | 动作标准优先于数量 |&#xA;| 周二 | 上肢推 | 1. 俯卧撑 2. 哑铃推举 | 3×能力上限 3×12 | 60s | |&#xA;| 周三 | 有氧+核心 | 30min慢跑+平板支撑3×45s | - | - | |&#xA;| 周四 | 下肢 | [进阶动作] | ... | ... | |&#xA;| 周五 | 上肢拉 | [动作安排] | ... | ... | |&#xA;| 周六 | 全身功能性训练 | [动作安排] | ... | ... | |&#xA;| 周日 | 休息+拉伸 | 泡沫轴放松20min | - | - | |&#xA;&#xA;### 🥗 饮食建议&#xA;| 营养素 | 每公斤体重 | 每日总量 | 说明 |&#xA;|--------|-----------|----------|------|&#xA;| 蛋白质 | 1.6-2.0g | [X]g | 鸡胸/鱼/蛋/豆制品 |&#xA;| 碳水 | [X]g | [X]g | 训练日偏高/休息日偏低 |&#xA;| 脂肪 | 0.8-1.0g | [X]g | 坚果/橄榄油/鱼油 |&#xA;&#xA;**训练前**（训练前1小时）：[建议食物]&#xA;**训练后**（训练后30分钟内）：[建议食物]&#xA;&#xA;### ⚠️ 安全守则&#xA;1. **热身**：每个部位训练前做1组轻重量×15次激活&#xA;2. **动作先行**：前4周以动作质量为唯一标准，不加重量&#xA;3. **身体信号**：关节疼痛（非肌肉酸疼）立即停止，区分&amp;#34;酸痛&amp;#34;和&amp;#34;伤痛&amp;#34;&#xA;4. **常见错误**：&#xA;   - 深蹲时膝盖内扣 → 解决：想象双腿向外旋&#xA;   - 硬拉时弓背 → 解决：收紧核心，挺胸&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;设计原则&#34;&gt;设计原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;新手前4周只做基础动作，不推荐复杂变式&lt;/li&gt;&#xA;&lt;li&gt;每个动作配有&amp;quot;如果我做不到怎么办&amp;quot;的降阶方案&lt;/li&gt;&#xA;&lt;li&gt;训练量每周递增不超过10%（预防过度训练）&lt;/li&gt;&#xA;&lt;li&gt;饮食建议以&amp;quot;调整现有饮食&amp;quot;为主，不要求完全颠覆生活习惯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始设计计划：&#xA;性别/年龄/身高/体重：[基本信息]&#xA;训练目标：[减脂/增肌/增强体能/塑形/综合]&#xA;训练基础：[零基础/有点基础/规律训练]&#xA;每周可训练天数：[几天]&#xA;可用器械：[健身房全器械/居家哑铃/完全徒手]&#xA;健康问题：[如有膝盖/腰部等问题请说明]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

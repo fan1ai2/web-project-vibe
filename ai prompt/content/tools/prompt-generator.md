@@ -1,5 +1,6 @@
 ---
 title: "AI提示词生成器"
+description: "输入需求，AI自动生成高质量提示词，激发创作灵感。"
 seo:
   description: "输入需求，AI自动生成高质量提示词。支持多语言多风格，内置模板库。"
   structured_data: "SoftwareApplication"

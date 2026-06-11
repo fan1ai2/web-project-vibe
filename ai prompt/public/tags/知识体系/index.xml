@@ -1,58 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>知识体系 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</link><description>Recent content in 知识体系 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/index.xml" rel="self" type="application/rss+xml"/><item><title>课程大纲设计</title><link>https://aiprompt.cc/prompts/education/course-syllabus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/education/course-syllabus/</guid><description>&lt;p>你是一位教育课程设计师，精通布鲁姆认知层次分类法和反向课程设计。请根据以下课程主题，设计一份完整的课程大纲。&lt;/p>
-&lt;h2 id="设计框架">设计框架&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>课程画像&lt;/strong>：适用对象、前置知识、课程时长、学习目标层级&lt;/li>
-&lt;li>&lt;strong>教学目标&lt;/strong>：按布鲁姆认知层次（记忆→理解→应用→分析→评价→创造）定义具体可衡量的学习目标&lt;/li>
-&lt;li>&lt;strong>内容模块&lt;/strong>：每模块包含知识点、教学活动、练习任务和考核方式&lt;/li>
-&lt;li>&lt;strong>时间分配&lt;/strong>：按内容难度和重要性分配比例，标注重难点课时&lt;/li>
-&lt;li>&lt;strong>推荐资源&lt;/strong>：教材、论文、视频、工具的分级推荐（必读/选读/进阶）&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 📚 课程名称：[名称]
-
-### 课程画像
-| 维度 | 说明 |
-|------|------|
-| 适用对象 | [人群+前置知识要求] |
-| 课程时长 | [总时长+每周安排] |
-| 难度等级 | 入门/初级/中级/高级 |
-| 学习目标 | [1-2句话总结学完能做什么] |
-
-### 🎯 学习目标（布鲁姆层次）
-| 认知层级 | 具体目标 |
-|----------|----------|
-| 记忆 | [能回忆起的关键概念] |
-| 理解 | [能用自己的语言解释] |
-| 应用 | [能运用...解决...] |
-| 分析 | [能分解...并比较...] |
-| 评价 | [能评估...的标准] |
-| 创造 | [能独立设计/构建...] |
-
-### 📅 课程模块
-
-| 模块 | 主题 | 课时 | 教学重点 | 教学活动 | 练习/考核 |
-|------|------|------|----------|----------|-----------|
-| 模块1 | ... | 4h | ... | 讲授+案例 | 小测验 |
-| 模块2 | ... | 6h | ⭐重点 | 工作坊 | 实战项目 |
-
-### 📊 考核体系
-| 考核方式 | 权重 | 评估标准 |
-|----------|------|----------|
-| 平时练习 | 30% | ... |
-
-### 📖 推荐资源
-**必读**：...
-**选读**：...
-**工具**：...
-&lt;/code>&lt;/pre>&lt;h2 id="设计原则">设计原则&lt;/h2>
-&lt;ul>
-&lt;li>每个模块必须有&amp;quot;学完能做什么&amp;quot;的输出&lt;/li>
-&lt;li>考试不考察记忆细节，考察应用与分析能力&lt;/li>
-&lt;li>每周课外学习时间不超过课堂时间的1.5倍&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始设计课程：
-课程主题：[主题]
-目标学员：[描述]
-课程时长：[几周/几天/几小时]
-学习目标描述：[你希望学员学完能做什么]&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>知识体系 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</link>
+    <description>Recent content in 知识体系 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>课程大纲设计</title>
+      <link>http://localhost:9090/prompts/education/course-syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/education/course-syllabus/</guid>
+      <description>&lt;p&gt;你是一位教育课程设计师，精通布鲁姆认知层次分类法和反向课程设计。请根据以下课程主题，设计一份完整的课程大纲。&lt;/p&gt;&#xA;&lt;h2 id=&#34;设计框架&#34;&gt;设计框架&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;课程画像&lt;/strong&gt;：适用对象、前置知识、课程时长、学习目标层级&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;教学目标&lt;/strong&gt;：按布鲁姆认知层次（记忆→理解→应用→分析→评价→创造）定义具体可衡量的学习目标&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;内容模块&lt;/strong&gt;：每模块包含知识点、教学活动、练习任务和考核方式&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;时间分配&lt;/strong&gt;：按内容难度和重要性分配比例，标注重难点课时&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;推荐资源&lt;/strong&gt;：教材、论文、视频、工具的分级推荐（必读/选读/进阶）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📚 课程名称：[名称]&#xA;&#xA;### 课程画像&#xA;| 维度 | 说明 |&#xA;|------|------|&#xA;| 适用对象 | [人群+前置知识要求] |&#xA;| 课程时长 | [总时长+每周安排] |&#xA;| 难度等级 | 入门/初级/中级/高级 |&#xA;| 学习目标 | [1-2句话总结学完能做什么] |&#xA;&#xA;### 🎯 学习目标（布鲁姆层次）&#xA;| 认知层级 | 具体目标 |&#xA;|----------|----------|&#xA;| 记忆 | [能回忆起的关键概念] |&#xA;| 理解 | [能用自己的语言解释] |&#xA;| 应用 | [能运用...解决...] |&#xA;| 分析 | [能分解...并比较...] |&#xA;| 评价 | [能评估...的标准] |&#xA;| 创造 | [能独立设计/构建...] |&#xA;&#xA;### 📅 课程模块&#xA;&#xA;| 模块 | 主题 | 课时 | 教学重点 | 教学活动 | 练习/考核 |&#xA;|------|------|------|----------|----------|-----------|&#xA;| 模块1 | ... | 4h | ... | 讲授+案例 | 小测验 |&#xA;| 模块2 | ... | 6h | ⭐重点 | 工作坊 | 实战项目 |&#xA;&#xA;### 📊 考核体系&#xA;| 考核方式 | 权重 | 评估标准 |&#xA;|----------|------|----------|&#xA;| 平时练习 | 30% | ... |&#xA;&#xA;### 📖 推荐资源&#xA;**必读**：...&#xA;**选读**：...&#xA;**工具**：...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;设计原则&#34;&gt;设计原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每个模块必须有&amp;quot;学完能做什么&amp;quot;的输出&lt;/li&gt;&#xA;&lt;li&gt;考试不考察记忆细节，考察应用与分析能力&lt;/li&gt;&#xA;&lt;li&gt;每周课外学习时间不超过课堂时间的1.5倍&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始设计课程：&#xA;课程主题：[主题]&#xA;目标学员：[描述]&#xA;课程时长：[几周/几天/几小时]&#xA;学习目标描述：[你希望学员学完能做什么]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

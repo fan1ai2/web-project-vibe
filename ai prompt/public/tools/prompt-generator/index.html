@@ -1,19 +1,173 @@
-<!doctype html><html lang=zh-CN><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>AI提示词生成器</title>
-<meta name=description content="根据你的需求，自动生成结构完整的高质量AI提示词。
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=9090&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+<title>AI提示词生成器</title>
+
+
+
+
+<meta name="description" content="根据你的需求，自动生成结构完整的高质量AI提示词。
 试用演示 生成提示词 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-功能特色 根据场景描述自动生成结构化提示词 自动填充角色设定、任务目标、输出格式、约束条件四大要素 支持多种输出语言和写作风格 内置提示词模板库，覆盖常见场景 使用场景 不知道如何写好 …"><meta name=keywords content="AI提示词,ChatGPT提示词,Claude提示词,中文Prompt,提示词库"><link rel=canonical href=https://aiprompt.cc/tools/prompt-generator/><link rel=alternate hreflang=zh-CN href=https://aiprompt.cc/tools/prompt-generator/><meta property="og:title" content="AI提示词生成器"><meta property="og:description" content="根据你的需求，自动生成结构完整的高质量AI提示词。
+功能特色 根据场景描述自动生成结构化提示词 自动填充角色设定、任务目标、输出格式、约束条件四大要素 支持多种输出语言和写作风格 内置提示词模板库，覆盖常见场景 使用场景 不知道如何写好 …">
+
+
+<meta name="keywords" content="AI提示词, ChatGPT提示词, Claude提示词, 中文Prompt, 提示词库">
+
+<link rel="canonical" href="http://localhost:9090/tools/prompt-generator/">
+<link rel="alternate" hreflang="zh-CN" href="http://localhost:9090/tools/prompt-generator/">
+
+<meta property="og:title" content="AI提示词生成器">
+<meta property="og:description" content="根据你的需求，自动生成结构完整的高质量AI提示词。
 试用演示 生成提示词 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-功能特色 根据场景描述自动生成结构化提示词 自动填充角色设定、任务目标、输出格式、约束条件四大要素 支持多种输出语言和写作风格 内置提示词模板库，覆盖常见场景 使用场景 不知道如何写好 …"><meta property="og:type" content="article"><meta property="og:url" content="https://aiprompt.cc/tools/prompt-generator/"><meta property="og:site_name" content="AI Prompt — 高质量中文AI提示词库"><meta property="og:image" content="https://aiprompt.cc/icons/og-image.svg"><meta property="og:locale" content="zh_CN"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="AI提示词生成器"><meta name=twitter:description content="根据你的需求，自动生成结构完整的高质量AI提示词。
+功能特色 根据场景描述自动生成结构化提示词 自动填充角色设定、任务目标、输出格式、约束条件四大要素 支持多种输出语言和写作风格 内置提示词模板库，覆盖常见场景 使用场景 不知道如何写好 …">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:9090/tools/prompt-generator/">
+<meta property="og:site_name" content="AI Prompt — 高质量中文AI提示词库">
+<meta property="og:image" content="http://localhost:9090/icons/og-image.svg">
+<meta property="og:locale" content="zh_CN">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI提示词生成器">
+<meta name="twitter:description" content="根据你的需求，自动生成结构完整的高质量AI提示词。
 试用演示 生成提示词 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-功能特色 根据场景描述自动生成结构化提示词 自动填充角色设定、任务目标、输出格式、约束条件四大要素 支持多种输出语言和写作风格 内置提示词模板库，覆盖常见场景 使用场景 不知道如何写好 …"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><link rel=sitemap type=application/xml href=https://aiprompt.cc/sitemap.xml><script type=application/ld+json>{"@context":"https://schema.org","@type":"SoftwareApplication","name":"AI提示词生成器","applicationCategory":"AIApplication","operatingSystem":"Web","description":"输入需求，AI自动生成高质量提示词。支持多语言多风格，内置模板库。","url":"https:\/\/aiprompt.cc\/tools\/prompt-generator\/","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script></head><body><header class=site-header role=banner><div class=header-inner><a href=/ class=logo aria-label="AI Prompt — 高质量中文AI提示词库 首页"><svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#d4963f"/><text x="16" y="22" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="system-ui">AI</text></svg>
-<span class=logo-text>AI Prompt</span></a><nav class=site-nav aria-label=主导航><a href=/ class=nav-link>首页</a>
-<a href=/prompts/ class=nav-link>提示词库</a>
-<a href=/tools/ class=nav-link>工具箱</a>
-<a href=/about/ class=nav-link>关于</a></nav><button class=mobile-menu-btn aria-label=菜单 aria-expanded=false>
-<span></span><span></span><span></span></button></div></header><main id=main-content><article class=section><div class="container container-narrow"><header class=page-header><h1>AI提示词生成器</h1></header><div class=page-content><p>根据你的需求，自动生成结构完整的高质量AI提示词。</p><div class=tool-mock><div class=tool-mock-header>试用演示</div><div class=tool-mock-body><textarea id=mock-input-prompt-gen class=tool-mock-input placeholder=描述你想要生成的提示词场景，例如：帮我写一个让ChatGPT扮演资深产品经理分析用户需求的提示词></textarea>
-<button class=tool-mock-btn data-mock-btn=prompt-generator>
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-生成提示词</button><div id=mock-output-prompt-gen class=tool-mock-output></div></div></div><p class=mock-notice>⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。</p><h2 id=功能特色>功能特色</h2><ul><li>根据场景描述自动生成结构化提示词</li><li>自动填充角色设定、任务目标、输出格式、约束条件四大要素</li><li>支持多种输出语言和写作风格</li><li>内置提示词模板库，覆盖常见场景</li></ul><h2 id=使用场景>使用场景</h2><ul><li>不知道如何写好提示词时，输入需求让AI帮你写</li><li>优化现有提示词，提升AI输出质量</li><li>批量生成相似场景的提示词变体</li></ul></div></div></article></main><footer class=site-footer role=contentinfo><div class=footer-inner><div class=footer-brand><span class=footer-logo>AI Prompt</span><p class=footer-tagline>高质量中文AI提示词库</p></div><nav class=footer-nav aria-label=底部导航><a href=/>首页</a>
-<a href=/prompts/>提示词库</a>
-<a href=/tools/>工具箱</a>
-<a href=/about/>关于</a></nav><div class=footer-bottom><p>&copy; 2026 AI Prompt. All rights reserved.</p></div></div></footer><script src=/js/copy.js defer></script></body></html>
+功能特色 根据场景描述自动生成结构化提示词 自动填充角色设定、任务目标、输出格式、约束条件四大要素 支持多种输出语言和写作风格 内置提示词模板库，覆盖常见场景 使用场景 不知道如何写好 …">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="sitemap" type="application/xml" href="http://localhost:9090/sitemap.xml">
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AI提示词生成器",
+  "applicationCategory": "AIApplication",
+  "operatingSystem": "Web",
+  "description": "输入需求，AI自动生成高质量提示词。支持多语言多风格，内置模板库。",
+  "url": "http:\/\/localhost:9090\/tools\/prompt-generator\/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  }
+}
+</script>
+
+
+</head>
+<body>
+  <header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="AI Prompt — 高质量中文AI提示词库 首页">
+      <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#D4963F"/>
+        <text x="16" y="22" text-anchor="middle" fill="white" font-size="18" font-weight="700" font-family="system-ui">AI</text>
+      </svg>
+      <span class="logo-text">AI Prompt</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      
+      <a href="/" class="nav-link">首页</a>
+      
+      <a href="/prompts/" class="nav-link">提示词库</a>
+      
+      <a href="/tools/" class="nav-link">工具箱</a>
+      
+      <a href="/about/" class="nav-link">关于</a>
+      
+    </nav>
+    <button class="mobile-menu-btn" aria-label="菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+  <main id="main-content">
+    
+
+<article class="section">
+  <div class="container container-narrow">
+    <header class="page-header">
+      <h1>AI提示词生成器</h1>
+      <p class="page-desc">输入需求，AI自动生成高质量提示词，激发创作灵感。</p>
+    </header>
+    <div class="page-content">
+      <p>根据你的需求，自动生成结构完整的高质量AI提示词。</p>
+<div class="tool-mock">
+  <div class="tool-mock-header">试用演示</div>
+  <div class="tool-mock-body">
+    <textarea id="mock-input-prompt-gen" class="tool-mock-input" placeholder="描述你想要生成的提示词场景，例如：帮我写一个让ChatGPT扮演资深产品经理分析用户需求的提示词"></textarea>
+    <button class="tool-mock-btn" data-mock-btn="prompt-generator">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      生成提示词
+    </button>
+    <div id="mock-output-prompt-gen" class="tool-mock-output"></div>
+  </div>
+</div>
+<p class="mock-notice">⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>根据场景描述自动生成结构化提示词</li>
+<li>自动填充角色设定、任务目标、输出格式、约束条件四大要素</li>
+<li>支持多种输出语言和写作风格</li>
+<li>内置提示词模板库，覆盖常见场景</li>
+</ul>
+<h2 id="使用场景">使用场景</h2>
+<ul>
+<li>不知道如何写好提示词时，输入需求让AI帮你写</li>
+<li>优化现有提示词，提升AI输出质量</li>
+<li>批量生成相似场景的提示词变体</li>
+</ul>
+
+    </div>
+  </div>
+</article>
+
+
+  </main>
+  <footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">AI Prompt</span>
+      <p class="footer-tagline">高质量中文AI提示词库</p>
+    </div>
+    <nav class="footer-nav" aria-label="底部导航">
+      
+      <a href="/">首页</a>
+      
+      <a href="/prompts/">提示词库</a>
+      
+      <a href="/tools/">工具箱</a>
+      
+      <a href="/about/">关于</a>
+      
+    </nav>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AI Prompt. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="/js/copy.js" defer></script>
+  
+</body>
+</html>

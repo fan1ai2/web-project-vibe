@@ -1,5 +1,6 @@
 ---
 title: "图片转提示词"
+description: "上传图片自动分析并生成AI绘图提示词，适配主流模型。"
 seo:
   description: "上传图片反向生成Midjourney/DALL·E绘画提示词，支持风格分析和提示词优化。"
   structured_data: "SoftwareApplication"

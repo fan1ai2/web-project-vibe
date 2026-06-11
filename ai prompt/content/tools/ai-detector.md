@@ -1,5 +1,6 @@
 ---
 title: "AI内容检测"
+description: "检测文本是否为AI生成，逐句标注概率，评估原创度。"
 seo:
   description: "检测文本是否为AI生成，支持ChatGPT/Claude/Gemini多模型识别，逐句概率分析。"
   structured_data: "SoftwareApplication"

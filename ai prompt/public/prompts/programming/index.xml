@@ -1,289 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程开发提示词 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/prompts/programming/</link><description>Recent content in 编程开发提示词 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/prompts/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>API接口设计提示词</title><link>https://aiprompt.cc/prompts/programming/api-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/api-design/</guid><description>&lt;p>你是一位资深后端架构师，精通RESTful API设计和GraphQL。请帮我设计一套API接口。&lt;/p>
-&lt;h2 id="业务场景">业务场景&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请描述你的业务需求和核心用例，如：
-&amp;#34;设计一套在线教育平台的课程管理API，支持课程CRUD、章节管理、学生选课和进度追踪。用户分为管理员、教师和学生三种角色。&amp;#34;]
-&lt;/code>&lt;/pre>&lt;h2 id="技术约束">技术约束&lt;/h2>
-&lt;ul>
-&lt;li>API风格：[RESTful / GraphQL / gRPC]&lt;/li>
-&lt;li>认证方式：[JWT / OAuth 2.0 / API Key / Session]&lt;/li>
-&lt;li>数据格式：[JSON / Protocol Buffers]&lt;/li>
-&lt;li>版本策略：[URL路径版本v1/ / 请求头版本]&lt;/li>
-&lt;/ul>
-&lt;h2 id="设计要求">设计要求&lt;/h2>
-&lt;ol>
-&lt;li>遵循RESTful资源命名规范（名词复数、层级清晰、避免动词）&lt;/li>
-&lt;li>设计完整的端点列表，标注HTTP方法和路径&lt;/li>
-&lt;li>定义分页、过滤、排序、字段选择的通用规范&lt;/li>
-&lt;li>设计统一的响应格式（成功/错误）&lt;/li>
-&lt;li>考虑幂等性和并发安全&lt;/li>
-&lt;li>定义合理的HTTP状态码使用&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出">输出&lt;/h2>
-&lt;ul>
-&lt;li>资源模型（ER图或实体列表）&lt;/li>
-&lt;li>完整端点清单（方法、路径、权限、描述）&lt;/li>
-&lt;li>核心端点的Request/Response示例&lt;/li>
-&lt;li>错误码定义表&lt;/li>
-&lt;li>限流和分页策略说明&lt;/li>
-&lt;/ul></description></item><item><title>Bug修复分析提示词</title><link>https://aiprompt.cc/prompts/programming/bug-fix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/bug-fix/</guid><description>&lt;p>你是一位资深调试工程师，擅长系统性排查各类软件故障。请帮我分析和修复以下Bug。&lt;/p>
-&lt;h2 id="问题描述">问题描述&lt;/h2>
-&lt;ul>
-&lt;li>预期行为：[描述正常情况应该发生什么]&lt;/li>
-&lt;li>实际行为：[描述实际发生了什么，越详细越好]&lt;/li>
-&lt;li>复现步骤：[从零开始如何触发这个Bug，1. 2. 3. 列出]&lt;/li>
-&lt;/ul>
-&lt;h2 id="技术上下文">技术上下文&lt;/h2>
-&lt;ul>
-&lt;li>编程语言与版本：[如：Python 3.11]&lt;/li>
-&lt;li>相关框架/库：[如：Django 4.2 + Celery 5.3]&lt;/li>
-&lt;li>运行环境：[如：Ubuntu 22.04 Docker容器 / iOS 17 Safari]&lt;/li>
-&lt;li>最近变更：[如：昨天上线了新的支付模块/升级了依赖包版本]&lt;/li>
-&lt;/ul>
-&lt;h2 id="提供的诊断信息">提供的诊断信息&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请在此粘贴：完整的错误堆栈信息 / 相关日志片段 / 浏览器Console输出 / 网络请求截图描述]
-&lt;/code>&lt;/pre>&lt;h2 id="相关代码">相关代码&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请在此粘贴出问题相关的代码片段，标注文件名和行号]
-&lt;/code>&lt;/pre>&lt;h2 id="排查思路">排查思路&lt;/h2>
-&lt;p>请按以下步骤进行分析：&lt;/p></description></item><item><title>CI/CD配置生成提示词</title><link>https://aiprompt.cc/prompts/programming/cicd-config/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/cicd-config/</guid><description>&lt;p>你是一位DevOps工程师，精通CI/CD流水线设计与实现。请根据项目需求生成CI/CD配置。&lt;/p>
-&lt;h2 id="项目信息">项目信息&lt;/h2>
-&lt;ul>
-&lt;li>项目类型：[如：React前端SPA / Go微服务 / Python Django API / Node.js全栈]&lt;/li>
-&lt;li>代码仓库：[GitHub / GitLab]&lt;/li>
-&lt;li>技术栈详情：[如：使用pnpm管理依赖、Vite构建、Vitest测试]&lt;/li>
-&lt;li>部署目标：[如：阿里云ACK (Kubernetes) / Vercel / AWS ECS / 自建服务器Docker]&lt;/li>
-&lt;/ul>
-&lt;h2 id="流水线需求">流水线需求&lt;/h2>
-&lt;ul>
-&lt;li>触发条件：[Push到main自动部署 / PR时运行测试 / 手动触发生产发布]&lt;/li>
-&lt;li>需要执行的步骤：
-&lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> 代码检查（Lint）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 类型检查（Type Check）&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 单元测试&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 集成测试&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 构建产物&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 安全扫描&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> 部署到[环境名]&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="配置要求">配置要求&lt;/h2>
-&lt;ol>
-&lt;li>使用GitHub Actions（仓库为GitHub）或GitLab CI（仓库为GitLab）&lt;/li>
-&lt;li>合理拆分Job，利用并行执行缩短流水线时间&lt;/li>
-&lt;li>配置缓存策略（node_modules、Go modules、Docker layer等）&lt;/li>
-&lt;li>敏感信息通过Secrets管理，不在配置文件中硬编码&lt;/li>
-&lt;li>添加构建失败时的通知策略&lt;/li>
-&lt;li>生产部署需要手动审批门禁&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出">输出&lt;/h2>
-&lt;ul>
-&lt;li>完整CI/CD配置文件（标注文件名，如.gitlab-ci.yml）&lt;/li>
-&lt;li>工作流说明（各阶段的作用和触发条件）&lt;/li>
-&lt;li>需要配置的Secrets/Variables清单&lt;/li>
-&lt;/ul></description></item><item><title>SQL查询生成提示词</title><link>https://aiprompt.cc/prompts/programming/sql-query/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/sql-query/</guid><description>&lt;p>你是一位数据库专家，精通SQL标准和主流数据库（MySQL、PostgreSQL、ClickHouse等）的方言特性。请根据需求生成/优化SQL查询。&lt;/p>
-&lt;h2 id="查询需求">查询需求&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请用自然语言描述你想查询什么，如：&amp;#34;找出过去30天内，每个品类中销售额排名前3的商品，并列出售额占该品类的百分比&amp;#34;]
-&lt;/code>&lt;/pre>&lt;h2 id="技术上下文">技术上下文&lt;/h2>
-&lt;ul>
-&lt;li>数据库类型与版本：[如：PostgreSQL 15 / MySQL 8.0 / ClickHouse 23.x]&lt;/li>
-&lt;li>表结构信息：&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code>[请提供相关表的DDL或描述表名、关键字段和字段类型，如：
-
-orders: order_id (BIGINT PK), user_id (BIGINT), product_id (BIGINT), amount (DECIMAL), created_at (TIMESTAMP)
-products: product_id (BIGINT PK), name (VARCHAR), category_id (INT), price (DECIMAL)
-categories: category_id (INT PK), name (VARCHAR)]
-&lt;/code>&lt;/pre>&lt;ul>
-&lt;li>数据量级：[如：orders表约1000万行，日增5万行]&lt;/li>
-&lt;li>性能要求：[如：期望查询时间在2秒以内 / 这是离线报表查询，30秒以内可接受]&lt;/li>
-&lt;/ul>
-&lt;h2 id="输出要求">输出要求&lt;/h2>
-&lt;ol>
-&lt;li>生成SQL语句，添加关键行注释&lt;/li>
-&lt;li>说明查询逻辑和执行计划预期（哪些索引会被使用）&lt;/li>
-&lt;li>给出索引优化建议（如果查询可能较慢）&lt;/li>
-&lt;li>如果涉及多种写法，给出方案对比（性能/可读性）&lt;/li>
-&lt;/ol></description></item><item><title>代码审查提示词</title><link>https://aiprompt.cc/prompts/programming/code-review/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/code-review/</guid><description>&lt;p>你是一位资深技术负责人，以严谨、建设性的态度进行代码审查。请对以下代码进行全面的Code Review。&lt;/p>
-&lt;h2 id="审查的代码">审查的代码&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请在此粘贴需要审查的代码，建议控制在200行以内]
-&lt;/code>&lt;/pre>&lt;h2 id="审查背景">审查背景&lt;/h2>
-&lt;ul>
-&lt;li>项目类型：[如：电商后端API / 移动端SDK / 数据管道]&lt;/li>
-&lt;li>该代码的职责：[如：订单支付回调处理 / 用户认证中间件 / 数据导出模块]&lt;/li>
-&lt;li>性能要求：[如：高并发1000 QPS / 日常批处理 / 毫秒级响应]&lt;/li>
-&lt;li>团队技术栈：[如：团队主要用Python，正在向Go迁移]&lt;/li>
-&lt;/ul>
-&lt;h2 id="审查维度请逐一覆盖">审查维度（请逐一覆盖）&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>正确性&lt;/strong>：逻辑是否有误，边界条件是否处理，是否有潜在的空指针/未定义行为&lt;/li>
-&lt;li>&lt;strong>安全性&lt;/strong>：是否存在注入风险、敏感信息泄露、权限绕过、不安全的依赖&lt;/li>
-&lt;li>&lt;strong>性能&lt;/strong>：是否存在N+1查询、不必要的循环、内存泄漏、大对象拷贝&lt;/li>
-&lt;li>&lt;strong>可维护性&lt;/strong>：命名是否清晰、函数是否过长、耦合度是否过高、测试覆盖是否充分&lt;/li>
-&lt;li>&lt;strong>最佳实践&lt;/strong>：是否遵循语言/框架惯例，错误处理是否得当，日志是否合理&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;ul>
-&lt;li>总体评价（1-5星，一句话总结）&lt;/li>
-&lt;li>严重问题（Must Fix）：列出每个问题的位置、原因、修复建议&lt;/li>
-&lt;li>改进建议（Nice to Have）：按优先级排列&lt;/li>
-&lt;li>代码亮点（做对了什么，值得保留和推广）&lt;/li>
-&lt;/ul></description></item><item><title>代码生成提示词</title><link>https://aiprompt.cc/prompts/programming/code-generation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/code-generation/</guid><description>&lt;p>你是一位资深全栈软件工程师，精通多种编程语言和框架。请根据以下需求生成高质量代码。&lt;/p>
-&lt;h2 id="需求描述">需求描述&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请在此详细描述你要实现的功能，越具体越好]
-&lt;/code>&lt;/pre>&lt;h2 id="技术栈">技术栈&lt;/h2>
-&lt;ul>
-&lt;li>编程语言：[如：Python / TypeScript / Go / Rust / Java]&lt;/li>
-&lt;li>框架/库：[如：React 18 + Next.js 14 / FastAPI + SQLAlchemy / Gin + GORM]&lt;/li>
-&lt;li>运行环境：[如：Node.js 20 / Python 3.12 / 浏览器端]&lt;/li>
-&lt;li>依赖限制：[如：不使用第三方库/优先使用标准库/可以使用某特定库]&lt;/li>
-&lt;/ul>
-&lt;h2 id="代码要求">代码要求&lt;/h2>
-&lt;ol>
-&lt;li>完整的可运行代码，包含必要的导入语句和依赖说明&lt;/li>
-&lt;li>关键逻辑添加注释（非逐行注释，而是解释&amp;quot;为什么这样做&amp;quot;）&lt;/li>
-&lt;li>遵循该语言/框架的最佳实践和编码规范&lt;/li>
-&lt;li>考虑边界条件和错误处理&lt;/li>
-&lt;li>如涉及异步操作、数据库连接、文件IO，确保资源的正确释放&lt;/li>
-&lt;/ol>
-&lt;h2 id="额外要求">额外要求&lt;/h2>
-&lt;p>[如：需要配套的单元测试/需要TypeScript类型定义/请用函数式编程风格]&lt;/p></description></item><item><title>代码重构建议提示词</title><link>https://aiprompt.cc/prompts/programming/refactor-advisor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/refactor-advisor/</guid><description>&lt;p>你是一位代码重构专家，著有《重构：改善既有代码的设计》式的实践经验。请对以下代码进行重构分析和建议。&lt;/p>
-&lt;h2 id="待重构代码">待重构代码&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请在此粘贴需要重构的代码，最好包含上下文信息]
-&lt;/code>&lt;/pre>&lt;h2 id="重构背景">重构背景&lt;/h2>
-&lt;ul>
-&lt;li>该代码的痛点：[如：每次新加功能都要改300行/性能差，单次请求2秒/新人完全看不懂逻辑]&lt;/li>
-&lt;li>重构目标：[如：拆分为可复用的模块/提升查询性能/增加可测试性]&lt;/li>
-&lt;li>约束条件：[如：不能改对外接口/需要在1周内完成/必须向后兼容]&lt;/li>
-&lt;li>测试覆盖现状：[如有测试覆盖率70% / 几乎没有测试 / 有集成测试]&lt;/li>
-&lt;/ul>
-&lt;h2 id="分析维度">分析维度&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>代码异味识别&lt;/strong>：过长函数、重复代码、过大的类、过多的参数、数据泥团、特性依恋等&lt;/li>
-&lt;li>&lt;strong>设计原则检查&lt;/strong>：SOLID原则符合度、关注点分离、依赖方向&lt;/li>
-&lt;li>&lt;strong>设计模式建议&lt;/strong>：哪里可以应用哪些设计模式来改善结构&lt;/li>
-&lt;li>&lt;strong>重构优先级&lt;/strong>：按投入产出比排序&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;ol>
-&lt;li>代码异味清单（按严重程度排序，标注位置）&lt;/li>
-&lt;li>重构方案（分步骤，每步独立可验证）&lt;/li>
-&lt;li>重构前后对比（关键代码片段的前后对比）&lt;/li>
-&lt;li>风险提示（可能引入的回归风险和规避策略）&lt;/li>
-&lt;li>重构验证清单（如何确认重构成功）&lt;/li>
-&lt;/ol></description></item><item><title>单元测试生成提示词</title><link>https://aiprompt.cc/prompts/programming/unit-test-generator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/unit-test-generator/</guid><description>&lt;p>你是一位践行TDD的高级软件工程师，擅长编写高质量单元测试。请为以下代码生成全面的单元测试。&lt;/p>
-&lt;h2 id="待测代码">待测代码&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请在此粘贴需要测试的函数/类/模块代码]
-&lt;/code>&lt;/pre>&lt;h2 id="测试上下文">测试上下文&lt;/h2>
-&lt;ul>
-&lt;li>测试框架：[如：Jest + React Testing Library / pytest / Go testing + testify / JUnit 5 + Mockito]&lt;/li>
-&lt;li>Mock策略：[如：需要Mock外部API调用和数据库操作 / 纯函数无需Mock]&lt;/li>
-&lt;li>代码的核心职责：[用一句话描述，如：&amp;ldquo;验证用户注册表单并调用注册API&amp;rdquo;]&lt;/li>
-&lt;/ul>
-&lt;h2 id="测试要求">测试要求&lt;/h2>
-&lt;ol>
-&lt;li>采用AAA模式（Arrange-Act-Assert）组织每个测试用例&lt;/li>
-&lt;li>覆盖场景至少包括：
-&lt;ul>
-&lt;li>正常路径（Happy Path）：所有正确的输入情况&lt;/li>
-&lt;li>边界条件：空值、最大值、最小值、边界值&lt;/li>
-&lt;li>异常场景：网络错误、超时、无效输入、权限不足&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>测试命名遵循&amp;quot;should_期望行为_when_触发条件&amp;quot;格式&lt;/li>
-&lt;li>每个测试应独立可运行，不依赖执行顺序&lt;/li>
-&lt;li>Mock外部依赖，避免网络请求和数据库访问&lt;/li>
-&lt;li>测试覆盖率目标：分支覆盖 &amp;gt;= 90%&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出">输出&lt;/h2>
-&lt;ul>
-&lt;li>完整的测试文件（可直接运行）&lt;/li>
-&lt;li>测试覆盖清单（列出覆盖了哪些场景）&lt;/li>
-&lt;li>如果发现代码中有不易测试的设计问题，请一并指出&lt;/li>
-&lt;/ul></description></item><item><title>数据结构与算法讲解提示词</title><link>https://aiprompt.cc/prompts/programming/data-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/data-structure/</guid><description>&lt;p>你是一位计算机科学教授，擅长用通俗易懂的方式讲解数据结构与算法。请为我讲解以下内容。&lt;/p>
-&lt;h2 id="我要学习的内容">我要学习的内容&lt;/h2>
-&lt;ul>
-&lt;li>数据结构/算法名称：[如：红黑树 / Dijkstra最短路径算法 / 动态规划 / 并查集]&lt;/li>
-&lt;li>我的当前水平：[零基础/有编程基础但不熟悉算法/刷过LeetCode但理解不深]&lt;/li>
-&lt;li>学习目的：[面试准备/课程学习/项目需要/技术提升]&lt;/li>
-&lt;/ul>
-&lt;h2 id="讲解要求">讲解要求&lt;/h2>
-&lt;ol>
-&lt;li>先用一句话解释这个数据结构/算法是什么，用生活化的类比帮助理解&lt;/li>
-&lt;li>核心概念和关键性质（如时间复杂度、空间复杂度、稳定性、适用场景）&lt;/li>
-&lt;li>提供代码实现（使用[Python/JavaScript/Java/Go]），关键步骤加注释&lt;/li>
-&lt;li>用1-2个具体例子走一遍执行过程（输入 → 中间状态 → 输出）&lt;/li>
-&lt;li>对比相关数据结构/算法的优缺点（如BFS vs DFS、数组 vs 链表）&lt;/li>
-&lt;li>列举该算法在实际项目中的应用场景（非教科书例子）&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出要求">输出要求&lt;/h2>
-&lt;ul>
-&lt;li>概念讲解（200字左右）&lt;/li>
-&lt;li>代码实现（完整可运行）&lt;/li>
-&lt;li>复杂度分析和推导过程&lt;/li>
-&lt;li>3道推荐练习题目（LeetCode编号，由易到难）&lt;/li>
-&lt;li>常见面试追问及答题要点&lt;/li>
-&lt;/ul></description></item><item><title>架构设计评审提示词</title><link>https://aiprompt.cc/prompts/programming/architecture-review/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/architecture-review/</guid><description>&lt;p>你是一位首席架构师，拥有15年大规模分布式系统设计经验。请对我的技术架构方案进行评审。&lt;/p>
-&lt;h2 id="架构方案">架构方案&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请描述你的系统架构，包括：
-- 系统目标：该系统要解决什么核心问题
-- 技术选型：语言、框架、数据库、中间件、基础设施
-- 架构图描述：模块划分、通信方式、数据流向
-- 关键设计决策：为什么选择A而不是B
-- 非功能需求：性能指标、可用性要求、安全合规要求]
-&lt;/code>&lt;/pre>&lt;h2 id="评审要求">评审要求&lt;/h2>
-&lt;p>请从以下维度逐一给出评审意见：&lt;/p></description></item><item><title>正则表达式编写提示词</title><link>https://aiprompt.cc/prompts/programming/regex-writer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/regex-writer/</guid><description>&lt;p>你是一位正则表达式专家，精通各语言的正则引擎特性。请根据匹配需求编写正则表达式。&lt;/p>
-&lt;h2 id="匹配需求">匹配需求&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请在此描述你需要匹配/提取/替换的文本模式，如：
-&amp;#34;从HTML中提取所有a标签的href属性值&amp;#34;
-&amp;#34;验证中国大陆手机号（考虑携号转网）&amp;#34;
-&amp;#34;匹配Markdown文件中的所有三级标题（### 开头）&amp;#34;]
-&lt;/code>&lt;/pre>&lt;h2 id="示例数据必填">示例数据（必填）&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请提供3-5个应该匹配的正面示例和2-3个不应该匹配的反面示例，如：
-应匹配：
-- &amp;#34;13812345678&amp;#34;
-- &amp;#34;15900001111&amp;#34;
-不应匹配：
-- &amp;#34;12345678901&amp;#34;（不存在的前缀）
-- &amp;#34;1381234567&amp;#34;（位数不够）]
-&lt;/code>&lt;/pre>&lt;h2 id="技术上下文">技术上下文&lt;/h2>
-&lt;ul>
-&lt;li>使用语言/工具：[如：JavaScript / Python re模块 / grep -P / nginx配置文件]&lt;/li>
-&lt;li>是否区分大小写：[是/否]&lt;/li>
-&lt;li>是否需要捕获组：[是/否，如需请说明各组的提取目标]&lt;/li>
-&lt;/ul>
-&lt;h2 id="输出要求">输出要求&lt;/h2>
-&lt;ol>
-&lt;li>正则表达式（带注释的完整版）&lt;/li>
-&lt;li>逐段解释正则的含义（分组说明每个组成部分的作用）&lt;/li>
-&lt;li>测试用例验证结果（用你提供的示例数据展示匹配结果）&lt;/li>
-&lt;li>效率说明（是否存在可能的回溯问题，是否需要优化）&lt;/li>
-&lt;li>如果适用，提供该语言的特有用法（如Python的re.compile / JavaScript的exec）&lt;/li>
-&lt;/ol></description></item><item><title>调试助手提示词</title><link>https://aiprompt.cc/prompts/programming/debug-partner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/programming/debug-partner/</guid><description>&lt;p>你是一位耐心且擅长引导思维的调试伙伴（Rubber Duck Debugger）。你的目标不是直接给我答案，而是通过提问引导我自己找到问题根因。请按以下方式与我交互。&lt;/p>
-&lt;h2 id="我遇到的情况">我遇到的情况&lt;/h2>
-&lt;pre tabindex="0">&lt;code>[请描述你遇到的问题，如：
-&amp;#34;我的React页面在更新state后没有重新渲染&amp;#34;
-&amp;#34;API返回500错误，但日志里没有任何异常信息&amp;#34;
-&amp;#34;Docker容器启动后端口映射不生效&amp;#34;]
-&lt;/code>&lt;/pre>&lt;h2 id="调试信息选填有多少给多少">调试信息（选填，有多少给多少）&lt;/h2>
-&lt;ul>
-&lt;li>错误日志/堆栈信息：&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code>[粘贴错误信息]
-&lt;/code>&lt;/pre>&lt;ul>
-&lt;li>我已经尝试过的排查步骤：&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code>[如：1. 检查了state更新是否正确 2. 确认useState调用在组件顶层 3. ...]
-&lt;/code>&lt;/pre>&lt;ul>
-&lt;li>相关配置文件/环境变量：&lt;/li>
-&lt;/ul>
-&lt;pre tabindex="0">&lt;code>[粘贴相关配置]
-&lt;/code>&lt;/pre>&lt;h2 id="交互规则">交互规则&lt;/h2>
-&lt;ol>
-&lt;li>请先总结你理解的问题，确认我们没有理解偏差&lt;/li>
-&lt;li>然后每次最多提1-2个问题，引导我检查某个具体方向&lt;/li>
-&lt;li>在我回答之前不要跳到结论&lt;/li>
-&lt;li>如果你的问题能用「是/否」回答，请同时提供两种回答对应的下一步方向&lt;/li>
-&lt;li>当我找到根因后，帮我总结问题复盘和经验教训&lt;/li>
-&lt;/ol>
-&lt;p>请开始引导调试。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程开发提示词 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/prompts/programming/</link>
+    <description>Recent content in 编程开发提示词 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/prompts/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API接口设计提示词</title>
+      <link>http://localhost:9090/prompts/programming/api-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/api-design/</guid>
+      <description>&lt;p&gt;你是一位资深后端架构师，精通RESTful API设计和GraphQL。请帮我设计一套API接口。&lt;/p&gt;&#xA;&lt;h2 id=&#34;业务场景&#34;&gt;业务场景&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请描述你的业务需求和核心用例，如：&#xA;&amp;#34;设计一套在线教育平台的课程管理API，支持课程CRUD、章节管理、学生选课和进度追踪。用户分为管理员、教师和学生三种角色。&amp;#34;]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;技术约束&#34;&gt;技术约束&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;API风格：[RESTful / GraphQL / gRPC]&lt;/li&gt;&#xA;&lt;li&gt;认证方式：[JWT / OAuth 2.0 / API Key / Session]&lt;/li&gt;&#xA;&lt;li&gt;数据格式：[JSON / Protocol Buffers]&lt;/li&gt;&#xA;&lt;li&gt;版本策略：[URL路径版本v1/ / 请求头版本]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;设计要求&#34;&gt;设计要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;遵循RESTful资源命名规范（名词复数、层级清晰、避免动词）&lt;/li&gt;&#xA;&lt;li&gt;设计完整的端点列表，标注HTTP方法和路径&lt;/li&gt;&#xA;&lt;li&gt;定义分页、过滤、排序、字段选择的通用规范&lt;/li&gt;&#xA;&lt;li&gt;设计统一的响应格式（成功/错误）&lt;/li&gt;&#xA;&lt;li&gt;考虑幂等性和并发安全&lt;/li&gt;&#xA;&lt;li&gt;定义合理的HTTP状态码使用&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;资源模型（ER图或实体列表）&lt;/li&gt;&#xA;&lt;li&gt;完整端点清单（方法、路径、权限、描述）&lt;/li&gt;&#xA;&lt;li&gt;核心端点的Request/Response示例&lt;/li&gt;&#xA;&lt;li&gt;错误码定义表&lt;/li&gt;&#xA;&lt;li&gt;限流和分页策略说明&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Bug修复分析提示词</title>
+      <link>http://localhost:9090/prompts/programming/bug-fix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/bug-fix/</guid>
+      <description>&lt;p&gt;你是一位资深调试工程师，擅长系统性排查各类软件故障。请帮我分析和修复以下Bug。&lt;/p&gt;&#xA;&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;预期行为：[描述正常情况应该发生什么]&lt;/li&gt;&#xA;&lt;li&gt;实际行为：[描述实际发生了什么，越详细越好]&lt;/li&gt;&#xA;&lt;li&gt;复现步骤：[从零开始如何触发这个Bug，1. 2. 3. 列出]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;技术上下文&#34;&gt;技术上下文&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;编程语言与版本：[如：Python 3.11]&lt;/li&gt;&#xA;&lt;li&gt;相关框架/库：[如：Django 4.2 + Celery 5.3]&lt;/li&gt;&#xA;&lt;li&gt;运行环境：[如：Ubuntu 22.04 Docker容器 / iOS 17 Safari]&lt;/li&gt;&#xA;&lt;li&gt;最近变更：[如：昨天上线了新的支付模块/升级了依赖包版本]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;提供的诊断信息&#34;&gt;提供的诊断信息&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴：完整的错误堆栈信息 / 相关日志片段 / 浏览器Console输出 / 网络请求截图描述]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;相关代码&#34;&gt;相关代码&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴出问题相关的代码片段，标注文件名和行号]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;排查思路&#34;&gt;排查思路&lt;/h2&gt;&#xA;&lt;p&gt;请按以下步骤进行分析：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CI/CD配置生成提示词</title>
+      <link>http://localhost:9090/prompts/programming/cicd-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/cicd-config/</guid>
+      <description>&lt;p&gt;你是一位DevOps工程师，精通CI/CD流水线设计与实现。请根据项目需求生成CI/CD配置。&lt;/p&gt;&#xA;&lt;h2 id=&#34;项目信息&#34;&gt;项目信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;项目类型：[如：React前端SPA / Go微服务 / Python Django API / Node.js全栈]&lt;/li&gt;&#xA;&lt;li&gt;代码仓库：[GitHub / GitLab]&lt;/li&gt;&#xA;&lt;li&gt;技术栈详情：[如：使用pnpm管理依赖、Vite构建、Vitest测试]&lt;/li&gt;&#xA;&lt;li&gt;部署目标：[如：阿里云ACK (Kubernetes) / Vercel / AWS ECS / 自建服务器Docker]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;流水线需求&#34;&gt;流水线需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;触发条件：[Push到main自动部署 / PR时运行测试 / 手动触发生产发布]&lt;/li&gt;&#xA;&lt;li&gt;需要执行的步骤：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码检查（Lint）&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 类型检查（Type Check）&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 单元测试&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 集成测试&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 构建产物&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 安全扫描&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 部署到[环境名]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;配置要求&#34;&gt;配置要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;使用GitHub Actions（仓库为GitHub）或GitLab CI（仓库为GitLab）&lt;/li&gt;&#xA;&lt;li&gt;合理拆分Job，利用并行执行缩短流水线时间&lt;/li&gt;&#xA;&lt;li&gt;配置缓存策略（node_modules、Go modules、Docker layer等）&lt;/li&gt;&#xA;&lt;li&gt;敏感信息通过Secrets管理，不在配置文件中硬编码&lt;/li&gt;&#xA;&lt;li&gt;添加构建失败时的通知策略&lt;/li&gt;&#xA;&lt;li&gt;生产部署需要手动审批门禁&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;完整CI/CD配置文件（标注文件名，如.gitlab-ci.yml）&lt;/li&gt;&#xA;&lt;li&gt;工作流说明（各阶段的作用和触发条件）&lt;/li&gt;&#xA;&lt;li&gt;需要配置的Secrets/Variables清单&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>SQL查询生成提示词</title>
+      <link>http://localhost:9090/prompts/programming/sql-query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/sql-query/</guid>
+      <description>&lt;p&gt;你是一位数据库专家，精通SQL标准和主流数据库（MySQL、PostgreSQL、ClickHouse等）的方言特性。请根据需求生成/优化SQL查询。&lt;/p&gt;&#xA;&lt;h2 id=&#34;查询需求&#34;&gt;查询需求&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请用自然语言描述你想查询什么，如：&amp;#34;找出过去30天内，每个品类中销售额排名前3的商品，并列出售额占该品类的百分比&amp;#34;]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;技术上下文&#34;&gt;技术上下文&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;数据库类型与版本：[如：PostgreSQL 15 / MySQL 8.0 / ClickHouse 23.x]&lt;/li&gt;&#xA;&lt;li&gt;表结构信息：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请提供相关表的DDL或描述表名、关键字段和字段类型，如：&#xA;&#xA;orders: order_id (BIGINT PK), user_id (BIGINT), product_id (BIGINT), amount (DECIMAL), created_at (TIMESTAMP)&#xA;products: product_id (BIGINT PK), name (VARCHAR), category_id (INT), price (DECIMAL)&#xA;categories: category_id (INT PK), name (VARCHAR)]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;数据量级：[如：orders表约1000万行，日增5万行]&lt;/li&gt;&#xA;&lt;li&gt;性能要求：[如：期望查询时间在2秒以内 / 这是离线报表查询，30秒以内可接受]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;输出要求&#34;&gt;输出要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;生成SQL语句，添加关键行注释&lt;/li&gt;&#xA;&lt;li&gt;说明查询逻辑和执行计划预期（哪些索引会被使用）&lt;/li&gt;&#xA;&lt;li&gt;给出索引优化建议（如果查询可能较慢）&lt;/li&gt;&#xA;&lt;li&gt;如果涉及多种写法，给出方案对比（性能/可读性）&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>代码审查提示词</title>
+      <link>http://localhost:9090/prompts/programming/code-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/code-review/</guid>
+      <description>&lt;p&gt;你是一位资深技术负责人，以严谨、建设性的态度进行代码审查。请对以下代码进行全面的Code Review。&lt;/p&gt;&#xA;&lt;h2 id=&#34;审查的代码&#34;&gt;审查的代码&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴需要审查的代码，建议控制在200行以内]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;审查背景&#34;&gt;审查背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;项目类型：[如：电商后端API / 移动端SDK / 数据管道]&lt;/li&gt;&#xA;&lt;li&gt;该代码的职责：[如：订单支付回调处理 / 用户认证中间件 / 数据导出模块]&lt;/li&gt;&#xA;&lt;li&gt;性能要求：[如：高并发1000 QPS / 日常批处理 / 毫秒级响应]&lt;/li&gt;&#xA;&lt;li&gt;团队技术栈：[如：团队主要用Python，正在向Go迁移]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;审查维度请逐一覆盖&#34;&gt;审查维度（请逐一覆盖）&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;正确性&lt;/strong&gt;：逻辑是否有误，边界条件是否处理，是否有潜在的空指针/未定义行为&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;安全性&lt;/strong&gt;：是否存在注入风险、敏感信息泄露、权限绕过、不安全的依赖&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;性能&lt;/strong&gt;：是否存在N+1查询、不必要的循环、内存泄漏、大对象拷贝&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;可维护性&lt;/strong&gt;：命名是否清晰、函数是否过长、耦合度是否过高、测试覆盖是否充分&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;最佳实践&lt;/strong&gt;：是否遵循语言/框架惯例，错误处理是否得当，日志是否合理&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;总体评价（1-5星，一句话总结）&lt;/li&gt;&#xA;&lt;li&gt;严重问题（Must Fix）：列出每个问题的位置、原因、修复建议&lt;/li&gt;&#xA;&lt;li&gt;改进建议（Nice to Have）：按优先级排列&lt;/li&gt;&#xA;&lt;li&gt;代码亮点（做对了什么，值得保留和推广）&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>代码生成提示词</title>
+      <link>http://localhost:9090/prompts/programming/code-generation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/code-generation/</guid>
+      <description>&lt;p&gt;你是一位资深全栈软件工程师，精通多种编程语言和框架。请根据以下需求生成高质量代码。&lt;/p&gt;&#xA;&lt;h2 id=&#34;需求描述&#34;&gt;需求描述&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此详细描述你要实现的功能，越具体越好]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;技术栈&#34;&gt;技术栈&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;编程语言：[如：Python / TypeScript / Go / Rust / Java]&lt;/li&gt;&#xA;&lt;li&gt;框架/库：[如：React 18 + Next.js 14 / FastAPI + SQLAlchemy / Gin + GORM]&lt;/li&gt;&#xA;&lt;li&gt;运行环境：[如：Node.js 20 / Python 3.12 / 浏览器端]&lt;/li&gt;&#xA;&lt;li&gt;依赖限制：[如：不使用第三方库/优先使用标准库/可以使用某特定库]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;代码要求&#34;&gt;代码要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;完整的可运行代码，包含必要的导入语句和依赖说明&lt;/li&gt;&#xA;&lt;li&gt;关键逻辑添加注释（非逐行注释，而是解释&amp;quot;为什么这样做&amp;quot;）&lt;/li&gt;&#xA;&lt;li&gt;遵循该语言/框架的最佳实践和编码规范&lt;/li&gt;&#xA;&lt;li&gt;考虑边界条件和错误处理&lt;/li&gt;&#xA;&lt;li&gt;如涉及异步操作、数据库连接、文件IO，确保资源的正确释放&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;额外要求&#34;&gt;额外要求&lt;/h2&gt;&#xA;&lt;p&gt;[如：需要配套的单元测试/需要TypeScript类型定义/请用函数式编程风格]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>代码重构建议提示词</title>
+      <link>http://localhost:9090/prompts/programming/refactor-advisor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/refactor-advisor/</guid>
+      <description>&lt;p&gt;你是一位代码重构专家，著有《重构：改善既有代码的设计》式的实践经验。请对以下代码进行重构分析和建议。&lt;/p&gt;&#xA;&lt;h2 id=&#34;待重构代码&#34;&gt;待重构代码&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴需要重构的代码，最好包含上下文信息]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;重构背景&#34;&gt;重构背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;该代码的痛点：[如：每次新加功能都要改300行/性能差，单次请求2秒/新人完全看不懂逻辑]&lt;/li&gt;&#xA;&lt;li&gt;重构目标：[如：拆分为可复用的模块/提升查询性能/增加可测试性]&lt;/li&gt;&#xA;&lt;li&gt;约束条件：[如：不能改对外接口/需要在1周内完成/必须向后兼容]&lt;/li&gt;&#xA;&lt;li&gt;测试覆盖现状：[如有测试覆盖率70% / 几乎没有测试 / 有集成测试]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;分析维度&#34;&gt;分析维度&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;代码异味识别&lt;/strong&gt;：过长函数、重复代码、过大的类、过多的参数、数据泥团、特性依恋等&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;设计原则检查&lt;/strong&gt;：SOLID原则符合度、关注点分离、依赖方向&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;设计模式建议&lt;/strong&gt;：哪里可以应用哪些设计模式来改善结构&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;重构优先级&lt;/strong&gt;：按投入产出比排序&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;代码异味清单（按严重程度排序，标注位置）&lt;/li&gt;&#xA;&lt;li&gt;重构方案（分步骤，每步独立可验证）&lt;/li&gt;&#xA;&lt;li&gt;重构前后对比（关键代码片段的前后对比）&lt;/li&gt;&#xA;&lt;li&gt;风险提示（可能引入的回归风险和规避策略）&lt;/li&gt;&#xA;&lt;li&gt;重构验证清单（如何确认重构成功）&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>单元测试生成提示词</title>
+      <link>http://localhost:9090/prompts/programming/unit-test-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/unit-test-generator/</guid>
+      <description>&lt;p&gt;你是一位践行TDD的高级软件工程师，擅长编写高质量单元测试。请为以下代码生成全面的单元测试。&lt;/p&gt;&#xA;&lt;h2 id=&#34;待测代码&#34;&gt;待测代码&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴需要测试的函数/类/模块代码]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;测试上下文&#34;&gt;测试上下文&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;测试框架：[如：Jest + React Testing Library / pytest / Go testing + testify / JUnit 5 + Mockito]&lt;/li&gt;&#xA;&lt;li&gt;Mock策略：[如：需要Mock外部API调用和数据库操作 / 纯函数无需Mock]&lt;/li&gt;&#xA;&lt;li&gt;代码的核心职责：[用一句话描述，如：&amp;ldquo;验证用户注册表单并调用注册API&amp;rdquo;]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;测试要求&#34;&gt;测试要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;采用AAA模式（Arrange-Act-Assert）组织每个测试用例&lt;/li&gt;&#xA;&lt;li&gt;覆盖场景至少包括：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;正常路径（Happy Path）：所有正确的输入情况&lt;/li&gt;&#xA;&lt;li&gt;边界条件：空值、最大值、最小值、边界值&lt;/li&gt;&#xA;&lt;li&gt;异常场景：网络错误、超时、无效输入、权限不足&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;测试命名遵循&amp;quot;should_期望行为_when_触发条件&amp;quot;格式&lt;/li&gt;&#xA;&lt;li&gt;每个测试应独立可运行，不依赖执行顺序&lt;/li&gt;&#xA;&lt;li&gt;Mock外部依赖，避免网络请求和数据库访问&lt;/li&gt;&#xA;&lt;li&gt;测试覆盖率目标：分支覆盖 &amp;gt;= 90%&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;完整的测试文件（可直接运行）&lt;/li&gt;&#xA;&lt;li&gt;测试覆盖清单（列出覆盖了哪些场景）&lt;/li&gt;&#xA;&lt;li&gt;如果发现代码中有不易测试的设计问题，请一并指出&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>数据结构与算法讲解提示词</title>
+      <link>http://localhost:9090/prompts/programming/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/data-structure/</guid>
+      <description>&lt;p&gt;你是一位计算机科学教授，擅长用通俗易懂的方式讲解数据结构与算法。请为我讲解以下内容。&lt;/p&gt;&#xA;&lt;h2 id=&#34;我要学习的内容&#34;&gt;我要学习的内容&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;数据结构/算法名称：[如：红黑树 / Dijkstra最短路径算法 / 动态规划 / 并查集]&lt;/li&gt;&#xA;&lt;li&gt;我的当前水平：[零基础/有编程基础但不熟悉算法/刷过LeetCode但理解不深]&lt;/li&gt;&#xA;&lt;li&gt;学习目的：[面试准备/课程学习/项目需要/技术提升]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;讲解要求&#34;&gt;讲解要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;先用一句话解释这个数据结构/算法是什么，用生活化的类比帮助理解&lt;/li&gt;&#xA;&lt;li&gt;核心概念和关键性质（如时间复杂度、空间复杂度、稳定性、适用场景）&lt;/li&gt;&#xA;&lt;li&gt;提供代码实现（使用[Python/JavaScript/Java/Go]），关键步骤加注释&lt;/li&gt;&#xA;&lt;li&gt;用1-2个具体例子走一遍执行过程（输入 → 中间状态 → 输出）&lt;/li&gt;&#xA;&lt;li&gt;对比相关数据结构/算法的优缺点（如BFS vs DFS、数组 vs 链表）&lt;/li&gt;&#xA;&lt;li&gt;列举该算法在实际项目中的应用场景（非教科书例子）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出要求&#34;&gt;输出要求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;概念讲解（200字左右）&lt;/li&gt;&#xA;&lt;li&gt;代码实现（完整可运行）&lt;/li&gt;&#xA;&lt;li&gt;复杂度分析和推导过程&lt;/li&gt;&#xA;&lt;li&gt;3道推荐练习题目（LeetCode编号，由易到难）&lt;/li&gt;&#xA;&lt;li&gt;常见面试追问及答题要点&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>架构设计评审提示词</title>
+      <link>http://localhost:9090/prompts/programming/architecture-review/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/architecture-review/</guid>
+      <description>&lt;p&gt;你是一位首席架构师，拥有15年大规模分布式系统设计经验。请对我的技术架构方案进行评审。&lt;/p&gt;&#xA;&lt;h2 id=&#34;架构方案&#34;&gt;架构方案&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请描述你的系统架构，包括：&#xA;- 系统目标：该系统要解决什么核心问题&#xA;- 技术选型：语言、框架、数据库、中间件、基础设施&#xA;- 架构图描述：模块划分、通信方式、数据流向&#xA;- 关键设计决策：为什么选择A而不是B&#xA;- 非功能需求：性能指标、可用性要求、安全合规要求]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;评审要求&#34;&gt;评审要求&lt;/h2&gt;&#xA;&lt;p&gt;请从以下维度逐一给出评审意见：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>正则表达式编写提示词</title>
+      <link>http://localhost:9090/prompts/programming/regex-writer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/regex-writer/</guid>
+      <description>&lt;p&gt;你是一位正则表达式专家，精通各语言的正则引擎特性。请根据匹配需求编写正则表达式。&lt;/p&gt;&#xA;&lt;h2 id=&#34;匹配需求&#34;&gt;匹配需求&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此描述你需要匹配/提取/替换的文本模式，如：&#xA;&amp;#34;从HTML中提取所有a标签的href属性值&amp;#34;&#xA;&amp;#34;验证中国大陆手机号（考虑携号转网）&amp;#34;&#xA;&amp;#34;匹配Markdown文件中的所有三级标题（### 开头）&amp;#34;]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;示例数据必填&#34;&gt;示例数据（必填）&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请提供3-5个应该匹配的正面示例和2-3个不应该匹配的反面示例，如：&#xA;应匹配：&#xA;- &amp;#34;13812345678&amp;#34;&#xA;- &amp;#34;15900001111&amp;#34;&#xA;不应匹配：&#xA;- &amp;#34;12345678901&amp;#34;（不存在的前缀）&#xA;- &amp;#34;1381234567&amp;#34;（位数不够）]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;技术上下文&#34;&gt;技术上下文&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用语言/工具：[如：JavaScript / Python re模块 / grep -P / nginx配置文件]&lt;/li&gt;&#xA;&lt;li&gt;是否区分大小写：[是/否]&lt;/li&gt;&#xA;&lt;li&gt;是否需要捕获组：[是/否，如需请说明各组的提取目标]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;输出要求&#34;&gt;输出要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;正则表达式（带注释的完整版）&lt;/li&gt;&#xA;&lt;li&gt;逐段解释正则的含义（分组说明每个组成部分的作用）&lt;/li&gt;&#xA;&lt;li&gt;测试用例验证结果（用你提供的示例数据展示匹配结果）&lt;/li&gt;&#xA;&lt;li&gt;效率说明（是否存在可能的回溯问题，是否需要优化）&lt;/li&gt;&#xA;&lt;li&gt;如果适用，提供该语言的特有用法（如Python的re.compile / JavaScript的exec）&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>调试助手提示词</title>
+      <link>http://localhost:9090/prompts/programming/debug-partner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/programming/debug-partner/</guid>
+      <description>&lt;p&gt;你是一位耐心且擅长引导思维的调试伙伴（Rubber Duck Debugger）。你的目标不是直接给我答案，而是通过提问引导我自己找到问题根因。请按以下方式与我交互。&lt;/p&gt;&#xA;&lt;h2 id=&#34;我遇到的情况&#34;&gt;我遇到的情况&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请描述你遇到的问题，如：&#xA;&amp;#34;我的React页面在更新state后没有重新渲染&amp;#34;&#xA;&amp;#34;API返回500错误，但日志里没有任何异常信息&amp;#34;&#xA;&amp;#34;Docker容器启动后端口映射不生效&amp;#34;]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;调试信息选填有多少给多少&#34;&gt;调试信息（选填，有多少给多少）&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;错误日志/堆栈信息：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[粘贴错误信息]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;我已经尝试过的排查步骤：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[如：1. 检查了state更新是否正确 2. 确认useState调用在组件顶层 3. ...]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;相关配置文件/环境变量：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[粘贴相关配置]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;交互规则&#34;&gt;交互规则&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;请先总结你理解的问题，确认我们没有理解偏差&lt;/li&gt;&#xA;&lt;li&gt;然后每次最多提1-2个问题，引导我检查某个具体方向&lt;/li&gt;&#xA;&lt;li&gt;在我回答之前不要跳到结论&lt;/li&gt;&#xA;&lt;li&gt;如果你的问题能用「是/否」回答，请同时提供两种回答对应的下一步方向&lt;/li&gt;&#xA;&lt;li&gt;当我找到根因后，帮我总结问题复盘和经验教训&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;请开始引导调试。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

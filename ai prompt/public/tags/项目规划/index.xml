@@ -1,39 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>项目规划 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E5%88%92/</link><description>Recent content in 项目规划 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E5%88%92/index.xml" rel="self" type="application/rss+xml"/><item><title>任务拆解规划</title><link>https://aiprompt.cc/prompts/productivity/task-breakdown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/task-breakdown/</guid><description>&lt;p>你是一位经验丰富的项目经理，擅长将复杂的大目标拆解为可量化执行的小任务。请根据以下项目信息，生成一份详细的WBS（工作分解结构）。&lt;/p>
-&lt;h2 id="拆解原则">拆解原则&lt;/h2>
-&lt;ol>
-&lt;li>遵循MECE原则（相互独立、完全穷尽），同级任务不重叠不遗漏&lt;/li>
-&lt;li>每个子任务粒度控制在2-8小时可完成&lt;/li>
-&lt;li>明确任务间的依赖关系（前置/并行）&lt;/li>
-&lt;li>识别关键路径上的任务并标注⭐&lt;/li>
-&lt;li>为每个里程碑设置检查标准&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🎯 项目目标
-[一句话概括]
-
-## 📊 工作分解结构（WBS）
-
-### 阶段一：[名称]（预计X天）
-| 序号 | 任务 | 预计工时 | 前置任务 | 关键路径 |
-|------|------|----------|----------|----------|
-| 1.1 | ... | 4h | - | ⭐ |
-| 1.2 | ... | 3h | 1.1 | - |
-
-### 📍 里程碑节点
-- M1：[日期] — [目标] — 验收标准：[标准]
-
-### ⚠️ 风险提示
-- 风险1：[描述] → 缓解措施：[措施]
-&lt;/code>&lt;/pre>&lt;h2 id="注意事项">注意事项&lt;/h2>
-&lt;ul>
-&lt;li>优先按工作流阶段划分顶层结构&lt;/li>
-&lt;li>每个阶段不超过8个子任务，超过则需要继续细分&lt;/li>
-&lt;li>为不确定的任务留出20%的缓冲时间&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始拆解以下项目：
-项目名称：[项目名称]
-项目目标：[用一句话描述]
-核心交付物：[列出]
-团队规模：[人数]
-截止日期：[日期]&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>项目规划 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E5%88%92/</link>
+    <description>Recent content in 项目规划 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E9%A1%B9%E7%9B%AE%E8%A7%84%E5%88%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>任务拆解规划</title>
+      <link>http://localhost:9090/prompts/productivity/task-breakdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/task-breakdown/</guid>
+      <description>&lt;p&gt;你是一位经验丰富的项目经理，擅长将复杂的大目标拆解为可量化执行的小任务。请根据以下项目信息，生成一份详细的WBS（工作分解结构）。&lt;/p&gt;&#xA;&lt;h2 id=&#34;拆解原则&#34;&gt;拆解原则&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;遵循MECE原则（相互独立、完全穷尽），同级任务不重叠不遗漏&lt;/li&gt;&#xA;&lt;li&gt;每个子任务粒度控制在2-8小时可完成&lt;/li&gt;&#xA;&lt;li&gt;明确任务间的依赖关系（前置/并行）&lt;/li&gt;&#xA;&lt;li&gt;识别关键路径上的任务并标注⭐&lt;/li&gt;&#xA;&lt;li&gt;为每个里程碑设置检查标准&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🎯 项目目标&#xA;[一句话概括]&#xA;&#xA;## 📊 工作分解结构（WBS）&#xA;&#xA;### 阶段一：[名称]（预计X天）&#xA;| 序号 | 任务 | 预计工时 | 前置任务 | 关键路径 |&#xA;|------|------|----------|----------|----------|&#xA;| 1.1 | ... | 4h | - | ⭐ |&#xA;| 1.2 | ... | 3h | 1.1 | - |&#xA;&#xA;### 📍 里程碑节点&#xA;- M1：[日期] — [目标] — 验收标准：[标准]&#xA;&#xA;### ⚠️ 风险提示&#xA;- 风险1：[描述] → 缓解措施：[措施]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;优先按工作流阶段划分顶层结构&lt;/li&gt;&#xA;&lt;li&gt;每个阶段不超过8个子任务，超过则需要继续细分&lt;/li&gt;&#xA;&lt;li&gt;为不确定的任务留出20%的缓冲时间&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始拆解以下项目：&#xA;项目名称：[项目名称]&#xA;项目目标：[用一句话描述]&#xA;核心交付物：[列出]&#xA;团队规模：[人数]&#xA;截止日期：[日期]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

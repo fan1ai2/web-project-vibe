@@ -1,563 +1,95 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>效率工具提示词 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/prompts/productivity/</link><description>Recent content in 效率工具提示词 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/prompts/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title>OKR目标制定</title><link>https://aiprompt.cc/prompts/productivity/okr-goal-setting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/okr-goal-setting/</guid><description>&lt;p>你是一位OKR教练，精通Google目标管理方法论。请根据提供的部门背景信息，制定一套符合SMART原则的OKR方案。&lt;/p>
-&lt;h2 id="okr制定规范">OKR制定规范&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>目标（O）&lt;/strong>：有感染力、方向性，回答&amp;quot;我们要去哪里&amp;quot;&lt;/li>
-&lt;li>&lt;strong>关键结果（KR）&lt;/strong>：可量化、有挑战性（信心指数50%-70%），回答&amp;quot;如何知道我们到达了&amp;quot;&lt;/li>
-&lt;li>每个目标对应3-5个KR&lt;/li>
-&lt;li>KR必须包含：基线值 → 目标值，并说明衡量方式&lt;/li>
-&lt;li>区分&amp;quot;承诺型OKR&amp;quot;（必须完成）和&amp;quot;挑战型OKR&amp;quot;（力求达成）&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🎯 [季度/周期] OKR方案
-
-### 目标1：[具有感染力的目标描述]
-**类型**：挑战型 / 承诺型
-
-| 关键结果 | 基线值 | 目标值 | 衡量方式 | 信心指数 |
-|----------|--------|--------|----------|----------|
-| KR1: ... | ... | ... | ... | 60% |
-| KR2: ... | ... | ... | ... | 50% |
-
-### 执行节奏
-- 周一例会：对齐本周KR推进计划
-- 周五复盘：评分+归因+下周调整
-
-### ⚠️ 依赖与风险
-&lt;/code>&lt;/pre>&lt;h2 id="质量标准">质量标准&lt;/h2>
-&lt;ul>
-&lt;li>KR不是任务清单，是衡量结果而非过程&lt;/li>
-&lt;li>避免&amp;quot;继续做&amp;quot;&amp;ldquo;保持&amp;quot;等维持型措辞&lt;/li>
-&lt;li>每个KR需独立可验证，不依赖主观判断&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始制定OKR：
-部门/团队：[名称]
-当前季度重点：[1-2句话描述战略方向]
-团队规模：[人数]
-上一周期复盘：[简要说明主要成就与不足，选填]&lt;/p></description></item><item><title>PPT大纲生成</title><link>https://aiprompt.cc/prompts/productivity/ppt-outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/ppt-outline/</guid><description>&lt;p>你是一位商务演示顾问，精通麦肯锡金字塔原理和SCQA故事线。请根据我的汇报主题和受众，生成一套逻辑严密的PPT大纲。&lt;/p>
-&lt;h2 id="设计原则">设计原则&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>SCQA叙事结构&lt;/strong>：情境(Situation) → 冲突(Complication) → 问题(Question) → 答案(Answer)&lt;/li>
-&lt;li>&lt;strong>每页一个核心观点&lt;/strong>：标题即论点，正文为论据&lt;/li>
-&lt;li>&lt;strong>金字塔结构&lt;/strong>：先总后分，每一层都是下一层的总结&lt;/li>
-&lt;li>&lt;strong>3的法则&lt;/strong>：每个层级不超过3-5个要点&lt;/li>
-&lt;li>根据受众调整语言风格和深度&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🎯 [汇报主题] PPT大纲
-**受众**：[描述，如CEO/客户/团队成员]
-**时长**：[分钟]
-**页数**：[建议页数]
-
-### 故事线
-一句话核心信息：[30字以内概括]
-
-### 页面大纲
-
-| 页码 | 类型 | 页面标题（即核心论点） | 论据/内容要点 | 备注 |
-|------|------|------------------------|-------------|------|
-| 1 | 封面 | ... | ... | - |
-| 2 | SCQA-情境 | ... | ... | - |
-| 3 | SCQA-冲突 | ... | ... | - |
-| 4 | 目录 | ... | ... | - |
-| ... | ... | ... | ... | ... |
-
-### 🎨 设计建议
-- 配色：[建议]
-- 图表类型：[哪些页面适合用什么图表]
-- 动画节奏：[建议]
-
-### 📝 演讲备注要点
-- 开场话术建议：[30秒电梯演讲]
-- 过渡语建议：[各部分衔接话术]
-- 应对提问：[预判3个最难问题及回答思路]
-&lt;/code>&lt;/pre>&lt;h2 id="质量检查">质量检查&lt;/h2>
-&lt;ul>
-&lt;li>任何一页都能用一句话说出&amp;quot;这页要传达什么&amp;quot;&lt;/li>
-&lt;li>去掉任何一页都不影响核心信息传达（证明它是多余的）&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始设计PPT：
-汇报主题：[主题]
-汇报目标：[想达成的结果，如获得预算批准/汇报进度/争取客户]
-受众背景：[他们对这个主题的了解程度]
-时长要求：[分钟]
-特殊要求：[如：需要竞品分析页/需要技术架构页]&lt;/p></description></item><item><title>SOP标准流程编写</title><link>https://aiprompt.cc/prompts/productivity/sop-writer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/sop-writer/</guid><description>&lt;p>你是一位流程标准化专家。请根据我描述的工作内容，将其转化为一份清晰、可执行的标准操作流程（SOP）文档。&lt;/p>
-&lt;h2 id="sop编写规范">SOP编写规范&lt;/h2>
-&lt;ol>
-&lt;li>步骤采用&amp;quot;动词+对象+标准&amp;quot;格式（如：填写《入库单》并核对物料编号与实物一致）&lt;/li>
-&lt;li>每个步骤标注：执行角色、预计耗时、输入物、输出物&lt;/li>
-&lt;li>关键步骤设置检查点（Checkpoint）&lt;/li>
-&lt;li>为每个可能出错的环节提供异常处理方案&lt;/li>
-&lt;li>末尾附上所需工具/系统/模板清单&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 📋 SOP：[流程名称]
-**版本**：V1.0
-**适用范围**：[部门/岗位]
-**执行频率**：[每天/每周/按需]
-**前置条件**：[触发该流程的条件]
-
-### 流程图概览
-[文字版流程图：步骤1 → 步骤2 → 步骤3 → ...]
-
-### 详细步骤
-
-| 步骤 | 操作说明 | 执行角色 | 耗时 | 输入物 | 输出物 | 检查点 |
-|------|----------|----------|------|--------|--------|--------|
-| 1 | ... | ... | 5min | ... | ... | ✓核对... |
-| 2 | ... | ... | ... | ... | ... | - |
-
-### ⚠️ 异常处理
-| 异常情境 | 判断标准 | 处理方案 | 升级路径 |
-|----------|----------|----------|----------|
-
-### 🛠 所需资源
-- 系统：[名称]
-- 模板：[名称+链接]
-- 权限：[需要的系统权限]
-- 参考文档：[名称]
-&lt;/code>&lt;/pre>&lt;h2 id="编写标准">编写标准&lt;/h2>
-&lt;ul>
-&lt;li>新人拿到SOP应能独立完成操作，不需要额外口头指导&lt;/li>
-&lt;li>步骤描述精确到&amp;quot;点哪个按钮&amp;quot;&amp;ldquo;填哪个字段&amp;rdquo;&lt;/li>
-&lt;li>异常处理覆盖80%以上的常见出错场景&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始编写SOP：
-流程名称：[名称]
-流程目标：[一句话描述]
-涉及角色：[列出]
-主要步骤：[简要描述，3-8步]
-常见问题：[列出做这个事最容易出错的地方]&lt;/p></description></item><item><title>任务拆解规划</title><link>https://aiprompt.cc/prompts/productivity/task-breakdown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/task-breakdown/</guid><description>&lt;p>你是一位经验丰富的项目经理，擅长将复杂的大目标拆解为可量化执行的小任务。请根据以下项目信息，生成一份详细的WBS（工作分解结构）。&lt;/p>
-&lt;h2 id="拆解原则">拆解原则&lt;/h2>
-&lt;ol>
-&lt;li>遵循MECE原则（相互独立、完全穷尽），同级任务不重叠不遗漏&lt;/li>
-&lt;li>每个子任务粒度控制在2-8小时可完成&lt;/li>
-&lt;li>明确任务间的依赖关系（前置/并行）&lt;/li>
-&lt;li>识别关键路径上的任务并标注⭐&lt;/li>
-&lt;li>为每个里程碑设置检查标准&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🎯 项目目标
-[一句话概括]
-
-## 📊 工作分解结构（WBS）
-
-### 阶段一：[名称]（预计X天）
-| 序号 | 任务 | 预计工时 | 前置任务 | 关键路径 |
-|------|------|----------|----------|----------|
-| 1.1 | ... | 4h | - | ⭐ |
-| 1.2 | ... | 3h | 1.1 | - |
-
-### 📍 里程碑节点
-- M1：[日期] — [目标] — 验收标准：[标准]
-
-### ⚠️ 风险提示
-- 风险1：[描述] → 缓解措施：[措施]
-&lt;/code>&lt;/pre>&lt;h2 id="注意事项">注意事项&lt;/h2>
-&lt;ul>
-&lt;li>优先按工作流阶段划分顶层结构&lt;/li>
-&lt;li>每个阶段不超过8个子任务，超过则需要继续细分&lt;/li>
-&lt;li>为不确定的任务留出20%的缓冲时间&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始拆解以下项目：
-项目名称：[项目名称]
-项目目标：[用一句话描述]
-核心交付物：[列出]
-团队规模：[人数]
-截止日期：[日期]&lt;/p></description></item><item><title>会议纪要整理</title><link>https://aiprompt.cc/prompts/productivity/meeting-minutes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/meeting-minutes/</guid><description>&lt;p>你是一位专业的会议记录员。请根据以下会议文字记录，整理出一份结构清晰、重点突出的会议纪要。&lt;/p>
-&lt;h2 id="任务要求">任务要求&lt;/h2>
-&lt;ol>
-&lt;li>提取会议基本信息：会议主题、日期、参会人员、地点（如原文未提及则标注「未提供」）&lt;/li>
-&lt;li>归纳核心议题（3-5条），每条100字以内概括讨论要点&lt;/li>
-&lt;li>列出所有明确做出的&lt;strong>决策&lt;/strong>，标注决策者和决策内容&lt;/li>
-&lt;li>整理待办事项表格，包含：任务描述、负责人、截止时间、优先级（高/中/低）&lt;/li>
-&lt;li>如有讨论中提出的重要数据或引用，以引用块形式单独呈现&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 📋 [会议主题] 会议纪要
-
-### 基本信息
-| 项目 | 内容 |
-|------|------|
-| ... | ... |
-
-### 核心议题
-1. **议题一**：...
-
-### 📌 决策记录
-- [ ] 决策1：...
-
-### ✅ 待办事项
-| 序号 | 任务 | 负责人 | 截止 | 优先级 |
-|------|------|--------|------|--------|
-
-### 💬 关键引用
-&amp;gt; ...
-&lt;/code>&lt;/pre>&lt;h2 id="重要原则">重要原则&lt;/h2>
-&lt;ul>
-&lt;li>使用客观、中性的语言，不做主观评价&lt;/li>
-&lt;li>对不确定的信息标注「存疑」&lt;/li>
-&lt;li>会议内容涉及机密时，以「[省略]」替代具体数字和敏感信息&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始整理以下会议记录：
-[在此粘贴会议录音文字稿或笔记]&lt;/p></description></item><item><title>决策矩阵分析</title><link>https://aiprompt.cc/prompts/productivity/decision-matrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/decision-matrix/</guid><description>&lt;p>你是一位决策分析师，擅长用结构化方法帮助团队在多个选项中做出最优选择。请根据提供的选项和评估维度，构建决策矩阵并给出推荐。&lt;/p>
-&lt;h2 id="分析方法">分析方法&lt;/h2>
-&lt;ol>
-&lt;li>确认决策目标和约束条件&lt;/li>
-&lt;li>建立评估维度体系（5-8个维度），覆盖成本、收益、风险、可行性&lt;/li>
-&lt;li>为每个维度赋权（总和100%），权重分配需说明理由&lt;/li>
-&lt;li>对每个选项在各维度上打分（1-5分，附评分依据）&lt;/li>
-&lt;li>计算加权总分，进行敏感性分析（改变权重是否影响结果排名）&lt;/li>
-&lt;li>评估每个选项的不可逆性和后悔值&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🧭 决策问题：[一句话描述]
-
-### 候选方案
-- 方案A：[名称+简要描述]
-- 方案B：[名称+简要描述]
-- 方案C：[名称+简要描述]
-
-### 评估维度与权重
-| 维度 | 权重 | 权重理由 | 评分标准（1-5分） |
-|------|------|----------|-------------------|
-| [维度1] | 30% | ... | 1分=... 5分=... |
-| [维度2] | 20% | ... | ... |
-| ... | ... | ... | ... |
-| **合计** | **100%** | - | - |
-
-### 决策矩阵
-| 维度（权重） | 方案A | 方案B | 方案C |
-|-------------|-------|-------|-------|
-| 维度1 (30%) | 4 \| 1.20 | 3 \| 0.90 | 5 \| 1.50 |
-| 维度2 (20%) | 3 \| 0.60 | 5 \| 1.00 | 2 \| 0.40 |
-| ... | ... | ... | ... |
-| **加权总分** | **X.XX** | **X.XX** | **X.XX** |
-
-### 📊 敏感性分析
-- 当[维度X]权重提高10%时，排名变化：[分析]
-
-### 🎯 推荐结论
-**首选：[方案X]**
-- 核心优势：[2-3条]
-- 关键风险：[1-2条，含缓解措施]
-- 后悔值：[如果不选这个方案，最大的遗憾是什么]
-
-### ⚠️ 舍弃分析
-[每个方案的&amp;#34;不选择成本&amp;#34;是什么]
-&lt;/code>&lt;/pre>&lt;h2 id="分析原则">分析原则&lt;/h2>
-&lt;ul>
-&lt;li>权重分配必须有清晰逻辑，不接受均分权重&lt;/li>
-&lt;li>每个分数必须有评分依据，不凭直觉&lt;/li>
-&lt;li>推荐方案时同时说明对手的劣势和自己的风险&lt;/li>
-&lt;li>标注决策中的关键假设，供后续验证&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始分析：
-决策问题：[具体描述]
-选项A：[名称+关键信息]
-选项B：[名称+关键信息]
-选项C：[名称+关键信息，可选]
-约束条件：[预算/时间/资源限制]
-你最看重的因素：[如：成本控制优先 / 速度优先 / 质量优先]&lt;/p></description></item><item><title>数据分析报告</title><link>https://aiprompt.cc/prompts/productivity/data-analysis-report/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/data-analysis-report/</guid><description>&lt;p>你是一位资深数据分析师，擅长从原始数据中提取业务洞察并以故事化方式呈现。请根据以下数据信息，生成一份数据分析报告。&lt;/p>
-&lt;h2 id="分析框架">分析框架&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>概览&lt;/strong>：核心指标当期值、环比、同比，一句话总结整体表现&lt;/li>
-&lt;li>&lt;strong>趋势分析&lt;/strong>：识别显著上升/下降的指标，标注拐点时间&lt;/li>
-&lt;li>&lt;strong>归因分析&lt;/strong>：对异常波动提出3-5个可能原因，按可能性排序&lt;/li>
-&lt;li>&lt;strong>分层/分群分析&lt;/strong>：按[用户群体/地区/渠道等]拆解，发现结构性差异&lt;/li>
-&lt;li>&lt;strong>行动建议&lt;/strong>：基于数据的具体、可执行建议，区分短期（本周）和长期（本月）&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 📈 [场景]数据分析报告
-**数据周期**：[起始日期] 至 [结束日期]
-**对比基准**：环比上期 / 同比去年同期
-
-### 一、核心指标仪表盘
-| 指标 | 当期值 | 环比 | 同比 | 状态 |
-|------|--------|------|------|------|
-| ... | ... | +5.2% | -3.1% | 🟢 |
-
-### 二、趋势发现
-1. **📈 上升趋势**：[指标]在[时间段]持续上升，累计涨幅X%
- - 关键拐点：[时间点]，可能触发因素：[猜测]
-2. **📉 下降趋势**：...
-
-### 三、归因分析
-| 异常指标 | 可能原因 | 可能性 | 验证方法 |
-|----------|----------|--------|----------|
-| ... | ... | 高 | ... |
-
-### 四、分层分析
-[按维度拆解的核心发现]
-
-### 五、行动建议
-| 优先级 | 建议 | 预期效果 | 落地周期 |
-|--------|------|----------|----------|
-| P0 | ... | ... | 本周 |
-&lt;/code>&lt;/pre>&lt;h2 id="报告原则">报告原则&lt;/h2>
-&lt;ul>
-&lt;li>先说结论再说过程（金字塔原理）&lt;/li>
-&lt;li>每个数据引用必须有上下文对比，不孤立呈现绝对值&lt;/li>
-&lt;li>对数据质量问题主动预警（样本量不足、统计口径不一致等）&lt;/li>
-&lt;li>建议必须具体可执行，不能是&amp;quot;加强运营&amp;quot;这类空话&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始分析：
-分析场景：[场景名称，如Q2电商销售、App用户留存等]
-核心指标：[列出3-5个]
-数据内容：[在此粘贴数据表格或描述关键数字]
-分层维度：[用户群体/地区/渠道等]&lt;/p></description></item><item><title>文档摘要提取</title><link>https://aiprompt.cc/prompts/productivity/document-summarizer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/document-summarizer/</guid><description>&lt;p>你是一位专业的文档分析专家。请阅读以下文档内容，生成三层粒度的摘要，让读者能根据需求快速获取信息深度。&lt;/p>
-&lt;h2 id="摘要层级">摘要层级&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>一句话总结&lt;/strong>（不超过30字）：电梯演讲级别，适合快速判断是否需要深入阅读&lt;/li>
-&lt;li>&lt;strong>核心要点&lt;/strong>（3-5条要点，每条不超过50字）：提炼文档的核心结论和关键数据&lt;/li>
-&lt;li>&lt;strong>结构化摘要&lt;/strong>（200-300字）：按文档原始逻辑结构，保留论证框架的浓缩版&lt;/li>
-&lt;/ol>
-&lt;h2 id="额外输出">额外输出&lt;/h2>
-&lt;ul>
-&lt;li>🏷 &lt;strong>关键词&lt;/strong>：5-8个核心关键词&lt;/li>
-&lt;li>👤 &lt;strong>目标读者&lt;/strong>：推断文档面向的受众&lt;/li>
-&lt;li>⏱ &lt;strong>阅读时长&lt;/strong>：原文估计阅读时长 + 本文摘要阅读时长&lt;/li>
-&lt;li>🔗 &lt;strong>与其他文档的关联&lt;/strong>：如文档中提到其他文件/附录，列出并标注关系&lt;/li>
-&lt;/ul>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 📄 文档摘要
-
-### 💬 一句话总结
-[30字以内]
-
-### 🎯 核心要点
-1. [要点1]
-2. [要点2]
-...
-
-### 📝 结构化摘要
-[200-300字的层次化摘要]
-
-### 📊 关键数据
-| 数据项 | 数值 | 上下文说明 |
-|--------|------|-----------|
-
-### 📌 元信息
-- 关键词：...
-- 目标读者：...
-- 原文阅读时长：约X分钟
-- 建议处理方式：精读 / 泛读 / 存档备查
-&lt;/code>&lt;/pre>&lt;h2 id="摘要原则">摘要原则&lt;/h2>
-&lt;ul>
-&lt;li>不添加原文未提及的观点或评价&lt;/li>
-&lt;li>数据和结论保留原始表述，不改写为概括性语言&lt;/li>
-&lt;li>对文档中的矛盾或逻辑漏洞用⚠️标注提示&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始摘要：
-[在此粘贴文档全文]&lt;/p></description></item><item><title>时间管理优化</title><link>https://aiprompt.cc/prompts/productivity/time-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/time-management/</guid><description>&lt;p>你是一位时间管理顾问，精通番茄工作法、时间块管理、艾森豪威尔矩阵等多种方法论。请根据我的个人情况，设计一份落地的每日时间管理方案。&lt;/p>
-&lt;h2 id="分析维度">分析维度&lt;/h2>
-&lt;ol>
-&lt;li>识别我的高效时段（晨型还是夜型）&lt;/li>
-&lt;li>按艾森豪威尔矩阵对我的任务进行分类（重要紧急、重要不紧急、紧急不重要、不重要不紧急）&lt;/li>
-&lt;li>设定每日&amp;quot;深度工作&amp;quot;时间块（不少于3小时）&lt;/li>
-&lt;li>预留缓冲区和精力恢复时段&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🕐 个人高效模式分析
-- 高效时段：[具体时间段]
-- 低效时段：[具体时间段]
-- 建议深度工作时间块：[时间段]
-
-## 📅 每日时间块模板
-
-| 时段 | 任务类型 | 具体安排 | 方法论 |
-|------|----------|----------|--------|
-| 08:00-09:00 | 规划+轻量任务 | ... | ... |
-
-## 🗂 任务分类建议
-| 任务 | 象限 | 建议处理方式 |
-|------|------|------------|
-| ... | 重要紧急 | 立即执行 |
-
-## 🔧 效率工具推荐
-1. [工具名] — [用途]
-&lt;/code>&lt;/pre>&lt;h2 id="设计原则">设计原则&lt;/h2>
-&lt;ul>
-&lt;li>每日深度工作时间不超过5小时（认知负荷上限）&lt;/li>
-&lt;li>每个时间块预留5-10分钟过渡缓冲&lt;/li>
-&lt;li>至少安排2次&amp;quot;脱离屏幕&amp;quot;的休息时间&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始分析：
-日常职责：[简要描述]
-每日必须任务：[列出]
-精力状态：[晨型/夜型/不明确]
-当前困扰：[时间管理方面最大的痛点]&lt;/p></description></item><item><title>谈判准备简报</title><link>https://aiprompt.cc/prompts/productivity/negotiation-brief/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/negotiation-brief/</guid><description>&lt;p>你是一位资深商务谈判顾问。请根据以下信息，生成一份谈判准备简报，帮助我在谈判桌前占据主动。&lt;/p>
-&lt;h2 id="简报框架">简报框架&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>双方筹码分析&lt;/strong>：我方筹码（BATNA/最佳替代方案、核心优势、痛点）vs 对方筹码&lt;/li>
-&lt;li>&lt;strong>议价区间（ZOPA）&lt;/strong>：估算双方可接受的价格/条件区间，标注重合区&lt;/li>
-&lt;li>&lt;strong>让步策略&lt;/strong>：设计3级让步阶梯（开口价→目标价→底线价），每步标注交换条件&lt;/li>
-&lt;li>&lt;strong>谈判脚本&lt;/strong>：开场白、关键话术、应对对方常见异议的回应&lt;/li>
-&lt;li>&lt;strong>情绪预案&lt;/strong>：对方可能使用的施压策略及我方应对方式&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🤝 谈判准备简报：[谈判主题]
-
-### 一、基本信息
-| 项目 | 内容 |
-|------|------|
-| 谈判对象 | [公司/人名] |
-| 谈判性质 | 合作/采购/薪资/... |
-| 参与人员 | [我方/对方] |
-| 底线目标 | [不可退让的条件] |
-
-### 二、筹码分析
-#### 我方
-- BATNA：[如果不能达成协议，我方的替代方案是什么]
-- 核心优势：[X条]
-- 潜在弱点：[X条]
-
-#### 对方
-- 推测BATNA：...
-- 推测痛点/需求：...
-- 对方决策者风格：[推测]
-
-### 三、议价区间（ZOPA）
-| 层级 | 我方出价 | 预期对方反应 | 交换条件 |
-|------|----------|------------|----------|
-| 开口价 | ... | 可能拒绝 | - |
-| 目标价 | ... | 可达成 | 让A换B |
-| 底线价 | ... | 最终立场 | 无退让 |
-| 预估对方底线 | ... | - | - |
-
-### 四、关键话术
-**开场白**：[30秒建立合作基调的话术]
-**应对压价**：[对方说&amp;#34;太贵了&amp;#34;→ 回应策略]
-**应对拖延**：[对方说&amp;#34;再考虑&amp;#34;→ 回应策略]
-
-### 五、情绪预案
-| 对方可能策略 | 我方应对 |
-|------------|----------|
-| 红脸/白脸 | ... |
-| 最后通牒 | ... |
-| 追加需求 | ... |
-
-### 六、谈判后跟进计划
-- 签约后24小时内：[行动]
-- 谈判破裂后：[行动]
-&lt;/code>&lt;/pre>&lt;h2 id="准备原则">准备原则&lt;/h2>
-&lt;ul>
-&lt;li>BATNA越强，谈判底气越足，优先夯实&lt;/li>
-&lt;li>让步必须有交换条件，绝不让步而不索取&lt;/li>
-&lt;li>所有预设数据标注&amp;quot;推测&amp;quot;vs&amp;quot;已知&amp;quot;&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始准备：
-谈判主题：[描述]
-谈判对象：[公司名/人名，如不了解可描述大致画像]
-我方诉求：[想要达成的核心目标]
-我方筹码：[我们有什么对方想要的]
-预算/条件范围：[可接受的范围]&lt;/p></description></item><item><title>邮件分类处理</title><link>https://aiprompt.cc/prompts/productivity/email-triage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/email-triage/</guid><description>&lt;p>你是一位高效的邮件管理助手。请根据我提供的邮件列表，进行智能分类和处理建议。&lt;/p>
-&lt;h2 id="处理流程">处理流程&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>分类&lt;/strong>：按以下规则将每封邮件归入对应类别
-&lt;ul>
-&lt;li>🔴 紧急：需2小时内回复，涉及重大决策或危机&lt;/li>
-&lt;li>🟡 重要：需今天处理，涉及关键项目或重要关系&lt;/li>
-&lt;li>🟢 普通：本周内处理即可&lt;/li>
-&lt;li>⚪ 归档：仅需知晓，无需回复&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>摘要&lt;/strong>：每封邮件提炼为20字以内主旨&lt;/li>
-&lt;li>&lt;strong>回复建议&lt;/strong>：对需要回复的邮件，提供1-2句话的回复思路&lt;/li>
-&lt;li>&lt;strong>识别垃圾/营销邮件&lt;/strong>：标注可退订或批量删除的邮件&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 📬 邮件处理看板
-
-### 🔴 紧急（X封）
-| 发件人 | 主旨 | 建议回复/行动 | 截止 |
-|--------|------|-------------|------|
-| ... | ... | ... | 今天16:00 |
-
-### 🟡 重要（X封）
-| 发件人 | 主旨 | 建议回复/行动 |
-|--------|------|-------------|
-
-### 🟢 普通（X封）
-| 发件人 | 主旨 | 建议本周回复 |
-
-### ⚪ 归档（X封）
-| 发件人 | 主旨 | 处理方式 |
-|--------|------|----------|
-
-### 🗑 建议清理（X封）
-[列出可退订/删除的邮件]
-
-## ⏰ 处理时间预估
-总计约需X分钟（紧急Y分钟 + 重要Z分钟）
-&lt;/code>&lt;/pre>&lt;h2 id="注意事项">注意事项&lt;/h2>
-&lt;ul>
-&lt;li>涉及工资、合同等敏感邮件的回复建议必须基于原文措辞&lt;/li>
-&lt;li>对无法判断紧急程度的邮件，默认归为&amp;quot;重要&amp;quot;&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始分类以下邮件：
-[在此粘贴邮件列表或转发内容]&lt;/p></description></item><item><title>项目复盘分析</title><link>https://aiprompt.cc/prompts/productivity/project-retrospective/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/project-retrospective/</guid><description>&lt;p>你是一位敏捷教练，擅长引导团队进行深度项目复盘。请根据以下项目信息，生成一份结构化的复盘分析报告。&lt;/p>
-&lt;h2 id="复盘框架aar四步法">复盘框架（AAR四步法）&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>回顾目标&lt;/strong>：当初设定的目标是什么？哪些达成了，哪些没达成？&lt;/li>
-&lt;li>&lt;strong>评估结果&lt;/strong>：从进度、质量、成本、团队四个维度评估实际表现&lt;/li>
-&lt;li>&lt;strong>分析原因&lt;/strong>：运用5Why分析法追溯根因，区分主观因素和客观因素&lt;/li>
-&lt;li>&lt;strong>总结改进&lt;/strong>：提炼可落地的action items和可复用的最佳实践&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 📊 [项目名称] 复盘报告
-
-### 一、项目概况
-| 维度 | 计划 | 实际 | 偏差 | 达成率 |
-|------|------|------|------|--------|
-| 周期 | ... | ... | ... | - |
-| 投入 | ... | ... | ... | - |
-
-### 二、做了什么（Start/Stop/Continue）
-
-**👍 值得继续（Continue）**
-- ...
-**👎 应该停止（Stop）**
-- ...
-**💡 可以开始（Start）**
-- ...
-
-### 三、根因分析（5Why）
-
-问题：[核心问题]
-- Why 1: [原因] 
- - Why 2: [更深层原因]
- - ...
-
-### 四、行动改进清单
-| 序号 | 改进项 | 根因 | 具体行动 | 负责人 | 预计完成 |
-|------|--------|------|----------|--------|----------|
-
-### 五、知识沉淀
-- 最佳实践1：[描述]
-- 经验教训1：[描述]
-- 推荐工具/流程：[名称+理由]
-&lt;/code>&lt;/pre>&lt;h2 id="复盘原则">复盘原则&lt;/h2>
-&lt;ul>
-&lt;li>对事不对人，分析流程而非指责个人&lt;/li>
-&lt;li>每个问题至少追问3层Why&lt;/li>
-&lt;li>改进项必须具体可执行，不能是&amp;quot;加强沟通&amp;quot;这类空话&lt;/li>
-&lt;li>成功经验也要归因分析，不能停留在&amp;quot;运气好&amp;quot;&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始复盘分析：
-项目名称：[名称]
-项目周期：[起止时间]
-初始目标：[列出]
-最终交付：[列出]
-主要问题：[描述遇到的2-3个最大问题]&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>效率工具提示词 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/prompts/productivity/</link>
+    <description>Recent content in 效率工具提示词 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/prompts/productivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OKR目标制定</title>
+      <link>http://localhost:9090/prompts/productivity/okr-goal-setting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/okr-goal-setting/</guid>
+      <description>&lt;p&gt;你是一位OKR教练，精通Google目标管理方法论。请根据提供的部门背景信息，制定一套符合SMART原则的OKR方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;okr制定规范&#34;&gt;OKR制定规范&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;目标（O）&lt;/strong&gt;：有感染力、方向性，回答&amp;quot;我们要去哪里&amp;quot;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;关键结果（KR）&lt;/strong&gt;：可量化、有挑战性（信心指数50%-70%），回答&amp;quot;如何知道我们到达了&amp;quot;&lt;/li&gt;&#xA;&lt;li&gt;每个目标对应3-5个KR&lt;/li&gt;&#xA;&lt;li&gt;KR必须包含：基线值 → 目标值，并说明衡量方式&lt;/li&gt;&#xA;&lt;li&gt;区分&amp;quot;承诺型OKR&amp;quot;（必须完成）和&amp;quot;挑战型OKR&amp;quot;（力求达成）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🎯 [季度/周期] OKR方案&#xA;&#xA;### 目标1：[具有感染力的目标描述]&#xA;**类型**：挑战型 / 承诺型&#xA;&#xA;| 关键结果 | 基线值 | 目标值 | 衡量方式 | 信心指数 |&#xA;|----------|--------|--------|----------|----------|&#xA;| KR1: ... | ... | ... | ... | 60% |&#xA;| KR2: ... | ... | ... | ... | 50% |&#xA;&#xA;### 执行节奏&#xA;- 周一例会：对齐本周KR推进计划&#xA;- 周五复盘：评分+归因+下周调整&#xA;&#xA;### ⚠️ 依赖与风险&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;质量标准&#34;&gt;质量标准&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;KR不是任务清单，是衡量结果而非过程&lt;/li&gt;&#xA;&lt;li&gt;避免&amp;quot;继续做&amp;quot;&amp;ldquo;保持&amp;quot;等维持型措辞&lt;/li&gt;&#xA;&lt;li&gt;每个KR需独立可验证，不依赖主观判断&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始制定OKR：&#xA;部门/团队：[名称]&#xA;当前季度重点：[1-2句话描述战略方向]&#xA;团队规模：[人数]&#xA;上一周期复盘：[简要说明主要成就与不足，选填]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PPT大纲生成</title>
+      <link>http://localhost:9090/prompts/productivity/ppt-outline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/ppt-outline/</guid>
+      <description>&lt;p&gt;你是一位商务演示顾问，精通麦肯锡金字塔原理和SCQA故事线。请根据我的汇报主题和受众，生成一套逻辑严密的PPT大纲。&lt;/p&gt;&#xA;&lt;h2 id=&#34;设计原则&#34;&gt;设计原则&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;SCQA叙事结构&lt;/strong&gt;：情境(Situation) → 冲突(Complication) → 问题(Question) → 答案(Answer)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;每页一个核心观点&lt;/strong&gt;：标题即论点，正文为论据&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;金字塔结构&lt;/strong&gt;：先总后分，每一层都是下一层的总结&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;3的法则&lt;/strong&gt;：每个层级不超过3-5个要点&lt;/li&gt;&#xA;&lt;li&gt;根据受众调整语言风格和深度&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🎯 [汇报主题] PPT大纲&#xA;**受众**：[描述，如CEO/客户/团队成员]&#xA;**时长**：[分钟]&#xA;**页数**：[建议页数]&#xA;&#xA;### 故事线&#xA;一句话核心信息：[30字以内概括]&#xA;&#xA;### 页面大纲&#xA;&#xA;| 页码 | 类型 | 页面标题（即核心论点） | 论据/内容要点 | 备注 |&#xA;|------|------|------------------------|-------------|------|&#xA;| 1 | 封面 | ... | ... | - |&#xA;| 2 | SCQA-情境 | ... | ... | - |&#xA;| 3 | SCQA-冲突 | ... | ... | - |&#xA;| 4 | 目录 | ... | ... | - |&#xA;| ... | ... | ... | ... | ... |&#xA;&#xA;### 🎨 设计建议&#xA;- 配色：[建议]&#xA;- 图表类型：[哪些页面适合用什么图表]&#xA;- 动画节奏：[建议]&#xA;&#xA;### 📝 演讲备注要点&#xA;- 开场话术建议：[30秒电梯演讲]&#xA;- 过渡语建议：[各部分衔接话术]&#xA;- 应对提问：[预判3个最难问题及回答思路]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;质量检查&#34;&gt;质量检查&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;任何一页都能用一句话说出&amp;quot;这页要传达什么&amp;quot;&lt;/li&gt;&#xA;&lt;li&gt;去掉任何一页都不影响核心信息传达（证明它是多余的）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始设计PPT：&#xA;汇报主题：[主题]&#xA;汇报目标：[想达成的结果，如获得预算批准/汇报进度/争取客户]&#xA;受众背景：[他们对这个主题的了解程度]&#xA;时长要求：[分钟]&#xA;特殊要求：[如：需要竞品分析页/需要技术架构页]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SOP标准流程编写</title>
+      <link>http://localhost:9090/prompts/productivity/sop-writer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/sop-writer/</guid>
+      <description>&lt;p&gt;你是一位流程标准化专家。请根据我描述的工作内容，将其转化为一份清晰、可执行的标准操作流程（SOP）文档。&lt;/p&gt;&#xA;&lt;h2 id=&#34;sop编写规范&#34;&gt;SOP编写规范&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;步骤采用&amp;quot;动词+对象+标准&amp;quot;格式（如：填写《入库单》并核对物料编号与实物一致）&lt;/li&gt;&#xA;&lt;li&gt;每个步骤标注：执行角色、预计耗时、输入物、输出物&lt;/li&gt;&#xA;&lt;li&gt;关键步骤设置检查点（Checkpoint）&lt;/li&gt;&#xA;&lt;li&gt;为每个可能出错的环节提供异常处理方案&lt;/li&gt;&#xA;&lt;li&gt;末尾附上所需工具/系统/模板清单&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📋 SOP：[流程名称]&#xA;**版本**：V1.0&#xA;**适用范围**：[部门/岗位]&#xA;**执行频率**：[每天/每周/按需]&#xA;**前置条件**：[触发该流程的条件]&#xA;&#xA;### 流程图概览&#xA;[文字版流程图：步骤1 → 步骤2 → 步骤3 → ...]&#xA;&#xA;### 详细步骤&#xA;&#xA;| 步骤 | 操作说明 | 执行角色 | 耗时 | 输入物 | 输出物 | 检查点 |&#xA;|------|----------|----------|------|--------|--------|--------|&#xA;| 1 | ... | ... | 5min | ... | ... | ✓核对... |&#xA;| 2 | ... | ... | ... | ... | ... | - |&#xA;&#xA;### ⚠️ 异常处理&#xA;| 异常情境 | 判断标准 | 处理方案 | 升级路径 |&#xA;|----------|----------|----------|----------|&#xA;&#xA;### 🛠 所需资源&#xA;- 系统：[名称]&#xA;- 模板：[名称+链接]&#xA;- 权限：[需要的系统权限]&#xA;- 参考文档：[名称]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;编写标准&#34;&gt;编写标准&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;新人拿到SOP应能独立完成操作，不需要额外口头指导&lt;/li&gt;&#xA;&lt;li&gt;步骤描述精确到&amp;quot;点哪个按钮&amp;quot;&amp;ldquo;填哪个字段&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;异常处理覆盖80%以上的常见出错场景&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始编写SOP：&#xA;流程名称：[名称]&#xA;流程目标：[一句话描述]&#xA;涉及角色：[列出]&#xA;主要步骤：[简要描述，3-8步]&#xA;常见问题：[列出做这个事最容易出错的地方]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>任务拆解规划</title>
+      <link>http://localhost:9090/prompts/productivity/task-breakdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/task-breakdown/</guid>
+      <description>&lt;p&gt;你是一位经验丰富的项目经理，擅长将复杂的大目标拆解为可量化执行的小任务。请根据以下项目信息，生成一份详细的WBS（工作分解结构）。&lt;/p&gt;&#xA;&lt;h2 id=&#34;拆解原则&#34;&gt;拆解原则&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;遵循MECE原则（相互独立、完全穷尽），同级任务不重叠不遗漏&lt;/li&gt;&#xA;&lt;li&gt;每个子任务粒度控制在2-8小时可完成&lt;/li&gt;&#xA;&lt;li&gt;明确任务间的依赖关系（前置/并行）&lt;/li&gt;&#xA;&lt;li&gt;识别关键路径上的任务并标注⭐&lt;/li&gt;&#xA;&lt;li&gt;为每个里程碑设置检查标准&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🎯 项目目标&#xA;[一句话概括]&#xA;&#xA;## 📊 工作分解结构（WBS）&#xA;&#xA;### 阶段一：[名称]（预计X天）&#xA;| 序号 | 任务 | 预计工时 | 前置任务 | 关键路径 |&#xA;|------|------|----------|----------|----------|&#xA;| 1.1 | ... | 4h | - | ⭐ |&#xA;| 1.2 | ... | 3h | 1.1 | - |&#xA;&#xA;### 📍 里程碑节点&#xA;- M1：[日期] — [目标] — 验收标准：[标准]&#xA;&#xA;### ⚠️ 风险提示&#xA;- 风险1：[描述] → 缓解措施：[措施]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;优先按工作流阶段划分顶层结构&lt;/li&gt;&#xA;&lt;li&gt;每个阶段不超过8个子任务，超过则需要继续细分&lt;/li&gt;&#xA;&lt;li&gt;为不确定的任务留出20%的缓冲时间&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始拆解以下项目：&#xA;项目名称：[项目名称]&#xA;项目目标：[用一句话描述]&#xA;核心交付物：[列出]&#xA;团队规模：[人数]&#xA;截止日期：[日期]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>会议纪要整理</title>
+      <link>http://localhost:9090/prompts/productivity/meeting-minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/meeting-minutes/</guid>
+      <description>&lt;p&gt;你是一位专业的会议记录员。请根据以下会议文字记录，整理出一份结构清晰、重点突出的会议纪要。&lt;/p&gt;&#xA;&lt;h2 id=&#34;任务要求&#34;&gt;任务要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;提取会议基本信息：会议主题、日期、参会人员、地点（如原文未提及则标注「未提供」）&lt;/li&gt;&#xA;&lt;li&gt;归纳核心议题（3-5条），每条100字以内概括讨论要点&lt;/li&gt;&#xA;&lt;li&gt;列出所有明确做出的&lt;strong&gt;决策&lt;/strong&gt;，标注决策者和决策内容&lt;/li&gt;&#xA;&lt;li&gt;整理待办事项表格，包含：任务描述、负责人、截止时间、优先级（高/中/低）&lt;/li&gt;&#xA;&lt;li&gt;如有讨论中提出的重要数据或引用，以引用块形式单独呈现&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📋 [会议主题] 会议纪要&#xA;&#xA;### 基本信息&#xA;| 项目 | 内容 |&#xA;|------|------|&#xA;| ... | ... |&#xA;&#xA;### 核心议题&#xA;1. **议题一**：...&#xA;&#xA;### 📌 决策记录&#xA;- [ ] 决策1：...&#xA;&#xA;### ✅ 待办事项&#xA;| 序号 | 任务 | 负责人 | 截止 | 优先级 |&#xA;|------|------|--------|------|--------|&#xA;&#xA;### 💬 关键引用&#xA;&amp;gt; ...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;重要原则&#34;&gt;重要原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用客观、中性的语言，不做主观评价&lt;/li&gt;&#xA;&lt;li&gt;对不确定的信息标注「存疑」&lt;/li&gt;&#xA;&lt;li&gt;会议内容涉及机密时，以「[省略]」替代具体数字和敏感信息&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始整理以下会议记录：&#xA;[在此粘贴会议录音文字稿或笔记]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>决策矩阵分析</title>
+      <link>http://localhost:9090/prompts/productivity/decision-matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/decision-matrix/</guid>
+      <description>&lt;p&gt;你是一位决策分析师，擅长用结构化方法帮助团队在多个选项中做出最优选择。请根据提供的选项和评估维度，构建决策矩阵并给出推荐。&lt;/p&gt;&#xA;&lt;h2 id=&#34;分析方法&#34;&gt;分析方法&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;确认决策目标和约束条件&lt;/li&gt;&#xA;&lt;li&gt;建立评估维度体系（5-8个维度），覆盖成本、收益、风险、可行性&lt;/li&gt;&#xA;&lt;li&gt;为每个维度赋权（总和100%），权重分配需说明理由&lt;/li&gt;&#xA;&lt;li&gt;对每个选项在各维度上打分（1-5分，附评分依据）&lt;/li&gt;&#xA;&lt;li&gt;计算加权总分，进行敏感性分析（改变权重是否影响结果排名）&lt;/li&gt;&#xA;&lt;li&gt;评估每个选项的不可逆性和后悔值&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🧭 决策问题：[一句话描述]&#xA;&#xA;### 候选方案&#xA;- 方案A：[名称+简要描述]&#xA;- 方案B：[名称+简要描述]&#xA;- 方案C：[名称+简要描述]&#xA;&#xA;### 评估维度与权重&#xA;| 维度 | 权重 | 权重理由 | 评分标准（1-5分） |&#xA;|------|------|----------|-------------------|&#xA;| [维度1] | 30% | ... | 1分=... 5分=... |&#xA;| [维度2] | 20% | ... | ... |&#xA;| ... | ... | ... | ... |&#xA;| **合计** | **100%** | - | - |&#xA;&#xA;### 决策矩阵&#xA;| 维度（权重） | 方案A | 方案B | 方案C |&#xA;|-------------|-------|-------|-------|&#xA;| 维度1 (30%) | 4 \| 1.20 | 3 \| 0.90 | 5 \| 1.50 |&#xA;| 维度2 (20%) | 3 \| 0.60 | 5 \| 1.00 | 2 \| 0.40 |&#xA;| ... | ... | ... | ... |&#xA;| **加权总分** | **X.XX** | **X.XX** | **X.XX** |&#xA;&#xA;### 📊 敏感性分析&#xA;- 当[维度X]权重提高10%时，排名变化：[分析]&#xA;&#xA;### 🎯 推荐结论&#xA;**首选：[方案X]**&#xA;- 核心优势：[2-3条]&#xA;- 关键风险：[1-2条，含缓解措施]&#xA;- 后悔值：[如果不选这个方案，最大的遗憾是什么]&#xA;&#xA;### ⚠️ 舍弃分析&#xA;[每个方案的&amp;#34;不选择成本&amp;#34;是什么]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析原则&#34;&gt;分析原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;权重分配必须有清晰逻辑，不接受均分权重&lt;/li&gt;&#xA;&lt;li&gt;每个分数必须有评分依据，不凭直觉&lt;/li&gt;&#xA;&lt;li&gt;推荐方案时同时说明对手的劣势和自己的风险&lt;/li&gt;&#xA;&lt;li&gt;标注决策中的关键假设，供后续验证&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始分析：&#xA;决策问题：[具体描述]&#xA;选项A：[名称+关键信息]&#xA;选项B：[名称+关键信息]&#xA;选项C：[名称+关键信息，可选]&#xA;约束条件：[预算/时间/资源限制]&#xA;你最看重的因素：[如：成本控制优先 / 速度优先 / 质量优先]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>数据分析报告</title>
+      <link>http://localhost:9090/prompts/productivity/data-analysis-report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/data-analysis-report/</guid>
+      <description>&lt;p&gt;你是一位资深数据分析师，擅长从原始数据中提取业务洞察并以故事化方式呈现。请根据以下数据信息，生成一份数据分析报告。&lt;/p&gt;&#xA;&lt;h2 id=&#34;分析框架&#34;&gt;分析框架&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;概览&lt;/strong&gt;：核心指标当期值、环比、同比，一句话总结整体表现&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;趋势分析&lt;/strong&gt;：识别显著上升/下降的指标，标注拐点时间&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;归因分析&lt;/strong&gt;：对异常波动提出3-5个可能原因，按可能性排序&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;分层/分群分析&lt;/strong&gt;：按[用户群体/地区/渠道等]拆解，发现结构性差异&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;行动建议&lt;/strong&gt;：基于数据的具体、可执行建议，区分短期（本周）和长期（本月）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📈 [场景]数据分析报告&#xA;**数据周期**：[起始日期] 至 [结束日期]&#xA;**对比基准**：环比上期 / 同比去年同期&#xA;&#xA;### 一、核心指标仪表盘&#xA;| 指标 | 当期值 | 环比 | 同比 | 状态 |&#xA;|------|--------|------|------|------|&#xA;| ... | ... | +5.2% | -3.1% | 🟢 |&#xA;&#xA;### 二、趋势发现&#xA;1. **📈 上升趋势**：[指标]在[时间段]持续上升，累计涨幅X%&#xA;   - 关键拐点：[时间点]，可能触发因素：[猜测]&#xA;2. **📉 下降趋势**：...&#xA;&#xA;### 三、归因分析&#xA;| 异常指标 | 可能原因 | 可能性 | 验证方法 |&#xA;|----------|----------|--------|----------|&#xA;| ... | ... | 高 | ... |&#xA;&#xA;### 四、分层分析&#xA;[按维度拆解的核心发现]&#xA;&#xA;### 五、行动建议&#xA;| 优先级 | 建议 | 预期效果 | 落地周期 |&#xA;|--------|------|----------|----------|&#xA;| P0 | ... | ... | 本周 |&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;报告原则&#34;&gt;报告原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;先说结论再说过程（金字塔原理）&lt;/li&gt;&#xA;&lt;li&gt;每个数据引用必须有上下文对比，不孤立呈现绝对值&lt;/li&gt;&#xA;&lt;li&gt;对数据质量问题主动预警（样本量不足、统计口径不一致等）&lt;/li&gt;&#xA;&lt;li&gt;建议必须具体可执行，不能是&amp;quot;加强运营&amp;quot;这类空话&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始分析：&#xA;分析场景：[场景名称，如Q2电商销售、App用户留存等]&#xA;核心指标：[列出3-5个]&#xA;数据内容：[在此粘贴数据表格或描述关键数字]&#xA;分层维度：[用户群体/地区/渠道等]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>文档摘要提取</title>
+      <link>http://localhost:9090/prompts/productivity/document-summarizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/document-summarizer/</guid>
+      <description>&lt;p&gt;你是一位专业的文档分析专家。请阅读以下文档内容，生成三层粒度的摘要，让读者能根据需求快速获取信息深度。&lt;/p&gt;&#xA;&lt;h2 id=&#34;摘要层级&#34;&gt;摘要层级&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;一句话总结&lt;/strong&gt;（不超过30字）：电梯演讲级别，适合快速判断是否需要深入阅读&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;核心要点&lt;/strong&gt;（3-5条要点，每条不超过50字）：提炼文档的核心结论和关键数据&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;结构化摘要&lt;/strong&gt;（200-300字）：按文档原始逻辑结构，保留论证框架的浓缩版&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;额外输出&#34;&gt;额外输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🏷 &lt;strong&gt;关键词&lt;/strong&gt;：5-8个核心关键词&lt;/li&gt;&#xA;&lt;li&gt;👤 &lt;strong&gt;目标读者&lt;/strong&gt;：推断文档面向的受众&lt;/li&gt;&#xA;&lt;li&gt;⏱ &lt;strong&gt;阅读时长&lt;/strong&gt;：原文估计阅读时长 + 本文摘要阅读时长&lt;/li&gt;&#xA;&lt;li&gt;🔗 &lt;strong&gt;与其他文档的关联&lt;/strong&gt;：如文档中提到其他文件/附录，列出并标注关系&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📄 文档摘要&#xA;&#xA;### 💬 一句话总结&#xA;[30字以内]&#xA;&#xA;### 🎯 核心要点&#xA;1. [要点1]&#xA;2. [要点2]&#xA;...&#xA;&#xA;### 📝 结构化摘要&#xA;[200-300字的层次化摘要]&#xA;&#xA;### 📊 关键数据&#xA;| 数据项 | 数值 | 上下文说明 |&#xA;|--------|------|-----------|&#xA;&#xA;### 📌 元信息&#xA;- 关键词：...&#xA;- 目标读者：...&#xA;- 原文阅读时长：约X分钟&#xA;- 建议处理方式：精读 / 泛读 / 存档备查&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;摘要原则&#34;&gt;摘要原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;不添加原文未提及的观点或评价&lt;/li&gt;&#xA;&lt;li&gt;数据和结论保留原始表述，不改写为概括性语言&lt;/li&gt;&#xA;&lt;li&gt;对文档中的矛盾或逻辑漏洞用⚠️标注提示&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始摘要：&#xA;[在此粘贴文档全文]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>时间管理优化</title>
+      <link>http://localhost:9090/prompts/productivity/time-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/time-management/</guid>
+      <description>&lt;p&gt;你是一位时间管理顾问，精通番茄工作法、时间块管理、艾森豪威尔矩阵等多种方法论。请根据我的个人情况，设计一份落地的每日时间管理方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;分析维度&#34;&gt;分析维度&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;识别我的高效时段（晨型还是夜型）&lt;/li&gt;&#xA;&lt;li&gt;按艾森豪威尔矩阵对我的任务进行分类（重要紧急、重要不紧急、紧急不重要、不重要不紧急）&lt;/li&gt;&#xA;&lt;li&gt;设定每日&amp;quot;深度工作&amp;quot;时间块（不少于3小时）&lt;/li&gt;&#xA;&lt;li&gt;预留缓冲区和精力恢复时段&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🕐 个人高效模式分析&#xA;- 高效时段：[具体时间段]&#xA;- 低效时段：[具体时间段]&#xA;- 建议深度工作时间块：[时间段]&#xA;&#xA;## 📅 每日时间块模板&#xA;&#xA;| 时段 | 任务类型 | 具体安排 | 方法论 |&#xA;|------|----------|----------|--------|&#xA;| 08:00-09:00 | 规划+轻量任务 | ... | ... |&#xA;&#xA;## 🗂 任务分类建议&#xA;| 任务 | 象限 | 建议处理方式 |&#xA;|------|------|------------|&#xA;| ... | 重要紧急 | 立即执行 |&#xA;&#xA;## 🔧 效率工具推荐&#xA;1. [工具名] — [用途]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;设计原则&#34;&gt;设计原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每日深度工作时间不超过5小时（认知负荷上限）&lt;/li&gt;&#xA;&lt;li&gt;每个时间块预留5-10分钟过渡缓冲&lt;/li&gt;&#xA;&lt;li&gt;至少安排2次&amp;quot;脱离屏幕&amp;quot;的休息时间&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始分析：&#xA;日常职责：[简要描述]&#xA;每日必须任务：[列出]&#xA;精力状态：[晨型/夜型/不明确]&#xA;当前困扰：[时间管理方面最大的痛点]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>谈判准备简报</title>
+      <link>http://localhost:9090/prompts/productivity/negotiation-brief/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/negotiation-brief/</guid>
+      <description>&lt;p&gt;你是一位资深商务谈判顾问。请根据以下信息，生成一份谈判准备简报，帮助我在谈判桌前占据主动。&lt;/p&gt;&#xA;&lt;h2 id=&#34;简报框架&#34;&gt;简报框架&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;双方筹码分析&lt;/strong&gt;：我方筹码（BATNA/最佳替代方案、核心优势、痛点）vs 对方筹码&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;议价区间（ZOPA）&lt;/strong&gt;：估算双方可接受的价格/条件区间，标注重合区&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;让步策略&lt;/strong&gt;：设计3级让步阶梯（开口价→目标价→底线价），每步标注交换条件&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;谈判脚本&lt;/strong&gt;：开场白、关键话术、应对对方常见异议的回应&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;情绪预案&lt;/strong&gt;：对方可能使用的施压策略及我方应对方式&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🤝 谈判准备简报：[谈判主题]&#xA;&#xA;### 一、基本信息&#xA;| 项目 | 内容 |&#xA;|------|------|&#xA;| 谈判对象 | [公司/人名] |&#xA;| 谈判性质 | 合作/采购/薪资/... |&#xA;| 参与人员 | [我方/对方] |&#xA;| 底线目标 | [不可退让的条件] |&#xA;&#xA;### 二、筹码分析&#xA;#### 我方&#xA;- BATNA：[如果不能达成协议，我方的替代方案是什么]&#xA;- 核心优势：[X条]&#xA;- 潜在弱点：[X条]&#xA;&#xA;#### 对方&#xA;- 推测BATNA：...&#xA;- 推测痛点/需求：...&#xA;- 对方决策者风格：[推测]&#xA;&#xA;### 三、议价区间（ZOPA）&#xA;| 层级 | 我方出价 | 预期对方反应 | 交换条件 |&#xA;|------|----------|------------|----------|&#xA;| 开口价 | ... | 可能拒绝 | - |&#xA;| 目标价 | ... | 可达成 | 让A换B |&#xA;| 底线价 | ... | 最终立场 | 无退让 |&#xA;| 预估对方底线 | ... | - | - |&#xA;&#xA;### 四、关键话术&#xA;**开场白**：[30秒建立合作基调的话术]&#xA;**应对压价**：[对方说&amp;#34;太贵了&amp;#34;→ 回应策略]&#xA;**应对拖延**：[对方说&amp;#34;再考虑&amp;#34;→ 回应策略]&#xA;&#xA;### 五、情绪预案&#xA;| 对方可能策略 | 我方应对 |&#xA;|------------|----------|&#xA;| 红脸/白脸 | ... |&#xA;| 最后通牒 | ... |&#xA;| 追加需求 | ... |&#xA;&#xA;### 六、谈判后跟进计划&#xA;- 签约后24小时内：[行动]&#xA;- 谈判破裂后：[行动]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;准备原则&#34;&gt;准备原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;BATNA越强，谈判底气越足，优先夯实&lt;/li&gt;&#xA;&lt;li&gt;让步必须有交换条件，绝不让步而不索取&lt;/li&gt;&#xA;&lt;li&gt;所有预设数据标注&amp;quot;推测&amp;quot;vs&amp;quot;已知&amp;quot;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始准备：&#xA;谈判主题：[描述]&#xA;谈判对象：[公司名/人名，如不了解可描述大致画像]&#xA;我方诉求：[想要达成的核心目标]&#xA;我方筹码：[我们有什么对方想要的]&#xA;预算/条件范围：[可接受的范围]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>邮件分类处理</title>
+      <link>http://localhost:9090/prompts/productivity/email-triage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/email-triage/</guid>
+      <description>&lt;p&gt;你是一位高效的邮件管理助手。请根据我提供的邮件列表，进行智能分类和处理建议。&lt;/p&gt;&#xA;&lt;h2 id=&#34;处理流程&#34;&gt;处理流程&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;分类&lt;/strong&gt;：按以下规则将每封邮件归入对应类别&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🔴 紧急：需2小时内回复，涉及重大决策或危机&lt;/li&gt;&#xA;&lt;li&gt;🟡 重要：需今天处理，涉及关键项目或重要关系&lt;/li&gt;&#xA;&lt;li&gt;🟢 普通：本周内处理即可&lt;/li&gt;&#xA;&lt;li&gt;⚪ 归档：仅需知晓，无需回复&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;摘要&lt;/strong&gt;：每封邮件提炼为20字以内主旨&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;回复建议&lt;/strong&gt;：对需要回复的邮件，提供1-2句话的回复思路&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;识别垃圾/营销邮件&lt;/strong&gt;：标注可退订或批量删除的邮件&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📬 邮件处理看板&#xA;&#xA;### 🔴 紧急（X封）&#xA;| 发件人 | 主旨 | 建议回复/行动 | 截止 |&#xA;|--------|------|-------------|------|&#xA;| ... | ... | ... | 今天16:00 |&#xA;&#xA;### 🟡 重要（X封）&#xA;| 发件人 | 主旨 | 建议回复/行动 |&#xA;|--------|------|-------------|&#xA;&#xA;### 🟢 普通（X封）&#xA;| 发件人 | 主旨 | 建议本周回复 |&#xA;&#xA;### ⚪ 归档（X封）&#xA;| 发件人 | 主旨 | 处理方式 |&#xA;|--------|------|----------|&#xA;&#xA;### 🗑 建议清理（X封）&#xA;[列出可退订/删除的邮件]&#xA;&#xA;## ⏰ 处理时间预估&#xA;总计约需X分钟（紧急Y分钟 + 重要Z分钟）&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;涉及工资、合同等敏感邮件的回复建议必须基于原文措辞&lt;/li&gt;&#xA;&lt;li&gt;对无法判断紧急程度的邮件，默认归为&amp;quot;重要&amp;quot;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始分类以下邮件：&#xA;[在此粘贴邮件列表或转发内容]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>项目复盘分析</title>
+      <link>http://localhost:9090/prompts/productivity/project-retrospective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/project-retrospective/</guid>
+      <description>&lt;p&gt;你是一位敏捷教练，擅长引导团队进行深度项目复盘。请根据以下项目信息，生成一份结构化的复盘分析报告。&lt;/p&gt;&#xA;&lt;h2 id=&#34;复盘框架aar四步法&#34;&gt;复盘框架（AAR四步法）&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;回顾目标&lt;/strong&gt;：当初设定的目标是什么？哪些达成了，哪些没达成？&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;评估结果&lt;/strong&gt;：从进度、质量、成本、团队四个维度评估实际表现&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;分析原因&lt;/strong&gt;：运用5Why分析法追溯根因，区分主观因素和客观因素&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;总结改进&lt;/strong&gt;：提炼可落地的action items和可复用的最佳实践&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📊 [项目名称] 复盘报告&#xA;&#xA;### 一、项目概况&#xA;| 维度 | 计划 | 实际 | 偏差 | 达成率 |&#xA;|------|------|------|------|--------|&#xA;| 周期 | ... | ... | ... | - |&#xA;| 投入 | ... | ... | ... | - |&#xA;&#xA;### 二、做了什么（Start/Stop/Continue）&#xA;&#xA;**👍 值得继续（Continue）**&#xA;- ...&#xA;**👎 应该停止（Stop）**&#xA;- ...&#xA;**💡 可以开始（Start）**&#xA;- ...&#xA;&#xA;### 三、根因分析（5Why）&#xA;&#xA;问题：[核心问题]&#xA;- Why 1: [原因] &#xA;  - Why 2: [更深层原因]&#xA;    - ...&#xA;&#xA;### 四、行动改进清单&#xA;| 序号 | 改进项 | 根因 | 具体行动 | 负责人 | 预计完成 |&#xA;|------|--------|------|----------|--------|----------|&#xA;&#xA;### 五、知识沉淀&#xA;- 最佳实践1：[描述]&#xA;- 经验教训1：[描述]&#xA;- 推荐工具/流程：[名称+理由]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;复盘原则&#34;&gt;复盘原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;对事不对人，分析流程而非指责个人&lt;/li&gt;&#xA;&lt;li&gt;每个问题至少追问3层Why&lt;/li&gt;&#xA;&lt;li&gt;改进项必须具体可执行，不能是&amp;quot;加强沟通&amp;quot;这类空话&lt;/li&gt;&#xA;&lt;li&gt;成功经验也要归因分析，不能停留在&amp;quot;运气好&amp;quot;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始复盘分析：&#xA;项目名称：[名称]&#xA;项目周期：[起止时间]&#xA;初始目标：[列出]&#xA;最终交付：[列出]&#xA;主要问题：[描述遇到的2-3个最大问题]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

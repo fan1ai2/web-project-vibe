@@ -1,39 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>个人效率 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E4%B8%AA%E4%BA%BA%E6%95%88%E7%8E%87/</link><description>Recent content in 个人效率 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E4%B8%AA%E4%BA%BA%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>时间管理优化</title><link>https://aiprompt.cc/prompts/productivity/time-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/productivity/time-management/</guid><description>&lt;p>你是一位时间管理顾问，精通番茄工作法、时间块管理、艾森豪威尔矩阵等多种方法论。请根据我的个人情况，设计一份落地的每日时间管理方案。&lt;/p>
-&lt;h2 id="分析维度">分析维度&lt;/h2>
-&lt;ol>
-&lt;li>识别我的高效时段（晨型还是夜型）&lt;/li>
-&lt;li>按艾森豪威尔矩阵对我的任务进行分类（重要紧急、重要不紧急、紧急不重要、不重要不紧急）&lt;/li>
-&lt;li>设定每日&amp;quot;深度工作&amp;quot;时间块（不少于3小时）&lt;/li>
-&lt;li>预留缓冲区和精力恢复时段&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🕐 个人高效模式分析
-- 高效时段：[具体时间段]
-- 低效时段：[具体时间段]
-- 建议深度工作时间块：[时间段]
-
-## 📅 每日时间块模板
-
-| 时段 | 任务类型 | 具体安排 | 方法论 |
-|------|----------|----------|--------|
-| 08:00-09:00 | 规划+轻量任务 | ... | ... |
-
-## 🗂 任务分类建议
-| 任务 | 象限 | 建议处理方式 |
-|------|------|------------|
-| ... | 重要紧急 | 立即执行 |
-
-## 🔧 效率工具推荐
-1. [工具名] — [用途]
-&lt;/code>&lt;/pre>&lt;h2 id="设计原则">设计原则&lt;/h2>
-&lt;ul>
-&lt;li>每日深度工作时间不超过5小时（认知负荷上限）&lt;/li>
-&lt;li>每个时间块预留5-10分钟过渡缓冲&lt;/li>
-&lt;li>至少安排2次&amp;quot;脱离屏幕&amp;quot;的休息时间&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始分析：
-日常职责：[简要描述]
-每日必须任务：[列出]
-精力状态：[晨型/夜型/不明确]
-当前困扰：[时间管理方面最大的痛点]&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>个人效率 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E4%B8%AA%E4%BA%BA%E6%95%88%E7%8E%87/</link>
+    <description>Recent content in 个人效率 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E4%B8%AA%E4%BA%BA%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>时间管理优化</title>
+      <link>http://localhost:9090/prompts/productivity/time-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/productivity/time-management/</guid>
+      <description>&lt;p&gt;你是一位时间管理顾问，精通番茄工作法、时间块管理、艾森豪威尔矩阵等多种方法论。请根据我的个人情况，设计一份落地的每日时间管理方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;分析维度&#34;&gt;分析维度&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;识别我的高效时段（晨型还是夜型）&lt;/li&gt;&#xA;&lt;li&gt;按艾森豪威尔矩阵对我的任务进行分类（重要紧急、重要不紧急、紧急不重要、不重要不紧急）&lt;/li&gt;&#xA;&lt;li&gt;设定每日&amp;quot;深度工作&amp;quot;时间块（不少于3小时）&lt;/li&gt;&#xA;&lt;li&gt;预留缓冲区和精力恢复时段&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🕐 个人高效模式分析&#xA;- 高效时段：[具体时间段]&#xA;- 低效时段：[具体时间段]&#xA;- 建议深度工作时间块：[时间段]&#xA;&#xA;## 📅 每日时间块模板&#xA;&#xA;| 时段 | 任务类型 | 具体安排 | 方法论 |&#xA;|------|----------|----------|--------|&#xA;| 08:00-09:00 | 规划+轻量任务 | ... | ... |&#xA;&#xA;## 🗂 任务分类建议&#xA;| 任务 | 象限 | 建议处理方式 |&#xA;|------|------|------------|&#xA;| ... | 重要紧急 | 立即执行 |&#xA;&#xA;## 🔧 效率工具推荐&#xA;1. [工具名] — [用途]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;设计原则&#34;&gt;设计原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每日深度工作时间不超过5小时（认知负荷上限）&lt;/li&gt;&#xA;&lt;li&gt;每个时间块预留5-10分钟过渡缓冲&lt;/li&gt;&#xA;&lt;li&gt;至少安排2次&amp;quot;脱离屏幕&amp;quot;的休息时间&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始分析：&#xA;日常职责：[简要描述]&#xA;每日必须任务：[列出]&#xA;精力状态：[晨型/夜型/不明确]&#xA;当前困扰：[时间管理方面最大的痛点]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

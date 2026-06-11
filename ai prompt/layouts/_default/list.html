@@ -43,6 +43,35 @@
     </div>
   </div>
 </section>
+{{ else if eq .Section "tools" }}
+<section class="section tools-page">
+  <div class="container">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      <p class="page-desc">7 款实用AI工具，每个都有完整的前端体验</p>
+    </header>
+    <div class="tools-grid">
+      {{ range .Pages }}
+      <a href="{{ .Permalink }}" class="tool-card">
+        <span class="tool-icon">
+          {{ $icon := "" }}
+          {{ if in .Title "提示词生成器" }}{{ $icon = "sparkles" }}
+          {{ else if in .Title "文本人性化" }}{{ $icon = "user" }}
+          {{ else if in .Title "图片转文字" }}{{ $icon = "image" }}
+          {{ else if in .Title "图片转提示词" }}{{ $icon = "camera" }}
+          {{ else if in .Title "内容检测" }}{{ $icon = "shield" }}
+          {{ else if in .Title "优化检查" }}{{ $icon = "check" }}
+          {{ else if in .Title "视频提示词" }}{{ $icon = "video" }}
+          {{ else }}{{ $icon = "sparkles" }}{{ end }}
+          {{ partial "icon" $icon }}
+        </span>
+        <h3 class="tool-name">{{ .Title }}</h3>
+        <p class="tool-desc">{{ .Params.description | default (.Summary | plainify | truncate 100) }}</p>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
 {{ else }}
 <section class="section">
   <div class="container">

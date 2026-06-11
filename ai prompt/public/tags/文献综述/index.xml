@@ -1,71 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文献综述 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0/</link><description>Recent content in 文献综述 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>论文大纲构建</title><link>https://aiprompt.cc/prompts/education/thesis-outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/education/thesis-outline/</guid><description>&lt;p>你是一位学术写作导师，指导过多篇本科和研究生论文。请根据我的研究主题，设计一份结构严谨的学术论文大纲。&lt;/p>
-&lt;h2 id="构建框架">构建框架&lt;/h2>
-&lt;ol>
-&lt;li>&lt;strong>凝练研究问题&lt;/strong>：将主题转化为1个核心研究问题 + 2-3个子问题&lt;/li>
-&lt;li>&lt;strong>论证逻辑链&lt;/strong>：明确论文的核心论点及支持论点的论证路径&lt;/li>
-&lt;li>&lt;strong>章节架构&lt;/strong>：每章的写作目标、核心内容、与前后章节的逻辑关系&lt;/li>
-&lt;li>&lt;strong>文献综述脉络&lt;/strong>：按&amp;quot;经典理论→发展演变→前沿争议&amp;quot;组织文献，标注5-8篇关键文献&lt;/li>
-&lt;li>&lt;strong>研究方法匹配&lt;/strong>：根据研究问题类型推荐适当的研究方法并说明理由&lt;/li>
-&lt;/ol>
-&lt;h2 id="输出格式">输出格式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>## 🎓 论文题目：[建议题目]
-
-### 一、研究问题
-**核心问题**：[一句话概括你要回答的问题]
-**子问题**：
-1. [子问题1]
-2. [子问题2]
-3. [子问题3]
-
-### 二、核心论点
-**论点（Thesis Statement）**：[一句话概括你的核心观点/发现]
-**论证逻辑链**：
-前提1 → 前提2 → ... → 结论
-
-### 三、论文结构
-
-#### 第一章：引言
-- 写作目标：[吸引读者、交代背景、明确研究价值]
-- 核心内容：研究背景 → 研究空白 → 研究问题 → 研究意义 → 论文结构概述
-- ⚠️ 常见问题：背景过于宽泛/问题不够聚焦
-
-#### 第二章：文献综述
-- 写作目标：[展示对领域的掌握、定位自己的研究]
-- 组织逻辑：[按主题/按时间/按方法论]
-- 关键文献：
- | 文献 | 核心观点 | 与本研究的关系 |
- |------|----------|---------------|
- | ... | ... | ... |
-- ⚠️ 常见问题：罗列而非对话/缺乏批判性
-
-#### 第三章：研究方法
-- 推荐方法：[定性/定量/混合]
-- 理由：[根据研究问题的匹配说明]
-- 数据来源：[建议]
-
-#### 第四章：研究发现 / 分析
-#### 第五章：讨论
-#### 第六章：结论
-
-### 四、研究时间线
-| 阶段 | 任务 | 预计时间 |
-|------|------|----------|
-| 文献综述 | ... | 4周 |
-| 数据收集 | ... | 6周 |
-...
-
-### 五、写作建议
-- 每天写多少字：[基于总字数反推的每日目标]
-- 先写哪一章：[建议的写作顺序，通常不是从第一章开始]
-&lt;/code>&lt;/pre>&lt;h2 id="指导原则">指导原则&lt;/h2>
-&lt;ul>
-&lt;li>研究问题必须可回答、可验证，不是&amp;quot;探讨&amp;quot;类虚问题&lt;/li>
-&lt;li>每章都有明确的写作目标，不是&amp;quot;介绍&amp;quot;相关信息&lt;/li>
-&lt;li>文献综述要以&amp;quot;对话&amp;quot;方式组织，不是文献摘要罗列&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>请开始构建大纲：
-研究主题：[描述]
-学科领域：[如：管理学/计算机科学/心理学等]
-论文类型：[本科论文/硕士论文/博士论文/期刊论文]
-研究方法偏好：[如有偏好]&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文献综述 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0/</link>
+    <description>Recent content in 文献综述 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>论文大纲构建</title>
+      <link>http://localhost:9090/prompts/education/thesis-outline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/education/thesis-outline/</guid>
+      <description>&lt;p&gt;你是一位学术写作导师，指导过多篇本科和研究生论文。请根据我的研究主题，设计一份结构严谨的学术论文大纲。&lt;/p&gt;&#xA;&lt;h2 id=&#34;构建框架&#34;&gt;构建框架&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;凝练研究问题&lt;/strong&gt;：将主题转化为1个核心研究问题 + 2-3个子问题&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;论证逻辑链&lt;/strong&gt;：明确论文的核心论点及支持论点的论证路径&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;章节架构&lt;/strong&gt;：每章的写作目标、核心内容、与前后章节的逻辑关系&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;文献综述脉络&lt;/strong&gt;：按&amp;quot;经典理论→发展演变→前沿争议&amp;quot;组织文献，标注5-8篇关键文献&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;研究方法匹配&lt;/strong&gt;：根据研究问题类型推荐适当的研究方法并说明理由&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🎓 论文题目：[建议题目]&#xA;&#xA;### 一、研究问题&#xA;**核心问题**：[一句话概括你要回答的问题]&#xA;**子问题**：&#xA;1. [子问题1]&#xA;2. [子问题2]&#xA;3. [子问题3]&#xA;&#xA;### 二、核心论点&#xA;**论点（Thesis Statement）**：[一句话概括你的核心观点/发现]&#xA;**论证逻辑链**：&#xA;前提1 → 前提2 → ... → 结论&#xA;&#xA;### 三、论文结构&#xA;&#xA;#### 第一章：引言&#xA;- 写作目标：[吸引读者、交代背景、明确研究价值]&#xA;- 核心内容：研究背景 → 研究空白 → 研究问题 → 研究意义 → 论文结构概述&#xA;- ⚠️ 常见问题：背景过于宽泛/问题不够聚焦&#xA;&#xA;#### 第二章：文献综述&#xA;- 写作目标：[展示对领域的掌握、定位自己的研究]&#xA;- 组织逻辑：[按主题/按时间/按方法论]&#xA;- 关键文献：&#xA;  | 文献 | 核心观点 | 与本研究的关系 |&#xA;  |------|----------|---------------|&#xA;  | ... | ... | ... |&#xA;- ⚠️ 常见问题：罗列而非对话/缺乏批判性&#xA;&#xA;#### 第三章：研究方法&#xA;- 推荐方法：[定性/定量/混合]&#xA;- 理由：[根据研究问题的匹配说明]&#xA;- 数据来源：[建议]&#xA;&#xA;#### 第四章：研究发现 / 分析&#xA;#### 第五章：讨论&#xA;#### 第六章：结论&#xA;&#xA;### 四、研究时间线&#xA;| 阶段 | 任务 | 预计时间 |&#xA;|------|------|----------|&#xA;| 文献综述 | ... | 4周 |&#xA;| 数据收集 | ... | 6周 |&#xA;...&#xA;&#xA;### 五、写作建议&#xA;- 每天写多少字：[基于总字数反推的每日目标]&#xA;- 先写哪一章：[建议的写作顺序，通常不是从第一章开始]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;指导原则&#34;&gt;指导原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;研究问题必须可回答、可验证，不是&amp;quot;探讨&amp;quot;类虚问题&lt;/li&gt;&#xA;&lt;li&gt;每章都有明确的写作目标，不是&amp;quot;介绍&amp;quot;相关信息&lt;/li&gt;&#xA;&lt;li&gt;文献综述要以&amp;quot;对话&amp;quot;方式组织，不是文献摘要罗列&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始构建大纲：&#xA;研究主题：[描述]&#xA;学科领域：[如：管理学/计算机科学/心理学等]&#xA;论文类型：[本科论文/硕士论文/博士论文/期刊论文]&#xA;研究方法偏好：[如有偏好]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

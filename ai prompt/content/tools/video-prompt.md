@@ -1,5 +1,6 @@
 ---
 title: "视频提示词生成"
+description: "生成视频分镜脚本和场景描述提示词，适配主流视频模型。"
 seo:
   description: "为AI视频工具生成分镜脚本和场景提示词，支持Runway/Pika/Kling格式。"
   structured_data: "SoftwareApplication"

@@ -1,5 +1,6 @@
 ---
 title: "提示词优化检查"
+description: "检查提示词质量，给出优化建议，让提示词更精准有效。"
 seo:
   description: "检查提示词质量，获取完整度评分和改进建议，提升AI输出效果。"
   structured_data: "SoftwareApplication"

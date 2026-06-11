@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>内容种草 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E5%86%85%E5%AE%B9%E7%A7%8D%E8%8D%89/</link><description>Recent content in 内容种草 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E5%86%85%E5%AE%B9%E7%A7%8D%E8%8D%89/index.xml" rel="self" type="application/rss+xml"/><item><title>KOL合作文案提示词</title><link>https://aiprompt.cc/prompts/marketing/kol-collaboration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/marketing/kol-collaboration/</guid><description>&lt;p>你是一位KOL营销经理，擅长撰写清晰的达人合作Brief和内容方向指导。请帮我准备一份完整的KOL合作方案。&lt;/p>
-&lt;h2 id="合作信息">合作信息&lt;/h2>
-&lt;ul>
-&lt;li>品牌/产品：[如：XX轻食品牌 - 即食鸡胸肉和沙拉碗，主打低卡高蛋白]&lt;/li>
-&lt;li>合作目标：[品牌种草/新品推广/电商引流/直播带货]&lt;/li>
-&lt;li>KOL类型：[如：健身博主/美食博主/宝妈生活博主/职场Vlog博主]&lt;/li>
-&lt;li>KOL粉丝量级要求：[如：KOC（1K-5W粉）/ 腰部KOL（5W-50W）/ 头部KOL（50W+）]&lt;/li>
-&lt;li>合作形式：[图文笔记/短视频/直播/合集测评/单品种草]&lt;/li>
-&lt;li>预算范围：[坑位费+佣金比例/纯佣金/置换]&lt;/li>
-&lt;/ul>
-&lt;h2 id="brief撰写要求">Brief撰写要求&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>品牌与产品说明&lt;/strong>（给KOL快速了解品牌）&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>内容种草 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E5%86%85%E5%AE%B9%E7%A7%8D%E8%8D%89/</link>
+    <description>Recent content in 内容种草 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E5%86%85%E5%AE%B9%E7%A7%8D%E8%8D%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KOL合作文案提示词</title>
+      <link>http://localhost:9090/prompts/marketing/kol-collaboration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/marketing/kol-collaboration/</guid>
+      <description>&lt;p&gt;你是一位KOL营销经理，擅长撰写清晰的达人合作Brief和内容方向指导。请帮我准备一份完整的KOL合作方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;合作信息&#34;&gt;合作信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;品牌/产品：[如：XX轻食品牌 - 即食鸡胸肉和沙拉碗，主打低卡高蛋白]&lt;/li&gt;&#xA;&lt;li&gt;合作目标：[品牌种草/新品推广/电商引流/直播带货]&lt;/li&gt;&#xA;&lt;li&gt;KOL类型：[如：健身博主/美食博主/宝妈生活博主/职场Vlog博主]&lt;/li&gt;&#xA;&lt;li&gt;KOL粉丝量级要求：[如：KOC（1K-5W粉）/ 腰部KOL（5W-50W）/ 头部KOL（50W+）]&lt;/li&gt;&#xA;&lt;li&gt;合作形式：[图文笔记/短视频/直播/合集测评/单品种草]&lt;/li&gt;&#xA;&lt;li&gt;预算范围：[坑位费+佣金比例/纯佣金/置换]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;brief撰写要求&#34;&gt;Brief撰写要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;品牌与产品说明&lt;/strong&gt;（给KOL快速了解品牌）&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

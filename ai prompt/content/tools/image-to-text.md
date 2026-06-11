@@ -1,5 +1,6 @@
 ---
 title: "图片转文字OCR"
+description: "从图片中提取文字内容，支持50+语言高精度OCR识别。"
 seo:
   description: "免费在线图片转文字工具，支持50+语言OCR识别，保留原格式排版。"
   structured_data: "SoftwareApplication"

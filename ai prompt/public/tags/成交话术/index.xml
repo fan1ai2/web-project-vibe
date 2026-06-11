@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>成交话术 on AI Prompt — 高质量中文AI提示词库</title><link>https://aiprompt.cc/tags/%E6%88%90%E4%BA%A4%E8%AF%9D%E6%9C%AF/</link><description>Recent content in 成交话术 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://aiprompt.cc/tags/%E6%88%90%E4%BA%A4%E8%AF%9D%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>销售话术训练</title><link>https://aiprompt.cc/prompts/roleplay/sales-trainer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://aiprompt.cc/prompts/roleplay/sales-trainer/</guid><description>&lt;p>你是一位销售培训教练，曾在多家企业指导销售团队业绩翻倍。现在请扮演不同类型的客户，对我进行销售话术训练。&lt;/p>
-&lt;h2 id="训练模式">训练模式&lt;/h2>
-&lt;p>你将依次扮演4种不同类型的客户，每种客户持续2-3轮对话后切换类型，并对我的表现给出即时评分和改进建议。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>成交话术 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://localhost:9090/tags/%E6%88%90%E4%BA%A4%E8%AF%9D%E6%9C%AF/</link>
+    <description>Recent content in 成交话术 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://localhost:9090/tags/%E6%88%90%E4%BA%A4%E8%AF%9D%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>销售话术训练</title>
+      <link>http://localhost:9090/prompts/roleplay/sales-trainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:9090/prompts/roleplay/sales-trainer/</guid>
+      <description>&lt;p&gt;你是一位销售培训教练，曾在多家企业指导销售团队业绩翻倍。现在请扮演不同类型的客户，对我进行销售话术训练。&lt;/p&gt;&#xA;&lt;h2 id=&#34;训练模式&#34;&gt;训练模式&lt;/h2&gt;&#xA;&lt;p&gt;你将依次扮演4种不同类型的客户，每种客户持续2-3轮对话后切换类型，并对我的表现给出即时评分和改进建议。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,19 +1,173 @@
-<!doctype html><html lang=zh-CN><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>提示词优化检查</title>
-<meta name=description content="检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=9090&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+<title>提示词优化检查</title>
+
+
+
+
+<meta name="description" content="检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。
 试用演示 检查优化 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-"><meta name=keywords content="AI提示词,ChatGPT提示词,Claude提示词,中文Prompt,提示词库"><link rel=canonical href=https://aiprompt.cc/tools/prompt-checker/><link rel=alternate hreflang=zh-CN href=https://aiprompt.cc/tools/prompt-checker/><meta property="og:title" content="提示词优化检查"><meta property="og:description" content="检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。
+">
+
+
+<meta name="keywords" content="AI提示词, ChatGPT提示词, Claude提示词, 中文Prompt, 提示词库">
+
+<link rel="canonical" href="http://localhost:9090/tools/prompt-checker/">
+<link rel="alternate" hreflang="zh-CN" href="http://localhost:9090/tools/prompt-checker/">
+
+<meta property="og:title" content="提示词优化检查">
+<meta property="og:description" content="检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。
 试用演示 检查优化 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-"><meta property="og:type" content="article"><meta property="og:url" content="https://aiprompt.cc/tools/prompt-checker/"><meta property="og:site_name" content="AI Prompt — 高质量中文AI提示词库"><meta property="og:image" content="https://aiprompt.cc/icons/og-image.svg"><meta property="og:locale" content="zh_CN"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="提示词优化检查"><meta name=twitter:description content="检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:9090/tools/prompt-checker/">
+<meta property="og:site_name" content="AI Prompt — 高质量中文AI提示词库">
+<meta property="og:image" content="http://localhost:9090/icons/og-image.svg">
+<meta property="og:locale" content="zh_CN">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="提示词优化检查">
+<meta name="twitter:description" content="检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。
 试用演示 检查优化 ⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。
-"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/css/main.css><link rel=sitemap type=application/xml href=https://aiprompt.cc/sitemap.xml><script type=application/ld+json>{"@context":"https://schema.org","@type":"SoftwareApplication","name":"提示词优化检查","applicationCategory":"AIApplication","operatingSystem":"Web","description":"检查提示词质量，获取完整度评分和改进建议，提升AI输出效果。","url":"https:\/\/aiprompt.cc\/tools\/prompt-checker\/","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script></head><body><header class=site-header role=banner><div class=header-inner><a href=/ class=logo aria-label="AI Prompt — 高质量中文AI提示词库 首页"><svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#d4963f"/><text x="16" y="22" text-anchor="middle" fill="#fff" font-size="18" font-weight="700" font-family="system-ui">AI</text></svg>
-<span class=logo-text>AI Prompt</span></a><nav class=site-nav aria-label=主导航><a href=/ class=nav-link>首页</a>
-<a href=/prompts/ class=nav-link>提示词库</a>
-<a href=/tools/ class=nav-link>工具箱</a>
-<a href=/about/ class=nav-link>关于</a></nav><button class=mobile-menu-btn aria-label=菜单 aria-expanded=false>
-<span></span><span></span><span></span></button></div></header><main id=main-content><article class=section><div class="container container-narrow"><header class=page-header><h1>提示词优化检查</h1></header><div class=page-content><p>检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。</p><div class=tool-mock><div class=tool-mock-header>试用演示</div><div class=tool-mock-body><textarea id=mock-input-prompt-checker class=tool-mock-input placeholder=在此粘贴你需要优化的提示词...></textarea>
-<button class=tool-mock-btn data-mock-btn=prompt-checker>
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-检查优化</button><div id=mock-output-prompt-checker class=tool-mock-output></div></div></div><p class=mock-notice>⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。</p><h2 id=功能特色>功能特色</h2><ul><li>提示词完整度评分（0-100分），多维评估</li><li>检测缺失要素：角色设定、输出格式、约束条件、示例</li><li>提供具体优化建议和改写方案</li><li>支持对比优化前后的预期效果提升</li></ul><h2 id=使用场景>使用场景</h2><ul><li>提示词效果不佳时，找出问题所在</li><li>学习提示词工程，了解优秀提示词的要素</li><li>团队提示词质量审核和标准化</li></ul></div></div></article></main><footer class=site-footer role=contentinfo><div class=footer-inner><div class=footer-brand><span class=footer-logo>AI Prompt</span><p class=footer-tagline>高质量中文AI提示词库</p></div><nav class=footer-nav aria-label=底部导航><a href=/>首页</a>
-<a href=/prompts/>提示词库</a>
-<a href=/tools/>工具箱</a>
-<a href=/about/>关于</a></nav><div class=footer-bottom><p>&copy; 2026 AI Prompt. All rights reserved.</p></div></div></footer><script src=/js/copy.js defer></script></body></html>
+">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="sitemap" type="application/xml" href="http://localhost:9090/sitemap.xml">
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "提示词优化检查",
+  "applicationCategory": "AIApplication",
+  "operatingSystem": "Web",
+  "description": "检查提示词质量，获取完整度评分和改进建议，提升AI输出效果。",
+  "url": "http:\/\/localhost:9090\/tools\/prompt-checker\/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CNY"
+  }
+}
+</script>
+
+
+</head>
+<body>
+  <header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="logo" aria-label="AI Prompt — 高质量中文AI提示词库 首页">
+      <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#D4963F"/>
+        <text x="16" y="22" text-anchor="middle" fill="white" font-size="18" font-weight="700" font-family="system-ui">AI</text>
+      </svg>
+      <span class="logo-text">AI Prompt</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      
+      <a href="/" class="nav-link">首页</a>
+      
+      <a href="/prompts/" class="nav-link">提示词库</a>
+      
+      <a href="/tools/" class="nav-link">工具箱</a>
+      
+      <a href="/about/" class="nav-link">关于</a>
+      
+    </nav>
+    <button class="mobile-menu-btn" aria-label="菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+  <main id="main-content">
+    
+
+<article class="section">
+  <div class="container container-narrow">
+    <header class="page-header">
+      <h1>提示词优化检查</h1>
+      <p class="page-desc">检查提示词质量，给出优化建议，让提示词更精准有效。</p>
+    </header>
+    <div class="page-content">
+      <p>检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。</p>
+<div class="tool-mock">
+  <div class="tool-mock-header">试用演示</div>
+  <div class="tool-mock-body">
+    <textarea id="mock-input-prompt-checker" class="tool-mock-input" placeholder="在此粘贴你需要优化的提示词..."></textarea>
+    <button class="tool-mock-btn" data-mock-btn="prompt-checker">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      检查优化
+    </button>
+    <div id="mock-output-prompt-checker" class="tool-mock-output"></div>
+  </div>
+</div>
+<p class="mock-notice">⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。</p>
+<h2 id="功能特色">功能特色</h2>
+<ul>
+<li>提示词完整度评分（0-100分），多维评估</li>
+<li>检测缺失要素：角色设定、输出格式、约束条件、示例</li>
+<li>提供具体优化建议和改写方案</li>
+<li>支持对比优化前后的预期效果提升</li>
+</ul>
+<h2 id="使用场景">使用场景</h2>
+<ul>
+<li>提示词效果不佳时，找出问题所在</li>
+<li>学习提示词工程，了解优秀提示词的要素</li>
+<li>团队提示词质量审核和标准化</li>
+</ul>
+
+    </div>
+  </div>
+</article>
+
+
+  </main>
+  <footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">AI Prompt</span>
+      <p class="footer-tagline">高质量中文AI提示词库</p>
+    </div>
+    <nav class="footer-nav" aria-label="底部导航">
+      
+      <a href="/">首页</a>
+      
+      <a href="/prompts/">提示词库</a>
+      
+      <a href="/tools/">工具箱</a>
+      
+      <a href="/about/">关于</a>
+      
+    </nav>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AI Prompt. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="/js/copy.js" defer></script>
+  
+</body>
+</html>

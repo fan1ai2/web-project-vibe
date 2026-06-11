@@ -1,5 +1,6 @@
 ---
 title: "AI文本人性化"
+description: "将AI文本转化为自然流畅的人类书写风格，调整语气。"
 seo:
   description: "将AI文本转化为自然人类书写风格的在线工具，支持多种语气调整。"
   structured_data: "SoftwareApplication"
