@@ -109,6 +109,7 @@ body::after{
 .hero{position:relative;padding:96px 0 72px;overflow:hidden;cursor:default}
 .hero-content{position:relative;max-width:860px;margin:0 auto;padding:0 24px}
 .hero-issue{font-size:0.78rem;letter-spacing:0.12em;color:var(--text-tertiary);margin-bottom:32px;font-family:"JetBrains Mono","SF Mono",monospace}
+.hero-light{position:absolute;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse 500px 350px at 50% 30%,rgba(255,255,255,0.08),transparent 70%);transition:opacity 0.6s ease}
 .hero-headline{display:grid;grid-template-columns:1.2fr 0.8fr 1fr;gap:12px 24px;margin-bottom:40px}
 .hero-headline .hl-part{font-family:"Noto Serif SC",serif;font-weight:700;font-size:clamp(2.8rem,6vw,5rem);line-height:1.1;position:relative}
 .hero-headline .hl-part::after{content:attr(data-text);position:absolute;left:3px;top:3px;color:var(--text-primary);opacity:0.08;z-index:-1;white-space:pre}
