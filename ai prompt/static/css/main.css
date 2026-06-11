@@ -73,31 +73,36 @@ body::after{
 .btn-primary:focus-visible,.btn-secondary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--radius-md)}
 
 /* ===== Header ===== */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(250,249,246,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.header-inner{max-width:var(--container);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{display:flex;align-items:center;gap:10px;font-family:"Noto Serif SC",serif;font-weight:700;font-size:1.2rem;color:var(--text-primary)}
-.logo-icon{border-radius:8px}
-.site-nav{display:flex;gap:4px}
-.nav-link{padding:8px 16px;border-radius:var(--radius-sm);font-size:0.95rem;color:var(--text-secondary);transition:all var(--transition-fast)}
-.nav-link:hover,.nav-link.active{color:var(--accent);background:var(--accent-light)}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(251,248,242,0.88);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.header-inner{max-width:var(--container);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;gap:8px;font-family:"Noto Serif SC",serif;font-weight:700;font-size:1.1rem;color:var(--text-primary);letter-spacing:0.02em}
+.logo-icon{display:none}
+.logo-text{position:relative}
+.logo-text::after{content:'';position:absolute;left:0;bottom:-2px;width:100%;height:1px;background:var(--accent);transform:scaleX(0);transition:transform var(--transition-slow);transform-origin:right}
+.logo:hover .logo-text::after{transform:scaleX(1);transform-origin:left}
+.site-nav{display:flex;gap:2px}
+.nav-link{padding:6px 14px;border-radius:var(--radius-sm);font-size:0.9rem;color:var(--text-secondary);transition:color var(--transition-slow),background var(--transition-base)}
+.nav-link:hover{color:var(--accent);background:var(--accent-light)}
+.nav-link.active{color:var(--accent);font-weight:500}
 .mobile-menu-btn{display:none;flex-direction:column;gap:5px;padding:8px}
-.mobile-menu-btn span{display:block;width:24px;height:2px;background:var(--text-primary);border-radius:1px;transition:all var(--transition-base)}
+.mobile-menu-btn span{display:block;width:22px;height:2px;background:var(--text-primary);border-radius:1px;transition:all var(--transition-base)}
 
-/* ===== Footer ===== */
-.site-footer{border-top:1px solid var(--border);background:var(--bg-card);padding:48px 0 24px}
-.footer-inner{max-width:var(--container);margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
-.footer-logo{font-family:"Noto Serif SC",serif;font-weight:700;font-size:1.1rem}
-.footer-tagline{color:var(--text-secondary);font-size:0.9rem;margin-top:4px}
-.footer-nav{display:flex;gap:24px;align-items:flex-start}
-.footer-nav a{color:var(--text-secondary);font-size:0.95rem;transition:color var(--transition-fast)}
-.footer-nav a:hover{color:var(--accent)}
-.footer-bottom{width:100%;padding-top:24px;border-top:1px solid var(--border-light);color:var(--text-tertiary);font-size:0.85rem}
+/* ===== Footer — 杂志版权页 ===== */
+.site-footer{border-top:1px solid var(--border);padding:40px 0 28px;text-align:center}
+.footer-inner{max-width:var(--container);margin:0 auto;padding:0 24px}
+.footer-brand{margin-bottom:16px}
+.footer-logo{font-family:"Noto Serif SC",serif;font-weight:700;font-size:1rem;color:var(--text-primary)}
+.footer-tagline{color:var(--text-secondary);font-size:0.85rem;margin-top:4px}
+.footer-nav{display:flex;justify-content:center;gap:20px;margin-bottom:20px}
+.footer-nav a{color:var(--text-tertiary);font-size:0.88rem;transition:color var(--transition-slow)}
+.footer-nav a:hover{color:var(--accent-ink)}
+.footer-bottom{padding-top:16px;border-top:1px solid var(--border-light);color:var(--text-tertiary);font-size:0.8rem;letter-spacing:0.03em}
 
 @media(max-width:768px){
   .site-nav{display:none}
   .mobile-menu-btn{display:flex}
-  .footer-inner{flex-direction:column}
   .section{padding:48px 0}
+  .footer-nav{flex-wrap:wrap;gap:12px}
 }
 
 /* ===== Hero ===== */
