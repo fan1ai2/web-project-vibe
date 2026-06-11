@@ -237,3 +237,111 @@ other = "关闭"
 
 [langSwitch]
 other = "语言"
+
+[navCreate]
+other = "创作"
+
+[navTestimonials]
+other = "用户评价"
+
+[guideCreateTitle]
+other = "开始创作"
+
+[guideCreateDesc]
+other = "上传照片，AI 即刻生成 6 种动漫风格"
+
+[guideCreateCTA]
+other = "开始上传 →"
+
+[guideTestimonialsTitle]
+other = "用户评价"
+
+[guideTestimonialsDesc]
+other = "真实用户的使用体验，4.9★ · 98.5% 满意"
+
+[guideTestimonialsCTA]
+other = "查看评价 →"
+
+[createPageTitle]
+other = "AI漫改头像在线生成 — 上传照片即刻制作"
+
+[createPageDesc]
+other = "上传你的照片，AI 自动生成 6 种动漫风格头像。日系、韩系、美漫、Q版、像素、赛博朋克，一键下载高清无水印。"
+
+[createPageKeywords]
+other = "AI漫改头像, 动漫头像生成, 照片转动漫, AI头像制作"
+
+[createHeroTitle]
+other = "创建你的专属漫改头像"
+
+[createHeroSubtitle]
+other = "上传照片，AI 即刻生成 6 种动漫风格"
+
+[createHeroCTA]
+other = "开始上传"
+
+[createStylePreselect]
+other = "选择风格（可选）"
+
+[createStyleAll]
+other = "全部"
+
+[createFilterAll]
+other = "全部风格"
+
+[createBeforeAfterTitle]
+other = "效果对比"
+
+[createBeforeAfterSubtitle]
+other = "拖动滑块查看 AI 转换前后对比"
+
+[createCTATitle]
+other = "准备好生成你的专属头像？"
+
+[createCTABtn]
+other = "开始上传 ↑"
+
+[testimonialsPageTitle]
+other = "用户评价 — AI漫改头像真实反馈"
+
+[testimonialsPageDesc]
+other = "超过 10,000 名用户已使用 AI 漫改头像生成器。查看真实评价、效果对比，4.9 星好评。"
+
+[testimonialsPageKeywords]
+other = "AI漫改头像评价, 动漫头像用户反馈, 效果展示"
+
+[testimonialsHeroTitle]
+other = "超过 10,000 人已拥有专属漫改头像"
+
+[testimonialsHeroRating]
+other = "4.9 / 5.0 · 1,286 条评价"
+
+[testimonialsFeaturedTitle]
+other = "精选评价"
+
+[testimonialsAllTitle]
+other = "全部评价"
+
+[testimonialsFilterAll]
+other = "全部风格"
+
+[testimonialsFilterRecent]
+other = "最新"
+
+[testimonialsFilterHighest]
+other = "最高评分"
+
+[testimonialsStatsGenerated]
+other = "累计生成"
+
+[testimonialsStatsSatisfaction]
+other = "满意率"
+
+[testimonialsStatsSpeed]
+other = "平均耗时"
+
+[testimonialsCTATitle]
+other = "加入他们，生成你的专属漫改头像"
+
+[testimonialsCTABtn]
+other = "免费生成 →"

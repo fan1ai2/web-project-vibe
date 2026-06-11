@@ -240,3 +240,111 @@ other = "閉じる"
 
 [langSwitch]
 other = "言語"
+
+[navCreate]
+other = "作成"
+
+[navTestimonials]
+other = "評価"
+
+[guideCreateTitle]
+other = "作成を始める"
+
+[guideCreateDesc]
+other = "写真をアップロードして、AIが6種類のアニメスタイルを生成"
+
+[guideCreateCTA]
+other = "今すぐ作成 →"
+
+[guideTestimonialsTitle]
+other = "ユーザーの声"
+
+[guideTestimonialsDesc]
+other = "実際のユーザー体験。4.9★ · 98.5% 満足度"
+
+[guideTestimonialsCTA]
+other = "評価を見る →"
+
+[createPageTitle]
+other = "AIアニメアバター生成 — 写真をアップロードして今すぐ作成"
+
+[createPageDesc]
+other = "写真をアップロードするだけで、AIが6種類のアニメスタイルアバターを自動生成。日本風、韓国風、アメコミ、ちび、ピクセル、サイバーパンク。高画質ダウンロード。"
+
+[createPageKeywords]
+other = "AIアニメアバター, アニメアバター生成, 写真をアニメに, AIアバターメーカー"
+
+[createHeroTitle]
+other = "あなただけのアニメアバターを作成"
+
+[createHeroSubtitle]
+other = "写真をアップロードして、6種類のアニメスタイルを数秒で生成"
+
+[createHeroCTA]
+other = "アップロード開始"
+
+[createStylePreselect]
+other = "スタイルを選択（任意）"
+
+[createStyleAll]
+other = "すべて"
+
+[createFilterAll]
+other = "すべてのスタイル"
+
+[createBeforeAfterTitle]
+other = "比較"
+
+[createBeforeAfterSubtitle]
+other = "スライダーをドラッグしてAI変換を確認"
+
+[createCTATitle]
+other = "あなただけのアバターを作成しませんか？"
+
+[createCTABtn]
+other = "アップロード開始 ↑"
+
+[testimonialsPageTitle]
+other = "ユーザー評価 — AIアニメアバターの実際のフィードバック"
+
+[testimonialsPageDesc]
+other = "10,000人以上のユーザーがAIアニメアバタージェネレーターを利用。実際の評価と比較をチェック。4.9つ星評価。"
+
+[testimonialsPageKeywords]
+other = "AIアニメアバター評価, アニメアバターユーザーフィードバック, 使用例"
+
+[testimonialsHeroTitle]
+other = "10,000人以上がすでにアニメアバターを取得"
+
+[testimonialsHeroRating]
+other = "4.9 / 5.0 · 1,286 件の評価"
+
+[testimonialsFeaturedTitle]
+other = "注目の評価"
+
+[testimonialsAllTitle]
+other = "すべての評価"
+
+[testimonialsFilterAll]
+other = "すべてのスタイル"
+
+[testimonialsFilterRecent]
+other = "最新"
+
+[testimonialsFilterHighest]
+other = "高評価"
+
+[testimonialsStatsGenerated]
+other = "累計生成数"
+
+[testimonialsStatsSatisfaction]
+other = "満足度"
+
+[testimonialsStatsSpeed]
+other = "平均時間"
+
+[testimonialsCTATitle]
+other = "あなたもアニメアバターを作成しませんか？"
+
+[testimonialsCTABtn]
+other = "無料で作成 →"

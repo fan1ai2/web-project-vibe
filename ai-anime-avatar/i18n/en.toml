@@ -240,3 +240,111 @@ other = "Close"
 
 [langSwitch]
 other = "Language"
+
+[navCreate]
+other = "Create"
+
+[navTestimonials]
+other = "Reviews"
+
+[guideCreateTitle]
+other = "Start Creating"
+
+[guideCreateDesc]
+other = "Upload a photo and let AI generate 6 anime styles instantly"
+
+[guideCreateCTA]
+other = "Start Now →"
+
+[guideTestimonialsTitle]
+other = "User Reviews"
+
+[guideTestimonialsDesc]
+other = "Real feedback from real users. 4.9★ · 98.5% satisfaction"
+
+[guideTestimonialsCTA]
+other = "Read Reviews →"
+
+[createPageTitle]
+other = "AI Anime Avatar Generator — Upload & Create Instantly"
+
+[createPageDesc]
+other = "Upload your photo and get 6 anime-style avatars. Japanese, Korean, Comic, Chibi, Pixel, Cyberpunk — download in HD with no watermark."
+
+[createPageKeywords]
+other = "AI anime avatar, anime avatar generator, photo to anime, AI avatar maker"
+
+[createHeroTitle]
+other = "Create Your Anime Avatar"
+
+[createHeroSubtitle]
+other = "Upload a photo and get 6 anime styles in seconds"
+
+[createHeroCTA]
+other = "Start Uploading"
+
+[createStylePreselect]
+other = "Choose a Style (Optional)"
+
+[createStyleAll]
+other = "All"
+
+[createFilterAll]
+other = "All Styles"
+
+[createBeforeAfterTitle]
+other = "Before & After"
+
+[createBeforeAfterSubtitle]
+other = "Drag the slider to see the AI transformation"
+
+[createCTATitle]
+other = "Ready to Create Yours?"
+
+[createCTABtn]
+other = "Start Uploading ↑"
+
+[testimonialsPageTitle]
+other = "User Reviews — AI Anime Avatar Real Feedback"
+
+[testimonialsPageDesc]
+other = "Over 10,000 users have used our AI anime avatar generator. Read real reviews, see before-and-after comparisons. 4.9 star rated."
+
+[testimonialsPageKeywords]
+other = "AI anime avatar reviews, anime avatar user feedback, before after results"
+
+[testimonialsHeroTitle]
+other = "Over 10,000 People Already Have Their Anime Avatar"
+
+[testimonialsHeroRating]
+other = "4.9 / 5.0 · 1,286 reviews"
+
+[testimonialsFeaturedTitle]
+other = "Featured Reviews"
+
+[testimonialsAllTitle]
+other = "All Reviews"
+
+[testimonialsFilterAll]
+other = "All Styles"
+
+[testimonialsFilterRecent]
+other = "Most Recent"
+
+[testimonialsFilterHighest]
+other = "Highest Rated"
+
+[testimonialsStatsGenerated]
+other = "Total Generated"
+
+[testimonialsStatsSatisfaction]
+other = "Satisfaction"
+
+[testimonialsStatsSpeed]
+other = "Avg Time"
+
+[testimonialsCTATitle]
+other = "Join Them — Get Your Anime Avatar"
+
+[testimonialsCTABtn]
+other = "Create Free →"
