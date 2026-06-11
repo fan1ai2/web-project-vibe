@@ -2,14 +2,14 @@
 {{ $params := index .Site.Params $lang }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ $params.siteName }} — {{ i18n "siteTagline" }}</title>
-<meta name="description" content="{{ $params.description }}">
-<meta name="keywords" content="{{ $params.keywords }}">
+<title>{{ with .Params.seo_title }}{{ . }}{{ else }}{{ $params.siteName }} — {{ i18n "siteTagline" }}{{ end }}</title>
+<meta name="description" content="{{ with .Params.seo_desc }}{{ . }}{{ else }}{{ $params.description }}{{ end }}">
+<meta name="keywords" content="{{ with .Params.seo_keywords }}{{ . }}{{ else }}{{ $params.keywords }}{{ end }}">
 <meta name="author" content="{{ $params.siteName }}">
 
 <!-- Open Graph -->
-<meta property="og:title" content="{{ $params.siteName }} — {{ i18n "siteTagline" }}">
-<meta property="og:description" content="{{ $params.description }}">
+<meta property="og:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ $params.siteName }} — {{ i18n "siteTagline" }}{{ end }}">
+<meta property="og:description" content="{{ with .Params.seo_desc }}{{ . }}{{ else }}{{ $params.description }}{{ end }}">
 <meta property="og:image" content="{{ .Site.BaseURL }}images/og-image.png">
 <meta property="og:locale" content="{{ $params.locale }}">
 <meta property="og:type" content="website">
@@ -18,8 +18,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $params.siteName }} — {{ i18n "siteTagline" }}">
-<meta name="twitter:description" content="{{ $params.description }}">
+<meta name="twitter:title" content="{{ with .Params.seo_title }}{{ . }}{{ else }}{{ $params.siteName }} — {{ i18n "siteTagline" }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Params.seo_desc }}{{ . }}{{ else }}{{ $params.description }}{{ end }}">
 <meta name="twitter:image" content="{{ .Site.BaseURL }}images/og-image.png">
 
 <!-- Canonical & Hreflang -->
@@ -46,9 +46,9 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "{{ $params.siteName }}",
+  "name": "{{ with .Params.seo_title }}{{ . }}{{ else }}{{ $params.siteName }}{{ end }}",
   "url": "{{ .Site.BaseURL }}",
-  "description": "{{ $params.description }}",
+  "description": "{{ with .Params.seo_desc }}{{ . }}{{ else }}{{ $params.description }}{{ end }}",
   "applicationCategory": "Multimedia",
   "operatingSystem": "All",
   "offers": {
