@@ -30,8 +30,8 @@
         {{ $pages = where .Site.RegularPages "Section" "prompts" }}
         {{ end }}
         <div class="prompts-grid" id="prompts-grid">
-          {{ range $pages }}
-          {{ partial "prompt-card.html" . }}
+          {{ range $i, $p := $pages }}
+          {{ partial "prompt-card.html" (dict "Page" $p "Idx" $i) }}
           {{ end }}
         </div>
         {{ if gt (len $pages) 12 }}

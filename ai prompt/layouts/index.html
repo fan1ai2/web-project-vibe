@@ -25,16 +25,19 @@
 
 <section class="section categories-section">
   <div class="container">
-    <h2 class="section-title">浏览分类</h2>
-    <p class="section-desc">8 大场景分类，找到你需要的提示词</p>
-    <div class="categories-grid">
-      {{ range .Site.Data.categories }}
-      <a href="{{ printf "/prompts/%s/" .slug | relURL }}" class="category-card">
-        <span class="category-icon">{{ partial "icon" .icon }}</span>
-        <h3 class="category-name">{{ .name }}</h3>
-        <p class="category-desc">{{ .description }}</p>
+    <div class="categories-list">
+      <h2 class="section-title">目&ensp;录&ensp;CONTENTS</h2>
+      {{ range $i, $cat := .Site.Data.categories }}
+      <a href="{{ printf "/prompts/%s/" $cat.slug | relURL }}" class="cat-row animate-in" data-delay="{{ mul $i 80 }}">
+        <span class="cat-num">{{ printf "%02d" (add $i 1) }}</span>
+        <span class="cat-name">{{ $cat.name }}</span>
+        <span class="cat-dash">──</span>
+        <span class="cat-desc">{{ $cat.description }}</span>
       </a>
       {{ end }}
+      <div class="categories-cta">
+        <a href="{{ "/prompts/" | relURL }}" class="btn-secondary">浏览全部分类 &rarr;</a>
+      </div>
     </div>
   </div>
 </section>
@@ -42,22 +45,22 @@
 <section class="section featured-section">
   <div class="container">
     <h2 class="section-title">精选提示词</h2>
-    <p class="section-desc">最常用、最好用的高质量中文提示词</p>
+    <p class="section-desc">编辑精选 &mdash; 最常用、最好用的高质量中文提示词</p>
     <div class="prompts-grid">
-      {{ range first 6 (where .Site.RegularPages "Params.featured" true) }}
-      {{ partial "prompt-card.html" . }}
+      {{ range $i, $p := first 6 (where .Site.RegularPages "Params.featured" true) }}
+      {{ partial "prompt-card.html" (dict "Page" $p "Idx" $i) }}
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="{{ "/prompts/" | relURL }}" class="btn-primary">查看全部提示词</a>
+      <a href="{{ "/prompts/" | relURL }}" class="btn-primary">查看全部 96 条提示词</a>
     </div>
   </div>
 </section>
 
 <section class="section tools-section">
   <div class="container">
-    <h2 class="section-title">在线AI工具箱</h2>
-    <p class="section-desc">7 款实用工具，每个都有完整的前端体验</p>
+    <h2 class="section-title">附录：在线AI工具箱</h2>
+    <p class="section-desc">7 款实用工具，前端演示体验</p>
     <div class="tools-grid">
       {{ range .Site.Data.tools }}
       <a href="{{ printf "/tools/%s/" .slug | relURL }}" class="tool-card">
@@ -68,7 +71,7 @@
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="{{ "/tools/" | relURL }}" class="btn-secondary">探索全部工具</a>
+      <a href="{{ "/tools/" | relURL }}" class="btn-secondary">探索全部工具 &rarr;</a>
     </div>
   </div>
 </section>

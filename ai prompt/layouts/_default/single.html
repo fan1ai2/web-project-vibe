@@ -70,9 +70,9 @@
     <section class="related-prompts">
       <h2>相关提示词</h2>
       <div class="prompts-grid">
-        {{ range $related }}
-        {{ if ne .Permalink $.Permalink }}
-        {{ partial "prompt-card.html" . }}
+        {{ range $i, $p := $related }}
+        {{ if ne $p.Permalink $.Permalink }}
+        {{ partial "prompt-card.html" (dict "Page" $p "Idx" $i) }}
         {{ end }}
         {{ end }}
       </div>
