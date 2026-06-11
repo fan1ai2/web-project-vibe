@@ -1,17 +1,22 @@
 {{ define "main" }}
-<section class="hero">
-  <div class="hero-bg"></div>
+<section class="hero" id="hero-zone">
   <div class="hero-content">
-    <h1 class="hero-title">高质量中文<span class="text-accent">AI提示词</span>库</h1>
-    <p class="hero-subtitle">精选 100+ 条实用中文提示词，覆盖 8 大场景。<br>一键复制，即拿即用，支持 ChatGPT、Claude、DeepSeek 等主流模型。</p>
+    <p class="hero-issue">AI PROMPT &middot; No.1</p>
+    <div class="hero-headline">
+      <span class="hl-part" data-text="高质量">高质量</span>
+      <span class="hl-part" data-text="中文">中文</span>
+      <span class="hl-part" data-text="AI提示词库">AI提示词库</span>
+    </div>
+    <p class="hero-subtitle">精选 100+ 条实用中文提示词<br>覆盖 8 大场景 &middot; 一键复制即用</p>
     <div class="hero-search">
-      <input type="text" id="hero-search-input" class="search-input" placeholder="搜索提示词... 例如：写周报、代码审查、小红书文案" autocomplete="off">
+      <input type="text" id="hero-search-input" class="search-input" placeholder="搜索提示词..." autocomplete="off">
       <button id="hero-search-btn" class="search-btn" aria-label="搜索">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
     </div>
     <div class="hero-tags">
-      {{ range first 6 (shuffle (slice "ChatGPT提示词" "Claude提示词" "DeepSeek提示词" "Midjourney提示词" "写作提示词" "编程提示词" "营销提示词" "小红书文案" "GPTs指令" "提示词工程")) }}
+      <span class="hero-tags-label">热门：</span>
+      {{ range first 6 (shuffle (slice "写作" "编程" "设计" "营销" "效率" "教育" "生活" "角色扮演")) }}
       <a href="{{ "/prompts/" | relURL }}" class="hero-tag">{{ . }}</a>
       {{ end }}
     </div>

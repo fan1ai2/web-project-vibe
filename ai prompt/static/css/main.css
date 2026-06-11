@@ -105,20 +105,26 @@ body::after{
   .footer-nav{flex-wrap:wrap;gap:12px}
 }
 
-/* ===== Hero ===== */
-.hero{position:relative;padding:100px 0 80px;text-align:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% -20%,rgba(212,150,63,0.08) 0%,transparent 70%)}
-.hero-content{position:relative;max-width:720px;margin:0 auto;padding:0 24px}
-.hero-title{font-size:clamp(2.2rem,6vw,3.5rem);margin-bottom:20px;letter-spacing:-0.02em}
-.hero-subtitle{font-size:1.15rem;color:var(--text-secondary);margin-bottom:36px;line-height:1.8}
+/* ===== Hero — 杂志封面式排版 ===== */
+.hero{position:relative;padding:96px 0 72px;overflow:hidden;cursor:default}
+.hero-content{position:relative;max-width:860px;margin:0 auto;padding:0 24px}
+.hero-issue{font-size:0.78rem;letter-spacing:0.12em;color:var(--text-tertiary);margin-bottom:32px;font-family:"JetBrains Mono","SF Mono",monospace}
+.hero-headline{display:grid;grid-template-columns:1.2fr 0.8fr 1fr;gap:12px 24px;margin-bottom:40px}
+.hero-headline .hl-part{font-family:"Noto Serif SC",serif;font-weight:700;font-size:clamp(2.8rem,6vw,5rem);line-height:1.1;position:relative}
+.hero-headline .hl-part::after{content:attr(data-text);position:absolute;left:3px;top:3px;color:var(--text-primary);opacity:0.08;z-index:-1;white-space:pre}
+.hero-headline .hl-part:nth-child(2){margin-top:0.5em}
+.hero-headline .hl-part:nth-child(3){text-align:right;margin-top:0.3em}
+.hero-subtitle{font-size:0.95rem;color:var(--text-secondary);margin-bottom:36px;line-height:1.8;max-width:480px;margin-left:auto;text-align:right}
 .hero-search{position:relative;max-width:520px;margin:0 auto 24px}
-.search-input{width:100%;padding:16px 56px 16px 20px;border:2px solid var(--border);border-radius:var(--radius-xl);font-size:1rem;background:var(--bg-card);transition:all var(--transition-base);outline:none}
-.search-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(212,150,63,0.15)}
-.search-btn{position:absolute;right:8px;top:50%;transform:translateY(-50%);padding:10px;border-radius:50%;color:var(--text-secondary);transition:all var(--transition-fast)}
-.search-btn:hover{color:var(--accent);background:var(--accent-light)}
-.hero-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.hero-tag{padding:6px 16px;background:var(--tag-bg);border-radius:20px;font-size:0.9rem;color:var(--text-secondary);transition:all var(--transition-fast)}
-.hero-tag:hover{background:var(--accent);color:#fff}
+.search-input{width:100%;padding:14px 48px 14px 0;border:none;border-bottom:1.5px solid var(--border);border-radius:0;font-size:1rem;background:transparent;transition:border-color var(--transition-slow);outline:none;color:var(--text-primary)}
+.search-input::placeholder{color:var(--text-tertiary)}
+.search-input:focus{border-color:var(--accent-ink);box-shadow:none}
+.search-btn{position:absolute;right:0;top:50%;transform:translateY(-50%);padding:8px;border-radius:50%;color:var(--text-tertiary);transition:color var(--transition-slow)}
+.search-btn:hover{color:var(--accent-ink)}
+.hero-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;font-size:0.85rem}
+.hero-tags-label{color:var(--text-tertiary)}
+.hero-tag{color:var(--text-secondary);transition:color var(--transition-slow);padding:2px 0;border-bottom:1px solid transparent}
+.hero-tag:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ===== Categories Grid ===== */
 .categories-section{background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
