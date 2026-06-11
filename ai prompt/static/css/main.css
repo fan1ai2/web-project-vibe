@@ -230,22 +230,26 @@ body::after{
 
 /* ===== Prompts List Layout ===== */
 .prompts-page{padding-top:40px}
-.prompts-layout{display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:start}
-.prompts-sidebar{position:sticky;top:80px}
-.sidebar-title{font-size:0.85rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-tertiary);margin-bottom:12px}
-.category-filter{display:flex;flex-direction:column;gap:2px}
-.filter-link{display:block;padding:8px 12px;border-radius:var(--radius-sm);font-size:0.93rem;color:var(--text-secondary);transition:all var(--transition-fast)}
-.filter-link:hover{color:var(--accent);background:var(--accent-light)}
-.filter-link.active{color:var(--accent);background:var(--accent-light);font-weight:600}
-.prompts-toolbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:28px}
-.prompts-page-title{font-size:1.6rem}
-.prompts-search{width:300px}
-.prompts-search .search-input{padding:10px 44px 10px 16px;border-radius:var(--radius-md);font-size:0.93rem}
+.prompts-layout{display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start}
+.prompts-sidebar{position:sticky;top:76px}
+.sidebar-title{font-family:"Noto Serif SC",serif;font-size:1rem;color:var(--text-primary);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--accent)}
+.category-filter{display:flex;flex-direction:column;gap:0}
+.filter-link{display:block;padding:6px 10px;border-radius:0;font-size:0.9rem;color:var(--text-tertiary);transition:color var(--transition-slow),background var(--transition-base);border-left:2px solid transparent}
+.filter-link:hover{color:var(--text-primary);background:var(--accent-light);border-left-color:var(--border)}
+.filter-link.active{color:var(--accent);background:var(--accent-light);border-left-color:var(--accent);font-weight:500}
+.filter-link .count{font-size:0.78rem;color:var(--text-tertiary);margin-left:4px}
+.prompts-toolbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:32px}
+.prompts-page-title{font-family:"Noto Serif SC",serif;font-size:1.8rem}
+.prompts-search{width:280px}
+.prompts-search .search-input{padding:10px 0;border:none;border-bottom:1.5px solid var(--border);border-radius:0;font-size:0.93rem;background:transparent}
+.prompts-search .search-input:focus{border-color:var(--accent-ink)}
 
 @media(max-width:768px){
   .prompts-layout{grid-template-columns:1fr}
   .prompts-sidebar{position:static}
-  .category-filter{flex-direction:row;flex-wrap:wrap}
+  .category-filter{flex-direction:row;flex-wrap:wrap;gap:4px}
+  .filter-link{border-left:none;border-bottom:2px solid transparent;padding:6px 10px}
+  .filter-link.active{border-left-color:transparent;border-bottom-color:var(--accent)}
   .prompts-search{width:100%}
 }
 
