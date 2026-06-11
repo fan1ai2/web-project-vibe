@@ -27,7 +27,7 @@
         </div>
         {{ $pages := .Pages }}
         {{ if eq .RelPermalink "/prompts/" }}
-        {{ $pages = .RegularPages }}
+        {{ $pages = where .Site.RegularPages "Section" "prompts" }}
         {{ end }}
         <div class="prompts-grid" id="prompts-grid">
           {{ range $pages }}
