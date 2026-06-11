@@ -1,17 +1,38 @@
 {
   "zh": [
-    {"name": "小樱花", "avatar": "👩", "role": "自由插画师", "text": "太惊喜了！生成的动漫头像质量超高，比我之前用过的任何工具都好。日系风格尤其出色，完全看不出是 AI 生成的。", "rating": 5},
-    {"name": "动漫迷小王", "avatar": "👦", "role": "大学生", "text": "每天免费 3 次完全够用了，像素风格超可爱，已经推荐给全班同学了。等着出更多风格！", "rating": 5},
-    {"name": "设计师Lisa", "avatar": "👩‍💼", "role": "UI 设计师", "text": "作为设计师，我对输出质量要求很高。AI 动漫头像的 4K 分辨率完全满足了我的需求，商业授权也很方便。", "rating": 4}
+    {"name": "小樱花", "role": "自由插画师", "text": "太惊喜了！生成的动漫头像质量超高，比我之前用过的任何工具都好。日系风格尤其出色，完全看不出是 AI 生成的。", "rating": 5, "style": "styleJP"},
+    {"name": "动漫迷小王", "role": "大学生", "text": "每天免费 3 次完全够用了，像素风格超可爱，已经推荐给全班同学了。等着出更多风格！", "rating": 5, "style": "stylePixel"},
+    {"name": "设计师Lisa", "role": "UI 设计师", "text": "作为设计师，我对输出质量要求很高。AI 动漫头像的 4K 分辨率完全满足了我的需求，商业授权也很方便。", "rating": 4, "style": "styleUS"},
+    {"name": "阿杰", "role": "游戏主播", "text": "直播的时候用了赛博朋克风格的头像，粉丝都说帅炸了！效果比想象中好太多了。", "rating": 5, "style": "styleCyber"},
+    {"name": "喵小咪", "role": "二次元博主", "text": "Q版风格真的萌翻了！用来做社交头像再合适不过，朋友都以为是我自己画的。", "rating": 5, "style": "styleQ"},
+    {"name": "远航", "role": "摄影师", "text": "对画质很挑剔，但漫改的 4K 输出确实没话说。韩系风格色彩处理特别自然，推荐给同行了。", "rating": 4, "style": "styleKR"},
+    {"name": "小橘子", "role": "大学生", "text": "朋友圈发了美漫风的头像，好多人问在哪里做的。3 次免费试用后直接买了专业版，真的很值！", "rating": 5, "style": "styleUS"},
+    {"name": "程序员老张", "role": "全栈工程师", "text": "本来只是好奇试试，结果像素风格让我想起了玩红白机的日子。现在团队 Slack 头像都换成这个了。", "rating": 5, "style": "stylePixel"},
+    {"name": "花卷妈妈", "role": "全职妈妈", "text": "给娃做了个 Q 版头像当微信头像，可爱到爆！操作也很简单，手机上传不到一分钟就搞定了。", "rating": 4, "style": "styleQ"},
+    {"name": "阿Ken", "role": "潮流博主", "text": "日系风格做出来的效果和我关注的日本画师风格几乎一样，这个 AI 模型训练得确实好。", "rating": 5, "style": "styleJP"}
   ],
   "en": [
-    {"name": "Sakura", "avatar": "👩", "role": "Freelance Illustrator", "text": "Absolutely amazing! The anime avatars are incredibly high quality, better than any tool I've tried. The Japanese style is especially impressive.", "rating": 5},
-    {"name": "Mike", "avatar": "👦", "role": "College Student", "text": "3 free daily generations are plenty! The pixel art style is adorable. Already shared with my entire class. Can't wait for more styles!", "rating": 5},
-    {"name": "Lisa", "avatar": "👩‍💼", "role": "UI Designer", "text": "As a designer, I have high standards for output quality. The 4K resolution meets all my needs, and the commercial license is very convenient.", "rating": 4}
+    {"name": "Sakura", "role": "Freelance Illustrator", "text": "Absolutely amazing! The anime avatars are incredibly high quality, better than any tool I've tried. The Japanese style is especially impressive.", "rating": 5, "style": "styleJP"},
+    {"name": "Mike", "role": "College Student", "text": "3 free daily generations are plenty! The pixel art style is adorable. Already shared with my entire class. Can't wait for more styles!", "rating": 5, "style": "stylePixel"},
+    {"name": "Lisa", "role": "UI Designer", "text": "As a designer, I have high standards for output quality. The 4K resolution meets all my needs, and the commercial license is very convenient.", "rating": 4, "style": "styleUS"},
+    {"name": "Jay", "role": "Game Streamer", "text": "Used the cyberpunk style for my stream avatar and everyone went crazy! Way better than I expected.", "rating": 5, "style": "styleCyber"},
+    {"name": "MochiCat", "role": "Anime Blogger", "text": "The chibi style is absolutely adorable! Perfect for social media avatars. My friends thought I drew it myself.", "rating": 5, "style": "styleQ"},
+    {"name": "David", "role": "Photographer", "text": "I'm picky about image quality, but the 4K output is genuinely impressive. Korean style color processing is beautifully natural.", "rating": 4, "style": "styleKR"},
+    {"name": "Orange", "role": "College Student", "text": "Posted the comic style avatar on Instagram and got so many questions. Upgraded to Pro after the 3 free tries — totally worth it!", "rating": 5, "style": "styleUS"},
+    {"name": "Zhang", "role": "Full-Stack Developer", "text": "Tried it out of curiosity and the pixel style gave me serious retro gaming nostalgia. Our whole team uses it for Slack now.", "rating": 5, "style": "stylePixel"},
+    {"name": "MomofBuns", "role": "Stay-at-home Mom", "text": "Made a chibi avatar of my kid for WeChat and it's the cutest thing ever! So easy to use — did it on my phone in under a minute.", "rating": 4, "style": "styleQ"},
+    {"name": "Ken", "role": "Trend Blogger", "text": "The Japanese style output looks nearly identical to the artists I follow. The AI model is really well trained.", "rating": 5, "style": "styleJP"}
   ],
   "ja": [
-    {"name": "さくら", "avatar": "👩", "role": "フリーイラストレーター", "text": "本当に素晴らしい！アニメアバターの品質が非常に高く、今まで使ったどのツールよりも優れています。日本風スタイルは特に印象的です。", "rating": 5},
-    {"name": "タケシ", "avatar": "👦", "role": "大学生", "text": "毎日3回の無料生成で十分です！ピクセルアートスタイルがとてもかわいい。クラス全員にシェアしました。もっとスタイルが増えるのが楽しみ！", "rating": 5},
-    {"name": "リサ", "avatar": "👩‍💼", "role": "UIデザイナー", "text": "デザイナーとして出力品質には厳しい目を持っていますが、4K解像度はすべてのニーズを満たし、商用ライセンスもとても便利です。", "rating": 4}
+    {"name": "さくら", "role": "フリーイラストレーター", "text": "本当に素晴らしい！アニメアバターの品質が非常に高く、今まで使ったどのツールよりも優れています。日本風スタイルは特に印象的です。", "rating": 5, "style": "styleJP"},
+    {"name": "タケシ", "role": "大学生", "text": "毎日3回の無料生成で十分です！ピクセルアートスタイルがとてもかわいい。クラス全員にシェアしました。もっとスタイルが増えるのが楽しみ！", "rating": 5, "style": "stylePixel"},
+    {"name": "リサ", "role": "UIデザイナー", "text": "デザイナーとして出力品質には厳しい目を持っていますが、4K解像度はすべてのニーズを満たし、商用ライセンスもとても便利です。", "rating": 4, "style": "styleUS"},
+    {"name": "ジェイ", "role": "ゲーム配信者", "text": "配信でサイバーパンクスタイルのアバターを使ったら、視聴者にかっこいいと大好評！想像以上でした。", "rating": 5, "style": "styleCyber"},
+    {"name": "もちネコ", "role": "アニメブロガー", "text": "ちびキャラスタイルが本当に可愛い！SNSのアバターにぴったりです。友達には自分で描いたと思われました。", "rating": 5, "style": "styleQ"},
+    {"name": "タナカ", "role": "フォトグラファー", "text": "画質にはうるさいほうですが、4K出力には本当に満足しています。韓国風の色彩処理がとても自然です。", "rating": 4, "style": "styleKR"},
+    {"name": "ミカン", "role": "大学生", "text": "アメコミ風のアバターをSNSに投稿したらたくさん質問が来ました。無料3回の後すぐにプロ版にアップグレード！", "rating": 5, "style": "styleUS"},
+    {"name": "チョウ", "role": "フルスタックエンジニア", "text": "興味本位で試したら、ピクセルスタイルがレトロゲームの懐かしさを思い出させてくれました。チーム全員のSlackアイコンがこれになりました。", "rating": 5, "style": "stylePixel"},
+    {"name": "パン", "role": "専業主婦", "text": "子供のちびキャラアバターを作ってWeChatのアイコンにしました。とても簡単で、スマホで1分もかかりませんでした。", "rating": 4, "style": "styleQ"},
+    {"name": "ケン", "role": "トレンドブロガー", "text": "日本風スタイルの出力は、フォローしている日本人イラストレーターとほとんど同じクオリティです。AIモデルの学習が本当に優れています。", "rating": 5, "style": "styleJP"}
   ]
 }
