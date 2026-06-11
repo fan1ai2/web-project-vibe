@@ -469,3 +469,6 @@ input, textarea, select {
 @import 'components/share.css';
 @import 'components/footer.css';
 @import 'components/toast.css';
+@import 'components/guide-cards.css';
+@import 'components/page-create.css';
+@import 'components/page-testimonials.css';
