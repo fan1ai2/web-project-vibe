@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Guide Cards — Homepage CTA cards linking to /create/ and /testimonials/
+   ========================================================================== */
+
+.guide-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.guide-card {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-xl);
+  padding: 48px 36px 40px;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  cursor: pointer;
+}
+
+.guide-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.guide-card--create::before {
+  background: radial-gradient(ellipse 300px 200px at center, rgba(212, 167, 116, 0.18), transparent 70%);
+}
+
+.guide-card--testimonials::before {
+  background: radial-gradient(ellipse 300px 200px at center, rgba(232, 180, 184, 0.18), transparent 70%);
+}
+
+.guide-card:hover::before {
+  opacity: 1;
+}
+
+.guide-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.guide-card--create:hover {
+  border-color: var(--color-primary);
+}
+
+.guide-card--testimonials:hover {
+  border-color: var(--color-secondary);
+}
+
+.guide-card:active {
+  transform: scale(0.98);
+}
+
+.guide-card__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.guide-card__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.guide-card__title {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.guide-card__desc {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guide-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  transition: gap var(--transition);
+}
+
+.guide-card--create .guide-card__cta {
+  color: var(--color-primary-dark);
+}
+
+.guide-card--testimonials .guide-card__cta {
+  color: var(--color-secondary-dark);
+}
+
+.guide-card:hover .guide-card__cta {
+  gap: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guide-card {
+    transition: none;
+  }
+  .guide-card__cta {
+    transition: none;
+  }
+}
+
+@media (max-width: 859px) {
+  .guide-cards__grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    gap: 16px;
+  }
+
+  .guide-card {
+    padding: 36px 24px 32px;
+  }
+}

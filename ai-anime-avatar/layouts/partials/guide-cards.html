@@ -1,0 +1,49 @@
+<section class="guide-cards section" id="guide">
+  <div class="container">
+    <div class="guide-cards__grid">
+
+      <!-- Left Card: Create -->
+      <a href="{{ "create" | relLangURL }}" class="guide-card guide-card--create">
+        <div class="guide-card__glow guide-card__glow--apricot" aria-hidden="true"></div>
+        <div class="guide-card__inner">
+          <div class="guide-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <circle cx="40" cy="34" r="14" stroke="var(--color-primary)" stroke-width="1.5"/>
+              <path d="M22 60c0-9.94 8.06-14 18-14s18 4.06 18 14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M58 16l-6 6M58 16l6 6M58 16v14" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="64" cy="10" r="1.5" fill="var(--color-primary)" opacity="0.6"/>
+              <circle cx="16" cy="14" r="1" fill="var(--color-primary)" opacity="0.4"/>
+              <circle cx="68" cy="24" r="1" fill="var(--color-primary)" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3 class="guide-card__title">{{ i18n "guideCreateTitle" }}</h3>
+          <p class="guide-card__desc">{{ i18n "guideCreateDesc" }}</p>
+          <span class="guide-card__cta">
+            {{ i18n "guideCreateCTA" }}
+          </span>
+        </div>
+      </a>
+
+      <!-- Right Card: Testimonials -->
+      <a href="{{ "testimonials" | relLangURL }}" class="guide-card guide-card--testimonials">
+        <div class="guide-card__glow guide-card__glow--sakura" aria-hidden="true"></div>
+        <div class="guide-card__inner">
+          <div class="guide-card__icon">
+            <svg viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <circle cx="32" cy="30" r="10" stroke="var(--color-secondary)" stroke-width="1.5"/>
+              <circle cx="48" cy="28" r="10" stroke="var(--color-secondary)" stroke-width="1.5"/>
+              <circle cx="40" cy="38" r="10" stroke="var(--color-secondary)" stroke-width="1.5"/>
+              <path d="M40 10l2.02 5.72 5.98.48-4.6 3.9 1.42 5.82L40 22.9l-4.82 3.02 1.42-5.82-4.6-3.9 5.98-.48L40 10z" fill="var(--color-secondary)" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="guide-card__title">{{ i18n "guideTestimonialsTitle" }}</h3>
+          <p class="guide-card__desc">{{ i18n "guideTestimonialsDesc" }}</p>
+          <span class="guide-card__cta">
+            {{ i18n "guideTestimonialsCTA" }}
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
