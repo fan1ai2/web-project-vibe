@@ -1,0 +1,49 @@
+<section class="review-marquee section watercolor-bg" id="review-marquee">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">{{ i18n "marqueeTitle" }}</h2>
+      <p class="section__subtitle">{{ i18n "marqueeSubtitle" }}</p>
+    </div>
+  </div>
+
+  {{ $lang := .Language.Lang }}
+  {{ $reviews := index .Site.Data.testimonials $lang }}
+
+  <div class="review-marquee__track" id="marquee-track">
+    {{ range $reviews }}
+    <div class="review-marquee__card">
+      <div class="review-marquee__stars">
+        {{ range seq .rating }}
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+        {{ end }}
+      </div>
+      <p class="review-marquee__text">"{{ .text }}"</p>
+      <div class="review-marquee__author">
+        <span class="review-marquee__name">{{ .name }}</span>
+        <span class="review-marquee__role">{{ .role }}</span>
+      </div>
+      {{ if .style }}
+      <span class="review-marquee__style-tag">{{ i18n .style }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+    <!-- Clone for seamless loop -->
+    {{ range $reviews }}
+    <div class="review-marquee__card" aria-hidden="true">
+      <div class="review-marquee__stars">
+        {{ range seq .rating }}
+        <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+        {{ end }}
+      </div>
+      <p class="review-marquee__text">"{{ .text }}"</p>
+      <div class="review-marquee__author">
+        <span class="review-marquee__name">{{ .name }}</span>
+        <span class="review-marquee__role">{{ .role }}</span>
+      </div>
+      {{ if .style }}
+      <span class="review-marquee__style-tag">{{ i18n .style }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>

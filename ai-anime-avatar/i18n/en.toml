@@ -348,3 +348,87 @@ other = "Join Them — Get Your Anime Avatar"
 
 [testimonialsCTABtn]
 other = "Create Free →"
+
+[useCasesTitle]
+other = "AI Anime Avatar is for Everyone"
+
+[useCasesSubtitle]
+other = "No matter your creative role, find the style that fits you"
+
+[useCasesArtistTitle]
+other = "Emerging Artists"
+
+[useCasesArtistDesc]
+other = "Unleash your imagination and explore the best creative visuals."
+
+[useCasesCreatorTitle]
+other = "Content Creators"
+
+[useCasesCreatorDesc]
+other = "Generate unique personalized avatars and stand out on social media."
+
+[useCasesBusinessTitle]
+other = "Business Professionals"
+
+[useCasesBusinessDesc]
+other = "Create polished, professional portraits that project confidence and success."
+
+[marqueeTitle]
+other = "What Users Say"
+
+[marqueeSubtitle]
+other = "Trusted by over 10,000 users worldwide"
+
+[testimonialsStoryTitle]
+other = "Their Anime Avatar Stories"
+
+[testimonialsReadMore]
+other = "Read more"
+
+[testimonialsReadLess]
+other = "Show less"
+
+[testimonialsStory1Title]
+other = "From Illustrator to Power User"
+
+[testimonialsStory1Text]
+other = "As a freelance illustrator, I have extremely high standards for visual quality. The first time I uploaded a photo and tried the Japanese style, I was stunned for several seconds — the brushwork weight, color transitions, even the hair details were perfectly handled, completely indistinguishable from human-drawn art. It's now integrated into my creative workflow; the first thing I do each morning is generate a few style reference images. What surprised me most is the clear commercial licensing — I can use the output directly in client projects without any concerns. I've recommended it to my entire illustrator community."
+
+[testimonialsStory1Author]
+other = "Sakura"
+
+[testimonialsStory1Role]
+other = "Freelance Illustrator"
+
+[testimonialsStory1Style]
+other = "Japanese Style"
+
+[testimonialsStory2Title]
+other = "From Tech Curiosity to Team Icon"
+
+[testimonialsStory2Text]
+other = "Honestly, I only tried it out of technical curiosity at first. But when the pixel art style appeared, it instantly transported me back to childhood summers playing Super Mario on the NES. The grain and color palette hit that perfect nostalgic sweet spot without feeling like a cheap imitation. I ended up converting our entire team's Slack avatars to pixel art versions — a bunch of backend engineers discussing architecture with pixel-art profile pictures, the contrast is hilarious. Now new team members don't set up their dev environment first; they ask me to generate their avatar."
+
+[testimonialsStory2Author]
+other = "Zhang"
+
+[testimonialsStory2Role]
+other = "Full-Stack Engineer"
+
+[testimonialsStory2Style]
+other = "Pixel Art"
+
+[testimonialsStory3Title]
+other = "A Mom's Perfect Profile Picture"
+
+[testimonialsStory3Text]
+other = "After becoming a mom, my phone gallery is entirely photos of my kid, but I could never find the right profile picture. I tried the chibi style on a photo of my little one eating watermelon, waited a minute — and the result was so adorable I screamed on the couch. Big sparkly eyes, round chubby cheeks, even the watermelon seeds became cute details. The day I switched to it as my WeChat avatar, over a dozen fellow moms messaged asking where I got it made. It's incredibly easy to use too — one minute on my phone, perfect for moms who aren't great at photo editing."
+
+[testimonialsStory3Author]
+other = "MomofBuns"
+
+[testimonialsStory3Role]
+other = "Stay-at-home Mom"
+
+[testimonialsStory3Style]
+other = "Chibi Style"

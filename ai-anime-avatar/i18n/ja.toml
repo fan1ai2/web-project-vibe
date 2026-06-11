@@ -348,3 +348,87 @@ other = "あなたもアニメアバターを作成しませんか？"
 
 [testimonialsCTABtn]
 other = "無料で作成 →"
+
+[useCasesTitle]
+other = "AIアニメアバターはすべての人に"
+
+[useCasesSubtitle]
+other = "どんなクリエイターでも、自分だけのスタイルを見つけられます"
+
+[useCasesArtistTitle]
+other = "新進アーティスト"
+
+[useCasesArtistDesc]
+other = "想像力を解き放ち、最高のクリエイティブビジュアルを手に入れましょう。"
+
+[useCasesCreatorTitle]
+other = "コンテンツクリエイター"
+
+[useCasesCreatorDesc]
+other = "ユニークなパーソナライズアバターでSNSで差をつけましょう。"
+
+[useCasesBusinessTitle]
+other = "ビジネスパーソン"
+
+[useCasesBusinessDesc]
+other = "プロフェッショナルで洗練された肖像で、自信と成功を演出します。"
+
+[marqueeTitle]
+other = "ユーザーの声"
+
+[marqueeSubtitle]
+other = "10,000人以上が選んだ理由"
+
+[testimonialsStoryTitle]
+other = "みんなの漫改ストーリー"
+
+[testimonialsReadMore]
+other = "もっと見る"
+
+[testimonialsReadLess]
+other = "閉じる"
+
+[testimonialsStory1Title]
+other = "イラストレーターからヘビーユーザーへ"
+
+[testimonialsStory1Text]
+other = "フリーランスのイラストレーターとして、ビジュアル品質には非常に厳しい目を持っています。初めて写真をアップロードして日本風スタイルを試したとき、その出来栄えに数秒間呆然としました。筆致の重み、色彩の移り変わり、髪の毛の細部まで完璧に処理されており、AIが生成したとは全くわかりません。今では私のクリエイティブワークフローに完全に溶け込んでいて、毎朝最初にスタイル参考画像を数枚生成するのが日課です。最も驚いたのは商用ライセンスが明確なことで、クライアント案件にそのまま安心して使えます。イラストレーター仲間全員に勧めました。"
+
+[testimonialsStory1Author]
+other = "さくら"
+
+[testimonialsStory1Role]
+other = "フリーイラストレーター"
+
+[testimonialsStory1Style]
+other = "日本風スタイル"
+
+[testimonialsStory2Title]
+other = "技術的好奇心からチームの定番に"
+
+[testimonialsStory2Text]
+other = "正直なところ、最初は単なる技術的な好奇心から試しました。しかしピクセルアートスタイルが表示された瞬間、小学生の頃にファミコンでスーパーマリオを遊んだ夏休みに一気に引き戻されました。あの粒子感と配色は、懐かしさが絶妙で、安っぽい模倣感はまったくありません。その後、チームのSlackアバターをすべてピクセル版に変えました。バックエンドエンジニアたちがピクセルアートの顔でアーキテクチャを議論する光景は笑えます。今では新入社員が最初にすることは開発環境のセットアップではなく、私にアバター生成を頼むことです。"
+
+[testimonialsStory2Author]
+other = "チョウ"
+
+[testimonialsStory2Role]
+other = "フルスタックエンジニア"
+
+[testimonialsStory2Style]
+other = "ピクセルアート"
+
+[testimonialsStory3Title]
+other = "ママにもぴったりのプロフィール写真"
+
+[testimonialsStory3Text]
+other = "ママになってから、スマホのアルバムは子供の写真ばかり。でも自分のプロフィール画像はずっと見つかりませんでした。スイカを食べている子供の写真でちびキャラスタイルを試してみたら、1分後——あまりの可愛さにソファで叫んでしまいました。大きなキラキラした目、丸々としたほっぺた、スイカの種までがチャームポイントに。WeChatのアイコンに変えたその日、十数人のママ友から「どこで作ったの？」とメッセージが。操作もとても簡単で、スマホで1分あれば完成。写真編集が苦手なママにも優しすぎます。"
+
+[testimonialsStory3Author]
+other = "パン"
+
+[testimonialsStory3Role]
+other = "専業主婦"
+
+[testimonialsStory3Style]
+other = "ちびキャラスタイル"

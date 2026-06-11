@@ -345,3 +345,87 @@ other = "加入他们，生成你的专属漫改头像"
 
 [testimonialsCTABtn]
 other = "免费生成 →"
+
+[useCasesTitle]
+other = "AI头像生成器适合每位用户"
+
+[useCasesSubtitle]
+other = "无论你是哪类创作者，都能在这里找到属于自己的风格"
+
+[useCasesArtistTitle]
+other = "新兴艺术家"
+
+[useCasesArtistDesc]
+other = "发挥你的想象力，获取最佳的创意视觉效果。"
+
+[useCasesCreatorTitle]
+other = "内容创作者"
+
+[useCasesCreatorDesc]
+other = "生成独一无二的个性化虚拟头像，在社交媒体中脱颖而出。"
+
+[useCasesBusinessTitle]
+other = "企业职员"
+
+[useCasesBusinessDesc]
+other = "生成专业有质感的肖像照片，塑造成功自信的商务形象。"
+
+[marqueeTitle]
+other = "用户心声"
+
+[marqueeSubtitle]
+other = "超过 10,000 人的真实选择"
+
+[testimonialsStoryTitle]
+other = "他们的漫改故事"
+
+[testimonialsReadMore]
+other = "查看更多"
+
+[testimonialsReadLess]
+other = "收起"
+
+[testimonialsStory1Title]
+other = "从插画师到漫改重度用户"
+
+[testimonialsStory1Text]
+other = "作为一名自由插画师，我对视觉效果有着近乎苛刻的要求。第一次上传照片试了日系风格，出来的结果让我愣了几秒——笔触的轻重、色彩的过渡，甚至连发丝的细节都处理得恰到好处，完全看不出是 AI 生成的。现在它已经融入了我的创作工作流，每天早上第一件事就是用它生成几张风格参考图。最让我惊喜的是商业授权清晰明了，直接用在甲方项目里完全没有后顾之忧。已经推荐给了整个插画圈的同行。"
+
+[testimonialsStory1Author]
+other = "小樱花"
+
+[testimonialsStory1Role]
+other = "自由插画师"
+
+[testimonialsStory1Style]
+other = "日系风格"
+
+[testimonialsStory2Title]
+other = "从技术好奇到全团使用"
+
+[testimonialsStory2Text]
+other = "说实话一开始只是出于技术好奇才试的。结果像素风格一出来，直接把我拉回了小学在红白机上玩超级玛丽的暑假。那种颗粒感和配色，怀旧得刚刚好，又没有刻意复刻的廉价感。后来我把团队 Slack 头像全换成了像素版，一群后端大佬顶着像素头讨论架构方案，画风突变。现在新同事入职第一件事不是配开发环境，是让我帮他生成头像。"
+
+[testimonialsStory2Author]
+other = "程序员老张"
+
+[testimonialsStory2Role]
+other = "全栈工程师"
+
+[testimonialsStory2Style]
+other = "像素风格"
+
+[testimonialsStory3Title]
+other = "让宝妈也有了专属头像"
+
+[testimonialsStory3Text]
+other = "当妈之后手机相册全是娃，但一直没找到合适的头像。试了漫改的 Q 版风格，上传了一张花卷吃西瓜的照片，等了一分钟——出来的效果可爱到我在沙发上尖叫。大眼睛圆脸蛋，连西瓜籽都变成了萌点。换成微信头像当天，十几个宝妈私信问在哪做的。操作也超简单，手机上传一分钟搞定，对不擅长修图的妈妈太友好了。"
+
+[testimonialsStory3Author]
+other = "花卷妈妈"
+
+[testimonialsStory3Role]
+other = "全职妈妈"
+
+[testimonialsStory3Style]
+other = "Q版风格"

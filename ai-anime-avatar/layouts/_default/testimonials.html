@@ -53,56 +53,53 @@
 </section>
 {{ end }}
 
-<!-- Section 2: All Reviews Grid -->
-{{ if $testimonials }}
-<section class="testimonials-all section">
+<!-- Section 2: User Stories (expandable cards) -->
+<section class="testimonials-stories section watercolor-bg">
   <div class="container">
     <div class="section__header">
-      <h2 class="section__title">{{ i18n "testimonialsAllTitle" }}</h2>
+      <h2 class="section__title">{{ i18n "testimonialsStoryTitle" }}</h2>
     </div>
 
-    <div class="testimonials-all__filters">
-      <div class="testimonials-all__filter-group">
-        <button class="testimonials-all__filter-btn testimonials-all__filter-btn--active" data-filter="all">{{ i18n "testimonialsFilterAll" }}</button>
-        <button class="testimonials-all__filter-btn" data-filter="styleJP">{{ i18n "styleJP" }}</button>
-        <button class="testimonials-all__filter-btn" data-filter="styleKR">{{ i18n "styleKR" }}</button>
-        <button class="testimonials-all__filter-btn" data-filter="styleUS">{{ i18n "styleUS" }}</button>
-        <button class="testimonials-all__filter-btn" data-filter="styleQ">{{ i18n "styleQ" }}</button>
-        <button class="testimonials-all__filter-btn" data-filter="stylePixel">{{ i18n "stylePixel" }}</button>
-        <button class="testimonials-all__filter-btn" data-filter="styleCyber">{{ i18n "styleCyber" }}</button>
-      </div>
-    </div>
+    <div class="testimonials-stories__grid">
 
-    <div class="testimonials-all__grid">
-      {{ range $testimonials }}
-      <div class="testimonials-all__card" data-style="{{ .style | default "all" }}">
-        <div class="testimonials-all__card-header">
-          <div class="testimonials-all__avatar">
-            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
-              <circle cx="22" cy="22" r="21" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
-              <circle cx="22" cy="17" r="7" fill="var(--color-primary-light)" opacity="0.6"/>
-              <ellipse cx="22" cy="34" rx="14" ry="9" fill="var(--color-primary-light)" opacity="0.4"/>
+      {{ range seq 3 }}
+      {{ $n := printf "%d" . }}
+      <div class="story-card" id="story-{{ . }}">
+        <div class="story-card__header">
+          <div class="story-card__avatar">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="23" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
+              <circle cx="24" cy="18" r="8" fill="var(--color-primary-light)" opacity="0.6"/>
+              <ellipse cx="24" cy="37" rx="16" ry="10" fill="var(--color-primary-light)" opacity="0.4"/>
             </svg>
           </div>
-          <div>
-            <span class="testimonials-all__name">{{ .name }}</span>
-            {{ if .style }}
-            <span class="testimonials-all__style-tag">{{ i18n .style }}</span>
-            {{ end }}
+          <div class="story-card__meta">
+            <h3 class="story-card__title">{{ i18n (printf "testimonialsStory%sTitle" $n) }}</h3>
+            <span class="story-card__author">{{ i18n (printf "testimonialsStory%sAuthor" $n) }}</span>
+            <span class="story-card__divider">·</span>
+            <span class="story-card__role">{{ i18n (printf "testimonialsStory%sRole" $n) }}</span>
+            <span class="story-card__style-tag">{{ i18n (printf "testimonialsStory%sStyle" $n) }}</span>
           </div>
         </div>
-        <div class="testimonials-all__stars">
-          {{ range seq .rating }}
-          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
-          {{ end }}
+
+        <div class="story-card__body">
+          <div class="story-card__preview">
+            <p>{{ i18n (printf "testimonialsStory%sText" $n) }}</p>
+          </div>
         </div>
-        <p class="testimonials-all__text">"{{ .text }}"</p>
+
+        <button class="story-card__toggle" data-story="{{ . }}" aria-expanded="false">
+          <span class="story-card__toggle-text">{{ i18n "testimonialsReadMore" }}</span>
+          <svg class="story-card__toggle-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
       {{ end }}
+
     </div>
   </div>
 </section>
-{{ end }}
 
 <!-- Section 3: Stats Bar -->
 <section class="testimonials-stats section">
@@ -135,3 +132,15 @@
 </section>
 
 {{ end }}
+
+<script>
+document.querySelectorAll('.story-card__toggle').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var card = this.closest('.story-card');
+    var expanded = card.classList.toggle('story-card--expanded');
+    this.setAttribute('aria-expanded', expanded);
+    this.querySelector('.story-card__toggle-text').textContent =
+      expanded ? '{{ i18n "testimonialsReadLess" }}' : '{{ i18n "testimonialsReadMore" }}';
+  });
+});
+</script>

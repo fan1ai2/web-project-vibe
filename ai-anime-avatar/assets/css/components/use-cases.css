@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Use Cases — 3-card section showing who the product is for
+   ========================================================================== */
+
+.use-cases {
+  padding-top: 0;
+}
+
+.use-cases .section__header {
+  margin-bottom: 40px;
+}
+
+.use-cases__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.use-case-card {
+  position: relative;
+  padding: 40px 28px 36px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-xl);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.use-case-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.use-case-card--artist::before {
+  background: radial-gradient(ellipse 240px 180px at 50% 30%, rgba(212, 167, 116, 0.10), transparent 70%);
+}
+
+.use-case-card--creator::before {
+  background: radial-gradient(ellipse 240px 180px at 50% 30%, rgba(196, 168, 130, 0.10), transparent 70%);
+}
+
+.use-case-card--business::before {
+  background: radial-gradient(ellipse 240px 180px at 50% 30%, rgba(232, 180, 184, 0.10), transparent 70%);
+}
+
+.use-case-card:hover::before {
+  opacity: 1;
+}
+
+.use-case-card:hover {
+  transform: translateY(-4px);
+}
+
+.use-case-card:active {
+  transform: scale(0.98);
+}
+
+.use-case-card__icon {
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+}
+
+.use-case-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.use-case-card__title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-serif);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.use-case-card__desc {
+  position: relative;
+  z-index: 1;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 859px) {
+  .use-cases__grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    gap: 16px;
+  }
+
+  .use-case-card {
+    padding: 32px 24px 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .use-case-card {
+    transition: none;
+  }
+}
