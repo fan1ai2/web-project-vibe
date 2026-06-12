@@ -10,8 +10,8 @@
 
     <nav class="header__nav" role="navigation" aria-label="Main navigation">
       <a href="{{ .Site.Home.Permalink }}" class="header__nav-link">{{ i18n "navHome" }}</a>
-      <a href="{{ "create" | relLangURL }}" class="header__nav-link">{{ i18n "navCreate" }}</a>
-      <a href="{{ "testimonials" | relLangURL }}" class="header__nav-link">{{ i18n "navTestimonials" }}</a>
+      <a href="{{ "create" | relLangURL }}" class="header__nav-link" data-gate="{{ "create" | relLangURL }}">{{ i18n "navCreate" }}</a>
+      <a href="{{ "testimonials" | relLangURL }}" class="header__nav-link" data-gate="{{ "testimonials" | relLangURL }}">{{ i18n "navTestimonials" }}</a>
       <a href="#showcase" class="header__nav-link">{{ i18n "navFeatures" }}</a>
       <a href="#how-it-works" class="header__nav-link">{{ i18n "navHowItWorks" }}</a>
       <a href="#faq" class="header__nav-link">{{ i18n "navFAQ" }}</a>
@@ -45,8 +45,8 @@
 
   <nav id="mobile-nav" class="header__mobile-nav" role="navigation" aria-label="Mobile navigation">
     <a href="{{ .Site.Home.Permalink }}" class="header__mobile-link">{{ i18n "navHome" }}</a>
-    <a href="{{ "create" | relLangURL }}" class="header__mobile-link">{{ i18n "navCreate" }}</a>
-    <a href="{{ "testimonials" | relLangURL }}" class="header__mobile-link">{{ i18n "navTestimonials" }}</a>
+    <a href="{{ "create" | relLangURL }}" class="header__mobile-link" data-gate="{{ "create" | relLangURL }}">{{ i18n "navCreate" }}</a>
+    <a href="{{ "testimonials" | relLangURL }}" class="header__mobile-link" data-gate="{{ "testimonials" | relLangURL }}">{{ i18n "navTestimonials" }}</a>
     <a href="#showcase" class="header__mobile-link">{{ i18n "navFeatures" }}</a>
     <a href="#how-it-works" class="header__mobile-link">{{ i18n "navHowItWorks" }}</a>
     <a href="#faq" class="header__mobile-link">{{ i18n "navFAQ" }}</a>

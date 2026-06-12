@@ -353,6 +353,18 @@
   var mobileNav = document.getElementById('mobile-nav');
   var menuBtn = document.getElementById('menu-btn');
 
+  // Auth gate: intercept clicks on gated elements
+  var pendingRedirect = '';
+  document.querySelectorAll('[data-gate]').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      if (!localStorage.getItem('user')) {
+        e.preventDefault();
+        pendingRedirect = this.getAttribute('data-gate') || this.getAttribute('href');
+        openModal(e);
+      }
+    });
+  });
+
   function openModal(e) {
     e.preventDefault();
     if (modal) {
@@ -443,7 +455,13 @@
       API.login(email, pwd, captchaCode ? authCaptchaId : '', captchaCode).then(function(data) {
         localStorage.setItem('user', JSON.stringify(data.data.member || data.data));
         showAuthToast('Login successful!', 'success');
-        setTimeout(function() { closeModal(); }, 800);
+        setTimeout(function() {
+          closeModal();
+          if (pendingRedirect) {
+            window.location.href = pendingRedirect;
+            pendingRedirect = '';
+          }
+        }, 800);
       }).catch(function(err) {
         showAuthToast(err.message || 'Login failed', 'error');
         refreshAuthCaptcha();
