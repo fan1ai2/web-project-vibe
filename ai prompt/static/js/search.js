@@ -1,6 +1,19 @@
 (function() {
   'use strict';
 
+  // Hero search — must run before the early return below
+  var heroInput = document.getElementById('hero-search-input');
+  var heroBtn = document.getElementById('hero-search-btn');
+  if (heroInput && heroBtn) {
+    function doHeroSearch() {
+      window.location.href = '/tools/prompt-generator/';
+    }
+    heroBtn.addEventListener('click', doHeroSearch);
+    heroInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') doHeroSearch();
+    });
+  }
+
   var searchInput = document.getElementById('prompts-search');
   var grid = document.getElementById('prompts-grid');
   if (!searchInput || !grid) return;
@@ -36,21 +49,6 @@
   searchInput.addEventListener('input', function() {
     filter(this.value);
   });
-
-  var heroInput = document.getElementById('hero-search-input');
-  var heroBtn = document.getElementById('hero-search-btn');
-  if (heroInput && heroBtn) {
-    function doHeroSearch() {
-      var q = heroInput.value.trim();
-      if (q) {
-        window.location.href = '/prompts/?q=' + encodeURIComponent(q);
-      }
-    }
-    heroBtn.addEventListener('click', doHeroSearch);
-    heroInput.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') doHeroSearch();
-    });
-  }
 
   if (window.location.search) {
     var params = new URLSearchParams(window.location.search);

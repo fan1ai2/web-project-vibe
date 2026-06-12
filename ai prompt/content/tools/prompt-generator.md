@@ -19,7 +19,6 @@ seo:
     <div id="mock-output-prompt-gen" class="tool-mock-output"></div>
   </div>
 </div>
-<p class="mock-notice">⚠️ 以上为前端演示效果，接入AI API后可实现真实功能。</p>
 
 ## 功能特色
 

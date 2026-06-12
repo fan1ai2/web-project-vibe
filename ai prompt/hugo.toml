@@ -20,6 +20,10 @@ summaryLength = 80
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
 
+[[server.proxy]]
+  from = "/api/"
+  to = "http://localhost:18110/api/"
+
 [privacy]
   [privacy.googleAnalytics]
     disable = true

@@ -54,7 +54,7 @@
     </header>
     <div class="tools-grid">
       {{ range .Pages }}
-      <a href="{{ .Permalink }}" class="tool-card">
+      <a href="{{ .RelPermalink }}" class="tool-card">
         <span class="tool-icon">
           {{ $icon := "" }}
           {{ if in .Title "提示词生成器" }}{{ $icon = "sparkles" }}
@@ -80,7 +80,7 @@
     <h1>{{ .Title }}</h1>
     <div class="generic-list">
       {{ range .Pages }}
-      <a href="{{ .Permalink }}" class="generic-card">
+      <a href="{{ .RelPermalink }}" class="generic-card">
         <h3>{{ .Title }}</h3>
         <p>{{ .Summary | plainify | truncate 120 }}</p>
       </a>

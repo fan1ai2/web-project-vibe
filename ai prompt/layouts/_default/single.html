@@ -94,3 +94,9 @@
 </article>
 {{ end }}
 {{ end }}
+
+{{ define "scripts" }}
+{{ if eq .Section "tools" }}
+<script src="{{ "js/tools-mock.js" | relURL }}" defer></script>
+{{ end }}
+{{ end }}

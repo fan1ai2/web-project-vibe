@@ -9,8 +9,8 @@
     </div>
     <p class="hero-subtitle">精选 100+ 条实用中文提示词<br>覆盖 8 大场景 &middot; 一键复制即用</p>
     <div class="hero-search">
-      <input type="text" id="hero-search-input" class="search-input" placeholder="搜索提示词..." autocomplete="off">
-      <button id="hero-search-btn" class="search-btn" aria-label="搜索">
+      <input type="text" id="hero-search-input" class="search-input" placeholder="AI Prompt..." autocomplete="off">
+      <button id="hero-search-btn" class="search-btn" aria-label="生成提示词">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
     </div>
@@ -36,7 +36,7 @@
       </a>
       {{ end }}
       <div class="categories-cta">
-        <a href="{{ "/prompts/" | relURL }}" class="btn-secondary">浏览全部分类 &rarr;</a>
+        <a href="{{ "/prompts/" | relURL }}" class="btn-secondary auth-gate">浏览全部分类 &rarr;</a>
       </div>
     </div>
   </div>
@@ -52,14 +52,14 @@
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="{{ "/prompts/" | relURL }}" class="btn-primary">查看全部 96 条提示词</a>
+      <a href="{{ "/prompts/" | relURL }}" class="btn-primary auth-gate">查看全部 96 条提示词</a>
     </div>
   </div>
 </section>
 
 <section class="section tools-section">
   <div class="container">
-    <h2 class="section-title">附录：在线AI工具箱</h2>
+    <h2 class="section-title">在线AI工具箱</h2>
     <p class="section-desc">7 款实用工具，前端演示体验</p>
     <div class="tools-grid">
       {{ range .Site.Data.tools }}

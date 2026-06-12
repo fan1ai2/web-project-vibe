@@ -10,6 +10,8 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  <script src="{{ "js/auth-state.js" | relURL }}" defer></script>
+  <script src="{{ "js/auth-gate.js" | relURL }}" defer></script>
   <script src="{{ "js/copy.js" | relURL }}" defer></script>
   <script src="{{ "js/scroll-reveal.js" | relURL }}" defer></script>
   {{ block "scripts" . }}{{ end }}

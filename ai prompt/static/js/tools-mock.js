@@ -1,6 +1,14 @@
 (function() {
   'use strict';
 
+  function requireLogin(e) {
+    if (!window.requireAuth || !window.requireAuth()) {
+      if (e && e.target) { e.target.disabled = false; }
+      return false;
+    }
+    return true;
+  }
+
   function typewriter(el, text, speed, callback) {
     el.classList.add('active');
     var i = 0;
@@ -42,7 +50,8 @@
 
   var genBtn = getMockBtn('prompt-generator');
   if (genBtn) {
-    genBtn.addEventListener('click', function() {
+    genBtn.addEventListener('click', function(e) {
+      if (!requireLogin(e)) return;
       var input = document.getElementById('mock-input-prompt-gen');
       var output = document.getElementById('mock-output-prompt-gen');
       if (!input || !output) return;
@@ -66,9 +75,11 @@
     });
   }
 
+
   var humBtn = getMockBtn('text-humanizer');
   if (humBtn) {
-    humBtn.addEventListener('click', function() {
+    humBtn.addEventListener('click', function(e) {
+      if (!requireLogin(e)) return;
       var input = document.getElementById('mock-input-text-humanizer');
       var output = document.getElementById('mock-output-text-humanizer');
       if (!input || !output) return;
@@ -90,7 +101,8 @@
 
   var ocrBtn = getMockBtn('image-to-text');
   if (ocrBtn) {
-    ocrBtn.addEventListener('click', function() {
+    ocrBtn.addEventListener('click', function(e) {
+      if (!requireLogin(e)) return;
       var output = document.getElementById('mock-output-image-to-text');
       if (!output) return;
       ocrBtn.disabled = true;
@@ -114,7 +126,8 @@
 
   var imgPromptBtn = getMockBtn('image-to-prompt');
   if (imgPromptBtn) {
-    imgPromptBtn.addEventListener('click', function() {
+    imgPromptBtn.addEventListener('click', function(e) {
+      if (!requireLogin(e)) return;
       var output = document.getElementById('mock-output-image-to-prompt');
       if (!output) return;
       imgPromptBtn.disabled = true;
@@ -137,7 +150,8 @@
 
   var detectBtn = getMockBtn('ai-detector');
   if (detectBtn) {
-    detectBtn.addEventListener('click', function() {
+    detectBtn.addEventListener('click', function(e) {
+      if (!requireLogin(e)) return;
       var output = document.getElementById('mock-output-ai-detector');
       if (!output) return;
       detectBtn.disabled = true;
@@ -164,7 +178,8 @@
 
   var checkBtn = getMockBtn('prompt-checker');
   if (checkBtn) {
-    checkBtn.addEventListener('click', function() {
+    checkBtn.addEventListener('click', function(e) {
+      if (!requireLogin(e)) return;
       var input = document.getElementById('mock-input-prompt-checker');
       var output = document.getElementById('mock-output-prompt-checker');
       if (!input || !output) return;
@@ -192,7 +207,8 @@
 
   var vidBtn = getMockBtn('video-prompt');
   if (vidBtn) {
-    vidBtn.addEventListener('click', function() {
+    vidBtn.addEventListener('click', function(e) {
+      if (!requireLogin(e)) return;
       var output = document.getElementById('mock-output-video-prompt');
       if (!output) return;
       vidBtn.disabled = true;
