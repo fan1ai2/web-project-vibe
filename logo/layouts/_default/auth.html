@@ -1,0 +1,271 @@
+{{ define "main" }}
+
+<section class="auth-page">
+  <div class="auth-page-card">
+
+    <div class="auth-page-header">
+      <svg width="36" height="36" viewBox="0 0 28 28" fill="none">
+        <rect x="2" y="2" width="24" height="24" rx="4" stroke="var(--c-accent)" stroke-width="1.8" transform="rotate(12 14 14)"/>
+        <circle cx="14" cy="14" r="5" fill="var(--c-accent)" opacity="0.85"/>
+        <circle cx="14" cy="14" r="2.2" fill="var(--c-bg)"/>
+      </svg>
+      <h1>LogoForge</h1>
+      <p id="authPageMsg">登录或注册账号，开始创作你的品牌 Logo。</p>
+    </div>
+
+    <div class="auth-page-tabs">
+      <button class="auth-page-tab active" data-tab="login">登录</button>
+      <button class="auth-page-tab" data-tab="register">注册</button>
+    </div>
+
+    <div class="auth-page-status" id="authPageStatus" style="display:none"></div>
+
+    <!-- Login Form -->
+    <form id="authLoginForm" class="auth-page-form" autocomplete="off">
+      <div class="auth-page-field">
+        <label for="loginUser">用户名</label>
+        <input type="text" id="loginUser" name="username" placeholder="输入用户名" required autocomplete="username">
+      </div>
+      <div class="auth-page-field">
+        <label for="loginPass">密码</label>
+        <input type="password" id="loginPass" name="password" placeholder="输入密码" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%">登录</button>
+      <p class="auth-page-switch">还没有账号？<a data-tab-link="register">立即注册</a></p>
+    </form>
+
+    <!-- Register Form -->
+    <form id="authRegisterForm" class="auth-page-form" style="display:none" autocomplete="off">
+      <div class="auth-page-field">
+        <label for="regUser">用户名</label>
+        <input type="text" id="regUser" name="username" placeholder="设置用户名" required autocomplete="username">
+      </div>
+      <div class="auth-page-field">
+        <label for="regPass">设置密码</label>
+        <input type="password" id="regPass" name="password" placeholder="至少 6 位" required autocomplete="new-password" minlength="6">
+      </div>
+      <div class="auth-page-field">
+        <label for="regConfirm">确认密码</label>
+        <input type="password" id="regConfirm" name="confirm" placeholder="再次输入密码" required minlength="6">
+      </div>
+      <div class="auth-page-field">
+        <label for="regCaptcha">验证码</label>
+        <div style="display:flex;gap:8px;align-items:center">
+          <input type="text" id="regCaptcha" name="captchaCode" placeholder="输入验证码" maxlength="6" autocomplete="off" style="flex:1">
+          <img id="captchaImg" src="" alt="验证码" style="display:none; height:44px; cursor:pointer; border:1px solid var(--c-line); border-radius:6px;flex-shrink:0" title="点击刷新验证码">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%">注册</button>
+      <p class="auth-page-switch">已有账号？<a data-tab-link="login">返回登录</a></p>
+    </form>
+
+    <!-- Logged In State -->
+    <div id="authLoggedIn" style="display:none; text-align:center">
+      <div class="auth-page-success-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--c-accent)" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+      </div>
+      <h2 style="margin:0 0 var(--s-2)">已登录</h2>
+      <p style="color:var(--c-faint);margin:0 0 var(--s-5)" id="authLoggedInUser"></p>
+      <button class="btn btn-outline-accent" id="authLogoutBtn2">退出登录</button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  'use strict';
+  var API = window.location.port === '1313'
+    ? window.location.protocol + '//' + window.location.hostname + ':18110'
+    : '';
+  var captchaId = '';
+
+  function api(path, method, body) {
+    var opts = {
+      method: method || 'GET',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include'
+    };
+    if (body) opts.body = JSON.stringify(body);
+    return fetch(API + path, opts).then(function(res) {
+      return res.json().then(function(data) {
+        if (data.code !== 200) throw new Error(data.msg || '请求失败');
+        return data.data;
+      });
+    });
+  }
+
+  function setStatus(msg, ok) {
+    var el = document.getElementById('authPageStatus');
+    el.textContent = msg;
+    el.className = 'auth-page-status ' + (ok ? 'auth-page-status-ok' : 'auth-page-status-err');
+    el.style.display = '';
+    setTimeout(function() { el.style.display = 'none'; }, 5000);
+  }
+
+  function showLoggedIn(member) {
+    document.getElementById('authLoginForm').style.display = 'none';
+    document.getElementById('authRegisterForm').style.display = 'none';
+    document.querySelector('.auth-page-tabs').style.display = 'none';
+    document.getElementById('authLoggedIn').style.display = '';
+    document.getElementById('authLoggedInUser').textContent = '当前用户: ' + (member.nickname || member.username || '');
+    document.getElementById('authPageMsg').textContent = '你已登录，可以开始使用创作台。';
+  }
+
+  function refreshCaptcha() {
+    api('/api/captcha/generate', 'POST').then(function(data) {
+      captchaId = data.captcha_id;
+      var img = document.getElementById('captchaImg');
+      if (img) { img.src = data.captcha_image; img.style.display = ''; }
+      var codeInput = document.getElementById('regCaptcha');
+      if (codeInput) codeInput.value = '';
+    }).catch(function() {
+      var img = document.getElementById('captchaImg');
+      if (img) img.style.display = 'none';
+    });
+  }
+
+  // Tab switching
+  document.querySelectorAll('.auth-page-tab').forEach(function(t) {
+    t.addEventListener('click', function() {
+      document.querySelectorAll('.auth-page-tab').forEach(function(x) { x.classList.remove('active'); });
+      t.classList.add('active');
+      var tab = t.dataset.tab;
+      document.getElementById('authLoginForm').style.display = tab === 'login' ? '' : 'none';
+      document.getElementById('authRegisterForm').style.display = tab === 'register' ? '' : 'none';
+      document.getElementById('authPageStatus').style.display = 'none';
+      if (tab === 'register') refreshCaptcha();
+    });
+  });
+
+  document.querySelectorAll('[data-tab-link]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var tab = a.dataset.tabLink;
+      document.querySelector('.auth-page-tab[data-tab="' + tab + '"]').click();
+    });
+  });
+
+  // Captcha click to refresh
+  var captchaImg = document.getElementById('captchaImg');
+  if (captchaImg) captchaImg.addEventListener('click', refreshCaptcha);
+
+  // Check if already logged in
+  api('/api/me').then(function(data) {
+    showLoggedIn(data.member);
+  }).catch(function() {});
+
+  // Login
+  document.getElementById('authLoginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = this.querySelector('button[type="submit"]');
+    var username = document.getElementById('loginUser').value.trim();
+    var password = document.getElementById('loginPass').value;
+    if (!username) { setStatus('请输入用户名', false); return; }
+    btn.disabled = true; btn.textContent = '登录中...';
+    api('/api/auth/login', 'POST', {username: username, password: password})
+      .then(function(data) {
+        setStatus('登录成功', true);
+        showLoggedIn(data.member);
+      })
+      .catch(function(err) { setStatus(err.message, false); btn.disabled = false; btn.textContent = '登录'; });
+  });
+
+  // Register
+  document.getElementById('authRegisterForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = this.querySelector('button[type="submit"]');
+    var username = document.getElementById('regUser').value.trim();
+    var password = document.getElementById('regPass').value;
+    var confirm = document.getElementById('regConfirm').value;
+    var captchaCode = document.getElementById('regCaptcha').value.trim();
+    if (!username) { setStatus('请输入用户名', false); return; }
+    if (password.length < 6) { setStatus('密码至少 6 位', false); return; }
+    if (password !== confirm) { setStatus('两次密码输入不一致', false); return; }
+    if (captchaId && !captchaCode) { setStatus('请输入验证码', false); return; }
+    btn.disabled = true; btn.textContent = '注册中...';
+    var body = { username: username, password: password };
+    if (captchaId) { body.captchaId = captchaId; body.captchaCode = captchaCode; }
+    api('/api/auth/register', 'POST', body)
+      .then(function(data) {
+        // Auto-login after registration
+        return api('/api/auth/login', 'POST', {username: username, password: password});
+      })
+      .then(function(data) {
+        setStatus('注册成功', true);
+        showLoggedIn(data.member);
+      })
+      .catch(function(err) { setStatus(err.message, false); btn.disabled = false; btn.textContent = '注册'; refreshCaptcha(); });
+  });
+
+  // Logout
+  document.getElementById('authLogoutBtn2').addEventListener('click', function() {
+    api('/api/auth/logout', 'POST').then(function() {
+      location.reload();
+    }).catch(function() {
+      location.reload();
+    });
+  });
+})();
+</script>
+
+{{ end }}
+
+{{ define "head_extra" }}
+<style>
+.auth-page {
+  min-height: calc(100vh - 200px);
+  display: flex; align-items: center; justify-content: center;
+  padding: var(--s-10) var(--s-4);
+}
+.auth-page-card {
+  width: 100%; max-width: 420px;
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: 16px;
+  padding: var(--s-10) var(--s-8);
+}
+.auth-page-header { text-align: center; margin-bottom: var(--s-7); }
+.auth-page-header h1 { font-size: 1.5rem; font-weight: 700; margin: var(--s-3) 0 var(--s-2); }
+.auth-page-header p { color: var(--c-faint); font-size: 0.85rem; margin: 0; }
+
+.auth-page-tabs { display: flex; gap: var(--s-2); margin-bottom: var(--s-6); }
+.auth-page-tab {
+  flex: 1; padding: var(--s-3);
+  border: 1px solid var(--c-line); border-radius: 8px;
+  background: transparent; color: var(--c-muted);
+  font-size: 0.9rem; font-weight: 500; cursor: pointer;
+  transition: all 0.2s;
+}
+.auth-page-tab.active {
+  background: var(--c-accent); color: #fff; border-color: var(--c-accent);
+}
+
+.auth-page-form { display: flex; flex-direction: column; gap: var(--s-4); }
+.auth-page-field { display: flex; flex-direction: column; gap: 4px; }
+.auth-page-field label { font-size: 0.8rem; font-weight: 500; color: var(--c-text); }
+.auth-page-field input {
+  padding: var(--s-3) var(--s-4); border: 1px solid var(--c-line); border-radius: 8px;
+  font-size: 0.95rem; background: var(--c-bg); color: var(--c-text);
+  outline: none; transition: border 0.2s;
+}
+.auth-page-field input:focus { border-color: var(--c-accent); }
+
+.auth-page-switch { text-align: center; font-size: 0.8rem; color: var(--c-faint); margin: 0; }
+.auth-page-switch a { color: var(--c-accent); cursor: pointer; font-weight: 500; }
+
+.auth-page-status { padding: var(--s-3) var(--s-4); border-radius: 8px; font-size: 0.85rem; margin-bottom: var(--s-4); text-align: center; }
+.auth-page-status-err { background: #fef2f2; color: #c7513b; border: 1px solid #fecaca; }
+.auth-page-status-ok { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+
+.auth-page-success-icon { margin-bottom: var(--s-4); }
+
+[data-theme="dark"] .auth-page-status-err { background: #3b1111; color: #fca5a5; border-color: #7f1d1d; }
+[data-theme="dark"] .auth-page-status-ok { background: #052e16; color: #86efac; border-color: #14532d; }
+[data-theme="dark"] .auth-page-field input { background: var(--c-bg); }
+
+@media (max-width: 480px) {
+  .auth-page-card { padding: var(--s-7) var(--s-5); }
+}
+</style>
+{{ end }}

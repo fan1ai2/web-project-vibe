@@ -1,65 +1,5 @@
 {{ define "main" }}
 
-<!-- Auth Modal -->
-<div class="auth-modal-overlay" id="authModal">
-  <div class="auth-modal">
-    <button class="auth-modal-close" id="authModalClose" aria-label="关闭">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    </button>
-
-    <div class="auth-header">
-      <svg class="auth-logo" width="32" height="32" viewBox="0 0 28 28" fill="none">
-        <rect x="2" y="2" width="24" height="24" rx="4" stroke="currentColor" stroke-width="1.8" transform="rotate(12 14 14)"/>
-        <circle cx="14" cy="14" r="5" fill="currentColor" opacity="0.85"/>
-        <circle cx="14" cy="14" r="2.2" fill="var(--c-surface)"/>
-      </svg>
-      <p class="auth-subtitle">登录后即可使用创作台</p>
-    </div>
-
-    <div class="auth-tabs">
-      <button class="auth-tab active" data-tab="login">登录</button>
-      <button class="auth-tab" data-tab="register">注册</button>
-    </div>
-
-    <form class="auth-form" id="loginForm" autocomplete="off">
-      <div class="auth-form-group">
-        <label for="loginEmail">邮箱</label>
-        <input type="email" id="loginEmail" name="email" placeholder="your@email.com" required autocomplete="email">
-      </div>
-      <div class="auth-form-group">
-        <label for="loginPassword">密码</label>
-        <input type="password" id="loginPassword" name="password" placeholder="至少 6 位" required autocomplete="current-password">
-      </div>
-      <div class="auth-form-error"></div>
-      <button type="submit">登录</button>
-    </form>
-
-    <form class="auth-form" id="registerForm" style="display:none" autocomplete="off">
-      <div class="auth-form-group">
-        <label for="registerEmail">邮箱</label>
-        <div class="input-row">
-          <input type="email" id="registerEmail" name="email" placeholder="your@email.com" required autocomplete="email">
-          <button type="button" class="btn btn-sm send-code-btn" id="sendCodeBtn">发送验证码</button>
-        </div>
-      </div>
-      <div class="auth-form-group">
-        <label for="regVerifyCode">验证码</label>
-        <input type="text" id="regVerifyCode" name="code" placeholder="6 位验证码" maxlength="6" required autocomplete="one-time-code" inputmode="numeric">
-      </div>
-      <div class="auth-form-group">
-        <label for="registerPassword">设置密码</label>
-        <input type="password" id="registerPassword" name="password" placeholder="至少 6 位" required autocomplete="new-password">
-      </div>
-      <div class="auth-form-group">
-        <label for="registerConfirm">确认密码</label>
-        <input type="password" id="registerConfirm" name="confirm" placeholder="再次输入密码" required autocomplete="new-password">
-      </div>
-      <div class="auth-form-error"></div>
-      <button type="submit">注册</button>
-    </form>
-  </div>
-</div>
-
 <div class="generator-page" id="generatorApp">
   <div class="generator-layout">
     <aside class="filter-panel" id="filterPanel">
@@ -86,7 +26,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   window.LogoForgeAuth.onAuthReady(function(user) {
     if (!user) {
-      window.LogoForgeAuth.showModal();
+      window.LogoForgeAuth.showModal(true);
     }
   });
 });

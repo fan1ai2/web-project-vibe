@@ -1,55 +1,32 @@
 (function() {
   'use strict';
 
-  var API = 'http://localhost:8080';
-  var TOKEN_KEY = 'logoforge_token';
-  var USER_KEY = 'logoforge_user';
+  // Use port 18110 in dev (Hugo on 1313), relative /api in production
+  var API = window.location.port === '1313'
+    ? window.location.protocol + '//' + window.location.hostname + ':18110'
+    : '';
 
   var currentUser = null;
   var authReadyCallbacks = [];
+  var captchaId = '';
+  var captchaImage = '';
+  var authRequired = false;
 
-  function getToken() {
-    return localStorage.getItem(TOKEN_KEY);
-  }
-
-  function setAuth(token, user) {
-    localStorage.setItem(TOKEN_KEY, token);
-    localStorage.setItem(USER_KEY, JSON.stringify(user));
-    currentUser = user;
-    updateUI();
-  }
-
-  function clearAuth() {
-    localStorage.removeItem(TOKEN_KEY);
-    localStorage.removeItem(USER_KEY);
-    currentUser = null;
-    updateUI();
-  }
-
-  function isLoggedIn() {
-    return !!getToken();
-  }
-
-  function getUser() {
-    if (currentUser) return currentUser;
-    try {
-      var u = JSON.parse(localStorage.getItem(USER_KEY));
-      if (u) currentUser = u;
-    } catch(e) {}
-    return currentUser;
-  }
+  function isLoggedIn() { return !!currentUser; }
+  function getUser() { return currentUser; }
 
   function onAuthReady(fn) {
-    if (currentUser !== undefined) {
-      fn(currentUser);
-    } else {
-      authReadyCallbacks.push(fn);
-    }
+    if (currentUser !== null) { fn(currentUser); }
+    else { authReadyCallbacks.push(fn); }
   }
 
   function notifyReady(user) {
     authReadyCallbacks.forEach(function(fn) { fn(user); });
     authReadyCallbacks = [];
+  }
+
+  function displayName(user) {
+    return user.nickname || user.username || '';
   }
 
   function updateUI() {
@@ -58,10 +35,7 @@
     var logoutBtn = document.getElementById('authLogoutBtn');
 
     if (currentUser) {
-      if (userEl) {
-        userEl.textContent = currentUser.email;
-        userEl.style.display = '';
-      }
+      if (userEl) { userEl.textContent = displayName(currentUser); userEl.style.display = ''; }
       if (loginBtn) loginBtn.style.display = 'none';
       if (logoutBtn) logoutBtn.style.display = '';
     } else {
@@ -74,28 +48,32 @@
   function api(path, method, body) {
     var opts = {
       method: method || 'GET',
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include'
     };
-    var token = getToken();
-    if (token) opts.headers['Authorization'] = 'Bearer ' + token;
     if (body) opts.body = JSON.stringify(body);
 
     return fetch(API + path, opts).then(function(res) {
       return res.json().then(function(data) {
-        if (!res.ok) throw new Error(data.error || '请求失败');
-        return data;
+        if (data.code !== 200) throw new Error(data.msg || '请求失败');
+        return data.data;
       });
     });
   }
 
-  function showModal() {
+  function showModal(required) {
+    authRequired = !!required;
     var modal = document.getElementById('authModal');
-    if (modal) modal.classList.add('open');
+    if (modal) { modal.classList.add('open'); refreshCaptcha(); }
   }
 
   function hideModal() {
     var modal = document.getElementById('authModal');
     if (modal) modal.classList.remove('open');
+    if (authRequired && !currentUser) {
+      authRequired = false;
+      window.location.href = '/';
+    }
   }
 
   function switchTab(tab) {
@@ -103,79 +81,79 @@
     var registerForm = document.getElementById('registerForm');
     var tabs = document.querySelectorAll('.auth-tab');
 
-    tabs.forEach(function(t) {
-      t.classList.toggle('active', t.dataset.tab === tab);
-    });
-
+    tabs.forEach(function(t) { t.classList.toggle('active', t.dataset.tab === tab); });
     if (loginForm) loginForm.style.display = tab === 'login' ? '' : 'none';
     if (registerForm) registerForm.style.display = tab === 'register' ? '' : 'none';
-
-    // Clear errors on tab switch
-    [loginForm, registerForm].forEach(function(f) {
-      if (f) setFormError(f, '');
-    });
+    [loginForm, registerForm].forEach(function(f) { if (f) setFormError(f, ''); });
+    if (tab === 'register') refreshCaptcha();
   }
 
   function setFormError(form, msg) {
     var el = form.querySelector('.auth-form-error');
-    if (el) {
-      el.textContent = msg;
-      el.style.display = msg ? '' : 'none';
-    }
+    if (el) { el.textContent = msg; el.style.display = msg ? '' : 'none'; }
   }
 
   function setFormLoading(form, loading) {
     var btn = form.querySelector('button[type="submit"]');
     if (btn) {
       btn.disabled = loading;
-      var labels = {
-        'loginForm': '登录',
-        'registerForm': '注册'
-      };
-      var label = labels[form.id] || '提交';
-      btn.textContent = loading ? '请稍候...' : label;
+      var labels = { 'loginForm': '登录', 'registerForm': '注册' };
+      btn.textContent = loading ? '请稍候...' : (labels[form.id] || '提交');
     }
   }
 
+  function refreshCaptcha() {
+    api('/api/captcha/generate', 'POST').then(function(data) {
+      captchaId = data.captcha_id;
+      captchaImage = data.captcha_image;
+      var img = document.getElementById('captchaImg');
+      if (img) { img.src = captchaImage; img.style.display = ''; }
+      var codeInput = document.getElementById('registerCaptcha');
+      if (codeInput) codeInput.value = '';
+    }).catch(function() {
+      // captcha may be disabled server-side, hide the image
+      var img = document.getElementById('captchaImg');
+      if (img) img.style.display = 'none';
+    });
+  }
+
   function init() {
-    var token = getToken();
-    if (token) {
-      api('/api/me').then(function(user) {
-        currentUser = user;
-        updateUI();
-        notifyReady(user);
-      }).catch(function() {
-        clearAuth();
-        notifyReady(null);
-      });
-    } else {
+    // Check existing session via /api/me
+    api('/api/me').then(function(data) {
+      currentUser = data.member;
+      updateUI();
+      notifyReady(currentUser);
+    }).catch(function() {
       currentUser = null;
+      updateUI();
       notifyReady(null);
-    }
+    });
 
     // Modal events
     var modal = document.getElementById('authModal');
     if (modal) {
-      modal.addEventListener('click', function(e) {
-        if (e.target === modal) hideModal();
-      });
+      modal.addEventListener('click', function(e) { if (e.target === modal) hideModal(); });
     }
 
     // Login button
     var loginBtn = document.getElementById('authLoginBtn');
     if (loginBtn) {
-      loginBtn.addEventListener('click', function() {
-        showModal();
-        switchTab('login');
-      });
+      loginBtn.addEventListener('click', function() { showModal(); switchTab('login'); });
     }
 
     // Logout button
     var logoutBtn = document.getElementById('authLogoutBtn');
     if (logoutBtn) {
       logoutBtn.addEventListener('click', function() {
-        clearAuth();
-        window.location.reload();
+        api('/api/auth/logout', 'POST').then(function() {
+          currentUser = null;
+          updateUI();
+          window.location.reload();
+        }).catch(function() {
+          currentUser = null;
+          updateUI();
+          window.location.reload();
+        });
       });
     }
 
@@ -185,11 +163,8 @@
       if (tab) switchTab(tab.dataset.tab);
     });
 
-    // Close modal button
     var closeBtn = document.getElementById('authModalClose');
-    if (closeBtn) {
-      closeBtn.addEventListener('click', hideModal);
-    }
+    if (closeBtn) closeBtn.addEventListener('click', hideModal);
 
     // Login form
     var loginForm = document.getElementById('loginForm');
@@ -199,12 +174,16 @@
         setFormError(loginForm, '');
         setFormLoading(loginForm, true);
 
-        var email = loginForm.querySelector('[name="email"]').value;
+        var username = loginForm.querySelector('[name="username"]').value.trim();
         var password = loginForm.querySelector('[name="password"]').value;
 
-        api('/api/login', 'POST', { email: email, password: password })
+        if (!username) { setFormError(loginForm, '请输入用户名'); setFormLoading(loginForm, false); return; }
+        if (!password) { setFormError(loginForm, '请输入密码'); setFormLoading(loginForm, false); return; }
+
+        api('/api/auth/login', 'POST', { username: username, password: password })
           .then(function(data) {
-            setAuth(data.token, data.user);
+            currentUser = data.member;
+            updateUI();
             hideModal();
             if (window._onAuthSuccess) window._onAuthSuccess();
           })
@@ -223,68 +202,44 @@
         setFormError(registerForm, '');
         setFormLoading(registerForm, true);
 
-        var email = registerForm.querySelector('[name="email"]').value;
-        var code = registerForm.querySelector('[name="code"]').value;
+        var username = registerForm.querySelector('[name="username"]').value.trim();
         var password = registerForm.querySelector('[name="password"]').value;
         var confirm = registerForm.querySelector('[name="confirm"]').value;
+        var captchaCode = registerForm.querySelector('[name="captchaCode"]');
 
-        if (code.length !== 6) {
-          setFormError(registerForm, '请输入 6 位邮箱验证码');
-          setFormLoading(registerForm, false);
-          return;
+        if (!username) { setFormError(registerForm, '请输入用户名'); setFormLoading(registerForm, false); return; }
+        if (password.length < 6) { setFormError(registerForm, '密码至少 6 位'); setFormLoading(registerForm, false); return; }
+        if (password !== confirm) { setFormError(registerForm, '两次密码输入不一致'); setFormLoading(registerForm, false); return; }
+        if (captchaId && captchaCode && !captchaCode.value.trim()) {
+          setFormError(registerForm, '请输入验证码'); setFormLoading(registerForm, false); return;
         }
 
-        if (password !== confirm) {
-          setFormError(registerForm, '两次密码输入不一致');
-          setFormLoading(registerForm, false);
-          return;
-        }
+        var body = { username: username, password: password };
+        if (captchaId) { body.captchaId = captchaId; body.captchaCode = captchaCode ? captchaCode.value.trim() : ''; }
 
-        if (password.length < 6) {
-          setFormError(registerForm, '密码至少 6 位');
-          setFormLoading(registerForm, false);
-          return;
-        }
-
-        api('/api/register', 'POST', { email: email, password: password, code: code })
+        api('/api/auth/register', 'POST', body)
           .then(function(data) {
-            setAuth(data.token, data.user);
+            // Auto-login after registration
+            return api('/api/auth/login', 'POST', { username: username, password: password });
+          })
+          .then(function(data) {
+            currentUser = data.member;
+            updateUI();
             hideModal();
             if (window._onAuthSuccess) window._onAuthSuccess();
           })
           .catch(function(err) {
             setFormError(registerForm, err.message);
             setFormLoading(registerForm, false);
+            refreshCaptcha();
           });
       });
     }
 
-    // Send verification code button (for registration)
-    var sendCodeBtn = document.getElementById('sendCodeBtn');
-    var codeTimer = null;
-    if (sendCodeBtn) {
-      sendCodeBtn.addEventListener('click', function() {
-        var emailEl = document.getElementById('registerEmail');
-        if (!emailEl || !emailEl.value) {
-          setFormError(registerForm, '请先输入邮箱地址');
-          return;
-        }
-        // Mock: simulate sending code
-        sendCodeBtn.disabled = true;
-        var secs = 60;
-        sendCodeBtn.textContent = secs + 's 后重发';
-        if (codeTimer) clearInterval(codeTimer);
-        codeTimer = setInterval(function() {
-          secs--;
-          if (secs <= 0) {
-            clearInterval(codeTimer);
-            sendCodeBtn.disabled = false;
-            sendCodeBtn.textContent = '发送验证码';
-          } else {
-            sendCodeBtn.textContent = secs + 's 后重发';
-          }
-        }, 1000);
-      });
+    // Captcha click to refresh
+    var captchaImg = document.getElementById('captchaImg');
+    if (captchaImg) {
+      captchaImg.addEventListener('click', refreshCaptcha);
     }
   }
 
@@ -292,11 +247,18 @@
   window.LogoForgeAuth = {
     isLoggedIn: isLoggedIn,
     getUser: getUser,
-    getToken: getToken,
     onAuthReady: onAuthReady,
     showModal: showModal,
     hideModal: hideModal,
-    logout: clearAuth
+    logout: function() {
+      api('/api/auth/logout', 'POST').then(function() {
+        currentUser = null;
+        updateUI();
+      }).catch(function() {
+        currentUser = null;
+        updateUI();
+      });
+    }
   };
 
   init();
