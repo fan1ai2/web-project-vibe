@@ -1,0 +1,19 @@
+<div class="all-cities-section" id="all-cities-full" hidden>
+  <div class="section-inner">
+    <div class="section-header">
+      <h2>全部 31 个省会城市</h2>
+      <p>覆盖全国 8 大区域，每个城市都有专属自由行攻略</p>
+    </div>
+    <div class="all-cities-grid">
+      {{ range .Site.Data.cities }}
+      <article class="all-city-card" onclick="location.href='{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ .link }}'">
+        <div class="all-city-card-img" style="background-image:url('{{ .image }}');">
+          <div class="all-city-card-name">{{ .name }}</div>
+          <div class="all-city-card-province">{{ .province }}</div>
+        </div>
+        <div class="all-city-card-body"><p>{{ .summary }}</p></div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
