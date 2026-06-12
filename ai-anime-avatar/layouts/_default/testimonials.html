@@ -26,28 +26,52 @@
     <div class="section__header">
       <h2 class="section__title">{{ i18n "testimonialsFeaturedTitle" }}</h2>
     </div>
-    <div class="testimonials-featured__track" id="featured-track">
-      {{ range first 4 $testimonials }}
-      <div class="testimonials-featured__card">
-        <div class="testimonials-featured__avatar">
-          <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
-            <circle cx="22" cy="22" r="21" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
-            <circle cx="22" cy="17" r="7" fill="var(--color-primary-light)" opacity="0.6"/>
-            <ellipse cx="22" cy="34" rx="14" ry="9" fill="var(--color-primary-light)" opacity="0.4"/>
-          </svg>
+    <div class="testimonials-featured__viewport">
+      <div class="testimonials-featured__track" id="featured-track">
+        {{ range $testimonials }}
+        <div class="testimonials-featured__card">
+          <div class="testimonials-featured__avatar">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="22" r="21" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
+              <circle cx="22" cy="17" r="7" fill="var(--color-primary-light)" opacity="0.6"/>
+              <ellipse cx="22" cy="34" rx="14" ry="9" fill="var(--color-primary-light)" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="testimonials-featured__stars">
+            {{ range seq .rating }}
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+            {{ end }}
+          </div>
+          <p class="testimonials-featured__quote">"{{ .text }}"</p>
+          <div class="testimonials-featured__author">
+            <span class="testimonials-featured__name">{{ .name }}</span>
+            <span class="testimonials-featured__role">{{ .role }}</span>
+          </div>
         </div>
-        <div class="testimonials-featured__stars">
-          {{ range seq .rating }}
-          <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
-          {{ end }}
+        {{ end }}
+        <!-- Clone for seamless loop -->
+        {{ range $testimonials }}
+        <div class="testimonials-featured__card" aria-hidden="true">
+          <div class="testimonials-featured__avatar">
+            <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+              <circle cx="22" cy="22" r="21" fill="var(--color-bg-alt)" stroke="var(--color-border)" stroke-width="1"/>
+              <circle cx="22" cy="17" r="7" fill="var(--color-primary-light)" opacity="0.6"/>
+              <ellipse cx="22" cy="34" rx="14" ry="9" fill="var(--color-primary-light)" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="testimonials-featured__stars">
+            {{ range seq .rating }}
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.39 4.84L18 6.73l-4 3.9.94 5.5L10 13.27l-4.94 2.86.94-5.5-4-3.9 5.61-.89z"/></svg>
+            {{ end }}
+          </div>
+          <p class="testimonials-featured__quote">"{{ .text }}"</p>
+          <div class="testimonials-featured__author">
+            <span class="testimonials-featured__name">{{ .name }}</span>
+            <span class="testimonials-featured__role">{{ .role }}</span>
+          </div>
         </div>
-        <p class="testimonials-featured__quote">"{{ .text }}"</p>
-        <div class="testimonials-featured__author">
-          <span class="testimonials-featured__name">{{ .name }}</span>
-          <span class="testimonials-featured__role">{{ .role }}</span>
-        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
   </div>
 </section>
@@ -131,8 +155,6 @@
   </div>
 </section>
 
-{{ end }}
-
 <script>
 document.querySelectorAll('.story-card__toggle').forEach(function(btn) {
   btn.addEventListener('click', function() {
@@ -144,3 +166,4 @@ document.querySelectorAll('.story-card__toggle').forEach(function(btn) {
   });
 });
 </script>
+{{ end }}
