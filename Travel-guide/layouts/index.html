@@ -51,14 +51,14 @@
   </div>
 </header>
 <main>
-  <section class="section" id="cities" aria-labelledby="cities-heading">
+  <section class="section" id="cities-featured" aria-labelledby="cities-heading">
     <div class="section-inner">
       <div class="section-header">
         <h2 id="cities-heading">热门城市旅行指南</h2>
         <p>精选六大热门旅游城市，每份攻略都经过实地验证，信息更新至2026年</p>
       </div>
       <div class="city-grid">
-        {{ range .Site.Data.cities }}
+        {{ range where .Site.Data.cities "featured" true }}
         <article class="city-card" onclick="location.href='{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ .link }}'">
           <div class="city-card-accent city-card-accent--{{ replace (replace .link "/cities/" "") "/" "" }}"></div>
           <div class="city-card-img" style="background-image:url('{{ .image }}');">
@@ -74,6 +74,14 @@
       </div>
     </div>
   </section>
+
+  <div class="section" style="text-align:center;padding:0 0 48px;">
+    <button class="btn-toggle-all" id="toggle-all-cities" aria-expanded="false">
+      查看全部城市
+    </button>
+  </div>
+
+  {{ partial "city-sections/all-cities-grid.html" . }}
 
   <section class="section" id="all-cities" aria-labelledby="all-cities-heading">
     <div class="section-inner">
@@ -109,7 +117,7 @@
       <div class="tips-grid">
         {{ range .Params.tips }}
         <div class="tip-card">
-          <span class="tip-icon" aria-hidden="true">{{ .icon }}</span>
+          <img class="tip-icon" src="{{ .icon }}" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
           <h3>{{ .title }}</h3>
           <p>{{ .text }}</p>
         </div>
