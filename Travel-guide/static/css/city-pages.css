@@ -1011,3 +1011,28 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== GENERIC city layout ===== */
+.layout-generic {
+  --city-primary: #3B6B8F;
+  --city-primary-light: #EEF3F7;
+  --city-primary-dark: #2D5A73;
+  --city-secondary: #E8864A;
+  --city-font-heading: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --city-radius: 8px;
+}
+.layout-generic .city-hero { min-height: 380px; }
+.layout-generic .city-hero-bg { filter: brightness(0.7); }
+.layout-generic .city-hero-content h1 {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 800; letter-spacing: 0.02em;
+}
+.layout-generic .city-hero-content .city-hero-desc { max-width: 720px; font-size: 0.95rem; line-height: 1.85; opacity: 0.9; }
+.layout-generic .update-badge { background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+.layout-generic .city-section h2 {
+  font-size: 1.4rem; font-weight: 700; color: var(--text);
+  padding-bottom: 10px; border-bottom: 3px solid var(--city-primary); display: inline-block;
+}
+.layout-generic .attraction-index { background: var(--city-primary); color: #fff; }
+.layout-generic .faq-item { border-left: 3px solid var(--city-primary-light); }
+.layout-generic .faq-item[open] { border-left-color: var(--city-primary); }
