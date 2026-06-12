@@ -35,10 +35,10 @@
         <input class="auth-modal__input" type="password" id="auth-register-confirm" placeholder="••••••••" required autocomplete="new-password">
       </div>
       <div class="auth-modal__captcha">
-        <label class="auth-modal__label">{{ i18n "authVerifyCode" }}</label>
+        <label class="auth-modal__label">{{ i18n "authCaptcha" }}</label>
         <div class="auth-modal__captcha-row">
-          <input class="auth-modal__input auth-modal__captcha-input" type="text" id="auth-register-code" placeholder="{{ i18n "authVerifyCodePlaceholder" }}" maxlength="6" autocomplete="off">
-          <button type="button" class="auth-modal__send-code" id="auth-register-send-code">{{ i18n "authSendCode" }}</button>
+          <input class="auth-modal__input auth-modal__captcha-input" type="text" id="auth-register-captcha" placeholder="{{ i18n "authCaptchaPlaceholder" }}" maxlength="4" autocomplete="off">
+          <img class="auth-modal__captcha-img" id="auth-register-captcha-img" src="" alt="Captcha" title="Click to refresh">
         </div>
       </div>
       <button type="submit" class="auth-modal__submit">{{ i18n "authRegister" }}</button>

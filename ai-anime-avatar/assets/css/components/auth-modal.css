@@ -188,26 +188,16 @@
   min-width: 0;
 }
 
-.auth-modal__send-code {
+.auth-modal__captcha-img {
   height: 44px;
-  padding: 0 14px;
+  width: auto;
+  min-width: 80px;
   border-radius: var(--radius-md);
-  border: 1.5px solid var(--color-primary);
-  background: var(--color-primary);
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 600;
+  border: 1.5px solid var(--color-border);
   cursor: pointer;
-  white-space: nowrap;
   flex-shrink: 0;
-  transition: opacity 0.2s;
 }
 
-.auth-modal__send-code:hover {
-  opacity: 0.85;
-}
-
-.auth-modal__send-code:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.auth-modal__captcha-img:hover {
+  border-color: var(--color-primary);
 }

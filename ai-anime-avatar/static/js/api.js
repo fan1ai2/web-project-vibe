@@ -21,12 +21,14 @@
 
   window.API = {
     // Auth
-    sendCode:     function(email)                 { return req('POST', '/api/auth/send-code', { email: email }); },
-    login:        function(email, password)       { return req('POST', '/api/auth/login', { username: email, password: password }); },
-    register:     function(email, password, code) { return req('POST', '/api/auth/register', { username: email, password: password, captcha_code: code }); },
-    me:           function()                      { return req('GET',  '/api/auth/me'); },
+    captcha:      function()                               { return req('GET',  '/api/auth/captcha'); },
+    login:        function(email, password)                { return req('POST', '/api/auth/login', { username: email, password: password }); },
+    register:     function(email, password, captchaId, captchaCode) {
+      return req('POST', '/api/auth/register', { username: email, password: password, captcha_id: captchaId, captcha_code: captchaCode });
+    },
+    me:           function()                               { return req('GET',  '/api/auth/me'); },
 
     // Health
-    health:       function()                      { return req('GET',  '/api/health'); }
+    health:       function()                               { return req('GET',  '/api/health'); }
   };
 })();

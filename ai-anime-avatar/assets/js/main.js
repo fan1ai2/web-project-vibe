@@ -398,39 +398,18 @@
     }
   });
 
-  var sendCodeBtn = document.getElementById('auth-login-send-code');
-  var regSendCodeBtn = document.getElementById('auth-register-send-code');
+  var authCaptchaId = '';
+  var captchaImg = document.getElementById('auth-register-captcha-img');
 
-  function sendVerificationCode(emailInputId, btnEl) {
-    var emailInput = document.getElementById(emailInputId);
-    var email = emailInput ? emailInput.value.trim() : '';
-    if (!email) { showAuthToast('Please enter your email first', 'error'); return; }
+  function refreshCaptcha() {
     if (typeof API === 'undefined') return;
-    btnEl.disabled = true;
-    var originalText = btnEl.textContent;
-    btnEl.textContent = 'Sending...';
-    API.sendCode(email).then(function() {
-      showAuthToast('Verification code sent! Check server logs.', 'success');
-      var countdown = 60;
-      btnEl.textContent = countdown + 's';
-      var timer = setInterval(function() {
-        countdown--;
-        btnEl.textContent = countdown + 's';
-        if (countdown <= 0) {
-          clearInterval(timer);
-          btnEl.disabled = false;
-          btnEl.textContent = originalText;
-        }
-      }, 1000);
-    }).catch(function(err) {
-      showAuthToast(err.message || 'Failed to send code', 'error');
-      btnEl.disabled = false;
-      btnEl.textContent = originalText;
-    });
+    API.captcha().then(function(data) {
+      authCaptchaId = data.data.captcha_id;
+      if (captchaImg) captchaImg.src = data.data.captcha_image;
+    }).catch(function() {});
   }
 
-  if (sendCodeBtn) sendCodeBtn.addEventListener('click', function() { sendVerificationCode('auth-login-email', sendCodeBtn); });
-  if (regSendCodeBtn) regSendCodeBtn.addEventListener('click', function() { sendVerificationCode('auth-register-email', regSendCodeBtn); });
+  if (captchaImg) captchaImg.addEventListener('click', refreshCaptcha);
 
   if (tabLogin && tabRegister && formLogin && formRegister) {
     tabLogin.addEventListener('click', function() {
@@ -449,6 +428,7 @@
       formLogin.classList.remove('auth-modal__form--active');
       tabRegister.setAttribute('aria-selected', 'true');
       tabLogin.setAttribute('aria-selected', 'false');
+      refreshCaptcha();
     });
   }
 
@@ -486,23 +466,24 @@
       var email = document.getElementById('auth-register-email').value.trim();
       var pwd = document.getElementById('auth-register-password').value;
       var confirm = document.getElementById('auth-register-confirm').value;
-      var codeInput = document.getElementById('auth-register-code');
-      var code = codeInput ? codeInput.value.trim() : '';
+      var captchaInput = document.getElementById('auth-register-captcha');
+      var captchaCode = captchaInput ? captchaInput.value.trim() : '';
       var btn = formRegister.querySelector('button');
       if (!email || !pwd) { showAuthToast('Please fill in all fields', 'error'); return; }
       if (pwd !== confirm) { showAuthToast('Passwords do not match', 'error'); return; }
       if (pwd.length < 6) { showAuthToast('Password must be at least 6 characters', 'error'); return; }
-      if (!code) { showAuthToast('Please enter verification code', 'error'); return; }
+      if (!captchaCode) { showAuthToast('Please enter captcha code', 'error'); return; }
 
       btn.disabled = true; btn.textContent = 'Registering...';
-      API.register(email, pwd, code).then(function(data) {
-        // Auto-fill login form and switch to login tab
+      API.register(email, pwd, authCaptchaId, captchaCode).then(function(data) {
         var loginEmail = document.getElementById('auth-login-email');
         if (loginEmail) loginEmail.value = email;
         showAuthToast('Registration successful! Please log in.', 'success');
         if (tabLogin) tabLogin.click();
       }).catch(function(err) {
         showAuthToast(err.message || 'Registration failed', 'error');
+        refreshCaptcha();
+        if (captchaInput) captchaInput.value = '';
       }).finally(function() {
         btn.disabled = false; btn.textContent = 'Register';
       });

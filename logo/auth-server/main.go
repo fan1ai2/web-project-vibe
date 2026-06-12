@@ -1,13 +1,21 @@
 package main
 
 import (
+	"bytes"
+	"crypto/rand"
 	"database/sql"
+	"encoding/base64"
 	"encoding/json"
+	"image"
+	"image/color"
+	"image/draw"
+	"image/png"
 	"log"
-	"math/rand"
+	"math/big"
 	"net/http"
 	"os"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
@@ -69,6 +77,10 @@ func main() {
 	mux.HandleFunc("/api/auth/register", cors(handleAuthRegister))
 	mux.HandleFunc("/api/auth/login", cors(handleAuthLogin))
 	mux.HandleFunc("/api/auth/me", cors(auth(handleMe)))
+	mux.HandleFunc("/api/auth/captcha", cors(handleCaptcha))
+
+	// Background captcha cleanup every 5 minutes
+	go cleanupExpiredCaptchas()
 
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -306,7 +318,8 @@ func handleSendCode(w http.ResponseWriter, r *http.Request) {
 func generateCode() string {
 	code := make([]byte, 6)
 	for i := range code {
-		code[i] = byte('0' + rand.Intn(10))
+		n, _ := rand.Int(rand.Reader, big.NewInt(10))
+		code[i] = byte('0' + n.Int64())
 	}
 	return string(code)
 }
@@ -428,9 +441,9 @@ func handleAuthRegister(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Validate verification code (sent via captcha_code field)
-	if len(body.CaptchaCode) != 6 {
-		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "请输入 6 位验证码"})
+	// Validate image captcha
+	if !validateCaptcha(body.CaptchaID, body.CaptchaCode) {
+		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "验证码错误或已过期"})
 		return
 	}
 
@@ -439,33 +452,6 @@ func handleAuthRegister(w http.ResponseWriter, r *http.Request) {
 	err := db.QueryRow("SELECT id FROM users WHERE email = ?", email).Scan(&existingID)
 	if err == nil {
 		writeJSON(w, http.StatusConflict, map[string]string{"error": "该邮箱已注册"})
-		return
-	}
-
-	// Validate verification code
-	var used int
-	var expiresAt string
-	err = db.QueryRow(
-		"SELECT used, expires_at FROM verification_codes WHERE email = ? AND code = ? ORDER BY id DESC LIMIT 1",
-		email, body.CaptchaCode,
-	).Scan(&used, &expiresAt)
-
-	if err == sql.ErrNoRows {
-		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "验证码错误"})
-		return
-	}
-	if err != nil {
-		writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "服务器错误"})
-		return
-	}
-	if used == 1 {
-		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "验证码已使用"})
-		return
-	}
-
-	expTime, err := time.Parse(time.RFC3339, expiresAt)
-	if err != nil || time.Now().UTC().After(expTime) {
-		writeJSON(w, http.StatusBadRequest, map[string]string{"error": "验证码已过期"})
 		return
 	}
 
@@ -486,7 +472,6 @@ func handleAuthRegister(w http.ResponseWriter, r *http.Request) {
 	}
 
 	userID, _ := result.LastInsertId()
-	db.Exec("UPDATE verification_codes SET used = 1 WHERE email = ? AND code = ?", email, body.CaptchaCode)
 
 	user := User{ID: userID, Email: email, CreatedAt: time.Now().UTC().Format(time.RFC3339)}
 	token, err := generateToken(userID)
@@ -501,6 +486,190 @@ func handleAuthRegister(w http.ResponseWriter, r *http.Request) {
 			"token":  token,
 		},
 	})
+}
+
+// --- Captcha ---
+
+type captchaEntry struct {
+	Code      string
+	ExpiresAt time.Time
+}
+
+var captchaStore sync.Map
+
+func cleanupExpiredCaptchas() {
+	for {
+		time.Sleep(5 * time.Minute)
+		now := time.Now()
+		captchaStore.Range(func(key, value interface{}) bool {
+			if entry, ok := value.(captchaEntry); ok && now.After(entry.ExpiresAt) {
+				captchaStore.Delete(key)
+			}
+			return true
+		})
+	}
+}
+
+func generateCaptchaCode(n int) string {
+	const charset = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
+	code := make([]byte, n)
+	for i := range code {
+		idx, _ := rand.Int(rand.Reader, big.NewInt(int64(len(charset))))
+		code[i] = charset[idx.Int64()]
+	}
+	return string(code)
+}
+
+// pixelFont maps ASCII chars to 5x7 bitmaps (row-major, 1=on 0=off).
+var pixelFont = map[byte][]byte{
+	'2': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1},
+	'3': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0},
+	'4': {0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0},
+	'5': {1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0},
+	'6': {0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0},
+	'7': {1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0},
+	'8': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0},
+	'9': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0},
+	'A': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1},
+	'B': {1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0},
+	'C': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0},
+	'D': {1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0},
+	'E': {1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1},
+	'F': {1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0},
+	'G': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0},
+	'H': {1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1},
+	'J': {0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0},
+	'K': {1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1},
+	'L': {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1},
+	'M': {1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1},
+	'N': {1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1},
+	'P': {1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0},
+	'Q': {0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1},
+	'R': {1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1},
+	'S': {0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0},
+	'T': {1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0},
+	'U': {1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0},
+	'V': {1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0},
+	'W': {1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0},
+	'X': {1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1},
+	'Y': {1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0},
+	'Z': {1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1},
+}
+
+func drawCaptchaImage(code string) ([]byte, error) {
+	cellW := 12
+	gap := 4
+	width := len(code)*(cellW+gap) + 8
+	height := 50
+	img := image.NewRGBA(image.Rect(0, 0, width, height))
+
+	// Off-white background
+	bg := color.RGBA{250, 248, 245, 255}
+	draw.Draw(img, img.Bounds(), &image.Uniform{bg}, image.Point{}, draw.Src)
+
+	// Noise dots
+	for i := 0; i < 50; i++ {
+		x, _ := rand.Int(rand.Reader, big.NewInt(int64(width)))
+		y, _ := rand.Int(rand.Reader, big.NewInt(int64(height)))
+		cv, _ := rand.Int(rand.Reader, big.NewInt(180))
+		v := uint8(cv.Int64())
+		img.Set(int(x.Int64()), int(y.Int64()), color.RGBA{v, v, v, 180})
+	}
+
+	// Random curved lines for noise
+	for i := 0; i < 2; i++ {
+		x, _ := rand.Int(rand.Reader, big.NewInt(int64(width-20)))
+		y, _ := rand.Int(rand.Reader, big.NewInt(int64(height-10)))
+		for j := 0; j < 25; j++ {
+			px := int(x.Int64()) + j
+			offY, _ := rand.Int(rand.Reader, big.NewInt(5))
+			py := int(y.Int64()) + int(offY.Int64())
+			if px < width && py < height {
+				img.Set(px, py, color.RGBA{200, 190, 180, 100})
+			}
+		}
+	}
+
+	// Draw each character using pixel font
+	for ci := 0; ci < len(code); ci++ {
+		bitmap, ok := pixelFont[code[ci]]
+		if !ok {
+			continue
+		}
+		offsetX := 4 + ci*(cellW+gap)
+		offsetY := 8
+
+		// Random slight rotation effect via y offsets
+		baseY, _ := rand.Int(rand.Reader, big.NewInt(8))
+
+		for row := 0; row < 7; row++ {
+			for col := 0; col < 5; col++ {
+				if bitmap[row*5+col] != 0 {
+					px := offsetX + col*2
+					py := offsetY + row*2 + int(baseY.Int64())
+					// Draw 2x2 pixel block
+					c := color.RGBA{45, 40, 35, 255}
+					img.Set(px, py, c)
+					img.Set(px+1, py, c)
+					img.Set(px, py+1, c)
+					img.Set(px+1, py+1, c)
+				}
+			}
+		}
+	}
+
+	var buf bytes.Buffer
+	if err := png.Encode(&buf, img); err != nil {
+		return nil, err
+	}
+	return buf.Bytes(), nil
+}
+
+func handleCaptcha(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodGet {
+		writeJSON(w, http.StatusMethodNotAllowed, map[string]string{"error": "仅支持 GET"})
+		return
+	}
+
+	code := generateCaptchaCode(4)
+	captchaID := generateCaptchaCode(16)
+	log.Printf("[DEV] Captcha %s = %s", captchaID, code)
+	captchaStore.Store(captchaID, captchaEntry{Code: code, ExpiresAt: time.Now().Add(5 * time.Minute)})
+
+	imgBytes, err := drawCaptchaImage(code)
+	if err != nil {
+		writeJSON(w, http.StatusInternalServerError, map[string]string{"error": "验证码生成失败"})
+		return
+	}
+
+	dataURL := "data:image/png;base64," + base64.StdEncoding.EncodeToString(imgBytes)
+
+	writeJSON(w, http.StatusOK, map[string]interface{}{
+		"data": map[string]interface{}{
+			"captcha_id":    captchaID,
+			"captcha_image": dataURL,
+		},
+	})
+}
+
+func validateCaptcha(captchaID, captchaCode string) bool {
+	if captchaID == "" || captchaCode == "" {
+		return false
+	}
+	val, ok := captchaStore.Load(captchaID)
+	if !ok {
+		return false
+	}
+	entry := val.(captchaEntry)
+	if time.Now().After(entry.ExpiresAt) {
+		captchaStore.Delete(captchaID)
+		return false
+	}
+	if !strings.EqualFold(entry.Code, captchaCode) {
+		return false
+	}
+	captchaStore.Delete(captchaID) // one-time use
+	return true
 }
 
 func handleMe(w http.ResponseWriter, r *http.Request) {

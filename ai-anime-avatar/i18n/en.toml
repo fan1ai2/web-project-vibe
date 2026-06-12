@@ -229,14 +229,11 @@ other = "Sign in with Google"
 [authGithub]
 other = "Sign in with GitHub"
 
-[authVerifyCode]
-other = "Verification Code"
+[authCaptcha]
+other = "Captcha"
 
-[authVerifyCodePlaceholder]
-other = "Enter 6-digit code"
-
-[authSendCode]
-other = "Send Code"
+[authCaptchaPlaceholder]
+other = "Enter captcha code"
 
 [authClose]
 other = "Close"
