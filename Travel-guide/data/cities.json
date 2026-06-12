@@ -5,7 +5,8 @@
     "image": "/images/cities/beijing.jpg",
     "tags": ["千年古都","世界遗产","胡同文化"],
     "summary": "故宫、长城、颐和园——6处世界遗产密度全国第一。2026年北京中轴线申遗成功后，来一场穿越700年的城市漫步。",
-    "featured": true
+    "featured": true,
+    "province": "华北"
   },
   {
     "name": "上海",
@@ -13,7 +14,8 @@
     "image": "/images/cities/shanghai.jpg",
     "tags": ["摩登都市","艺术展览","购物天堂"],
     "summary": "外滩万国建筑群与陆家嘴天际线隔江相望。100+美术馆和画廊、全球最多的咖啡馆数量，上海的自由行是一次中西文化的深度体验。",
-    "featured": true
+    "featured": true,
+    "province": "华东"
   },
   {
     "name": "广州",
@@ -21,7 +23,8 @@
     "image": "/images/cities/guangzhou.jpg",
     "tags": ["美食之都","千年商都","岭南文化"],
     "summary": "\"食在广州\"不是一句口号。从早茶到宵夜、从沙面岛到广州塔，这座2200年的商都让人来了就不想走。",
-    "featured": true
+    "featured": true,
+    "province": "华南"
   },
   {
     "name": "成都",
@@ -29,7 +32,8 @@
     "image": "/images/cities/chengdu.jpg",
     "tags": ["天府之国","美食天堂","熊猫故乡"],
     "summary": "火锅的热辣、茶馆的闲适、大熊猫的憨态——成都是一座让人\"来了就不想走\"的城市。2026年大运会后城市更新更好玩了。",
-    "featured": true
+    "featured": true,
+    "province": "西南"
   },
   {
     "name": "西安",
@@ -37,7 +41,8 @@
     "image": "/images/cities/xian.jpg",
     "tags": ["十三朝古都","丝绸之路","面食天堂"],
     "summary": "兵马俑、古城墙、大唐不夜城——西安是一部活着的中国史书。2026年城墙内的新文旅项目让这座古都焕发新活力。",
-    "featured": true
+    "featured": true,
+    "province": "西北"
   },
   {
     "name": "杭州",
@@ -45,6 +50,32 @@
     "image": "/images/cities/hangzhou.jpg",
     "tags": ["人间天堂","西湖美景","茶文化"],
     "summary": "西湖十景、龙井茶园、灵隐禅寺——杭州是诗意江南的集大成者。2026年地铁网络覆盖更广，自由行出行比以往更方便。",
-    "featured": true
-  }
+    "featured": true,
+    "province": "华东"
+  },
+  {"name":"天津","link":"/cities/tianjin/","image":"/images/cities/tianjin.jpg","featured":false,"province":"华北","tags":["渤海明珠","万国建筑","相声曲艺"],"summary":"海河穿城而过，五大道藏着2000多栋小洋楼。天津之眼俯瞰津城、听茶馆相声、吃煎饼果子和嘎巴菜，一座适合慢逛的北方名城。"}
+  ,{"name":"石家庄","link":"/cities/shijiazhuang/","image":"/images/cities/shijiazhuang.jpg","featured":false,"province":"华北","tags":["燕赵大地","正定古城","太行风光"],"summary":"河北省会，西倚太行。正定古城藏着隆兴寺宋代大佛，赵州桥是1400年前的工程奇迹。物价平实，适合做河北深度游的集散地。"}
+  ,{"name":"太原","link":"/cities/taiyuan/","image":"/images/cities/taiyuan.jpg","featured":false,"province":"华北","tags":["龙城古韵","晋商文化","面食天堂"],"summary":"2500年建城史，山西博物院馆藏晋侯鸟尊，晋祠圣母殿是宋建孤例。打卤面、过油肉、头脑——太原是面食爱好者的北方重镇。"}
+  ,{"name":"呼和浩特","link":"/cities/huhehaote/","image":"/images/cities/huhehaote.jpg","featured":false,"province":"华北","tags":["草原青城","蒙元文化","乳都"],"summary":"内蒙古首府，蒙古语意为青色的城。大召寺银佛、希拉穆仁草原一日可达。手把肉、奶茶、烧麦，草原豪情尽在一餐。"}
+  ,{"name":"沈阳","link":"/cities/shenyang/","image":"/images/cities/shenyang.jpg","featured":false,"province":"东北","tags":["盛京旧都","工业摇篮","东北第一城"],"summary":"清朝入关前的都城，沈阳故宫是中国仅存的两座皇宫建筑群之一。铁西1905创意园是工业遗产改造的标杆。鸡架、老边饺子、锅包肉——东北菜的精华在沈阳。"}
+  ,{"name":"长春","link":"/cities/changchun/","image":"/images/cities/changchun.jpg","featured":false,"province":"东北","tags":["北国春城","汽车之城","电影之都"],"summary":"伪满皇宫博物院讲述了末代皇帝溥仪的最后宫廷岁月，长春电影制片厂是中国电影的摇篮。净月潭森林公园距市区仅18公里。"}
+  ,{"name":"哈尔滨","link":"/cities/haerbin/","image":"/images/cities/haerbin.jpg","featured":false,"province":"东北","tags":["东方莫斯科","冰雪王国","音乐之都"],"summary":"圣索菲亚教堂的洋葱头穹顶是哈尔滨的天际线，中央大街的面包石路走了100年。冬季冰雪大世界规模惊人，夏季松花江畔凉爽宜人。"}
+  ,{"name":"南京","link":"/cities/nanjing/","image":"/images/cities/nanjing.jpg","featured":false,"province":"华东","tags":["六朝古都","民国记忆","秦淮风情"],"summary":"钟山风景区藏着明孝陵和中山陵，秦淮河夫子庙灯火千年不熄。鸭血粉丝汤、盐水鸭、小笼包——南京的美食自带古都的讲究。"}
+  ,{"name":"合肥","link":"/cities/hefei/","image":"/images/cities/hefei.jpg","featured":false,"province":"华东","tags":["三国故地","科技新城","包拯故里"],"summary":"安徽省会，逍遥津公园是张辽大战孙权的古战场。中国科学技术大学和量子信息实验室让这座城市充满未来感。徽菜重油重色，李鸿章大杂烩是招牌。"}
+  ,{"name":"福州","link":"/cities/fuzhou/","image":"/images/cities/fuzhou.jpg","featured":false,"province":"华东","tags":["榕城古韵","温泉之都","海上丝路"],"summary":"三坊七巷是中国保存最完整的里坊制街区，2200年历史沉淀在每一条石板巷里。福州鱼丸、佛跳墙、肉燕——闽菜之首的府城味道。"}
+  ,{"name":"南昌","link":"/cities/nanchang/","image":"/images/cities/nanchang.jpg","featured":false,"province":"华东","tags":["英雄之城","滕王高阁","鄱湖明珠"],"summary":"滕王阁因王勃一句落霞与孤鹜齐飞流芳千古。八一起义纪念馆记录了军旗升起的地方。南昌拌粉配瓦罐汤，是本地人的早餐标配。"}
+  ,{"name":"济南","link":"/cities/jinan/","image":"/images/cities/jinan.jpg","featured":false,"province":"华东","tags":["泉城风光","七十二名泉","齐鲁之都"],"summary":"趵突泉、黑虎泉、五龙潭——济南家家泉水户户垂杨。大明湖和千佛山山水相依。把子肉、油旋、甜沫，济南的市井美味藏在老商埠的巷子里。"}
+  ,{"name":"郑州","link":"/cities/zhengzhou/","image":"/images/cities/zhengzhou.jpg","featured":false,"province":"华中","tags":["商都故城","天地之中","铁路枢纽"],"summary":"河南省会，中国八大古都之一。河南博物院馆藏贾湖骨笛等国宝级文物，距少林寺和龙门石窟均在1.5小时车程内。烩面是郑州的城市名片。"}
+  ,{"name":"武汉","link":"/cities/wuhan/","image":"/images/cities/wuhan.jpg","featured":false,"province":"华中","tags":["九省通衢","江城百湖","过早之都"],"summary":"长江和汉江把武汉分成三镇。黄鹤楼上望江流，东湖绿道骑行，江汉路逛百年老建筑。热干面、豆皮、小龙虾——武汉的过早文化全国独一份。"}
+  ,{"name":"长沙","link":"/cities/changsha/","image":"/images/cities/changsha.jpg","featured":false,"province":"华中","tags":["星城网红","楚汉名都","娱乐之都"],"summary":"橘子洲头的青年毛泽东雕像与岳麓山隔江相望。湖南博物院藏马王堆辛追夫人千年不腐。茶颜悦色和文和友让长沙成为年轻人的快乐星球。"}
+  ,{"name":"南宁","link":"/cities/nanning/","image":"/images/cities/nanning.jpg","featured":false,"province":"华南","tags":["绿城水都","东盟枢纽","壮乡首府"],"summary":"广西首府，半城绿树半城楼。青秀山俯瞰邕江，三街两巷感受老南宁。老友粉酸辣鲜香、柠檬鸭开胃——南宁的夜市从晚上7点亮到凌晨2点。"}
+  ,{"name":"海口","link":"/cities/haikou/","image":"/images/cities/haikou.jpg","featured":false,"province":"华南","tags":["椰城海滨","骑楼老街","自贸港"],"summary":"海南省会，比三亚更接地气。骑楼老街藏着下南洋的历史记忆，假日海滩傍晚的日落美得让人不想走。老爸茶、清补凉、海南粉——海口的美食节奏很慢。"}
+  ,{"name":"重庆","link":"/cities/chongqing/","image":"/images/cities/chongqing.jpg","featured":false,"province":"西南","tags":["8D魔幻之都","山城夜景","火锅发源地"],"summary":"轻轨穿楼、洪崖洞吊脚楼、长江索道——重庆的地形创造了独一无二的城市景观。火锅沸腾的牛油香弥漫在大街小巷，小面和江湖菜同样让人上瘾。"}
+  ,{"name":"贵阳","link":"/cities/guiyang/","image":"/images/cities/guiyang.jpg","featured":false,"province":"西南","tags":["林城避暑","大数据谷","黔味江湖"],"summary":"贵州省会，夏季平均气温23°C。甲秀楼是贵阳的地标，黔灵山公园的猕猴是市民的邻居。酸汤鱼、肠旺面、丝娃娃——贵阳的酸辣让人欲罢不能。"}
+  ,{"name":"昆明","link":"/cities/kunming/","image":"/images/cities/kunming.jpg","featured":false,"province":"西南","tags":["春城花都","滇池风光","民族风情"],"summary":"云南省会，天气常如二三月花枝不断四时春。滇池海埂公园冬天有成群的红嘴鸥，石林是喀斯特地貌的教科书。过桥米线、汽锅鸡、野生菌——昆明是云南美食的起点站。"}
+  ,{"name":"拉萨","link":"/cities/lasa/","image":"/images/cities/lasa.jpg","featured":false,"province":"西南","tags":["日光之城","藏传佛教","雪域圣地"],"summary":"西藏首府，海拔3650米。布达拉宫是藏式建筑的巅峰，大昭寺前磕长头的信徒让人动容。八廓街的甜茶馆里，时光慢得像酥油茶在碗里打转。"}
+  ,{"name":"兰州","link":"/cities/lanzhou/","image":"/images/cities/lanzhou.jpg","featured":false,"province":"西北","tags":["黄河之都","丝路重镇","牛肉面之城"],"summary":"黄河穿城而过，中山桥是兰州的精神地标。甘肃省博物馆的铜奔马是国宝中的国宝。一碗牛肉面——一清二白三红四绿五黄，兰州的早晨从这碗面开始。"}
+  ,{"name":"西宁","link":"/cities/xining/","image":"/images/cities/xining.jpg","featured":false,"province":"西北","tags":["高原夏都","塔尔古刹","青海门户"],"summary":"青海省会，海拔2261米，夏季凉爽如春。塔尔寺是藏传佛教格鲁派六大寺院之一。手抓羊肉、酿皮、甜醅——西宁的美食有高原的粗犷和回族的讲究。"}
+  ,{"name":"银川","link":"/cities/yinchuan/","image":"/images/cities/yinchuan.jpg","featured":false,"province":"西北","tags":["塞上江南","西夏古都","回乡风情"],"summary":"宁夏首府，贺兰山挡住了腾格里沙漠的风沙。西夏王陵被称为东方金字塔，镇北堡西部影城是《大话西游》的取景地。手抓羊肉和羊杂碎是银川的味道名片。"}
+  ,{"name":"乌鲁木齐","link":"/cities/wulumuqi/","image":"/images/cities/wulumuqi.jpg","featured":false,"province":"西北","tags":["亚心之都","天山脚下","西域风情"],"summary":"新疆首府，世界上离海洋最远的大城市。国际大巴扎的穹顶在阳光下闪耀，天山天池距市区仅110公里。大盘鸡、烤包子、手抓饭——乌鲁木齐的美食是丝绸之路的馈赠。"}
 ]
