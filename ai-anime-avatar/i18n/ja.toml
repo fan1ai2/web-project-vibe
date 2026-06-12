@@ -229,11 +229,14 @@ other = "Googleでログイン"
 [authGithub]
 other = "GitHubでログイン"
 
-[authCaptcha]
+[authVerifyCode]
 other = "認証コード"
 
-[authCaptchaPlaceholder]
-other = "認証コードを入力"
+[authVerifyCodePlaceholder]
+other = "6桁のコードを入力"
+
+[authSendCode]
+other = "コード送信"
 
 [authClose]
 other = "閉じる"

@@ -226,11 +226,14 @@ other = "Google 登录"
 [authGithub]
 other = "GitHub 登录"
 
-[authCaptcha]
-other = "验证码"
+[authVerifyCode]
+other = "邮箱验证码"
 
-[authCaptchaPlaceholder]
-other = "请输入验证码"
+[authVerifyCodePlaceholder]
+other = "请输入6位验证码"
+
+[authSendCode]
+other = "发送验证码"
 
 [authClose]
 other = "关闭"
