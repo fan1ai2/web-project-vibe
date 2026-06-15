@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
-<meta name="keywords" content="{{ delimit .Params.keywords ", " }}">
+{{ with .Params.keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 <title>{{ .Params.title }}</title>
 
 <!-- Open Graph -->

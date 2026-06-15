@@ -58,7 +58,7 @@ faq_a1: Yes, local transcription is completely free and unlimited. We monetize t
 faq_q2: Where are my files uploaded?
 faq_a2: In Free mode, all processing happens locally in your browser. Your files never leave your device.
 faq_q3: What file formats are supported?
-faq_a3: Audio: MP3, WAV, M4A, AAC, FLAC, OGG, AMR. Video: MP4, MOV, MKV, AVI.
+faq_a3: "Audio: MP3, WAV, M4A, AAC, FLAC, OGG, AMR. Video: MP4, MOV, MKV, AVI."
 faq_q4: How accurate is the transcription?
 faq_a4: Up to 99.8% accuracy with clear audio, powered by OpenAI Whisper. Handles background noise and auto-detects language.
 faq_q5: Does it support multiple speakers?
