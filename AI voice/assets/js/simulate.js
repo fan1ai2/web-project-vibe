@@ -29,9 +29,7 @@
     var container = document.getElementById('transcriptSegments');
     var html = '';
     segments.forEach(function (seg, idx) {
-      var wordsHtml = seg.text.split('').map(function (ch) {
-        return '<span class="segment-word" data-seg="' + idx + '">' + ch + '</span>';
-      }).join('');
+      var wordsHtml = seg.text;
 
       html += '<div class="transcript-segment" data-seg="' + idx + '" data-start="' + seg.start + '">' +
         '<span class="segment-time">' + formatTime(seg.start) + '</span>' +

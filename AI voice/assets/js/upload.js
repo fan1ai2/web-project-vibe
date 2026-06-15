@@ -11,7 +11,6 @@
   var transcriptPanel = document.getElementById('transcriptPanel');
   var transcriptContent = document.getElementById('transcriptContent');
   var transcriptEmpty = document.getElementById('transcriptEmpty');
-  var progressBar = document.getElementById('progressBar');
   var progressStatus = document.getElementById('progressStatus');
 
   var selectedFile = null;
@@ -67,6 +66,7 @@
     uploadProgress.style.display = 'block';
 
     var statuses = ['status_detecting', 'status_transcribing', 'status_timestamps', 'status_complete'];
+    var dots = document.querySelectorAll('.progress-dot');
     var i = 0;
     var statusInterval = setInterval(function () {
       if (i >= statuses.length) {
@@ -89,19 +89,11 @@
 
       var key = statuses[i];
       progressStatus.textContent = getI18n(key);
-      var pct = ((i + 1) / statuses.length) * 100;
-      progressBar.style.width = pct + '%';
-
-      if (i === statuses.length - 2) {
-        progressBar.style.width = '85%';
+      for (var d = 0; d < dots.length; d++) {
+        dots[d].classList.toggle('active', d <= i);
       }
-
       i++;
     }, 900);
-
-    setTimeout(function () {
-      progressBar.style.width = '100%';
-    }, statuses.length * 900);
   });
 
   function getI18n(key) {
