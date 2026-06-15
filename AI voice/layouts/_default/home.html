@@ -3,144 +3,84 @@
 <!-- Hero -->
 <section class="hero">
   <div class="container">
+    {{ partial "illustration-hero.html" . }}
     <h1 class="hero-title">{{ i18n "hero_title" }}</h1>
-    <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
-    <p class="hero-desc">{{ i18n "hero_desc" }}</p>
-    <a href="{{ "tool" | relLangURL }}" class="btn btn-primary btn-lg">{{ i18n "hero_cta" }}</a>
-  </div>
-</section>
-
-<!-- Features -->
-<section class="section" id="features">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">核心功能</h2>
-      <p class="section-desc">一切你需要的转录能力，都在这里。</p>
-    </div>
-    <div class="features-grid">
-      {{ range .Site.Data.site.features }}
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <rect width="40" height="40" rx="10" fill="#EEF2FF"/>
-            {{ if eq . "accuracy" }}
-            <path d="M20 10l5 15H15l5-15zm0 0v25m-9-12l9 9 9-9" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            {{ else if eq . "languages" }}
-            <circle cx="20" cy="20" r="12" stroke="#4F46E5" stroke-width="2"/><path d="M12 20h16M20 12c3 4 3 12 0 16-3-4-3-12 0-16" stroke="#4F46E5" stroke-width="1.5"/>
-            {{ else if eq . "privacy" }}
-            <rect x="12" y="16" width="16" height="12" rx="2" stroke="#4F46E5" stroke-width="2"/><circle cx="20" cy="14" r="3" stroke="#4F46E5" stroke-width="2"/><path d="M20 22v3" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
-            {{ else }}
-            <rect x="10" y="12" width="20" height="16" rx="2" stroke="#4F46E5" stroke-width="2"/><path d="M18 22l3 3 6-6" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            {{ end }}
-          </svg>
-        </div>
-        <h3 class="feature-title">{{ i18n (printf "feature_%s_title" .) }}</h3>
-        <p class="feature-desc">{{ i18n (printf "feature_%s_desc" .) }}</p>
-      </div>
-      {{ end }}
-    </div>
+    <p class="hero-desc">{{ i18n "hero_subtitle" }}</p>
+    <a href="{{ "tool" | relLangURL }}" class="btn btn-lg">{{ i18n "hero_cta" }}</a>
   </div>
 </section>
 
 <!-- How It Works -->
-<section class="section steps-section">
+<section class="section">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">如何使用</h2>
-      <p class="section-desc">三步完成音频转文字，简单高效。</p>
     </div>
     <div class="steps-grid">
-      {{ range $i, $step := .Site.Data.site.steps }}
       <div class="step-card">
-        <div class="step-number">{{ add $i 1 }}</div>
-        <h3 class="step-title">{{ i18n (printf "step_%s_title" $step) }}</h3>
-        <p class="step-desc">{{ i18n (printf "step_%s_desc" $step) }}</p>
+        {{ partial "illustration-step-1.html" . }}
+        <h3 class="step-title">{{ i18n "step_upload_title" }}</h3>
+        <p class="step-desc">{{ i18n "step_upload_desc" }}</p>
       </div>
-      {{ end }}
+      <div class="step-card">
+        {{ partial "illustration-step-2.html" . }}
+        <h3 class="step-title">{{ i18n "step_transcribe_title" }}</h3>
+        <p class="step-desc">{{ i18n "step_transcribe_desc" }}</p>
+      </div>
+      <div class="step-card">
+        {{ partial "illustration-step-3.html" . }}
+        <h3 class="step-title">{{ i18n "step_export_title" }}</h3>
+        <p class="step-desc">{{ i18n "step_export_desc" }}</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Supported Formats -->
-<section class="section">
+<section class="section formats-section">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">支持的格式</h2>
-      <p class="section-desc">覆盖主流音频和视频格式，无需预先转换。</p>
     </div>
-    <div class="formats-block">
-      <div class="format-group">
-        <h3 class="format-group-title">{{ i18n "format_audio_title" }}</h3>
-        <div class="format-tags">
-          {{ range .Site.Data.site.formats_audio }}
-          <span class="format-tag">{{ . }}</span>
-          {{ end }}
-        </div>
-      </div>
-      <div class="format-group">
-        <h3 class="format-group-title">{{ i18n "format_video_title" }}</h3>
-        <div class="format-tags">
-          {{ range .Site.Data.site.formats_video }}
-          <span class="format-tag">{{ . }}</span>
-          {{ end }}
-        </div>
-      </div>
-    </div>
+    <p class="formats-text">
+      {{ delimit .Site.Data.site.formats_audio ", " }} &nbsp;·&nbsp; {{ delimit .Site.Data.site.formats_video ", " }}
+    </p>
   </div>
 </section>
 
 <!-- Use Cases -->
-<section class="section steps-section">
+<section class="section scenes-section">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">应用场景</h2>
-      <p class="section-desc">无论你是谁，AI 转录都能提升工作效率。</p>
     </div>
-    <div class="usecases-grid">
-      {{ range .Site.Data.site.usecases }}
-      <div class="usecase-card">
-        <h3 class="usecase-title">{{ i18n (printf "usecase_%s_title" .) }}</h3>
-        <p class="usecase-desc">{{ i18n (printf "usecase_%s_desc" .) }}</p>
+    <div class="scenes-grid">
+      <div class="scene-card">
+        {{ partial "illustration-scenes/student.html" . }}
+        <span class="scene-label">{{ i18n "usecase_students_title" }}</span>
       </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-
-<!-- Pricing -->
-<section class="section" id="pricing">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">定价方案</h2>
-      <p class="section-desc">选择适合你的方案，随时升级。</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <h3 class="pricing-name">{{ i18n "pricing_free_name" }}</h3>
-        <div class="pricing-price">{{ i18n "pricing_free_price" }}</div>
-        <ul class="pricing-features">
-          {{ range seq 1 5 }}
-          <li>{{ i18n (printf "pricing_free_f%d" .) }}</li>
-          {{ end }}
-        </ul>
-        <a href="{{ "tool" | relLangURL }}" class="btn btn-outline pricing-cta">{{ i18n "pricing_free_cta" }}</a>
+      <div class="scene-card">
+        {{ partial "illustration-scenes/podcaster.html" . }}
+        <span class="scene-label">{{ i18n "usecase_podcasters_title" }}</span>
       </div>
-      <div class="pricing-card pricing-card-featured">
-        <h3 class="pricing-name">{{ i18n "pricing_pro_name" }}</h3>
-        <div class="pricing-price">{{ i18n "pricing_pro_price" }}</div>
-        <ul class="pricing-features">
-          {{ range seq 1 5 }}
-          <li>{{ i18n (printf "pricing_pro_f%d" .) }}</li>
-          {{ end }}
-        </ul>
-        <a href="#" class="btn btn-primary pricing-cta">{{ i18n "pricing_pro_cta" }}</a>
+      <div class="scene-card">
+        {{ partial "illustration-scenes/journalist.html" . }}
+        <span class="scene-label">{{ i18n "usecase_journalists_title" }}</span>
+      </div>
+      <div class="scene-card">
+        {{ partial "illustration-scenes/enterprise.html" . }}
+        <span class="scene-label">{{ i18n "usecase_enterprise_title" }}</span>
+      </div>
+      <div class="scene-card">
+        {{ partial "illustration-scenes/legal.html" . }}
+        <span class="scene-label">{{ i18n "usecase_legal_title" }}</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="section steps-section" id="faq">
+<section class="section faq-section">
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">常见问题</h2>
