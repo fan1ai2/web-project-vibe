@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
+<meta name="keywords" content="{{ delimit .Params.keywords ", " }}">
+<title>{{ .Params.title }}</title>
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ .Params.title }}">
+<meta property="og:description" content="{{ .Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{{ .Site.Language.Lang }}">
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Alternate hreflang -->
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+{{ $main := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}">
+{{ if eq .Params.type "homepage" }}
+  {{ $home := resources.Get "css/homepage.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $home.RelPermalink }}">
+{{ end }}
+{{ if eq .Params.type "tool" }}
+  {{ $tool := resources.Get "css/tool.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $tool.RelPermalink }}">
+{{ end }}
