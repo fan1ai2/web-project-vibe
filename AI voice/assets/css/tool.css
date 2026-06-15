@@ -23,7 +23,7 @@
 .upload-area.drag-over { background: #FFF6EE; }
 .upload-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
 .illustration-upload { width: 48px; height: 48px; margin: 0 auto 16px; display: block; }
-.upload-text { font-family: var(--font-heading); font-size: 1.0625rem; font-weight: 600; color: var(--color-text); margin-bottom: 8px; }
+.upload-text { font-family: var(--font-heading); font-size: 1.0625rem; font-weight: 600; color: var(--color-text-body); margin-bottom: 8px; }
 .upload-text-secondary { font-size: 0.8125rem; color: var(--color-text-muted); }
 
 /* File Info */
@@ -206,6 +206,7 @@
   flex-wrap: wrap;
 }
 .export-label { font-size: 0.8125rem; font-weight: 600; color: var(--color-text-muted); }
+.export-bar .btn-outline { border-color: var(--color-primary); }
 
 /* === Privacy Badge === */
 .privacy-badge {
