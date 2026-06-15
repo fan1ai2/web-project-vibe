@@ -1,0 +1,220 @@
+/* === Tool Header === */
+.tool-section { padding: 48px 0 80px; }
+.tool-header { text-align: center; margin-bottom: 40px; }
+.tool-title { font-size: 2rem; font-weight: 700; color: var(--color-text); margin-bottom: 8px; }
+.tool-desc { font-size: 1.0625rem; color: var(--color-text-body); }
+
+/* === Upload Area === */
+.upload-area {
+  max-width: 700px;
+  margin: 0 auto 32px;
+  background: var(--color-surface);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 48px 24px;
+  text-align: center;
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+}
+.upload-area.drag-over {
+  border-color: var(--color-primary);
+  background: #EEF2FF;
+}
+.upload-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.upload-icon { margin-bottom: 16px; display: flex; justify-content: center; }
+.upload-text { font-size: 1.125rem; font-weight: 600; color: var(--color-text); margin-bottom: 8px; }
+.upload-text-secondary { font-size: 0.875rem; color: var(--color-text-muted); margin-bottom: 20px; }
+.upload-browse-btn { cursor: pointer; }
+
+/* File Info (after selection) */
+.file-info { display: flex; align-items: center; gap: 16px; text-align: left; margin-bottom: 24px; }
+.file-details { display: flex; flex-direction: column; gap: 4px; }
+.file-name { font-weight: 600; color: var(--color-text); font-size: 0.9375rem; }
+.file-meta { font-size: 0.8125rem; color: var(--color-text-muted); }
+#btnTranscribe { margin: 0 auto; display: inline-flex; }
+
+/* Progress */
+.progress-bar-track {
+  height: 6px;
+  background: var(--color-border);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--color-primary-gradient);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+.progress-status { font-size: 0.875rem; color: var(--color-text-body); font-weight: 500; }
+
+/* === Player === */
+.player-bar {
+  max-width: 700px;
+  margin: 0 auto 24px;
+  background: var(--color-player-bg);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+}
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--color-player-text);
+}
+.player-btn {
+  background: none;
+  border: none;
+  color: var(--color-player-text);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  transition: background 0.15s;
+}
+.player-btn:hover { background: rgba(255,255,255,0.1); }
+.player-times { display: flex; align-items: center; gap: 4px; font-size: 0.8125rem; font-family: "SF Mono", "Fira Code", monospace; white-space: nowrap; }
+.player-separator { color: var(--color-text-muted); }
+.player-time-total { color: var(--color-text-muted); }
+.player-seek {
+  flex: 1;
+  position: relative;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.seek-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.seek-progress {
+  height: 100%;
+  width: 0%;
+  background: var(--color-primary);
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+.player-speed { display: flex; align-items: center; gap: 6px; }
+.speed-label { font-size: 0.75rem; color: var(--color-text-muted); }
+.speed-select {
+  background: rgba(255,255,255,0.1);
+  color: var(--color-player-text);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+/* === Transcript Panel === */
+.transcript-panel {
+  max-width: 700px;
+  margin: 0 auto 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  min-height: 200px;
+}
+.transcript-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+.transcript-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+.transcript-segments { display: flex; flex-direction: column; gap: 4px; }
+.transcript-segment {
+  display: flex;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background 0.15s;
+  border-left: 3px solid transparent;
+}
+.transcript-segment:hover { background: #F8FAFC; }
+.transcript-segment.active {
+  background: #EEF2FF;
+  border-left-color: var(--color-primary);
+}
+.segment-time {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-family: "SF Mono", "Fira Code", monospace;
+  white-space: nowrap;
+  padding-top: 2px;
+  min-width: 48px;
+}
+.segment-body { flex: 1; }
+.segment-speaker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+.segment-speaker.speaker-2 { color: #7C3AED; }
+.segment-text { font-size: 0.9375rem; color: var(--color-text); line-height: 1.65; }
+.segment-word {
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.1s;
+}
+.segment-word:hover { background: rgba(79,70,229,0.15); }
+.segment-word.active { background: rgba(79,70,229,0.25); }
+
+/* === Export Bar === */
+.export-bar {
+  max-width: 700px;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.export-label { font-size: 0.875rem; font-weight: 600; color: var(--color-text-body); }
+.export-btn { font-size: 0.8125rem; padding: 8px 16px; }
+
+/* === Privacy Badge === */
+.privacy-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--color-accent);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  background: var(--color-accent-light);
+  border-radius: 100px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .player-controls { flex-wrap: wrap; gap: 10px; }
+  .player-seek { order: 10; width: 100%; }
+  .transcript-panel { padding: 20px 16px; }
+  .transcript-segment { flex-direction: column; gap: 4px; }
+}
