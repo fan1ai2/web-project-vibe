@@ -1,0 +1,9 @@
+{
+  "features": ["accuracy", "languages", "privacy", "interactive"],
+  "steps": ["upload", "transcribe", "export"],
+  "usecases": ["students", "podcasters", "journalists", "enterprise", "legal"],
+  "formats_audio": ["MP3", "WAV", "M4A", "AAC", "FLAC", "OGG", "AMR"],
+  "formats_video": ["MP4", "MOV", "MKV", "AVI"],
+  "faq_items": ["q1", "q2", "q3", "q4", "q5", "q6"],
+  "transcript_statuses": ["detecting", "transcribing", "timestamps", "complete"]
+}
