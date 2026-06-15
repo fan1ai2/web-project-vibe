@@ -1,0 +1,115 @@
+# Navigation
+nav_home: 首页
+nav_tool: 转录工具
+cta_start: 免费试用
+lang_switch: English
+
+# Hero
+hero_title: 免费无限制 AI 音频转文字
+hero_subtitle: 基于 OpenAI Whisper，99.8% 准确率，90+ 语言
+hero_desc: 上传音频或视频文件，秒级获取精准逐字稿。所有处理在本地完成，隐私安全无忧。
+hero_cta: 立即免费转录
+
+# Features
+feature_accuracy_title: 99.8% 准确率
+feature_accuracy_desc: 基于最新 Whisper 模型，即使在嘈杂环境下也能精准识别语音内容。
+feature_languages_title: 90+ 语言支持
+feature_languages_desc: 自动检测语言，支持中文、英语、日语等全球主流语言。
+feature_privacy_title: 本地处理，隐私安全
+feature_privacy_desc: 所有转录在浏览器本地完成，文件不会上传到任何服务器。
+feature_interactive_title: 交互式校对播放器
+feature_interactive_desc: 点击任意文字即可跳转播放，文字与音频深度同步，校对效率提升 70%。
+
+# Steps
+step_upload_title: 上传文件
+step_upload_desc: 拖拽或选择音频/视频文件，支持 MP3、WAV、M4A、MP4、MOV 等主流格式。
+step_transcribe_title: AI 自动转录
+step_transcribe_desc: Whisper 模型在浏览器本地运行，秒级生成带时间戳的精准逐字稿。
+step_export_title: 校对并导出
+step_export_desc: 交互式播放器边听边校，一键导出为 TXT、PDF、DOCX 或 SRT 字幕。
+
+# Use Cases
+usecase_students_title: 学生
+usecase_students_desc: 将课堂讲座录音转为学习笔记，搜索定位知识点。
+usecase_podcasters_title: 播客创作者
+usecase_podcasters_desc: 快速生成节目文字稿、字幕和 Show Notes。
+usecase_journalists_title: 记者
+usecase_journalists_desc: 访谈录音一键转文字，精确引用，提升写稿效率。
+usecase_enterprise_title: 企业培训
+usecase_enterprise_desc: 会议录像转为可搜索的 PDF 培训手册。
+usecase_legal_title: 法律行业
+usecase_legal_desc: 证据视频生成带时间戳的文字档案，便于检索归档。
+
+# Pricing
+pricing_free_name: 免费版
+pricing_free_price: 免费
+pricing_free_f1: 无限本地转录
+pricing_free_f2: 90+ 语言支持
+pricing_free_f3: 说话人识别
+pricing_free_f4: 导出 TXT / DOCX / SRT
+pricing_free_f5: 约 10 分钟/小时音频
+pricing_free_cta: 开始使用
+
+pricing_pro_name: 专业版
+pricing_pro_price: $20/月
+pricing_pro_f1: 一切免费版功能
+pricing_pro_f2: 无限云端转录
+pricing_pro_f3: 10x 加速处理
+pricing_pro_f4: 云端存储历史记录
+pricing_pro_f5: 约 30 秒/小时音频
+pricing_pro_cta: 升级 Pro
+
+# FAQ
+faq_q1: 转录真的免费吗？
+faq_a1: 是的，本地转录模式完全免费且无限制。我们通过 Pro 版的云端加速服务盈利，免费版用户不受影响。
+faq_q2: 文件上传到哪里？
+faq_a2: 在免费模式下，所有文件都在浏览器本地处理，不会上传到任何服务器。你的文件始终只存在于你的设备上。
+faq_q3: 支持哪些文件格式？
+faq_a3: 音频格式包括 MP3、WAV、M4A、AAC、FLAC、OGG、AMR 等；视频格式包括 MP4、MOV、MKV、AVI 等。
+faq_q4: 转录准确率如何？
+faq_a4: 基于 OpenAI Whisper 模型，在清晰录音条件下准确率可达 99.8%。支持自动语言检测，也能处理一定程度的背景噪音。
+faq_q5: 支持多说话人识别吗？
+faq_a5: 是的，系统会自动检测并标注不同说话人，在转录结果中以不同颜色区分显示。
+faq_q6: 文件大小有限制吗？
+faq_a6: 建议上传 4 小时以内的文件以获得最佳体验。没有硬性大小限制，但过大的文件可能导致浏览器处理缓慢。
+
+# Tool Page
+tool_title: AI 转录工具
+tool_desc: 上传音频或视频，秒级获取精准逐字稿
+upload_drop_text: 拖拽音频/视频文件到此处
+upload_browse: 点击浏览
+upload_format_hint: 支持 MP3、WAV、M4A、AAC、MP4、MOV、MKV 等格式
+upload_file_selected: 已选择
+upload_duration: 时长
+upload_size: 大小
+btn_transcribe: 开始转录
+btn_browse: 选择文件
+status_detecting: 正在识别语言…
+status_transcribing: AI 转写中…
+status_timestamps: 生成时间戳…
+status_complete: 转录完成
+
+player_play: 播放
+player_pause: 暂停
+player_speed: 速度
+player_volume: 音量
+
+transcript_empty: 上传文件并开始转录，逐字稿将在此显示
+transcript_speaker: 说话人
+
+export_txt: 导出 TXT
+export_docx: 导出 DOCX
+export_pdf: 导出 PDF
+export_srt: 导出 SRT
+
+privacy_badge: 本地处理 — 文件不会上传到服务器
+
+# Footer
+footer_tagline: 基于 OpenAI Whisper 的免费在线转录工具。隐私优先，无限使用。
+footer_copyright: SoundWise AI. 保留所有权利。
+footer_privacy: 隐私政策
+footer_terms: 使用条款
+
+# Formats
+format_audio_title: 音频格式
+format_video_title: 视频格式

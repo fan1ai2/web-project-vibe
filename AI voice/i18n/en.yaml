@@ -1,0 +1,105 @@
+nav_home: Home
+nav_tool: Transcription
+cta_start: Try Free
+lang_switch: 中文
+
+hero_title: Free Unlimited AI Audio to Text
+hero_subtitle: Powered by OpenAI Whisper, 99.8% accuracy, 90+ languages
+hero_desc: Upload audio or video files, get accurate transcripts in seconds. All processing happens locally — your privacy is guaranteed.
+hero_cta: Transcribe for Free
+
+feature_accuracy_title: 99.8% Accuracy
+feature_accuracy_desc: Powered by the latest Whisper model, accurately recognizes speech even in noisy environments.
+feature_languages_title: 90+ Languages
+feature_languages_desc: Auto-detects language, supporting Chinese, English, Japanese and major global languages.
+feature_privacy_title: Local Processing, Full Privacy
+feature_privacy_desc: All transcription happens in your browser. Files are never uploaded to any server.
+feature_interactive_title: Interactive Proofing Player
+feature_interactive_desc: Click any word to jump to that point in the audio. Deep text-audio sync improves proofing efficiency by 70%.
+
+step_upload_title: Upload File
+step_upload_desc: Drag & drop or select audio/video files. Supports MP3, WAV, M4A, MP4, MOV and more.
+step_transcribe_title: AI Auto Transcription
+step_transcribe_desc: Whisper model runs locally in your browser, generating timestamped transcripts in seconds.
+step_export_title: Proofread & Export
+step_export_desc: Listen and proofread with the interactive player. Export as TXT, PDF, DOCX, or SRT subtitles.
+
+usecase_students_title: Students
+usecase_students_desc: Turn lecture recordings into searchable study notes.
+usecase_podcasters_title: Podcasters
+usecase_podcasters_desc: Generate show notes, subtitles, and transcripts instantly.
+usecase_journalists_title: Journalists
+usecase_journalists_desc: Convert interview recordings to text for accurate quoting.
+usecase_enterprise_title: Enterprise
+usecase_enterprise_desc: Turn meeting recordings into searchable PDF training manuals.
+usecase_legal_title: Legal
+usecase_legal_desc: Generate timestamped text archives from evidence videos for discovery.
+
+pricing_free_name: Free
+pricing_free_price: Free
+pricing_free_f1: Unlimited local transcription
+pricing_free_f2: 90+ language support
+pricing_free_f3: Speaker identification
+pricing_free_f4: Export TXT / DOCX / SRT
+pricing_free_f5: ~10 min per hour of audio
+pricing_free_cta: Get Started
+
+pricing_pro_name: Pro
+pricing_pro_price: $20/mo
+pricing_pro_f1: Everything in Free
+pricing_pro_f2: Unlimited cloud transcription
+pricing_pro_f3: 10x faster processing
+pricing_pro_f4: Cloud storage & history
+pricing_pro_f5: ~30 sec per hour of audio
+pricing_pro_cta: Upgrade to Pro
+
+faq_q1: Is transcription really free?
+faq_a1: Yes, local transcription is completely free and unlimited. We monetize through the Pro cloud acceleration tier — free users are unaffected.
+faq_q2: Where are my files uploaded?
+faq_a2: In Free mode, all processing happens locally in your browser. Your files never leave your device.
+faq_q3: What file formats are supported?
+faq_a3: Audio: MP3, WAV, M4A, AAC, FLAC, OGG, AMR. Video: MP4, MOV, MKV, AVI.
+faq_q4: How accurate is the transcription?
+faq_a4: Up to 99.8% accuracy with clear audio, powered by OpenAI Whisper. Handles background noise and auto-detects language.
+faq_q5: Does it support multiple speakers?
+faq_a5: Yes, the system automatically detects and labels different speakers, shown in different colors in the transcript.
+faq_q6: Is there a file size limit?
+faq_a6: We recommend files under 4 hours for best performance. There is no hard limit, but very large files may slow browser processing.
+
+tool_title: AI Transcription
+tool_desc: Upload audio or video, get accurate transcripts in seconds
+upload_drop_text: Drop audio/video files here
+upload_browse: click to browse
+upload_format_hint: Supports MP3, WAV, M4A, AAC, MP4, MOV, MKV and more
+upload_file_selected: Selected
+upload_duration: Duration
+upload_size: Size
+btn_transcribe: Start Transcribing
+btn_browse: Choose File
+status_detecting: Detecting language…
+status_transcribing: AI transcribing…
+status_timestamps: Generating timestamps…
+status_complete: Transcription complete
+
+player_play: Play
+player_pause: Pause
+player_speed: Speed
+player_volume: Volume
+
+transcript_empty: Upload a file and start transcribing. Transcript will appear here.
+transcript_speaker: Speaker
+
+export_txt: Export TXT
+export_docx: Export DOCX
+export_pdf: Export PDF
+export_srt: Export SRT
+
+privacy_badge: Local Processing — Files never uploaded to servers
+
+footer_tagline: A free online transcription tool powered by OpenAI Whisper. Privacy-first, unlimited use.
+footer_copyright: SoundWise AI. All rights reserved.
+footer_privacy: Privacy Policy
+footer_terms: Terms of Service
+
+format_audio_title: Audio Formats
+format_video_title: Video Formats
