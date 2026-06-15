@@ -1,0 +1,29 @@
+<div class="player-bar" id="playerBar" style="display:none">
+  <audio id="audioElement" preload="metadata"></audio>
+  <div class="player-controls">
+    <button class="player-btn" id="btnPlay" aria-label="Play">
+      <svg id="iconPlay" width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M6 4l12 6-12 6V4z"/></svg>
+      <svg id="iconPause" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" style="display:none"><rect x="4" y="3" width="4" height="14" rx="1"/><rect x="12" y="3" width="4" height="14" rx="1"/></svg>
+    </button>
+    <div class="player-times">
+      <span class="player-time" id="timeCurrent">00:00</span>
+      <span class="player-separator">/</span>
+      <span class="player-time player-time-total" id="timeTotal">00:00</span>
+    </div>
+    <div class="player-seek" id="seekBar">
+      <div class="seek-track">
+        <div class="seek-progress" id="seekProgress"></div>
+      </div>
+    </div>
+    <div class="player-speed">
+      <label class="speed-label" for="speedSelect">{{ i18n "player_speed" }}</label>
+      <select id="speedSelect" class="speed-select">
+        <option value="0.5">0.5x</option>
+        <option value="0.75">0.75x</option>
+        <option value="1" selected>1x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+      </select>
+    </div>
+  </div>
+</div>

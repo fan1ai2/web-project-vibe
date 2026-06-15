@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<section class="tool-section">
+  <div class="container">
+    <div class="tool-header">
+      <h1 class="tool-title">{{ i18n "tool_title" }}</h1>
+      <p class="tool-desc">{{ i18n "tool_desc" }}</p>
+    </div>
+
+    {{ partial "upload-zone.html" . }}
+    {{ partial "audio-player.html" . }}
+    {{ partial "transcript-panel.html" . }}
+    {{ partial "export-bar.html" . }}
+
+    <div class="privacy-badge">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+        <path d="M8 1L2 4v5c0 3.5 2.5 6 6 7 3.5-1 6-3.5 6-7V4L8 1z"/>
+      </svg>
+      {{ i18n "privacy_badge" }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "scripts" }}
+<script src="/js/upload.js"></script>
+<script src="/js/player.js"></script>
+<script src="/js/simulate.js"></script>
+{{ end }}
