@@ -89,7 +89,7 @@
       {{ range .Site.Data.site.faq_items }}
       <details class="faq-item">
         <summary class="faq-question">{{ i18n (printf "faq_%s" .) }}</summary>
-        <p class="faq-answer">{{ i18n (printf "faq_a%s" .) }}</p>
+        <p class="faq-answer">{{ i18n (printf "faq_a%s" (replace . "q" "")) }}</p>
       </details>
       {{ end }}
     </div>
