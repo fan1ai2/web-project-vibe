@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="header-inner container">
+    <a href="{{ "/" | relLangURL }}" class="logo">
+      <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <rect width="32" height="32" rx="8" fill="#4F46E5"/>
+        <path d="M8 14.5C8 12.015 10.015 10 12.5 10V10C14.985 10 17 12.015 17 14.5V16H8V14.5Z" fill="white" opacity="0.9"/>
+        <path d="M15 16V18.5C15 20.985 17.015 23 19.5 23V23C21.985 23 24 20.985 24 18.5V16H15Z" fill="white" opacity="0.7"/>
+        <path d="M8 18H15V20H10C8.895 20 8 19.105 8 18Z" fill="white" opacity="0.5"/>
+      </svg>
+      <span class="logo-text">SoundWise</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="{{ "/" | relLangURL }}">{{ i18n "nav_home" }}</a>
+      <a href="{{ "tool" | relLangURL }}">{{ i18n "nav_tool" }}</a>
+    </nav>
+    <div class="header-actions">
+      <a href="{{ "tool" | relLangURL }}" class="btn btn-primary btn-sm">{{ i18n "cta_start" }}</a>
+      <div class="lang-switch">
+        {{ range .Site.Languages }}
+          {{ if ne .Lang $.Site.Language.Lang }}
+            <a href="{{ $.RelPermalink | replaceRE (printf "^/%s/" $.Site.Language.Lang) (printf "/%s/" .Lang) | relURL }}" class="lang-link">
+              {{ .Params.languageName }}
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</header>
