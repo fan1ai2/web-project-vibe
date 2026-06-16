@@ -7,10 +7,10 @@
         <h3 class="sidebar-title">分类</h3>
         <ul class="category-filter">
           {{ $allCount := len (where .Site.RegularPages "Section" "prompts") }}
-          <li><a href="{{ "/prompts/" | relURL }}" class="filter-link{{ if eq .RelPermalink "/prompts/" }} active{{ end }}">全部<span class="count">{{ $allCount }}</span></a></li>
+          <li><a href="{{ "prompts/" | relURL }}" class="filter-link{{ if eq .RelPermalink ("prompts/" | relURL) }} active{{ end }}">全部<span class="count">{{ $allCount }}</span></a></li>
           {{ range .Site.Data.categories }}
           {{ $count := len (where $.Site.RegularPages "Params.category" .slug) }}
-          <li><a href="{{ printf "/prompts/%s/" .slug | relURL }}" class="filter-link{{ if eq $.RelPermalink (printf "/prompts/%s/" .slug | relURL) }} active{{ end }}">{{ .name }}<span class="count">{{ $count }}</span></a></li>
+          <li><a href="{{ printf "prompts/%s/" .slug | relURL }}" class="filter-link{{ if eq $.RelPermalink (printf "prompts/%s/" .slug | relURL) }} active{{ end }}">{{ .name }}<span class="count">{{ $count }}</span></a></li>
           {{ end }}
         </ul>
       </aside>

@@ -1,0 +1,107 @@
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>生成器 — LogoForge</title>
+<meta name=description content="选择关键词，生成你的品牌 Logo"><meta name=robots content="index, follow"><link rel=canonical href=http://10.100.1.243/miniapp/logo/generator/><meta property="og:title" content="生成器 — LogoForge"><meta property="og:description" content="选择关键词，生成你的品牌 Logo"><meta property="og:url" content="http://10.100.1.243/miniapp/logo/generator/"><script>(function(){var e=localStorage.getItem("logoforge-theme");e==="dark"&&document.documentElement.setAttribute("data-theme","dark")})()</script><script>window.__API_BASE="/miniapp/logo/api",window.__BASEPATH="/miniapp/logo"</script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel=stylesheet><link rel=stylesheet href=/miniapp/logo/css/style.css><script src=/miniapp/logo/js/theme.js defer></script><script src=/miniapp/logo/js/auth.js defer></script><script src=/miniapp/logo/js/generator.js defer></script><script>document.addEventListener("DOMContentLoaded",function(){window.LogoForgeAuth.onAuthReady(function(e){e||window.LogoForgeAuth.showModal(!0)})})</script></head><body><header class=site-header><div class=header-inner><a href=/miniapp/logo/ class=header-brand><svg class="header-logo" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="2" y="2" width="24" height="24" rx="4" stroke="currentcolor" stroke-width="1.8" transform="rotate(12 14 14)"/><circle cx="14" cy="14" r="5" fill="currentcolor" opacity=".85"/><circle cx="14" cy="14" r="2.2" fill="var(--c-bg)"/></svg>
+<span class=header-brand-text>LogoForge</span></a><nav class=header-nav><a href=/miniapp/logo/>首页</a>
+<a href=/miniapp/logo/generator/ class=active>创作台</a>
+<a href=/miniapp/logo/about/>关于我们</a></nav><div class=header-actions><button class=header-icon-btn id=themeToggle aria-label=切换深色模式>
+<svg class="icon-sun" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="3.5" stroke="currentcolor" stroke-width="1.5"/><path d="M9 1.5V3M9 15v1.5M2.5 9H1m16 0h-1.5M3.4 3.4l1 1m9.2 9.2 1 1m-11.2.0 1-1m9.2-9.2 1-1" stroke="currentcolor" stroke-width="1.3" stroke-linecap="round"/></svg>
+<svg class="icon-moon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M14.5 10.5a6 6 0 01-7-7 6 6 0 107 7z" stroke="currentcolor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+</button>
+<button class=header-lang-btn id=langSwitch aria-label=切换语言>EN</button>
+<span class=auth-user id=authUser style=display:none></span>
+<button class="btn btn-outline-accent btn-sm" id=authLoginBtn>登录</button>
+<button class="btn btn-ghost btn-sm" id=authLogoutBtn style=display:none>退出</button></div></div></header><div class=auth-modal-overlay id=authModal><div class=auth-modal><button class=auth-modal-close id=authModalClose aria-label=关闭><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4 4 14" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"/></svg></button><div class=auth-header><svg class="auth-logo" width="32" height="32" viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="4" stroke="currentcolor" stroke-width="1.8" transform="rotate(12 14 14)"/><circle cx="14" cy="14" r="5" fill="currentcolor" opacity=".85"/><circle cx="14" cy="14" r="2.2" fill="var(--c-surface)"/></svg><p class=auth-subtitle>登录或注册，开始创作你的品牌 Logo</p></div><div class=auth-tabs><button class="auth-tab active" data-tab=login>登录</button>
+<button class=auth-tab data-tab=register>注册</button></div><form class=auth-form id=loginForm autocomplete=off><div class=auth-form-group><label for=loginUsername>用户名</label>
+<input type=text id=loginUsername name=username placeholder=输入用户名 required autocomplete=username></div><div class=auth-form-group><label for=loginPassword>密码</label>
+<input type=password id=loginPassword name=password placeholder="至少 6 位" required autocomplete=current-password></div><div class=auth-form-error></div><button type=submit>登录</button></form><form class=auth-form id=registerForm style=display:none autocomplete=off><div class=auth-form-group><label for=registerUsername>用户名</label>
+<input type=text id=registerUsername name=username placeholder=设置用户名 required autocomplete=username></div><div class=auth-form-group><label for=registerPassword>设置密码</label>
+<input type=password id=registerPassword name=password placeholder="至少 6 位" required autocomplete=new-password></div><div class=auth-form-group><label for=registerConfirm>确认密码</label>
+<input type=password id=registerConfirm name=confirm placeholder=再次输入密码 required autocomplete=new-password></div><div class=auth-form-group><label for=registerCaptcha>验证码</label><div class=input-row><input type=text id=registerCaptcha name=captchaCode placeholder=输入验证码 maxlength=6 autocomplete=off style=flex:1>
+<img id=captchaImg src alt=验证码 style="display:none;height:42px;cursor:pointer;border:1px solid var(--c-line);border-radius:4px" title=点击刷新验证码></div></div><div class=auth-form-error></div><button type=submit>注册</button></form></div></div><main><div class=generator-page id=generatorApp><div class=generator-layout><aside class=filter-panel id=filterPanel><div class=filter-panel><h2 class=filter-title>设计参数</h2><details class=filter-group open><summary>行业</summary><div class=filter-chips data-dimension=industry><button class=filter-chip data-value=科技/通信>科技</button>
+<button class=filter-chip data-value=科技/消费电子>消费电子</button>
+<button class=filter-chip data-value=运动/体育用品>运动</button>
+<button class=filter-chip data-value=食品饮料>食品饮料</button>
+<button class=filter-chip data-value=餐饮/咖啡>餐饮</button>
+<button class=filter-chip data-value=茶饮>茶饮</button>
+<button class=filter-chip data-value=汽车/出行>汽车</button>
+<button class=filter-chip data-value=汽车/新能源>新能源</button>
+<button class=filter-chip data-value=电商/零售>电商</button>
+<button class=filter-chip data-value=互联网/科技>互联网</button>
+<button class=filter-chip data-value=香氛/美妆>美妆</button>
+<button class=filter-chip data-value=白酒/奢侈品>白酒</button>
+<button class=filter-chip data-value=饮料/消费品>饮料</button>
+<button class=filter-chip data-value=乳业/食品>乳业</button>
+<button class=filter-chip data-value=物流/快递>物流</button>
+<button class=filter-chip data-value=家电/制造>家电</button>
+<button class=filter-chip data-value=服装/户外>服装</button>
+<button class=filter-chip data-value=游戏/娱乐>游戏</button>
+<button class=filter-chip data-value=电商/社交>社交电商</button>
+<button class=filter-chip data-value=视频/娱乐>视频</button>
+<button class=filter-chip data-value=茶饮/快餐>快餐</button>
+<button class=filter-chip data-value=酒类/啤酒>啤酒</button>
+<button class=filter-chip data-value=护肤/医疗>护肤</button>
+<button class=filter-chip data-value=文具/教育>教育</button>
+<button class=filter-chip data-value=潮玩/娱乐>潮玩</button>
+<button class=filter-chip data-value=本地生活/科技>本地生活</button>
+<button class=filter-chip data-value=服装/奢侈品>奢侈品</button></div></details><details class=filter-group open><summary>风格</summary><div class=filter-chips data-dimension=style><button class=filter-chip data-value=极简几何>极简几何</button>
+<button class=filter-chip data-value=极简现代>极简现代</button>
+<button class=filter-chip data-value=动感流线>动感流线</button>
+<button class=filter-chip data-value=自然写意>自然写意</button>
+<button class=filter-chip data-value=现代轻奢>现代轻奢</button>
+<button class=filter-chip data-value=新中式古典>新中式古典</button>
+<button class=filter-chip data-value=未来极简>未来极简</button>
+<button class=filter-chip data-value=工业极简>工业极简</button>
+<button class=filter-chip data-value=东方极简>东方极简</button>
+<button class=filter-chip data-value=科技稳健>科技稳健</button>
+<button class=filter-chip data-value=潮酷极简>潮酷极简</button>
+<button class=filter-chip data-value=玩趣波普>玩趣波普</button>
+<button class=filter-chip data-value=动感几何>动感几何</button>
+<button class=filter-chip data-value=活泼现代>活泼现代</button>
+<button class=filter-chip data-value=东方雅致>东方雅致</button>
+<button class=filter-chip data-value=亲和科技>亲和科技</button>
+<button class=filter-chip data-value=温暖现代>温暖现代</button>
+<button class=filter-chip data-value=经典奢华>经典奢华</button>
+<button class=filter-chip data-value=经典怀旧>经典怀旧</button>
+<button class=filter-chip data-value=圆润科技>圆润科技</button></div></details><details class=filter-group open><summary>配色</summary><div class=color-chips data-dimension=colorScheme><button class=color-chip-btn data-value=单色渐变红 style=background:#cf0a2c aria-label=单色渐变红></button>
+<button class=color-chip-btn data-value=单色橙 style=background:#ff6900 aria-label=橙色></button>
+<button class=color-chip-btn data-value=蓝白双色 style="background:linear-gradient(135deg,#003DA5 50%,#FFFFFF 50%)" aria-label=蓝白双色></button>
+<button class=color-chip-btn data-value=金黑红 style="background:linear-gradient(135deg,#C9A963 33%,#1A1A1A 33%,#1A1A1A 66%,#8B0000 66%)" aria-label=金黑红></button>
+<button class=color-chip-btn data-value=极致黑白 style="background:linear-gradient(135deg,#000 50%,#FFF 50%)" aria-label=极致黑白></button>
+<button class=color-chip-btn data-value=红黑撞色 style="background:linear-gradient(135deg,#E60012 50%,#1A1A1A 50%)" aria-label=红黑撞色></button>
+<button class=color-chip-btn data-value=多色跳跃 style="background:conic-gradient(#325AB4 0 90deg,#78E0DC 90deg 180deg,#FF5C8A 180deg 270deg,#FFB800 270deg 360deg)" aria-label=多色跳跃></button>
+<button class=color-chip-btn data-value=胭脂粉黛 style="background:linear-gradient(135deg,#C4375E 50%,#F2C4C9 50%)" aria-label=胭脂粉黛></button>
+<button class=color-chip-btn data-value=大地暖灰 style="background:linear-gradient(135deg,#8B8682 50%,#D4C9B8 50%)" aria-label=大地暖灰></button>
+<button class=color-chip-btn data-value=黑白金 style="background:linear-gradient(135deg,#1A1A1A 50%,#D4AF37 50%)" aria-label=黑白金></button>
+<button class=color-chip-btn data-value=黄黑撞色 style="background:linear-gradient(135deg,#FFD700 50%,#000 50%)" aria-label=黄黑撞色></button>
+<button class=color-chip-btn data-value=自然色系 style="background:linear-gradient(135deg,#2E8B57 50%,#F5F5DC 50%)" aria-label=自然色系></button>
+<button class=color-chip-btn data-value=科技蓝渐变 style="background:linear-gradient(135deg,#0066CC 50%,#00A8E8 50%)" aria-label=科技蓝渐变></button>
+<button class=color-chip-btn data-value=单色强调红 style=background:#ee1c25 aria-label=红色></button>
+<button class=color-chip-btn data-value=红白双色 style="background:linear-gradient(135deg,#E2231A 50%,#C0C0C0 50%)" aria-label=红银></button>
+<button class=color-chip-btn data-value=蓝红双色 style="background:linear-gradient(135deg,#0066FF 50%,#DE1F3E 50%)" aria-label=蓝红双色></button>
+<button class=color-chip-btn data-value=经典绿金 style="background:linear-gradient(135deg,#006633 50%,#D4AF37 50%)" aria-label=绿金></button>
+<button class=color-chip-btn data-value=冰雪蓝白红 style="background:linear-gradient(135deg,#0066CC 33%,#FFF 33%,#FFF 66%,#E60012 66%)" aria-label=蓝白红></button>
+<button class=color-chip-btn data-value=羊绒暖棕 style="background:linear-gradient(135deg,#8B7355 50%,#D2B48C 50%)" aria-label=暖棕></button>
+<button class=color-chip-btn data-value=茶韵暖棕 style="background:linear-gradient(135deg,#5D4037 50%,#FFF8E1 50%)" aria-label=茶棕></button></div></details><details class=filter-group open><summary>字体</summary><div class=filter-chips data-dimension=fontStyle><button class="filter-chip font-sample" data-value=无衬线几何><span class=font-preview>Ag</span>无衬线几何</button>
+<button class="filter-chip font-sample" data-value=无衬线圆角><span class=font-preview>Ag</span>无衬线圆角</button>
+<button class="filter-chip font-sample" data-value=无衬线现代><span class=font-preview>Ag</span>无衬线现代</button>
+<button class="filter-chip font-sample" data-value=无衬线粗体><span class=font-preview>Ag</span>无衬线粗体</button>
+<button class="filter-chip font-sample" data-value=无衬线极简><span class=font-preview>Ag</span>无衬线极简</button>
+<button class="filter-chip font-sample" data-value=中文宋体><span class=font-preview>字</span>宋体</button>
+<button class="filter-chip font-sample" data-value=中文楷体><span class=font-preview>字</span>楷体</button>
+<button class="filter-chip font-sample" data-value=中文书法><span class=font-preview>字</span>书法</button></div></details><details class=filter-group open><summary>构图</summary><div class=filter-chips data-dimension=layoutType><button class="filter-chip layout-sample" data-value=图标型>
+<svg class="layout-icon-svg" width="14" height="14" viewBox="0 0 14 14"><rect x="6" y="1" width="2" height="12" rx=".5" transform="rotate(45 7 7)" fill="currentcolor" opacity=".7"/></svg>图标型
+</button>
+<button class="filter-chip layout-sample" data-value=文字型>
+<svg class="layout-icon-svg" width="14" height="14" viewBox="0 0 14 14"><text x="7" y="11" text-anchor="middle" font-size="11" font-weight="600" fill="currentcolor" font-family="Inter,sans-serif">A</text></svg>文字型
+</button>
+<button class="filter-chip layout-sample" data-value=徽章型>
+<svg class="layout-icon-svg" width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentcolor" stroke-width="1.2"/><circle cx="7" cy="7" r="2" fill="currentcolor" opacity=".6"/></svg>徽章型
+</button>
+<button class="filter-chip layout-sample" data-value=图标+文字组合型>
+<svg class="layout-icon-svg" width="14" height="14" viewBox="0 0 14 14"><rect x="6" y=".5" width="2" height="6" rx=".5" transform="rotate(45 7 3.5)" fill="currentcolor" opacity=".7"/><text x="7" y="13" text-anchor="middle" font-size="6" font-weight="600" fill="currentcolor" font-family="Inter,sans-serif">A</text></svg>组合型</button></div></details><div class=filter-input-group><label for=brandName class=filter-label>品牌名称</label>
+<input type=text id=brandName class=filter-input placeholder=输入品牌名 maxlength=20 autocomplete=off><div class=char-count id=charCount>0/20</div></div><div class=filter-input-group><label for=extraConditions class=filter-label>补充描述</label>
+<textarea id=extraConditions class="filter-input filter-textarea" placeholder=描述你想要的风格细节... maxlength=200 rows=2></textarea></div><button class=btn-generate id=generateBtn disabled>生成 Logo</button></div></aside><section class=preview-area id=previewArea><div class=preview-inner><div class=preview-canvas-wrapper><div class=preview-canvas id=previewCanvas><div class=preview-empty-state id=previewEmpty><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><rect x="4" y="4" width="56" height="56" rx="6" stroke="currentcolor" stroke-width="1.5" stroke-dasharray="5 4" opacity=".4"/><path d="M22 40V28l6 8 4-5 4 7 6-10v12H22z" fill="currentcolor" opacity=".3"/><circle cx="28" cy="26" r="2.5" fill="currentcolor" opacity=".35"/></svg><p>选择左侧关键词开始</p></div><div class=preview-template id=previewTemplate style=display:none><svg viewBox="0 0 600 500" id="previewSvg"/></div><div class=preview-loading id=previewLoading style=display:none><div class=loader-collide><span></span><span></span><span></span><span></span></div><p>AI 正在生成中...</p></div><div class=preview-result id=previewResult style=display:none><img src alt="生成的 Logo" id=resultImage class=result-image><div class=result-actions><button class="btn btn-ghost btn-sm" id=downloadBtn>下载 SVG</button>
+<button class="btn btn-ghost btn-sm" id=shareBtn>分享</button>
+<button class="btn btn-ghost btn-sm" id=regenerateBtn>重新生成</button></div></div></div><button class=btn-generate-overflow id=generateBtnOverflow disabled>生成</button></div><div class=preview-prompt-display id=previewPrompt style=display:none><h4>生成 Prompt</h4><pre><code id=promptCode></code></pre><button class="btn btn-ghost btn-sm copy-btn" data-copy aria-label="复制 prompt">复制</button></div></div></section><aside class=history-panel id=historyPanel><h3 class=history-title>生成历史</h3><div class=history-list id=historyList><p class=history-empty>尚未生成任何 Logo</p></div></aside></div></div></main><footer class=site-footer><div class=container><div class=footer-grid><div class=footer-brand><svg class="footer-logo" width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="2" y="2" width="24" height="24" rx="4" stroke="currentcolor" stroke-width="1.8" transform="rotate(12 14 14)"/><circle cx="14" cy="14" r="5" fill="currentcolor" opacity=".85"/><circle cx="14" cy="14" r="2.2" fill="var(--c-bg)"/></svg>
+<span>LogoForge</span><p class=footer-tagline>AI 驱动的品牌 Logo 生成工具。<br>从灵感到成品，几分钟完成。</p></div><div class=footer-links><h4>产品</h4><a href=/miniapp/logo/generator/>创作台</a></div><div class=footer-links><h4>法律</h4><a href=/miniapp/logo/privacy/>隐私政策</a>
+<a href=/miniapp/logo/terms/>使用条款</a></div><div class=footer-links><h4>支持</h4><a href=mailto:hello@logoforge.app>联系我们</a>
+<button class=lang-switch id=langSwitch aria-label=切换语言>EN / 中文</button></div></div><div class=footer-bottom><p>&copy; 2026 LogoForge</p></div></div></footer></body></html>

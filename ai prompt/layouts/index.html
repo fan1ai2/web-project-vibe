@@ -17,7 +17,7 @@
     <div class="hero-tags">
       <span class="hero-tags-label">热门：</span>
       {{ range first 6 (shuffle (slice "写作" "编程" "设计" "营销" "效率" "教育" "生活" "角色扮演")) }}
-      <a href="{{ "/prompts/" | relURL }}" class="hero-tag">{{ . }}</a>
+      <a href="{{ "/prompts/" | relURL }}" class="hero-tag auth-gate">{{ . }}</a>
       {{ end }}
     </div>
   </div>

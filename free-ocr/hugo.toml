@@ -1,0 +1,40 @@
+baseURL = "https://freeocr.app/"
+languageCode = "zh-CN"
+defaultContentLanguage = "zh"
+title = "FreeOCR — 免费在线OCR图片文字识别工具"
+enableRobotsTXT = true
+
+[sitemap]
+  changeFreq = "weekly"
+  priority = 0.5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = "工具"
+    url = "/tool/"
+    weight = 1
+  [[menus.main]]
+    name = "FAQ"
+    url = "/faq/"
+    weight = 2
+  [[menus.main]]
+    name = "博客"
+    url = "/blog/"
+    weight = 3
+
+[languages]
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-CN"
+    contentDir = "content"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-US"
+    contentDir = "content/en"
+    weight = 2

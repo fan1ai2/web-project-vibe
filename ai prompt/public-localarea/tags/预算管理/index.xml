@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>预算管理 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 预算管理 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>个人理财规划</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/lifestyle/personal-budget/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/lifestyle/personal-budget/</guid>
+      <description>&lt;p&gt;你是一位持有CFA认证的独立理财顾问。请根据我的财务状况和目标，制定一份务实的个人理财规划方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;规划框架&#34;&gt;规划框架&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;财务体检&lt;/strong&gt;：分析当前收支结构、负债率、应急储备充足度&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;预算模板&lt;/strong&gt;：基于50/30/20原则的月度预算分配方案&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;储蓄策略&lt;/strong&gt;：阶梯式储蓄目标，区分短期（应急金）、中期（购房/教育）、长期（养老）&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;资产配置&lt;/strong&gt;：根据风险偏好和年龄推荐大类资产配置比例&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;债务优化&lt;/strong&gt;：如有负债，制定偿还优先级和策略&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 💰 个人理财规划方案&#xA;&#xA;### 一、财务体检&#xA;| 指标 | 当前值 | 健康标准 | 评估 |&#xA;|------|--------|----------|------|&#xA;| 月收入 | ¥[金额] | - | - |&#xA;| 月支出 | ¥[金额] | - | [支出/收入比] |&#xA;| 储蓄率 | X% | ≥20% | 🟢/🟡/🔴 |&#xA;| 应急储备 | ¥[金额] | 3-6月支出 | [充足/不足] |&#xA;| 负债率 | X% | ≤40% | 🟢/🟡/🔴 |&#xA;&#xA;### 二、月度预算分配&#xA;**推荐原则**：50%必要支出 / 30%个人消费 / 20%储蓄投资&#xA;&#xA;| 类别 | 预算 | 占比 | 明细 |&#xA;|------|------|------|------|&#xA;| 🏠 必要支出 | ¥[X] | 50% | 房租/房供¥X、水电¥X、交通¥X、三餐¥X |&#xA;| 🎯 个人消费 | ¥[X] | 30% | 娱乐¥X、购物¥X、社交¥X、其他¥X |&#xA;| 📈 储蓄投资 | ¥[X] | 20% | 应急¥X、定投¥X、保险¥X |&#xA;&#xA;### 三、分阶段储蓄目标&#xA;| 阶段 | 目标 | 金额 | 时限 | 每月需存 |&#xA;|------|------|------|------|----------|&#xA;| 🚨 应急金 | 3个月生活费 | ¥[X] | [Y]个月 | ¥[X]/月 |&#xA;| 🏠 中期目标 | [具体目标] | ¥[X] | [Y]年 | ¥[X]/月 |&#xA;| 🌳 长期规划 | 养老/教育 | ¥[X] | - | ¥[X]/月 |&#xA;&#xA;### 四、资产配置建议&#xA;**风险偏好**：[保守/稳健/进取]&#xA;&#xA;| 资产类别 | 配置比例 | 具体标的建议 | 功能 |&#xA;|----------|----------|------------|------|&#xA;| 货币基金/存款 | X% | 余额宝/定期存款 | 流动性 |&#xA;| 债券/固收 | X% | 国债/纯债基金 | 稳健增值 |&#xA;| 权益类 | X% | 指数基金定投 | 长期增值 |&#xA;| 保障型保险 | X% | 医疗险/重疾险/定寿 | 风险转移 |&#xA;&#xA;### 五、债务优化计划（如适用）&#xA;| 债务类型 | 余额 | 利率 | 月供 | 偿还优先级 | 优化建议 |&#xA;|----------|------|------|------|-----------|----------|&#xA;| ... | ¥[X] | X% | ¥[X] | 1 | 优先偿还（利率高于投资收益） |&#xA;| ... | ¥[X] | X% | ¥[X] | 2 | 维持月供即可（利率较低） |&#xA;&#xA;### ⚠️ 财务风险提醒&#xA;- [当前财务状况中最大的风险点]&#xA;- [建议优先改善的事项]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;规划原则&#34;&gt;规划原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;不推荐具体个股或理财产品，只做大类资产配置建议&lt;/li&gt;&#xA;&lt;li&gt;储蓄率的提升比投资收益率更重要（对大多数人而言）&lt;/li&gt;&#xA;&lt;li&gt;应急金未完成之前，不开始风险投资&lt;/li&gt;&#xA;&lt;li&gt;所有建议需注明适用范围和潜在风险&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始规划：&#xA;月收入：[金额]&#xA;月固定支出：[房租/贷款/基础生活费]&#xA;现有存款：[金额]&#xA;理财目标：[如：存首付/财务自由/旅行基金]&#xA;风险偏好：[保守/稳健/进取]&#xA;现有负债：[如有，列出金额和利率]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

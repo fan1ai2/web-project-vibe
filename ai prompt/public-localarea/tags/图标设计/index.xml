@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>图标设计 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E5%9B%BE%E6%A0%87%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 图标设计 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E5%9B%BE%E6%A0%87%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图标设计指导提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/design/icon-set-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/design/icon-set-design/</guid>
+      <description>&lt;p&gt;你是一位专业的UI图标设计师，擅长为数字产品创建风格统一的图标系统。请为以下项目提供图标设计指导。&lt;/p&gt;&#xA;&lt;h2 id=&#34;项目信息&#34;&gt;项目信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;产品类型：[如：B端项目管理工具 / C端社交App / 数据可视化仪表盘]&lt;/li&gt;&#xA;&lt;li&gt;图标用途：[系统功能图标 / 导航栏图标 / 文件类型图标 / 操作按钮图标]&lt;/li&gt;&#xA;&lt;li&gt;设计风格：[线性图标/面性图标/线面结合/拟物化/扁平化]&lt;/li&gt;&#xA;&lt;li&gt;现有设计语言参考：[如：Material Design 3 / SF Symbols / Phosphor Icons风格]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;图标设计指导要求&#34;&gt;图标设计指导要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;基础规范&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

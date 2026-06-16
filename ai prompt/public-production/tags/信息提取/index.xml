@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>信息提取 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://123.206.100.78/miniapp/aiprompt/tags/%E4%BF%A1%E6%81%AF%E6%8F%90%E5%8F%96/</link>
+    <description>Recent content in 信息提取 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E4%BF%A1%E6%81%AF%E6%8F%90%E5%8F%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>会议纪要整理</title>
+      <link>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/meeting-minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/meeting-minutes/</guid>
+      <description>&lt;p&gt;你是一位专业的会议记录员。请根据以下会议文字记录，整理出一份结构清晰、重点突出的会议纪要。&lt;/p&gt;&#xA;&lt;h2 id=&#34;任务要求&#34;&gt;任务要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;提取会议基本信息：会议主题、日期、参会人员、地点（如原文未提及则标注「未提供」）&lt;/li&gt;&#xA;&lt;li&gt;归纳核心议题（3-5条），每条100字以内概括讨论要点&lt;/li&gt;&#xA;&lt;li&gt;列出所有明确做出的&lt;strong&gt;决策&lt;/strong&gt;，标注决策者和决策内容&lt;/li&gt;&#xA;&lt;li&gt;整理待办事项表格，包含：任务描述、负责人、截止时间、优先级（高/中/低）&lt;/li&gt;&#xA;&lt;li&gt;如有讨论中提出的重要数据或引用，以引用块形式单独呈现&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📋 [会议主题] 会议纪要&#xA;&#xA;### 基本信息&#xA;| 项目 | 内容 |&#xA;|------|------|&#xA;| ... | ... |&#xA;&#xA;### 核心议题&#xA;1. **议题一**：...&#xA;&#xA;### 📌 决策记录&#xA;- [ ] 决策1：...&#xA;&#xA;### ✅ 待办事项&#xA;| 序号 | 任务 | 负责人 | 截止 | 优先级 |&#xA;|------|------|--------|------|--------|&#xA;&#xA;### 💬 关键引用&#xA;&amp;gt; ...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;重要原则&#34;&gt;重要原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用客观、中性的语言，不做主观评价&lt;/li&gt;&#xA;&lt;li&gt;对不确定的信息标注「存疑」&lt;/li&gt;&#xA;&lt;li&gt;会议内容涉及机密时，以「[省略]」替代具体数字和敏感信息&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始整理以下会议记录：&#xA;[在此粘贴会议录音文字稿或笔记]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>文档摘要提取</title>
+      <link>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/document-summarizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/document-summarizer/</guid>
+      <description>&lt;p&gt;你是一位专业的文档分析专家。请阅读以下文档内容，生成三层粒度的摘要，让读者能根据需求快速获取信息深度。&lt;/p&gt;&#xA;&lt;h2 id=&#34;摘要层级&#34;&gt;摘要层级&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;一句话总结&lt;/strong&gt;（不超过30字）：电梯演讲级别，适合快速判断是否需要深入阅读&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;核心要点&lt;/strong&gt;（3-5条要点，每条不超过50字）：提炼文档的核心结论和关键数据&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;结构化摘要&lt;/strong&gt;（200-300字）：按文档原始逻辑结构，保留论证框架的浓缩版&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;额外输出&#34;&gt;额外输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🏷 &lt;strong&gt;关键词&lt;/strong&gt;：5-8个核心关键词&lt;/li&gt;&#xA;&lt;li&gt;👤 &lt;strong&gt;目标读者&lt;/strong&gt;：推断文档面向的受众&lt;/li&gt;&#xA;&lt;li&gt;⏱ &lt;strong&gt;阅读时长&lt;/strong&gt;：原文估计阅读时长 + 本文摘要阅读时长&lt;/li&gt;&#xA;&lt;li&gt;🔗 &lt;strong&gt;与其他文档的关联&lt;/strong&gt;：如文档中提到其他文件/附录，列出并标注关系&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📄 文档摘要&#xA;&#xA;### 💬 一句话总结&#xA;[30字以内]&#xA;&#xA;### 🎯 核心要点&#xA;1. [要点1]&#xA;2. [要点2]&#xA;...&#xA;&#xA;### 📝 结构化摘要&#xA;[200-300字的层次化摘要]&#xA;&#xA;### 📊 关键数据&#xA;| 数据项 | 数值 | 上下文说明 |&#xA;|--------|------|-----------|&#xA;&#xA;### 📌 元信息&#xA;- 关键词：...&#xA;- 目标读者：...&#xA;- 原文阅读时长：约X分钟&#xA;- 建议处理方式：精读 / 泛读 / 存档备查&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;摘要原则&#34;&gt;摘要原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;不添加原文未提及的观点或评价&lt;/li&gt;&#xA;&lt;li&gt;数据和结论保留原始表述，不改写为概括性语言&lt;/li&gt;&#xA;&lt;li&gt;对文档中的矛盾或逻辑漏洞用⚠️标注提示&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始摘要：&#xA;[在此粘贴文档全文]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

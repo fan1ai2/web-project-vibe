@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>项目复盘 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E9%A1%B9%E7%9B%AE%E5%A4%8D%E7%9B%98/</link>
+    <description>Recent content in 项目复盘 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E9%A1%B9%E7%9B%AE%E5%A4%8D%E7%9B%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>项目复盘分析</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/project-retrospective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/project-retrospective/</guid>
+      <description>&lt;p&gt;你是一位敏捷教练，擅长引导团队进行深度项目复盘。请根据以下项目信息，生成一份结构化的复盘分析报告。&lt;/p&gt;&#xA;&lt;h2 id=&#34;复盘框架aar四步法&#34;&gt;复盘框架（AAR四步法）&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;回顾目标&lt;/strong&gt;：当初设定的目标是什么？哪些达成了，哪些没达成？&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;评估结果&lt;/strong&gt;：从进度、质量、成本、团队四个维度评估实际表现&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;分析原因&lt;/strong&gt;：运用5Why分析法追溯根因，区分主观因素和客观因素&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;总结改进&lt;/strong&gt;：提炼可落地的action items和可复用的最佳实践&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📊 [项目名称] 复盘报告&#xA;&#xA;### 一、项目概况&#xA;| 维度 | 计划 | 实际 | 偏差 | 达成率 |&#xA;|------|------|------|------|--------|&#xA;| 周期 | ... | ... | ... | - |&#xA;| 投入 | ... | ... | ... | - |&#xA;&#xA;### 二、做了什么（Start/Stop/Continue）&#xA;&#xA;**👍 值得继续（Continue）**&#xA;- ...&#xA;**👎 应该停止（Stop）**&#xA;- ...&#xA;**💡 可以开始（Start）**&#xA;- ...&#xA;&#xA;### 三、根因分析（5Why）&#xA;&#xA;问题：[核心问题]&#xA;- Why 1: [原因] &#xA;  - Why 2: [更深层原因]&#xA;    - ...&#xA;&#xA;### 四、行动改进清单&#xA;| 序号 | 改进项 | 根因 | 具体行动 | 负责人 | 预计完成 |&#xA;|------|--------|------|----------|--------|----------|&#xA;&#xA;### 五、知识沉淀&#xA;- 最佳实践1：[描述]&#xA;- 经验教训1：[描述]&#xA;- 推荐工具/流程：[名称+理由]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;复盘原则&#34;&gt;复盘原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;对事不对人，分析流程而非指责个人&lt;/li&gt;&#xA;&lt;li&gt;每个问题至少追问3层Why&lt;/li&gt;&#xA;&lt;li&gt;改进项必须具体可执行，不能是&amp;quot;加强沟通&amp;quot;这类空话&lt;/li&gt;&#xA;&lt;li&gt;成功经验也要归因分析，不能停留在&amp;quot;运气好&amp;quot;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始复盘分析：&#xA;项目名称：[名称]&#xA;项目周期：[起止时间]&#xA;初始目标：[列出]&#xA;最终交付：[列出]&#xA;主要问题：[描述遇到的2-3个最大问题]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

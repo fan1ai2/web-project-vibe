@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FAF9F6"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#FFFFFF" stroke="#E8E5DF" stroke-width="2"/>
+  <rect x="440" y="160" width="320" height="80" rx="16" fill="#D4963F"/>
+  <text x="600" y="212" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF">AI Prompt</text>
+  <text x="600" y="310" text-anchor="middle" font-family="Noto Serif SC, serif" font-size="52" font-weight="700" fill="#1A1A1A">高质量中文AI提示词库</text>
+  <text x="600" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="26" fill="#6B6B6B">精选100+实用中文提示词 · 8大场景分类 · 一键复制即用</text>
+  <text x="600" y="440" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#999">写作 · 编程 · 设计 · 营销 · 效率 · 教育 · 生活 · 角色扮演</text>
+</svg>

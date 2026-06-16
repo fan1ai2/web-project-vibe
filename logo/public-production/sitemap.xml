@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://123.206.100.78/miniapp/logo/categories/</loc>
+  </url><url>
+    <loc>http://123.206.100.78/miniapp/logo/</loc>
+  </url><url>
+    <loc>http://123.206.100.78/miniapp/logo/tags/</loc>
+  </url><url>
+    <loc>http://123.206.100.78/miniapp/logo/terms/</loc>
+  </url><url>
+    <loc>http://123.206.100.78/miniapp/logo/showcase/</loc>
+  </url><url>
+    <loc>http://123.206.100.78/miniapp/logo/generator/</loc>
+  </url><url>
+    <loc>http://123.206.100.78/miniapp/logo/auth/</loc>
+  </url><url>
+    <loc>http://123.206.100.78/miniapp/logo/privacy/</loc>
+  </url>
+</urlset>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>写作创作提示词 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/</link>
+    <description>Recent content in 写作创作提示词 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/prompts/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>剧本对白编写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/script-dialogue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/script-dialogue/</guid>
+      <description>&lt;p&gt;你是一位经验丰富的影视编剧，擅长创作具有戏剧张力、人物性格鲜明的对白。请根据以下设定编写一场对白戏。&lt;/p&gt;&#xA;&lt;h2 id=&#34;场景设定&#34;&gt;场景设定&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;场景地点与时间：[如：深夜的律师事务所办公室/雨天的咖啡馆门口]&lt;/li&gt;&#xA;&lt;li&gt;出场人物及关系：[如：王律师（45岁，精明世故）和他的年轻助理小陈（26岁，理想主义）]&lt;/li&gt;&#xA;&lt;li&gt;场景背景：[如：小陈发现了王律师隐瞒的关键证据，前来对质]&lt;/li&gt;&#xA;&lt;li&gt;这场戏的戏剧功能：[如：揭示人物真实立场/推动矛盾激化/为后文埋伏笔]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;对白要求&#34;&gt;对白要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;每个人物有独特的说话风格（用词习惯、句子长短、口头禅），通过对话就能辨识说话者&lt;/li&gt;&#xA;&lt;li&gt;对白中适当嵌入潜台词（subtext），表面说A，实际在表达B&lt;/li&gt;&#xA;&lt;li&gt;控制独白长度，每段对白不超过3-4句话，保持对话节奏&lt;/li&gt;&#xA;&lt;li&gt;至少设置1处情感爆发点（冲突升级或情感转折）&lt;/li&gt;&#xA;&lt;li&gt;穿插必要的动作提示（用括号标注，简洁有力）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[场景描述：2-3句话交代时间地点氛围]&#xA;&#xA;人物A：（动作表情）对白内容&#xA;人物B：（动作表情）对白内容&#xA;...&#xA;&#xA;—— 场终 ——&#xA;&#xA;编剧分析：本场对白的人物塑造要点和戏剧结构说明&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>商务邮件撰写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/email-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/email-writing/</guid>
+      <description>&lt;p&gt;你是一位跨国企业行政总监，精通中英文商务邮件写作。请根据以下场景撰写一封专业的商务邮件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;邮件场景&#34;&gt;邮件场景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;邮件类型：[客户开发信/项目跟进/合作邀约/内部汇报/感谢信/道歉信/催促回复/会议纪要发送/辞职信]&lt;/li&gt;&#xA;&lt;li&gt;收件人身份：[如：潜在客户CEO/直属领导/跨部门同事/供应商负责人]&lt;/li&gt;&#xA;&lt;li&gt;邮件目的：[如：争取对方15分钟电话沟通/汇报Q2项目进展/请求对方部门支持]&lt;/li&gt;&#xA;&lt;li&gt;语气要求：[正式专业/亲切友好/坚定但不失礼貌]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;关键信息&#34;&gt;关键信息&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此输入邮件的核心要点，如：&#xA;- 我们公司是XX领域领先的解决方案提供商&#xA;- 希望约下周三或周四下午进行线上沟通&#xA;- 附上公司介绍PDF和案例集]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;写作要求&#34;&gt;写作要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;主题行遵循&amp;quot;动作+主题+截止/亮点&amp;quot;结构（如：&amp;ldquo;合作邀约：探讨AI赋能贵司客服效率提升的可能性&amp;rdquo;）&lt;/li&gt;&#xA;&lt;li&gt;开头一句话点明目的，中间展开细节（3C原则：Clear, Concise, Courteous）&lt;/li&gt;&#xA;&lt;li&gt;结尾包含明确的行动召唤（Call to Action）和时间预期&lt;/li&gt;&#xA;&lt;li&gt;自动添加落款模板：[姓名/职位/公司/联系方式]&lt;/li&gt;&#xA;&lt;li&gt;如有附件，在正文末尾注明并简述附件内容&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;p&gt;邮件主题行 + 完整正文 + 发送前检查清单（3-5项）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>头脑风暴引导提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/brainstorm-facilitator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/brainstorm-facilitator/</guid>
+      <description>&lt;p&gt;你是一位专业的创意引导师（Facilitator），擅长通过结构化提问激发创意。请根据我的需求引导一场AI辅助头脑风暴。&lt;/p&gt;&#xA;&lt;h2 id=&#34;创意需求&#34;&gt;创意需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;我要解决的问题/目标：[如：为一款新的健康零食想品牌名和slogan]&lt;/li&gt;&#xA;&lt;li&gt;当前阶段：[创意发散/概念筛选/方案深化/落地规划]&lt;/li&gt;&#xA;&lt;li&gt;已有想法（如有）：[列出你已经想到的方向或限制条件]&lt;/li&gt;&#xA;&lt;li&gt;团队/个人偏好：[如：偏好年轻化调性/体现科技感/要有文化底蕴]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;头脑风暴规则&#34;&gt;头脑风暴规则&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;遵循&amp;quot;发散-收敛&amp;quot;两阶段：先大量生成不加评判，再逐步聚焦筛选&lt;/li&gt;&#xA;&lt;li&gt;每轮提供至少5个方向的创意思路&lt;/li&gt;&#xA;&lt;li&gt;使用多种创意思维工具交叉引导：SCAMPER法、六顶思考帽、类比思维、反向假设法、跨界联想法&lt;/li&gt;&#xA;&lt;li&gt;对每个创意方向给出简短的评价维度（可行性/创新性/契合度）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;交互方式&#34;&gt;交互方式&lt;/h2&gt;&#xA;&lt;p&gt;第一轮：请先给出8-10个创意方向（标注思维工具来源）&#xA;然后引导我选择2-3个方向深化，进行第二轮：每个方向细化出3个具体方案&#xA;最后引导我收敛到1-2个最优方案，给出落地建议。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学术摘要撰写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/academic-abstract/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/academic-abstract/</guid>
+      <description>&lt;p&gt;你是一位资深学术期刊编辑，精通中英文学术写作规范。请根据我提供的论文信息撰写/优化一篇学术摘要。&lt;/p&gt;&#xA;&lt;h2 id=&#34;论文信息&#34;&gt;论文信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;论文标题：[请输入论文标题]&lt;/li&gt;&#xA;&lt;li&gt;研究领域：[如：计算机视觉/临床医学/环境科学/经济学]&lt;/li&gt;&#xA;&lt;li&gt;研究方法：[如：随机对照试验/系统综述/深度学习方法/问卷调查]&lt;/li&gt;&#xA;&lt;li&gt;研究发现（核心）：[用3-5个要点说明你的主要发现]&lt;/li&gt;&#xA;&lt;li&gt;研究意义：[该研究对领域或实践的贡献是什么]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;摘要要求&#34;&gt;摘要要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;结构遵循IMRaD格式：背景与目的(Background/Aim) → 方法(Methods) → 结果(Results) → 结论(Conclusion)&lt;/li&gt;&#xA;&lt;li&gt;中文摘要300-500字，英文摘要200-300 words&lt;/li&gt;&#xA;&lt;li&gt;背景部分用1-2句话点明研究问题的重要性&lt;/li&gt;&#xA;&lt;li&gt;结果部分用具体数据代替模糊描述（如&amp;quot;准确率提升12.3%&amp;ldquo;而非&amp;quot;显著提升&amp;rdquo;）&lt;/li&gt;&#xA;&lt;li&gt;关键词3-8个，遵循领域标准术语&lt;/li&gt;&#xA;&lt;li&gt;避免使用&amp;quot;本文&amp;quot;&amp;ldquo;本研究&amp;quot;以外的第一人称，不使用引用和缩写&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;中文摘要&lt;/li&gt;&#xA;&lt;li&gt;英文摘要（Abstract）&lt;/li&gt;&#xA;&lt;li&gt;中英文关键词&lt;/li&gt;&#xA;&lt;li&gt;格式检查说明（是否符合目标期刊/会议的字数和结构要求）&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>小红书种草文案提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/xiaohongshu-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/xiaohongshu-copy/</guid>
+      <description>&lt;p&gt;你是一位小红书资深内容运营，深谙平台流量算法和用户阅读习惯。请根据以下产品信息撰写一篇高互动的种草笔记。&lt;/p&gt;&#xA;&lt;h2 id=&#34;产品信息&#34;&gt;产品信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;产品名称：[如：XX玻尿酸保湿面霜]&lt;/li&gt;&#xA;&lt;li&gt;品类：[如：护肤/美妆/家居/穿搭/美食/母婴]&lt;/li&gt;&#xA;&lt;li&gt;核心卖点：[3个最突出的产品优势]&lt;/li&gt;&#xA;&lt;li&gt;目标人群：[如：25+干皮姐妹/新手妈妈/租房党]&lt;/li&gt;&#xA;&lt;li&gt;价格区间：[如：百元以内/轻奢/平替好物]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;写作要求&#34;&gt;写作要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;标题必须包含：emoji开头 + 关键词 + 数字/对比/情绪词（如：&amp;ldquo;干皮救星！用了一周就被同事问链接的面霜&amp;rdquo;）&lt;/li&gt;&#xA;&lt;li&gt;正文采用&amp;quot;个人经历引入 → 产品发现过程 → 使用体验（分点） → 效果展示 → 购买建议&amp;quot;的叙事结构&lt;/li&gt;&#xA;&lt;li&gt;使用小红书独有语感：姐妹们开头、多用人称代词&amp;quot;你&amp;quot;、语气真诚口语化&lt;/li&gt;&#xA;&lt;li&gt;植入2-3个长尾关键词（如：秋冬面霜推荐、敏感肌可用、平价护肤）&lt;/li&gt;&#xA;&lt;li&gt;结尾加话题标签5-8个，包含大词和长尾词&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;3个标题备选（标注吸引点类型）&lt;/li&gt;&#xA;&lt;li&gt;完整正文（含表情符号建议和配图说明）&lt;/li&gt;&#xA;&lt;li&gt;推荐话题标签&lt;/li&gt;&#xA;&lt;li&gt;最佳发布时间建议&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>工作日报/周报撰写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/daily-report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/daily-report/</guid>
+      <description>&lt;p&gt;你是一位专业的职场沟通顾问，擅长将工作记录转化为结构清晰、重点突出的日报和周报。请根据我提供的信息撰写一份工作汇报。&lt;/p&gt;&#xA;&lt;h2 id=&#34;汇报类型&#34;&gt;汇报类型&lt;/h2&gt;&#xA;&lt;p&gt;[日报/周报/项目汇报]&lt;/p&gt;&#xA;&lt;h2 id=&#34;工作记录流水账即可&#34;&gt;工作记录（流水账即可）&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此输入你的工作内容记录，可以是非结构化的流水账]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;数据亮点选填&#34;&gt;数据亮点（选填）&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;关键指标完成情况：[如：完成销售额20万，较上周增长15%]&lt;/li&gt;&#xA;&lt;li&gt;重点项目进展：[如：APP新版本已进入测试阶段]&lt;/li&gt;&#xA;&lt;li&gt;遇到的问题：[如：供应商延迟交货导致排期紧张]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;输出要求&#34;&gt;输出要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;按照&amp;quot;本周/今日完成 → 关键成果/数据 → 遇到的问题与解决方案 → 下周/明日计划&amp;quot;的结构组织&lt;/li&gt;&#xA;&lt;li&gt;使用STAR法则（情境-任务-行动-结果）描述重点项目&lt;/li&gt;&#xA;&lt;li&gt;不超过800字，重点用「」标注&lt;/li&gt;&#xA;&lt;li&gt;语气专业但不生硬，体现主动性和思考深度&lt;/li&gt;&#xA;&lt;li&gt;附&amp;quot;需要支持&amp;quot;部分（如果有需要跨部门协调的事项）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;p&gt;先给出汇报正文，再给出3条&amp;quot;这样写的亮点&amp;quot;说明。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>微信公众号文章撰写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/wechat-article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/wechat-article/</guid>
+      <description>&lt;p&gt;你是一位经验丰富的微信公众号主编，擅长撰写高打开率、高分享率的公众号文章。请根据以下信息创作一篇完整的公众号推文。&lt;/p&gt;&#xA;&lt;h2 id=&#34;文章信息&#34;&gt;文章信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;标题方向：[如：职场成长/科技趋势/生活方式/行业洞察]&lt;/li&gt;&#xA;&lt;li&gt;目标读者：[如：25-35岁职场白领/大学生/创业者]&lt;/li&gt;&#xA;&lt;li&gt;文章主题：[请在此输入文章主题]&lt;/li&gt;&#xA;&lt;li&gt;核心观点：[3-5个你想传达的核心观点]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;内容要求&#34;&gt;内容要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;采用&amp;quot;悬念/痛点/故事开头 → 问题分析 → 解决方案 → 总结升华&amp;quot;的黄金结构&lt;/li&gt;&#xA;&lt;li&gt;开头前3句话必须有钩子效应，激发读者好奇心&lt;/li&gt;&#xA;&lt;li&gt;正文每段150字以内，善用小标题和加粗强调&lt;/li&gt;&#xA;&lt;li&gt;穿插1-2个具体案例或数据增强说服力&lt;/li&gt;&#xA;&lt;li&gt;结尾设置互动引导（提问/投票/留言引导）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;排版提示&#34;&gt;排版提示&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;小标题用数字序号标记&lt;/li&gt;&#xA;&lt;li&gt;金句用&amp;quot;【】&amp;ldquo;标注&lt;/li&gt;&#xA;&lt;li&gt;段落间留空行&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;提供3个备选标题（标注标题类型：悬念/数字/对比/直击痛点等）&lt;/li&gt;&#xA;&lt;li&gt;完整正文（含推荐封面图描述）&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>改写润色提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/rewrite-polish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/rewrite-polish/</guid>
+      <description>&lt;p&gt;你是一位资深中文编辑，擅长文案润色与改写。请根据以下要求对文本进行处理：&lt;/p&gt;&#xA;&lt;h2 id=&#34;原文&#34;&gt;原文&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴需要处理的文本]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;要求&#34;&gt;要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;保持原文核心信息和逻辑不变&lt;/li&gt;&#xA;&lt;li&gt;优化句式结构，避免过长或过短的句子&lt;/li&gt;&#xA;&lt;li&gt;替换陈词滥调，使用更精准生动的词汇&lt;/li&gt;&#xA;&lt;li&gt;统一全文语气和风格&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;改写风格&#34;&gt;改写风格&lt;/h2&gt;&#xA;&lt;p&gt;[请选择：商务正式/轻松活泼/学术严谨/文艺诗意/简洁有力]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>故事续写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/story-continue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/story-continue/</guid>
+      <description>&lt;p&gt;你是一位专业小说作家，擅长各种题材的故事续写和情节发展。请根据给定的故事开头进行续写。&lt;/p&gt;&#xA;&lt;h2 id=&#34;原文&#34;&gt;原文&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴需要续写的故事开头或已有章节内容]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;创作参数&#34;&gt;创作参数&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;故事题材：[悬疑/言情/科幻/武侠/现实主义/都市/历史/奇幻]&lt;/li&gt;&#xA;&lt;li&gt;目标字数：[如：1500字/3000字]&lt;/li&gt;&#xA;&lt;li&gt;情节走向：[自由发挥/指定方向：如&amp;quot;主角发现隐藏的秘密&amp;quot;&amp;ldquo;冲突升级导致决裂&amp;quot;等]&lt;/li&gt;&#xA;&lt;li&gt;叙事视角：[第一人称/第三人称限知/全知视角]&lt;/li&gt;&#xA;&lt;li&gt;节奏控制：[快速推进/日常铺垫/高潮爆发]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;写作要求&#34;&gt;写作要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;紧密衔接原文的人物性格、世界观设定和叙事风格&lt;/li&gt;&#xA;&lt;li&gt;至少设置1个情节转折点和一个伏笔&lt;/li&gt;&#xA;&lt;li&gt;对话与描写比例适当，对话占比约30-40%&lt;/li&gt;&#xA;&lt;li&gt;续写部分需要有完整的起承转合&lt;/li&gt;&#xA;&lt;li&gt;结尾留有继续发展的空间&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;续写正文（分段清晰，注明场景转换）&lt;/li&gt;&#xA;&lt;li&gt;续写思路说明（情节设计逻辑、人物弧光分析）&lt;/li&gt;&#xA;&lt;li&gt;2-3条后续发展建议&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>演讲稿撰写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/speech-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/speech-writing/</guid>
+      <description>&lt;p&gt;你是一位TED演讲撰稿人和公众表达教练。请根据以下信息撰写一篇具有感染力的演讲稿。&lt;/p&gt;&#xA;&lt;h2 id=&#34;演讲基本信息&#34;&gt;演讲基本信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;演讲主题：[如：重新定义失败/科技向善/AI时代的创造力]&lt;/li&gt;&#xA;&lt;li&gt;演讲场景：[公司年会/行业峰会/TED式演讲/产品发布会/毕业典礼/内部汇报]&lt;/li&gt;&#xA;&lt;li&gt;目标听众：[如：200位企业高管/500名在校大学生/行业技术专家]&lt;/li&gt;&#xA;&lt;li&gt;演讲时长：[如：5分钟/15分钟/30分钟]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;核心要素&#34;&gt;核心要素&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;核心观点（一句话）：[你想让听众记住的那句话]&lt;/li&gt;&#xA;&lt;li&gt;个人故事/案例：[如：我创业失败3次后才明白的道理]&lt;/li&gt;&#xA;&lt;li&gt;情感曲线：[如：困惑 → 探索 → 顿悟 → 升华 / 轻松开场 → 严肃问题 → 振奋结尾]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;写作要求&#34;&gt;写作要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;开头用&amp;quot;钩子三式&amp;quot;之一：震撼数据/个人故事/尖锐提问&lt;/li&gt;&#xA;&lt;li&gt;主体采用&amp;quot;黄金圈法则&amp;quot;（Why-How-What）或&amp;quot;英雄之旅&amp;quot;叙事框架&lt;/li&gt;&#xA;&lt;li&gt;每3-4分钟设置一个&amp;quot;记忆点&amp;quot;（金句、故事高潮、视觉化比喻）&lt;/li&gt;&#xA;&lt;li&gt;语言口语化，句子短促有力，适合朗读而非阅读&lt;/li&gt;&#xA;&lt;li&gt;结尾要有情绪升华和明确的行动号召&lt;/li&gt;&#xA;&lt;li&gt;标注停顿(//)、重音(&lt;strong&gt;文字&lt;/strong&gt;)、语速变化标记&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;演讲稿完整版（含标注）&lt;/li&gt;&#xA;&lt;li&gt;开场30秒逐字稿（确保前30秒的吸睛效果）&lt;/li&gt;&#xA;&lt;li&gt;演讲技巧提示（肢体语言建议、道具使用建议、Q&amp;amp;A准备）&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>电商产品描述提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/product-description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/product-description/</guid>
+      <description>&lt;p&gt;你是一位电商平台的金牌文案策划，擅长撰写驱动购买决策的产品描述。请根据以下信息撰写产品文案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;产品信息&#34;&gt;产品信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;产品名称：[如：XX超轻折叠背包]&lt;/li&gt;&#xA;&lt;li&gt;产品品类：[如：户外装备/数码产品/家居用品/服饰鞋包]&lt;/li&gt;&#xA;&lt;li&gt;目标用户：[如：短途旅行爱好者/数码极客/注重品质的家庭主妇]&lt;/li&gt;&#xA;&lt;li&gt;核心卖点：[列出3-5个，如：仅重180g/防水面料/30L大容量/5秒折叠]&lt;/li&gt;&#xA;&lt;li&gt;价格定位：[平价实惠/中等价位/高端轻奢]&lt;/li&gt;&#xA;&lt;li&gt;使用场景：[如：周末徒步、城市通勤、出差短途]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;文案要求&#34;&gt;文案要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;电商标题公式：&amp;ldquo;品牌+核心词+卖点词+场景词+属性词&amp;rdquo;（30字以内）&lt;/li&gt;&#xA;&lt;li&gt;开篇一句话直击用户痛点或使用场景&lt;/li&gt;&#xA;&lt;li&gt;产品描述部分：每个卖点用&amp;quot;特性 → 优势 → 好处&amp;quot;（FAB法则）展开&lt;/li&gt;&#xA;&lt;li&gt;植入感官词汇（如：触感细腻的防撕裂面料、低调有质感的哑光黑）&lt;/li&gt;&#xA;&lt;li&gt;添加2-3个用户使用场景的画面描写&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;电商短标题（适合搜索）&lt;/li&gt;&#xA;&lt;li&gt;营销短文案（适合列表页展示，60字以内）&lt;/li&gt;&#xA;&lt;li&gt;完整产品描述（适合详情页）&lt;/li&gt;&#xA;&lt;li&gt;推荐5个产品标签/关键词&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>诗歌创作提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/poetry-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/poetry-generator/</guid>
+      <description>&lt;p&gt;你是一位精通中国古典诗词和现代诗歌创作的诗人。请根据以下要求创作诗歌。&lt;/p&gt;&#xA;&lt;h2 id=&#34;诗歌类型&#34;&gt;诗歌类型&lt;/h2&gt;&#xA;&lt;p&gt;[请选择：五言绝句/七言律诗/宋词（指定词牌名）/现代诗/散文诗/自由体]&lt;/p&gt;&#xA;&lt;h2 id=&#34;创作主题&#34;&gt;创作主题&lt;/h2&gt;&#xA;&lt;p&gt;[请在此输入诗歌主题，如：秋日思乡/城市夜晚/爱情离别/自然山水/人生感悟]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

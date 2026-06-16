@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FreeOCR — 免费在线OCR图片文字识别工具</title><link>https://freeocr.app/en/</link><description>Recent content on FreeOCR — 免费在线OCR图片文字识别工具</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://freeocr.app/en/index.xml" rel="self" type="application/rss+xml"/><item><title>FreeOCR Guide: Free Online Image to Text Recognition Tool</title><link>https://freeocr.app/en/blog/introduction/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://freeocr.app/en/blog/introduction/</guid><description>&lt;h2 id="what-is-freeocr">What is FreeOCR?&lt;/h2>
+&lt;p>FreeOCR is a completely free online OCR (Optical Character Recognition) tool. Simply upload or paste an image to extract text content. All recognition happens locally in your browser — images are never uploaded to any server.&lt;/p>
+&lt;h2 id="core-features">Core Features&lt;/h2>
+&lt;h3 id="1-multiple-input-methods">1. Multiple Input Methods&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Click to upload&lt;/strong>: Click the upload area and select an image from your computer&lt;/li>
+&lt;li>&lt;strong>Drag and drop&lt;/strong>: Drag image files directly into the recognition zone&lt;/li>
+&lt;li>&lt;strong>Clipboard paste&lt;/strong>: Use &lt;code>Ctrl+V&lt;/code> to paste screenshots directly&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-markdown-output">2. Markdown Output&lt;/h3>
+&lt;p>Recognition results are automatically formatted as Markdown, preserving headings, lists, tables, and document structure. Copy directly into Notion, Obsidian, Typora, or any Markdown-compatible editor.&lt;/p></description></item><item><title>FAQ</title><link>https://freeocr.app/en/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://freeocr.app/en/faq/</guid><description/></item><item><title>Online OCR Tool</title><link>https://freeocr.app/en/tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://freeocr.app/en/tool/</guid><description/></item></channel></rss>

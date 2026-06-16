@@ -1,0 +1,12 @@
+- title_key: feature_1_title
+  desc_key: feature_1_desc
+  icon: "shield-check"
+- title_key: feature_2_title
+  desc_key: feature_2_desc
+  icon: "markdown"
+- title_key: feature_3_title
+  desc_key: feature_3_desc
+  icon: "formula"
+- title_key: feature_4_title
+  desc_key: feature_4_desc
+  icon: "language"

@@ -1,0 +1,132 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ i18n "sd_org_name" }}",
+  "description": "{{ i18n "sd_org_desc" }}",
+  "url": "{{ .Site.BaseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ i18n "sd_org_name" }}",
+  "description": "{{ i18n "sd_org_desc" }}",
+  "url": "{{ .Site.BaseURL }}"
+}
+</script>
+{{ end }}
+
+{{ if eq .Params.page_type "tool" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ i18n "sd_howto_name" }}",
+  "description": "{{ i18n "sd_howto_desc" }}",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "{{ i18n "step_1_title" }}",
+      "text": "{{ i18n "step_1_desc" }}"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "{{ i18n "step_2_title" }}",
+      "text": "{{ i18n "step_2_desc" }}"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "{{ i18n "step_3_title" }}",
+      "text": "{{ i18n "step_3_desc" }}"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FreeOCR",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Web Browser",
+  "description": "{{ i18n "sd_org_desc" }}",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+{{ end }}
+
+{{ if eq .Params.page_type "faq" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "{{ i18n "faq_q1" }}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{ i18n "faq_a1" }}" }
+    },
+    {
+      "@type": "Question",
+      "name": "{{ i18n "faq_q2" }}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{ i18n "faq_a2" }}" }
+    },
+    {
+      "@type": "Question",
+      "name": "{{ i18n "faq_q3" }}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{ i18n "faq_a3" }}" }
+    },
+    {
+      "@type": "Question",
+      "name": "{{ i18n "faq_q4" }}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{ i18n "faq_a4" }}" }
+    },
+    {
+      "@type": "Question",
+      "name": "{{ i18n "faq_q5" }}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{ i18n "faq_a5" }}" }
+    },
+    {
+      "@type": "Question",
+      "name": "{{ i18n "faq_q6" }}",
+      "acceptedAnswer": { "@type": "Answer", "text": "{{ i18n "faq_a6" }}" }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ if and (eq .Params.page_type "blog") (not .IsNode) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Params.description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "author": { "@type": "Organization", "name": "FreeOCR" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "{{ i18n "nav_home" }}", "item": "{{ "/" | absLangURL }}" },
+    { "@type": "ListItem", "position": 2, "name": "{{ i18n "nav_blog" }}", "item": "{{ "/blog/" | absLangURL }}" },
+    { "@type": "ListItem", "position": 3, "name": "{{ .Title }}" }
+  ]
+}
+</script>
+{{ end }}

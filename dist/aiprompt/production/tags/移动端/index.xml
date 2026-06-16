@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>移动端 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/</link><description>Recent content in 移动端 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>移动端适配方案提示词</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/design/mobile-responsive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/design/mobile-responsive/</guid><description>&lt;p>你是一位前端架构师兼UI设计顾问，精通响应式设计和移动端适配。请为以下项目提供移动端适配方案。&lt;/p>
+&lt;h2 id="项目信息">项目信息&lt;/h2>
+&lt;ul>
+&lt;li>项目类型：[如：电商H5活动页 / 企业官网 / Web应用管理后台 / 内容型博客]&lt;/li>
+&lt;li>当前设计稿基准：[如：375px（iPhone SE）/ 390px（iPhone 14）/ 1440px（桌面端）]&lt;/li>
+&lt;li>需要支持的设备范围：[手机/平板/桌面，指定最小支持的屏幕宽度，如320px]&lt;/li>
+&lt;li>关键页面类型：[首页/列表页/详情页/表单页/数据图表页]&lt;/li>
+&lt;/ul>
+&lt;h2 id="适配方案要求">适配方案要求&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>断点策略&lt;/strong>&lt;/p></description></item></channel></rss>

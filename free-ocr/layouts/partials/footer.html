@@ -1,0 +1,24 @@
+<footer class="bg-white border-t border-gray-200 mt-20">
+  <div class="max-w-content mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-bold text-lg mb-3 text-primary">FreeOCR</h3>
+        <p class="text-sm text-muted">{{ i18n "footer_desc" }}</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-3 text-gray-900">{{ i18n "nav_tool" }}</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><a href="{{ "/tool/" | relLangURL }}" class="hover:text-primary transition-colors">{{ i18n "nav_tool" }}</a></li>
+          <li><a href="{{ "/faq/" | relLangURL }}" class="hover:text-primary transition-colors">{{ i18n "nav_faq" }}</a></li>
+          <li><a href="{{ "/blog/" | relLangURL }}" class="hover:text-primary transition-colors">{{ i18n "nav_blog" }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-3 text-gray-900">Legal</h4>
+        <ul class="space-y-2 text-sm text-muted">
+          <li><span>{{ i18n "footer_copyright" }}</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,80 @@
+{{ define "main" }}
+
+{{ $pageType := .Params.page_type | default "" }}
+
+{{ if eq $pageType "tool" }}
+  <!-- Tool page: two-panel layout -->
+  <div x-data="toolApp()" x-cloak class="max-w-content mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8 text-center">{{ i18n "tool_heading" }}</h1>
+
+    <div class="flex flex-col lg:flex-row gap-6">
+      <div class="lg:w-1/2">
+        {{ partial "tool-uploader.html" . }}
+      </div>
+      <div class="lg:w-1/2">
+        {{ partial "tool-result.html" . }}
+      </div>
+    </div>
+  </div>
+
+{{ else if eq $pageType "blog" }}
+  <article class="max-w-content mx-auto px-4 py-8">
+    <header class="mb-8">
+      <a href="{{ "/blog/" | relLangURL }}" class="text-primary hover:underline text-sm mb-4 inline-block">{{ i18n "blog_back" }}</a>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">{{ .Title }}</h1>
+      <time class="text-sm text-muted" datetime="{{ .Date.Format "2006-01-02" }}">{{ i18n "blog_published" }} {{ .Date.Format "2006-01-02" }}</time>
+    </header>
+    <div class="prose max-w-none">
+      {{ .Content }}
+    </div>
+  </article>
+
+{{ else if eq $pageType "faq" }}
+  <div class="max-w-content mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8 text-center">{{ i18n "faq_heading" }}</h1>
+    <div class="max-w-2xl mx-auto space-y-4">
+      {{ range $i := (seq 1 6) }}
+      {{ $q := printf "faq_q%d" $i }}
+      {{ $a := printf "faq_a%d" $i }}
+      <details class="bg-white rounded-lg border border-gray-200 group">
+        <summary class="px-6 py-4 cursor-pointer font-semibold text-gray-900 hover:text-primary transition-colors marker:content-none list-none flex items-center justify-between">
+          {{ i18n $q }}
+          <svg class="w-5 h-5 text-muted group-open:rotate-180 transition-transform flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-6 pb-4 text-muted leading-relaxed">{{ i18n $a }}</div>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+
+{{ else }}
+  <div class="max-w-content mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">{{ .Title }}</h1>
+    <div class="prose max-w-none">
+      {{ .Content }}
+    </div>
+  </div>
+{{ end }}
+
+{{ end }}
+
+{{ define "scripts" }}
+{{ $pageType := .Params.page_type | default "" }}
+{{ if eq $pageType "tool" }}
+<!-- Tesseract.js -->
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<!-- marked.js -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js"></script>
+<!-- highlight.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/github.min.css">
+<script src="https://cdn.jsdelivr.net/npm/highlight.js@11/lib/highlight.min.js"></script>
+
+<script src="{{ "js/demo-data.js" | relURL }}"></script>
+<script src="{{ "js/ocr-engine.js" | relURL }}"></script>
+<script src="{{ "js/tool-app.js" | relURL }}"></script>
+{{ end }}
+{{ end }}

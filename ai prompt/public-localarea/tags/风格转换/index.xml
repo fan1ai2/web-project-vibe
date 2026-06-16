@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>风格转换 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E9%A3%8E%E6%A0%BC%E8%BD%AC%E6%8D%A2/</link>
+    <description>Recent content in 风格转换 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E9%A3%8E%E6%A0%BC%E8%BD%AC%E6%8D%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>改写润色提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/rewrite-polish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/rewrite-polish/</guid>
+      <description>&lt;p&gt;你是一位资深中文编辑，擅长文案润色与改写。请根据以下要求对文本进行处理：&lt;/p&gt;&#xA;&lt;h2 id=&#34;原文&#34;&gt;原文&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴需要处理的文本]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;要求&#34;&gt;要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;保持原文核心信息和逻辑不变&lt;/li&gt;&#xA;&lt;li&gt;优化句式结构，避免过长或过短的句子&lt;/li&gt;&#xA;&lt;li&gt;替换陈词滥调，使用更精准生动的词汇&lt;/li&gt;&#xA;&lt;li&gt;统一全文语气和风格&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;改写风格&#34;&gt;改写风格&lt;/h2&gt;&#xA;&lt;p&gt;[请选择：商务正式/轻松活泼/学术严谨/文艺诗意/简洁有力]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

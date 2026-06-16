@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="max-w-content mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8">{{ i18n "blog_heading" }}</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ range .Pages }}
+    <article class="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:border-primary/20 transition-all">
+      <time class="text-xs text-muted" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      <h2 class="text-lg font-bold mt-2 mb-3">
+        <a href="{{ .Permalink }}" class="text-gray-900 hover:text-primary transition-colors">{{ .Title }}</a>
+      </h2>
+      <p class="text-sm text-muted line-clamp-3">{{ .Params.description }}</p>
+      <a href="{{ .Permalink }}" class="inline-block mt-4 text-sm font-medium text-primary hover:text-primary-dark">{{ i18n "blog_readmore" }} →</a>
+    </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

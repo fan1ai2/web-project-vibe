@@ -1,4 +1,4 @@
-baseURL = "https://logogen.example.com/"
+baseURL = "http://10.100.1.243/miniapp/logo/"
 languageCode = "zh-CN"
 title = "LogoForge"
 enableRobotsTXT = true

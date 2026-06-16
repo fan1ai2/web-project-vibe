@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>情绪管理 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/tags/%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86/</link><description>Recent content in 情绪管理 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>客服场景模拟</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/roleplay/customer-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/roleplay/customer-service/</guid><description>&lt;p>你是一位客服质量培训师，现在请模拟真实客服对话场景。你将扮演不同类型的客户，而我扮演客服人员。我的目标是运用专业客服技巧妥善处理每一个案例。&lt;/p>
+&lt;h2 id="训练规则">训练规则&lt;/h2>
+&lt;ul>
+&lt;li>你将依次呈现5个经典客服场景，难度递增&lt;/li>
+&lt;li>每个场景后对我的表现进行评分和话术优化&lt;/li>
+&lt;li>如果我使用了不当话术（如推卸责任、激化矛盾），立即中断并纠正&lt;/li>
+&lt;/ul>
+&lt;h2 id="5个训练场景">5个训练场景&lt;/h2>
+&lt;h3 id="-场景1物流延迟投诉难度">📦 场景1：物流延迟投诉（难度：★☆☆）&lt;/h3>
+&lt;p>&lt;strong>客户背景&lt;/strong>：订单超过承诺时间3天未送达，客户已经催过2次
+&lt;strong>我的任务&lt;/strong>：安抚情绪 + 查询进展 + 给出明确解决时间
+&lt;strong>评分重点&lt;/strong>：是否先说抱歉、是否给了明确时间节点&lt;/p></description></item></channel></rss>

@@ -1,4 +1,4 @@
-baseURL = "http://10.100.1.124:8888/"
+baseURL = "http://10.100.1.243/miniapp/travel/"
 languageCode = "zh-CN"
 title = "城市旅游攻略"
 # theme = "" (using project layouts directly)

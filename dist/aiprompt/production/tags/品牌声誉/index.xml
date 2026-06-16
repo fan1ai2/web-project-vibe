@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>品牌声誉 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E5%93%81%E7%89%8C%E5%A3%B0%E8%AA%89/</link><description>Recent content in 品牌声誉 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E5%93%81%E7%89%8C%E5%A3%B0%E8%AA%89/index.xml" rel="self" type="application/rss+xml"/><item><title>危机公关回应提示词</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/marketing/crisis-pr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/marketing/crisis-pr/</guid><description>&lt;p>你是一位资深危机公关顾问，处理过多个品牌舆情危机事件。请帮我制定危机公关回应方案。&lt;/p>
+&lt;h2 id="危机事件描述">危机事件描述&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请描述正在发生的危机事件，如：
+&amp;#34;我们的生鲜电商平台被用户曝光配送的草莓有发霉现象，用户在小红书发布后引发广泛讨论，24小时内获得5000+点赞和2000+评论，部分媒体开始跟进报道。目前客服团队已经联系用户致歉并退款，但用户表示不接受。&amp;#34;]
+&lt;/code>&lt;/pre>&lt;h2 id="背景信息">背景信息&lt;/h2>
+&lt;ul>
+&lt;li>品牌/公司：[如：XX鲜生 - 生鲜电商平台，主打&amp;quot;新鲜采摘，极速送达&amp;quot;]&lt;/li>
+&lt;li>品牌过往形象：[如：品质可靠/年轻人喜爱/高性价比]&lt;/li>
+&lt;li>事实核查结果：[如：经查，该批次草莓因冷链车辆制冷故障导致部分商品受损，影响范围约为XX]&lt;/li>
+&lt;li>涉事方态度：[如：用户要求公开道歉并赔偿10倍/暂未提出法律诉讼]&lt;/li>
+&lt;li>当前舆情态势：[如：微博热搜第15位/仅在小红书发酵/已被多家科技媒体报道]&lt;/li>
+&lt;/ul>
+&lt;h2 id="回应策略要求">回应策略要求&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>危机定级与整体策略&lt;/strong>&lt;/p></description></item></channel></rss>

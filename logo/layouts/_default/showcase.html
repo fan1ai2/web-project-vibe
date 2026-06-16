@@ -1,0 +1,240 @@
+{{ define "main" }}
+
+<!-- Showcase Hero -->
+<section class="showcase-hero">
+  <div class="container">
+    <span class="showcase-hero-eyebrow">Gallery</span>
+    <h1 class="showcase-hero-title">品牌案例库</h1>
+    <p class="showcase-hero-desc">精选品牌标识，为你的创作提供灵感参考。</p>
+  </div>
+</section>
+
+<!-- Login Gate -->
+<section class="section">
+  <div class="container-narrow">
+    <div class="showcase-login-gate" id="showcaseLoginGate" style="display:none">
+      <div class="showcase-login-card">
+        <div class="showcase-login-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h2>登录后查看案例库</h2>
+        <p>登录你的 LogoForge 账号，浏览精选品牌标识获取灵感。</p>
+        <button class="btn btn-primary btn-lg" onclick="window.LogoForgeAuth.showModal()">立即登录</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Grid -->
+<section class="section" id="showcaseGallery" style="display:none">
+  <div class="container">
+    <div class="showcase-gallery-grid">
+      {{ $images := slice
+        (dict "src" "/images/showcase/华为.jpg" "brand" "华为" "style" "科技 · 极简几何")
+        (dict "src" "/images/showcase/NIKE.png" "brand" "Nike" "style" "运动 · 动感流线")
+        (dict "src" "/images/showcase/小米.jpg" "brand" "小米" "style" "消费电子 · 圆润科技")
+        (dict "src" "/images/showcase/蔚来.jpg" "brand" "蔚来" "style" "汽车 · 未来极简")
+        (dict "src" "/images/showcase/瑞幸咖啡.png" "brand" "瑞幸咖啡" "style" "餐饮 · 蓝白双色")
+        (dict "src" "/images/showcase/京东.jpg" "brand" "京东" "style" "电商 · 红白双色")
+        (dict "src" "/images/showcase/星巴克.png" "brand" "星巴克" "style" "餐饮 · 经典绿金")
+        (dict "src" "/images/showcase/字节跳动.jpg" "brand" "字节跳动" "style" "互联网 · 多色跳跃")
+      }}
+      {{ range $images }}
+      <div class="showcase-gallery-card">
+        <div class="showcase-gallery-img">
+          <img src="{{ $.Site.Data.site.basepath }}{{ .src }}" alt="{{ .brand }}" loading="lazy">
+        </div>
+        <div class="showcase-gallery-meta">
+          <span class="showcase-gallery-brand">{{ .brand }}</span>
+          <span class="showcase-gallery-style">{{ .style }}</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  function check() {
+    var gate = document.getElementById('showcaseLoginGate');
+    var gallery = document.getElementById('showcaseGallery');
+    if (!gate || !gallery) return;
+
+    if (window.LogoForgeAuth && window.LogoForgeAuth.isLoggedIn()) {
+      gate.style.display = 'none';
+      gallery.style.display = '';
+    } else {
+      gate.style.display = '';
+      gallery.style.display = 'none';
+    }
+  }
+
+  if (window.LogoForgeAuth) {
+    window.LogoForgeAuth.onAuthReady(function() { check(); });
+  }
+
+  // Listen for auth success
+  window._onAuthSuccess = function() { check(); };
+
+  // Also check on DOM ready as fallback
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', check);
+  } else {
+    check();
+  }
+})();
+</script>
+
+{{ end }}
+
+{{ define "head_extra" }}
+<style>
+/* Showcase Hero */
+.showcase-hero {
+  padding: var(--s-16) 0 var(--s-12);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.showcase-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, var(--c-accent) 0%, transparent 70%);
+  opacity: 0.04;
+  pointer-events: none;
+}
+.showcase-hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+  margin-bottom: var(--s-3);
+  padding: 4px 14px;
+  border: 1px solid var(--c-accent);
+  border-radius: 100px;
+}
+.showcase-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: var(--c-text);
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--s-3);
+}
+.showcase-hero-desc {
+  font-size: 1.05rem;
+  color: var(--c-faint);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Login Gate Card */
+.showcase-login-card {
+  text-align: center;
+  padding: var(--s-12) var(--s-8);
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: 12px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.showcase-login-icon {
+  width: 72px; height: 72px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto var(--s-5);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--c-accent) 8%, transparent);
+  color: var(--c-accent);
+}
+.showcase-login-card h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 var(--s-2);
+}
+.showcase-login-card p {
+  font-size: 0.9rem;
+  color: var(--c-faint);
+  margin: 0 0 var(--s-6);
+}
+
+/* Gallery Grid */
+.showcase-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s-4);
+}
+.showcase-gallery-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-spring);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--s-8) var(--s-5) var(--s-5);
+  gap: var(--s-4);
+  height: 300px;
+}
+.showcase-gallery-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.07);
+  border-color: var(--c-muted);
+}
+.showcase-gallery-img {
+  flex: 1;
+  display: flex; align-items: center; justify-content: center;
+  width: 100%;
+}
+.showcase-gallery-img img {
+  width: 100%; height: 100%;
+  max-width: 85%; max-height: 170px;
+  object-fit: contain;
+  transition: transform 0.3s var(--ease-spring);
+}
+.showcase-gallery-card:hover .showcase-gallery-img img {
+  transform: scale(1.05);
+}
+.showcase-gallery-meta {
+  text-align: center;
+}
+.showcase-gallery-brand {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--c-text);
+  margin-bottom: 2px;
+}
+.showcase-gallery-style {
+  font-size: 0.7rem;
+  color: var(--c-faint);
+}
+
+/* Dark mode */
+[data-theme="dark"] .showcase-gallery-card { background: var(--c-surface); }
+[data-theme="dark"] .showcase-login-card { background: var(--c-surface); }
+
+@media (max-width: 1024px) {
+  .showcase-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .showcase-gallery-card { height: 260px; padding: var(--s-6) var(--s-4) var(--s-4); }
+}
+@media (max-width: 768px) {
+  .showcase-gallery-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-3); }
+  .showcase-gallery-card { height: 240px; }
+  .showcase-hero { padding: var(--s-10) 0 var(--s-8); }
+}
+@media (max-width: 480px) {
+  .showcase-gallery-grid { grid-template-columns: 1fr; }
+  .showcase-gallery-card { height: 260px; }
+}
+</style>
+{{ end }}

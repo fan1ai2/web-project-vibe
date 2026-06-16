@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>表达提升 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/tags/%E8%A1%A8%E8%BE%BE%E6%8F%90%E5%8D%87/</link><description>Recent content in 表达提升 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E8%A1%A8%E8%BE%BE%E6%8F%90%E5%8D%87/index.xml" rel="self" type="application/rss+xml"/><item><title>改写润色提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/rewrite-polish/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/rewrite-polish/</guid><description>&lt;p>你是一位资深中文编辑，擅长文案润色与改写。请根据以下要求对文本进行处理：&lt;/p>
+&lt;h2 id="原文">原文&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请在此粘贴需要处理的文本]
+&lt;/code>&lt;/pre>&lt;h2 id="要求">要求&lt;/h2>
+&lt;ol>
+&lt;li>保持原文核心信息和逻辑不变&lt;/li>
+&lt;li>优化句式结构，避免过长或过短的句子&lt;/li>
+&lt;li>替换陈词滥调，使用更精准生动的词汇&lt;/li>
+&lt;li>统一全文语气和风格&lt;/li>
+&lt;/ol>
+&lt;h2 id="改写风格">改写风格&lt;/h2>
+&lt;p>[请选择：商务正式/轻松活泼/学术严谨/文艺诗意/简洁有力]&lt;/p></description></item></channel></rss>

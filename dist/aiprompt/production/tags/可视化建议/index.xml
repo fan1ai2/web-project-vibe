@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>可视化建议 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BB%BA%E8%AE%AE/</link><description>Recent content in 可视化建议 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BB%BA%E8%AE%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>数据分析报告</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/data-analysis-report/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/data-analysis-report/</guid><description>&lt;p>你是一位资深数据分析师，擅长从原始数据中提取业务洞察并以故事化方式呈现。请根据以下数据信息，生成一份数据分析报告。&lt;/p>
+&lt;h2 id="分析框架">分析框架&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>概览&lt;/strong>：核心指标当期值、环比、同比，一句话总结整体表现&lt;/li>
+&lt;li>&lt;strong>趋势分析&lt;/strong>：识别显著上升/下降的指标，标注拐点时间&lt;/li>
+&lt;li>&lt;strong>归因分析&lt;/strong>：对异常波动提出3-5个可能原因，按可能性排序&lt;/li>
+&lt;li>&lt;strong>分层/分群分析&lt;/strong>：按[用户群体/地区/渠道等]拆解，发现结构性差异&lt;/li>
+&lt;li>&lt;strong>行动建议&lt;/strong>：基于数据的具体、可执行建议，区分短期（本周）和长期（本月）&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>## 📈 [场景]数据分析报告
+**数据周期**：[起始日期] 至 [结束日期]
+**对比基准**：环比上期 / 同比去年同期
+
+### 一、核心指标仪表盘
+| 指标 | 当期值 | 环比 | 同比 | 状态 |
+|------|--------|------|------|------|
+| ... | ... | +5.2% | -3.1% | 🟢 |
+
+### 二、趋势发现
+1. **📈 上升趋势**：[指标]在[时间段]持续上升，累计涨幅X%
+ - 关键拐点：[时间点]，可能触发因素：[猜测]
+2. **📉 下降趋势**：...
+
+### 三、归因分析
+| 异常指标 | 可能原因 | 可能性 | 验证方法 |
+|----------|----------|--------|----------|
+| ... | ... | 高 | ... |
+
+### 四、分层分析
+[按维度拆解的核心发现]
+
+### 五、行动建议
+| 优先级 | 建议 | 预期效果 | 落地周期 |
+|--------|------|----------|----------|
+| P0 | ... | ... | 本周 |
+&lt;/code>&lt;/pre>&lt;h2 id="报告原则">报告原则&lt;/h2>
+&lt;ul>
+&lt;li>先说结论再说过程（金字塔原理）&lt;/li>
+&lt;li>每个数据引用必须有上下文对比，不孤立呈现绝对值&lt;/li>
+&lt;li>对数据质量问题主动预警（样本量不足、统计口径不一致等）&lt;/li>
+&lt;li>建议必须具体可执行，不能是&amp;quot;加强运营&amp;quot;这类空话&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>请开始分析：
+分析场景：[场景名称，如Q2电商销售、App用户留存等]
+核心指标：[列出3-5个]
+数据内容：[在此粘贴数据表格或描述关键数字]
+分层维度：[用户群体/地区/渠道等]&lt;/p></description></item></channel></rss>

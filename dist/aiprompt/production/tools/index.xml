@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>在线AI工具箱 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tools/</link><description>Recent content in 在线AI工具箱 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>AI内容检测</title><link>http://123.206.100.78/miniapp/aiprompt/tools/ai-detector/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/tools/ai-detector/</guid><description>&lt;p>检测文本是否为AI生成。支持多模型识别（ChatGPT、Claude、Gemini等），提供逐句概率分析和详细检测报告。&lt;/p>
+&lt;div class="tool-mock">
+ &lt;div class="tool-mock-header">试用演示&lt;/div>
+ &lt;div class="tool-mock-body">
+ &lt;textarea class="tool-mock-input" placeholder="在此粘贴需要检测的文本内容...">&lt;/textarea>
+ &lt;button class="tool-mock-btn" data-mock-btn="ai-detector">
+ &lt;svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">&lt;path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>&lt;/svg>
+ 开始检测
+ &lt;/button>
+ &lt;div id="mock-output-ai-detector" class="tool-mock-output">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 id="功能特色">功能特色&lt;/h2>
+&lt;ul>
+&lt;li>支持多模型检测：ChatGPT / Claude / Gemini / DeepSeek&lt;/li>
+&lt;li>逐句AI概率分析，精确定位可疑段落&lt;/li>
+&lt;li>输出详细检测报告，包含来源推测和建议&lt;/li>
+&lt;li>识别典型AI写作特征：重复句式、模板化表达、过度正式&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>教育机构检测学生作业是否为AI代写&lt;/li>
+&lt;li>内容编辑审核稿件原创性&lt;/li>
+&lt;li>企业质量管控，确保人工创作比例&lt;/li>
+&lt;/ul></description></item><item><title>AI提示词生成器</title><link>http://123.206.100.78/miniapp/aiprompt/tools/prompt-generator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/tools/prompt-generator/</guid><description>&lt;p>根据你的需求，自动生成结构完整的高质量AI提示词。&lt;/p>
+&lt;div class="tool-mock">
+ &lt;div class="tool-mock-header">试用演示&lt;/div>
+ &lt;div class="tool-mock-body">
+ &lt;textarea id="mock-input-prompt-gen" class="tool-mock-input" placeholder="描述你想要生成的提示词场景，例如：帮我写一个让ChatGPT扮演资深产品经理分析用户需求的提示词">&lt;/textarea>
+ &lt;button class="tool-mock-btn" data-mock-btn="prompt-generator">
+ &lt;svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">&lt;polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>&lt;/svg>
+ 生成提示词
+ &lt;/button>
+ &lt;div id="mock-output-prompt-gen" class="tool-mock-output">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 id="功能特色">功能特色&lt;/h2>
+&lt;ul>
+&lt;li>根据场景描述自动生成结构化提示词&lt;/li>
+&lt;li>自动填充角色设定、任务目标、输出格式、约束条件四大要素&lt;/li>
+&lt;li>支持多种输出语言和写作风格&lt;/li>
+&lt;li>内置提示词模板库，覆盖常见场景&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>不知道如何写好提示词时，输入需求让AI帮你写&lt;/li>
+&lt;li>优化现有提示词，提升AI输出质量&lt;/li>
+&lt;li>批量生成相似场景的提示词变体&lt;/li>
+&lt;/ul></description></item><item><title>AI文本人性化</title><link>http://123.206.100.78/miniapp/aiprompt/tools/text-humanizer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/tools/text-humanizer/</guid><description>&lt;p>将AI生成的文本转化为自然流畅的人类书写风格，调整语气和情感，让内容更有温度。&lt;/p>
+&lt;div class="tool-mock">
+ &lt;div class="tool-mock-header">试用演示&lt;/div>
+ &lt;div class="tool-mock-body">
+ &lt;textarea id="mock-input-text-humanizer" class="tool-mock-input" placeholder="在此粘贴AI生成的文本...">&lt;/textarea>
+ &lt;button class="tool-mock-btn" data-mock-btn="text-humanizer">
+ &lt;svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">&lt;path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>&lt;circle cx="12" cy="7" r="4"/>&lt;/svg>
+ 开始人性化
+ &lt;/button>
+ &lt;div id="mock-output-text-humanizer" class="tool-mock-output">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 id="功能特色">功能特色&lt;/h2>
+&lt;ul>
+&lt;li>检测并消除AI写作痕迹（重复句式、过度正式、缺少个性）&lt;/li>
+&lt;li>调整语气模式：正式商务 / 亲切友好 / 幽默轻松 / 专业学术&lt;/li>
+&lt;li>增强文本流畅度和可读性，优化句长分布&lt;/li>
+&lt;li>保留原意不变，仅优化表达方式&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>将AI初稿转化为可直接发布的成品文章&lt;/li>
+&lt;li>学术论文润色，使其更符合人类写作习惯&lt;/li>
+&lt;li>营销文案去AI味，增加品牌个性&lt;/li>
+&lt;/ul></description></item><item><title>图片转提示词</title><link>http://123.206.100.78/miniapp/aiprompt/tools/image-to-prompt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/tools/image-to-prompt/</guid><description>&lt;p>上传图片，AI分析图像内容并反向生成高质量的AI绘画提示词，支持Midjourney和DALL·E格式。&lt;/p>
+&lt;div class="tool-mock">
+ &lt;div class="tool-mock-header">试用演示&lt;/div>
+ &lt;div class="tool-mock-body">
+ &lt;textarea class="tool-mock-input" placeholder="模拟图片上传 — 点击按钮查看演示效果..." readonly>&lt;/textarea>
+ &lt;button class="tool-mock-btn" data-mock-btn="image-to-prompt">
+ &lt;svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">&lt;rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>&lt;circle cx="8.5" cy="8.5" r="1.5"/>&lt;polyline points="21 15 16 10 5 21"/>&lt;/svg>
+ 分析图片
+ &lt;/button>
+ &lt;div id="mock-output-image-to-prompt" class="tool-mock-output">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 id="功能特色">功能特色&lt;/h2>
+&lt;ul>
+&lt;li>智能识别图像主题、构图、色调和艺术风格&lt;/li>
+&lt;li>自动生成Midjourney / DALL·E兼容格式的提示词&lt;/li>
+&lt;li>支持风格标签提取：摄影风格、插画风格、3D渲染等&lt;/li>
+&lt;li>反向工程：从优秀AI作品学习提示词写法&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>看到喜欢的图片，想知道如何用AI生成类似效果&lt;/li>
+&lt;li>学习AI绘画提示词的结构和技巧&lt;/li>
+&lt;li>分析优秀作品的艺术风格和构图方法&lt;/li>
+&lt;/ul></description></item><item><title>图片转文字OCR</title><link>http://123.206.100.78/miniapp/aiprompt/tools/image-to-text/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/tools/image-to-text/</guid><description>&lt;p>上传图片，AI自动识别并提取其中的文字内容。支持50多种语言，保留原格式排版。&lt;/p>
+&lt;div class="tool-mock">
+ &lt;div class="tool-mock-header">试用演示&lt;/div>
+ &lt;div class="tool-mock-body">
+ &lt;textarea class="tool-mock-input" placeholder="模拟图片文字识别 — 点击按钮查看演示效果..." readonly>&lt;/textarea>
+ &lt;div class="tool-mock-progress">
+ &lt;div id="mock-progress-ocr" class="tool-mock-progress-bar" style="width: 0%;">&lt;/div>
+ &lt;/div>
+ &lt;button class="tool-mock-btn" data-mock-btn="image-to-text">
+ &lt;svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">&lt;rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>&lt;circle cx="8.5" cy="8.5" r="1.5"/>&lt;polyline points="21 15 16 10 5 21"/>&lt;/svg>
+ 开始识别
+ &lt;/button>
+ &lt;div id="mock-output-image-to-text" class="tool-mock-output">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 id="功能特色">功能特色&lt;/h2>
+&lt;ul>
+&lt;li>支持50+语言OCR识别，包括中英日韩法德西等&lt;/li>
+&lt;li>保留原文档格式：段落、标题、列表结构&lt;/li>
+&lt;li>高精度光学字符识别，复杂背景也能准确提取&lt;/li>
+&lt;li>支持手写体和印刷体混合识别&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>扫描纸质文档、书籍页面，转为可编辑文本&lt;/li>
+&lt;li>从名片照片中提取联系信息&lt;/li>
+&lt;li>从截图和UI界面中提取文字内容&lt;/li>
+&lt;/ul></description></item><item><title>提示词优化检查</title><link>http://123.206.100.78/miniapp/aiprompt/tools/prompt-checker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/tools/prompt-checker/</guid><description>&lt;p>检查提示词质量，获取完整度评分和具体改进建议，帮助你写出更高效的AI提示词。&lt;/p>
+&lt;div class="tool-mock">
+ &lt;div class="tool-mock-header">试用演示&lt;/div>
+ &lt;div class="tool-mock-body">
+ &lt;textarea id="mock-input-prompt-checker" class="tool-mock-input" placeholder="在此粘贴你需要优化的提示词...">&lt;/textarea>
+ &lt;button class="tool-mock-btn" data-mock-btn="prompt-checker">
+ &lt;svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">&lt;polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>&lt;/svg>
+ 检查优化
+ &lt;/button>
+ &lt;div id="mock-output-prompt-checker" class="tool-mock-output">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 id="功能特色">功能特色&lt;/h2>
+&lt;ul>
+&lt;li>提示词完整度评分（0-100分），多维评估&lt;/li>
+&lt;li>检测缺失要素：角色设定、输出格式、约束条件、示例&lt;/li>
+&lt;li>提供具体优化建议和改写方案&lt;/li>
+&lt;li>支持对比优化前后的预期效果提升&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>提示词效果不佳时，找出问题所在&lt;/li>
+&lt;li>学习提示词工程，了解优秀提示词的要素&lt;/li>
+&lt;li>团队提示词质量审核和标准化&lt;/li>
+&lt;/ul></description></item><item><title>视频提示词生成</title><link>http://123.206.100.78/miniapp/aiprompt/tools/video-prompt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/tools/video-prompt/</guid><description>&lt;p>为AI视频生成工具创建专业的分镜脚本和场景提示词。支持Runway Gen-3、Pika 2.0、可灵（Kling）等主流平台。&lt;/p>
+&lt;div class="tool-mock">
+ &lt;div class="tool-mock-header">试用演示&lt;/div>
+ &lt;div class="tool-mock-body">
+ &lt;textarea class="tool-mock-input" placeholder="描述你想要的视频场景，例如：一个关于城市清晨的30秒短片...">&lt;/textarea>
+ &lt;button class="tool-mock-btn" data-mock-btn="video-prompt">
+ &lt;svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">&lt;polygon points="5 3 19 12 5 21 5 3"/>&lt;/svg>
+ 生成视频提示词
+ &lt;/button>
+ &lt;div id="mock-output-video-prompt" class="tool-mock-output">&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 id="功能特色">功能特色&lt;/h2>
+&lt;ul>
+&lt;li>自动生成分镜脚本：场景描述、时长、运镜、氛围&lt;/li>
+&lt;li>适配多种AI视频平台：Runway Gen-3 / Pika 2.0 / 可灵 Kling&lt;/li>
+&lt;li>包含场景氛围、光线、色彩、节奏等细节描述&lt;/li>
+&lt;li>支持快速蒙太奇和转场效果提示&lt;/li>
+&lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>策划AI短视频和宣传片&lt;/li>
+&lt;li>为短片项目编写分镜脚本&lt;/li>
+&lt;li>学习和参考AI视频提示词的结构&lt;/li>
+&lt;/ul></description></item></channel></rss>

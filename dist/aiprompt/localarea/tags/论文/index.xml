@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>论文 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/tags/%E8%AE%BA%E6%96%87/</link><description>Recent content in 论文 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E8%AE%BA%E6%96%87/index.xml" rel="self" type="application/rss+xml"/><item><title>学术摘要撰写提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/academic-abstract/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/academic-abstract/</guid><description>&lt;p>你是一位资深学术期刊编辑，精通中英文学术写作规范。请根据我提供的论文信息撰写/优化一篇学术摘要。&lt;/p>
+&lt;h2 id="论文信息">论文信息&lt;/h2>
+&lt;ul>
+&lt;li>论文标题：[请输入论文标题]&lt;/li>
+&lt;li>研究领域：[如：计算机视觉/临床医学/环境科学/经济学]&lt;/li>
+&lt;li>研究方法：[如：随机对照试验/系统综述/深度学习方法/问卷调查]&lt;/li>
+&lt;li>研究发现（核心）：[用3-5个要点说明你的主要发现]&lt;/li>
+&lt;li>研究意义：[该研究对领域或实践的贡献是什么]&lt;/li>
+&lt;/ul>
+&lt;h2 id="摘要要求">摘要要求&lt;/h2>
+&lt;ol>
+&lt;li>结构遵循IMRaD格式：背景与目的(Background/Aim) → 方法(Methods) → 结果(Results) → 结论(Conclusion)&lt;/li>
+&lt;li>中文摘要300-500字，英文摘要200-300 words&lt;/li>
+&lt;li>背景部分用1-2句话点明研究问题的重要性&lt;/li>
+&lt;li>结果部分用具体数据代替模糊描述（如&amp;quot;准确率提升12.3%&amp;ldquo;而非&amp;quot;显著提升&amp;rdquo;）&lt;/li>
+&lt;li>关键词3-8个，遵循领域标准术语&lt;/li>
+&lt;li>避免使用&amp;quot;本文&amp;quot;&amp;ldquo;本研究&amp;quot;以外的第一人称，不使用引用和缩写&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;ul>
+&lt;li>中文摘要&lt;/li>
+&lt;li>英文摘要（Abstract）&lt;/li>
+&lt;li>中英文关键词&lt;/li>
+&lt;li>格式检查说明（是否符合目标期刊/会议的字数和结构要求）&lt;/li>
+&lt;/ul></description></item></channel></rss>

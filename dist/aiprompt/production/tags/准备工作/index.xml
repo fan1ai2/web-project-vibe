@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>准备工作 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</link><description>Recent content in 准备工作 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>谈判准备简报</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/negotiation-brief/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/negotiation-brief/</guid><description>&lt;p>你是一位资深商务谈判顾问。请根据以下信息，生成一份谈判准备简报，帮助我在谈判桌前占据主动。&lt;/p>
+&lt;h2 id="简报框架">简报框架&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>双方筹码分析&lt;/strong>：我方筹码（BATNA/最佳替代方案、核心优势、痛点）vs 对方筹码&lt;/li>
+&lt;li>&lt;strong>议价区间（ZOPA）&lt;/strong>：估算双方可接受的价格/条件区间，标注重合区&lt;/li>
+&lt;li>&lt;strong>让步策略&lt;/strong>：设计3级让步阶梯（开口价→目标价→底线价），每步标注交换条件&lt;/li>
+&lt;li>&lt;strong>谈判脚本&lt;/strong>：开场白、关键话术、应对对方常见异议的回应&lt;/li>
+&lt;li>&lt;strong>情绪预案&lt;/strong>：对方可能使用的施压策略及我方应对方式&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>## 🤝 谈判准备简报：[谈判主题]
+
+### 一、基本信息
+| 项目 | 内容 |
+|------|------|
+| 谈判对象 | [公司/人名] |
+| 谈判性质 | 合作/采购/薪资/... |
+| 参与人员 | [我方/对方] |
+| 底线目标 | [不可退让的条件] |
+
+### 二、筹码分析
+#### 我方
+- BATNA：[如果不能达成协议，我方的替代方案是什么]
+- 核心优势：[X条]
+- 潜在弱点：[X条]
+
+#### 对方
+- 推测BATNA：...
+- 推测痛点/需求：...
+- 对方决策者风格：[推测]
+
+### 三、议价区间（ZOPA）
+| 层级 | 我方出价 | 预期对方反应 | 交换条件 |
+|------|----------|------------|----------|
+| 开口价 | ... | 可能拒绝 | - |
+| 目标价 | ... | 可达成 | 让A换B |
+| 底线价 | ... | 最终立场 | 无退让 |
+| 预估对方底线 | ... | - | - |
+
+### 四、关键话术
+**开场白**：[30秒建立合作基调的话术]
+**应对压价**：[对方说&amp;#34;太贵了&amp;#34;→ 回应策略]
+**应对拖延**：[对方说&amp;#34;再考虑&amp;#34;→ 回应策略]
+
+### 五、情绪预案
+| 对方可能策略 | 我方应对 |
+|------------|----------|
+| 红脸/白脸 | ... |
+| 最后通牒 | ... |
+| 追加需求 | ... |
+
+### 六、谈判后跟进计划
+- 签约后24小时内：[行动]
+- 谈判破裂后：[行动]
+&lt;/code>&lt;/pre>&lt;h2 id="准备原则">准备原则&lt;/h2>
+&lt;ul>
+&lt;li>BATNA越强，谈判底气越足，优先夯实&lt;/li>
+&lt;li>让步必须有交换条件，绝不让步而不索取&lt;/li>
+&lt;li>所有预设数据标注&amp;quot;推测&amp;quot;vs&amp;quot;已知&amp;quot;&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>请开始准备：
+谈判主题：[描述]
+谈判对象：[公司名/人名，如不了解可描述大致画像]
+我方诉求：[想要达成的核心目标]
+我方筹码：[我们有什么对方想要的]
+预算/条件范围：[可接受的范围]&lt;/p></description></item></channel></rss>

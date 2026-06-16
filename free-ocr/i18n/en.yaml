@@ -1,0 +1,175 @@
+# Navigation
+- id: nav_home
+  translation: "Home"
+- id: nav_tool
+  translation: "Tool"
+- id: nav_faq
+  translation: "FAQ"
+- id: nav_blog
+  translation: "Blog"
+
+# Homepage — Hero
+- id: hero_title
+  translation: "Free Online OCR Image to Text Tool"
+- id: hero_subtitle
+  translation: "Browser-based local recognition, images never leave your device. Privacy-safe, no registration, completely free."
+- id: hero_cta
+  translation: "Try It Now"
+- id: hero_secondary
+  translation: "View Demo"
+
+# Homepage — Features
+- id: feature_1_title
+  translation: "Local Browser Recognition"
+- id: feature_1_desc
+  translation: "Powered by Tesseract.js engine, all OCR processing runs locally on your device. Your images are never uploaded to any server — absolute privacy."
+- id: feature_2_title
+  translation: "Markdown Output"
+- id: feature_2_desc
+  translation: "Results are automatically formatted as Markdown with tables, headings, and lists preserved. Copy directly into any document editor."
+- id: feature_3_title
+  translation: "Formula & Table Recovery"
+- id: feature_3_desc
+  translation: "Supports LaTeX math formula rendering and complex table recognition, optimized for academic documents and students."
+- id: feature_4_title
+  translation: "Multilingual Support"
+- id: feature_4_desc
+  translation: "Supports 100+ languages including Chinese, English, Japanese, Korean, French, German, and more."
+
+# Homepage — Steps
+- id: step_how
+  translation: "How It Works"
+- id: step_1_title
+  translation: "Upload or Paste Image"
+- id: step_1_desc
+  translation: "Click to upload, drag and drop an image, or simply press Ctrl+V to paste from your clipboard."
+- id: step_2_title
+  translation: "AI Auto Recognition"
+- id: step_2_desc
+  translation: "Click the recognize button and the OCR engine extracts text content from your image automatically."
+- id: step_3_title
+  translation: "Copy or Download"
+- id: step_3_desc
+  translation: "Copy results with one click, or download as a Markdown file."
+
+# Homepage — CTA
+- id: cta_bottom
+  translation: "Start Using Free OCR Now"
+- id: cta_bottom_sub
+  translation: "No registration required. Open and use instantly. Completely free."
+- id: cta_button
+  translation: "Go to Tool"
+
+# Homepage — SEO
+- id: home_title
+  translation: "FreeOCR — Free Online OCR Image to Text Tool | Privacy-Safe"
+- id: home_desc
+  translation: "100% free online OCR tool with browser-based local recognition. No image upload. Markdown output, LaTeX formula rendering, table recognition. 100+ languages supported. No registration needed."
+
+# Tool page
+- id: tool_title
+  translation: "Online OCR Tool — Image to Text | FreeOCR"
+- id: tool_desc
+  translation: "Convert images to editable text with our free online OCR tool. Supports drag-and-drop and clipboard paste. Markdown format output. Completely free and privacy-safe."
+- id: tool_heading
+  translation: "Image to Text OCR"
+- id: upload_drop
+  translation: "Drop image here, or click to upload"
+- id: upload_paste
+  translation: "Or press Ctrl+V to paste from clipboard"
+- id: upload_supported
+  translation: "Supports PNG, JPG, WEBP — max 2048×2048px"
+- id: demo_samples
+  translation: "Quick Demo Examples"
+- id: demo_text
+  translation: "Text Document"
+- id: demo_table
+  translation: "Data Table"
+- id: demo_formula
+  translation: "Math Formula"
+- id: btn_recognize
+  translation: "Recognize"
+- id: recognizing
+  translation: "Recognizing..."
+- id: tab_preview
+  translation: "Preview"
+- id: tab_raw
+  translation: "Raw Text"
+- id: tab_source
+  translation: "Markdown Source"
+- id: btn_copy
+  translation: "Copy Result"
+- id: btn_download
+  translation: "Download .md"
+- id: copied
+  translation: "Copied!"
+- id: error_ocr
+  translation: "Recognition failed, please try again"
+- id: error_no_image
+  translation: "Please upload or paste an image first"
+- id: btn_retry
+  translation: "Retry"
+- id: confidence_label
+  translation: "Confidence"
+
+# FAQ page
+- id: faq_title
+  translation: "FAQ — FreeOCR"
+- id: faq_desc
+  translation: "Frequently asked questions about FreeOCR. Learn about supported formats, languages, privacy policy, and usage limits."
+- id: faq_heading
+  translation: "Frequently Asked Questions"
+- id: faq_q1
+  translation: "What image formats are supported?"
+- id: faq_a1
+  translation: "PNG, JPG, and WEBP formats are supported, with a maximum size of 2048×2048 pixels. Larger images will be automatically scaled down."
+- id: faq_q2
+  translation: "Is it really free?"
+- id: faq_a2
+  translation: "Yes, FreeOCR is completely free to use. No hidden fees, no subscriptions, no account registration required. All recognition happens in your browser."
+- id: faq_q3
+  translation: "Are my images uploaded to a server?"
+- id: faq_a3
+  translation: "No. All OCR recognition runs locally in your browser. Images never leave your device. This is FreeOCR's core privacy commitment."
+- id: faq_q4
+  translation: "What languages are supported?"
+- id: faq_a4
+  translation: "Over 100 languages are supported, including English, Chinese, Japanese, Korean, French, German, Spanish, and more."
+- id: faq_q5
+  translation: "Can it recognize handwriting?"
+- id: faq_a5
+  translation: "Yes, handwriting recognition is supported, but accuracy depends on handwriting clarity. Clear, neat handwriting works well; messy scribbles may not produce good results."
+- id: faq_q6
+  translation: "Is there a usage limit?"
+- id: faq_a6
+  translation: "No usage limits. You can use FreeOCR as many times as you want with no daily or monthly quotas."
+
+# Blog
+- id: blog_title
+  translation: "Blog — FreeOCR"
+- id: blog_desc
+  translation: "FreeOCR tutorials, OCR technology insights, and image-to-text tips."
+- id: blog_heading
+  translation: "Blog Posts"
+- id: blog_readmore
+  translation: "Read More"
+- id: blog_published
+  translation: "Published on"
+- id: blog_back
+  translation: "← Back to Blog"
+
+# Footer
+- id: footer_desc
+  translation: "A completely free online OCR tool with browser-based recognition and privacy protection."
+- id: footer_copyright
+  translation: "© 2026 FreeOCR. All rights reserved."
+
+# Structured Data
+- id: sd_org_name
+  translation: "FreeOCR"
+- id: sd_org_desc
+  translation: "Free online OCR image-to-text tool with browser-based local recognition for privacy protection."
+- id: sd_howto_name
+  translation: "How to Use FreeOCR Online Tool for Image Text Recognition"
+- id: sd_howto_desc
+  translation: "Upload or paste an image, let AI recognize the text automatically, then copy or download the result."

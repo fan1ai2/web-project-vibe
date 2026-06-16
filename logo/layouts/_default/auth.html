@@ -75,9 +75,7 @@
 <script>
 (function() {
   'use strict';
-  var API = window.location.port === '1313'
-    ? window.location.protocol + '//' + window.location.hostname + ':18110'
-    : '';
+  var API = window.__API_BASE || '';
   var captchaId = '';
 
   function api(path, method, body) {

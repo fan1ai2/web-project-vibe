@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>诗词 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://123.206.100.78/miniapp/aiprompt/tags/%E8%AF%97%E8%AF%8D/</link>
+    <description>Recent content in 诗词 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E8%AF%97%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>诗歌创作提示词</title>
+      <link>http://123.206.100.78/miniapp/aiprompt/prompts/writing/poetry-generator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://123.206.100.78/miniapp/aiprompt/prompts/writing/poetry-generator/</guid>
+      <description>&lt;p&gt;你是一位精通中国古典诗词和现代诗歌创作的诗人。请根据以下要求创作诗歌。&lt;/p&gt;&#xA;&lt;h2 id=&#34;诗歌类型&#34;&gt;诗歌类型&lt;/h2&gt;&#xA;&lt;p&gt;[请选择：五言绝句/七言律诗/宋词（指定词牌名）/现代诗/散文诗/自由体]&lt;/p&gt;&#xA;&lt;h2 id=&#34;创作主题&#34;&gt;创作主题&lt;/h2&gt;&#xA;&lt;p&gt;[请在此输入诗歌主题，如：秋日思乡/城市夜晚/爱情离别/自然山水/人生感悟]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

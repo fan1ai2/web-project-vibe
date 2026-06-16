@@ -5,20 +5,21 @@
 <meta name="keywords" content="{{ block "keywords" . }}{{ .Params.keywords }}{{ end }}">
 <meta name="robots" content="{{ if .Params.noindex }}noindex, follow{{ else }}index, follow{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<link rel="stylesheet" href="/css/style.css">
-{{ if and .File (ne .File.ContentBaseName "_index") (ne .Kind "home") .Params.type }}<link rel="stylesheet" href="/css/city-pages.css">{{ end }}
+<script>window.__API_BASE = '{{ .Site.Data.site.apibase }}';window.__BASEPATH = '{{ .Site.Data.site.basepath }}';</script>
+<link rel="stylesheet" href="{{ .Site.Data.site.basepath }}/css/style.css?v=20260612b">
+{{ if and .File (ne .File.ContentBaseName "_index") (ne .Kind "home") .Params.type }}<link rel="stylesheet" href="{{ .Site.Data.site.basepath }}/css/city-pages.css">{{ end }}
 
 <meta property="og:title" content="{{ block "ogtitle" . }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ block "ogdescription" . }}{{ .Params.description }}{{ end }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else if and .File (ne .File.ContentBaseName "_index") }}{{ print "/images/cities/" .File.ContentBaseName ".jpg" | absURL }}{{ else }}{{ "/images/og-default.jpg" | absURL }}{{ end }}">
+<meta property="og:image" content="{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else if and .File (ne .File.ContentBaseName "_index") }}{{ print "images/cities/" .File.ContentBaseName ".jpg" | absURL }}{{ else }}{{ "images/og-default.jpg" | absURL }}{{ end }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ block "twtitle" . }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ block "twdescription" . }}{{ .Params.description }}{{ end }}">
-<meta name="twitter:image" content="{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else if and .File (ne .File.ContentBaseName "_index") }}{{ print "/images/cities/" .File.ContentBaseName ".jpg" | absURL }}{{ else }}{{ "/images/og-default.jpg" | absURL }}{{ end }}">
+<meta name="twitter:image" content="{{ if .Params.ogImage }}{{ .Params.ogImage | absURL }}{{ else if and .File (ne .File.ContentBaseName "_index") }}{{ print "images/cities/" .File.ContentBaseName ".jpg" | absURL }}{{ else }}{{ "images/og-default.jpg" | absURL }}{{ end }}">
 

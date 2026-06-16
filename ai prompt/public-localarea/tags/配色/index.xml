@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>配色 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E9%85%8D%E8%89%B2/</link>
+    <description>Recent content in 配色 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E9%85%8D%E8%89%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>配色方案生成提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/design/color-palette/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/design/color-palette/</guid>
+      <description>&lt;p&gt;你是一位色彩设计专家，精通色彩心理学和配色调和理论。请为我生成一套配色方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;配色需求&#34;&gt;配色需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;项目/品牌名称：[如：CloudDesk云桌面管理平台]&lt;/li&gt;&#xA;&lt;li&gt;行业领域：[如：科技/SaaS / 医疗健康 / 教育培训 / 餐饮美食 / 时尚美妆]&lt;/li&gt;&#xA;&lt;li&gt;品牌个性关键词：[如：专业、可靠、高效、科技感 / 温暖、自然、手工、有机]&lt;/li&gt;&#xA;&lt;li&gt;配色偏好：[如：以蓝色为主色调 / 希望用绿色体现环保理念 / 需要高对比度的深色主题]&lt;/li&gt;&#xA;&lt;li&gt;使用场景：[Web应用界面 / 移动App / 品牌VI印刷 / 数据可视化图表]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;配色方案要求&#34;&gt;配色方案要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;主色（Primary）：1个，占设计约60%的使用比例&lt;/li&gt;&#xA;&lt;li&gt;辅助色（Secondary）：1-2个，占约30%&lt;/li&gt;&#xA;&lt;li&gt;强调色（Accent）：1个，用于CTA按钮等关键元素，占约10%&lt;/li&gt;&#xA;&lt;li&gt;中性色：浅/深背景各一套（至少各5个层级）&lt;/li&gt;&#xA;&lt;li&gt;语义色：成功绿、警告橙、错误红、信息蓝各1个&lt;/li&gt;&#xA;&lt;li&gt;所有颜色提供HEX值和HSL值&lt;/li&gt;&#xA;&lt;li&gt;检查WCAG AA对比度合规性（正文不低于4.5:1，大文本不低于3:1）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;色板总览（所有颜色以色块网格形式排列，标注HEX/HSL）&lt;/li&gt;&#xA;&lt;li&gt;主要颜色搭配示例（文字色+背景色组合，标注对比度比值）&lt;/li&gt;&#xA;&lt;li&gt;色彩使用规范（什么颜色用在什么地方）&lt;/li&gt;&#xA;&lt;li&gt;明暗主题对比预览（如需要）&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

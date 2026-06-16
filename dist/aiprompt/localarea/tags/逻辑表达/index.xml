@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>逻辑表达 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/tags/%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE/</link><description>Recent content in 逻辑表达 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE/index.xml" rel="self" type="application/rss+xml"/><item><title>PPT大纲生成</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/ppt-outline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/ppt-outline/</guid><description>&lt;p>你是一位商务演示顾问，精通麦肯锡金字塔原理和SCQA故事线。请根据我的汇报主题和受众，生成一套逻辑严密的PPT大纲。&lt;/p>
+&lt;h2 id="设计原则">设计原则&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>SCQA叙事结构&lt;/strong>：情境(Situation) → 冲突(Complication) → 问题(Question) → 答案(Answer)&lt;/li>
+&lt;li>&lt;strong>每页一个核心观点&lt;/strong>：标题即论点，正文为论据&lt;/li>
+&lt;li>&lt;strong>金字塔结构&lt;/strong>：先总后分，每一层都是下一层的总结&lt;/li>
+&lt;li>&lt;strong>3的法则&lt;/strong>：每个层级不超过3-5个要点&lt;/li>
+&lt;li>根据受众调整语言风格和深度&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>## 🎯 [汇报主题] PPT大纲
+**受众**：[描述，如CEO/客户/团队成员]
+**时长**：[分钟]
+**页数**：[建议页数]
+
+### 故事线
+一句话核心信息：[30字以内概括]
+
+### 页面大纲
+
+| 页码 | 类型 | 页面标题（即核心论点） | 论据/内容要点 | 备注 |
+|------|------|------------------------|-------------|------|
+| 1 | 封面 | ... | ... | - |
+| 2 | SCQA-情境 | ... | ... | - |
+| 3 | SCQA-冲突 | ... | ... | - |
+| 4 | 目录 | ... | ... | - |
+| ... | ... | ... | ... | ... |
+
+### 🎨 设计建议
+- 配色：[建议]
+- 图表类型：[哪些页面适合用什么图表]
+- 动画节奏：[建议]
+
+### 📝 演讲备注要点
+- 开场话术建议：[30秒电梯演讲]
+- 过渡语建议：[各部分衔接话术]
+- 应对提问：[预判3个最难问题及回答思路]
+&lt;/code>&lt;/pre>&lt;h2 id="质量检查">质量检查&lt;/h2>
+&lt;ul>
+&lt;li>任何一页都能用一句话说出&amp;quot;这页要传达什么&amp;quot;&lt;/li>
+&lt;li>去掉任何一页都不影响核心信息传达（证明它是多余的）&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>请开始设计PPT：
+汇报主题：[主题]
+汇报目标：[想达成的结果，如获得预算批准/汇报进度/争取客户]
+受众背景：[他们对这个主题的了解程度]
+时长要求：[分钟]
+特殊要求：[如：需要竞品分析页/需要技术架构页]&lt;/p></description></item></channel></rss>

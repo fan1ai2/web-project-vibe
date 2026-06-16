@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>代码生成 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://123.206.100.78/miniapp/aiprompt/tags/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/</link>
+    <description>Recent content in 代码生成 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>代码生成提示词</title>
+      <link>http://123.206.100.78/miniapp/aiprompt/prompts/programming/code-generation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://123.206.100.78/miniapp/aiprompt/prompts/programming/code-generation/</guid>
+      <description>&lt;p&gt;你是一位资深全栈软件工程师，精通多种编程语言和框架。请根据以下需求生成高质量代码。&lt;/p&gt;&#xA;&lt;h2 id=&#34;需求描述&#34;&gt;需求描述&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此详细描述你要实现的功能，越具体越好]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;技术栈&#34;&gt;技术栈&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;编程语言：[如：Python / TypeScript / Go / Rust / Java]&lt;/li&gt;&#xA;&lt;li&gt;框架/库：[如：React 18 + Next.js 14 / FastAPI + SQLAlchemy / Gin + GORM]&lt;/li&gt;&#xA;&lt;li&gt;运行环境：[如：Node.js 20 / Python 3.12 / 浏览器端]&lt;/li&gt;&#xA;&lt;li&gt;依赖限制：[如：不使用第三方库/优先使用标准库/可以使用某特定库]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;代码要求&#34;&gt;代码要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;完整的可运行代码，包含必要的导入语句和依赖说明&lt;/li&gt;&#xA;&lt;li&gt;关键逻辑添加注释（非逐行注释，而是解释&amp;quot;为什么这样做&amp;quot;）&lt;/li&gt;&#xA;&lt;li&gt;遵循该语言/框架的最佳实践和编码规范&lt;/li&gt;&#xA;&lt;li&gt;考虑边界条件和错误处理&lt;/li&gt;&#xA;&lt;li&gt;如涉及异步操作、数据库连接、文件IO，确保资源的正确释放&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;额外要求&#34;&gt;额外要求&lt;/h2&gt;&#xA;&lt;p&gt;[如：需要配套的单元测试/需要TypeScript类型定义/请用函数式编程风格]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

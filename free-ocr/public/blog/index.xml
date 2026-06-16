@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FreeOCR — 免费在线OCR图片文字识别工具</title><link>https://freeocr.app/blog/</link><description>Recent content on FreeOCR — 免费在线OCR图片文字识别工具</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://freeocr.app/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>FreeOCR 使用指南：免费的在线图片文字识别工具</title><link>https://freeocr.app/blog/introduction/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://freeocr.app/blog/introduction/</guid><description>&lt;h2 id="什么是-freeocr">什么是 FreeOCR？&lt;/h2>
+&lt;p>FreeOCR 是一款完全免费的在线 OCR（光学字符识别）工具。你只需要上传或粘贴图片，就能快速提取图中的文字内容。所有识别工作都在你的浏览器本地完成，图片不会上传到任何服务器。&lt;/p>
+&lt;h2 id="核心功能">核心功能&lt;/h2>
+&lt;h3 id="1-多种图片输入方式">1. 多种图片输入方式&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>点击上传&lt;/strong>：点击上传区域，从电脑中选择图片&lt;/li>
+&lt;li>&lt;strong>拖拽上传&lt;/strong>：直接将图片文件拖拽到识别区域&lt;/li>
+&lt;li>&lt;strong>剪贴板粘贴&lt;/strong>：使用 &lt;code>Ctrl+V&lt;/code> 快捷键直接粘贴截图&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-markdown-格式输出">2. Markdown 格式输出&lt;/h3>
+&lt;p>识别结果会自动格式化为 Markdown，保留标题、列表、表格等文档结构。你可以直接复制到 Notion、Obsidian、Typora 等支持 Markdown 的编辑器中使用。&lt;/p>
+&lt;h3 id="3-数学公式渲染">3. 数学公式渲染&lt;/h3>
+&lt;p>对于学术文档中的数学公式，FreeOCR 支持 LaTeX 格式渲染，确保公式的准确和美观。&lt;/p>
+&lt;h3 id="4-隐私安全">4. 隐私安全&lt;/h3>
+&lt;p>所有识别工作在你自己的浏览器中完成，图片绝不会被上传到任何服务器。这是 FreeOCR 与其他在线 OCR 工具最大的不同。&lt;/p>
+&lt;h2 id="支持的语言">支持的语言&lt;/h2>
+&lt;p>FreeOCR 支持超过 100 种语言的文字识别，包括中文、英文、日文、韩文、法文、德文、西班牙文等主流语言。&lt;/p>
+&lt;h2 id="使用技巧">使用技巧&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>确保图片清晰&lt;/strong>：清晰度越高的图片，识别准确率越高&lt;/li>
+&lt;li>&lt;strong>避免背景干扰&lt;/strong>：纯色背景的文字图片效果最好&lt;/li>
+&lt;li>&lt;strong>选择合适的光线&lt;/strong>：拍摄文件时确保光线均匀&lt;/li>
+&lt;li>&lt;strong>字体大小适中&lt;/strong>：太小的文字可能影响识别精度&lt;/li>
+&lt;/ol>
+&lt;p>立即访问 &lt;a href="https://freeocr.app/tool/">工具页&lt;/a> 开始使用 FreeOCR！&lt;/p></description></item></channel></rss>

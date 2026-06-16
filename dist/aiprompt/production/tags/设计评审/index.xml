@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>设计评审 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E8%AE%BE%E8%AE%A1%E8%AF%84%E5%AE%A1/</link><description>Recent content in 设计评审 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E8%AE%BE%E8%AE%A1%E8%AF%84%E5%AE%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>设计评审分析提示词</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/design/design-critique/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/design/design-critique/</guid><description>&lt;p>你是一位资深设计总监，擅长对设计作品进行建设性评审。请对以下设计进行系统化的设计评审。&lt;/p>
+&lt;h2 id="设计作品描述">设计作品描述&lt;/h2>
+&lt;ul>
+&lt;li>作品类型：[网页设计/移动App界面/品牌设计/海报/产品包装]&lt;/li>
+&lt;li>设计稿描述：&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>[请在此描述你的设计，或提供详细的设计说明：
+- 布局结构
+- 配色方案
+- 字体选择
+- 关键交互
+- 目标用户和场景]
+&lt;/code>&lt;/pre>&lt;h2 id="评审目标">评审目标&lt;/h2>
+&lt;p>[你希望获得哪方面的反馈：全面评审 / 聚焦可用性 / 聚焦视觉表现力 / 聚焦品牌一致性]&lt;/p></description></item></channel></rss>

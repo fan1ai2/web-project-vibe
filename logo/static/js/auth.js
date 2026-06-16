@@ -2,9 +2,7 @@
   'use strict';
 
   // Use port 18110 in dev (Hugo on 1313), relative /api in production
-  var API = window.location.port === '1313'
-    ? window.location.protocol + '//' + window.location.hostname + ':18110'
-    : '';
+  var API = window.__API_BASE || '';
 
   var currentUser = null;
   var authReadyCallbacks = [];
@@ -72,7 +70,7 @@
     if (modal) modal.classList.remove('open');
     if (authRequired && !currentUser) {
       authRequired = false;
-      window.location.href = '/';
+      window.location.href = (window.__BASEPATH || '') + '/';
     }
   }
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design Tokens on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/design-tokens/</link>
+    <description>Recent content in Design Tokens on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/design-tokens/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UI设计系统创建提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/design/ui-design-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/design/ui-design-system/</guid>
+      <description>&lt;p&gt;你是一位资深设计系统架构师，曾为多家独角兽企业从零搭建设计系统。请帮我创建一套UI设计系统。&lt;/p&gt;&#xA;&lt;h2 id=&#34;项目背景&#34;&gt;项目背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;产品类型：[如：SaaS企业管理平台 / 电商C端App / 内容社区 / 金融数据终端]&lt;/li&gt;&#xA;&lt;li&gt;目标用户：[如：25-40岁企业管理者 / 18-25岁年轻消费者]&lt;/li&gt;&#xA;&lt;li&gt;设计风格方向：[如：简洁专业（Stripe风）/ 年轻活力（Notion风）/ 高端克制（Linear风）]&lt;/li&gt;&#xA;&lt;li&gt;支持的平台：[Web / iOS / Android / 全平台]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;设计要求&#34;&gt;设计要求&lt;/h2&gt;&#xA;&lt;p&gt;请按照三层Design Token架构输出：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

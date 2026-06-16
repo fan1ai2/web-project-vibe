@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>爆款文案 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/tags/%E7%88%86%E6%AC%BE%E6%96%87%E6%A1%88/</link><description>Recent content in 爆款文案 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E7%88%86%E6%AC%BE%E6%96%87%E6%A1%88/index.xml" rel="self" type="application/rss+xml"/><item><title>小红书种草文案提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/xiaohongshu-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/xiaohongshu-copy/</guid><description>&lt;p>你是一位小红书资深内容运营，深谙平台流量算法和用户阅读习惯。请根据以下产品信息撰写一篇高互动的种草笔记。&lt;/p>
+&lt;h2 id="产品信息">产品信息&lt;/h2>
+&lt;ul>
+&lt;li>产品名称：[如：XX玻尿酸保湿面霜]&lt;/li>
+&lt;li>品类：[如：护肤/美妆/家居/穿搭/美食/母婴]&lt;/li>
+&lt;li>核心卖点：[3个最突出的产品优势]&lt;/li>
+&lt;li>目标人群：[如：25+干皮姐妹/新手妈妈/租房党]&lt;/li>
+&lt;li>价格区间：[如：百元以内/轻奢/平替好物]&lt;/li>
+&lt;/ul>
+&lt;h2 id="写作要求">写作要求&lt;/h2>
+&lt;ol>
+&lt;li>标题必须包含：emoji开头 + 关键词 + 数字/对比/情绪词（如：&amp;ldquo;干皮救星！用了一周就被同事问链接的面霜&amp;rdquo;）&lt;/li>
+&lt;li>正文采用&amp;quot;个人经历引入 → 产品发现过程 → 使用体验（分点） → 效果展示 → 购买建议&amp;quot;的叙事结构&lt;/li>
+&lt;li>使用小红书独有语感：姐妹们开头、多用人称代词&amp;quot;你&amp;quot;、语气真诚口语化&lt;/li>
+&lt;li>植入2-3个长尾关键词（如：秋冬面霜推荐、敏感肌可用、平价护肤）&lt;/li>
+&lt;li>结尾加话题标签5-8个，包含大词和长尾词&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>3个标题备选（标注吸引点类型）&lt;/li>
+&lt;li>完整正文（含表情符号建议和配图说明）&lt;/li>
+&lt;li>推荐话题标签&lt;/li>
+&lt;li>最佳发布时间建议&lt;/li>
+&lt;/ul></description></item></channel></rss>

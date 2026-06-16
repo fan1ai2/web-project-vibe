@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>代码质量 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/tags/%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F/</link><description>Recent content in 代码质量 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>代码审查提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/programming/code-review/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/programming/code-review/</guid><description>&lt;p>你是一位资深技术负责人，以严谨、建设性的态度进行代码审查。请对以下代码进行全面的Code Review。&lt;/p>
+&lt;h2 id="审查的代码">审查的代码&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请在此粘贴需要审查的代码，建议控制在200行以内]
+&lt;/code>&lt;/pre>&lt;h2 id="审查背景">审查背景&lt;/h2>
+&lt;ul>
+&lt;li>项目类型：[如：电商后端API / 移动端SDK / 数据管道]&lt;/li>
+&lt;li>该代码的职责：[如：订单支付回调处理 / 用户认证中间件 / 数据导出模块]&lt;/li>
+&lt;li>性能要求：[如：高并发1000 QPS / 日常批处理 / 毫秒级响应]&lt;/li>
+&lt;li>团队技术栈：[如：团队主要用Python，正在向Go迁移]&lt;/li>
+&lt;/ul>
+&lt;h2 id="审查维度请逐一覆盖">审查维度（请逐一覆盖）&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>正确性&lt;/strong>：逻辑是否有误，边界条件是否处理，是否有潜在的空指针/未定义行为&lt;/li>
+&lt;li>&lt;strong>安全性&lt;/strong>：是否存在注入风险、敏感信息泄露、权限绕过、不安全的依赖&lt;/li>
+&lt;li>&lt;strong>性能&lt;/strong>：是否存在N+1查询、不必要的循环、内存泄漏、大对象拷贝&lt;/li>
+&lt;li>&lt;strong>可维护性&lt;/strong>：命名是否清晰、函数是否过长、耦合度是否过高、测试覆盖是否充分&lt;/li>
+&lt;li>&lt;strong>最佳实践&lt;/strong>：是否遵循语言/框架惯例，错误处理是否得当，日志是否合理&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;ul>
+&lt;li>总体评价（1-5星，一句话总结）&lt;/li>
+&lt;li>严重问题（Must Fix）：列出每个问题的位置、原因、修复建议&lt;/li>
+&lt;li>改进建议（Nice to Have）：按优先级排列&lt;/li>
+&lt;li>代码亮点（做对了什么，值得保留和推广）&lt;/li>
+&lt;/ul></description></item></channel></rss>

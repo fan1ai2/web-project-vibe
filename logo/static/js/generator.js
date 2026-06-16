@@ -364,7 +364,7 @@
   }
 
   function shareResult() {
-    var url = window.location.origin + '/generator/?' + buildShareUrl();
+    var url = window.location.origin + (window.__BASEPATH || '') + '/generator/?' + buildShareUrl();
     if (navigator.share) {
       navigator.share({ title: state.brandName + ' Logo', url: url }).catch(function() {});
     } else {

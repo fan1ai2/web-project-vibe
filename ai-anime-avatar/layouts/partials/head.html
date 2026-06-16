@@ -81,6 +81,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700;800&display=swap">
 
 
+<script>window.__API_BASE = '{{ .Site.Data.site.apibase }}';window.__BASEPATH = '{{ .Site.Data.site.basepath }}';</script>
+
 <!-- CSS Bundle -->
 {{ $allCSS := resources.Match "css/**.css" | resources.Concat "css/bundle.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $allCSS.RelPermalink }}">

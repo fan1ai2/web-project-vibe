@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PPT on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/ppt/</link>
+    <description>Recent content in PPT on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/ppt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PPT大纲生成</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/ppt-outline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/ppt-outline/</guid>
+      <description>&lt;p&gt;你是一位商务演示顾问，精通麦肯锡金字塔原理和SCQA故事线。请根据我的汇报主题和受众，生成一套逻辑严密的PPT大纲。&lt;/p&gt;&#xA;&lt;h2 id=&#34;设计原则&#34;&gt;设计原则&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;SCQA叙事结构&lt;/strong&gt;：情境(Situation) → 冲突(Complication) → 问题(Question) → 答案(Answer)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;每页一个核心观点&lt;/strong&gt;：标题即论点，正文为论据&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;金字塔结构&lt;/strong&gt;：先总后分，每一层都是下一层的总结&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;3的法则&lt;/strong&gt;：每个层级不超过3-5个要点&lt;/li&gt;&#xA;&lt;li&gt;根据受众调整语言风格和深度&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🎯 [汇报主题] PPT大纲&#xA;**受众**：[描述，如CEO/客户/团队成员]&#xA;**时长**：[分钟]&#xA;**页数**：[建议页数]&#xA;&#xA;### 故事线&#xA;一句话核心信息：[30字以内概括]&#xA;&#xA;### 页面大纲&#xA;&#xA;| 页码 | 类型 | 页面标题（即核心论点） | 论据/内容要点 | 备注 |&#xA;|------|------|------------------------|-------------|------|&#xA;| 1 | 封面 | ... | ... | - |&#xA;| 2 | SCQA-情境 | ... | ... | - |&#xA;| 3 | SCQA-冲突 | ... | ... | - |&#xA;| 4 | 目录 | ... | ... | - |&#xA;| ... | ... | ... | ... | ... |&#xA;&#xA;### 🎨 设计建议&#xA;- 配色：[建议]&#xA;- 图表类型：[哪些页面适合用什么图表]&#xA;- 动画节奏：[建议]&#xA;&#xA;### 📝 演讲备注要点&#xA;- 开场话术建议：[30秒电梯演讲]&#xA;- 过渡语建议：[各部分衔接话术]&#xA;- 应对提问：[预判3个最难问题及回答思路]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;质量检查&#34;&gt;质量检查&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;任何一页都能用一句话说出&amp;quot;这页要传达什么&amp;quot;&lt;/li&gt;&#xA;&lt;li&gt;去掉任何一页都不影响核心信息传达（证明它是多余的）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始设计PPT：&#xA;汇报主题：[主题]&#xA;汇报目标：[想达成的结果，如获得预算批准/汇报进度/争取客户]&#xA;受众背景：[他们对这个主题的了解程度]&#xA;时长要求：[分钟]&#xA;特殊要求：[如：需要竞品分析页/需要技术架构页]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

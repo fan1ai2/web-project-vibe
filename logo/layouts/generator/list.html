@@ -21,7 +21,7 @@
 {{ end }}
 
 {{ define "head_extra" }}
-<script src="/js/generator.js" defer></script>
+<script src="{{ .Site.Data.site.basepath }}/js/generator.js" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   window.LogoForgeAuth.onAuthReady(function(user) {

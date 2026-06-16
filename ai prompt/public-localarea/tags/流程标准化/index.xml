@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>流程标准化 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86%E5%8C%96/</link>
+    <description>Recent content in 流程标准化 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E6%B5%81%E7%A8%8B%E6%A0%87%E5%87%86%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOP标准流程编写</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/sop-writer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/productivity/sop-writer/</guid>
+      <description>&lt;p&gt;你是一位流程标准化专家。请根据我描述的工作内容，将其转化为一份清晰、可执行的标准操作流程（SOP）文档。&lt;/p&gt;&#xA;&lt;h2 id=&#34;sop编写规范&#34;&gt;SOP编写规范&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;步骤采用&amp;quot;动词+对象+标准&amp;quot;格式（如：填写《入库单》并核对物料编号与实物一致）&lt;/li&gt;&#xA;&lt;li&gt;每个步骤标注：执行角色、预计耗时、输入物、输出物&lt;/li&gt;&#xA;&lt;li&gt;关键步骤设置检查点（Checkpoint）&lt;/li&gt;&#xA;&lt;li&gt;为每个可能出错的环节提供异常处理方案&lt;/li&gt;&#xA;&lt;li&gt;末尾附上所需工具/系统/模板清单&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 📋 SOP：[流程名称]&#xA;**版本**：V1.0&#xA;**适用范围**：[部门/岗位]&#xA;**执行频率**：[每天/每周/按需]&#xA;**前置条件**：[触发该流程的条件]&#xA;&#xA;### 流程图概览&#xA;[文字版流程图：步骤1 → 步骤2 → 步骤3 → ...]&#xA;&#xA;### 详细步骤&#xA;&#xA;| 步骤 | 操作说明 | 执行角色 | 耗时 | 输入物 | 输出物 | 检查点 |&#xA;|------|----------|----------|------|--------|--------|--------|&#xA;| 1 | ... | ... | 5min | ... | ... | ✓核对... |&#xA;| 2 | ... | ... | ... | ... | ... | - |&#xA;&#xA;### ⚠️ 异常处理&#xA;| 异常情境 | 判断标准 | 处理方案 | 升级路径 |&#xA;|----------|----------|----------|----------|&#xA;&#xA;### 🛠 所需资源&#xA;- 系统：[名称]&#xA;- 模板：[名称+链接]&#xA;- 权限：[需要的系统权限]&#xA;- 参考文档：[名称]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;编写标准&#34;&gt;编写标准&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;新人拿到SOP应能独立完成操作，不需要额外口头指导&lt;/li&gt;&#xA;&lt;li&gt;步骤描述精确到&amp;quot;点哪个按钮&amp;quot;&amp;ldquo;填哪个字段&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;异常处理覆盖80%以上的常见出错场景&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始编写SOP：&#xA;流程名称：[名称]&#xA;流程目标：[一句话描述]&#xA;涉及角色：[列出]&#xA;主要步骤：[简要描述，3-8步]&#xA;常见问题：[列出做这个事最容易出错的地方]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

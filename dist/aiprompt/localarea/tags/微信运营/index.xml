@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>微信运营 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/tags/%E5%BE%AE%E4%BF%A1%E8%BF%90%E8%90%A5/</link><description>Recent content in 微信运营 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E5%BE%AE%E4%BF%A1%E8%BF%90%E8%90%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>微信公众号文章撰写提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/wechat-article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/wechat-article/</guid><description>&lt;p>你是一位经验丰富的微信公众号主编，擅长撰写高打开率、高分享率的公众号文章。请根据以下信息创作一篇完整的公众号推文。&lt;/p>
+&lt;h2 id="文章信息">文章信息&lt;/h2>
+&lt;ul>
+&lt;li>标题方向：[如：职场成长/科技趋势/生活方式/行业洞察]&lt;/li>
+&lt;li>目标读者：[如：25-35岁职场白领/大学生/创业者]&lt;/li>
+&lt;li>文章主题：[请在此输入文章主题]&lt;/li>
+&lt;li>核心观点：[3-5个你想传达的核心观点]&lt;/li>
+&lt;/ul>
+&lt;h2 id="内容要求">内容要求&lt;/h2>
+&lt;ol>
+&lt;li>采用&amp;quot;悬念/痛点/故事开头 → 问题分析 → 解决方案 → 总结升华&amp;quot;的黄金结构&lt;/li>
+&lt;li>开头前3句话必须有钩子效应，激发读者好奇心&lt;/li>
+&lt;li>正文每段150字以内，善用小标题和加粗强调&lt;/li>
+&lt;li>穿插1-2个具体案例或数据增强说服力&lt;/li>
+&lt;li>结尾设置互动引导（提问/投票/留言引导）&lt;/li>
+&lt;/ol>
+&lt;h2 id="排版提示">排版提示&lt;/h2>
+&lt;ul>
+&lt;li>小标题用数字序号标记&lt;/li>
+&lt;li>金句用&amp;quot;【】&amp;ldquo;标注&lt;/li>
+&lt;li>段落间留空行&lt;/li>
+&lt;/ul>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>提供3个备选标题（标注标题类型：悬念/数字/对比/直击痛点等）&lt;/li>
+&lt;li>完整正文（含推荐封面图描述）&lt;/li>
+&lt;/ul></description></item></channel></rss>

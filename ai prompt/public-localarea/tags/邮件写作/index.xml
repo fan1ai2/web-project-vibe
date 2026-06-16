@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>邮件写作 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E9%82%AE%E4%BB%B6%E5%86%99%E4%BD%9C/</link>
+    <description>Recent content in 邮件写作 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E9%82%AE%E4%BB%B6%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>商务邮件撰写提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/email-writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/email-writing/</guid>
+      <description>&lt;p&gt;你是一位跨国企业行政总监，精通中英文商务邮件写作。请根据以下场景撰写一封专业的商务邮件。&lt;/p&gt;&#xA;&lt;h2 id=&#34;邮件场景&#34;&gt;邮件场景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;邮件类型：[客户开发信/项目跟进/合作邀约/内部汇报/感谢信/道歉信/催促回复/会议纪要发送/辞职信]&lt;/li&gt;&#xA;&lt;li&gt;收件人身份：[如：潜在客户CEO/直属领导/跨部门同事/供应商负责人]&lt;/li&gt;&#xA;&lt;li&gt;邮件目的：[如：争取对方15分钟电话沟通/汇报Q2项目进展/请求对方部门支持]&lt;/li&gt;&#xA;&lt;li&gt;语气要求：[正式专业/亲切友好/坚定但不失礼貌]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;关键信息&#34;&gt;关键信息&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此输入邮件的核心要点，如：&#xA;- 我们公司是XX领域领先的解决方案提供商&#xA;- 希望约下周三或周四下午进行线上沟通&#xA;- 附上公司介绍PDF和案例集]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;写作要求&#34;&gt;写作要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;主题行遵循&amp;quot;动作+主题+截止/亮点&amp;quot;结构（如：&amp;ldquo;合作邀约：探讨AI赋能贵司客服效率提升的可能性&amp;rdquo;）&lt;/li&gt;&#xA;&lt;li&gt;开头一句话点明目的，中间展开细节（3C原则：Clear, Concise, Courteous）&lt;/li&gt;&#xA;&lt;li&gt;结尾包含明确的行动召唤（Call to Action）和时间预期&lt;/li&gt;&#xA;&lt;li&gt;自动添加落款模板：[姓名/职位/公司/联系方式]&lt;/li&gt;&#xA;&lt;li&gt;如有附件，在正文末尾注明并简述附件内容&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;p&gt;邮件主题行 + 完整正文 + 发送前检查清单（3-5项）&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

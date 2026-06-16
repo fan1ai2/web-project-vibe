@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文档摘要 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E6%96%87%E6%A1%A3%E6%91%98%E8%A6%81/</link><description>Recent content in 文档摘要 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E6%96%87%E6%A1%A3%E6%91%98%E8%A6%81/index.xml" rel="self" type="application/rss+xml"/><item><title>文档摘要提取</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/document-summarizer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/document-summarizer/</guid><description>&lt;p>你是一位专业的文档分析专家。请阅读以下文档内容，生成三层粒度的摘要，让读者能根据需求快速获取信息深度。&lt;/p>
+&lt;h2 id="摘要层级">摘要层级&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>一句话总结&lt;/strong>（不超过30字）：电梯演讲级别，适合快速判断是否需要深入阅读&lt;/li>
+&lt;li>&lt;strong>核心要点&lt;/strong>（3-5条要点，每条不超过50字）：提炼文档的核心结论和关键数据&lt;/li>
+&lt;li>&lt;strong>结构化摘要&lt;/strong>（200-300字）：按文档原始逻辑结构，保留论证框架的浓缩版&lt;/li>
+&lt;/ol>
+&lt;h2 id="额外输出">额外输出&lt;/h2>
+&lt;ul>
+&lt;li>🏷 &lt;strong>关键词&lt;/strong>：5-8个核心关键词&lt;/li>
+&lt;li>👤 &lt;strong>目标读者&lt;/strong>：推断文档面向的受众&lt;/li>
+&lt;li>⏱ &lt;strong>阅读时长&lt;/strong>：原文估计阅读时长 + 本文摘要阅读时长&lt;/li>
+&lt;li>🔗 &lt;strong>与其他文档的关联&lt;/strong>：如文档中提到其他文件/附录，列出并标注关系&lt;/li>
+&lt;/ul>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>## 📄 文档摘要
+
+### 💬 一句话总结
+[30字以内]
+
+### 🎯 核心要点
+1. [要点1]
+2. [要点2]
+...
+
+### 📝 结构化摘要
+[200-300字的层次化摘要]
+
+### 📊 关键数据
+| 数据项 | 数值 | 上下文说明 |
+|--------|------|-----------|
+
+### 📌 元信息
+- 关键词：...
+- 目标读者：...
+- 原文阅读时长：约X分钟
+- 建议处理方式：精读 / 泛读 / 存档备查
+&lt;/code>&lt;/pre>&lt;h2 id="摘要原则">摘要原则&lt;/h2>
+&lt;ul>
+&lt;li>不添加原文未提及的观点或评价&lt;/li>
+&lt;li>数据和结论保留原始表述，不改写为概括性语言&lt;/li>
+&lt;li>对文档中的矛盾或逻辑漏洞用⚠️标注提示&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>请开始摘要：
+[在此粘贴文档全文]&lt;/p></description></item></channel></rss>

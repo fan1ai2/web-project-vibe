@@ -36,5 +36,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+	<script>window.__API_BASE = '{{ .Site.Data.site.apibase }}';window.__BASEPATH = '{{ .Site.Data.site.basepath }}';</script>
 {{ with .OutputFormats.Get "rss" }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">{{ end }}
 <link rel="sitemap" type="application/xml" href="{{ "sitemap.xml" | absURL }}">

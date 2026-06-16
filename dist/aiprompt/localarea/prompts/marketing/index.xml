@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>营销文案提示词 on AI Prompt — 高质量中文AI提示词库</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/</link><description>Recent content in 营销文案提示词 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://10.100.1.243/miniapp/aiprompt/prompts/marketing/index.xml" rel="self" type="application/rss+xml"/><item><title>KOL合作文案提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/kol-collaboration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/kol-collaboration/</guid><description>&lt;p>你是一位KOL营销经理，擅长撰写清晰的达人合作Brief和内容方向指导。请帮我准备一份完整的KOL合作方案。&lt;/p>
+&lt;h2 id="合作信息">合作信息&lt;/h2>
+&lt;ul>
+&lt;li>品牌/产品：[如：XX轻食品牌 - 即食鸡胸肉和沙拉碗，主打低卡高蛋白]&lt;/li>
+&lt;li>合作目标：[品牌种草/新品推广/电商引流/直播带货]&lt;/li>
+&lt;li>KOL类型：[如：健身博主/美食博主/宝妈生活博主/职场Vlog博主]&lt;/li>
+&lt;li>KOL粉丝量级要求：[如：KOC（1K-5W粉）/ 腰部KOL（5W-50W）/ 头部KOL（50W+）]&lt;/li>
+&lt;li>合作形式：[图文笔记/短视频/直播/合集测评/单品种草]&lt;/li>
+&lt;li>预算范围：[坑位费+佣金比例/纯佣金/置换]&lt;/li>
+&lt;/ul>
+&lt;h2 id="brief撰写要求">Brief撰写要求&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>品牌与产品说明&lt;/strong>（给KOL快速了解品牌）&lt;/p></description></item><item><title>SEO优化文章提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/seo-article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/seo-article/</guid><description>&lt;p>你是一位SEO内容策略师，擅长撰写既能取悦搜索引擎又能吸引用户的高质量文章。请根据以下要求撰写一篇SEO优化文章。&lt;/p>
+&lt;h2 id="文章目标">文章目标&lt;/h2>
+&lt;ul>
+&lt;li>目标关键词（Primary KW）：[如：远程办公工具推荐]&lt;/li>
+&lt;li>次要关键词（Secondary KW）：[如：团队协作软件、在线会议工具、远程工作效率]&lt;/li>
+&lt;li>长尾关键词（Long-tail KW）：[如：适合小团队的免费远程办公工具/2024远程办公软件排名]&lt;/li>
+&lt;li>搜索意图：[信息型（了解/学习）/商业型（对比/选择）/交易型（购买）]&lt;/li>
+&lt;li>目标字数：[如：2000-3000字]&lt;/li>
+&lt;/ul>
+&lt;h2 id="内容要求">内容要求&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>标题策略&lt;/strong>：Title Tag包含主关键词，60字符以内；H1标题包含主关键词且吸引点击&lt;/li>
+&lt;li>&lt;strong>内容结构&lt;/strong>：
+&lt;ul>
+&lt;li>引言：前100字包含主关键词，点出用户痛点，给出阅读承诺&lt;/li>
+&lt;li>主体：使用H2/H3层级，每个H2覆盖一个次关键词&lt;/li>
+&lt;li>FAQ段落：回答People Also Ask中的3-5个常见问题&lt;/li>
+&lt;li>结论：总结要点 + CTA引导&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>关键词布局规范&lt;/strong>：
+&lt;ul>
+&lt;li>主关键词密度控制在1-2%&lt;/li>
+&lt;li>前200字、最后一个H2、图片ALT标签中必须出现主关键词&lt;/li>
+&lt;li>合理使用LSI关键词（Latent Semantic Indexing）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>EEAT信号&lt;/strong>：引用数据来源、注明作者专业背景、标注更新日期&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>SEO元数据（Title Tag / Meta Description / URL Slug建议）&lt;/li>
+&lt;li>完整文章正文（含H2/H3/段落/列表）&lt;/li>
+&lt;li>内部链接建议（应该链向站内的哪些页面）&lt;/li>
+&lt;li>外部引用来源建议&lt;/li>
+&lt;/ul></description></item><item><title>危机公关回应提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/crisis-pr/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/crisis-pr/</guid><description>&lt;p>你是一位资深危机公关顾问，处理过多个品牌舆情危机事件。请帮我制定危机公关回应方案。&lt;/p>
+&lt;h2 id="危机事件描述">危机事件描述&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请描述正在发生的危机事件，如：
+&amp;#34;我们的生鲜电商平台被用户曝光配送的草莓有发霉现象，用户在小红书发布后引发广泛讨论，24小时内获得5000+点赞和2000+评论，部分媒体开始跟进报道。目前客服团队已经联系用户致歉并退款，但用户表示不接受。&amp;#34;]
+&lt;/code>&lt;/pre>&lt;h2 id="背景信息">背景信息&lt;/h2>
+&lt;ul>
+&lt;li>品牌/公司：[如：XX鲜生 - 生鲜电商平台，主打&amp;quot;新鲜采摘，极速送达&amp;quot;]&lt;/li>
+&lt;li>品牌过往形象：[如：品质可靠/年轻人喜爱/高性价比]&lt;/li>
+&lt;li>事实核查结果：[如：经查，该批次草莓因冷链车辆制冷故障导致部分商品受损，影响范围约为XX]&lt;/li>
+&lt;li>涉事方态度：[如：用户要求公开道歉并赔偿10倍/暂未提出法律诉讼]&lt;/li>
+&lt;li>当前舆情态势：[如：微博热搜第15位/仅在小红书发酵/已被多家科技媒体报道]&lt;/li>
+&lt;/ul>
+&lt;h2 id="回应策略要求">回应策略要求&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>危机定级与整体策略&lt;/strong>&lt;/p></description></item><item><title>品牌故事撰写提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/brand-story/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/brand-story/</guid><description>&lt;p>你是一位品牌叙事顾问（Brand Storyteller），曾帮助多个新消费品牌构建深入人心的品牌故事。请帮我撰写品牌故事体系。&lt;/p>
+&lt;h2 id="品牌信息">品牌信息&lt;/h2>
+&lt;ul>
+&lt;li>品牌名称：[如：山田心 - 一家只卖当季食材的社区面包房]&lt;/li>
+&lt;li>品牌起源（真实故事）：&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>[请描述品牌的真实起源，如：创始人在法国蓝带学成归来后，发现市面上的面包充斥着添加剂，于是决定用中国当季食材做真正健康的面包。第一家店开在社区楼下，只有15平米。]
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>品牌使命：[如：让每一个社区都有一家有温度的面包房]&lt;/li>
+&lt;li>核心差异：[如：只用24小时内采摘的当季本地食材，面包不过夜]&lt;/li>
+&lt;li>创始人故事亮点：[如：放弃百万年薪的投行工作，从零学烘焙]&lt;/li>
+&lt;/ul>
+&lt;h2 id="品牌故事体系撰写要求">品牌故事体系撰写要求&lt;/h2>
+&lt;p>请从以下层级构建品牌故事：&lt;/p></description></item><item><title>广告文案A/B测试提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/ad-copy-abtest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/ad-copy-abtest/</guid><description>&lt;p>你是一位增长营销专家，擅长通过A/B测试优化广告文案的转化率。请为我的广告生成多版本文案变体，并设计测试方案。&lt;/p>
+&lt;h2 id="广告基本信息">广告基本信息&lt;/h2>
+&lt;ul>
+&lt;li>产品/服务：[如：XX在线英语1对1外教课，主打菲律宾外教+AI口语评分]&lt;/li>
+&lt;li>广告目标：[获取销售线索/App下载/直接购买/品牌认知]&lt;/li>
+&lt;li>投放渠道：[抖音信息流/微信朋友圈/Google Ads/小红书信息流]&lt;/li>
+&lt;li>目标受众：[如：3-12岁孩子的宝妈，关注教育但预算有限]&lt;/li>
+&lt;li>当前转化率/基准：[如：CTR 2.5%，CVR 1.2%，希望提升到CTR 3.5%]&lt;/li>
+&lt;li>落地页链接：[如有]&lt;/li>
+&lt;/ul>
+&lt;h2 id="文案变体要求">文案变体要求&lt;/h2>
+&lt;p>请针对以下维度各生成2个变体（共8个版本）：&lt;/p></description></item><item><title>活动推广策划提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/event-promotion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/event-promotion/</guid><description>&lt;p>你是一位整合营销专家，擅长策划从线上到线下的全渠道营销活动。请为以下活动制定推广策划方案。&lt;/p>
+&lt;h2 id="活动基本信息">活动基本信息&lt;/h2>
+&lt;ul>
+&lt;li>活动名称：[如：XX品牌5周年「五与伦比」粉丝节]&lt;/li>
+&lt;li>活动类型：[线上线下联动/纯线上/纯线下]&lt;/li>
+&lt;li>活动目标：[品牌声量曝光 / 销售转化 / 用户拉新 / 会员激活]&lt;/li>
+&lt;li>核心KPI：[如：全网曝光量500万 / GMV 200万 / 新增会员1万]&lt;/li>
+&lt;li>预算范围：[如：10-20万 / 50万以内]&lt;/li>
+&lt;li>活动时间线：[如：预热期7天 + 爆发期3天 + 返场期2天]&lt;/li>
+&lt;/ul>
+&lt;h2 id="活动亮点">活动亮点&lt;/h2>
+&lt;ul>
+&lt;li>核心吸引力：[如：全场5折 + 限量联名款首发 + 明星空降直播间]&lt;/li>
+&lt;li>差异化玩法：[如：用户晒单可解锁隐藏福利/集卡抽奖/邀请好友助力]&lt;/li>
+&lt;/ul>
+&lt;h2 id="策划要求">策划要求&lt;/h2>
+&lt;p>分三阶段输出：&lt;/p></description></item><item><title>用户调研问卷设计提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/user-research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/user-research/</guid><description>&lt;p>你是一位用户研究专家，擅长设计科学有效的调研问卷和访谈大纲。请帮我设计一份用户调研方案。&lt;/p>
+&lt;h2 id="调研背景">调研背景&lt;/h2>
+&lt;ul>
+&lt;li>调研目的：[如：了解用户为什么放弃购物车不付款 / 评估新功能的接受度 / 品牌健康度调研]&lt;/li>
+&lt;li>目标用户：[如：近3个月注册但未付费的用户 / 高频使用但NPS评分低于6的用户]&lt;/li>
+&lt;li>投放渠道：[微信模板消息/短信+问卷链接/App内弹窗/邮件]&lt;/li>
+&lt;li>预计样本量：[如：500份/2000份]&lt;/li>
+&lt;li>可用激励：[如：填写送10元优惠券/参与抽奖/无激励]&lt;/li>
+&lt;/ul>
+&lt;h2 id="问卷设计要求">问卷设计要求&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>题目数量&lt;/strong>：控制在[X题以内]，预计完成时间[X分钟以内]&lt;/li>
+&lt;li>&lt;strong>题型组合&lt;/strong>：
+&lt;ul>
+&lt;li>筛选题：确认受访者是否符合目标画像&lt;/li>
+&lt;li>选择题为主（单选/多选/Likert量表）&lt;/li>
+&lt;li>开放题不超过2题（放在最后）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>逻辑跳转&lt;/strong>：标注需要在什么条件下跳转到哪道题&lt;/li>
+&lt;li>&lt;strong>防偏设计&lt;/strong>：
+&lt;ul>
+&lt;li>选项顺序均衡&lt;/li>
+&lt;li>避免引导性问题&lt;/li>
+&lt;li>包含1道反向题检测作答认真度&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>问卷完整题目列表（题号/题型/题目文本/选项/逻辑说明）&lt;/li>
+&lt;li>调研邀请文案（用于触达用户的文案，300字以内）&lt;/li>
+&lt;li>数据分析建议（交叉分析维度、关键指标计算方式）&lt;/li>
+&lt;li>避免的调研陷阱提醒&lt;/li>
+&lt;/ul></description></item><item><title>短视频脚本提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/short-video-script/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/short-video-script/</guid><description>&lt;p>你是一位资深短视频编导，深谙各平台内容算法和用户留存规律。请为我撰写一份短视频脚本。&lt;/p>
+&lt;h2 id="视频信息">视频信息&lt;/h2>
+&lt;ul>
+&lt;li>发布平台：[抖音/视频号/小红书/B站/快手]&lt;/li>
+&lt;li>视频目标：[涨粉/带货转化/品牌曝光/课程引流]&lt;/li>
+&lt;li>视频类型：[口播干货/剧情段子/产品测评/教程教学/Vlog/图文快闪]&lt;/li>
+&lt;li>目标受众：[如：想转行IT的职场人/新手宝妈/大学生]&lt;/li>
+&lt;li>视频时长：[15-30秒/30-60秒/1-3分钟]&lt;/li>
+&lt;/ul>
+&lt;h2 id="内容核心">内容核心&lt;/h2>
+&lt;ul>
+&lt;li>视频主题（一句话）：[如：3个让你工资翻倍的编程习惯]&lt;/li>
+&lt;li>核心信息点：[列出2-3个必须传达的关键信息]&lt;/li>
+&lt;li>产品/服务（如有植入）：[如：XX编程课程，主打项目实战+1v1答疑]&lt;/li>
+&lt;/ul>
+&lt;h2 id="脚本要求">脚本要求&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>黄金3秒开场&lt;/strong>（前3秒决定用户是否滑走）：钩子设计 - 反常识/强冲突/悬念提问/视觉冲击&lt;/li>
+&lt;li>&lt;strong>正文节奏&lt;/strong>：每5-8秒一个信息点或情绪变化，避免信息密度均匀导致倦怠&lt;/li>
+&lt;li>&lt;strong>镜头设计&lt;/strong>：景别切换（全景/中景/特写）、画面动作、字幕强调词&lt;/li>
+&lt;li>&lt;strong>口播稿&lt;/strong>：口语化、短句、有情绪起伏标记&lt;/li>
+&lt;li>&lt;strong>结尾引导&lt;/strong>：关注/点赞/评论/点击链接的话术设计&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出格式">输出格式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[分镜号] 时长 | 画面描述 | 口播文案 | 字幕/花字 | 音效/BGM
+
+例：
+1 | 0-3s | 特写，人物直视镜头 | &amp;#34;你写的代码，为什么总是被同事说烂？&amp;#34; | 大字：代码为什么烂？ | 悬疑音效
+2 | 3-8s | ... | ... | ... | ...
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>完整分镜脚本&lt;/li>
+&lt;li>拍摄建议（场景/灯光/道具/着装）&lt;/li>
+&lt;li>发布优化建议（标题/封面/话题标签/发布时间）&lt;/li>
+&lt;/ul></description></item><item><title>社交媒体内容日历提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/social-media-calendar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/social-media-calendar/</guid><description>&lt;p>你是一位资深社交媒体策略师，擅长为品牌规划系统化的内容日历。请帮我制定一份月度社交媒体内容日历。&lt;/p>
+&lt;h2 id="品牌信息">品牌信息&lt;/h2>
+&lt;ul>
+&lt;li>品牌/产品：[如：XX智能健身镜 - 在家上私教课]&lt;/li>
+&lt;li>品牌调性：[如：专业但不严肃，激励但不鸡汤]&lt;/li>
+&lt;li>目标受众：[如：25-40岁注重健康的城市中产，健身入门到中级水平]&lt;/li>
+&lt;li>运营平台：[微信公众号/小红书/抖音/微博/Instagram/LinkedIn，选1-3个主平台]&lt;/li>
+&lt;/ul>
+&lt;h2 id="本月营销重点">本月营销重点&lt;/h2>
+&lt;ul>
+&lt;li>本月主题/战役：[如：夏日塑形挑战 / 新品首发 / 618大促 / 周年庆]&lt;/li>
+&lt;li>核心KPI：[如：涨粉5000/互动率5%以上/引导到店100人]&lt;/li>
+&lt;li>关键日期：[如：6.1儿童节/6.18大促/6.21夏至]&lt;/li>
+&lt;/ul>
+&lt;h2 id="内容日历要求">内容日历要求&lt;/h2>
+&lt;ol>
+&lt;li>按周规划，每天至少1条内容（注明发布平台和时间段）&lt;/li>
+&lt;li>内容遵循4-1-1法则：4条价值内容 + 1条互动内容 + 1条促销内容（每周比例）&lt;/li>
+&lt;li>每条内容包括：
+&lt;ul>
+&lt;li>内容主题（10字以内高度概括）&lt;/li>
+&lt;li>内容类型（图文/短视频/长图/直播/投票互动/用户UGC）&lt;/li>
+&lt;li>内容角度和切入点&lt;/li>
+&lt;li>推荐标题/文案方向&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>标注内容之间的逻辑链条（如何从A话题自然过渡到B话题）&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>月度内容日历表格（日期/主题/类型/平台/标题方向）&lt;/li>
+&lt;li>每周内容主题脉络图（展示话题的递进关系）&lt;/li>
+&lt;li>3个爆款内容方向特别策划（详细展开）&lt;/li>
+&lt;/ul></description></item><item><title>竞品分析框架提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/competitor-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/competitor-analysis/</guid><description>&lt;p>你是一位市场战略分析师，擅长系统化的竞争情报分析。请帮我完成一份竞品分析。&lt;/p>
+&lt;h2 id="分析范围">分析范围&lt;/h2>
+&lt;ul>
+&lt;li>你的产品/品牌：[如：XX智能笔记App - AI驱动的知识管理工具]&lt;/li>
+&lt;li>分析目的：[新产品上市前的竞争格局评估 / 季度竞品监测 / 融资BP中的竞争分析 / 定价策略调整参考]&lt;/li>
+&lt;li>竞品名单（2-5个）：
+&lt;ol>
+&lt;li>[直接竞品A：如Notion]&lt;/li>
+&lt;li>[直接竞品B：如Obsidian]&lt;/li>
+&lt;li>[间接竞品C：如飞书文档]&lt;/li>
+&lt;li>[如有更多&amp;hellip;]&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="分析框架请逐一覆盖每个竞品">分析框架（请逐一覆盖每个竞品）&lt;/h2>
+&lt;h3 id="1-基本面">1. 基本面&lt;/h3>
+&lt;ul>
+&lt;li>公司规模/融资阶段/团队规模（估算）&lt;/li>
+&lt;li>定价模式和价格区间&lt;/li>
+&lt;li>目标用户画像和市场份额（估算）&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-产品力">2. 产品力&lt;/h3>
+&lt;ul>
+&lt;li>核心功能矩阵对比（功能维度：有且好/有但差/没有）&lt;/li>
+&lt;li>用户体验亮点与痛点&lt;/li>
+&lt;li>技术壁垒和生态护城河&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-营销力">3. 营销力&lt;/h3>
+&lt;ul>
+&lt;li>主要获客渠道和增长策略&lt;/li>
+&lt;li>品牌定位和核心信息&lt;/li>
+&lt;li>社交媒体声量和用户口碑&lt;/li>
+&lt;li>内容营销策略（Blog/SEO/社区/视频）&lt;/li>
+&lt;/ul>
+&lt;h3 id="4-战略洞察">4. 战略洞察&lt;/h3>
+&lt;ul>
+&lt;li>SWOT分析（每个竞品）&lt;/li>
+&lt;li>差异化机会识别（你的产品可以在哪里做到10倍好）&lt;/li>
+&lt;li>潜在的竞争威胁（是否有可能跨界进入的巨头）&lt;/li>
+&lt;/ul>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>竞品对比矩阵表（功能/定价/目标用户/渠道/定位）&lt;/li>
+&lt;li>差异化机会（至少3个具体方向）&lt;/li>
+&lt;li>推荐竞争策略：正面竞争 or 侧翼战 or 游击战，说明理由&lt;/li>
+&lt;/ul></description></item><item><title>落地页文案提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/landing-page-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/landing-page-copy/</guid><description>&lt;p>你是一位CRO（转化率优化）专家兼文案写手，擅长撰写高转化率的落地页文案。请为我撰写一套完整的落地页文案。&lt;/p>
+&lt;h2 id="产品服务信息">产品/服务信息&lt;/h2>
+&lt;ul>
+&lt;li>产品名称：[如：FlowAI - 智能工作流自动化平台]&lt;/li>
+&lt;li>一句话价值主张：[如：用AI连接你所有的办公工具，自动完成重复工作]&lt;/li>
+&lt;li>目标用户：[如：中小企业运营负责人，每天被跨平台数据搬运困扰]&lt;/li>
+&lt;li>核心痛点（Top 3）：
+&lt;ol>
+&lt;li>[如：每天花2小时在不同工具间手动搬运数据]&lt;/li>
+&lt;li>[痛点2]&lt;/li>
+&lt;li>[痛点3]&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>核心功能/解决方案（Top 3）：
+&lt;ol>
+&lt;li>[如：一键连接200+办公工具，无需代码]&lt;/li>
+&lt;li>[功能2]&lt;/li>
+&lt;li>[功能3]&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>社会证明：[如：已服务3000+企业 / 客户包括XX和XX / 好评率98%]&lt;/li>
+&lt;li>定价信号：[如：免费版可用 / 专业版199元/月起 / 提供免费试用]&lt;/li>
+&lt;/ul>
+&lt;h2 id="文案结构要求">文案结构要求&lt;/h2>
+&lt;p>按照经典落地页Swipe File结构撰写：&lt;/p></description></item><item><title>邮件营销活动策划提示词</title><link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/email-campaign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/email-campaign/</guid><description>&lt;p>你是一位CRM和邮件营销专家，擅长设计高打开率和高转化率的邮件营销序列。请帮我策划一次邮件营销活动。&lt;/p>
+&lt;h2 id="活动背景">活动背景&lt;/h2>
+&lt;ul>
+&lt;li>产品/服务：[如：XX SaaS项目管理工具]&lt;/li>
+&lt;li>活动目标：[如：免费用户转化为付费用户 / 沉睡用户召回 / 新功能推广 / 购物车放弃挽回]&lt;/li>
+&lt;li>目标用户分层：
+&lt;ul>
+&lt;li>[如：A类-活跃免费用户（最近7天使用过）/ B类-体验后沉默用户（注册30天未活跃）/ C类-已流失付费用户]&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>当前邮件数据基准：[如：平均打开率18%，点击率3.2%]&lt;/li>
+&lt;/ul>
+&lt;h2 id="邮件序列设计要求">邮件序列设计要求&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>触发条件与时机&lt;/strong>&lt;/p></description></item></channel></rss>

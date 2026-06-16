@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>持续集成 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://123.206.100.78/miniapp/aiprompt/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link>
+    <description>Recent content in 持续集成 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CI/CD配置生成提示词</title>
+      <link>http://123.206.100.78/miniapp/aiprompt/prompts/programming/cicd-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://123.206.100.78/miniapp/aiprompt/prompts/programming/cicd-config/</guid>
+      <description>&lt;p&gt;你是一位DevOps工程师，精通CI/CD流水线设计与实现。请根据项目需求生成CI/CD配置。&lt;/p&gt;&#xA;&lt;h2 id=&#34;项目信息&#34;&gt;项目信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;项目类型：[如：React前端SPA / Go微服务 / Python Django API / Node.js全栈]&lt;/li&gt;&#xA;&lt;li&gt;代码仓库：[GitHub / GitLab]&lt;/li&gt;&#xA;&lt;li&gt;技术栈详情：[如：使用pnpm管理依赖、Vite构建、Vitest测试]&lt;/li&gt;&#xA;&lt;li&gt;部署目标：[如：阿里云ACK (Kubernetes) / Vercel / AWS ECS / 自建服务器Docker]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;流水线需求&#34;&gt;流水线需求&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;触发条件：[Push到main自动部署 / PR时运行测试 / 手动触发生产发布]&lt;/li&gt;&#xA;&lt;li&gt;需要执行的步骤：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 代码检查（Lint）&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 类型检查（Type Check）&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 单元测试&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 集成测试&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 构建产物&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 安全扫描&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 部署到[环境名]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;配置要求&#34;&gt;配置要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;使用GitHub Actions（仓库为GitHub）或GitLab CI（仓库为GitLab）&lt;/li&gt;&#xA;&lt;li&gt;合理拆分Job，利用并行执行缩短流水线时间&lt;/li&gt;&#xA;&lt;li&gt;配置缓存策略（node_modules、Go modules、Docker layer等）&lt;/li&gt;&#xA;&lt;li&gt;敏感信息通过Secrets管理，不在配置文件中硬编码&lt;/li&gt;&#xA;&lt;li&gt;添加构建失败时的通知策略&lt;/li&gt;&#xA;&lt;li&gt;生产部署需要手动审批门禁&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;完整CI/CD配置文件（标注文件名，如.gitlab-ci.yml）&lt;/li&gt;&#xA;&lt;li&gt;工作流说明（各阶段的作用和触发条件）&lt;/li&gt;&#xA;&lt;li&gt;需要配置的Secrets/Variables清单&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

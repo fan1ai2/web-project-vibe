@@ -44,9 +44,10 @@
     <h1>探索中国<br><strong>热门必游之城</strong></h1>
     <p class="hero-subtitle">深度人文指南 &times; 轻松行程规划<br>让你的自由行有深度、不踩坑</p>
     <div class="hero-cities">
-      {{ range .Site.Data.cities }}
+      {{ range where .Site.Data.cities "featured" true }}
       <a href="{{ .link }}" class="hero-city-dot">{{ .name }}</a>
       {{ end }}
+      <span class="hero-city-dot hero-city-dot--more">...</span>
     </div>
   </div>
 </header>
@@ -77,8 +78,10 @@
 
   <div class="section" style="text-align:center;padding:0 0 48px;">
     <button class="btn-toggle-all" id="toggle-all-cities" aria-expanded="false">
-      查看全部城市
+      <span class="btn-toggle-text">查看全部城市</span>
+      <span class="btn-toggle-icon">▼</span>
     </button>
+
   </div>
 
   {{ partial "city-sections/all-cities-grid.html" . }}

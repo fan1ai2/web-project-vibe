@@ -9,10 +9,13 @@ keywords:
   - 提示词库
 nav:
   - label: 首页
-    url: /
+    url: /miniapp/aiprompt/
   - label: 提示词库
-    url: /prompts/
+    url: /miniapp/aiprompt/prompts/
   - label: 工具箱
-    url: /tools/
+    url: /miniapp/aiprompt/tools/
   - label: 关于
-    url: /about/
+    url: /miniapp/aiprompt/about/
+
+apibase: /miniapp/aiprompt/api
+basepath: /miniapp/aiprompt

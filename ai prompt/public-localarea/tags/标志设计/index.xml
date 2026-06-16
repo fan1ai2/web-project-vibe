@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标志设计 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E6%A0%87%E5%BF%97%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 标志设计 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E6%A0%87%E5%BF%97%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Logo创意构思提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/design/logo-concept/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/design/logo-concept/</guid>
+      <description>&lt;p&gt;你是一位资深品牌设计师，曾为多个知名品牌设计Logo。请为以下品牌提供Logo创意构思。&lt;/p&gt;&#xA;&lt;h2 id=&#34;品牌信息&#34;&gt;品牌信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;品牌名称：[如：青云智算 - QingCloud AI]&lt;/li&gt;&#xA;&lt;li&gt;品牌中文名/英文名：[给出完整名称]&lt;/li&gt;&#xA;&lt;li&gt;行业：[如：人工智能基础设施 / 新茶饮 / 在线教育]&lt;/li&gt;&#xA;&lt;li&gt;品牌故事/使命（一句话）：[如：让云计算像呼吸一样自然]&lt;/li&gt;&#xA;&lt;li&gt;核心价值观：[3个关键词，如：简洁、智能、可靠]&lt;/li&gt;&#xA;&lt;li&gt;目标受众：[如：企业技术决策者，30-50岁]&lt;/li&gt;&#xA;&lt;li&gt;竞品参考：[如：AWS的Logo体现了包容与连接 / Notion的图标简洁有趣]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;创意构思要求&#34;&gt;创意构思要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;从以下角度各提供1-2个创意方向：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;首字母/字标&lt;/strong&gt;：使用品牌名称的文字变形&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;象征图形&lt;/strong&gt;：使用隐喻和象征的抽象符号&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;组合标记&lt;/strong&gt;：图标+字标的组合方式&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;文字标识&lt;/strong&gt;：纯字体的Logo设计方向&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;每个方向包括：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;设计概念说明（100字）&lt;/li&gt;&#xA;&lt;li&gt;核心图形元素描述&lt;/li&gt;&#xA;&lt;li&gt;推荐的配色方向&lt;/li&gt;&#xA;&lt;li&gt;该方向的优劣势分析&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;创意方向总览（4-8个方向的一句话概要）&lt;/li&gt;&#xA;&lt;li&gt;优选3个方向详细展开&lt;/li&gt;&#xA;&lt;li&gt;应用场景建议（App图标、网站favicon、名片等最小尺寸的可辨识性分析）&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

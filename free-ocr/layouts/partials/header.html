@@ -1,0 +1,38 @@
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+  <nav class="max-w-content mx-auto px-4 h-16 flex items-center justify-between" aria-label="Main navigation">
+    <a href="{{ "/" | relLangURL }}" class="flex items-center gap-2 font-bold text-xl text-primary hover:text-primary-dark transition-colors">
+      <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="8" fill="#2563EB"/>
+        <path d="M8 12h6v2H8zm0 3h10v2H8zm0 3h12v2H8zm0 3h8v2H8z" fill="white"/>
+        <path d="M22 10l-4 12h2l4-12z" fill="white"/>
+      </svg>
+      <span>FreeOCR</span>
+    </a>
+
+    <div class="flex items-center gap-6">
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL | relLangURL }}" class="text-gray-600 hover:text-primary transition-colors">{{ .Name }}</a>
+        {{ end }}
+      </div>
+
+      <div class="flex items-center gap-1 text-sm">
+        {{ range .AllTranslations }}
+        <a href="{{ .Permalink }}" class="px-2 py-1 rounded {{ if eq .Language $.Language }}bg-primary text-white{{ else }}text-gray-500 hover:text-primary{{ end }} transition-colors">
+          {{ .Language.LanguageName }}
+        </a>
+        {{ end }}
+      </div>
+
+      <button class="md:hidden text-gray-600" id="mobile-menu-btn" aria-label="Toggle menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-4 py-3">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL | relLangURL }}" class="block py-2 text-sm font-medium text-gray-600 hover:text-primary">{{ .Name }}</a>
+    {{ end }}
+  </div>
+</header>

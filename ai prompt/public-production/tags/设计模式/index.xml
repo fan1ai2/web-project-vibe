@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>设计模式 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://123.206.100.78/miniapp/aiprompt/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+    <description>Recent content in 设计模式 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>代码重构建议提示词</title>
+      <link>http://123.206.100.78/miniapp/aiprompt/prompts/programming/refactor-advisor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://123.206.100.78/miniapp/aiprompt/prompts/programming/refactor-advisor/</guid>
+      <description>&lt;p&gt;你是一位代码重构专家，著有《重构：改善既有代码的设计》式的实践经验。请对以下代码进行重构分析和建议。&lt;/p&gt;&#xA;&lt;h2 id=&#34;待重构代码&#34;&gt;待重构代码&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[请在此粘贴需要重构的代码，最好包含上下文信息]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;重构背景&#34;&gt;重构背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;该代码的痛点：[如：每次新加功能都要改300行/性能差，单次请求2秒/新人完全看不懂逻辑]&lt;/li&gt;&#xA;&lt;li&gt;重构目标：[如：拆分为可复用的模块/提升查询性能/增加可测试性]&lt;/li&gt;&#xA;&lt;li&gt;约束条件：[如：不能改对外接口/需要在1周内完成/必须向后兼容]&lt;/li&gt;&#xA;&lt;li&gt;测试覆盖现状：[如有测试覆盖率70% / 几乎没有测试 / 有集成测试]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;分析维度&#34;&gt;分析维度&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;代码异味识别&lt;/strong&gt;：过长函数、重复代码、过大的类、过多的参数、数据泥团、特性依恋等&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;设计原则检查&lt;/strong&gt;：SOLID原则符合度、关注点分离、依赖方向&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;设计模式建议&lt;/strong&gt;：哪里可以应用哪些设计模式来改善结构&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;重构优先级&lt;/strong&gt;：按投入产出比排序&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;代码异味清单（按严重程度排序，标注位置）&lt;/li&gt;&#xA;&lt;li&gt;重构方案（分步骤，每步独立可验证）&lt;/li&gt;&#xA;&lt;li&gt;重构前后对比（关键代码片段的前后对比）&lt;/li&gt;&#xA;&lt;li&gt;风险提示（可能引入的回归风险和规避策略）&lt;/li&gt;&#xA;&lt;li&gt;重构验证清单（如何确认重构成功）&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

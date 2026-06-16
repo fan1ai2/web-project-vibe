@@ -4,14 +4,20 @@
       <h2>全部 31 个省会城市</h2>
       <p>覆盖全国 8 大区域，每个城市都有专属自由行攻略</p>
     </div>
-    <div class="all-cities-grid">
+    <div class="city-grid" id="all-cities-grid">
       {{ range .Site.Data.cities }}
-      <article class="all-city-card" onclick="location.href='{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ .link }}'">
-        <div class="all-city-card-img" style="background-image:url('{{ .image }}');">
-          <div class="all-city-card-name">{{ .name }}</div>
-          <div class="all-city-card-province">{{ .province }}</div>
+      <article class="city-card{{ if not .featured }} city-card--basic{{ end }}" onclick="location.href='{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ .link }}'">
+        {{ if .featured }}
+        <div class="city-card-accent city-card-accent--{{ replace (replace .link "/cities/" "") "/" "" }}"></div>
+        {{ end }}
+        <div class="city-card-img" style="background-image:url('{{ .image }}');">
+          <div class="city-card-name-overlay">{{ .name }}</div>
         </div>
-        <div class="all-city-card-body"><p>{{ .summary }}</p></div>
+        <div class="city-card-body">
+          <h3><a href="{{ .link }}">{{ .name }}旅游攻略</a></h3>
+          <div class="city-card-tags">{{ range .tags }}<span>{{ . }}</span>{{ end }}</div>
+          <p>{{ .summary }}</p>
+        </div>
       </article>
       {{ end }}
     </div>

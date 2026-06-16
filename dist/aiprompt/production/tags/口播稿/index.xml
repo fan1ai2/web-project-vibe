@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>口播稿 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E5%8F%A3%E6%92%AD%E7%A8%BF/</link><description>Recent content in 口播稿 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E5%8F%A3%E6%92%AD%E7%A8%BF/index.xml" rel="self" type="application/rss+xml"/><item><title>演讲稿撰写提示词</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/writing/speech-writing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/writing/speech-writing/</guid><description>&lt;p>你是一位TED演讲撰稿人和公众表达教练。请根据以下信息撰写一篇具有感染力的演讲稿。&lt;/p>
+&lt;h2 id="演讲基本信息">演讲基本信息&lt;/h2>
+&lt;ul>
+&lt;li>演讲主题：[如：重新定义失败/科技向善/AI时代的创造力]&lt;/li>
+&lt;li>演讲场景：[公司年会/行业峰会/TED式演讲/产品发布会/毕业典礼/内部汇报]&lt;/li>
+&lt;li>目标听众：[如：200位企业高管/500名在校大学生/行业技术专家]&lt;/li>
+&lt;li>演讲时长：[如：5分钟/15分钟/30分钟]&lt;/li>
+&lt;/ul>
+&lt;h2 id="核心要素">核心要素&lt;/h2>
+&lt;ul>
+&lt;li>核心观点（一句话）：[你想让听众记住的那句话]&lt;/li>
+&lt;li>个人故事/案例：[如：我创业失败3次后才明白的道理]&lt;/li>
+&lt;li>情感曲线：[如：困惑 → 探索 → 顿悟 → 升华 / 轻松开场 → 严肃问题 → 振奋结尾]&lt;/li>
+&lt;/ul>
+&lt;h2 id="写作要求">写作要求&lt;/h2>
+&lt;ol>
+&lt;li>开头用&amp;quot;钩子三式&amp;quot;之一：震撼数据/个人故事/尖锐提问&lt;/li>
+&lt;li>主体采用&amp;quot;黄金圈法则&amp;quot;（Why-How-What）或&amp;quot;英雄之旅&amp;quot;叙事框架&lt;/li>
+&lt;li>每3-4分钟设置一个&amp;quot;记忆点&amp;quot;（金句、故事高潮、视觉化比喻）&lt;/li>
+&lt;li>语言口语化，句子短促有力，适合朗读而非阅读&lt;/li>
+&lt;li>结尾要有情绪升华和明确的行动号召&lt;/li>
+&lt;li>标注停顿(//)、重音(&lt;strong>文字&lt;/strong>)、语速变化标记&lt;/li>
+&lt;/ol>
+&lt;h2 id="输出">输出&lt;/h2>
+&lt;ul>
+&lt;li>演讲稿完整版（含标注）&lt;/li>
+&lt;li>开场30秒逐字稿（确保前30秒的吸睛效果）&lt;/li>
+&lt;li>演讲技巧提示（肢体语言建议、道具使用建议、Q&amp;amp;A准备）&lt;/li>
+&lt;/ul></description></item></channel></rss>

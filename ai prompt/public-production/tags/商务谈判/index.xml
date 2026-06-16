@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>商务谈判 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://123.206.100.78/miniapp/aiprompt/tags/%E5%95%86%E5%8A%A1%E8%B0%88%E5%88%A4/</link>
+    <description>Recent content in 商务谈判 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E5%95%86%E5%8A%A1%E8%B0%88%E5%88%A4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>谈判准备简报</title>
+      <link>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/negotiation-brief/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://123.206.100.78/miniapp/aiprompt/prompts/productivity/negotiation-brief/</guid>
+      <description>&lt;p&gt;你是一位资深商务谈判顾问。请根据以下信息，生成一份谈判准备简报，帮助我在谈判桌前占据主动。&lt;/p&gt;&#xA;&lt;h2 id=&#34;简报框架&#34;&gt;简报框架&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;双方筹码分析&lt;/strong&gt;：我方筹码（BATNA/最佳替代方案、核心优势、痛点）vs 对方筹码&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;议价区间（ZOPA）&lt;/strong&gt;：估算双方可接受的价格/条件区间，标注重合区&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;让步策略&lt;/strong&gt;：设计3级让步阶梯（开口价→目标价→底线价），每步标注交换条件&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;谈判脚本&lt;/strong&gt;：开场白、关键话术、应对对方常见异议的回应&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;情绪预案&lt;/strong&gt;：对方可能使用的施压策略及我方应对方式&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## 🤝 谈判准备简报：[谈判主题]&#xA;&#xA;### 一、基本信息&#xA;| 项目 | 内容 |&#xA;|------|------|&#xA;| 谈判对象 | [公司/人名] |&#xA;| 谈判性质 | 合作/采购/薪资/... |&#xA;| 参与人员 | [我方/对方] |&#xA;| 底线目标 | [不可退让的条件] |&#xA;&#xA;### 二、筹码分析&#xA;#### 我方&#xA;- BATNA：[如果不能达成协议，我方的替代方案是什么]&#xA;- 核心优势：[X条]&#xA;- 潜在弱点：[X条]&#xA;&#xA;#### 对方&#xA;- 推测BATNA：...&#xA;- 推测痛点/需求：...&#xA;- 对方决策者风格：[推测]&#xA;&#xA;### 三、议价区间（ZOPA）&#xA;| 层级 | 我方出价 | 预期对方反应 | 交换条件 |&#xA;|------|----------|------------|----------|&#xA;| 开口价 | ... | 可能拒绝 | - |&#xA;| 目标价 | ... | 可达成 | 让A换B |&#xA;| 底线价 | ... | 最终立场 | 无退让 |&#xA;| 预估对方底线 | ... | - | - |&#xA;&#xA;### 四、关键话术&#xA;**开场白**：[30秒建立合作基调的话术]&#xA;**应对压价**：[对方说&amp;#34;太贵了&amp;#34;→ 回应策略]&#xA;**应对拖延**：[对方说&amp;#34;再考虑&amp;#34;→ 回应策略]&#xA;&#xA;### 五、情绪预案&#xA;| 对方可能策略 | 我方应对 |&#xA;|------------|----------|&#xA;| 红脸/白脸 | ... |&#xA;| 最后通牒 | ... |&#xA;| 追加需求 | ... |&#xA;&#xA;### 六、谈判后跟进计划&#xA;- 签约后24小时内：[行动]&#xA;- 谈判破裂后：[行动]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;准备原则&#34;&gt;准备原则&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;BATNA越强，谈判底气越足，优先夯实&lt;/li&gt;&#xA;&lt;li&gt;让步必须有交换条件，绝不让步而不索取&lt;/li&gt;&#xA;&lt;li&gt;所有预设数据标注&amp;quot;推测&amp;quot;vs&amp;quot;已知&amp;quot;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;请开始准备：&#xA;谈判主题：[描述]&#xA;谈判对象：[公司名/人名，如不了解可描述大致画像]&#xA;我方诉求：[想要达成的核心目标]&#xA;我方筹码：[我们有什么对方想要的]&#xA;预算/条件范围：[可接受的范围]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

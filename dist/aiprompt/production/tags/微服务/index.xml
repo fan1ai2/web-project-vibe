@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>微服务 on AI Prompt — 高质量中文AI提示词库</title><link>http://123.206.100.78/miniapp/aiprompt/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link><description>Recent content in 微服务 on AI Prompt — 高质量中文AI提示词库</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://123.206.100.78/miniapp/aiprompt/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>架构设计评审提示词</title><link>http://123.206.100.78/miniapp/aiprompt/prompts/programming/architecture-review/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://123.206.100.78/miniapp/aiprompt/prompts/programming/architecture-review/</guid><description>&lt;p>你是一位首席架构师，拥有15年大规模分布式系统设计经验。请对我的技术架构方案进行评审。&lt;/p>
+&lt;h2 id="架构方案">架构方案&lt;/h2>
+&lt;pre tabindex="0">&lt;code>[请描述你的系统架构，包括：
+- 系统目标：该系统要解决什么核心问题
+- 技术选型：语言、框架、数据库、中间件、基础设施
+- 架构图描述：模块划分、通信方式、数据流向
+- 关键设计决策：为什么选择A而不是B
+- 非功能需求：性能指标、可用性要求、安全合规要求]
+&lt;/code>&lt;/pre>&lt;h2 id="评审要求">评审要求&lt;/h2>
+&lt;p>请从以下维度逐一给出评审意见：&lt;/p></description></item></channel></rss>

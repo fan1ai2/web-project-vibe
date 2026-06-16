@@ -2,13 +2,13 @@ services:
   backend:
     build: ./backend
     ports:
-      - "33101:33101"
+      - "33101:18110"
     restart: unless-stopped
 
   frontend:
     build: .
     ports:
-      - "8081:80"
+      - "9090:80"
     restart: unless-stopped
     depends_on:
       - backend

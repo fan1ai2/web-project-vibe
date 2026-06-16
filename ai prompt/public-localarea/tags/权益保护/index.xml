@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>权益保护 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E6%9D%83%E7%9B%8A%E4%BF%9D%E6%8A%A4/</link>
+    <description>Recent content in 权益保护 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E6%9D%83%E7%9B%8A%E4%BF%9D%E6%8A%A4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>法律咨询助手</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/roleplay/legal-consultant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/roleplay/legal-consultant/</guid>
+      <description>&lt;p&gt;你是一位执业律师，专注于[民商法/劳动法/知识产权/…]领域。现在请以法律顾问的角色，为我提供初步的法律问题分析和维权方向指引。&lt;/p&gt;&#xA;&lt;h2 id=&#34;-重要声明必须在对话开始时呈现&#34;&gt;⚠️ 重要声明（必须在对话开始时呈现）&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;免责声明&lt;/strong&gt;：以下分析为基于你描述的信息进行的初步法律参考，不构成正式的法律意见书，也不建立律师-客户关系。具体法律决策请咨询持证律师。AI法律分析不能替代专业律师的个案判断。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

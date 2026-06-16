@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>转化文案 on AI Prompt — 高质量中文AI提示词库</title>
+    <link>http://10.100.1.243/miniapp/aiprompt/tags/%E8%BD%AC%E5%8C%96%E6%96%87%E6%A1%88/</link>
+    <description>Recent content in 转化文案 on AI Prompt — 高质量中文AI提示词库</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="http://10.100.1.243/miniapp/aiprompt/tags/%E8%BD%AC%E5%8C%96%E6%96%87%E6%A1%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>电商产品描述提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/writing/product-description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/writing/product-description/</guid>
+      <description>&lt;p&gt;你是一位电商平台的金牌文案策划，擅长撰写驱动购买决策的产品描述。请根据以下信息撰写产品文案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;产品信息&#34;&gt;产品信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;产品名称：[如：XX超轻折叠背包]&lt;/li&gt;&#xA;&lt;li&gt;产品品类：[如：户外装备/数码产品/家居用品/服饰鞋包]&lt;/li&gt;&#xA;&lt;li&gt;目标用户：[如：短途旅行爱好者/数码极客/注重品质的家庭主妇]&lt;/li&gt;&#xA;&lt;li&gt;核心卖点：[列出3-5个，如：仅重180g/防水面料/30L大容量/5秒折叠]&lt;/li&gt;&#xA;&lt;li&gt;价格定位：[平价实惠/中等价位/高端轻奢]&lt;/li&gt;&#xA;&lt;li&gt;使用场景：[如：周末徒步、城市通勤、出差短途]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;文案要求&#34;&gt;文案要求&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;电商标题公式：&amp;ldquo;品牌+核心词+卖点词+场景词+属性词&amp;rdquo;（30字以内）&lt;/li&gt;&#xA;&lt;li&gt;开篇一句话直击用户痛点或使用场景&lt;/li&gt;&#xA;&lt;li&gt;产品描述部分：每个卖点用&amp;quot;特性 → 优势 → 好处&amp;quot;（FAB法则）展开&lt;/li&gt;&#xA;&lt;li&gt;植入感官词汇（如：触感细腻的防撕裂面料、低调有质感的哑光黑）&lt;/li&gt;&#xA;&lt;li&gt;添加2-3个用户使用场景的画面描写&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;输出&#34;&gt;输出&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;电商短标题（适合搜索）&lt;/li&gt;&#xA;&lt;li&gt;营销短文案（适合列表页展示，60字以内）&lt;/li&gt;&#xA;&lt;li&gt;完整产品描述（适合详情页）&lt;/li&gt;&#xA;&lt;li&gt;推荐5个产品标签/关键词&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>落地页文案提示词</title>
+      <link>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/landing-page-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://10.100.1.243/miniapp/aiprompt/prompts/marketing/landing-page-copy/</guid>
+      <description>&lt;p&gt;你是一位CRO（转化率优化）专家兼文案写手，擅长撰写高转化率的落地页文案。请为我撰写一套完整的落地页文案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;产品服务信息&#34;&gt;产品/服务信息&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;产品名称：[如：FlowAI - 智能工作流自动化平台]&lt;/li&gt;&#xA;&lt;li&gt;一句话价值主张：[如：用AI连接你所有的办公工具，自动完成重复工作]&lt;/li&gt;&#xA;&lt;li&gt;目标用户：[如：中小企业运营负责人，每天被跨平台数据搬运困扰]&lt;/li&gt;&#xA;&lt;li&gt;核心痛点（Top 3）：&#xA;&lt;ol&gt;&#xA;&lt;li&gt;[如：每天花2小时在不同工具间手动搬运数据]&lt;/li&gt;&#xA;&lt;li&gt;[痛点2]&lt;/li&gt;&#xA;&lt;li&gt;[痛点3]&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;核心功能/解决方案（Top 3）：&#xA;&lt;ol&gt;&#xA;&lt;li&gt;[如：一键连接200+办公工具，无需代码]&lt;/li&gt;&#xA;&lt;li&gt;[功能2]&lt;/li&gt;&#xA;&lt;li&gt;[功能3]&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;社会证明：[如：已服务3000+企业 / 客户包括XX和XX / 好评率98%]&lt;/li&gt;&#xA;&lt;li&gt;定价信号：[如：免费版可用 / 专业版199元/月起 / 提供免费试用]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;文案结构要求&#34;&gt;文案结构要求&lt;/h2&gt;&#xA;&lt;p&gt;按照经典落地页Swipe File结构撰写：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
