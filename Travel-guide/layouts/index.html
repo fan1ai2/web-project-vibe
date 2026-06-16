@@ -5,8 +5,8 @@
 {{ define "ogdescription" }}闲游 - 2026年最新城市旅游攻略，覆盖北京、上海、广州、成都、西安、杭州六大热门城市。{{ end }}
 {{ define "twtitle" }}闲游 | 自由行指南{{ end }}
 {{ define "twdescription" }}闲游 - 2026年最新城市旅游攻略，覆盖六大热门城市，自由行路线、景点、美食一网打尽。{{ end }}
-{{ define "ogimage" }}{{ "/images/og-default.jpg" | absURL }}{{ end }}
-{{ define "twimage" }}{{ "/images/og-default.jpg" | absURL }}{{ end }}
+{{ define "ogimage" }}{{ print $.Site.Data.site.basepath "/images/og-default.jpg" | absURL }}{{ end }}
+{{ define "twimage" }}{{ print $.Site.Data.site.basepath "/images/og-default.jpg" | absURL }}{{ end }}
 {{ define "jsonld" }}
 <script type="application/ld+json">
 {
@@ -45,7 +45,7 @@
     <p class="hero-subtitle">深度人文指南 &times; 轻松行程规划<br>让你的自由行有深度、不踩坑</p>
     <div class="hero-cities">
       {{ range where .Site.Data.cities "featured" true }}
-      <a href="{{ .link }}" class="hero-city-dot">{{ .name }}</a>
+      <a href="{{ $.Site.Data.site.basepath }}{{ .link }}" class="hero-city-dot">{{ .name }}</a>
       {{ end }}
       <span class="hero-city-dot hero-city-dot--more">...</span>
     </div>
@@ -60,13 +60,13 @@
       </div>
       <div class="city-grid">
         {{ range where .Site.Data.cities "featured" true }}
-        <article class="city-card" onclick="location.href='{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ .link }}'">
+        <article class="city-card" onclick="location.href='{{ $.Site.Data.site.basepath }}{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ $.Site.Data.site.basepath }}{{ .link }}'">
           <div class="city-card-accent city-card-accent--{{ replace (replace .link "/cities/" "") "/" "" }}"></div>
-          <div class="city-card-img" style="background-image:url('{{ .image }}');">
+          <div class="city-card-img" style="background-image:url('{{ $.Site.Data.site.basepath }}{{ .image }}');">
             <div class="city-card-name-overlay">{{ .name }}</div>
           </div>
           <div class="city-card-body">
-            <h3><a href="{{ .link }}">{{ .name }}旅游攻略</a></h3>
+            <h3><a href="{{ $.Site.Data.site.basepath }}{{ .link }}">{{ .name }}旅游攻略</a></h3>
             <div class="city-card-tags">{{ range .tags }}<span>{{ . }}</span>{{ end }}</div>
             <p>{{ .summary }}</p>
           </div>

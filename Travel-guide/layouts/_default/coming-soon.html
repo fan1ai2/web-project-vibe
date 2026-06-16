@@ -5,8 +5,8 @@
 {{ define "ogdescription" }}{{ .Params.description }}{{ end }}
 {{ define "twtitle" }}{{ .Params.title }}{{ end }}
 {{ define "twdescription" }}{{ .Params.description }}{{ end }}
-{{ define "ogimage" }}{{ "/images/og-default.jpg" | absURL }}{{ end }}
-{{ define "twimage" }}{{ "/images/og-default.jpg" | absURL }}{{ end }}
+{{ define "ogimage" }}{{ "images/og-default.jpg" | absURL }}{{ end }}
+{{ define "twimage" }}{{ "images/og-default.jpg" | absURL }}{{ end }}
 {{ define "jsonld" }}
 <script type="application/ld+json">
 {
@@ -35,8 +35,8 @@
     <h1 class="cs-title">正在建设中</h1>
     <p class="cs-desc">作者正在为这座城市撰写深度攻略<br>内容涵盖景点、美食、交通和行程规划</p>
     <div class="cs-actions">
-      <a href="/" class="btn-primary">返回首页</a>
-      <a href="/#all-cities" class="btn-primary-outline">探索更多城市</a>
+      <a href="{{ .Site.Data.site.basepath }}/" class="btn-primary">返回首页</a>
+      <a href="{{ .Site.Data.site.basepath }}/#all-cities" class="btn-primary-outline">探索更多城市</a>
     </div>
   </div>
 </main>

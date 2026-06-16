@@ -61,7 +61,7 @@ function showDropdown() {
     dd.innerHTML = '<div class="search-dropdown-empty">没有匹配的城市，换个关键词试试</div>';
   } else {
     dd.innerHTML = results.map(function(c) {
-      var href = c.unlocked ? '/cities/' + c.slug + '/' : '/coming-soon/';
+      var href = c.unlocked ? (window.__BASEPATH || '') + '/cities/' + c.slug + '/' : (window.__BASEPATH || '') + '/coming-soon/';
       return '<div class="search-dropdown-item" onclick="location.href=\'' + href + '\'" role="link" tabindex="0" aria-label="' + c.name + '">'
         + '<span class="sdi-name">' + c.name + '</span>'
         + '<span class="sdi-province">' + (PROVINCE_NAMES[c.province] || '') + '</span></div>';

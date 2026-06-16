@@ -81,7 +81,7 @@ function handleLogin(e) {
   API.login(email, pwd).then(function(data) {
     showToast('登录成功', 'success');
     localStorage.setItem('user', JSON.stringify(data.data.member || data.data));
-    setTimeout(function() { window.location.href = '/'; }, 800);
+    setTimeout(function() { window.location.href = (window.__BASEPATH || '') + '/'; }, 800);
   }).catch(function(err) {
     showToast(err.message || '登录失败', 'error');
   }).finally(function() {

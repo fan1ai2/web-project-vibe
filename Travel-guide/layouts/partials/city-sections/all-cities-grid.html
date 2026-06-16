@@ -6,15 +6,15 @@
     </div>
     <div class="city-grid" id="all-cities-grid">
       {{ range .Site.Data.cities }}
-      <article class="city-card{{ if not .featured }} city-card--basic{{ end }}" onclick="location.href='{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ .link }}'">
+      <article class="city-card{{ if not .featured }} city-card--basic{{ end }}" onclick="location.href='{{ $.Site.Data.site.basepath }}{{ .link }}'" role="link" tabindex="0" aria-label="{{ .name }}旅游攻略" onkeydown="if(event.key==='Enter') location.href='{{ $.Site.Data.site.basepath }}{{ .link }}'">
         {{ if .featured }}
         <div class="city-card-accent city-card-accent--{{ replace (replace .link "/cities/" "") "/" "" }}"></div>
         {{ end }}
-        <div class="city-card-img" style="background-image:url('{{ .image }}');">
+        <div class="city-card-img" style="background-image:url('{{ $.Site.Data.site.basepath }}{{ .image }}');">
           <div class="city-card-name-overlay">{{ .name }}</div>
         </div>
         <div class="city-card-body">
-          <h3><a href="{{ .link }}">{{ .name }}旅游攻略</a></h3>
+          <h3><a href="{{ $.Site.Data.site.basepath }}{{ .link }}">{{ .name }}旅游攻略</a></h3>
           <div class="city-card-tags">{{ range .tags }}<span>{{ . }}</span>{{ end }}</div>
           <p>{{ .summary }}</p>
         </div>

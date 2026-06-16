@@ -8,9 +8,9 @@
 {{ partial "nav.html" . }}
 {{ block "main" . }}{{ end }}
 {{ partial "footer.html" . }}
-<script src="/js/api.js" defer></script>
-<script src="/js/user-nav.js" defer></script>
-<script src="/js/subscribe.js" defer></script>
-<script src="/js/all-cities-toggle.js" defer></script>
+<script src="{{ .Site.Data.site.basepath }}/js/api.js" defer></script>
+<script src="{{ .Site.Data.site.basepath }}/js/user-nav.js" defer></script>
+<script src="{{ .Site.Data.site.basepath }}/js/subscribe.js" defer></script>
+<script src="{{ .Site.Data.site.basepath }}/js/all-cities-toggle.js" defer></script>
 </body>
 </html>

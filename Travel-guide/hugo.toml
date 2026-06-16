@@ -19,13 +19,3 @@ disableKinds = ["taxonomy", "term"]
   keywords = "城市旅游,旅游攻略,自由行,北京旅游攻略,上海旅游攻略"
   author = "城市旅游攻略"
 
-[outputFormats]
-  [outputFormats.comingsoon]
-    mediaType = "text/html"
-    path = "/"
-    baseName = "coming-soon"
-    isHTML = true
-
-[mediaTypes]
-  [mediaTypes."text/html"]
-    suffixes = ["html"]

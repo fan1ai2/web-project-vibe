@@ -11,7 +11,7 @@
   {{ partial "footer.html" . }}
   {{ partial "auth-modal.html" . }}
   {{ partial "payment-modal.html" . }}
-  <script src="/js/api.js" defer></script>
+  <script src="{{ .Site.Data.site.basepath }}/js/api.js" defer></script>
   {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
   <script src="{{ $js.RelPermalink }}" defer></script>
 </body>
