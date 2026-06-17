@@ -19,7 +19,7 @@
       <article class="style-card">
         <div class="style-card__image">
           <img
-            src="{{ printf "images/showcase/%s.png" .file | relURL }}"
+            src="{{ $.Site.Data.site.basepath }}/images/showcase/{{ .file }}.png"
             alt="{{ i18n .key }}"
             loading="lazy"
             decoding="async"

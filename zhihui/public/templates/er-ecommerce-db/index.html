@@ -1,0 +1,124 @@
+<!doctype html><html lang=zh-CN><head><script src="/miniapp/zhihui/livereload.js?mindelay=10&amp;v=2&amp;port=13130&amp;path=miniapp/zhihui/livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>电商数据库ER图</title>
+<meta name=description content="展示电商平台的数据库实体关系设计，涵盖用户、商品、分类、购物车、订单、支付和物流等核心业务模块的数据表结构。"><meta name=keywords content="[ER图,电商数据库,MySQL,数据建模]"><link rel=canonical href=http://localhost:13130/miniapp/zhihui/templates/er-ecommerce-db/><link rel=alternate hreflang=zh-CN href=http://localhost:13130/miniapp/zhihui/templates/er-ecommerce-db/><meta property="og:title" content="电商数据库ER图"><meta property="og:description" content="展示电商平台的数据库实体关系设计，涵盖用户、商品、分类、购物车、订单、支付和物流等核心业务模块的数据表结构。"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:13130/miniapp/zhihui/templates/er-ecommerce-db/"><meta property="og:site_name" content="智绘 — AI 在线作图工具"><meta property="og:image" content="http://localhost:13130/images/og/og-default.png"><meta property="og:locale" content="zh_CN"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="电商数据库ER图"><meta name=twitter:description content="展示电商平台的数据库实体关系设计，涵盖用户、商品、分类、购物车、订单、支付和物流等核心业务模块的数据表结构。"><link rel=preconnect href=https://cdn.jsdelivr.net><link rel=stylesheet href=/miniapp/zhihui/css/main.css><script>window.__API_BASE="/miniapp/zhihui/api",window.__BASEPATH="/miniapp/zhihui"</script><link rel=sitemap type=application/xml href=http://localhost:13130/miniapp/zhihui/sitemap.xml><script type=application/ld+json>{"@context":"https://schema.org","@type":"CreativeWork","name":"电商数据库ER图","description":"展示电商平台的数据库实体关系设计，涵盖用户、商品、分类、购物车、订单、支付和物流等核心业务模块的数据表结构。","thumbnailUrl":"http:\/\/localhost:13130\/images\/templates\/er-ecommerce-db.png","about":{"@type":"Thing","name":"er"}}</script></head><body><header class=site-header role=banner><div class=header-inner><a href=/miniapp/zhihui/ class=logo aria-label="智绘 — AI 在线作图工具 首页"><span class=logo-icon><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121.0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+</span><span class=logo-text>智绘</span></a><div class=header-ai-input id=header-ai-input><select class=ai-chart-type id=ai-chart-type aria-label=选择图表类型><option value=mindmap>思维导图</option><option value=flowchart>流程图</option><option value=uml>UML图</option><option value=architecture>架构图</option><option value=er>ER图</option><option value=gantt>甘特图</option><option value=orgchart>组织架构</option><option value=swimlane>泳道图</option><option value=network>网络拓扑</option><option value=timeline>时间轴</option></select>
+<input type=text class=ai-input-field id=ai-input-field placeholder="输入需求，AI 一键生成图表..." aria-label="AI 作图输入">
+<button class=ai-submit-btn id=ai-submit-btn aria-label=生成><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 008.5 14.063l-6.135-1.582a.5.5.0 010-.962L8.5 9.936A2 2 0 009.937 8.5l1.582-6.135a.5.5.0 01.963.0L14.063 8.5A2 2 0 0015.5 9.937l6.135 1.581a.5.5.0 010 .964L15.5 14.063A2 2 0 0014.063 15.5l-1.582 6.135a.5.5.0 01-.963.0z"/></svg></button></div><nav class=site-nav aria-label=主导航><a href=/miniapp/zhihui/ class=nav-link>首页</a>
+<a href=/miniapp/zhihui/categories/ class=nav-link>图表类型</a>
+<a href=/miniapp/zhihui/templates/ class=nav-link>模板库</a>
+<a href=/miniapp/zhihui/brainstorm/ class=nav-link>头脑风暴</a>
+<a href=/miniapp/zhihui/blog/ class=nav-link>教程</a>
+<a href=/miniapp/zhihui/compare/ class=nav-link>工具对比</a>
+<a href=/miniapp/zhihui/login/ class="nav-link nav-link-login">登录</a></nav><button class=mobile-menu-btn aria-label=菜单 aria-expanded=false>
+<span></span><span></span><span></span></button></div><div class=ai-result-panel id=ai-result-panel hidden><div class=ai-result-header><span class=ai-result-title>AI 生成结果</span><div class=ai-result-actions><button class="btn btn-sm" id=ai-copy-code>复制代码</button>
+<button class="btn btn-sm btn-primary" id=ai-export-png>导出PNG</button>
+<button class="btn btn-sm btn-ghost" id=ai-close-result>关闭</button></div></div><div class=ai-result-body><pre class=ai-result-code id=ai-result-code></pre><div class=ai-result-preview id=ai-result-preview></div></div></div></header><nav class=breadcrumb aria-label=面包屑导航><ol><li><a href=/miniapp/zhihui/>首页</a></li><li><a href=/miniapp/zhihui/templates/>模板库</a></li><li aria-current=page>电商数据库ER图</li></ol></nav><main id=main-content><article class=section><div class=container><div class=template-detail><div class=template-preview><div class=mermaid-render id=mermaid-preview></div><pre class=mermaid-code id=mermaid-code>erDiagram
+  User {
+    int id PK
+    string username
+    string email
+    string phone
+    string password_hash
+    int points
+    datetime created_at
+  }
+
+  Address {
+    int id PK
+    int user_id FK
+    string receiver
+    string phone
+    string province
+    string city
+    string district
+    string detail
+    tinyint is_default
+  }
+
+  Category {
+    int id PK
+    string name
+    int parent_id FK
+    int sort_order
+  }
+
+  Product {
+    int id PK
+    int category_id FK
+    string name
+    text description
+    decimal price
+    int stock
+    string image_url
+    string status
+    datetime created_at
+  }
+
+  CartItem {
+    int id PK
+    int user_id FK
+    int product_id FK
+    int quantity
+    datetime added_at
+  }
+
+  Order {
+    int id PK
+    int user_id FK
+    string order_no
+    decimal total_amount
+    string status
+    int address_id FK
+    datetime created_at
+  }
+
+  OrderItem {
+    int id PK
+    int order_id FK
+    int product_id FK
+    int quantity
+    decimal price
+    decimal subtotal
+  }
+
+  Payment {
+    int id PK
+    int order_id FK
+    decimal amount
+    string method
+    string transaction_no
+    string status
+    datetime paid_at
+  }
+
+  Logistics {
+    int id PK
+    int order_id FK
+    string carrier
+    string tracking_no
+    string status
+    datetime shipped_at
+    datetime delivered_at
+  }
+
+  User ||--o{ Address : &#34;has&#34;
+  User ||--o{ CartItem : &#34;has&#34;
+  User ||--o{ Order : &#34;places&#34;
+  Category ||--o{ Product : &#34;contains&#34;
+  Product ||--o{ CartItem : &#34;belongs to&#34;
+  Order ||--o{ OrderItem : &#34;contains&#34;
+  Product ||--o{ OrderItem : &#34;includes&#34;
+  Order ||--|| Payment : &#34;has&#34;
+  Order ||--|| Logistics : &#34;has&#34;
+  Address ||--o{ Order : &#34;shipping to&#34;
+</pre></div><div class=template-info><h1 class=template-title>电商数据库ER图</h1><div class=template-meta><span class="badge badge-category">er</span>
+<span class="badge badge-difficulty">中级</span>
+<span class="badge badge-tag">er</span></div><p class=template-use-case><strong>适用场景：</strong>用于设计电商平台的完整数据库模型</p><div class=template-actions><button class="btn btn-primary" id=copy-mermaid>复制代码</button>
+<button class="btn btn-outline" id=export-mermaid>导出PNG</button></div></div><div class=template-content></div><div class=faq-section><h2 class=faq-heading>常见问题</h2><div class=faq-list><details class=faq-item><summary class=faq-question>电商数据库设计中最需要注意什么？</summary><div class=faq-answer>核心是订单和商品数据的完整性。订单金额、商品价格等财务数据一旦生成不应修改原记录，建议添加流水表记录变更历史。同时要注意高并发场景下的库存扣减一致性。</div></details><details class=faq-item><summary class=faq-question>地址设计为什么要将省市区分开存储？</summary><div class=faq-answer>将地址的省市区分开便于数据分析和运营统计，比如按地区分析销售情况、计算运费等。同时有利于物流系统的对接和地址校验。</div></details></div></div><div class=related-templates><h3>相关模板推荐</h3><div class=template-grid><a href=http://localhost:13130/miniapp/zhihui/templates/architecture-cloud-aws/ class=template-card><div class=template-card-img><img src=/images/templates/architecture-cloud-aws.png alt=AWS云服务架构图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>AWS云服务架构图</h3><p class=template-card-use-case>用于展示基于AWS云服务的Web应用部署架构</p><div class=template-card-tags><span class="badge badge-category">architecture</span>
+<span class="badge badge-tag">architecture</span></div></div></a><a href=http://localhost:13130/miniapp/zhihui/templates/er-erp-modules/ class=template-card><div class=template-card-img><img src=/images/templates/er-erp-modules.png alt=ERP系统模块ER图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>ERP系统模块ER图</h3><p class=template-card-use-case>用于设计企业ERP系统的多模块数据库模型</p><div class=template-card-tags><span class="badge badge-category">er</span>
+<span class="badge badge-tag">er</span></div></div></a><a href=http://localhost:13130/miniapp/zhihui/templates/architecture-k8s-cluster/ class=template-card><div class=template-card-img><img src=/images/templates/architecture-k8s-cluster.png alt=Kubernetes集群架构图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>Kubernetes集群架构图</h3><p class=template-card-use-case>用于展示Kubernetes集群的核心组件和Pod调度流程</p><div class=template-card-tags><span class="badge badge-category">architecture</span>
+<span class="badge badge-tag">architecture</span></div></div></a></div></div></div></div></article></main><footer class=site-footer role=contentinfo><div class=footer-inner><div class=footer-brand><span class=footer-logo>智绘</span><p class=footer-tagline>AI 在线作图工具</p></div><div class=footer-links><div class=footer-col><h4>产品</h4><a href=/miniapp/zhihui/categories/>图表类型</a>
+<a href=/miniapp/zhihui/templates/>模板库</a>
+<a href=/miniapp/zhihui/brainstorm/>头脑风暴</a>
+<a href=/miniapp/zhihui/pricing/>定价</a></div><div class=footer-col><h4>资源</h4><a href=/miniapp/zhihui/blog/>教程</a>
+<a href=/miniapp/zhihui/compare/>工具对比</a></div><div class=footer-col><h4>关于</h4><a href=/miniapp/zhihui/about/>关于我们</a>
+<a href=/miniapp/zhihui/login/>登录</a></div></div><div class=footer-bottom><p>&copy; 2026 智绘. All rights reserved.</p></div></div></footer><script src=/miniapp/zhihui/js/auth-state.js defer></script><script src=/miniapp/zhihui/js/auth-gate.js defer></script><script src=/miniapp/zhihui/js/copy.js defer></script><script src=/miniapp/zhihui/js/scroll-reveal.js defer></script><script src=/miniapp/zhihui/js/mermaid-render.js defer></script></body></html>

@@ -17,7 +17,7 @@
     <div class="hero-tags">
       <span class="hero-tags-label">热门：</span>
       {{ range first 6 (shuffle (slice "写作" "编程" "设计" "营销" "效率" "教育" "生活" "角色扮演")) }}
-      <a href="{{ "/prompts/" | relURL }}" class="hero-tag auth-gate">{{ . }}</a>
+      <a href="{{ $.Site.Data.site.basepath }}/prompts/" class="hero-tag auth-gate">{{ . }}</a>
       {{ end }}
     </div>
   </div>
@@ -28,7 +28,7 @@
     <div class="categories-list">
       <h2 class="section-title">目&ensp;录&ensp;CONTENTS</h2>
       {{ range $i, $cat := .Site.Data.categories }}
-      <a href="{{ printf "/prompts/%s/" $cat.slug | relURL }}" class="cat-row animate-in" data-delay="{{ mul $i 80 }}">
+      <a href="{{ $.Site.Data.site.basepath }}/prompts/{{ $cat.slug }}/" class="cat-row animate-in" data-delay="{{ mul $i 80 }}">
         <span class="cat-num">{{ printf "%02d" (add $i 1) }}</span>
         <span class="cat-name">{{ $cat.name }}</span>
         <span class="cat-dash">──</span>
@@ -36,7 +36,7 @@
       </a>
       {{ end }}
       <div class="categories-cta">
-        <a href="{{ "/prompts/" | relURL }}" class="btn-secondary auth-gate">浏览全部分类 &rarr;</a>
+        <a href="{{ $.Site.Data.site.basepath }}/prompts/" class="btn-secondary auth-gate">浏览全部分类 &rarr;</a>
       </div>
     </div>
   </div>
@@ -52,7 +52,7 @@
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="{{ "/prompts/" | relURL }}" class="btn-primary auth-gate">查看全部 96 条提示词</a>
+      <a href="{{ $.Site.Data.site.basepath }}/prompts/" class="btn-primary auth-gate">查看全部 96 条提示词</a>
     </div>
   </div>
 </section>
@@ -63,7 +63,7 @@
     <p class="section-desc">7 款实用工具，前端演示体验</p>
     <div class="tools-grid">
       {{ range .Site.Data.tools }}
-      <a href="{{ printf "/tools/%s/" .slug | relURL }}" class="tool-card">
+      <a href="{{ $.Site.Data.site.basepath }}/tools/{{ .slug }}/" class="tool-card">
         <span class="tool-icon">{{ partial "icon" .icon }}</span>
         <h3 class="tool-name">{{ .name }}</h3>
         <p class="tool-desc">{{ .description }}</p>
@@ -71,7 +71,7 @@
       {{ end }}
     </div>
     <div class="section-cta">
-      <a href="{{ "/tools/" | relURL }}" class="btn-secondary">探索全部工具 &rarr;</a>
+      <a href="{{ $.Site.Data.site.basepath }}/tools/" class="btn-secondary">探索全部工具 &rarr;</a>
     </div>
   </div>
 </section>

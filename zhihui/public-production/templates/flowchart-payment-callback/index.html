@@ -1,0 +1,59 @@
+<!doctype html><html lang=zh-CN><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>支付回调处理流程图</title>
+<meta name=description content="展示支付系统接收第三方支付回调时的完整处理流程，包括签名验证、订单状态幂等处理、异常重试和补偿机制。"><meta name=keywords content="[支付回调,支付流程,订单处理,幂等性]"><link rel=canonical href=http://123.206.100.78/miniapp/zhihui/templates/flowchart-payment-callback/><link rel=alternate hreflang=zh-CN href=http://123.206.100.78/miniapp/zhihui/templates/flowchart-payment-callback/><meta property="og:title" content="支付回调处理流程图"><meta property="og:description" content="展示支付系统接收第三方支付回调时的完整处理流程，包括签名验证、订单状态幂等处理、异常重试和补偿机制。"><meta property="og:type" content="article"><meta property="og:url" content="http://123.206.100.78/miniapp/zhihui/templates/flowchart-payment-callback/"><meta property="og:site_name" content="智绘 — AI 在线作图工具"><meta property="og:image" content="http://123.206.100.78/images/og/og-default.png"><meta property="og:locale" content="zh_CN"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="支付回调处理流程图"><meta name=twitter:description content="展示支付系统接收第三方支付回调时的完整处理流程，包括签名验证、订单状态幂等处理、异常重试和补偿机制。"><link rel=preconnect href=https://cdn.jsdelivr.net><link rel=stylesheet href=/miniapp/zhihui/css/main.css><script>window.__API_BASE="/miniapp/zhihui/api",window.__BASEPATH="/miniapp/zhihui"</script><link rel=sitemap type=application/xml href=http://123.206.100.78/miniapp/zhihui/sitemap.xml><script type=application/ld+json>{"@context":"https://schema.org","@type":"CreativeWork","name":"支付回调处理流程图","description":"展示支付系统接收第三方支付回调时的完整处理流程，包括签名验证、订单状态幂等处理、异常重试和补偿机制。","thumbnailUrl":"http:\/\/123.206.100.78\/images\/templates\/flowchart-payment-callback.png","about":{"@type":"Thing","name":"flowchart"}}</script></head><body><header class=site-header role=banner><div class=header-inner><a href=/miniapp/zhihui/ class=logo aria-label="智绘 — AI 在线作图工具 首页"><span class=logo-icon><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121.0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+</span><span class=logo-text>智绘</span></a><div class=header-ai-input id=header-ai-input><select class=ai-chart-type id=ai-chart-type aria-label=选择图表类型><option value=mindmap>思维导图</option><option value=flowchart>流程图</option><option value=uml>UML图</option><option value=architecture>架构图</option><option value=er>ER图</option><option value=gantt>甘特图</option><option value=orgchart>组织架构</option><option value=swimlane>泳道图</option><option value=network>网络拓扑</option><option value=timeline>时间轴</option></select>
+<input type=text class=ai-input-field id=ai-input-field placeholder="输入需求，AI 一键生成图表..." aria-label="AI 作图输入">
+<button class=ai-submit-btn id=ai-submit-btn aria-label=生成><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 008.5 14.063l-6.135-1.582a.5.5.0 010-.962L8.5 9.936A2 2 0 009.937 8.5l1.582-6.135a.5.5.0 01.963.0L14.063 8.5A2 2 0 0015.5 9.937l6.135 1.581a.5.5.0 010 .964L15.5 14.063A2 2 0 0014.063 15.5l-1.582 6.135a.5.5.0 01-.963.0z"/></svg></button></div><nav class=site-nav aria-label=主导航><a href=/miniapp/zhihui/ class=nav-link>首页</a>
+<a href=/miniapp/zhihui/categories/ class=nav-link>图表类型</a>
+<a href=/miniapp/zhihui/templates/ class=nav-link>模板库</a>
+<a href=/miniapp/zhihui/brainstorm/ class=nav-link>头脑风暴</a>
+<a href=/miniapp/zhihui/blog/ class=nav-link>教程</a>
+<a href=/miniapp/zhihui/compare/ class=nav-link>工具对比</a>
+<a href=/miniapp/zhihui/login/ class="nav-link nav-link-login">登录</a></nav><button class=mobile-menu-btn aria-label=菜单 aria-expanded=false>
+<span></span><span></span><span></span></button></div><div class=ai-result-panel id=ai-result-panel hidden><div class=ai-result-header><span class=ai-result-title>AI 生成结果</span><div class=ai-result-actions><button class="btn btn-sm" id=ai-copy-code>复制代码</button>
+<button class="btn btn-sm btn-primary" id=ai-export-png>导出PNG</button>
+<button class="btn btn-sm btn-ghost" id=ai-close-result>关闭</button></div></div><div class=ai-result-body><pre class=ai-result-code id=ai-result-code></pre><div class=ai-result-preview id=ai-result-preview></div></div></div></header><nav class=breadcrumb aria-label=面包屑导航><ol><li><a href=/miniapp/zhihui/>首页</a></li><li><a href=/miniapp/zhihui/templates/>模板库</a></li><li aria-current=page>支付回调处理流程图</li></ol></nav><main id=main-content><article class=section><div class=container><div class=template-detail><div class=template-preview><div class=mermaid-render id=mermaid-preview></div><pre class=mermaid-code id=mermaid-code>graph TD
+  A[收到支付回调] --&gt; B[解析回调参数]
+  B --&gt; C{签名验证}
+  C --&gt;|验证失败| D[记录验签失败日志]
+  D --&gt; E[返回失败响应]
+  C --&gt;|验证成功| F{检查订单号格式}
+  F --&gt;|格式错误| G[记录异常订单]
+  G --&gt; E
+  F --&gt;|格式正确| H[查询本地订单]
+  H --&gt; I{订单是否存在}
+  I --&gt;|不存在| J[记录订单缺失告警]
+  J --&gt; E
+  I --&gt;|存在| K{订单当前状态}
+  K --&gt;|已支付| L[幂等处理: 返回成功]
+  K --&gt;|已关闭| M[检测是否为重复支付]
+  M --&gt;|是重复支付| N[触发退款流程]
+  M --&gt;|不是重复| O[记录状态异常]
+  N --&gt; P[发起退款申请]
+  K --&gt;|待支付| Q[更新订单为已支付]
+  Q --&gt; R[记录支付流水]
+  R --&gt; S[发送支付成功通知]
+  S --&gt; T[更新库存]
+  T --&gt; U[触发后续出库流程]
+  U --&gt; V{通知重试次数&lt;3}
+  V --&gt;|是| W[等待业务系统确认]
+  W --&gt; X{业务处理成功?}
+  X --&gt;|是| Y[返回成功响应给支付平台]
+  X --&gt;|否| V
+  V --&gt;|否| Z[触发人工介入告警]
+  Y --&gt; AA[流程结束]
+  E --&gt; AA
+  N --&gt; AA
+  O --&gt; AA
+  Z --&gt; AA
+</pre></div><div class=template-info><h1 class=template-title>支付回调处理流程图</h1><div class=template-meta><span class="badge badge-category">flowchart</span>
+<span class="badge badge-difficulty">高级</span>
+<span class="badge badge-tag">flowchart</span></div><p class=template-use-case><strong>适用场景：</strong>用于处理第三方支付回调通知的完整逻辑</p><div class=template-actions><button class="btn btn-primary" id=copy-mermaid>复制代码</button>
+<button class="btn btn-outline" id=export-mermaid>导出PNG</button></div></div><div class=template-content></div><div class=faq-section><h2 class=faq-heading>常见问题</h2><div class=faq-list><details class=faq-item><summary class=faq-question>支付回调为什么需要幂等处理？</summary><div class=faq-answer>支付平台可能因网络原因多次发送相同的回调通知，如果不做幂等处理会导致订单状态被重复更新、库存多次扣减等严重问题。检测到订单已是已支付状态时直接返回成功即可。</div></details><details class=faq-item><summary class=faq-question>签名验证失败的处理策略是什么？</summary><div class=faq-answer>签名验证失败通常意味着回调可能是伪造的或参数被篡改，此时不应处理业务逻辑，只需记录日志并返回失败响应。可设置监控告警，对短时间内大量验签失败的情况进行风控处理。</div></details></div></div><div class=related-templates><h3>相关模板推荐</h3><div class=template-grid><a href=http://123.206.100.78/miniapp/zhihui/templates/architecture-cloud-aws/ class=template-card><div class=template-card-img><img src=/images/templates/architecture-cloud-aws.png alt=AWS云服务架构图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>AWS云服务架构图</h3><p class=template-card-use-case>用于展示基于AWS云服务的Web应用部署架构</p><div class=template-card-tags><span class="badge badge-category">architecture</span>
+<span class="badge badge-tag">architecture</span></div></div></a><a href=http://123.206.100.78/miniapp/zhihui/templates/er-erp-modules/ class=template-card><div class=template-card-img><img src=/images/templates/er-erp-modules.png alt=ERP系统模块ER图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>ERP系统模块ER图</h3><p class=template-card-use-case>用于设计企业ERP系统的多模块数据库模型</p><div class=template-card-tags><span class="badge badge-category">er</span>
+<span class="badge badge-tag">er</span></div></div></a><a href=http://123.206.100.78/miniapp/zhihui/templates/architecture-k8s-cluster/ class=template-card><div class=template-card-img><img src=/images/templates/architecture-k8s-cluster.png alt=Kubernetes集群架构图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>Kubernetes集群架构图</h3><p class=template-card-use-case>用于展示Kubernetes集群的核心组件和Pod调度流程</p><div class=template-card-tags><span class="badge badge-category">architecture</span>
+<span class="badge badge-tag">architecture</span></div></div></a></div></div></div></div></article></main><footer class=site-footer role=contentinfo><div class=footer-inner><div class=footer-brand><span class=footer-logo>智绘</span><p class=footer-tagline>AI 在线作图工具</p></div><div class=footer-links><div class=footer-col><h4>产品</h4><a href=/miniapp/zhihui/categories/>图表类型</a>
+<a href=/miniapp/zhihui/templates/>模板库</a>
+<a href=/miniapp/zhihui/brainstorm/>头脑风暴</a>
+<a href=/miniapp/zhihui/pricing/>定价</a></div><div class=footer-col><h4>资源</h4><a href=/miniapp/zhihui/blog/>教程</a>
+<a href=/miniapp/zhihui/compare/>工具对比</a></div><div class=footer-col><h4>关于</h4><a href=/miniapp/zhihui/about/>关于我们</a>
+<a href=/miniapp/zhihui/login/>登录</a></div></div><div class=footer-bottom><p>&copy; 2026 智绘. All rights reserved.</p></div></div></footer><script src=/miniapp/zhihui/js/auth-state.js defer></script><script src=/miniapp/zhihui/js/auth-gate.js defer></script><script src=/miniapp/zhihui/js/copy.js defer></script><script src=/miniapp/zhihui/js/scroll-reveal.js defer></script><script src=/miniapp/zhihui/js/mermaid-render.js defer></script></body></html>

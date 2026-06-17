@@ -3,13 +3,13 @@
 <article class="section prompt-detail" itemscope itemtype="https://schema.org/HowTo">
   <div class="container container-narrow">
     <nav class="breadcrumb" aria-label="面包屑导航">
-      <a href="{{ "/" | relURL }}">首页</a>
+      <a href="{{ .Site.Data.site.basepath }}/">首页</a>
       <span class="breadcrumb-sep">/</span>
-      <a href="{{ "/prompts/" | relURL }}">提示词库</a>
+      <a href="{{ .Site.Data.site.basepath }}/prompts/">提示词库</a>
       <span class="breadcrumb-sep">/</span>
       {{ with .Params.category }}
       {{ $cat := index (where $.Site.Data.categories "slug" .) 0 }}
-      <a href="{{ printf "/prompts/%s/" . | relURL }}">{{ if $cat }}{{ $cat.name }}{{ else }}{{ . }}{{ end }}</a>
+      <a href="{{ $.Site.Data.site.basepath }}/prompts/{{ . }}/">{{ if $cat }}{{ $cat.name }}{{ else }}{{ . }}{{ end }}</a>
       <span class="breadcrumb-sep">/</span>
       {{ end }}
       <span class="breadcrumb-current">{{ .Title }}</span>

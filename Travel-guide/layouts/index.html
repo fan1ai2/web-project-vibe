@@ -120,7 +120,7 @@
       <div class="tips-grid">
         {{ range .Params.tips }}
         <div class="tip-card">
-          <img class="tip-icon" src="{{ .icon }}" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
+          <img class="tip-icon" src="{{ $.Site.Data.site.basepath }}{{ .icon }}" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
           <h3>{{ .title }}</h3>
           <p>{{ .text }}</p>
         </div>

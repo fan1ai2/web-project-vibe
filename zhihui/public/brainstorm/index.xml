@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>头脑风暴在线工具 on 智绘 — AI 在线作图工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/</link><description>Recent content in 头脑风暴在线工具 on 智绘 — AI 在线作图工具</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="http://localhost:13130/miniapp/zhihui/brainstorm/index.xml" rel="self" type="application/rss+xml"/><item><title>5Why 根因分析在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/five-whys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/five-whys/</guid><description>&lt;h2 id="5why-根因分析是什么">5Why 根因分析是什么&lt;/h2>
+&lt;p>5Why 源自丰田生产体系，通过连续追问「为什么」穿透问题表象，直达系统层面的根因。每一条回答引出一个新的「为什么」，像剥洋葱一样层层深入。&lt;/p>
+&lt;h2 id="怎么使用这个工具">怎么使用这个工具&lt;/h2>
+&lt;ol>
+&lt;li>明确描述问题现象&lt;/li>
+&lt;li>写下第一个「为什么」和你的回答&lt;/li>
+&lt;li>基于回答继续追问下一个「为什么」&lt;/li>
+&lt;li>重复直到找到可行动的根因&lt;/li>
+&lt;li>针对根因制定对策并跟踪完成&lt;/li>
+&lt;/ol>
+&lt;h2 id="最佳实践">最佳实践&lt;/h2>
+&lt;ul>
+&lt;li>回答基于事实和数据，而非猜测&lt;/li>
+&lt;li>指向系统缺陷而非个人失误&lt;/li>
+&lt;li>到达「可行动层」即可停止（有明确对策）&lt;/li>
+&lt;li>验证因果关系链条的逻辑完整性&lt;/li>
+&lt;li>确认根因被解决后，问题不会复现&lt;/li>
+&lt;/ul></description></item><item><title>Crazy 8's 快速构思在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/crazy-eights/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/crazy-eights/</guid><description>&lt;h2 id="crazy-8s-是什么">Crazy 8&amp;rsquo;s 是什么&lt;/h2>
+&lt;p>Crazy 8&amp;rsquo;s 源自 Google Ventures 的设计冲刺方法。参与者在 8 分钟内画出 8 个不同的方案草图，通过时间压力和数量要求，逼出大脑深处最具创意的想法。&lt;/p>
+&lt;h2 id="怎么使用这个工具">怎么使用这个工具&lt;/h2>
+&lt;ol>
+&lt;li>将画布（或纸张）对折三次，折出 8 个格子&lt;/li>
+&lt;li>明确要解决的问题目标&lt;/li>
+&lt;li>每格 60 秒，快速画出一个方案&lt;/li>
+&lt;li>不追求画工，只求传达核心思路&lt;/li>
+&lt;li>时间到后轮流展示并收集反馈&lt;/li>
+&lt;/ol>
+&lt;h2 id="最佳实践">最佳实践&lt;/h2>
+&lt;ul>
+&lt;li>提前准备好明确的设计挑战陈述&lt;/li>
+&lt;li>强迫自己在每格 60 秒内完成，不超时&lt;/li>
+&lt;li>不要纠结于之前画过的格子，每个格子全新开始&lt;/li>
+&lt;li>不同格子尝试完全不同方向的方案&lt;/li>
+&lt;li>完成后用 dot voting 选出最有潜力的方案继续深化&lt;/li>
+&lt;/ul></description></item><item><title>How Might We 在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/how-might-we/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/how-might-we/</guid><description>&lt;h2 id="how-might-we-是什么">How Might We 是什么&lt;/h2>
+&lt;p>How Might We（HMW）是设计思维中用于重构问题的工具。它将问题和痛点转化为「我们可以如何…」的创新机会陈述，引导团队从积极的建设性视角寻找突破。&lt;/p>
+&lt;h2 id="怎么使用这个工具">怎么使用这个工具&lt;/h2>
+&lt;ol>
+&lt;li>收集用户痛点或问题陈述&lt;/li>
+&lt;li>每个痛点改写为「HMW + 积极动词 + …?」&lt;/li>
+&lt;li>从不同角度产出多个 HMW 问题&lt;/li>
+&lt;li>评估 HMW 问题的创新潜力&lt;/li>
+&lt;li>选择最有价值的 HMW 进行方案构思&lt;/li>
+&lt;/ol>
+&lt;h2 id="最佳实践">最佳实践&lt;/h2>
+&lt;ul>
+&lt;li>一个痛点可以衍生多个 HMW 问题（多角度）&lt;/li>
+&lt;li>好的 HMW 让人有立刻想动手解决的冲动&lt;/li>
+&lt;li>确保 HMW 保留了用户核心需求&lt;/li>
+&lt;li>避免在 HMW 中暗示特定解决方案&lt;/li>
+&lt;li>给团队 15 分钟独立写 HMW 再合并讨论&lt;/li>
+&lt;/ul></description></item><item><title>SWOT 分析在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/swot-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/swot-analysis/</guid><description>&lt;h2 id="swot-分析是什么">SWOT 分析是什么&lt;/h2>
+&lt;p>SWOT 分析是一种战略规划工具，通过评估项目的&lt;strong>优势(Strengths)&lt;/strong>、&lt;strong>劣势(Weaknesses)&lt;/strong>、**机会(Opportunities)&lt;strong>和&lt;/strong>威胁(Threats)**四个维度，帮助你制定策略。&lt;/p></description></item><item><title>六顶思考帽在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/six-thinking-hats/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/six-thinking-hats/</guid><description>&lt;h2 id="六顶思考帽是什么">六顶思考帽是什么&lt;/h2>
+&lt;p>六顶思考帽由爱德华·德·波诺(Edward de Bono)提出，是平行思维的代表工具。六种颜色的帽子代表六种思维模式：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>白帽&lt;/strong> — 客观事实与数据&lt;/li>
+&lt;li>&lt;strong>红帽&lt;/strong> — 直觉与情感&lt;/li>
+&lt;li>&lt;strong>黑帽&lt;/strong> — 风险与批判&lt;/li>
+&lt;li>&lt;strong>黄帽&lt;/strong> — 积极与价值&lt;/li>
+&lt;li>&lt;strong>绿帽&lt;/strong> — 创意与可能性&lt;/li>
+&lt;li>&lt;strong>蓝帽&lt;/strong> — 过程与控制&lt;/li>
+&lt;/ul>
+&lt;h2 id="怎么使用这个工具">怎么使用这个工具&lt;/h2>
+&lt;ol>
+&lt;li>选择一顶帽子作为当前视角&lt;/li>
+&lt;li>团队全体成员从该视角展开讨论&lt;/li>
+&lt;li>记录关键观点到对应帽子的笔记区&lt;/li>
+&lt;li>切换下一顶帽子，重复上述步骤&lt;/li>
+&lt;li>所有帽子完成后，蓝帽汇总输出结论&lt;/li>
+&lt;/ol>
+&lt;h2 id="最佳实践">最佳实践&lt;/h2>
+&lt;ul>
+&lt;li>每顶帽子限定 5-10 分钟，保持节奏&lt;/li>
+&lt;li>蓝帽在开始和结束时各用一次，把控全局&lt;/li>
+&lt;li>白帽阶段只说事实，不做判断&lt;/li>
+&lt;li>红帽允许 30 秒内凭直觉表达感受&lt;/li>
+&lt;li>避免在某顶帽子阶段否定其他帽子的价值&lt;/li>
+&lt;/ul></description></item><item><title>同理心地图在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/empathy-map/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/empathy-map/</guid><description>&lt;h2 id="同理心地图是什么">同理心地图是什么&lt;/h2>
+&lt;p>同理心地图(Empathy Map)是设计思维的核心工具之一。通过记录用户在特定场景下的&lt;strong>说(Says)&lt;/strong>、&lt;strong>做(Does)&lt;/strong>、&lt;strong>想(Thinks)&lt;/strong>、**感(Feels)**四个维度，帮助团队站在用户的立场理解问题。&lt;/p></description></item><item><title>用户旅程图在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/journey-map/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/journey-map/</guid><description>&lt;h2 id="用户旅程图是什么">用户旅程图是什么&lt;/h2>
+&lt;p>用户旅程图(User Journey Map)以时间线可视化用户的完整使用体验，记录每个触点上用户的&lt;strong>行为&lt;/strong>、&lt;strong>想法&lt;/strong>、&lt;strong>情绪&lt;/strong>，从中识别痛点和改进机会。&lt;/p>
+&lt;h2 id="怎么使用这个工具">怎么使用这个工具&lt;/h2>
+&lt;ol>
+&lt;li>定义用户画像和使用场景&lt;/li>
+&lt;li>划分用户旅程的阶段&lt;/li>
+&lt;li>每个阶段填写用户行为、想法和情绪&lt;/li>
+&lt;li>标注触点通道（App、网页、线下等）&lt;/li>
+&lt;li>识别痛点（低分情绪）并写下改进机会&lt;/li>
+&lt;/ol>
+&lt;h2 id="最佳实践">最佳实践&lt;/h2>
+&lt;ul>
+&lt;li>基于真实用户数据，避免猜测&lt;/li>
+&lt;li>重点关注情绪曲线的低谷区域&lt;/li>
+&lt;li>每个触点标注所属渠道，便于优化资源分配&lt;/li>
+&lt;li>优先解决影响面广、出现频次高的痛点&lt;/li>
+&lt;li>完成后团队对齐核心洞察，制定行动方案&lt;/li>
+&lt;/ul></description></item><item><title>自由联想脑暴在线工具</title><link>http://localhost:13130/miniapp/zhihui/brainstorm/mindstorm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:13130/miniapp/zhihui/brainstorm/mindstorm/</guid><description>&lt;h2 id="自由联想脑暴是什么">自由联想脑暴是什么&lt;/h2>
+&lt;p>自由联想脑暴是最经典的头脑风暴方法，围绕一个核心主题进行快速关键词联想和分支探索。强调&lt;strong>数量优先&lt;/strong>、&lt;strong>延迟评判&lt;/strong>，让创意在自由碰撞中自然涌现。&lt;/p>
+&lt;h2 id="怎么使用这个工具">怎么使用这个工具&lt;/h2>
+&lt;ol>
+&lt;li>在中心节点写下核心问题或主题&lt;/li>
+&lt;li>围绕主题自由联想，填入想到的任何关键词&lt;/li>
+&lt;li>从关键词继续向外延伸分支联想&lt;/li>
+&lt;li>不限方向，鼓励异想天开的想法&lt;/li>
+&lt;li>发散完毕后进入收敛整理阶段&lt;/li>
+&lt;/ol>
+&lt;h2 id="最佳实践">最佳实践&lt;/h2>
+&lt;ul>
+&lt;li>设定明确时间限制（建议20分钟）&lt;/li>
+&lt;li>设置数量目标（如至少50个想法）&lt;/li>
+&lt;li>期间不讨论、不评判、不否定&lt;/li>
+&lt;li>用录音或实时记录防止遗漏&lt;/li>
+&lt;li>发散结束后分组归类，投票选出最优方向&lt;/li>
+&lt;/ul></description></item></channel></rss>

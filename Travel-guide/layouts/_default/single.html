@@ -60,11 +60,11 @@
 </nav>
 
 <nav class="breadcrumb" aria-label="面包屑导航">
-  <a href="/">首页</a><span>&rsaquo;</span>{{ .Params.cityName }}旅游攻略
+  <a href="{{ .Site.Data.site.basepath }}/">首页</a><span>&rsaquo;</span>{{ .Params.cityName }}旅游攻略
 </nav>
 
 <header class="city-hero">
-  <div class="city-hero-bg" style="background-image:url('/images/cities/{{ .File.ContentBaseName }}.jpg');"></div>
+  <div class="city-hero-bg" style="background-image:url('{{ .Site.Data.site.basepath }}/images/cities/{{ .File.ContentBaseName }}.jpg');"></div>
   <div class="city-hero-content">
     <h1>{{ .Params.title }}</h1>
     <p class="city-hero-desc">{{ .Params.description }}</p>

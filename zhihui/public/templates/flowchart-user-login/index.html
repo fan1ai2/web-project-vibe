@@ -1,0 +1,52 @@
+<!doctype html><html lang=zh-CN><head><script src="/miniapp/zhihui/livereload.js?mindelay=10&amp;v=2&amp;port=13130&amp;path=miniapp/zhihui/livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>用户登录认证流程图</title>
+<meta name=description content="展示包含账号密码登录、短信验证码、OAuth第三方登录和忘记密码等多种登录方式的完整认证流程。"><meta name=keywords content="[登录流程,用户认证,OAuth,短信验证]"><link rel=canonical href=http://localhost:13130/miniapp/zhihui/templates/flowchart-user-login/><link rel=alternate hreflang=zh-CN href=http://localhost:13130/miniapp/zhihui/templates/flowchart-user-login/><meta property="og:title" content="用户登录认证流程图"><meta property="og:description" content="展示包含账号密码登录、短信验证码、OAuth第三方登录和忘记密码等多种登录方式的完整认证流程。"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:13130/miniapp/zhihui/templates/flowchart-user-login/"><meta property="og:site_name" content="智绘 — AI 在线作图工具"><meta property="og:image" content="http://localhost:13130/images/og/og-default.png"><meta property="og:locale" content="zh_CN"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="用户登录认证流程图"><meta name=twitter:description content="展示包含账号密码登录、短信验证码、OAuth第三方登录和忘记密码等多种登录方式的完整认证流程。"><link rel=preconnect href=https://cdn.jsdelivr.net><link rel=stylesheet href=/miniapp/zhihui/css/main.css><script>window.__API_BASE="/miniapp/zhihui/api",window.__BASEPATH="/miniapp/zhihui"</script><link rel=sitemap type=application/xml href=http://localhost:13130/miniapp/zhihui/sitemap.xml><script type=application/ld+json>{"@context":"https://schema.org","@type":"CreativeWork","name":"用户登录认证流程图","description":"展示包含账号密码登录、短信验证码、OAuth第三方登录和忘记密码等多种登录方式的完整认证流程。","thumbnailUrl":"http:\/\/localhost:13130\/images\/templates\/flowchart-user-login.png","about":{"@type":"Thing","name":"flowchart"}}</script></head><body><header class=site-header role=banner><div class=header-inner><a href=/miniapp/zhihui/ class=logo aria-label="智绘 — AI 在线作图工具 首页"><span class=logo-icon><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121.0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+</span><span class=logo-text>智绘</span></a><div class=header-ai-input id=header-ai-input><select class=ai-chart-type id=ai-chart-type aria-label=选择图表类型><option value=mindmap>思维导图</option><option value=flowchart>流程图</option><option value=uml>UML图</option><option value=architecture>架构图</option><option value=er>ER图</option><option value=gantt>甘特图</option><option value=orgchart>组织架构</option><option value=swimlane>泳道图</option><option value=network>网络拓扑</option><option value=timeline>时间轴</option></select>
+<input type=text class=ai-input-field id=ai-input-field placeholder="输入需求，AI 一键生成图表..." aria-label="AI 作图输入">
+<button class=ai-submit-btn id=ai-submit-btn aria-label=生成><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 008.5 14.063l-6.135-1.582a.5.5.0 010-.962L8.5 9.936A2 2 0 009.937 8.5l1.582-6.135a.5.5.0 01.963.0L14.063 8.5A2 2 0 0015.5 9.937l6.135 1.581a.5.5.0 010 .964L15.5 14.063A2 2 0 0014.063 15.5l-1.582 6.135a.5.5.0 01-.963.0z"/></svg></button></div><nav class=site-nav aria-label=主导航><a href=/miniapp/zhihui/ class=nav-link>首页</a>
+<a href=/miniapp/zhihui/categories/ class=nav-link>图表类型</a>
+<a href=/miniapp/zhihui/templates/ class=nav-link>模板库</a>
+<a href=/miniapp/zhihui/brainstorm/ class=nav-link>头脑风暴</a>
+<a href=/miniapp/zhihui/blog/ class=nav-link>教程</a>
+<a href=/miniapp/zhihui/compare/ class=nav-link>工具对比</a>
+<a href=/miniapp/zhihui/login/ class="nav-link nav-link-login">登录</a></nav><button class=mobile-menu-btn aria-label=菜单 aria-expanded=false>
+<span></span><span></span><span></span></button></div><div class=ai-result-panel id=ai-result-panel hidden><div class=ai-result-header><span class=ai-result-title>AI 生成结果</span><div class=ai-result-actions><button class="btn btn-sm" id=ai-copy-code>复制代码</button>
+<button class="btn btn-sm btn-primary" id=ai-export-png>导出PNG</button>
+<button class="btn btn-sm btn-ghost" id=ai-close-result>关闭</button></div></div><div class=ai-result-body><pre class=ai-result-code id=ai-result-code></pre><div class=ai-result-preview id=ai-result-preview></div></div></div></header><nav class=breadcrumb aria-label=面包屑导航><ol><li><a href=/miniapp/zhihui/>首页</a></li><li><a href=/miniapp/zhihui/templates/>模板库</a></li><li aria-current=page>用户登录认证流程图</li></ol></nav><main id=main-content><article class=section><div class=container><div class=template-detail><div class=template-preview><div class=mermaid-render id=mermaid-preview></div><pre class=mermaid-code id=mermaid-code>graph TD
+  A[用户访问登录页] --&gt; B{选择登录方式}
+  B --&gt;|账号密码| C[输入账号密码]
+  B --&gt;|短信验证码| D[输入手机号]
+  B --&gt;|OAuth登录| E[选择第三方平台]
+  B --&gt;|忘记密码| F[进入找回密码]
+  C --&gt; G{验证账号密码}
+  G --&gt;|验证成功| H{是否开启二步验证}
+  G --&gt;|验证失败| I[提示错误信息]
+  I --&gt; B
+  H --&gt;|是| J[输入二步验证码]
+  H --&gt;|否| K[生成登录Token]
+  D --&gt; L[发送短信验证码]
+  L --&gt; M[输入验证码]
+  M --&gt; N{验证验证码}
+  N --&gt;|正确| K
+  N --&gt;|错误| M
+  E --&gt; O[跳转OAuth授权页]
+  O --&gt; P{授权成功?}
+  P --&gt;|是| Q[回调获取用户信息]
+  Q --&gt; K
+  P --&gt;|否| E
+  F --&gt; R[验证身份信息]
+  R --&gt; S[重置密码]
+  S --&gt; T[跳转登录页]
+  T --&gt; B
+  K --&gt; U[登录成功进入首页]
+</pre></div><div class=template-info><h1 class=template-title>用户登录认证流程图</h1><div class=template-meta><span class="badge badge-category">flowchart</span>
+<span class="badge badge-difficulty">中级</span>
+<span class="badge badge-tag">flowchart</span></div><p class=template-use-case><strong>适用场景：</strong>用于展示用户登录系统的完整认证过程</p><div class=template-actions><button class="btn btn-primary" id=copy-mermaid>复制代码</button>
+<button class="btn btn-outline" id=export-mermaid>导出PNG</button></div></div><div class=template-content></div><div class=faq-section><h2 class=faq-heading>常见问题</h2><div class=faq-list><details class=faq-item><summary class=faq-question>OAuth登录流程中的授权码模式是怎样的？</summary><div class=faq-answer>用户点击第三方登录后，后端生成授权请求跳转到第三方授权页面，用户确认授权后第三方回调到本站，后端用授权码换取AccessToken，再通过Token获取用户基本信息完成登录。</div></details><details class=faq-item><summary class=faq-question>如何提高登录流程的安全性？</summary><div class=faq-answer>推荐实施二步验证、登录失败次数限制、验证码机制和HTTPS传输。同时记录登录日志，检测异常登录行为并及时告警。</div></details></div></div><div class=related-templates><h3>相关模板推荐</h3><div class=template-grid><a href=http://localhost:13130/miniapp/zhihui/templates/architecture-cloud-aws/ class=template-card><div class=template-card-img><img src=/images/templates/architecture-cloud-aws.png alt=AWS云服务架构图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>AWS云服务架构图</h3><p class=template-card-use-case>用于展示基于AWS云服务的Web应用部署架构</p><div class=template-card-tags><span class="badge badge-category">architecture</span>
+<span class="badge badge-tag">architecture</span></div></div></a><a href=http://localhost:13130/miniapp/zhihui/templates/er-erp-modules/ class=template-card><div class=template-card-img><img src=/images/templates/er-erp-modules.png alt=ERP系统模块ER图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>ERP系统模块ER图</h3><p class=template-card-use-case>用于设计企业ERP系统的多模块数据库模型</p><div class=template-card-tags><span class="badge badge-category">er</span>
+<span class="badge badge-tag">er</span></div></div></a><a href=http://localhost:13130/miniapp/zhihui/templates/architecture-k8s-cluster/ class=template-card><div class=template-card-img><img src=/images/templates/architecture-k8s-cluster.png alt=Kubernetes集群架构图 loading=lazy decoding=async width=400 height=250></div><div class=template-card-body><h3 class=template-card-title>Kubernetes集群架构图</h3><p class=template-card-use-case>用于展示Kubernetes集群的核心组件和Pod调度流程</p><div class=template-card-tags><span class="badge badge-category">architecture</span>
+<span class="badge badge-tag">architecture</span></div></div></a></div></div></div></div></article></main><footer class=site-footer role=contentinfo><div class=footer-inner><div class=footer-brand><span class=footer-logo>智绘</span><p class=footer-tagline>AI 在线作图工具</p></div><div class=footer-links><div class=footer-col><h4>产品</h4><a href=/miniapp/zhihui/categories/>图表类型</a>
+<a href=/miniapp/zhihui/templates/>模板库</a>
+<a href=/miniapp/zhihui/brainstorm/>头脑风暴</a>
+<a href=/miniapp/zhihui/pricing/>定价</a></div><div class=footer-col><h4>资源</h4><a href=/miniapp/zhihui/blog/>教程</a>
+<a href=/miniapp/zhihui/compare/>工具对比</a></div><div class=footer-col><h4>关于</h4><a href=/miniapp/zhihui/about/>关于我们</a>
+<a href=/miniapp/zhihui/login/>登录</a></div></div><div class=footer-bottom><p>&copy; 2026 智绘. All rights reserved.</p></div></div></footer><script src=/miniapp/zhihui/js/auth-state.js defer></script><script src=/miniapp/zhihui/js/auth-gate.js defer></script><script src=/miniapp/zhihui/js/copy.js defer></script><script src=/miniapp/zhihui/js/scroll-reveal.js defer></script><script src=/miniapp/zhihui/js/mermaid-render.js defer></script></body></html>
