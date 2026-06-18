@@ -21,7 +21,7 @@
 
   window.API = {
     // Auth
-    captcha:      function()                               { return req('GET',  '/api/auth/captcha'); },
+    captcha:      function()                               { return req('POST', '/api/captcha/generate'); },
     login:        function(email, password)                { return req('POST', '/api/auth/login', { username: email, password: password }); },
     register:     function(email, password, captchaId, captchaCode) {
       return req('POST', '/api/auth/register', { username: email, password: password, captcha_id: captchaId, captcha_code: captchaCode });

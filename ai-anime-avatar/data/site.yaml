@@ -1,2 +1,2 @@
-apibase: /miniapp/anime
-basepath: /miniapp/anime
+apibase: /api
+basepath: ""

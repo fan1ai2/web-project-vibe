@@ -1,2 +1,2 @@
-apibase: /miniapp/travel
-basepath: /miniapp/travel
+apibase: /api
+basepath: ""

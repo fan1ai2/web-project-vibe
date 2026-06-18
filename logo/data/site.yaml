@@ -1,2 +1,2 @@
-apibase: /miniapp/logo
-basepath: /miniapp/logo
+apibase: /api
+basepath: ""

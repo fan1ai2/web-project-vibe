@@ -1,0 +1,21 @@
+====================================================
+  4项目独立部署 — 配置参考
+====================================================
+
+构建参数:
+  baseURL: /
+  basepath: "" (空)
+  apibase: /api
+
+部署方式: Nginx root + proxy_pass
+  location /api/ { proxy_pass http://backend:PORT/api/; }
+  location /     { root /path/to/project; try_files $uri $uri/index.html =404; }
+
+====================================================
+项目          端口      后端
+----------------------------------------------------
+aiprompt      33101     localhost:18110
+travel        33102     localhost:18110 (或独立后端)
+logo          33103     无后端(纯静态)
+anime         33104     localhost:18100/api
+====================================================

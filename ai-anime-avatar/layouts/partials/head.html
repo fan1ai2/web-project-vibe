@@ -81,7 +81,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700;800&display=swap">
 
 
-<script>window.__API_BASE = '{{ .Site.Data.site.apibase }}';window.__BASEPATH = '{{ .Site.Data.site.basepath }}';</script>
+<script>(function(){var d=window.location.port==='1313'||window.location.port==='1314'||window.location.port==='1315';window.__API_BASE=d?'http://'+window.location.hostname+':18110':'{{ .Site.Data.site.apibase }}';window.__BASEPATH='{{ .Site.Data.site.basepath }}';})();</script>
 
 <!-- CSS Bundle -->
 {{ $allCSS := resources.Match "css/**.css" | resources.Concat "css/bundle.css" | minify | fingerprint }}

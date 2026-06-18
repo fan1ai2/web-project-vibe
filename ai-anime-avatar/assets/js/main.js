@@ -402,11 +402,25 @@
   var captchaImg = document.getElementById('auth-register-captcha-img');
 
   function refreshCaptcha() {
-    if (typeof API === 'undefined') return;
+    if (typeof API === 'undefined') { console.error('[Captcha] API not defined'); return; }
+    if (captchaImg) captchaImg.style.visibility = 'hidden';
     API.captcha().then(function(data) {
       authCaptchaId = data.data.captcha_id;
-      if (captchaImg) captchaImg.src = data.data.captcha_image;
-    }).catch(function() {});
+      if (captchaImg) {
+        var img = data.data.captcha_image;
+        if (img && img.charAt(0) === '/' && img.indexOf('://') === -1) {
+          var base = window.__BASEPATH || '';
+          if (base && img.indexOf(base) !== 0) {
+            img = base + img;
+          }
+        }
+        captchaImg.src = img;
+        captchaImg.style.visibility = 'visible';
+      }
+    }).catch(function(err) {
+      console.error('[Captcha] API error:', err);
+      if (captchaImg) captchaImg.style.visibility = 'visible';
+    });
   }
 
   if (captchaImg) captchaImg.addEventListener('click', refreshCaptcha);
